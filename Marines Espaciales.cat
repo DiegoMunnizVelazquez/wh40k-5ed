@@ -1,2 +1,1359 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8964-cc67-2c68-196d" name="Marines Espaciales" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema"/>
+<catalogue id="8964-cc67-2c68-196d" name="Marines Espaciales" revision="1" battleScribeVersion="2.03" authorName="Diego Muñiz" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorUrl="csddmv@gmail.com" library="false" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>Esto es for fun. Cualquier error o sugerencia serán bienvenidas
+
+En este sistema se agruparán las reglas del Codex de Marines Espaciales utilizado en la 5ed de Warhammer 40k</readme>
+  <entryLinks>
+    <entryLink id="27db-559c-2f13-42ee" name="Señor del Capítulo" hidden="false" collective="false" import="true" targetId="c1d1-f843-3bea-ab6e" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="2317-9b37-6c41-43df" name="New CategoryLink" hidden="false" targetId="dd59-30d7-da4f-6ea4" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="4437-b8e3-368d-372e" name="Marneus Calgar, Señor de Macragge" hidden="false" collective="false" import="true" targetId="12f4-b273-09cf-b2d4" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="3823-2098-8cf7-79d5" name="New CategoryLink" hidden="false" targetId="dd59-30d7-da4f-6ea4" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="8370-28b2-07ac-36a7" name="Capitán Cato Sicarius" hidden="false" collective="false" import="true" targetId="28ff-bd37-a713-b9fb" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="e1d9-80d1-0c16-ee86" name="New CategoryLink" hidden="false" targetId="dd59-30d7-da4f-6ea4" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="ce16-c9a1-cb98-e1ac" name="Bibliotecario Jefe Tigurius" hidden="false" collective="false" import="true" targetId="1e0e-dc31-f1ae-8b8f" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="3c9d-55e7-b873-1148" name="New CategoryLink" hidden="false" targetId="dd59-30d7-da4f-6ea4" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="30eb-afdb-2e65-b721" name="Capellán Cassius" hidden="false" collective="false" import="true" targetId="9700-63b0-08cc-f0c2" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="8b68-fb94-24bc-533b" name="New CategoryLink" hidden="false" targetId="dd59-30d7-da4f-6ea4" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="0d12-adae-254d-9329" name="Guardia de Honor" hidden="false" collective="false" import="true" targetId="0b72-8a34-5d49-5da1" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="af34-aa0b-7cb2-98ab" name="No Ocupa Espacio" hidden="false" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="a5ff-2635-9215-ab25" name="Señor del Capítulo Pedro Kántor" hidden="false" collective="false" import="true" targetId="59b2-7946-4db0-d021" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="3711-1a14-21c7-14e9" name="New CategoryLink" hidden="false" targetId="dd59-30d7-da4f-6ea4" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="45ef-9a17-e25f-610d" name="Capitán Darnath Lysander" hidden="false" collective="false" import="true" targetId="5450-80ec-b5e9-8425" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="30d1-3078-c8a3-8ed6" name="New CategoryLink" hidden="false" targetId="dd59-30d7-da4f-6ea4" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="7519-b30b-3bff-4c29" name="Capitán sombrío Kayvaan Shrike" hidden="false" collective="false" import="true" targetId="db65-8ff0-3c41-404d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="d2f4-5bc4-a8bd-b742" name="New CategoryLink" hidden="false" targetId="dd59-30d7-da4f-6ea4" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink id="7dda-4026-a075-55ca" name="Padre Forjador Vulkan He&apos;stan" hidden="false" collective="false" import="true" targetId="6728-8b03-168e-a8e0" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink id="86f8-0389-aa8d-8105" name="New CategoryLink" hidden="false" targetId="dd59-30d7-da4f-6ea4" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="c1d1-f843-3bea-ab6e" name="Señor del Capítulo" publicationId="f176-f140-74d8-da7d" page="52" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="puntos" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0b72-8a34-5d49-5da1" name="Guardia de Honor" publicationId="f176-f140-74d8-da7d" page="53" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="f60f-80a5-57b1-4b65" value="1.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c1d1-f843-3bea-ab6e" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="59b2-7946-4db0-d021" type="atLeast"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set" field="f60f-80a5-57b1-4b65" value="3.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="12f4-b273-09cf-b2d4" type="atLeast"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f60f-80a5-57b1-4b65" type="max">
+          <comment>Puedes incluir una Guardia de Honor por cada Señor del Capítulo incluido en tu ejercito, o hasta 3 de ellas si incluyes a Marneus Calgar</comment>
+        </constraint>
+      </constraints>
+      <infoLinks>
+        <infoLink id="3b8b-f8cd-650c-6add" name="Y no conocerán el miedo" hidden="false" targetId="5ce7-70c4-4a99-db0d" type="rule"/>
+        <infoLink id="3491-4088-b453-8478" name="Tácticas de Combate" hidden="false" targetId="8bf6-d84e-9cda-1b19" type="rule"/>
+        <infoLink id="8733-0f0c-9ee2-5a70" name="Armadura Artesanal" hidden="false" targetId="c666-800e-e05c-b96a" type="profile"/>
+        <infoLink id="ffd6-8af9-8ff8-6199" name="Arma de energía" hidden="false" targetId="d148-5cd0-877e-b38d" type="infoGroup"/>
+        <infoLink id="5887-04c8-7d66-ef59" name="Granadas Perforantes y de Fragmentación" hidden="false" targetId="795b-704d-ab71-04cc" type="infoGroup"/>
+        <infoLink id="6b4b-1189-3e5a-c9f0" name="Bolter" hidden="false" targetId="40c7-cb9b-c278-04f7" type="infoGroup"/>
+        <infoLink id="6cc6-d15b-1e03-3fa5" name="Pistola Bolter" hidden="false" targetId="ac8a-08c7-c65f-f8ac" type="infoGroup"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="88bf-6cc2-cb36-19bd" name="Campeón del Capítulo" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5864-4dd1-cb67-5277" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8ab-977e-34aa-b56d" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="8810-2bbb-7500-c652" name="Campeón del Capítulo" publicationId="f176-f140-74d8-da7d" page="53" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
+              <characteristics>
+                <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+                <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">5</characteristic>
+                <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+                <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+                <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+                <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+                <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
+                <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
+                <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
+                <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">2+</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="0f63-0148-d685-fc44" name="Honor o Muerte" publicationId="f176-f140-74d8-da7d" page="53" hidden="false" typeId="c970-b832-a956-1ac8" typeName="Habilidad">
+              <characteristics>
+                <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">El Campeón del Capitulo debe estar preparado para desafiar a cualquier lider enemigo en combate singular, por lo que todo su entrenamiento se encamina a cumplir ese objetivo. En un asalto, el Campeón del Capitulo debe dirigir todos sus ataques contra un personaje independiente enemigo con el que esté en contacto peana con peana. Además, repite todas las tiradas no superadas para impactar y para herir dirigidas contra un personaje independiente enemigo.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry id="db73-4554-cd16-e877" name="Arma Relíquia" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5f1f-e53e-3713-08d8" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="0a4f-2b59-f274-d83a" name="Armas Reliquia" hidden="false" targetId="cb8e-26ee-644c-deca" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="15.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b8f2-b61b-f152-74e9" name="Lanzagranadas Auxiliar" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="054f-4a4e-81e6-e6cb" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="951d-24f5-75aa-8fae" name="Lanzagranadas Auxiliar" hidden="false" targetId="1182-441b-2637-4be5" type="infoGroup"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="15.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b967-4dbf-efd8-95d2" name="Armas Digitales" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bfb6-bdd0-d9b6-815c" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="5ebb-efa3-9b86-cab1" name="Armas Digitales" hidden="false" targetId="7f7f-f8b8-c436-dad3" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="deeb-471a-e85c-6056" name="Equipo Adicional" hidden="false" collective="false" import="true" defaultSelectionEntryId="fada-2cab-2c5e-a999">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82ed-487b-0fc4-3191" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f49d-e8de-a0f0-0ac5" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="fada-2cab-2c5e-a999" name="Bolter" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name="Pts" typeId="puntos" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="7dd9-1bcb-9b6b-c58c" name="Filoarma" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name="Pts" typeId="puntos" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="3525-e9e5-9f51-8825" name="Arma Cuerpo a Cuerpo" hidden="false" collective="false" import="true" defaultSelectionEntryId="55ee-d824-6ea2-0ba6">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6396-35bf-dffe-3c12" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f01c-e8a3-3ca6-fff0" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="55ee-d824-6ea2-0ba6" name="Espada de Energía" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name="Pts" typeId="puntos" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="73a6-4daf-59ed-b9e1" name="Martillo de Trueno" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name="Pts" typeId="puntos" value="15.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="45.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="f3ed-3f12-5af5-7222" name="Guardias" hidden="false" collective="false" import="true" defaultSelectionEntryId="95df-d8e1-daf1-b5bf">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2515-c40e-ea9f-57d3" type="min"/>
+            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a82-1e66-b00c-7993" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="95df-d8e1-daf1-b5bf" name="Guardia" hidden="false" collective="false" import="true" type="model">
+              <profiles>
+                <profile id="0800-38e8-d712-4370" name="Guardia" publicationId="f176-f140-74d8-da7d" page="53" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
+                  <characteristics>
+                    <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+                    <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+                    <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+                    <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+                    <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+                    <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+                    <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
+                    <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+                    <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
+                    <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">2+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntries>
+                <selectionEntry id="60ae-3934-4136-acd8" name="Estandarte del Capítulo" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c40-3d2d-83e6-2900" type="max"/>
+                    <constraint field="selections" scope="0b72-8a34-5d49-5da1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="18ca-71a8-cea4-2143" type="max"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="d49e-0546-b2bc-f20f" name="Estandarte del Capítulo" publicationId="f176-f140-74d8-da7d" page="53" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+                      <characteristics>
+                        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Cualquier unidad de marines espaciales a 30 cm o menos del portaestandarte siempre repite los chequeos de moral y los chequeos de acobardamiento no superados. Además, todas las miniaturas de la misma unidad del portaestandarte disponen de +1 Ataque mientras el portaestandarte siga con vida. Mientras el portaestandarte continue vivo, la Guardia de Honor se considera que ha causado una herida adicional en combate cuerpo a cuerpo en el cálculo del resultado del asalto.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="Pts" typeId="puntos" value="25.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="5e28-0910-5d9f-9671" name="Arma Relíquia" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8fe7-3680-547b-deeb" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="4415-c6cb-8742-794f" name="Armas Reliquia" hidden="false" targetId="cb8e-26ee-644c-deca" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="puntos" value="15.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="dba0-f319-acd3-985b" name="Lanzagranadas Auxiliar" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6813-eadb-c168-0834" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="2148-91e1-705f-186b" name="Lanzagranadas Auxiliar" hidden="false" targetId="1182-441b-2637-4be5" type="infoGroup"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Pts" typeId="puntos" value="15.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="35.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Pts" typeId="puntos" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4b32-e528-5149-fd7f" name="Capitán" publicationId="f176-f140-74d8-da7d" page="54" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="puntos" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="da89-accb-e0c0-bb35" name="Escuadra de Mando" publicationId="f176-f140-74d8-da7d" page="55" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="puntos" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="475f-181c-69b1-bb38" name="Bibliotecario" publicationId="f176-f140-74d8-da7d" page="56" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="puntos" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e9e3-95ec-d79c-9c9a" name="Capellan" publicationId="f176-f140-74d8-da7d" page="58" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="puntos" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0503-2007-7b09-5bbd" name="Escuadra Táctica" publicationId="f176-f140-74d8-da7d" page="59" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="puntos" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="82fa-e625-16ff-5e28" name="Escuadra de Asalto" publicationId="f176-f140-74d8-da7d" page="60" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="puntos" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6fe8-f97c-9f07-9c5e" name="Escuadra de Devastadores" publicationId="f176-f140-74d8-da7d" page="61" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="puntos" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3346-e62b-b6de-aca3" name="Escuadra de Veteranos de Vanguardia" publicationId="f176-f140-74d8-da7d" page="62" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="puntos" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="11e1-69c3-bfd9-fce3" name="Escuadra de Veteranos de la Guardia" publicationId="f176-f140-74d8-da7d" page="63" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="puntos" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="86df-4e84-72a6-c4fc" name="Escuadra de Exterminadores" publicationId="f176-f140-74d8-da7d" page="64" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="puntos" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2792-bd2b-f5b5-fb9c" name="Dreadnought" publicationId="f176-f140-74d8-da7d" page="65" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="puntos" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c598-7429-8c4f-d8d5" name="Escuadra de Exploradores" publicationId="f176-f140-74d8-da7d" page="66" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="puntos" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="697d-66e5-4fb6-9117" name="Escuadrón de Exploradores Motorizados" publicationId="f176-f140-74d8-da7d" page="67" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="puntos" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2f9d-7a37-8583-f331" name="Escuadrón de Motocicletas" publicationId="f176-f140-74d8-da7d" page="68" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="puntos" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7e33-d17d-ac6b-5b0e" name="Cápsula de Desembarco" publicationId="f176-f140-74d8-da7d" page="69" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="puntos" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0002-58f6-0dc6-02eb" name="Señor de la Forja" publicationId="f176-f140-74d8-da7d" page="70" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="puntos" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2781-a37b-c583-9446" name="Tecnomarine" publicationId="f176-f140-74d8-da7d" page="71" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="puntos" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2cd3-82dd-b7c9-02e5" name="Servidor" publicationId="f176-f140-74d8-da7d" page="72" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="puntos" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c1f1-f7cf-b97a-2d69" name="Cañón Tormenta" publicationId="f176-f140-74d8-da7d" page="73" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="puntos" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7574-b044-6350-91f6" name="Land Speeder" publicationId="f176-f140-74d8-da7d" page="74" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="puntos" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9b05-8e00-2d45-1914" name="Land Speeder Tormenta" publicationId="f176-f140-74d8-da7d" page="75" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="puntos" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d186-e2fa-cc52-af1d" name="Rhino" publicationId="f176-f140-74d8-da7d" page="76" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="puntos" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f7e8-c24d-974a-23a4" name="Razorback" publicationId="f176-f140-74d8-da7d" page="77" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="puntos" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bb91-02f6-5b46-b875" name="Predator" publicationId="f176-f140-74d8-da7d" page="78" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="puntos" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="639e-323c-6425-7d79" name="Whirlwind" publicationId="f176-f140-74d8-da7d" page="79" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="puntos" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2417-8dc3-25c1-3def" name="Vindicator" publicationId="f176-f140-74d8-da7d" page="80" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="puntos" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="00db-4e36-6d16-74c1" name="Land Raider" publicationId="f176-f140-74d8-da7d" page="81" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="puntos" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="12f4-b273-09cf-b2d4" name="Marneus Calgar, Señor de Macragge" publicationId="f176-f140-74d8-da7d" page="84" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee64-898e-d831-1d5b" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="19b3-7fae-d858-594c" name="Poder Titánico" publicationId="f176-f140-74d8-da7d" page="84" hidden="false">
+          <description>Marneus Calgar puede repitir todas las tiradas para Herir fallidas en disparo y en combate cuerpo a cuerpo.</description>
+        </rule>
+        <rule id="fd20-62b0-8259-4980" name="Dios de la Guerra" publicationId="f176-f140-74d8-da7d" page="84" hidden="false">
+          <description>Marneus Calgar puede decidir si supera o no cualquier chequeo de moral que deba efectuar: Mientras Calgar esté en mesa, todas las unidades sujetas a la regla Tacticas de Combate pueden elegir si superan o no sus chequeos de moral.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="5ea5-8970-7d80-bd93" name="Y no conocerán el miedo" hidden="false" targetId="5ce7-70c4-4a99-db0d" type="rule"/>
+        <infoLink id="960e-7bd9-4bec-8c18" name="Tácticas de Combate" hidden="false" targetId="8bf6-d84e-9cda-1b19" type="rule"/>
+        <infoLink id="144e-4edc-b855-5429" name="Personaje independiente" hidden="false" targetId="61b4-c5bb-9d85-8506" type="rule"/>
+        <infoLink id="18af-63af-5f4a-969a" name="Guantaletes de Ultramar" hidden="false" targetId="5965-9132-84cf-4f9b" type="infoGroup"/>
+        <infoLink id="73eb-82c0-ff19-1f92" name="Guerrero Eterno" hidden="false" targetId="71c3-7c34-f6f0-b284" type="rule"/>
+        <infoLink id="7413-2b52-1131-1482" name="Aura de Hierro" hidden="false" targetId="348b-da15-cc84-c027" type="profile"/>
+        <infoLink id="2414-962d-fc51-e0e2" name="Arma de energía" hidden="false" targetId="8e64-1c75-85f5-7ac0" type="profile"/>
+        <infoLink id="a9d0-90eb-d582-6a7b" name="Bombardeo Orbital" hidden="false" targetId="b33d-0ce8-c3ba-a045" type="infoGroup"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="997a-6033-25cb-f891" name="Armadura" hidden="false" collective="false" import="true" defaultSelectionEntryId="07be-1b94-f023-d07c">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93f8-dfaf-629d-dfe8" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="009f-0399-f071-7904" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="07be-1b94-f023-d07c" name="Servoarmadura" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4986-cd12-7649-5bf5" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="2d80-ddf5-65f9-0d7c" name="Marneus Calgar, Señor de Macragge" publicationId="f176-f140-74d8-da7d" page="84" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
+                  <characteristics>
+                    <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería (Personaje)</characteristic>
+                    <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">6</characteristic>
+                    <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">5</characteristic>
+                    <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+                    <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+                    <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">4</characteristic>
+                    <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">5</characteristic>
+                    <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">4</characteristic>
+                    <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
+                    <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="0e54-8b47-ce1c-b7ad" name="Servoarmadura" hidden="false" targetId="6466-7442-d2df-9190" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9e8a-3756-7a5e-a479" name="Armadura de Antilochus" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f71-08e6-89ee-df2a" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="46bd-5f92-e14f-060c" name="Marneus Calgar, Señor de Macragge" publicationId="f176-f140-74d8-da7d" page="84" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
+                  <characteristics>
+                    <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería (Personaje)</characteristic>
+                    <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">6</characteristic>
+                    <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">5</characteristic>
+                    <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+                    <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+                    <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">4</characteristic>
+                    <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">5</characteristic>
+                    <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">4</characteristic>
+                    <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
+                    <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">2+</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="745b-0427-d5e0-d258" name="Armadura de Antilochus" hidden="false" targetId="a7b8-412b-c64c-9d47" type="infoGroup"/>
+              </infoLinks>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="15.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Pts" typeId="puntos" value="250.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="28ff-bd37-a713-b9fb" name="Capitán Cato Sicarius" publicationId="f176-f140-74d8-da7d" page="85" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab60-eda4-907f-faec" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="ea98-f70d-d2a6-7830" name="Ataque Sorpresa" publicationId="f176-f140-74d8-da7d" page="85" hidden="false" typeId="c970-b832-a956-1ac8" typeName="Habilidad">
+          <characteristics>
+            <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Un ejercito que incluya a Sicarius puede repetir la tirada de dados para tomar la Iniciativa.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="212b-ec63-1add-ee80" name="Ritos de Batalla" publicationId="f176-f140-74d8-da7d" page="85" hidden="false" typeId="c970-b832-a956-1ac8" typeName="Habilidad">
+          <characteristics>
+            <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Los Marines en un ejercito que incluya a Sicarius pueden usar su Liderazgo al efectuar los chequeos de moral o de acobardamiento.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="8987-a30a-4c0f-8eaa" name="Héroes del Capitulo" publicationId="f176-f140-74d8-da7d" page="85" hidden="false" typeId="c970-b832-a956-1ac8" typeName="Habilidad">
+          <characteristics>
+            <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Sicarius va acompanado de los mejores guerreros de la 2a Companía. Una escuadra táctica de un ejército que incluya a Sicarius puede disponer de una de las reglas especiales siguientes sin coste adicional alguno: contraataque, infiltración, explorador o cazacarros.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4c14-83bd-4871-119d" name="Espada Tormentosa Talassariana" publicationId="f176-f140-74d8-da7d" page="85" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+          <characteristics>
+            <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Se trata de un arma de energía. Si Sicarius quiere, puede intentar un solo ataque de &quot;golpe de gracia&quot; en lugar de sus ataques habituales en combate cuerpo a cuerpo. Si el golpe de gracia impacta, se resuelve con F6 y causa muerte instantánea, independientemente de la Resistencia del objetivo.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="052a-df33-3e79-6bde" name="Manto de los Suzerain" publicationId="f176-f140-74d8-da7d" page="85" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+          <characteristics>
+            <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Se trata de una armadura artesanal que confiere a Sicarius la regla especial ¡No hay dolor!.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="efda-8ae2-23a4-c702" name="Capitán Cato Sicarius" publicationId="f176-f140-74d8-da7d" page="85" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
+          <characteristics>
+            <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería (Personaje)</characteristic>
+            <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">6</characteristic>
+            <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">5</characteristic>
+            <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+            <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+            <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">3</characteristic>
+            <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">5</characteristic>
+            <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
+            <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
+            <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="2ca1-cb4d-367c-4490" name="Y no conocerán el miedo" hidden="false" targetId="5ce7-70c4-4a99-db0d" type="rule"/>
+        <infoLink id="d33d-fbe2-0a0b-e5c6" name="Tácticas de Combate" hidden="false" targetId="8bf6-d84e-9cda-1b19" type="rule"/>
+        <infoLink id="5f1c-5388-58aa-1021" name="Personaje independiente" hidden="false" targetId="61b4-c5bb-9d85-8506" type="rule"/>
+        <infoLink id="8de2-87de-06be-c46a" name="Granadas Perforantes y de Fragmentación" hidden="false" targetId="795b-704d-ab71-04cc" type="infoGroup"/>
+        <infoLink id="8857-7a0d-c4e8-c8d4" name="Aura de Hierro" hidden="false" targetId="348b-da15-cc84-c027" type="profile"/>
+        <infoLink id="6aec-c478-0449-081e" name="Pistola de Plasma" hidden="false" targetId="7ab5-7984-af7d-f5c0" type="infoGroup"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="puntos" value="200.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1e0e-dc31-f1ae-8b8f" name="Bibliotecario Jefe Tigurius" publicationId="f176-f140-74d8-da7d" page="86" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ab3-2143-d38e-15f1" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="b21a-677a-c8ab-11ab" name="Maestro Psíquico" publicationId="f176-f140-74d8-da7d" page="86" hidden="false" typeId="c970-b832-a956-1ac8" typeName="Habilidad">
+          <characteristics>
+            <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Tigurius conoce todos los poderes psíquicos disponibles para los Bibliotecarios Marines Espaciales.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f109-028b-b66d-c697" name="Don de la Presencia" publicationId="f176-f140-74d8-da7d" page="86" hidden="false" typeId="c970-b832-a956-1ac8" typeName="Habilidad">
+          <characteristics>
+            <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Si tu ejército incluye a Tigurius, puedes decidir si repites las tiradas de reservas, incluso las superadas.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e142-c682-b5b3-7f66" name="Capucha Infernal" publicationId="f176-f140-74d8-da7d" page="86" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+          <characteristics>
+            <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Funciona como una capucha psíquica y, además, permite que Tigurius use tres poderes psíquicos cada turno.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="2ced-9dae-9de3-49e8" name="Báculo de Tigurius" publicationId="f176-f140-74d8-da7d" page="86" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+          <characteristics>
+            <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">El Báculo de Tigurius es un arma psíquica de precisión.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="70f0-959f-60b4-b20f" name="Bibliotecario Jefe Tigurius" publicationId="f176-f140-74d8-da7d" page="86" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
+          <characteristics>
+            <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería (Personaje)</characteristic>
+            <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">5</characteristic>
+            <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+            <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+            <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+            <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">2</characteristic>
+            <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
+            <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+            <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
+            <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="67cb-c9a8-ffd3-15ba" name="Personaje independiente" hidden="false" targetId="61b4-c5bb-9d85-8506" type="rule"/>
+        <infoLink id="cad2-ea73-2c66-ea7f" name="Tácticas de Combate" hidden="false" targetId="8bf6-d84e-9cda-1b19" type="rule"/>
+        <infoLink id="ca7b-274b-31e3-1956" name="Y no conocerán el miedo" hidden="false" targetId="5ce7-70c4-4a99-db0d" type="rule"/>
+        <infoLink id="193d-4937-39ae-ea6b" name="Pistola Bolter" hidden="false" targetId="ac8a-08c7-c65f-f8ac" type="infoGroup"/>
+        <infoLink id="0fd6-584c-f6d8-8c92" name="Granadas Perforantes y de Fragmentación" hidden="false" targetId="795b-704d-ab71-04cc" type="infoGroup"/>
+        <infoLink id="c528-63b7-d45c-f297" name="Arma Psíquica" hidden="false" targetId="bbfc-16f2-5a79-049f" type="rule"/>
+        <infoLink id="669a-a42a-ccf5-6c88" name="Armas de Precisión" hidden="false" targetId="8f62-4549-a7d1-f500" type="profile"/>
+        <infoLink id="2da3-44a1-1ef1-564f" name="Poderes Psíquicos" hidden="false" targetId="b1d2-544e-668e-7c81" type="infoGroup"/>
+        <infoLink id="cd6c-1d09-569c-fe7b" name="Servoarmadura" hidden="false" targetId="6466-7442-d2df-9190" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="puntos" value="230.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9700-63b0-08cc-f0c2" name="Capellán Cassius" publicationId="f176-f140-74d8-da7d" page="87" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a38-c9a1-6553-e18a" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="e6d6-6ce8-19c9-f663" name="Capellán Cassius" publicationId="f176-f140-74d8-da7d" page="87" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
+          <characteristics>
+            <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería (Personaje)</characteristic>
+            <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">5</characteristic>
+            <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+            <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+            <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">6</characteristic>
+            <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">2</characteristic>
+            <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
+            <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+            <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
+            <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="cd1d-0689-039b-21ef" name="Infernus" publicationId="f176-f140-74d8-da7d" page="87" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+          <characteristics>
+            <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Se trata de un combibólter-lanzallamas de precisión, construido y modificado por el propio Cassius. Recuerda que el bolter se carga con munición infierno y, por tanto,
+hiere a cualquier miniatura con un resultado de 2+.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="361c-90a4-44ff-1045" name="Personaje independiente" hidden="false" targetId="61b4-c5bb-9d85-8506" type="rule"/>
+        <infoLink id="d285-a7bb-6da0-5b09" name="Tácticas de Combate" hidden="false" targetId="8bf6-d84e-9cda-1b19" type="rule"/>
+        <infoLink id="0835-cdc1-dbdd-828c" name="Servoarmadura" hidden="false" targetId="6466-7442-d2df-9190" type="profile"/>
+        <infoLink id="3167-97e0-0a22-82de" name="Pistola Bolter" hidden="false" targetId="ac8a-08c7-c65f-f8ac" type="infoGroup"/>
+        <infoLink id="32c4-705f-0732-05c9" name="Granadas Perforantes y de Fragmentación" hidden="false" targetId="795b-704d-ab71-04cc" type="infoGroup"/>
+        <infoLink id="148a-2031-3627-9d5d" name="Combiarma" hidden="false" targetId="6d2d-4a20-74a7-0f00" type="profile"/>
+        <infoLink id="2dfe-7ee5-25af-d77d" name="Armas de Precisión" hidden="false" targetId="8f62-4549-a7d1-f500" type="profile"/>
+        <infoLink id="58d0-6f78-97c5-215c" name="No Hay Dolor" hidden="false" targetId="fe28-c924-099d-aa4e" type="rule"/>
+        <infoLink id="6761-e621-aab6-8f72" name="Honor del Capítulo" hidden="false" targetId="5794-0647-36bc-bed8" type="infoGroup"/>
+        <infoLink id="8e68-c4dc-d581-a22a" name="Liturgias de Combate" hidden="false" targetId="7323-1f81-cafc-a43a" type="profile"/>
+        <infoLink id="160d-3253-1fa8-27b1" name="Rosarius" hidden="false" targetId="c6fa-de9f-e072-202e" type="profile"/>
+        <infoLink id="2e80-d943-a61b-572c" name="Crozius Arcanum" hidden="false" targetId="ab2c-c3e2-165b-630a" type="infoGroup"/>
+        <infoLink id="ad54-4863-b1b4-6173" name="Bolter" hidden="false" targetId="40c7-cb9b-c278-04f7" type="infoGroup"/>
+        <infoLink id="ab74-4a53-5b01-8394" name="Lanzallamas" hidden="false" targetId="df4b-fc7e-991e-2ce4" type="infoGroup"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="puntos" value="125.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e5c8-1dbc-98e2-df49" name="Land Raider Cruzado" publicationId="f176-f140-74d8-da7d" page="82" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="puntos" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ba26-1323-652e-3c96" name="Land Raider Redentor" publicationId="f176-f140-74d8-da7d" page="83" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="puntos" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b8be-2860-9eb6-3746" name="Torias Telion" publicationId="f176-f140-74d8-da7d" page="88" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="puntos" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="91e1-6415-5f2a-efb8" name="Hermano-Sargento Chronus" publicationId="f176-f140-74d8-da7d" page="89" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="861d-5ad6-5c1d-0e5c" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="3ea6-6736-142a-6925" name="Hermano-Sargento Chronus" publicationId="f176-f140-74d8-da7d" page="89" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
+          <characteristics>
+            <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería (Personaje)</characteristic>
+            <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+            <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">5</characteristic>
+            <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+            <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+            <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+            <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
+            <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+            <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
+            <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="0b1a-795e-5a62-5d64" name="Comandante de Carro" hidden="false">
+          <description>Chronus siempre se incluye como una modificación a un vehículo e inicia la partida como comandante de carro de un tanque marine espacial (consulta la lista de ejército). Usa la miniatura del comandante de carro Chronus para representarlo.
+
+El tanque en el que va Chronus ignora los resultados tripulación acobardada o tripulación aturdida, y puede usar su HP5.
+
+Si el tanque sufre un resultado de destruido o de explota, tira 1D6. Si obtienes un resultado de 1 ó 2, Chronus muere. Si el resultado es de 3+, Chronus salta del tanque en el último
+segundo; cuando hayas resuelto la tirada de daños, sitúalo a 5 cm o menos del vehículo. Si el vehiculo de Chronus resulta destruido, Chronus tendrá el perfil superior durante el resto de la
+batalla, además de las siguientes reglas especiales: Y no conocerán el miedo, tácticas de combate, personaje independiente.
+En ningun caso podra volver a tomar el mando de un tanque.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="532a-f0b7-6c8e-1e0e" name="Servoarmadura" hidden="false" targetId="6466-7442-d2df-9190" type="profile"/>
+        <infoLink id="c0bf-0656-6818-065c" name="Granadas Perforantes y de Fragmentación" hidden="false" targetId="795b-704d-ab71-04cc" type="infoGroup"/>
+        <infoLink id="89c7-d38a-1850-385a" name="Servobrazo" hidden="false" targetId="8d68-53db-c7e0-0678" type="profile"/>
+        <infoLink id="0704-0791-9112-131e" name="Y no conocerán el miedo" hidden="false" targetId="5ce7-70c4-4a99-db0d" type="rule"/>
+        <infoLink id="aeef-43a2-6187-33df" name="Tácticas de Combate" hidden="false" targetId="8bf6-d84e-9cda-1b19" type="rule"/>
+        <infoLink id="e7e9-4d02-68f3-f9a5" name="Personaje independiente" hidden="false" targetId="61b4-c5bb-9d85-8506" type="rule"/>
+        <infoLink id="f8a0-d96e-4e9f-5dfc" name="Pistola Bolter" hidden="false" targetId="ac8a-08c7-c65f-f8ac" type="infoGroup"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="puntos" value="70.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="59b2-7946-4db0-d021" name="Señor del Capítulo Pedro Kántor" publicationId="f176-f140-74d8-da7d" page="90" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a211-c4c4-9bbf-bb09" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="cbb2-ebcd-999a-9f1d" name="Flecha de Dorn" publicationId="f176-f140-74d8-da7d" page="90" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+          <characteristics>
+            <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60cm</characteristic>
+            <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
+            <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
+            <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 4</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3fb5-aeba-4354-51d1" name="¡Mantened la Linea!" publicationId="f176-f140-74d8-da7d" page="90" hidden="false" typeId="c970-b832-a956-1ac8" typeName="Habilidad">
+          <characteristics>
+            <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Si tu ejército incluye a Pedro Kántor, tus Escuadras de Veteranos de la Guardia son unidades que puntúan.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f55d-d128-75b9-30e5" name="Presencia Inspiradora" publicationId="f176-f140-74d8-da7d" page="90" hidden="false" typeId="c970-b832-a956-1ac8" typeName="Habilidad">
+          <characteristics>
+            <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Todas las unidades amigas a 30 cm o menos de Pedro Kantor obtienen +1 Ataque mientras Kantor siga con vida. Este bonificador no se aplica a Kántor, y tampoco se acumula al bonificador similar que proporciona el estandarte del capítulo.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="1847-edf6-9ff2-1e7c" name="Doctrina de combate" publicationId="f176-f140-74d8-da7d" page="90" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+          <characteristics>
+            <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228"/>
+          </characteristics>
+        </profile>
+        <profile id="cb9c-1b31-fdc6-66fc" name="Señor del Capítulo Pedro Kántor" publicationId="f176-f140-74d8-da7d" page="90" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
+          <characteristics>
+            <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería (Personaje)</characteristic>
+            <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">6</characteristic>
+            <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">5</characteristic>
+            <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+            <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+            <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">3</characteristic>
+            <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">5</characteristic>
+            <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
+            <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
+            <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="902e-7143-9e5c-9c20" name="Servoarmadura" hidden="false" targetId="6466-7442-d2df-9190" type="profile"/>
+        <infoLink id="c3d9-1833-65ff-3cc6" name="Personaje independiente" hidden="false" targetId="61b4-c5bb-9d85-8506" type="rule"/>
+        <infoLink id="70d3-60d5-d809-1d35" name="Y no conocerán el miedo" hidden="false" targetId="5ce7-70c4-4a99-db0d" type="rule"/>
+        <infoLink id="0835-c887-dfc5-6d94" name="Tácticas de Combate" hidden="false" targetId="8bf6-d84e-9cda-1b19" type="rule"/>
+        <infoLink id="8b13-233f-81fb-9370" name="Bombardeo Orbital" hidden="false" targetId="b33d-0ce8-c3ba-a045" type="infoGroup"/>
+        <infoLink id="1e4b-7065-89d2-0a89" name="Puño de Combate" hidden="false" targetId="3982-7f84-5050-c9dd" type="rule"/>
+        <infoLink id="0d36-f6db-477a-60d6" name="Aura de Hierro" hidden="false" targetId="348b-da15-cc84-c027" type="profile"/>
+        <infoLink id="2515-aa0d-e59a-e661" name="Granadas Perforantes y de Fragmentación" hidden="false" targetId="795b-704d-ab71-04cc" type="infoGroup"/>
+        <infoLink id="61b0-18cc-6d36-390a" name="Asalto" hidden="false" targetId="8714-46ad-62c0-ce35" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="puntos" value="175.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="720c-929a-0889-b960" name="La Legión de los Condenados" publicationId="f176-f140-74d8-da7d" page="95" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="puntos" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="789c-ce38-ba65-d20a" name="Kor&apos;sarro Khan" publicationId="f176-f140-74d8-da7d" page="94" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="puntos" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5450-80ec-b5e9-8425" name="Capitán Darnath Lysander" publicationId="f176-f140-74d8-da7d" page="85" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a7e-a4df-607c-209e" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="8e0b-16f6-6fcb-186c" name="Doctrina de combate" publicationId="f176-f140-74d8-da7d" page="91" hidden="false" typeId="c970-b832-a956-1ac8" typeName="Habilidad">
+          <characteristics>
+            <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Si incluyes a Lysander, todas las unidades de tu ejército cambian la regla especial tácticas de combate por la regla especial universal testarudos. Si más de un personaje de tu ejército está sujeto a la regla especial doctrina de combate, debes elegir qué versión aplicas.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3814-cd97-685b-5c8c" name="Entrenamiento con el bolter" publicationId="f176-f140-74d8-da7d" page="91" hidden="false" typeId="c970-b832-a956-1ac8" typeName="Habilidad">
+          <characteristics>
+            <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Lysander nunca ha perdido las habilidades que lo hicieron el sargento de escuadra más famoso que los Puños Imperiales hayan tenido. Cualquier miniatura de una escuadra a la que Lysander se haya unido puede repetir las tiradas para impactar no superadas cuando dispare con bólteres pesados, bólteres de asalto, bólteres y pistolas bólter.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f17e-8324-4337-0478" name="Capitán Darnath Lysander" publicationId="f176-f140-74d8-da7d" page="91" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
+          <characteristics>
+            <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería (Personaje)</characteristic>
+            <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">6</characteristic>
+            <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">5</characteristic>
+            <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+            <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+            <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">4</characteristic>
+            <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">5</characteristic>
+            <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
+            <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
+            <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">2+</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="76ac-eee4-f364-74d7" name="Y no conocerán el miedo" hidden="false" targetId="5ce7-70c4-4a99-db0d" type="rule"/>
+        <infoLink id="d0e4-e44a-d2cb-bb8d" name="Tácticas de Combate" hidden="false" targetId="8bf6-d84e-9cda-1b19" type="rule"/>
+        <infoLink id="fd91-311f-0f24-3d0c" name="Personaje independiente" hidden="false" targetId="61b4-c5bb-9d85-8506" type="rule"/>
+        <infoLink id="185e-094c-6c8a-936a" name="Guerrero Eterno" hidden="false" targetId="71c3-7c34-f6f0-b284" type="rule"/>
+        <infoLink id="4e63-d633-bfe4-e3e4" name="Escudo de Tormenta" hidden="false" targetId="e243-5b4e-234a-bd94" type="profile"/>
+        <infoLink id="e82d-e64c-c1c2-c065" name="Armadura de Exterminador" hidden="false" targetId="750f-5a1e-0dae-f607" type="infoGroup"/>
+        <infoLink id="1020-ac0f-04c8-576e" name="El puño de Dorn" hidden="false" targetId="6a7a-a310-c7ec-5b9f" type="infoGroup"/>
+        <infoLink id="35a3-53c1-a99f-c650" name="Reforzar las defensas" hidden="false" targetId="de7d-f46b-1217-6bf1" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="puntos" value="200.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="db65-8ff0-3c41-404d" name="Capitán sombrío Kayvaan Shrike" publicationId="f176-f140-74d8-da7d" page="85" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5c2-e1d1-f02d-42d3" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="8085-7384-d5e4-4e41" name="Capitán sombrío Kayvaan Shrike" publicationId="f176-f140-74d8-da7d" page="92" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
+          <characteristics>
+            <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería Retropropulsada (Personaje)</characteristic>
+            <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">6</characteristic>
+            <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">5</characteristic>
+            <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+            <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+            <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">3</characteristic>
+            <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">5</characteristic>
+            <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
+            <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
+            <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="78de-fcf3-374a-4d6d" name="Doctrina de combate" publicationId="f176-f140-74d8-da7d" page="92" hidden="false" typeId="c970-b832-a956-1ac8" typeName="Habilidad">
+          <characteristics>
+            <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Si incluyes a Kayvaan Shrike en tu ejercito, todas las unidades de tu ejército cambian la regla especial tácticas de combate por la regla especial universal veloces. Si más de un personaje de tu ejército está sujeto a la regla especial doctrina de combate, debes elegir que version aplicas.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup id="27a7-30fa-4a2f-bcfb" name="Garras de Cuervo" hidden="false">
+          <profiles>
+            <profile id="8f35-b16e-2beb-8468" name="Garras de Cuervo" publicationId="f176-f140-74d8-da7d" page="92" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+              <characteristics>
+                <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Se trata de un par de cuchillas relampago de precisión. También proporcionan la regla especial armas aceradas en los combates cuerpo a cuerpo de Shrike.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="743a-e43c-6c99-16e1" name="Cuchillas Relámpago" hidden="false" targetId="3917-3cbb-258b-1f99" type="infoGroup"/>
+            <infoLink id="397d-f969-814a-30c7" name="Aceradas" hidden="false" targetId="7097-6879-0d11-787d" type="rule"/>
+            <infoLink id="6bd1-d238-a379-944a" name="Armas de Precisión" hidden="false" targetId="8f62-4549-a7d1-f500" type="profile"/>
+          </infoLinks>
+        </infoGroup>
+        <infoGroup id="51eb-ecbc-84ca-21e4" name="Ve, pero permanece invisible" hidden="false">
+          <profiles>
+            <profile id="a138-27b4-66b6-dd70" name="Ve, pero permanece invisible" publicationId="f176-f140-74d8-da7d" page="92" hidden="false" typeId="c970-b832-a956-1ac8" typeName="Habilidad">
+              <characteristics>
+                <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Shrike (y las miniaturas de su escuadra) se benefician de la regla especial infiltración.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="007d-e8c7-b85a-dc9f" name="Infiltración" hidden="false" targetId="3310-5f06-776a-5b35" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <infoLinks>
+        <infoLink id="aedd-eff8-40ef-d0e8" name="Y no conocerán el miedo" hidden="false" targetId="5ce7-70c4-4a99-db0d" type="rule"/>
+        <infoLink id="1165-b9e4-5673-28ef" name="Tácticas de Combate" hidden="false" targetId="8bf6-d84e-9cda-1b19" type="rule"/>
+        <infoLink id="4690-9166-0965-ccc1" name="Personaje independiente" hidden="false" targetId="61b4-c5bb-9d85-8506" type="rule"/>
+        <infoLink id="1526-96bc-0e45-c158" name="Granadas Perforantes y de Fragmentación" hidden="false" targetId="795b-704d-ab71-04cc" type="infoGroup"/>
+        <infoLink id="d822-b1b0-5073-221a" name="Retrorreactores" hidden="false" targetId="ee91-b32d-2d83-a10e" type="infoGroup"/>
+        <infoLink id="9e52-a2ce-7e3a-23f4" name="Pistola Bolter" hidden="false" targetId="ac8a-08c7-c65f-f8ac" type="infoGroup"/>
+        <infoLink id="6a1b-2d6b-9712-bfd9" name="Servoarmadura" hidden="false" targetId="6466-7442-d2df-9190" type="profile"/>
+        <infoLink id="943c-7d9a-92f6-88be" name="Aura de Hierro" hidden="false" targetId="348b-da15-cc84-c027" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="puntos" value="195.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6728-8b03-168e-a8e0" name="Padre Forjador Vulkan He&apos;stan" publicationId="f176-f140-74d8-da7d" page="85" hidden="false" collective="false" import="true" type="unit">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a513-8cc8-25d0-0b97" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="a9ba-38fb-b6ec-42f7" name="Padre Forjador Vulkan He&apos;stan" publicationId="f176-f140-74d8-da7d" page="92" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
+          <characteristics>
+            <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería (Personaje)</characteristic>
+            <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">6</characteristic>
+            <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">5</characteristic>
+            <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+            <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+            <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">3</characteristic>
+            <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">5</characteristic>
+            <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
+            <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
+            <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">2+</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f0b5-ccfd-ff0d-4ffc" name="Manto de Kesar" publicationId="f176-f140-74d8-da7d" page="93" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+          <characteristics>
+            <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Las escamas de dragon de esta capa son tan duras como el adamantio y proporcionan a He&apos;stan una tirada de salvación invulnerable de 3+.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoGroups>
+        <infoGroup id="ecff-e7b0-521b-e173" name="Guantelete de la Forja" hidden="false">
+          <profiles>
+            <profile id="02df-502b-f1af-094b" name="Guantelete de la Forja" publicationId="f176-f140-74d8-da7d" page="93" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+              <characteristics>
+                <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Este guantelete blindado puede disparar como un lanzallamas pesado.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="6db5-b7ef-ed71-67b2" name="Lanzallamas Pesado" hidden="false" targetId="1f93-cb42-10a7-7475" type="infoGroup"/>
+          </infoLinks>
+        </infoGroup>
+        <infoGroup id="1b58-5e68-2f47-2e74" name="Lanza de Vulkan" hidden="false">
+          <profiles>
+            <profile id="00a8-863f-c5ef-882d" name="Lanza de Vulkan" publicationId="f176-f140-74d8-da7d" page="93" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+              <characteristics>
+                <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Es un arma reliquia de precisión.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="e96d-0263-c2f2-ee88" name="Armas de Precisión" hidden="false" targetId="8f62-4549-a7d1-f500" type="profile"/>
+            <infoLink id="ef26-c774-7931-efb4" name="Armas Reliquia" hidden="false" targetId="bd2d-d88a-cac3-8257" type="infoGroup"/>
+          </infoLinks>
+        </infoGroup>
+        <infoGroup id="2908-19f4-bf5d-3d13" name="Doctrina de combate" hidden="false">
+          <profiles>
+            <profile id="09ea-6732-a135-d251" name="Doctrina de combate" publicationId="f176-f140-74d8-da7d" page="92" hidden="false" typeId="c970-b832-a956-1ac8" typeName="Habilidad">
+              <characteristics>
+                <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Si incluyes a He&apos;stan, todas las unidades de tu ejército pierden la regla especial tácticas de combate. En lugar de ella, todos los martillos de trueno de tu ejército se consideran armas de precisión, y todos los lanzallamas, lanzallamas pesados, rifles de fusion y canones de fusion se consideran armas acopladas. Si más de un personaje de tu
+ejército está sujeto a la regla especial doctrina de combate, debes elegir qué versión aplicar.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="1725-4b9b-16bc-f677" name="Acoplada" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
+      <infoLinks>
+        <infoLink id="0f19-46c7-37e7-6f9e" name="Y no conocerán el miedo" hidden="false" targetId="5ce7-70c4-4a99-db0d" type="rule"/>
+        <infoLink id="1c8e-3c98-8024-91d4" name="Tácticas de Combate" hidden="false" targetId="8bf6-d84e-9cda-1b19" type="rule"/>
+        <infoLink id="ac35-50c6-9f3d-a4a7" name="Personaje independiente" hidden="false" targetId="61b4-c5bb-9d85-8506" type="rule"/>
+        <infoLink id="3fdb-90ea-02fb-ae09" name="Granadas Perforantes y de Fragmentación" hidden="false" targetId="795b-704d-ab71-04cc" type="infoGroup"/>
+        <infoLink id="6118-288b-ad33-261e" name="Pistola Bolter" hidden="false" targetId="ac8a-08c7-c65f-f8ac" type="infoGroup"/>
+        <infoLink id="f333-28af-f0cc-de73" name="Armadura Artesanal" hidden="false" targetId="c666-800e-e05c-b96a" type="profile"/>
+        <infoLink id="cac7-c08d-f7d7-4d3c" name="Armas Digitales" hidden="false" targetId="7f7f-f8b8-c436-dad3" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="puntos" value="190.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedRules>
+    <rule id="5ce7-70c4-4a99-db0d" name="Y no conocerán el miedo" publicationId="f176-f140-74d8-da7d" page="51" hidden="false">
+      <description>Los Marines Espaciales superan automáticamente los chequeos de reagrupamiento y pueden efectuarlos incluso si los efectivos originales de la unidad han quedado reducidos a menos de la mitad de sus fuerzas a causa de las bajas, aunque se aplican todos los demás criterios. Normalmente, las tropas que se reagrupan no pueden moverse normalmente y siempre se consideran en movimiento, lo estén o no; pero estas restricciones no se aplican a miniaturas sujetas a esta regla especial. Si los Marines Espaciales son atrapados en una persecución arrolladora, no son destruidos, sino que continuarán luchando normalmente. Si esto ocurre, a la unidad se le deberá aplicar la regla ¡Manteneos firmes! en esta ronda de combate y, por tanto, puede sufrir bajas adicionales.
+
+Las unidades que incluyen servidores tambien estan sujetas a esta regla, siempre que la unidad incluya al menos un marine.</description>
+    </rule>
+    <rule id="8bf6-d84e-9cda-1b19" name="Tácticas de Combate" publicationId="f176-f140-74d8-da7d" page="51" hidden="false">
+      <description>Una unidad de marines no sujeta a la regla coraje puede elegir automáticamente fallar cualquier chequeo de moral que deba efectuar.</description>
+    </rule>
+    <rule id="22a0-0930-12ab-bd9e" name="Escuadras de combate" publicationId="f176-f140-74d8-da7d" page="51" hidden="false">
+      <description>Diversas unidades de Marines Espaciales de diez hombres tiene la opción de dividirse en dos unidades de cinco miniaturas, cada una denominada escuadra de combate. Si la unidad dispone de esta opción, así lo especifica. Por ejemplo, una escuadra de diez veteranos de la guardia puede luchar como una unidad de diez guerreros o dividirse en dos unidades de combate de cinco miniaturas cada una.
+
+Las unidades que pueden dividirse en escuadras de combate son:
+
+· Escuadras de veteranos de vanguardia
+Escuadras de veteranos de la guardia
+. Escuadras de exploradores
+. Escuadras de exploradores motorizados
+. Escuadras tácticas
+. Escuadras de asalto
+. Escuadras de exterminadores
+. Escuadras de exterminadores de asalto
+· Escuadras de marines espaciales motorizados
+. Escuadras de devastadores
+
+La decisión de dividir la unidad en escuadras de combate, así como cuales son las miniaturas que van en cada escuadra de combate, debe tomarse cuando la unidad se despliega. Ambas escuadras de combate pueden desplegarse en localizaciones separadas. La unica excepcion es cuando la unidad llegue en cápsula de desembarco. En este caso, el jugador decide si divide la unidad en escuadras de combate cuando desembarca.
+
+Si decides dividir una unidad en escuadras de combate, a partir de ese momento cada escuadra de combate se considerará una unidad separada a efectos de juego.</description>
+    </rule>
+  </sharedRules>
+  <sharedProfiles>
+    <profile id="7f7f-f8b8-c436-dad3" name="Armas Digitales" publicationId="f176-f140-74d8-da7d" page="97" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Una miniatura equipada con armas digitales puede repetir una única tirada para herir no superada en cada fase de asalto</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8f62-4549-a7d1-f500" name="Armas de Precisión" publicationId="f176-f140-74d8-da7d" page="97" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Una miniatura equipada con armas de precisión puede repetir una única tirada para impactar no superada por turno de jugador al utilizarla.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="cb8e-26ee-644c-deca" name="Armas Reliquia" publicationId="f176-f140-74d8-da7d" page="97" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un arma reliquia se considera un arma de energia, pero sus impactos se resuelven con Fuerza 6. A causa de su tamaño y peso, una miniatura equipada con un arma reliquia no puede conseguir ataques extras por estar equipada con un arma de combate cuerpo a cuerpo adicional.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d14e-d59a-7b95-bcb0" name="Baliza de Teleportación" publicationId="f176-f140-74d8-da7d" page="100" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Si los exterminadores quieren teleportarse al campo de batalla por medio de un despliegue rápido y deciden hacerlo a 15cm o menos de una miniatura equipada con esta baliza, no se dispersarán. Hay que tener en cuenta que la baliza de teleportación únicamente pueden utilizarla unidades que se teleporten; no pueden hacerlo unidades que entren en juego utilizando retrorreactores, capsulas de desembarco u otros medios de transporte. Tambien hay que tener en cuenta que la baliza debe estar sobre el campo de batalla al inicio del turno en que vaya a utilizarse.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d9e3-423a-d9bf-c783" name="Capa de Camuflaje" publicationId="f176-f140-74d8-da7d" page="100" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Otorga la regla Sigilo a la unidad</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="217d-6a43-0dae-ab84" name="Escudo de Combate" publicationId="f176-f140-74d8-da7d" page="100" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Proporciona al portador una tirada de Salvación Invulnerable de 6+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e243-5b4e-234a-bd94" name="Escudo de Tormenta" publicationId="f176-f140-74d8-da7d" page="100" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Proporciona al portador una tirada de Salvación Invulnerable de 3+, pero nunca podrá aplicar el modificador de +1 Ataque por estar armado por dos armas de combate cuerpo a cuerpo</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8f76-06dc-a401-29fd" name="Munición Infierno" publicationId="f176-f140-74d8-da7d" page="100" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">X</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Fuego Rápido, Envenenada (2+)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c63b-0def-3619-e6d0" name="Signum" publicationId="f176-f140-74d8-da7d" page="101" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Una miniatura puede utilizar un signum en vez de disparar para que una miniatura de su escuadra actue con HP5 durante el resto de la fase de disparo. Debe declararse que se
+va a utilizar el signum antes de resolver ninguna tirada para impactar.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="248e-1729-77d7-3a52" name="Guantaletes de Ultramar" publicationId="f176-f140-74d8-da7d" page="84" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Se trata de unos puños de combate con un par de bólters integrados con el siguiente perfil.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a10e-0e6e-83e6-d4ea" name="Guantaletes de Ultramar" publicationId="f176-f140-74d8-da7d" page="84" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">2</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 2</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6dc3-bb97-fb46-ab2e" name="Armadura de Antilochus" publicationId="f176-f140-74d8-da7d" page="84" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Calgar puede equiparse con esta armadura de exterminador, que incluye una baliza de teleportación.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ebe1-e3d9-22ad-833c" name="Bombardeo Orbital" publicationId="f176-f140-74d8-da7d" page="52" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un señor del capitulo tiene la autoridad para declarar un bombardeo desde un crucero de ataque. Esta habilidad puede usarse una vez por partida en su fase de disparo, siempre que el Señor del Capitulo no haya movido en la fase de movimiento anterior (aunque puede asaltar mas tarde si el jugador que lo controla lo desea). Declarar un
+bombardeo orbital equivale a disparar un arma de proyectiles y utiliza el perfil siguiente:
+
+Recuerda que, si obtienes un resultado de flecha en la tirada del dado de dispersión, un bombardeo orbital siempre se tiraran 2D6 para determinar la dispersion, la HP del Senor del Capítulo no supone ninguna diferencia.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e739-bf65-a63f-fad3" name="Bombardeo Orbital" publicationId="f176-f140-74d8-da7d" page="52" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Ilimitado</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">10</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">1</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Artillería 1, Barrera</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="348b-da15-cc84-c027" name="Aura de Hierro" publicationId="f176-f140-74d8-da7d" page="52" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Incorpora un campo de energia muy poderoso capaz de desviar incluso los ataques mas peligrosos. Proporciona a su portador una tirada de salvación invulnerable de 4+.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8d68-53db-c7e0-0678" name="Servobrazo" publicationId="f176-f140-74d8-da7d" page="71" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Cada servobrazo garantiza a la miniatura que lo porta un Ataque adicional en combate de Iniciativa 1 y Fuerza 8 que ignora las tiradas de salvación por armadura</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="901d-0933-6b60-b442" name="Desintegración" publicationId="f176-f140-74d8-da7d" page="57" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Poder Psíquico (Proyectil)">
+      <characteristics>
+        <characteristic name="Alcance" typeId="5bf6-378a-0cb7-b079">30cm</characteristic>
+        <characteristic name="F" typeId="12da-9b3e-f37b-bc35">4</characteristic>
+        <characteristic name="FP" typeId="10b5-aa5b-ccde-79cc">2</characteristic>
+        <characteristic name="Tipo" typeId="20e7-cbcb-1781-a732">Asalto 4</characteristic>
+        <characteristic name="Detalles" typeId="a812-390d-dff6-dabd">Este poder es un proyectil psiquico y tiene el perfil siguiente:</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="33ad-419e-cd21-7d03" name="Cúpula de Fuerza" publicationId="f176-f140-74d8-da7d" page="57" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Poder Psíquico (Proyectil)">
+      <characteristics>
+        <characteristic name="Alcance" typeId="5bf6-378a-0cb7-b079">Unidad</characteristic>
+        <characteristic name="F" typeId="12da-9b3e-f37b-bc35">-</characteristic>
+        <characteristic name="FP" typeId="10b5-aa5b-ccde-79cc">-</characteristic>
+        <characteristic name="Tipo" typeId="20e7-cbcb-1781-a732">Salvación</characteristic>
+        <characteristic name="Detalles" typeId="a812-390d-dff6-dabd">Este poder se utiliza al inicio de la fase de movimiento del
+Bibliotecario. El Bibliotecario y la unidad en la que se en cuentre obtienen una tirada de salvación invulnerable de 5+
+hasta el término del siguiente turno del jugador.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="eb55-027c-d5df-8270" name="Maldición de la Máquina" publicationId="f176-f140-74d8-da7d" page="57" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Poder Psíquico">
+      <characteristics>
+        <characteristic name="Alcance" typeId="fd64-cbc4-94de-24cc">60cm, Vehículos</characteristic>
+        <characteristic name="Detalles" typeId="ad96-dfa4-b4ed-656d">Este poder es un proyectil psiquico con un alcance de 60 cm que solo afecta a los vehículos. Si la Maldición de la Máquina impacta, el vehiculo sufre un impacto superficial.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1a64-a8af-7bdf-90de" name="El Vengador" publicationId="f176-f140-74d8-da7d" page="57" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Poder Psíquico (Proyectil)">
+      <characteristics>
+        <characteristic name="Alcance" typeId="5bf6-378a-0cb7-b079">Plantilla</characteristic>
+        <characteristic name="F" typeId="12da-9b3e-f37b-bc35">5</characteristic>
+        <characteristic name="FP" typeId="10b5-aa5b-ccde-79cc">3</characteristic>
+        <characteristic name="Tipo" typeId="20e7-cbcb-1781-a732">Asalto 1</characteristic>
+        <characteristic name="Detalles" typeId="a812-390d-dff6-dabd">Este poder es un proyectil psiquico y tiene el perfil siguiente:</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2936-75df-59b1-edf6" name="Zona de Anulación" publicationId="f176-f140-74d8-da7d" page="57" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Poder Psíquico">
+      <characteristics>
+        <characteristic name="Alcance" typeId="fd64-cbc4-94de-24cc">60cm, Radio</characteristic>
+        <characteristic name="Detalles" typeId="ad96-dfa4-b4ed-656d">Este poder se usa al inicio de la fase de disparo del Bibliotecario. Todas las unidades enemigas a 60 cm o menos del Bibliotecario deben repetir las tiradas de salvación invulnerables superadas durante el resto del turno del jugador.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1616-d4ad-c734-5138" name="Movimiento Acelerado" publicationId="f176-f140-74d8-da7d" page="57" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Poder Psíquico">
+      <characteristics>
+        <characteristic name="Alcance" typeId="fd64-cbc4-94de-24cc">Propio</characteristic>
+        <characteristic name="Detalles" typeId="ad96-dfa4-b4ed-656d">El poder se utiliza al inicio de la fase de asalto del Bibliotecario. Si tiene exito, el Bibliotecario queda sujeto a la regla especial veloces y tiene Iniciativa 10 durante el resto de la
+fase de asalto.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="35ff-843c-05eb-154a" name="Poder de los Antiguos" publicationId="f176-f140-74d8-da7d" page="57" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Poder Psíquico">
+      <characteristics>
+        <characteristic name="Alcance" typeId="fd64-cbc4-94de-24cc">Propio</characteristic>
+        <characteristic name="Detalles" typeId="ad96-dfa4-b4ed-656d">El poder se utiliza al inicio de la fase de asalto del Bibliotecario. Si se activa, el Bibliotecario tendrá Fuerza 6 y tirará 2D6 para determinar la penetración del blindaje durante el resto
+de esa fase de asalto.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9b8e-0942-f5f1-a2e1" name="Puerta al Infinito" publicationId="f176-f140-74d8-da7d" page="57" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Poder Psíquico">
+      <characteristics>
+        <characteristic name="Alcance" typeId="fd64-cbc4-94de-24cc">Unidad</characteristic>
+        <characteristic name="Detalles" typeId="ad96-dfa4-b4ed-656d">Este poder se utiliza al inicio de la fase de movimiento del Bibliotecario. El Bibliotecario, y la unidad en la que se encuentre, se retiran del tablero e inmediatamente se vuelven a
+situar en cualquier punto a una distancia máxima de 60 cm siguiendo las reglas de despliegue rápido. Si el Bibliotecario viaja solo, no ocurre nada; pero, si la unidad se desplaza con el, hay una probabilidad de que algo vaya mal. Si se obtiene un resultado de dobles en la tirada de despliegue rápido, un componente de la unidad (a elección del jugador que la controla) queda atrapado en la disformidad y se retira como baja; el resto de supervivientes se dispersan normalmente.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="cf11-bc3c-f234-c5cb" name="Vórtice de Muerte" publicationId="f176-f140-74d8-da7d" page="57" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Poder Psíquico (Proyectil)">
+      <characteristics>
+        <characteristic name="Alcance" typeId="5bf6-378a-0cb7-b079">30cm</characteristic>
+        <characteristic name="F" typeId="12da-9b3e-f37b-bc35">10</characteristic>
+        <characteristic name="FP" typeId="10b5-aa5b-ccde-79cc">1</characteristic>
+        <characteristic name="Tipo" typeId="20e7-cbcb-1781-a732">Pesada 1, Área</characteristic>
+        <characteristic name="Detalles" typeId="a812-390d-dff6-dabd">Si cuando uses este poder el Bibliotecario no supera su chequeo psiquico, sitúa la plantilla de área de efecto del Vórtice de Muerte sobre el Bibliotecario (en este caso, la plantilla no
+se dispersará).</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="933b-eeef-e5f5-7a50" name="Honor del Capítulo" publicationId="f176-f140-74d8-da7d" page="58" hidden="false" typeId="c970-b832-a956-1ac8" typeName="Habilidad">
+      <characteristics>
+        <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Un Capellan personifica el honor del capitulo. El Capellán y todos los miembros de la escuadra a la que se ha unido están sujetos a Coraje.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7323-1f81-cafc-a43a" name="Liturgias de Combate" publicationId="f176-f140-74d8-da7d" page="58" hidden="false" typeId="c970-b832-a956-1ac8" typeName="Habilidad">
+      <characteristics>
+        <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">En el turno en el que asalta, un Capellán y todos los miembros de la escuadra a la que se ha unido pueden repetir las tiradas para impactar no superadas.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c6fa-de9f-e072-202e" name="Rosarius" publicationId="f176-f140-74d8-da7d" page="58" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un rosarius es un gorjal o amuleto llevado por los capellanes. Protege al Capellán de todo daño fisico y espiritual. El Rosarius proporciona una tirada de salvación invulnerable de 4+.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e9d2-05f5-51d6-8c9f" name="Crozius Arcanum" publicationId="f176-f140-74d8-da7d" page="58" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">El crozius arcanum es el simbolo del Capellán Marine Espacial. Se trata de un arma de energía.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9721-db35-9bdd-2b91" name="El Puño de Dorn" publicationId="f176-f140-74d8-da7d" page="91" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Se trata de un martillo de trueno de precisión. Todos los impactos producidos con él se resuelven con F10 y suman +1 a la tirada en la Tabla de Daños en Vehiculos.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="de7d-f46b-1217-6bf1" name="Reforzar las defensas" publicationId="f176-f140-74d8-da7d" page="71" hidden="false" typeId="c970-b832-a956-1ac8" typeName="Habilidad">
+      <characteristics>
+        <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">La miniatura puede reforzar una ruina antes de que comience la partida. Cuando despliegues, designa una ruina en tu área de despliegue. La tirada de Salvación por Cobertura de la ruina mejorará en +1 durante toda la partida. Una ruina solo puede reforzarse una vez.</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <sharedInfoGroups>
+    <infoGroup id="a854-6518-0bb5-958d" name="Capa de Camuflaje" hidden="false">
+      <infoLinks>
+        <infoLink id="ae75-9583-aa96-5c4b" name="Sigilo" hidden="false" targetId="f1ee-e19a-a3c3-6797" type="rule"/>
+        <infoLink id="746a-7d6f-9723-452f" name="Capa de Camuflaje" hidden="false" targetId="d9e3-423a-d9bf-c783" type="profile"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup id="0071-2c5a-4702-c19b" name="Munición Infierno" hidden="false">
+      <profiles>
+        <profile id="8860-4287-5c54-dcf4" name="Munición Infierno" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+          <characteristics>
+            <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">La miniatura equipada con la Munición Infierno reemplaza el perfil del Bolter por este.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="15ad-82ad-f1f8-ba2d" name="Envenenada" hidden="false" targetId="48c8-bb35-6595-03d1" type="rule"/>
+        <infoLink id="842c-86f0-106c-116d" name="Fuego Rápido" hidden="false" targetId="e15d-1437-cfb2-b8dd" type="rule"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup id="5965-9132-84cf-4f9b" name="Guantaletes de Ultramar" hidden="false">
+      <infoLinks>
+        <infoLink id="72b1-82ae-4e2d-4f72" name="Guantaletes de Ultramar" hidden="false" targetId="248e-1729-77d7-3a52" type="profile"/>
+        <infoLink id="4a3b-f7be-ef34-a526" name="Guantaletes de Ultramar" hidden="false" targetId="a10e-0e6e-83e6-d4ea" type="profile"/>
+        <infoLink id="6abe-4428-0d19-b22d" name="Asalto" hidden="false" targetId="8714-46ad-62c0-ce35" type="rule"/>
+        <infoLink id="0a71-4d91-033b-45cd" name="Puño de Combate" hidden="false" targetId="3982-7f84-5050-c9dd" type="rule"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup id="a7b8-412b-c64c-9d47" name="Armadura de Antilochus" hidden="false">
+      <infoLinks>
+        <infoLink id="32fb-ffc9-a7e7-fd2c" name="Armadura de Antilochus" hidden="false" targetId="6dc3-bb97-fb46-ab2e" type="profile"/>
+        <infoLink id="7556-b0ae-a582-bc15" name="Armadura de Exterminador" hidden="false" targetId="7e8c-f124-153a-4ffa" type="profile"/>
+        <infoLink id="7246-2f89-d0f3-bf5b" name="Baliza de Teleportación" hidden="false" targetId="d14e-d59a-7b95-bcb0" type="profile"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup id="b33d-0ce8-c3ba-a045" name="Bombardeo Orbital" hidden="false">
+      <infoLinks>
+        <infoLink id="7aa0-5eb3-f3e0-3272" name="Bombardeo Orbital" hidden="false" targetId="e739-bf65-a63f-fad3" type="profile"/>
+        <infoLink id="6929-d69b-a248-3b1b" name="Bombardeo Orbital" hidden="false" targetId="ebe1-e3d9-22ad-833c" type="profile"/>
+        <infoLink id="6aa9-a197-60fd-506e" name="Artillería" hidden="false" targetId="93b8-287b-914c-9e43" type="rule"/>
+        <infoLink id="3b68-b687-b7af-1400" name="Barrera de Artillería" hidden="false" targetId="eae1-d240-afcf-4b81" type="rule"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup id="795b-704d-ab71-04cc" name="Granadas Perforantes y de Fragmentación" hidden="false">
+      <infoLinks>
+        <infoLink id="aee0-bdc9-f53e-f2cd" name="Granadas de asalto" hidden="false" targetId="a9de-5c4c-d2c8-6676" type="infoGroup"/>
+        <infoLink id="eb83-1621-74f6-a9de" name="Granadas Perforantes" hidden="false" targetId="5013-1b13-3fea-2166" type="infoGroup"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup id="b1d2-544e-668e-7c81" name="Poderes Psíquicos" publicationId="f176-f140-74d8-da7d" page="57" hidden="false">
+      <infoLinks>
+        <infoLink id="ee82-d015-5981-4987" name="Movimiento Acelerado" hidden="false" targetId="f666-3710-1dd6-db29" type="infoGroup"/>
+        <infoLink id="0c92-bae9-5406-6d2e" name="Desintegración" hidden="false" targetId="026b-1533-4b16-e7db" type="infoGroup"/>
+        <infoLink id="bb98-b4e1-10d0-aceb" name="El Vengador" hidden="false" targetId="85f4-945d-7550-bac8" type="infoGroup"/>
+        <infoLink id="7748-a9e2-8dd8-6fcc" name="Puerta al Infinito" hidden="false" targetId="becd-4662-1baa-f7b9" type="infoGroup"/>
+        <infoLink id="c478-ff70-fd16-7a96" name="Vórtice de Muerte" hidden="false" targetId="c109-4a27-4b44-5c13" type="infoGroup"/>
+        <infoLink id="697b-6685-1836-75c8" name="Cúpula de Fuerza" hidden="false" targetId="33ad-419e-cd21-7d03" type="profile"/>
+        <infoLink id="8bf4-7b0b-0971-eb13" name="Maldición de la Máquina" hidden="false" targetId="eb55-027c-d5df-8270" type="profile"/>
+        <infoLink id="4d3a-c7d2-ee78-3a98" name="Zona de Anulación" hidden="false" targetId="2936-75df-59b1-edf6" type="profile"/>
+        <infoLink id="0a07-f80e-99c4-44c3" name="Poder de los Antiguos" hidden="false" targetId="35ff-843c-05eb-154a" type="profile"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup id="f666-3710-1dd6-db29" name="Movimiento Acelerado" hidden="false">
+      <infoLinks>
+        <infoLink id="aa2c-e1be-b5d8-2f4c" name="Veloces" hidden="false" targetId="d110-fc1c-250c-54d4" type="rule"/>
+        <infoLink id="10ea-0708-35f8-5f75" name="Movimiento Acelerado" hidden="false" targetId="1616-d4ad-c734-5138" type="profile"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup id="85f4-945d-7550-bac8" name="El Vengador" hidden="false">
+      <infoLinks>
+        <infoLink id="17f4-5e16-0b8d-e813" name="Plantilla" hidden="false" targetId="d094-3fd7-bd10-443d" type="rule"/>
+        <infoLink id="810e-565f-7772-2e95" name="El Vengador" hidden="false" targetId="1a64-a8af-7bdf-90de" type="profile"/>
+        <infoLink id="430a-70cc-f21b-fb21" name="Asalto" hidden="false" targetId="8714-46ad-62c0-ce35" type="rule"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup id="026b-1533-4b16-e7db" name="Desintegración" hidden="false">
+      <infoLinks>
+        <infoLink id="6b69-64ee-898a-0be2" name="Asalto" hidden="false" targetId="8714-46ad-62c0-ce35" type="rule"/>
+        <infoLink id="0183-60fd-f39b-7558" name="Desintegración" hidden="false" targetId="901d-0933-6b60-b442" type="profile"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup id="becd-4662-1baa-f7b9" name="Puerta al Infinito" hidden="false">
+      <infoLinks>
+        <infoLink id="a93e-113f-31aa-0f37" name="Despliegue Rápido" hidden="false" targetId="e73e-593a-922e-a47a" type="rule"/>
+        <infoLink id="e7bc-0b0e-d7ca-4782" name="Puerta al Infinito" hidden="false" targetId="9b8e-0942-f5f1-a2e1" type="profile"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup id="c109-4a27-4b44-5c13" name="Vórtice de Muerte" hidden="false">
+      <infoLinks>
+        <infoLink id="68c3-687b-4a66-6e39" name="Pesada" hidden="false" targetId="2e56-6b02-4343-0e40" type="rule"/>
+        <infoLink id="cd00-c285-23df-6091" name="Vórtice de Muerte" hidden="false" targetId="cf11-bc3c-f234-c5cb" type="profile"/>
+        <infoLink id="57bb-272d-3145-8bdc" name="Área" hidden="false" targetId="31c7-fe6c-af95-f0b5" type="rule"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup id="5794-0647-36bc-bed8" name="Honor del Capítulo" hidden="false">
+      <infoLinks>
+        <infoLink id="74f1-8e08-febd-3dad" name="Honor del Capítulo" hidden="false" targetId="933b-eeef-e5f5-7a50" type="profile"/>
+        <infoLink id="af99-7301-3415-59ac" name="Coraje" hidden="false" targetId="b23b-fb5c-4c8c-5ae4" type="rule"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup id="ab2c-c3e2-165b-630a" name="Crozius Arcanum" hidden="false">
+      <infoLinks>
+        <infoLink id="f61d-caa4-b92d-44f3" name="Crozius Arcanum" hidden="false" targetId="e9d2-05f5-51d6-8c9f" type="profile"/>
+        <infoLink id="2453-555b-b0d6-a15e" name="Energía" hidden="false" targetId="2528-3f58-a823-5b4a" type="rule"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup id="1182-441b-2637-4be5" name="Lanzagranadas Auxiliar" hidden="false">
+      <profiles>
+        <profile id="0e66-17cd-2af2-619f" name="Lanzagranadas Auxiliar" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+          <characteristics>
+            <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un lanzagranadas auxiliar puede dispararse además de otra arma. Cada vez que el lanzagranadas auxiliar dispara, el jugador que lo controla debe decidir el tipo de granada utilizado.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d1c6-bc8e-65d7-690b" name="Lanzagranadas Perforante" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+          <characteristics>
+            <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">30cm</characteristic>
+            <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">6</characteristic>
+            <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
+            <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="0574-0866-85e8-5aa0" name="Lanzagranadas Fragmentación" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+          <characteristics>
+            <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">30cm</characteristic>
+            <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">3</characteristic>
+            <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">6</characteristic>
+            <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 1, Área</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="3e78-7963-a6cf-e37b" name="Asalto" hidden="false" targetId="8714-46ad-62c0-ce35" type="rule"/>
+        <infoLink id="758b-b5bd-7601-9fdc" name="Área" hidden="false" targetId="31c7-fe6c-af95-f0b5" type="rule"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup id="6a7a-a310-c7ec-5b9f" name="El puño de Dorn" hidden="false">
+      <infoLinks>
+        <infoLink id="3f5c-76a7-fa33-f4e7" name="Martillo de Trueno" hidden="false" targetId="2f30-354a-4687-ab1f" type="infoGroup"/>
+        <infoLink id="d120-3a59-a8cf-7ec0" name="El Puño de Dorn" hidden="false" targetId="9721-db35-9bdd-2b91" type="profile"/>
+        <infoLink id="08ff-9728-b101-de4a" name="Armas de Precisión" hidden="false" targetId="8f62-4549-a7d1-f500" type="profile"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup id="bd2d-d88a-cac3-8257" name="Armas Reliquia" hidden="false">
+      <profiles>
+        <profile id="dbce-101a-ba8e-665e" name="Armas Reliquia" publicationId="f176-f140-74d8-da7d" page="97" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+          <characteristics>
+            <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un arma reliquia se considera un arma de energia, pero sus impactos se resuelven con Fuerza 6. A causa de su tamaño y peso, una miniatura equipada con un arma reliquia no puede conseguir ataques extras por estar equipada con un arma de combate cuerpo a cuerpo adicional.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="b0a6-d967-b1bd-aba2" name="Energía" hidden="false" targetId="2528-3f58-a823-5b4a" type="rule"/>
+      </infoLinks>
+    </infoGroup>
+  </sharedInfoGroups>
+</catalogue>
