@@ -1,30 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="125b-6623-f648-fc9a" name="Angeles Oscuros" revision="7" battleScribeVersion="2.03" authorName="Diego Muñiz" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorUrl="csddmv@gmail.com" library="false" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
-  <comment>Terminado</comment>
+<catalogue library="false" id="95e5-9796-aa2a-f5ee" name="Marines Espaciales del Caos" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="10" revision="3" battleScribeVersion="2.03" authorUrl="csddmv@gmail.com" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com csddmv@gmail.com" authorName="Diego Muñiz" publicationId="f744-f28b-4145-1729">
   <readme>Esto es for fun. Cualquier error o sugerencia serán bienvenidas
 
-En este sistema se agruparán las reglas del Codex de Angeles Oscuros utilizado en la 5ed de Warhammer 40k</readme>
+
+En este sistema se agruparán las reglas del Codex de Marines Espaciales del Caos utilizado en la 5ed de Warhammer 40k</readme>
   <categoryEntries>
-    <categoryEntry id="2f64-c408-71a7-8bad" name="Capitán" hidden="false"/>
-    <categoryEntry id="3da0-9223-0200-f593" name="Señor de la Compañía" hidden="false"/>
-    <categoryEntry id="1fc2-37c7-602d-d156" name="Señor de la Forja" hidden="false"/>
-    <categoryEntry id="0505-9bca-0c47-4e0a" name="Supremo Maestre" hidden="false">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84b7-4e4b-11c8-e8fc" type="max"/>
-      </constraints>
-    </categoryEntry>
-    <categoryEntry id="345c-4626-cf9d-30e3" name="Señor del Ala de Muerte" publicationId="822e-763d-4a6a-b7fc" hidden="false">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4848-e68c-ccbf-5ce8" type="max"/>
-      </constraints>
-    </categoryEntry>
-    <categoryEntry id="9733-b64b-888c-319f" name="Señor del Ala de Cuervo" publicationId="822e-763d-4a6a-b7fc" hidden="false">
-      <constraints>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="024a-a444-8b84-b09d" type="max"/>
-      </constraints>
-    </categoryEntry>
-    <categoryEntry name="Vehículo" id="bdbd-c3c1-520b-ceb1" hidden="false"/>
-    <categoryEntry name="Arma Limitada" id="354e-8430-56e8-0d17" hidden="false"/>
+    <categoryEntry name="Khorne" id="721c-fb31-07a4-2ff4" hidden="false"/>
+    <categoryEntry name="Tzeentch" id="0ce6-644c-8b95-d49b" hidden="false"/>
+    <categoryEntry name="Slaanesh" id="074b-efba-2600-079f" hidden="false"/>
+    <categoryEntry name="Nurgle" id="55bd-676b-dc85-563f" hidden="false"/>
   </categoryEntries>
   <entryLinks>
     <entryLink id="27db-559c-2f13-42ee" name="Señor de la Compañía" hidden="false" collective="false" import="true" targetId="c1d1-f843-3bea-ab6e" type="selectionEntry">
@@ -34,19 +18,17 @@ En este sistema se agruparán las reglas del Codex de Angeles Oscuros utilizado 
         <categoryLink id="5cc7-ebcd-c9b5-0f66" name="Personaje Independiente" hidden="false" targetId="c0a6-b371-006e-1e70" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="8370-28b2-07ac-36a7" name="Belial, Señor del Ala de Muerte" hidden="false" collective="false" import="true" targetId="717a-3e04-954f-996f" type="selectionEntry">
+    <entryLink id="8370-28b2-07ac-36a7" name="Fabius Bilis" hidden="false" collective="false" import="true" targetId="717a-3e04-954f-996f" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="e1d9-80d1-0c16-ee86" name="CG" hidden="false" targetId="dd59-30d7-da4f-6ea4" primary="false"/>
         <categoryLink id="098d-3d9c-e2a8-c195" name="Personaje Especial" hidden="false" targetId="ee338739-6edf-4620-a2cc-f38d5dd21606" primary="true"/>
-        <categoryLink id="e40b-ccb3-8400-13c1" name="Señor del Ala de Muerte" hidden="false" targetId="345c-4626-cf9d-30e3" primary="false"/>
         <categoryLink id="c8c9-4000-2234-17b6" name="Personaje Independiente" hidden="false" targetId="c0a6-b371-006e-1e70" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="ce16-c9a1-cb98-e1ac" name="Azrael, Supremo Maestre" hidden="false" collective="false" import="true" targetId="1e0e-dc31-f1ae-8b8f" type="selectionEntry">
+    <entryLink id="ce16-c9a1-cb98-e1ac" name="Abaddon el Saqueador" hidden="false" collective="false" import="true" targetId="1e0e-dc31-f1ae-8b8f" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="3c9d-55e7-b873-1148" name="CG" hidden="false" targetId="dd59-30d7-da4f-6ea4" primary="false"/>
         <categoryLink id="5b64-b1fe-cf60-aeff" name="Personaje Especial" hidden="false" targetId="ee338739-6edf-4620-a2cc-f38d5dd21606" primary="true"/>
-        <categoryLink id="0802-d924-8827-c31e" name="Supremo Maestre" hidden="false" targetId="0505-9bca-0c47-4e0a" primary="false"/>
         <categoryLink id="9556-3178-3315-62c9" name="Personaje Independiente" hidden="false" targetId="c0a6-b371-006e-1e70" primary="false"/>
       </categoryLinks>
     </entryLink>
@@ -151,7 +133,7 @@ En este sistema se agruparán las reglas del Codex de Angeles Oscuros utilizado 
         <categoryLink name="Vehículo" hidden="false" id="2a05-939d-93e0-e5b4" targetId="bdbd-c3c1-520b-ceb1" primary="false"/>
       </categoryLinks>
     </entryLink>
-    <entryLink id="9cc7-48c8-3dfe-aa4a" name="Ezequiel, Gran Maestre Bibliotecario" hidden="false" collective="false" import="true" targetId="dc77-03b8-e78d-9cf7" type="selectionEntry">
+    <entryLink id="9cc7-48c8-3dfe-aa4a" name="Huron Blackheart" hidden="false" collective="false" import="true" targetId="dc77-03b8-e78d-9cf7" type="selectionEntry">
       <categoryLinks>
         <categoryLink id="40b0-57b3-79fd-f042" name="CG" hidden="false" targetId="dd59-30d7-da4f-6ea4" primary="false"/>
         <categoryLink id="0746-ba69-399a-9e38" name="Personaje Especial" hidden="false" targetId="ee338739-6edf-4620-a2cc-f38d5dd21606" primary="true"/>
@@ -916,13 +898,13 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
       <selectionEntryGroups>
         <selectionEntryGroup id="5035-38a8-288d-15a0" name="Marines Espaciales" hidden="false" collective="false" import="true" defaultSelectionEntryId="c9b1-6970-e6e0-78e7" sortIndex="2">
           <constraints>
-            <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="238f-11fa-913f-384e" type="min"/>
+            <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="238f-11fa-913f-384e" type="min"/>
             <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46ec-6d3c-de7d-e84e" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="c9b1-6970-e6e0-78e7" name="Marine Espacial" hidden="false" collective="false" import="true" type="model" defaultAmount="4">
+            <selectionEntry id="c9b1-6970-e6e0-78e7" name="Marine Espacial" hidden="false" collective="false" import="true" type="model">
               <constraints>
-                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="ae4a-123e-ac6c-3d18" includeChildSelections="false"/>
+                <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="ae4a-123e-ac6c-3d18" includeChildSelections="false"/>
                 <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="8c65-78ac-f0c7-547e" includeChildSelections="false"/>
               </constraints>
               <infoLinks>
@@ -3151,68 +3133,37 @@ incendiarios Castellano. Declara qué tipo de misil deseas usar antes de que el 
         <cost name="Pts" typeId="puntos" value="250"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1e0e-dc31-f1ae-8b8f" name="Azrael, Supremo Maestre" publicationId="f176-f140-74d8-da7d" page="46" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="1e0e-dc31-f1ae-8b8f" name="Abaddon el Saqueador" page="" hidden="false" collective="false" import="true" type="model">
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ab3-2143-d38e-15f1" type="max"/>
       </constraints>
       <profiles>
-        <profile id="70f0-959f-60b4-b20f" name="Comandante Azrael" publicationId="822e-763d-4a6a-b7fc" page="46" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
+        <profile name="La marca del Predilecto" typeId="c970-b832-a956-1ac8" typeName="Habilidad" hidden="false" id="2cc8-0211-70ef-f399" publicationId="f744-f28b-4145-1729" page="46">
           <characteristics>
-            <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería (Personaje)</characteristic>
-            <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">5</characteristic>
-            <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">5</characteristic>
-            <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4 (6)</characteristic>
-            <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
-            <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">4</characteristic>
-            <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">5</characteristic>
-            <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">4</characteristic>
-            <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
-            <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">2+</characteristic>
+            <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Con el transcurso de los milenios, Abaddon ha asimilado todas las marcas del Caos que le han sido otorgadas y en la actualidad goza de una sola marca que combina todas las recompensas ganadas. La marca de Tzeentch hace que su tirada de salvación invulnerable sea de 4+. El resto de beneficios están incluidos en su perfil de atributos. Como la marca es prueba de que los Dioses del Caos tienen un plan para Abaddon, este es inmune a la regla especial Muerte Instantánea.</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink id="67cb-c9a8-ffd3-15ba" name="Personaje independiente" hidden="false" targetId="61b4-c5bb-9d85-8506" type="rule"/>
-        <infoLink id="ca7b-274b-31e3-1956" name="Ritos de batalla" hidden="false" targetId="740d-d36a-f603-7ee7" type="rule"/>
-        <infoLink id="0fd6-584c-f6d8-8c92" name="Granadas Perforantes y de Fragmentación" hidden="false" targetId="795b-704d-ab71-04cc" type="infoGroup"/>
         <infoLink id="d75d-77c1-d1a0-f625" name="Coraje" hidden="false" targetId="b23b-fb5c-4c8c-5ae4" type="rule"/>
+        <infoLink name="Abaddon" id="e3ef-765e-6db5-4f5e" hidden="false" type="profile" targetId="f35e-98d0-7f3e-ccca"/>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry id="6bf9-0e59-be6c-5a3d" name="Espada de los Secretos" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="6bf9-0e59-be6c-5a3d" name="Espada demonio Drach&apos;nyen y Garra de Horus" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2bc-5e25-73bb-c62f" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17a1-ef1a-4ff8-06ba" type="min"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6c41-f28c-08fa-9270-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6c41-f28c-08fa-9270-max" includeChildSelections="false"/>
           </constraints>
           <profiles>
-            <profile id="cd31-9ffb-19c1-7418" name="Espada de los Secretos" publicationId="822e-763d-4a6a-b7fc" page="46" hidden="false" typeId="c970-b832-a956-1ac8" typeName="Habilidad">
+            <profile id="cd31-9ffb-19c1-7418" name="Espada demonio Drach&apos;nyen y Garra de Horus" publicationId="f744-f28b-4145-1729" page="46" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
               <characteristics>
-                <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Se trata de un arma de energía de precisión que también confiere Fuerza 6 a su portador en combate cuerpo a cuerpo.</characteristic>
+                <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Con el transcurso de los milenios, Abaddon ha asimilado todas las marcas del Caos que le han sido otorgadas y en la actualidad goza de una sola marca que combina todas las recompensas ganadas. La marca de Tzeentch hace que su tirada de salvación invulnerable sea de 4+. El resto de beneficios están incluidos en su perfil de atributos. Como la marca es prueba de que los Dioses del Caos tienen un plan para Abaddon, este es inmune a la regla especial Muerte Instantánea.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="e6fd-00d9-8fb5-7208" name="Energía" hidden="false" targetId="2528-3f58-a823-5b4a" type="rule"/>
-            <infoLink id="d286-738c-ece3-844a" name="Armas de Precisión" hidden="false" targetId="8f62-4549-a7d1-f500" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="puntos" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="0fc6-f2d4-3efb-a410" name="Furia de Lión" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eea7-ffbf-8ae1-6043" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5769-9b9e-30fa-39e0" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="4539-7a50-c6ea-df5e" name="Furia de Lión" publicationId="822e-763d-4a6a-b7fc" page="46" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
-              <characteristics>
-                <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Se trata de un combirrifle de plasma de precisión.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="0eb5-76a6-5483-f592" name="Combiplasma" hidden="false" targetId="dbbe-5d72-2a86-7ea0" type="infoGroup"/>
-            <infoLink id="d193-a06b-cb48-e0c0" name="Armas de Precisión" hidden="false" targetId="8f62-4549-a7d1-f500" type="profile"/>
+            <infoLink name="Arma Demonio" id="4022-950b-91a3-c5b6" hidden="false" type="infoGroup" targetId="0ccb-c3ab-d1fe-6792"/>
           </infoLinks>
           <costs>
             <cost name="Pts" typeId="puntos" value="0"/>
@@ -3220,14 +3171,17 @@ incendiarios Castellano. Declara qué tipo de misil deseas usar antes de que el 
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="7dab-caeb-ea2e-7f95" name="Pistola Bolter" hidden="false" collective="false" import="true" targetId="9f67-3f57-ebe8-1dbb" type="selectionEntry">
+        <entryLink import="true" name="Armadura de Exterminador" hidden="false" id="7a76-dfa4-6100-10b5" type="selectionEntry" targetId="13e3-4d39-1e99-6cd3"/>
+        <entryLink import="true" name="Bolter Acoplado" hidden="false" id="4501-0632-575c-6ff8" type="selectionEntry" targetId="8551-e10e-cfa6-a767">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8765-8cce-b29c-f521" type="min"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9dd4-9255-8abb-3930-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9dd4-9255-8abb-3930-max" includeChildSelections="false"/>
           </constraints>
         </entryLink>
+        <entryLink import="true" name="Reliquia Personal" hidden="false" id="afb0-c566-6647-13bf" type="selectionEntry" targetId="171d-7d8a-d399-386d"/>
       </entryLinks>
       <costs>
-        <cost name="Pts" typeId="puntos" value="225"/>
+        <cost name="Pts" typeId="puntos" value="275"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6e28-fdc2-e879-9ead" name="Motocicleta de Ataque" hidden="false" collective="false" import="true" type="model">
@@ -3687,7 +3641,8 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
     </selectionEntry>
     <selectionEntry id="13e3-4d39-1e99-6cd3" name="Armadura de Exterminador" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9d5-5fc7-d8c5-545a" type="max"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8277-1a13-0627-553e-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8277-1a13-0627-553e-max" includeChildSelections="false"/>
       </constraints>
       <infoLinks>
         <infoLink id="535c-d4f6-db5e-3439" name="Armadura de Exterminador" hidden="false" targetId="f061-c294-f99b-c1ca" type="infoGroup"/>
@@ -3731,19 +3686,15 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
     </selectionEntry>
     <selectionEntry id="9657-fbb1-b1f9-5516" name="Servoarmadura" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="326e-afae-be94-f864" type="max"/>
-        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0462-42f7-28f8-a6cd" type="min"/>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="de17-5df4-0a73-cacc-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de17-5df4-0a73-cacc-max" includeChildSelections="false"/>
       </constraints>
-      <profiles>
-        <profile id="baaa-ecce-25bb-62c1" name="Servoarmadura" publicationId="f176-f140-74d8-da7d" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
-          <characteristics>
-            <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Las miniaturas equipadas con Servoarmadura disponen de una tirada de salvación por armadura de 3+.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
       <costs>
         <cost name="Pts" typeId="puntos" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Servoarmadura" id="1e63-c22f-c033-33f1" hidden="false" type="profile" targetId="35b6-b813-1033-e16a"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="8292-d319-84f5-7f19" name="Motocicleta Marines Espaciales" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -4147,122 +4098,91 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
         <infoLink name="Pala Excavadora" id="a3c3-3043-c103-9bf1" hidden="false" type="profile" targetId="77a2-f623-34ea-ba2a"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry id="717a-3e04-954f-996f" name="Belial, Señor del Ala de Muerte" publicationId="822e-763d-4a6a-b7fc" page="42" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="717a-3e04-954f-996f" name="Fabius Bilis" publicationId="822e-763d-4a6a-b7fc" page="42" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="813b-0420-913a-532a" type="max"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe26-48d7-4afa-6df4" includeChildSelections="false"/>
       </constraints>
       <profiles>
-        <profile id="deb6-081e-8b2b-ecc9" name="Belial, Señor del Ala de Muerte" publicationId="822e-763d-4a6a-b7fc" page="42" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
+        <profile name="El Cirujano" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="3f1d-2583-7f0e-0643" publicationId="f744-f28b-4145-1729" page="53">
           <characteristics>
-            <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería (Personaje)</characteristic>
-            <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">5</characteristic>
-            <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">5</characteristic>
-            <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
-            <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
-            <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">3</characteristic>
-            <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">5</characteristic>
-            <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
-            <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
-            <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">2+</characteristic>
+            <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Se trata de un complicado artefacto, mitad máquina tecnológica, mitad objeto mágico, que está conectado a la médula espinal de Bilis y que extiende sus miembros aracnoides por encima de sus hombros. El negro icor vital que el Cirujano bombea por el cuerpo de Bilis está cargado con la inmortal energia de la disformidad. Para representar sus efectos en combate, Fabius Bilis dispone de dos Ataques adicionales y un modificador de +1 a la Fuerza (incluidos en su perfil) y dispone además de la regla especial ¡No hay dolor!</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Guerreros modificados" typeId="c970-b832-a956-1ac8" typeName="Habilidad" hidden="false" id="dac5-48a1-cb12-1643" publicationId="f744-f28b-4145-1729" page="53">
+          <characteristics>
+            <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Si incluyes a Fabius Bilis en tu ejército, este puede modificar a alguno de los guerreros que se encuentren bajo su control mediante la manipulación genética y las drogas. Por un coste de +3 ptos por miniatura, cualquier número de escuadras de Marines Espaciales del Caos puede
+&quot;modificarse&quot; con el tratamiento de Bilis. Sin embargo, los intentos de Fabius Bilis por mejorar a sus guerreros no siempre funcionan todo lo bien que cabría esperar. Al inicio de la batalla, cuando ambos bandos hayan desplegado pero antes del inicio del primer turno, tira 1D6 por cada escuadra modificada y consulta la tabla siguiente.
+
+
+1D6 Resultado
+
+
+1 - ¡Furia bersérker!: Los guerreros se atacan unos a otros con una furia desmedida. Efectúa una tirada de salvación por armadura por cada guerrero y retira a aquellos que no la superen. Los supervivientes están sujetos a coraje y suman +1 a su atributo de Fuerza durante el resto de la partida.
+
+
+2-5 - Mutación estable: Esta vez los experimentos de Bilis han sido un éxito y los guerreros modificados están sujetos a coraje y suman +1 al atributo de Fuerza durante el resto de la partida.
+
+
+6 - ¡Mi gran creación!: Las habilidades de cada guerrero se ven mejoradas hasta unos niveles sobrehumanos. Los guerreros están sujetos a coraje y suman +2 a su atributo de Fuerza durante toda la partida. Por desgracia, ni siquiera la constitución de
+estos guerreros podrá aguantar este nivel de actuación durante mucho tiempo. Al término del turno de cada jugador, uno de los componentes de la escuadra será retirado como baja (la miniatura será elegida por el jugador del Caos).</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink id="f4b1-c38d-4769-fc26" name="Personaje independiente" hidden="false" targetId="61b4-c5bb-9d85-8506" type="rule"/>
-        <infoLink id="8e60-de97-6a7d-bf03" name="Ritos de batalla" hidden="false" targetId="740d-d36a-f603-7ee7" type="rule"/>
         <infoLink id="fc2a-cb11-56ee-9685" name="Coraje" hidden="false" targetId="b23b-fb5c-4c8c-5ae4" type="rule"/>
-        <infoLink id="3260-9e3c-b6ed-cba4" name="Armadura de Exterminador" hidden="false" targetId="f061-c294-f99b-c1ca" type="infoGroup"/>
+        <infoLink name="No Hay Dolor" id="377a-0394-f183-5f75" hidden="false" type="rule" targetId="fe28-c924-099d-aa4e"/>
+        <infoLink name="Granadas Perforantes y de Fragmentación" id="1479-6c8e-4cf9-81f6" hidden="false" type="infoGroup" targetId="795b-704d-ab71-04cc"/>
+        <infoLink name="Fabius Bilis" id="c601-ed32-ac0f-5841" hidden="false" type="profile" targetId="5b2e-ed2c-077d-ebe0"/>
       </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="69ab-740a-dc7a-473a" name="Equipo" hidden="false" collective="false" import="true" defaultSelectionEntryId="7bba-51c6-a135-25d5">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2d2-cca9-cc4e-95a8" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4cfd-2bcc-2a5c-e993" type="min"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="7bba-51c6-a135-25d5" name="Espada y Bolter de Asalto" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9997-b917-696b-2b95" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="c6df-c999-8a4c-592d" name="La Espada del Silencio" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c89-0f70-4458-7c9f" type="min"/>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a12d-f11b-642d-92ca" type="max"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="05a2-9155-3740-8703" name="La Espada del Silencio" publicationId="822e-763d-4a6a-b7fc" page="42" hidden="false" typeId="c970-b832-a956-1ac8" typeName="Habilidad">
-                      <characteristics>
-                        <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Se trata de un arma de energía de precisión.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink id="e039-a7ac-ba96-58ef" name="Energía" hidden="false" targetId="2528-3f58-a823-5b4a" type="rule"/>
-                    <infoLink id="ea80-a57d-561e-7c22" name="Armas de Precisión" hidden="false" targetId="8f62-4549-a7d1-f500" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="Pts" typeId="puntos" value="0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <entryLinks>
-                <entryLink id="23ab-a2df-97b1-53da" name="Bolter de Asalto" hidden="false" collective="false" import="true" targetId="a5d0-4056-ad38-66dc" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5b4-39c7-0f86-5227" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="Pts" typeId="puntos" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="e5d6-028d-d943-69e0" name="Martillo y Escudo" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4be5-3e50-3d4a-f2ba" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="c29a-4452-0c5b-ac09" name="Martillo de Trueno" hidden="false" collective="false" import="true" targetId="f7c5-632c-7c49-4735" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="051e-7756-baeb-8f33" type="min"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="7820-8aaa-6884-e6dd" name="Escudo de Tormenta" hidden="false" collective="false" import="true" targetId="b809-4f58-c37f-459f" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="373d-6006-9543-f505" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="Pts" typeId="puntos" value="0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="a917-2118-a81c-ecde" name="Cuchillas Relampago" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac14-1bbc-4c12-bfa1" type="max"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="9a8d-3700-5fe3-62eb" name="Cuchilla Relámpago" hidden="false" collective="false" import="true" targetId="b653-7261-455e-348c" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da75-5746-4569-317a" type="min"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="9c63-422e-34ad-8abf" name="Cuchilla Relámpago" hidden="false" collective="false" import="true" targetId="b653-7261-455e-348c" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2df-8d22-6b2f-d758" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <costs>
-                <cost name="Pts" typeId="puntos" value="0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <costs>
-        <cost name="Pts" typeId="puntos" value="130"/>
+        <cost name="Pts" typeId="puntos" value="160"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Servoarmadura" hidden="false" id="6153-db79-a415-972e" type="selectionEntry" targetId="9657-fbb1-b1f9-5516"/>
+        <entryLink import="true" name="Pistola Bolter" hidden="false" id="ad5e-2ac1-8700-8e23" type="selectionEntry" targetId="9f67-3f57-ebe8-1dbb">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0e39-bd8c-dc71-2c92-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0e39-bd8c-dc71-2c92-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Inyector Xyclos" hidden="false" id="3a75-9b6e-4f66-94f7" publicationId="f744-f28b-4145-1729" page="53">
+          <profiles>
+            <profile name="Inyector Xyclos" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="db68-068e-bd47-cf16" publicationId="f744-f28b-4145-1729" page="53">
+              <characteristics>
+                <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">45 cm</characteristic>
+                <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">n/a</characteristic>
+                <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">6</characteristic>
+                <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 3</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Inyector Xyclos" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="8ece-2434-5bfb-dc8c" publicationId="f744-f28b-4145-1729" page="53">
+              <characteristics>
+                <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">El arma no tiene atributo de Fuerza, puesto que siempre hiere con un resultado de 2+ en 1D6.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="db8b-bdc7-98b3-6473-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db8b-bdc7-98b3-6473-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Báculo del Tormento" hidden="false" id="e84f-c14b-1963-57a0">
+          <profiles>
+            <profile name="Báculo del Tormento" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="5bd6-d060-63a5-a2e0" publicationId="f744-f28b-4145-1729" page="53">
+              <characteristics>
+                <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">El Báculo del Tormento se considera un arma de combate cuerpo a cuerpo. Cualquier enemigo que sufra una o más heridas del Báculo del Tormento quedará inmediatamente discapacitado por el dolor y sufrirá una muerte instantánea, independientemente de cuál fuera su Resistencia.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="753f-8a21-6d23-01e4-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="753f-8a21-6d23-01e4-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry id="6aef-9466-2692-c242" name="Sammel, Señor del Ala de Cuervo" publicationId="822e-763d-4a6a-b7fc" page="45" hidden="false" collective="false" import="true" type="unit">
       <constraints>
@@ -4406,96 +4326,54 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
         <cost name="Pts" typeId="puntos" value="0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="dc77-03b8-e78d-9cf7" name="Ezequiel, Gran Maestre Bibliotecario" publicationId="822e-763d-4a6a-b7fc" page="40" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="dc77-03b8-e78d-9cf7" name="Huron Blackheart" page="" hidden="false" collective="false" import="true" type="unit">
       <constraints>
         <constraint field="selections" scope="roster" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aff3-b288-5dd0-d273" type="max"/>
       </constraints>
       <profiles>
-        <profile id="cb98-6844-6de6-e72a" name="Ezequiel, Gran Maestre Bibliotecario" publicationId="822e-763d-4a6a-b7fc" page="40" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
+        <profile id="71ee-d5fc-476c-14a6" name="Hamadrya" publicationId="f744-f28b-4145-1729" page="57" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
           <characteristics>
-            <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería (Personaje)</characteristic>
-            <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">5</characteristic>
-            <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">5</characteristic>
-            <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
-            <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
-            <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">3</characteristic>
-            <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">5</characteristic>
-            <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
-            <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
-            <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">2+</characteristic>
+            <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Huron tiene una mascota de naturaleza desconocida a la que él llama su Hamadrya. La bestia parece semi inteligente y permanece al lado de Huron en todo momento, subida en su hombro o escondida tras él si las cosas se ponen muy feas. La criatura nunca lucha o trata de ayudar a
+su maestro directamente, pero parece manifestar unos curiosos poderes psíquicos que Huron utiliza en su ventaja.
+
+
+Hamadrya se considera un familiar, excepto que sus efectos convierten a Huron en un psíquico y le proporciona el poder psíquico Distorsión Temporal.</characteristic>
           </characteristics>
         </profile>
-        <profile id="71ee-d5fc-476c-14a6" name="Escudo de los Secretos" publicationId="822e-763d-4a6a-b7fc" page="40" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+        <profile name="Invulnerable" typeId="c970-b832-a956-1ac8" typeName="Habilidad" hidden="false" id="2ad9-d638-15c8-0372" publicationId="f744-f28b-4145-1729" page="57">
           <characteristics>
-            <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">El Escudo de los Secretos es una armadura artesanal.</characteristic>
-          </characteristics>
-        </profile>
-        <profile id="4307-fdd3-913b-5b12" name="Libro de la Salvación" publicationId="822e-763d-4a6a-b7fc" page="40" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
-          <characteristics>
-            <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">los que se encuentran cerca del Libro de la Salvación se ven impulsados a combatir con mayor determinación. Todas las unidades de Angeles Oscuros con al menos una miniatura en un radio de 30 cm de Ezequiel tienen coraje.</characteristic>
+            <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Huron tiene una tirada de salvación Invulnerable de 5+</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <rules>
-        <rule id="4756-1d8d-7558-2fbd" name="Psíquico" hidden="false"/>
+        <rule name="Psíquico" id="0042-7568-c460-6715" hidden="false">
+          <description>La miniatura se considera Psíquico</description>
+        </rule>
       </rules>
       <infoLinks>
         <infoLink id="cdde-2054-b009-4f87" name="Personaje independiente" hidden="false" targetId="61b4-c5bb-9d85-8506" type="rule"/>
-        <infoLink id="2bc7-e338-7c22-5464" name="Y no conocerán el miedo" hidden="false" targetId="5ce7-70c4-4a99-db0d" type="rule"/>
         <infoLink id="f875-335d-f0de-c773" name="Coraje" hidden="false" targetId="b23b-fb5c-4c8c-5ae4" type="rule"/>
-        <infoLink id="c14d-2b88-3ae9-2f72" name="Capucha Psíquica" hidden="false" targetId="89ab-4bb4-00e6-2105" type="profile"/>
+        <infoLink name="Huron" id="1355-be9f-fb34-034f" hidden="false" type="profile" targetId="df82-e71e-0327-261c"/>
+        <infoLink name="Granadas Perforantes y de Fragmentación" id="07aa-d6bc-8300-ac18" hidden="false" type="infoGroup" targetId="795b-704d-ab71-04cc"/>
+        <infoLink name="Distorsión Temporal" id="03cb-bce8-13de-c1d7" hidden="false" type="profile" targetId="faef-8a27-3911-217e"/>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry id="9120-35f4-4b34-92ad" name="Liberadora" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="bf0f-ba06-7230-f7eb" name="Garra del Tirano" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cebd-b013-a8b7-fe6d" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7db7-fd99-ee1b-6fa5" type="min"/>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6513-4283-dcf0-b558-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6513-4283-dcf0-b558-max" includeChildSelections="false"/>
           </constraints>
           <profiles>
-            <profile id="4d23-4fcf-875a-e4b9" name="Liberadora" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+            <profile name="Garra del Tirano" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="3f21-f2c0-39cd-3488" publicationId="f744-f28b-4145-1729" page="57">
               <characteristics>
-                <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Se trata de una pistola bólter de precisión.</characteristic>
+                <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">La Garra del Tirano es un brazo biónico en forma de garra de oso que fue construido para reemplazar el propio brazo de Huron. La Garra es un puño de combate que lleva incorporado un lanzallamas pesado.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="e79f-2a69-79a4-751e" name="Pistola Bolter" hidden="false" targetId="42da-250f-adf8-65a7" type="profile"/>
-            <infoLink id="c6da-f5a5-9af5-245a" name="Pistola" hidden="false" targetId="ff92-d10b-2808-eb79" type="rule"/>
-            <infoLink id="3b49-bfa4-d815-7636" name="Armas de Precisión" hidden="false" targetId="8f62-4549-a7d1-f500" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="puntos" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="bf0f-ba06-7230-f7eb" name="Azote de Traidores" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4cd5-317d-1841-f634" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdd2-b853-4ab0-7353" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="9a49-e034-1ea8-7d2d" name="Azote de Traidores" publicationId="822e-763d-4a6a-b7fc" page="40" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
-              <characteristics>
-                <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Es un arma psíquica de precisión.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="2076-9c93-2f8e-6db7" name="Arma Psíquica" hidden="false" targetId="2434-afee-c960-b04e" type="profile"/>
-            <infoLink id="d25d-99d2-0aa7-4608" name="Armas de Precisión" hidden="false" targetId="8f62-4549-a7d1-f500" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="Pts" typeId="puntos" value="0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="ca9b-908f-ee1b-c530" name="Poderes Psíquicos" publicationId="822e-763d-4a6a-b7fc" page="39" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3563-baa1-3ed2-8ae9" type="max"/>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1fa-2b70-585e-3d67" type="min"/>
-          </constraints>
-          <infoLinks>
-            <infoLink id="3a0f-1652-39fe-967f" name="Escudo de Energía" hidden="false" targetId="9b8e-0942-f5f1-a2e1" type="profile"/>
-            <infoLink id="1dfc-be2f-bf40-3b81" name="Parásito Mental" hidden="false" targetId="dbe3-74a1-45ff-aea0" type="profile"/>
-            <infoLink id="6004-9b2b-7763-0827" name="Fuego Infernal" hidden="false" targetId="65ed-4c29-7b27-7677" type="infoGroup"/>
+            <infoLink name="Puño de Combate" id="0d2f-32f1-34f4-34ac" hidden="false" type="infoGroup" targetId="25b3-7b9d-199b-6d35"/>
+            <infoLink name="Lanzallamas Pesado" id="c472-a642-5cca-bcab" hidden="false" type="infoGroup" targetId="37a7-0ae8-6e2b-1bb7"/>
           </infoLinks>
           <costs>
             <cost name="Pts" typeId="puntos" value="0"/>
@@ -4505,6 +4383,16 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
       <costs>
         <cost name="Pts" typeId="puntos" value="170"/>
       </costs>
+      <entryLinks>
+        <entryLink import="true" name="Servoarmadura" hidden="false" id="08be-ef36-c7f0-962d" type="selectionEntry" targetId="9657-fbb1-b1f9-5516"/>
+        <entryLink import="true" name="Arma de energía" hidden="false" id="2b26-f7d6-2bf5-d6d6" type="selectionEntry" targetId="b8c3-697d-5086-0aea">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="886d-cb71-a516-3dd5-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="886d-cb71-a516-3dd5-max" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Reliquia Personal" hidden="false" id="430b-be79-3c09-ece0" type="selectionEntry" targetId="171d-7d8a-d399-386d"/>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry id="81a6-dc08-e9a0-29b8" name="Rifle de Plasma" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -6041,6 +5929,27 @@ no tendrá que efectuar un chequeo de moral (dos bajas de nueve es menos del 25%
         <cost name="Pts" typeId="puntos" value="100"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="8551-e10e-cfa6-a767" name="Bolter Acoplado" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c97f-2674-06f1-e5be" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="cc30-de47-0271-e88e" name="Bolter Acoplado" hidden="false" targetId="511a-631b-5fab-b93a" type="infoGroup"/>
+      </infoLinks>
+      <costs>
+        <cost name="Pts" typeId="puntos" value="0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Reliquia Personal" hidden="false" id="171d-7d8a-d399-386d">
+      <infoLinks>
+        <infoLink name="Reliquia Personal" id="68a5-086f-3a79-ecb5" hidden="false" type="profile" targetId="8178-5b4d-50e7-634e"/>
+        <infoLink name="Reliquia" id="bfa3-ab35-3e89-7771" hidden="false" type="profile" targetId="94cb-089c-f584-85a2"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f459-4e13-b05d-0a60-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f459-4e13-b05d-0a60-max" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="4950-e110-16a8-4097" name="Transporte Asignado" hidden="false" collective="false" import="true" defaultSelectionEntryId="7846-586f-4bbf-2473">
@@ -6159,12 +6068,6 @@ Si decides dividir una unidad en escuadras de combate, a partir de ese momento c
         <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Cada servobrazo garantiza a la miniatura que lo porta un Ataque adicional en combate de Iniciativa 1 y Fuerza 8 que ignora las tiradas de salvación por armadura</characteristic>
       </characteristics>
     </profile>
-    <profile id="9b8e-0942-f5f1-a2e1" name="Escudo de Energía" publicationId="822e-763d-4a6a-b7fc" page="39" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Poder Psíquico">
-      <characteristics>
-        <characteristic name="Alcance" typeId="fd64-cbc4-94de-24cc">Unidad</characteristic>
-        <characteristic name="Detalles" typeId="ad96-dfa4-b4ed-656d">Este poder confiere al bibliotecario un tipo especial de tirada de salvación invulnerable que se realiza como si fuera un chequeo psíquico en vez de como una tirada de salvación invulnerable normal. Cada vez que el bibliotecario sufra una herida podrá efectuar una tirada de salvación normal o utilizar este poder psiquico (una sola vez por turno). Si el bibliotecario decide utilizar el poder psíquico, tendrá que realizar un chequeo psíquico: si lo supera, habrá salvado la herida (como si hubiera superado una tirada de salvación invulnerable); si no lo supera, el bibliotecario resultará herido, como si hubiera fallado una tirada de salvación invulnerable. Los ataques que ignoran las tiradas de salvación invulnerables no pueden ser detenidos por el escudo de energía.</characteristic>
-      </characteristics>
-    </profile>
     <profile id="933b-eeef-e5f5-7a50" name="Honor del Capítulo" publicationId="822e-763d-4a6a-b7fc" page="37" hidden="false" typeId="c970-b832-a956-1ac8" typeName="Habilidad">
       <characteristics>
         <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Un Capellan personifica el honor del capitulo. El Capellán y todos los miembros de la escuadra a la que se ha unido están sujetos a Coraje.</characteristic>
@@ -6185,151 +6088,11 @@ Si decides dividir una unidad en escuadras de combate, a partir de ese momento c
         <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">El crozius arcanum es el simbolo del Capellán Marine Espacial. Se trata de un arma de energía.</characteristic>
       </characteristics>
     </profile>
-    <profile id="f4f5-1788-8f05-85f5" name="Marine Espacial" publicationId="822e-763d-4a6a-b7fc" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
-      <characteristics>
-        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
-        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
-        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
-        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
-        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
-        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
-        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
-        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">1</characteristic>
-        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">8</characteristic>
-        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="0444-05db-4b84-603f" name="Sargento Marine Espacial" publicationId="822e-763d-4a6a-b7fc" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
-      <characteristics>
-        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
-        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
-        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
-        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
-        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
-        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
-        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
-        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
-        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
-        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="4e16-a08f-3366-1da7" name="Motorista del Ala de Cuervo" publicationId="822e-763d-4a6a-b7fc" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
-      <characteristics>
-        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Motocicleta</characteristic>
-        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
-        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
-        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
-        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4(5)</characteristic>
-        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
-        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
-        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">1</characteristic>
-        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">8</characteristic>
-        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="48ba-128c-5401-21dc" name="Sargento del Ala de Cuervo Motorizado" publicationId="822e-763d-4a6a-b7fc" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
-      <characteristics>
-        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Motocicleta</characteristic>
-        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
-        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
-        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
-        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4(5)</characteristic>
-        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
-        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
-        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
-        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
-        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="2ecf-8d26-a519-09f6" name="Motocicleta de Ataque" publicationId="822e-763d-4a6a-b7fc" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
-      <characteristics>
-        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Motocicleta</characteristic>
-        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
-        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
-        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
-        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4(5)</characteristic>
-        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">2</characteristic>
-        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
-        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
-        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">8</characteristic>
-        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
-      </characteristics>
-    </profile>
     <profile id="3216-6af7-2bc4-4ef1" name="Servoarnés" publicationId="822e-763d-4a6a-b7fc" page="31" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
       <characteristics>
         <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un servoarnes proporciona un servobrazo adicional al Tecnomarine (con lo que dispone de dos ataques con servobrazo), un cortador de plasma (pude dispararse en la fase de disparo como una pistola de plasma acoplada, pero no puede usarse en combate cuerpo a cuerpo) y un lanzallamas. En la fase de disparo, el Tecnomarine puede disparar las dos armas montadas en el arnés, o un arma montada en el arnés y otra normal.
 
 Adicionalmente un Tecnomarine con Servoarnés puede repetir la tirada para reparar un vehículo dañado usando la regla especial de Bendición del Omnissiah.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="3364-9294-829a-1569" name="Sargento Explorador" publicationId="822e-763d-4a6a-b7fc" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
-      <characteristics>
-        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
-        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
-        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
-        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
-        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
-        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
-        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
-        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
-        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
-        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">4+</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="4144-b701-2ffe-abbf" name="Explorador" publicationId="822e-763d-4a6a-b7fc" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
-      <characteristics>
-        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
-        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
-        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
-        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
-        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
-        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
-        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
-        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">1</characteristic>
-        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">8</characteristic>
-        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">4+</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="8933-5bbd-4fd9-2f86" name="Sargento Exterminador" publicationId="822e-763d-4a6a-b7fc" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
-      <characteristics>
-        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
-        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
-        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
-        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
-        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
-        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
-        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
-        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
-        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
-        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">2+</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="2b71-fffa-adc1-fa05" name="Exterminador" publicationId="822e-763d-4a6a-b7fc" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
-      <characteristics>
-        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
-        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
-        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
-        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
-        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
-        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
-        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
-        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
-        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
-        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">2+</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="2c18-4320-bb63-83be" name="Veterano" publicationId="822e-763d-4a6a-b7fc" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
-      <characteristics>
-        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
-        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
-        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
-        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
-        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
-        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
-        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
-        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
-        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
-        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
       </characteristics>
     </profile>
     <profile id="fb80-c076-7c33-8a76" name="Bendición del Omnissiah" publicationId="822e-763d-4a6a-b7fc" page="31" hidden="false" typeId="c970-b832-a956-1ac8" typeName="Habilidad">
@@ -6341,7 +6104,7 @@ Por cada Servidor con un servobrazo en la unidad +1
 Si el resultado es 6+, un resultado de arma destruida o de inmovilizado (elige el propio jugador) será reparado. Si un resultado de arma destruida consigue repararse mediante este método, el arma podrá dispararse en la siguiente fase de disparo. El Tecnomarine no podrá reparar si está ¡Cuerpo a tierra! o en ¡Retirada!</characteristic>
       </characteristics>
     </profile>
-    <profile id="90a7-c0e2-3a06-dc70" name="Bolter" publicationId="822e-763d-4a6a-b7fc" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" page="48">
+    <profile id="90a7-c0e2-3a06-dc70" name="Bolter" publicationId="f744-f28b-4145-1729" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" page="83">
       <characteristics>
         <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60cm</characteristic>
         <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
@@ -6357,7 +6120,7 @@ Si el resultado es 6+, un resultado de arma destruida o de inmovilizado (elige e
         <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 2</characteristic>
       </characteristics>
     </profile>
-    <profile id="3c0e-4865-97cc-bd9c" name="Bolter Pesado" publicationId="822e-763d-4a6a-b7fc" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" page="50">
+    <profile id="3c0e-4865-97cc-bd9c" name="Bolter Pesado" publicationId="f744-f28b-4145-1729" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" page="81">
       <characteristics>
         <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">90cm</characteristic>
         <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">5</characteristic>
@@ -6365,7 +6128,7 @@ Si el resultado es 6+, un resultado de arma destruida o de inmovilizado (elige e
         <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 3</characteristic>
       </characteristics>
     </profile>
-    <profile id="33e3-aa73-1b0e-2e83" name="Cañón Automático" publicationId="822e-763d-4a6a-b7fc" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" page="48">
+    <profile id="33e3-aa73-1b0e-2e83" name="Cañón Automático" publicationId="f744-f28b-4145-1729" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" page="81">
       <characteristics>
         <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">120cm</characteristic>
         <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">7</characteristic>
@@ -6373,15 +6136,7 @@ Si el resultado es 6+, un resultado de arma destruida o de inmovilizado (elige e
         <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 2</characteristic>
       </characteristics>
     </profile>
-    <profile id="ca47-3295-c193-8e3b" name="Cañón de Asalto" publicationId="822e-763d-4a6a-b7fc" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" page="48">
-      <characteristics>
-        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60cm</characteristic>
-        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">6</characteristic>
-        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
-        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 4, Acerada</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="8f30-c05c-e72e-4baf" name="Cañón de Fusión" publicationId="822e-763d-4a6a-b7fc" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" page="51">
+    <profile id="8f30-c05c-e72e-4baf" name="Cañón de Fusión" publicationId="f744-f28b-4145-1729" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" page="82">
       <characteristics>
         <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60cm</characteristic>
         <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">8</characteristic>
@@ -6389,7 +6144,7 @@ Si el resultado es 6+, un resultado de arma destruida o de inmovilizado (elige e
         <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 1, Fusión</characteristic>
       </characteristics>
     </profile>
-    <profile id="ff28-6505-3158-bff5" name="Cañón de Plasma" publicationId="822e-763d-4a6a-b7fc" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" page="51">
+    <profile id="ff28-6505-3158-bff5" name="Cañón de Plasma" publicationId="f744-f28b-4145-1729" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" page="82">
       <characteristics>
         <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">90cm</characteristic>
         <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">7</characteristic>
@@ -6397,7 +6152,7 @@ Si el resultado es 6+, un resultado de arma destruida o de inmovilizado (elige e
         <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 1, Área, Sobrecalentamiento</characteristic>
       </characteristics>
     </profile>
-    <profile id="b210-a1f3-d328-5739" name="Cañón Láser" publicationId="822e-763d-4a6a-b7fc" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" page="50">
+    <profile id="b210-a1f3-d328-5739" name="Cañón Láser" publicationId="f744-f28b-4145-1729" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" page="82">
       <characteristics>
         <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">120cm</characteristic>
         <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">9</characteristic>
@@ -6405,7 +6160,7 @@ Si el resultado es 6+, un resultado de arma destruida o de inmovilizado (elige e
         <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 1</characteristic>
       </characteristics>
     </profile>
-    <profile id="c6ed-e1e6-bd68-1891" name="Lanzallamas" publicationId="822e-763d-4a6a-b7fc" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" page="48">
+    <profile id="c6ed-e1e6-bd68-1891" name="Lanzallamas" publicationId="f744-f28b-4145-1729" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" page="83">
       <characteristics>
         <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Plantilla</characteristic>
         <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
@@ -6413,7 +6168,7 @@ Si el resultado es 6+, un resultado de arma destruida o de inmovilizado (elige e
         <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 1</characteristic>
       </characteristics>
     </profile>
-    <profile id="ea35-d96a-285e-1a63" name="Lanzallamas Pesado" publicationId="822e-763d-4a6a-b7fc" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" page="50">
+    <profile id="ea35-d96a-285e-1a63" name="Lanzallamas Pesado" publicationId="f744-f28b-4145-1729" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" page="81">
       <characteristics>
         <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Plantilla</characteristic>
         <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">5</characteristic>
@@ -6421,7 +6176,7 @@ Si el resultado es 6+, un resultado de arma destruida o de inmovilizado (elige e
         <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 1</characteristic>
       </characteristics>
     </profile>
-    <profile id="0354-d289-e0b2-5b90" name="Lanzamisiles Ciclón Fragmentación" publicationId="822e-763d-4a6a-b7fc" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" page="28">
+    <profile id="8ebb-6b31-588b-4348" name="Lanzamisiles Fragmentación" publicationId="f744-f28b-4145-1729" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" page="82">
       <characteristics>
         <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">120cm</characteristic>
         <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
@@ -6429,7 +6184,7 @@ Si el resultado es 6+, un resultado de arma destruida o de inmovilizado (elige e
         <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 1, Área</characteristic>
       </characteristics>
     </profile>
-    <profile id="5a5d-97af-d072-e62c" name="Lanzamisiles Ciclón Perforante" publicationId="822e-763d-4a6a-b7fc" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" page="28">
+    <profile id="5500-c156-730e-46a6" name="Lanzamisiles Perforante" publicationId="f744-f28b-4145-1729" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" page="82">
       <characteristics>
         <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">120cm</characteristic>
         <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">8</characteristic>
@@ -6437,23 +6192,7 @@ Si el resultado es 6+, un resultado de arma destruida o de inmovilizado (elige e
         <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 1</characteristic>
       </characteristics>
     </profile>
-    <profile id="8ebb-6b31-588b-4348" name="Lanzamisiles Fragmentación" publicationId="f176-f140-74d8-da7d" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
-      <characteristics>
-        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">120cm</characteristic>
-        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
-        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">6</characteristic>
-        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 1, Área</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="5500-c156-730e-46a6" name="Lanzamisiles Perforante" publicationId="f176-f140-74d8-da7d" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
-      <characteristics>
-        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">120cm</characteristic>
-        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">8</characteristic>
-        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
-        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 1</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="42da-250f-adf8-65a7" name="Pistola Bolter" publicationId="822e-763d-4a6a-b7fc" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" page="48">
+    <profile id="42da-250f-adf8-65a7" name="Pistola Bolter" publicationId="f744-f28b-4145-1729" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" page="83">
       <characteristics>
         <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">30cm</characteristic>
         <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
@@ -6461,7 +6200,7 @@ Si el resultado es 6+, un resultado de arma destruida o de inmovilizado (elige e
         <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistola</characteristic>
       </characteristics>
     </profile>
-    <profile id="3bbd-3f62-f9b0-4805" name="Pistola de Plasma" publicationId="822e-763d-4a6a-b7fc" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" page="52">
+    <profile id="3bbd-3f62-f9b0-4805" name="Pistola de Plasma" publicationId="f744-f28b-4145-1729" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" page="83">
       <characteristics>
         <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">30cm</characteristic>
         <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">7</characteristic>
@@ -6469,7 +6208,7 @@ Si el resultado es 6+, un resultado de arma destruida o de inmovilizado (elige e
         <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistola, Sobrecalentamiento</characteristic>
       </characteristics>
     </profile>
-    <profile id="1e50-428e-285b-44f1" name="Rifle de Fusión" publicationId="822e-763d-4a6a-b7fc" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" page="51">
+    <profile id="1e50-428e-285b-44f1" name="Rifle de Fusión" publicationId="f744-f28b-4145-1729" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" page="83">
       <characteristics>
         <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">30cm</characteristic>
         <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">8</characteristic>
@@ -6477,7 +6216,7 @@ Si el resultado es 6+, un resultado de arma destruida o de inmovilizado (elige e
         <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 1, Fusión</characteristic>
       </characteristics>
     </profile>
-    <profile id="223c-ecb9-2104-7007" name="Rifle de Plasma" publicationId="822e-763d-4a6a-b7fc" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" page="51">
+    <profile id="223c-ecb9-2104-7007" name="Rifle de Plasma" publicationId="f744-f28b-4145-1729" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" page="83">
       <characteristics>
         <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60cm</characteristic>
         <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">7</characteristic>
@@ -6485,7 +6224,7 @@ Si el resultado es 6+, un resultado de arma destruida o de inmovilizado (elige e
         <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Fuego Rápido, Sobrecalentamiento</characteristic>
       </characteristics>
     </profile>
-    <profile id="196e-b41a-0c94-8c21" name="Dreadnought" publicationId="822e-763d-4a6a-b7fc" page="30" hidden="false" typeId="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" typeName="Bípode">
+    <profile id="196e-b41a-0c94-8c21" name="Dreadnought" publicationId="f744-f28b-4145-1729" page="40" hidden="false" typeId="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" typeName="Bípode">
       <characteristics>
         <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
         <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
@@ -6494,13 +6233,8 @@ Si el resultado es 6+, un resultado de arma destruida o de inmovilizado (elige e
         <characteristic name="Lateral" typeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e">12</characteristic>
         <characteristic name="Posterior" typeId="0a9f33cb-0412-420a-89d2-20707c360bd2">10</characteristic>
         <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
-        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
         <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Vehículo (Bípode)</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="c527-cfdf-ce43-76b7" name="Armadura Artesanal" publicationId="822e-763d-4a6a-b7fc" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
-      <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Las miniaturas equipadas con una Armadura Artesanal disponen de una tirada de salvación por armadura de 2+</characteristic>
       </characteristics>
     </profile>
     <profile id="2ced-08ca-3825-72e2" name="Armadura de Explorador" publicationId="822e-763d-4a6a-b7fc" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
@@ -6510,19 +6244,7 @@ Si el resultado es 6+, un resultado de arma destruida o de inmovilizado (elige e
     </profile>
     <profile id="43e6-007c-951b-dd36" name="Armadura de Exterminador" publicationId="822e-763d-4a6a-b7fc" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" page="53">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Una miniatura equipada con Armadura de Exterminador dispone de una tirada de salvación por armadura de 2+ y una tirada de salvación invulnerable de 5+.
-
-Cualquier miniatura equipada con Armadura de Exterminador puede ser teleportada al campo de batalla. Siempre puede empezar el juego en reserva y llegar siguiendo las reglas de despliegue rápido, incluso si la misión no lo contempla.
-
-Las miniaturas con armadura de exterminador no pueden embarcar en Rhino o Razorback y cuentan como 2 miniaturas</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="11ca-250d-5f39-edcb" name="Bolter Huracán" publicationId="822e-763d-4a6a-b7fc" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" page="35">
-      <characteristics>
-        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60cm</characteristic>
-        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
-        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
-        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Fuego Rápido 3, Acoplada</characteristic>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Las miniaturas equipadas con armadura de exterminador poseen una tirada de salvación por armadura de 2+ y una tirada de salvación invulnerable de 5+. Las miniaturas con armadura de exterminador son capaces de moverse y disparar con armas pesadas y pueden asaltar después de disparar con armas de fuego rápido y armas pesadas. Sin embargo, las miniaturas con armadura de exterminador no pueden efectuar una persecución arrolladora después de un asalto. Además, todas las miniaturas con armadura de exterminador pueden teleportarse para llegar al campo de batalla. Siempre pueden empezar la partida en la reserva y llegar mediante la regla despliegue rápido, aunque no se especifique en la misión.</characteristic>
       </characteristics>
     </profile>
     <profile id="b524-ca47-0c30-ae4f" name="Combiarma" publicationId="822e-763d-4a6a-b7fc" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" page="48">
@@ -6570,36 +6292,12 @@ Las miniaturas con armadura de exterminador no pueden embarcar en Rhino o Razorb
         <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Los reflectores pueden utilizarse cuando se aplican las reglas de combate nocturno. Si un vehículo dispone de reflector, debera seguir aplicando las reglas de combate nocturno al elegir su objetivo; pero, una vez adquirido un objetivo, lo iluminara con el reflector de forma que, durante el resto de la fase de disparo, cualquier otra unidad que dispare a la unidad iluminada no deberá aplicar la regla de combate nocturno. Sin embargo, el vehiculo que utiliza el reflector podrá ser designado como objetivo en el siguiente turno del enemigo como si las reglas de combate nocturno no estuvieran en efecto, ya que el enemigo puede ver la luz del reflector.</characteristic>
       </characteristics>
     </profile>
-    <profile id="35b6-b813-1033-e16a" name="Servoarmadura" publicationId="822e-763d-4a6a-b7fc" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" page="53">
+    <profile id="35b6-b813-1033-e16a" name="Servoarmadura" publicationId="f744-f28b-4145-1729" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" page="86">
       <characteristics>
         <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Las miniaturas equipadas con Servoarmadura disponen de una tirada de salvación por armadura de 3+.</characteristic>
       </characteristics>
     </profile>
-    <profile id="62db-42db-1469-bad4" name="Cápsula de Desembarco" publicationId="822e-763d-4a6a-b7fc" page="35" hidden="false" typeId="d12a-b581-e1f4-1193" typeName="Transporte">
-      <characteristics>
-        <characteristic name="HP" typeId="eeb7-edf8-2c77-59b6">4</characteristic>
-        <characteristic name="Frontal" typeId="584e-15ce-949b-e298">12</characteristic>
-        <characteristic name="Lateral" typeId="27a5-c15e-f5b6-9c11">12</characteristic>
-        <characteristic name="Posterior" typeId="e7fb-2121-c86d-7a50">12</characteristic>
-        <characteristic name="Tipo" typeId="f141-fc34-4d2a-b484">Vehículo (Descubierto)</characteristic>
-        <characteristic name="Capacidad" typeId="f90f-9546-155f-c585">10 Miniaturas, puede transportar un Dreadnought</characteristic>
-        <characteristic name="Puntos de acceso" typeId="8cb4-5303-693b-0256">Se considera un Vehículo Descubierto al desplegarse, no se puede volver a embarcar una vez desplegada</characteristic>
-        <characteristic name="Puntos de disparo" typeId="85c0-7904-8bac-a359">Se considera un Vehículo Descubierto al desplegarse</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="f7e2-54be-c928-3b5e" name="Razorback" publicationId="822e-763d-4a6a-b7fc" page="32" hidden="false" typeId="d12a-b581-e1f4-1193" typeName="Transporte">
-      <characteristics>
-        <characteristic name="HP" typeId="eeb7-edf8-2c77-59b6">4</characteristic>
-        <characteristic name="Frontal" typeId="584e-15ce-949b-e298">11</characteristic>
-        <characteristic name="Lateral" typeId="27a5-c15e-f5b6-9c11">11</characteristic>
-        <characteristic name="Posterior" typeId="e7fb-2121-c86d-7a50">10</characteristic>
-        <characteristic name="Tipo" typeId="f141-fc34-4d2a-b484">Vehículo (Tanque)</characteristic>
-        <characteristic name="Capacidad" typeId="f90f-9546-155f-c585">6 Miniaturas, no puede transportar miniaturas con Armadura de Exterminador</characteristic>
-        <characteristic name="Puntos de acceso" typeId="8cb4-5303-693b-0256">Uno a cada lado del casco y otro en la parte posterior</characteristic>
-        <characteristic name="Puntos de disparo" typeId="85c0-7904-8bac-a359">Ninguno</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="cd27-999f-5afd-ef77" name="Rhino" publicationId="822e-763d-4a6a-b7fc" page="32" hidden="false" typeId="d12a-b581-e1f4-1193" typeName="Transporte">
+    <profile id="cd27-999f-5afd-ef77" name="Rhino del Caos" publicationId="f744-f28b-4145-1729" page="42" hidden="false" typeId="d12a-b581-e1f4-1193" typeName="Transporte">
       <characteristics>
         <characteristic name="HP" typeId="eeb7-edf8-2c77-59b6">4</characteristic>
         <characteristic name="Frontal" typeId="584e-15ce-949b-e298">11</characteristic>
@@ -6621,62 +6319,9 @@ Las miniaturas con armadura de exterminador no pueden embarcar en Rhino o Razorb
         <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Los vehiculos con Blindaje Adicional consideran cualquier resultado de tripulación aturdida en la tabla de daños como tripulación acobardada.</characteristic>
       </characteristics>
     </profile>
-    <profile id="0e75-5d1d-46fb-e09a" name="Escopeta" publicationId="822e-763d-4a6a-b7fc" page="29" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
-      <characteristics>
-        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">30cm</characteristic>
-        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
-        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">-</characteristic>
-        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 2</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="d8cd-2e27-d250-6b90" name="Marine Espacial Retropropulsado" publicationId="822e-763d-4a6a-b7fc" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
-      <characteristics>
-        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Retropropulsada</characteristic>
-        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
-        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
-        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
-        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
-        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
-        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
-        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">1</characteristic>
-        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">8</characteristic>
-        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="8770-6fef-4b79-0b1c" name="Sargento Marine Espacial Retropropulsado" publicationId="822e-763d-4a6a-b7fc" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
-      <characteristics>
-        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Retropropulsada</characteristic>
-        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
-        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
-        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
-        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
-        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
-        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
-        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
-        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
-        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="d685-ae76-91b6-6a2c" name="Lanzamisiles Tifón Fragmentación" publicationId="822e-763d-4a6a-b7fc" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" page="27">
-      <characteristics>
-        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">120cm</characteristic>
-        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">5</characteristic>
-        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
-        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 1, Área, Acoplada</characteristic>
-      </characteristics>
-    </profile>
     <profile id="bc19-11c8-8784-5816" name="Lanzamisiles Tifón" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" publicationId="822e-763d-4a6a-b7fc" page="27">
       <characteristics>
         <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">El Lanzamisiles Tifón está equipado con munición de Fragmentación.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="69af-f72d-5026-4fd7" name="Land Speeder" hidden="false" typeId="725a358c-765b-498c-8de5-399fc0c0725f" typeName="Vehículo" publicationId="822e-763d-4a6a-b7fc" page="27">
-      <characteristics>
-        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
-        <characteristic name="Frontal" typeId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f">10</characteristic>
-        <characteristic name="Lateral" typeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e">10</characteristic>
-        <characteristic name="Posterior" typeId="0a9f33cb-0412-420a-89d2-20707c360bd2">10</characteristic>
-        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Vehículo (Rápido, Gravítico)</characteristic>
       </characteristics>
     </profile>
     <profile id="2053-f1f6-6887-b1ea" name="Poder del espiritu máquina" publicationId="822e-763d-4a6a-b7fc" page="34" hidden="false" typeId="c970-b832-a956-1ac8" typeName="Habilidad">
@@ -6709,35 +6354,212 @@ mientras las tropas que hay en el interior cargan. Una unidad que cargue al comb
 Cada jugador tira 1D6 y añade el atributo de Liderazgo de su miniatura al resultado. Si el Bibliotecario Marine Espacial supera el resultado de la miniatura enemiga, el poder psiquico se anula y no produce efecto ese turno. Si el resultado de la miniatura enemiga es igual o superior, puede usar su poder psiquico normalmente. La capucha psíquica puede usarse cada vez que una miniatura enemiga use un poder psíquico dentro de su alcance.</characteristic>
       </characteristics>
     </profile>
-    <profile id="8e27-6a3c-f1b6-5595" name="Fuego Infernal" publicationId="822e-763d-4a6a-b7fc" page="39" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Poder Psíquico (Proyectil)">
+    <profile id="f35e-98d0-7f3e-ccca" name="Abaddon" publicationId="f744-f28b-4145-1729" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" page="48">
       <characteristics>
-        <characteristic name="Alcance" typeId="5bf6-378a-0cb7-b079">Plantilla</characteristic>
-        <characteristic name="F" typeId="12da-9b3e-f37b-bc35">2D6 - 2</characteristic>
-        <characteristic name="FP" typeId="10b5-aa5b-ccde-79cc">1D6</characteristic>
-        <characteristic name="Tipo" typeId="20e7-cbcb-1781-a732">Asalto 1</characteristic>
-        <characteristic name="Detalles" typeId="a812-390d-dff6-dabd">Un torrente de llamas psíquicas sale de la boca y de los ojos del bibliotecario y rodea al objetivo.
-
-El bibliotecario puede utilizar este poder en su fase de disparo en vez disparar un arma. Como es habitual, el bibliotecario debe superar un chequeo psíquico para poder utilizar
-el poder, el cual tiene el siguiente perfil.
-
-Ten en cuenta que la Fuerza del ataque se determina tirando dos dados y restando 2 al resultado y que el FP se calcula tirando un dado. Haz dos tiradas diferentes, una para la
-Fuerza y otra para el FP, cada vez que utilices el poder (pero no por cada objetivo de un mismo ataque). Si la Fuerza es 0, el ataque no tendrá efecto.</characteristic>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">7</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">5</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4(8)</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4(5)</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">4</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">8</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">4 + 1D6</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">2+</characteristic>
       </characteristics>
     </profile>
-    <profile id="dbe3-74a1-45ff-aea0" name="Parásito Mental" publicationId="822e-763d-4a6a-b7fc" page="39" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Poder Psíquico">
+    <profile id="546b-bb23-6d02-3f3d" name="Sirena de Muerte" publicationId="f744-f28b-4145-1729" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" page="39">
       <characteristics>
-        <characteristic name="Alcance" typeId="fd64-cbc4-94de-24cc">45cm</characteristic>
-        <characteristic name="Detalles" typeId="ad96-dfa4-b4ed-656d">El bibliotecario puede utilizar este poder en su fase de disparo en vez disparar un arma. Se considera un arma pesada, por lo que no puede utilizarse si el bibliotecario ha movido en ese mismo turno y su utilizacion impide que el bibliotecario pueda realizar un asalto en ese mismo turno.
-Como es habitual, el bibliotecario tiene que superar un chequeo psíquico para poder utilizar el poder.
-
-Elige una miniatura enemiga que se encuentre en un radio de 45 cm del bibliotecario y dentro de su campo de visión.
-La víctima tendrá que realizar un chequeo de liderazgo (las miniaturas sin atributo de Liderazgo son inmunes a este ataque). Si la miniatura supera el chequeo, el ataque no le habrá afectado. Sin embargo, si lo falla, se pasará el resto de la partida balbuceando y pensando en las malas acciones que ha llevado a cabo a lo largo de su vida, por lo
-que no podra tomar parte en la batalla a partir de ese momento; retira la miniatura del juego (a efectos de los puntos de victoria, se considera que ha muerto).
-
-Ten en cuenta que el ataque puede afectar a cualquier miniatura con atributo de Liderazgo, independientemente de que parezca imposible que pueda llegar a tener remordimientos. Por contra, las miniaturas sin atributo de Liderazgo no pueden ser afectadas por este poder.</characteristic>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Plantilla</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">5</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 1</characteristic>
       </characteristics>
     </profile>
-    <profile id="f35e-98d0-7f3e-ccca" name="Campeón de la Compañía" publicationId="822e-763d-4a6a-b7fc" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
+    <profile id="d0d9-6750-0b4c-87f2" name="Amplificador Sónico (frecuencia única)" publicationId="f744-f28b-4145-1729" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" page="39">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">120cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">8</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 1, Área, Acobardamiento</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Cañón Segador" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="b594-c544-fa66-d4ca" publicationId="f744-f28b-4145-1729" page="82">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">90cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">7</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 2, Acoplada</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="de43-b5ad-9f02-5c3c" name="Destructor Sónico" publicationId="f744-f28b-4145-1729" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" page="39">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 2 o Pesada 3</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="86fc-8744-43f1-719a" name="Lanzamisiles Aniquilador" publicationId="f744-f28b-4145-1729" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" page="87">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">120cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">5</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 1, Área, Acoplada</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9f78-ebf8-6202-0cac" name="Amplificador Sónico (frecuencia variable)" publicationId="f744-f28b-4145-1729" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" page="39">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">90cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">5</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 2, Acobardamiento</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Cañón Demolisher" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="de43-9888-531f-eb64" publicationId="f744-f28b-4145-1729" page="87">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">10</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">2</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Artillería 1</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Cañón de Batalla" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="4008-e41f-0faa-d25d" publicationId="f744-f28b-4145-1729" page="87">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">180cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">8</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Artillería 1</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="184d-483e-aa23-697a" name="Profanador" publicationId="f744-f28b-4145-1729" page="41" hidden="false" typeId="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" typeName="Bípode">
+      <characteristics>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">3</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">3</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">6</characteristic>
+        <characteristic name="Frontal" typeId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f">12</characteristic>
+        <characteristic name="Lateral" typeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e">12</characteristic>
+        <characteristic name="Posterior" typeId="0a9f33cb-0412-420a-89d2-20707c360bd2">10</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">3</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Vehículo (Bípode)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Vindicator del Caos" typeId="725a358c-765b-498c-8de5-399fc0c0725f" typeName="Vehículo" hidden="false" id="dd3d-1932-80a5-abd1" publicationId="f744-f28b-4145-1729" page="43">
+      <characteristics>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="Frontal" typeId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f">13</characteristic>
+        <characteristic name="Lateral" typeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e">11</characteristic>
+        <characteristic name="Posterior" typeId="0a9f33cb-0412-420a-89d2-20707c360bd2">10</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Tanque</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Predator del Caos" typeId="725a358c-765b-498c-8de5-399fc0c0725f" typeName="Vehículo" hidden="false" id="6734-64e8-6040-af95" publicationId="f744-f28b-4145-1729" page="43">
+      <characteristics>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="Frontal" typeId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f">13</characteristic>
+        <characteristic name="Lateral" typeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e">11</characteristic>
+        <characteristic name="Posterior" typeId="0a9f33cb-0412-420a-89d2-20707c360bd2">10</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Tanque</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Land Raider del Caos" typeId="d12a-b581-e1f4-1193" typeName="Transporte" hidden="false" id="f93b-6c04-78db-4472" publicationId="f744-f28b-4145-1729" page="44">
+      <characteristics>
+        <characteristic name="HP" typeId="eeb7-edf8-2c77-59b6">4</characteristic>
+        <characteristic name="Frontal" typeId="584e-15ce-949b-e298">14</characteristic>
+        <characteristic name="Lateral" typeId="27a5-c15e-f5b6-9c11">14</characteristic>
+        <characteristic name="Posterior" typeId="e7fb-2121-c86d-7a50">14</characteristic>
+        <characteristic name="Tipo" typeId="f141-fc34-4d2a-b484">Tanque</characteristic>
+        <characteristic name="Capacidad" typeId="f90f-9546-155f-c585">10 Miniaturas</characteristic>
+        <characteristic name="Puntos de acceso" typeId="8cb4-5303-693b-0256">En cada lateral y al frente</characteristic>
+        <characteristic name="Puntos de disparo" typeId="85c0-7904-8bac-a359">Ninguno</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fc16-140e-33e7-f5c5" name="Ahriman" publicationId="f744-f28b-4145-1729" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" page="50">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">5</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">5</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">3</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">5</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e8d7-436b-722c-1ca7" name="Arrasador" publicationId="f744-f28b-4145-1729" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" page="35">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">2</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">2+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4b76-d768-7e30-709a" name="Berséker" publicationId="f744-f28b-4145-1729" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" page="36">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">5</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="eed1-cca2-38bf-731e" name="Demonio Menor" publicationId="f744-f28b-4145-1729" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" page="63">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">0</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5dc6-9204-91dc-a88e" name="Elegidos" publicationId="f744-f28b-4145-1729" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" page="27">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">1</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e9ec-410d-a982-6ff4" name="Engendros del caos" publicationId="f744-f28b-4145-1729" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" page="33">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">3</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">0</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">5</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">5</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">3</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">3</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">1D6</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d972-09f9-8987-087b" name="Exterminador" publicationId="f744-f28b-4145-1729" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" page="28">
       <characteristics>
         <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
         <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
@@ -6747,8 +6569,476 @@ Ten en cuenta que el ataque puede afectar a cualquier miniatura con atributo de 
         <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
         <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
         <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">2+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5b2e-ed2c-077d-ebe0" name="Fabius Bilis" publicationId="f744-f28b-4145-1729" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" page="52">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">5</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">5</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">3</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">5</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5318-2351-bad1-057e" name="Grand Demonio" publicationId="f744-f28b-4145-1729" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" page="62">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Criatura Monstruosa</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">8</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">0</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">6</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">6</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">4</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">5</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6400-c405-b037-2882" name="Hechicero" publicationId="f744-f28b-4145-1729" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" page="31">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">5</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">5</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">3</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">5</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="df82-e71e-0327-261c" name="Huron" publicationId="f744-f28b-4145-1729" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" page="31">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">6</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">5</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">3</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">5</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8623-ef01-9689-8f53" name="Khârn" publicationId="f744-f28b-4145-1729" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" page="48">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">7</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">5</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">5</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">3</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">5</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">5</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4d97-ea56-8cd7-4461" name="Lucius" publicationId="f744-f28b-4145-1729" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" page="54">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">7</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">5</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">3</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">6</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b4b0-1bf7-1b8b-c85e" name="Marine de Plaga" publicationId="f744-f28b-4145-1729" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" page="38">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4(5)</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">3</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">1</characteristic>
         <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
         <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f49e-3027-3cdc-b2e2" name="Marine Espacial del Caos" publicationId="f744-f28b-4145-1729" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" page="27">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">1</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fc80-9e94-8103-aafd" name="Marine Ruidoso" publicationId="f744-f28b-4145-1729" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" page="39">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">5</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">1</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4d0b-06c8-4823-df3a" name="Mil Hijo" publicationId="f744-f28b-4145-1729" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" page="37">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">1</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9a4b-350d-2946-514a" name="Motorista del Caos" publicationId="f744-f28b-4145-1729" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" page="27">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Motocicleta</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4(5)</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">1</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="989e-5c17-c921-e3ee" name="Paladín de los Cráneos" publicationId="f744-f28b-4145-1729" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" page="36">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">5</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4dde-965c-1393-bde9" name="Paladín de Plaga" publicationId="f744-f28b-4145-1729" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" page="38">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4(5)</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">3</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="080c-8906-563d-204e" name="Paladín del Caos" publicationId="f744-f28b-4145-1729" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" page="27">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ddf8-0650-a059-c31e" name="Paladín del Ruido" publicationId="f744-f28b-4145-1729" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" page="39">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">5</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="13f7-189f-4ad8-c064" name="Paladín Exterminador" publicationId="f744-f28b-4145-1729" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" page="28">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">2+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="62c4-e9db-64ee-bc13" name="Paladín Hechicero" publicationId="f744-f28b-4145-1729" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" page="37">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5a33-c0a1-89d3-352e" name="Paladín Motorista" publicationId="f744-f28b-4145-1729" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" page="27">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Motocicleta</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4(5)</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b21b-218a-e8bc-a7f7" name="Poseído" publicationId="f744-f28b-4145-1729" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" page="29">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">5</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e58d-bbb2-4dfc-1e32" name="Paladín Poseído" publicationId="f744-f28b-4145-1729" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" page="29">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">5</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="70b2-ef4e-19c7-1c68" name="Príncipe Demonio" publicationId="f744-f28b-4145-1729" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" page="32">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Criatura Monstruosa</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">7</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">5</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">6</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">5</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">4</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">5</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">4</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="59ac-18f2-8b75-ac7e" name="Rapax" publicationId="f744-f28b-4145-1729" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" page="34">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería Retropropulsada</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">1</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d9e4-e7ec-890e-e44d" name="Señor del Caos" publicationId="f744-f28b-4145-1729" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" page="30">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">6</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">5</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">3</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">5</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2575-d304-986e-8bf1" name="Typhus" publicationId="f744-f28b-4145-1729" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" page="55">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">5</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">5</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4(5)</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">4</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">5</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">2+</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="faef-8a27-3911-217e" name="Distorsión Temporal" publicationId="f744-f28b-4145-1729" page="88" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Poder Psíquico">
+      <characteristics>
+        <characteristic name="Alcance" typeId="fd64-cbc4-94de-24cc">Unidad</characteristic>
+        <characteristic name="Detalles" typeId="ad96-dfa4-b4ed-656d">Este poder debe usarse al inicio del turno de cualquier jugador. Si logra lanzarse, el psíquico podrá repetir todas las tiradas para impactar y para herir que efectue durante el turno en que haya usado el poder.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e048-dda9-bb44-8699" name="Poderes Psíquicos" publicationId="f744-f28b-4145-1729" page="88" hidden="false" typeId="c970-b832-a956-1ac8" typeName="Habilidad">
+      <characteristics>
+        <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Los Psíquicos solo pueden intentar usar un poder psíquico en cada uno de sus turnos. La única excepción son las miniaturas con la marca de Tzeentch, que pueden intentar usar un máximo de dos poderes psíquicos en cada uno de sus turnos (aunque no dos poderes que cuenten como disparar un arma porque las miniaturas solamente pueden disparar un arma en cada una de sus fases de disparo).</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="02a8-0f73-9f48-fd79" name="Putrefacción de Nurgle (solo Nurgle)" publicationId="f744-f28b-4145-1729" page="88" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Poder Psíquico">
+      <characteristics>
+        <characteristic name="Alcance" typeId="fd64-cbc4-94de-24cc">15 cm</characteristic>
+        <characteristic name="Detalles" typeId="ad96-dfa4-b4ed-656d">El psíquico puede usar este poder en su fase de disparo en lugar de usar otra arma de ataque a distancia. El psíquico puede estar en combate cuerpo a cuerpo en el momento de usar el poder y los blancos también. Si se supera el chequeo psíquico, todas las miniaturas enemigas dentro de un radio de
+15 cm del psíquico sufren un impacto de Fuerza 3 con FP -.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6720-8793-18b4-37fa" name="Latigazo de Sumisión (solo Slaanesh)" publicationId="f744-f28b-4145-1729" page="88" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Poder Psíquico">
+      <characteristics>
+        <characteristic name="Alcance" typeId="fd64-cbc4-94de-24cc">60 cm</characteristic>
+        <characteristic name="Detalles" typeId="ad96-dfa4-b4ed-656d">Un psíquico puede usar este poder en su fase de disparo en lugar de usar otra arma de ataque a distancia. Elige una unidad enemiga que no sea un vehículo y que esté dentro del campo de visión del psíquico y a un máximo de 60 cm de él, y luego efectúa un chequeo psíquico para usar el poder. Si superas el chequeo, puedes mover al blanco del poder 506 cm. Este movimiento no se ve afectado por terreno difícil, pero si deben efectuarse los chequeos por terreno peligroso que sean necesarios. La víctima no puede salir del tablero, entrar en terreno infranqueable ni situarse a menos de 3 cm de cualquier miniatura enemiga. Después, la unidad afectada debe efectuar un chequeo de acobardamiento.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5857-720e-3846-0179" name="Rayo de la Condenación" publicationId="f744-f28b-4145-1729" page="88" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Poder Psíquico (Proyectil)">
+      <characteristics>
+        <characteristic name="Alcance" typeId="5bf6-378a-0cb7-b079">45 cm</characteristic>
+        <characteristic name="F" typeId="12da-9b3e-f37b-bc35">4</characteristic>
+        <characteristic name="FP" typeId="10b5-aa5b-ccde-79cc">3</characteristic>
+        <characteristic name="Tipo" typeId="20e7-cbcb-1781-a732">Asalto 3</characteristic>
+        <characteristic name="Detalles" typeId="a812-390d-dff6-dabd">El Rayo de la Condenación puede usarse en la fase de disparo de la miniatura en lugar de usar un arma de ataque a distancia. Debe superarse un chequeo psíquico para poder usar el poder. Cuando se lanza, el Rayo de la Condenación se considera un arma con el perfil siguiente (por lo que debe tirarse para impactar y herir según el procedimiento habitual).</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2d14-a9d5-42a1-abfc" name="Rayo de la Transformación (solo Tzeentch)" publicationId="f744-f28b-4145-1729" page="88" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Poder Psíquico (Proyectil)">
+      <characteristics>
+        <characteristic name="Alcance" typeId="5bf6-378a-0cb7-b079">60 cm</characteristic>
+        <characteristic name="F" typeId="12da-9b3e-f37b-bc35">8</characteristic>
+        <characteristic name="FP" typeId="10b5-aa5b-ccde-79cc">1</characteristic>
+        <characteristic name="Tipo" typeId="20e7-cbcb-1781-a732">Asalto 1</characteristic>
+        <characteristic name="Detalles" typeId="a812-390d-dff6-dabd">El Rayo de la Transformación puede usarse en la fase de disparo de la miniatura en lugar de usar un arma de ataque a distancia. Si se supera el chequeo psíquico, este poder se considera un arma con el perfil siguiente (debe efectuarse la tirada para impactar y para herir según el procedimiento habitual).</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ae58-59d6-5450-eda9" name="Regalo del Caos" publicationId="f744-f28b-4145-1729" page="88" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Poder Psíquico">
+      <characteristics>
+        <characteristic name="Alcance" typeId="fd64-cbc4-94de-24cc">15 cm</characteristic>
+        <characteristic name="Detalles" typeId="ad96-dfa4-b4ed-656d">El psíquico debe usar este poder al inicio de su turno. El psíquico puede estar en combate cuerpo a cuerpo en el momento de lanzar el poder y el blanco también. Elige una miniatura enemiga y luego efectúa un chequeo psíquico. Si superas el chequeo y el blanco se halla a 15 cm o menos del psíquico, tira 1D6.
+
+
+Si el resultado del dado es superior a la Resistencia de la víctima, el blanco se transforma en una masa informe de carne y debe retirarse como baja (y, como no ha sufrido heridas, ¡no puede efectuar tirada de salvación alguna!). Debe usarse la Resistencia de la miniatura sin modificar (no la Resistencia por ir montada en motocicleta, por ejemplo) y, si se obtiene un resultado de 6, el poder afecta al blanco sea cual sea su atributo de Resistencia. A las miniaturas que no tengan atributo de Resistencia no les afecta este poder. Si el jugador que usa este poder dispone de una miniatura de engendro del Caos, puede sustituir la victima del poder por un engendro. El engendro pasa a estar inmediatamente bajo el control del jugador del Caos (y concede
+40 puntos de victoria si muere). Si la miniatura estaba en contacto peana con peana con alguna miniatura de su bando, estas pasarán a estar trabadas en combate con el engendro.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3c21-76a2-2a4b-b5e2" name="Viento del Caos" publicationId="f744-f28b-4145-1729" page="88" hidden="false" typeId="ae70-4738-0161-bec0" typeName="Poder Psíquico">
+      <characteristics>
+        <characteristic name="Alcance" typeId="fd64-cbc4-94de-24cc">Plantilla</characteristic>
+        <characteristic name="Detalles" typeId="ad96-dfa4-b4ed-656d">El Viento del Caos puede usarse en la fase de disparo de la miniatura en lugar de usar un arma de ataque a distancia y debe superarse un chequeo psíquico para que tenga éxito. Si se supera el chequeo, el poder se resuelve como si el psíquico usara un arma de plantilla. Todas las miniaturas que se encuentren total o parcialmente debajo de la plantilla sufren una herida con un resultado de 4+ en 1D6 sin posibilidad de efectuar tirada de salvación por armadura ni por cobertura. Los vehículos que sean alcanzados por la plantilla sufren un impacto superficial si se obtiene un resultado de 4+ en 1D6.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Reliquia de Khorne" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="d273-34bf-887e-7df2" publicationId="f744-f28b-4145-1729" page="81">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Todas las miniaturas de la unidad, salvo los personajes independientes que se unan a ella, tienen la marca de Khorne. Si el portador de la reliquia muere, se pierden todos los efectos de la reliquia.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Reliquia de Gloria del Caos" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="0fb4-fe66-6005-8643" publicationId="f744-f28b-4145-1729" page="81">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">La unidad puede repetir los chequeos de moral que falle. Si el portador de la reliquia muere, se pierden todos los efectos de la reliquia.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Reliquia de Nurgle" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="7c25-9a38-9771-c4cc" publicationId="f744-f28b-4145-1729" page="81">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Todas las miniaturas de la unidad, salvo los personajes independientes que se unan a ella, tienen la marca de Nurgle. Si el portador de la reliquia muere, se pierden todos los efectos de la reliquia.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Reliquia de Slaanesh" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="8d7d-06a7-dcf1-c0d8" publicationId="f744-f28b-4145-1729" page="81">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Todas las miniaturas de la unidad, salvo los personajes independientes que se unan a ella, tienen la marca de Slaanesh. Si el portador de la reliquia muere, se pierden todos los efectos de la reliquia.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Reliquia de Tzeentch" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="ed01-6c1f-cd4f-0dbb" publicationId="f744-f28b-4145-1729" page="81">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Todas las miniaturas de la unidad, salvo los personajes independientes que se unan a&apos;ella, tienen la marca de Tzeentch. Si el portador de la reliquia muere, se pierden todos los efectos de la reliquia.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Reliquia" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="94cb-089c-f584-85a2" publicationId="f744-f28b-4145-1729" page="81">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Todos los arrasadores y todas las miniaturas con armadura de exterminador que se desplieguen mediante la regla despliegue rápido y decidan hacerlo a 15 cm o menos de una miniatura que porte una reliquia no se dispersarán. Si el portador de la reliquia se halla dentro de un transporte, el radio de efecto de la reliquia es de 15 cm a partir del vehículo de transporte. Los demonios menores deben entrar en juego desplegando rápido a 15 cm o menos de una reliquia (para más información, consulta la sección Demonios invocados de la pág.61). Cabe recordar que las reliquias solo funcionan para las miniaturas con armadura de exterminador, para los arrasadores y para los demonios menores, no para las unidades que entren en juego mediante retrorreactores u otros medios de transporte. También hay que destacar que la reliquia ya debe estar sobre el tablero al inicio del turno para que pueda usarse.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Reliquia Personal" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="8178-5b4d-50e7-634e" publicationId="f744-f28b-4145-1729" page="81">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Estas reliquias tan solo guían a las miniaturas que se teleportan y a los demonios</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Arma Demonio" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="73a0-e222-e146-8c37" publicationId="f744-f28b-4145-1729" page="93">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Las armas demonio tienen las siguientes características:
+. Requieren ambas manos para usarse.
+· Son armas de energía.
+. Confieren +1D6 Ataques adicionales en combate cuerpo a cuerpo. Debe tirarse el dado cada vez que la miniatura vaya a atacar. Si se obtiene un resultado de 1, el demonio atado en el arma se rebela, por lo que la miniatura no podrá efectuar ningún ataque en esta ronda de combate y sufrirá una herida sin posibilidad de efectuar tirada de salvación por armadura.
+. Poseen una propiedad adicional que varía según la marca que porte el propietario del arma.
+
+El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Bebedora de sangre" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="624c-cf56-544b-3ed8" publicationId="f744-f28b-4145-1729" page="93">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">La Bebedora de sangre suele ser un hacha imbuida con la esencia de un colérico devorador de almas. La bebedora de sangre confiere +2D6 Ataques a su propietario en vez de +1D6. Si en alguno de los dos dados se obtiene un resulta do de 1, la miniatura no ataca y sufre una herida como en el caso anterior (solo una herida, no una por cada 1 obtenido).</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Siembraplagas" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="d43b-6e02-e2b6-2607" publicationId="f744-f28b-4145-1729" page="93">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">La Siembraplagas es un arma recubierta de inmundicia que contiene una letal enfermedad contagiosa capaz de derribar al enemigo más fuerte. La Siembraplagas es un arma envenenada que hiere con un 4+ (consulta la página 46 del reglamento de Warhammer 40,000).</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Aulladora de muerte" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="782f-953a-e802-389d" publicationId="f744-f28b-4145-1729" page="93">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Esta arma puede ser una espada flamígera o una pistola deforme que inflige un ataque mágico. La aulladora de muerte puede dispararse en la fase de disparo y tiene el perfil siguiente. Si se obtiene un resultado de 1 en la tirada para determinar el número de disparos, el arma no dispara y el propietario sufre una herida sin posibilidad de efectuar tirada de salvación por armadura.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Extasiadora" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="5cb2-bc74-ee23-42e8" publicationId="f744-f28b-4145-1729" page="93">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Los enemigos a los que hiere esta fina espada o látigo sinuoso caen en un coma de éxtasis del que no existe recuperación. Todas las heridas que cause la Extasiadora infligen Muerte Instantánea independientemente de la Resistencia del enemigo.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Aulladora de Muerte" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="1631-0972-adee-1dd9" publicationId="f744-f28b-4145-1729" page="93">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60 cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 1D6</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
@@ -7216,6 +7506,75 @@ Ten en cuenta que el ataque puede afectar a cualquier miniatura con atributo de 
           </modifiers>
         </infoLink>
         <infoLink name="Acoplada" id="7548-159f-3aeb-2927" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup id="502f-0853-8bc8-8865" name="Sirena de Muerte" hidden="false">
+      <infoLinks>
+        <infoLink id="300b-c706-89eb-a365" name="Plantilla" hidden="false" targetId="d094-3fd7-bd10-443d" type="rule"/>
+        <infoLink id="cee1-5b95-7dac-e540" name="Sirena de Muerte" hidden="false" targetId="546b-bb23-6d02-3f3d" type="profile"/>
+        <infoLink id="1fa4-6cca-fd9e-f682" name="Asalto" hidden="false" targetId="8714-46ad-62c0-ce35" type="rule"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup id="457a-f1f3-4244-7d76" name="Amplificador Sónico" hidden="false">
+      <infoLinks>
+        <infoLink id="d47c-1946-8a92-0197" name="Pesada" hidden="false" targetId="2e56-6b02-4343-0e40" type="rule"/>
+        <infoLink id="25ad-259d-06af-23f2" name="Amplificador Sónico (frecuencia única)" hidden="false" targetId="d0d9-6750-0b4c-87f2" type="profile"/>
+        <infoLink id="d0db-2f15-a07c-b821" name="Área" hidden="false" targetId="31c7-fe6c-af95-f0b5" type="rule"/>
+        <infoLink id="4715-4fff-2255-5635" name="Amplificador Sónico (frecuencia variable)" hidden="false" targetId="9f78-ebf8-6202-0cac" type="profile"/>
+        <infoLink name="Acoplada" id="9915-2689-4da9-2e8b" hidden="false" type="rule" targetId="a06f-e29d-bcf4-ed75"/>
+        <infoLink name="Acobardamiento" id="4696-1150-ccbe-589a" hidden="false" type="rule" targetId="ec6e-0120-4bbd-590e"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup id="03ca-5ba0-2985-0063" name="Cañón Segador" hidden="false">
+      <infoLinks>
+        <infoLink id="5c7e-fac6-afed-8dd0" name="Pesada" hidden="false" targetId="2e56-6b02-4343-0e40" type="rule"/>
+        <infoLink id="0155-f4df-85d2-945e" name="Cañón Segador" hidden="false" targetId="b594-c544-fa66-d4ca" type="profile"/>
+        <infoLink name="Acoplada" id="0405-dc3d-c63f-dd4e" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup id="7825-99ef-00f6-577f" name="Destructor Sónico" hidden="false">
+      <infoLinks>
+        <infoLink id="c306-a071-b1fe-80e6" name="Asalto" hidden="false" targetId="8714-46ad-62c0-ce35" type="rule"/>
+        <infoLink id="232c-08c7-d5c0-513c" name="Destructor Sónico" hidden="false" targetId="de43-b5ad-9f02-5c3c" type="profile"/>
+        <infoLink id="0685-2042-5e6d-c3eb" name="Pesada" hidden="false" targetId="2e56-6b02-4343-0e40" type="rule"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup id="3031-4d3d-ee8b-f7c8" name="Lanzamisiles Aniquilador" hidden="false">
+      <infoLinks>
+        <infoLink id="5a85-d2a9-5214-6863" name="Pesada" hidden="false" targetId="2e56-6b02-4343-0e40" type="rule"/>
+        <infoLink id="b1e6-a95e-9a1e-de90" name="Lanzamisiles Aniquilador" hidden="false" targetId="86fc-8744-43f1-719a" type="profile"/>
+        <infoLink id="29d6-1869-4775-1d91" name="Acoplada" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
+        <infoLink id="6502-e4d3-b20f-9f0b" name="Área" hidden="false" targetId="31c7-fe6c-af95-f0b5" type="rule"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup id="ef0b-c521-2f95-3bae" name="Cañón Demolisher" hidden="false">
+      <infoLinks>
+        <infoLink id="e5e4-837a-dfd0-2c12" name="Cañón Demolisher" hidden="false" targetId="de43-9888-531f-eb64" type="profile"/>
+        <infoLink id="3a35-f83b-08dd-f510" name="Artillería" hidden="false" targetId="93b8-287b-914c-9e43" type="rule"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup id="cdc9-3dfd-e614-3d7a" name="Cañón de Batalla" hidden="false">
+      <infoLinks>
+        <infoLink id="2844-1401-b343-db36" name="Cañón de Batalla" hidden="false" targetId="4008-e41f-0faa-d25d" type="profile"/>
+        <infoLink id="92b5-8755-a6fd-021a" name="Artillería" hidden="false" targetId="93b8-287b-914c-9e43" type="rule"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup id="511a-631b-5fab-b93a" name="Bolter Acoplado" hidden="false">
+      <infoLinks>
+        <infoLink id="713e-2624-60a4-7622" name="Fuego Rápido" hidden="false" targetId="e15d-1437-cfb2-b8dd" type="rule"/>
+        <infoLink id="f2f3-0dfa-43bb-93ec" name="Bolter" hidden="false" targetId="90a7-c0e2-3a06-dc70" type="profile">
+          <modifiers>
+            <modifier type="append" value="Acoplada" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", "/>
+            <modifier type="append" value="Acoplado" field="name" join=" "/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Acoplada" id="d997-f20e-3d5a-e900" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Arma Demonio" id="0ccb-c3ab-d1fe-6792" hidden="false">
+      <infoLinks>
+        <infoLink name="Arma Demonio" id="cbd9-1a3d-b80a-f748" hidden="false" type="profile" targetId="73a0-e222-e146-8c37"/>
+        <infoLink name="Energía" id="fd25-f43a-cc69-2b4b" hidden="false" type="rule" targetId="2528-3f58-a823-5b4a"/>
       </infoLinks>
     </infoGroup>
   </sharedInfoGroups>

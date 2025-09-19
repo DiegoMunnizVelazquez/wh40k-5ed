@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="8cf6-c83d-3eeb-e95c" name="Warhammer 40,000 5ª Edición " revision="10" battleScribeVersion="2.03" authorName="Diego Muñiz" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorUrl="csddmv@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="8cf6-c83d-3eeb-e95c" name="Warhammer 40,000 5ª Edición " revision="11" battleScribeVersion="2.03" authorName="Diego Muñiz" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorUrl="csddmv@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <readme>Esto es for fun. Cualquier error o sugerencia serán bienvenidas
 
 En este sistema se agruparán el sistema de Warhammer 40000 5ª edición, así como todos los los codex que se usarán en este sistema cerrado.
@@ -385,7 +385,10 @@ Los personajes Independientes confieren esta habilidad a las unidades a las que 
       <description>Si la unidad es un Vehículo, cada impacto de Área o de Plantilla contará como dos.
 Si la unidad no es un Vehículo, cada herida recibida contará como dos.</description>
     </rule>
-    <rule id="61b4-c5bb-9d85-8506" name="Personaje independiente" publicationId="1595-b68b-b80b-025d" page="47" hidden="false"/>
+    <rule id="61b4-c5bb-9d85-8506" name="Personaje independiente" publicationId="1595-b68b-b80b-025d" page="47" hidden="false">
+      <description>Los personajes independientes están representados por miniaturas individuales que luchan como unidades de un solo guerrero. Una de las habilidades más útiles de los personajes independientes es que pueden unirse a otras unidades durante la batalla, de forma que pueden reforzar aquellas posiciones en que el combate es más enconado. Los personajes independientes tienen su propia entrada en el codex correspondiente y sus reglas indican claramente que se trata de un personaje independiente.
+Ten presente que existen otras miniaturas que siempre combaten como unidades de una sola miniatura, pero no son personajes independientes.</description>
+    </rule>
     <rule id="b1c6-9a9a-fc08-321d" name="Granadas de asalto" publicationId="1595-b68b-b80b-025d" page="36" hidden="false">
       <description>Las miniaturas equipadas con granadas de asalto no sufren el penalizador por asaltar a un enemigo a cubierto.
 Al atacar a Vehículos, otorgan un Ataque con una Fuerza de 4+1d6.</description>
