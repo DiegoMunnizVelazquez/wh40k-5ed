@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="8964-cc67-2c68-196d" name="Marines Espaciales" revision="2" battleScribeVersion="2.03" authorName="Diego Muñiz" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorUrl="csddmv@gmail.com" library="false" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="8964-cc67-2c68-196d" name="Marines Espaciales" revision="3" battleScribeVersion="2.03" authorName="Diego Muñiz" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorUrl="csddmv@gmail.com" library="false" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>Esto es for fun. Cualquier error o sugerencia serán bienvenidas
 
 En este sistema se agruparán las reglas del Codex de Marines Espaciales utilizado en la 5ed de Warhammer 40k</readme>
@@ -3762,6 +3762,9 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="2" field="0861-0c6c-6bd8-057c"/>
+              </modifiers>
             </entryLink>
             <entryLink id="9d60-ee00-ed13-b712" name="Lanzamisiles" hidden="false" collective="false" import="true" targetId="989a-ecb3-a084-9c39" type="selectionEntry">
               <costs>
@@ -3780,6 +3783,9 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="2" field="0861-0c6c-6bd8-057c"/>
+              </modifiers>
             </entryLink>
             <entryLink id="8bb9-69a0-7400-cfcf" name="Lanzallamas Pesado Acoplado" hidden="false" collective="false" import="true" targetId="ca5b-9e07-ff3b-235f" type="selectionEntry"/>
             <entryLink id="88b7-948a-1347-7cc8" name="Bolter Pesado Acoplado" hidden="false" collective="false" import="true" targetId="badb-9789-58cb-53c2" type="selectionEntry">
@@ -5005,14 +5011,6 @@ aplica a los gravíticos, cuyos delicados motores gravitatorios se ven dañados 
             <cost name="Pts" typeId="puntos" value="15"/>
           </costs>
         </entryLink>
-        <entryLink id="f0aa-117c-bdaf-7491" name="Bolter de Asalto" hidden="false" collective="false" import="true" targetId="a5d0-4056-ad38-66dc" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d46-3719-b055-b3ba" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="Pts" typeId="puntos" value="10"/>
-          </costs>
-        </entryLink>
         <entryLink id="6101-fa7f-0b94-c08d" name="Misil Cazador Asesino" hidden="false" collective="false" import="true" targetId="109e-11bc-a0a8-ddc5" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8360-12cd-8d48-26c1" type="max"/>
@@ -5034,15 +5032,35 @@ aplica a los gravíticos, cuyos delicados motores gravitatorios se ven dañados 
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae38-f18f-cc91-e9a4" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Bolter de Asalto" hidden="false" id="477f-5e80-2693-640b" type="selectionEntry" targetId="a5d0-4056-ad38-66dc">
-          <constraints>
-            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ee08-f724-3667-2eed" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Pts" typeId="puntos" value="35"/>
       </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Bolter de Asalto" hidden="false" id="86a1-b85d-7e05-96b4">
+          <entryLinks>
+            <entryLink import="true" name="Bolter de Asalto" hidden="false" id="477f-5e80-2693-640b" type="selectionEntry" targetId="a5d0-4056-ad38-66dc">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ee08-f724-3667-2eed" includeChildSelections="false"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="2" field="d38c-bc40-e8ce-59e7"/>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+          <modifiers>
+            <modifier type="set" value="10" field="puntos">
+              <conditions>
+                <condition type="equalTo" value="2" field="selections" scope="86a1-b85d-7e05-96b4" childId="477f-5e80-2693-640b" shared="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="27f4-9587-416b-7cad-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="27f4-9587-416b-7cad-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry id="f7e8-c24d-974a-23a4" name="Razorback" publicationId="f176-f140-74d8-da7d" page="77" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -5806,7 +5824,7 @@ hiere a cualquier miniatura con un resultado de 2+.</characteristic>
           </profiles>
           <infoLinks>
             <infoLink id="5595-298a-88ae-4128" name="Pesada" hidden="false" targetId="2e56-6b02-4343-0e40" type="rule"/>
-            <infoLink id="2747-692b-8949-43c0" name="Aceradas" hidden="false" targetId="7097-6879-0d11-787d" type="rule"/>
+            <infoLink id="2747-692b-8949-43c0" name="Acerada" hidden="false" targetId="7097-6879-0d11-787d" type="rule"/>
             <infoLink id="3099-d441-b3ff-3ec6" name="Acobardamiento" hidden="false" targetId="ec6e-0120-4bbd-590e" type="rule"/>
           </infoLinks>
         </infoGroup>
@@ -6358,7 +6376,7 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
               </profiles>
               <infoLinks>
                 <infoLink id="a390-a935-2e8b-3b7a" name="Cuchillas Relámpago" hidden="false" targetId="3917-3cbb-258b-1f99" type="infoGroup"/>
-                <infoLink id="c269-dfc9-e2f5-115e" name="Aceradas" hidden="false" targetId="7097-6879-0d11-787d" type="rule"/>
+                <infoLink id="c269-dfc9-e2f5-115e" name="Acerada" hidden="false" targetId="7097-6879-0d11-787d" type="rule"/>
                 <infoLink id="e704-ae10-a69e-d355" name="Armas de Precisión" hidden="false" targetId="8f62-4549-a7d1-f500" type="profile"/>
               </infoLinks>
             </infoGroup>
@@ -7345,6 +7363,9 @@ la pag.100). Si Kor&apos;sarro Khan va montado en Drakkan Lunar, podrá correr e
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="2" field="0861-0c6c-6bd8-057c"/>
+              </modifiers>
             </entryLink>
             <entryLink id="3c13-7659-ee9e-ef85" name="Lanzallamas Pesado Acoplado" hidden="false" collective="false" import="true" targetId="ca5b-9e07-ff3b-235f" type="selectionEntry"/>
             <entryLink id="88b7-6cd6-12c0-ddb9" name="Bolter Pesado Acoplado" hidden="false" collective="false" import="true" targetId="badb-9789-58cb-53c2" type="selectionEntry">
@@ -7393,6 +7414,9 @@ la pag.100). Si Kor&apos;sarro Khan va montado en Drakkan Lunar, podrá correr e
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="2" field="0861-0c6c-6bd8-057c"/>
+              </modifiers>
             </entryLink>
             <entryLink id="53b5-5b8c-a780-717a" name="Lanzamisiles" hidden="false" collective="false" import="true" targetId="989a-ecb3-a084-9c39" type="selectionEntry">
               <costs>
@@ -7606,6 +7630,9 @@ la pag.100). Si Kor&apos;sarro Khan va montado en Drakkan Lunar, podrá correr e
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="2" field="0861-0c6c-6bd8-057c"/>
+              </modifiers>
             </entryLink>
             <entryLink id="16f1-46e2-65f3-ec6b" name="Lanzallamas Pesado Acoplado" hidden="false" collective="false" import="true" targetId="ca5b-9e07-ff3b-235f" type="selectionEntry"/>
             <entryLink id="01bd-add7-6665-1210" name="Bolter Pesado Acoplado" hidden="false" collective="false" import="true" targetId="badb-9789-58cb-53c2" type="selectionEntry">
@@ -7654,6 +7681,9 @@ la pag.100). Si Kor&apos;sarro Khan va montado en Drakkan Lunar, podrá correr e
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="2" field="0861-0c6c-6bd8-057c"/>
+              </modifiers>
             </entryLink>
             <entryLink id="6fb0-f675-71a6-0a17" name="Lanzamisiles" hidden="false" collective="false" import="true" targetId="989a-ecb3-a084-9c39" type="selectionEntry">
               <costs>
@@ -7831,6 +7861,9 @@ la pag.100). Si Kor&apos;sarro Khan va montado en Drakkan Lunar, podrá correr e
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="2" field="0861-0c6c-6bd8-057c"/>
+              </modifiers>
             </entryLink>
             <entryLink id="b69d-1633-278a-b383" name="Lanzallamas Pesado Acoplado" hidden="false" collective="false" import="true" targetId="ca5b-9e07-ff3b-235f" type="selectionEntry"/>
             <entryLink id="1036-8904-4e43-bd1c" name="Bolter Pesado Acoplado" hidden="false" collective="false" import="true" targetId="badb-9789-58cb-53c2" type="selectionEntry">
@@ -7879,6 +7912,9 @@ la pag.100). Si Kor&apos;sarro Khan va montado en Drakkan Lunar, podrá correr e
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
+              <modifiers>
+                <modifier type="set" value="2" field="0861-0c6c-6bd8-057c"/>
+              </modifiers>
             </entryLink>
             <entryLink id="5f67-bbbb-7804-1914" name="Lanzamisiles" hidden="false" collective="false" import="true" targetId="989a-ecb3-a084-9c39" type="selectionEntry">
               <costs>
@@ -10258,7 +10294,7 @@ mientras las tropas que hay en el interior cargan. Una unidad que cargue al comb
       <infoLinks>
         <infoLink id="7831-04a2-70b7-647e" name="Pesada" hidden="false" targetId="2e56-6b02-4343-0e40" type="rule"/>
         <infoLink id="a191-801e-ff8b-7f81" name="Cañón de Asalto" hidden="false" targetId="ca47-3295-c193-8e3b" type="profile"/>
-        <infoLink id="5474-41ac-3ca0-ca77" name="Aceradas" hidden="false" targetId="7097-6879-0d11-787d" type="rule"/>
+        <infoLink id="5474-41ac-3ca0-ca77" name="Acerada" hidden="false" targetId="7097-6879-0d11-787d" type="rule"/>
       </infoLinks>
     </infoGroup>
     <infoGroup id="cd13-1b2c-e3c1-52f6" name="Cañón de Fusión" hidden="false">
