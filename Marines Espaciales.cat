@@ -3585,7 +3585,7 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
           <selectionEntries>
             <selectionEntry id="2207-b50a-91b4-2b34" name="Exterminador" hidden="false" collective="false" import="true" type="model">
               <constraints>
-                <constraint field="selections" scope="parent" value="4" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="105f-8d6a-af44-23bc" type="min"/>
+                <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="105f-8d6a-af44-23bc" type="min"/>
                 <constraint field="selections" scope="parent" value="9" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e94-90f5-b26a-e8fc" type="max"/>
               </constraints>
               <infoLinks>
@@ -3741,7 +3741,6 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
       <selectionEntryGroups>
         <selectionEntryGroup id="16e4-cb9d-ba34-a907" name="Brazo Izquierdo" hidden="false" collective="false" import="true" defaultSelectionEntryId="f805-00d4-01d4-ae19">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5317-644c-3652-81b5" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e185-ba77-17f3-44af" type="max"/>
           </constraints>
           <selectionEntries>
@@ -3762,9 +3761,6 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
-              <modifiers>
-                <modifier type="set" value="2" field="0861-0c6c-6bd8-057c"/>
-              </modifiers>
             </entryLink>
             <entryLink id="9d60-ee00-ed13-b712" name="Lanzamisiles" hidden="false" collective="false" import="true" targetId="989a-ecb3-a084-9c39" type="selectionEntry">
               <costs>
@@ -3775,7 +3771,6 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
         </selectionEntryGroup>
         <selectionEntryGroup id="5224-2fc1-4db9-e089" name="Brazo Derecho" hidden="false" collective="false" import="true" defaultSelectionEntryId="3f16-0f87-6f23-9dba">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c923-65e9-5e7d-25e0" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94ab-35d0-d976-40fc" type="max"/>
           </constraints>
           <entryLinks>
@@ -3783,9 +3778,6 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
-              <modifiers>
-                <modifier type="set" value="2" field="0861-0c6c-6bd8-057c"/>
-              </modifiers>
             </entryLink>
             <entryLink id="8bb9-69a0-7400-cfcf" name="Lanzallamas Pesado Acoplado" hidden="false" collective="false" import="true" targetId="ca5b-9e07-ff3b-235f" type="selectionEntry"/>
             <entryLink id="88b7-948a-1347-7cc8" name="Bolter Pesado Acoplado" hidden="false" collective="false" import="true" targetId="badb-9789-58cb-53c2" type="selectionEntry">
@@ -3827,6 +3819,39 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
       <costs>
         <cost name="Pts" typeId="puntos" value="105"/>
       </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Doble Cañón Automático Acoplado" hidden="false" id="14a8-ee48-199d-4a35">
+          <costs>
+            <cost name="Pts" typeId="puntos" value="20"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d024-0f6f-a202-d5ca" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="d024-0f6f-a202-d5ca">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="2792-bd2b-f5b5-fb9c" childId="5224-2fc1-4db9-e089" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="2792-bd2b-f5b5-fb9c" childId="16e4-cb9d-ba34-a907" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Cañón Automático Acoplado" hidden="false" id="0ec2-b1c4-912b-f0e7" collective="false" targetId="9aa1-299c-c1cb-d85b" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="2" field="0861-0c6c-6bd8-057c"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="179b-7912-37e3-7e6c-min" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="179b-7912-37e3-7e6c-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry id="c598-7429-8c4f-d8d5" name="Escuadra de Exploradores" publicationId="f176-f140-74d8-da7d" page="66" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -7355,18 +7380,9 @@ la pag.100). Si Kor&apos;sarro Khan va montado en Drakkan Lunar, podrá correr e
       <selectionEntryGroups>
         <selectionEntryGroup id="5200-728a-79a4-2094" name="Brazo Derecho" hidden="false" collective="false" import="true" defaultSelectionEntryId="0606-76a9-11f7-e473">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a91b-ecb0-5994-f171" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7fb2-1b4f-e6bc-9584" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="d505-e28f-92a3-4e43" name="Cañón Automático Acoplado" hidden="false" collective="false" import="true" targetId="9aa1-299c-c1cb-d85b" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="puntos" value="10"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="2" field="0861-0c6c-6bd8-057c"/>
-              </modifiers>
-            </entryLink>
             <entryLink id="3c13-7659-ee9e-ef85" name="Lanzallamas Pesado Acoplado" hidden="false" collective="false" import="true" targetId="ca5b-9e07-ff3b-235f" type="selectionEntry"/>
             <entryLink id="88b7-6cd6-12c0-ddb9" name="Bolter Pesado Acoplado" hidden="false" collective="false" import="true" targetId="badb-9789-58cb-53c2" type="selectionEntry">
               <costs>
@@ -7389,11 +7405,15 @@ la pag.100). Si Kor&apos;sarro Khan va montado en Drakkan Lunar, podrá correr e
                 <cost name="Pts" typeId="puntos" value="30"/>
               </costs>
             </entryLink>
+            <entryLink import="true" name="Cañón Automático Acoplado" hidden="false" id="d505-e28f-92a3-4e43" collective="false" targetId="9aa1-299c-c1cb-d85b" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="puntos" value="10"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="eedd-ed18-59a5-9e56" name="Brazo Izquierdo" hidden="false" collective="false" import="true" defaultSelectionEntryId="25a4-bab9-097c-4ca7">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbfa-760d-acb0-461b" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16f8-b603-e04b-6d65" type="max"/>
           </constraints>
           <selectionEntries>
@@ -7410,15 +7430,12 @@ la pag.100). Si Kor&apos;sarro Khan va montado en Drakkan Lunar, podrá correr e
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
-            <entryLink id="2eae-fd8e-a73e-755d" name="Cañón Automático Acoplado" hidden="false" collective="false" import="true" targetId="9aa1-299c-c1cb-d85b" type="selectionEntry">
+            <entryLink id="53b5-5b8c-a780-717a" name="Lanzamisiles" hidden="false" collective="false" import="true" targetId="989a-ecb3-a084-9c39" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
-              <modifiers>
-                <modifier type="set" value="2" field="0861-0c6c-6bd8-057c"/>
-              </modifiers>
             </entryLink>
-            <entryLink id="53b5-5b8c-a780-717a" name="Lanzamisiles" hidden="false" collective="false" import="true" targetId="989a-ecb3-a084-9c39" type="selectionEntry">
+            <entryLink import="true" name="Cañón Automático Acoplado" hidden="false" id="d558-96d8-bb60-9eb6" collective="false" targetId="9aa1-299c-c1cb-d85b" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
@@ -7441,6 +7458,39 @@ la pag.100). Si Kor&apos;sarro Khan va montado en Drakkan Lunar, podrá correr e
       <costs>
         <cost name="Pts" typeId="puntos" value="165"/>
       </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Doble Cañón Automático Acoplado" hidden="false" id="5eff-755c-f054-db16">
+          <costs>
+            <cost name="Pts" typeId="puntos" value="20"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6133-291d-0af6-0f7d" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="6133-291d-0af6-0f7d">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="9c87-611b-bc65-a050" childId="5200-728a-79a4-2094" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="9c87-611b-bc65-a050" childId="eedd-ed18-59a5-9e56" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Cañón Automático Acoplado" hidden="false" id="09e7-0bb5-38e9-633b" collective="false" targetId="9aa1-299c-c1cb-d85b" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="2" field="0861-0c6c-6bd8-057c"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="a60f-e9c3-a9e1-60d2-min" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="a60f-e9c3-a9e1-60d2-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry id="9a70-4a67-bfe6-71db" name="Dreadnought de Hierro" publicationId="f176-f140-74d8-da7d" page="65" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -7622,7 +7672,6 @@ la pag.100). Si Kor&apos;sarro Khan va montado en Drakkan Lunar, podrá correr e
       <selectionEntryGroups>
         <selectionEntryGroup id="da93-c286-70a6-5c3d" name="Brazo Derecho" hidden="false" collective="false" import="true" defaultSelectionEntryId="0bf8-6200-ed1f-3ce1">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f46f-771b-9b2d-33de" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8afd-e006-5377-5f95" type="max"/>
           </constraints>
           <entryLinks>
@@ -7630,9 +7679,6 @@ la pag.100). Si Kor&apos;sarro Khan va montado en Drakkan Lunar, podrá correr e
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
-              <modifiers>
-                <modifier type="set" value="2" field="0861-0c6c-6bd8-057c"/>
-              </modifiers>
             </entryLink>
             <entryLink id="16f1-46e2-65f3-ec6b" name="Lanzallamas Pesado Acoplado" hidden="false" collective="false" import="true" targetId="ca5b-9e07-ff3b-235f" type="selectionEntry"/>
             <entryLink id="01bd-add7-6665-1210" name="Bolter Pesado Acoplado" hidden="false" collective="false" import="true" targetId="badb-9789-58cb-53c2" type="selectionEntry">
@@ -7660,7 +7706,6 @@ la pag.100). Si Kor&apos;sarro Khan va montado en Drakkan Lunar, podrá correr e
         </selectionEntryGroup>
         <selectionEntryGroup id="4d26-0756-4ae2-7475" name="Brazo Izquierdo" hidden="false" collective="false" import="true" defaultSelectionEntryId="4599-a626-871e-7606">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b271-3ccf-198f-9bc4" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56be-dbe4-87ee-815f" type="max"/>
           </constraints>
           <selectionEntries>
@@ -7681,9 +7726,6 @@ la pag.100). Si Kor&apos;sarro Khan va montado en Drakkan Lunar, podrá correr e
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
-              <modifiers>
-                <modifier type="set" value="2" field="0861-0c6c-6bd8-057c"/>
-              </modifiers>
             </entryLink>
             <entryLink id="6fb0-f675-71a6-0a17" name="Lanzamisiles" hidden="false" collective="false" import="true" targetId="989a-ecb3-a084-9c39" type="selectionEntry">
               <costs>
@@ -7708,6 +7750,39 @@ la pag.100). Si Kor&apos;sarro Khan va montado en Drakkan Lunar, podrá correr e
       <costs>
         <cost name="Pts" typeId="puntos" value="105"/>
       </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Doble Cañón Automático Acoplado" hidden="false" id="7316-3ef0-05e9-46b2">
+          <costs>
+            <cost name="Pts" typeId="puntos" value="20"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c459-2009-bfec-1472" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="c459-2009-bfec-1472">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="f89b-1f06-160a-26e1" childId="da93-c286-70a6-5c3d" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="f89b-1f06-160a-26e1" childId="4d26-0756-4ae2-7475" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Cañón Automático Acoplado" hidden="false" id="4166-d578-942e-f748" collective="false" targetId="9aa1-299c-c1cb-d85b" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="2" field="0861-0c6c-6bd8-057c"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="af66-fa45-bb67-ef75-min" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="af66-fa45-bb67-ef75-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry id="ef15-0aeb-7e71-75a5" name="Dreadnought de Hierro (Apoyo Pesado)" publicationId="f176-f140-74d8-da7d" page="65" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
@@ -7853,7 +7928,6 @@ la pag.100). Si Kor&apos;sarro Khan va montado en Drakkan Lunar, podrá correr e
       <selectionEntryGroups>
         <selectionEntryGroup id="c0ae-4abc-f1d2-a249" name="Brazo Derecho" hidden="false" collective="false" import="true" defaultSelectionEntryId="48b1-c3d1-67ea-202d">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6600-b696-307e-36ec" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af9a-5e49-93ff-4e07" type="max"/>
           </constraints>
           <entryLinks>
@@ -7861,9 +7935,6 @@ la pag.100). Si Kor&apos;sarro Khan va montado en Drakkan Lunar, podrá correr e
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
-              <modifiers>
-                <modifier type="set" value="2" field="0861-0c6c-6bd8-057c"/>
-              </modifiers>
             </entryLink>
             <entryLink id="b69d-1633-278a-b383" name="Lanzallamas Pesado Acoplado" hidden="false" collective="false" import="true" targetId="ca5b-9e07-ff3b-235f" type="selectionEntry"/>
             <entryLink id="1036-8904-4e43-bd1c" name="Bolter Pesado Acoplado" hidden="false" collective="false" import="true" targetId="badb-9789-58cb-53c2" type="selectionEntry">
@@ -7891,7 +7962,6 @@ la pag.100). Si Kor&apos;sarro Khan va montado en Drakkan Lunar, podrá correr e
         </selectionEntryGroup>
         <selectionEntryGroup id="1c81-0632-b535-1b52" name="Brazo Izquierdo" hidden="false" collective="false" import="true" defaultSelectionEntryId="d041-2f16-e839-a00f">
           <constraints>
-            <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75d4-3a78-10e6-ec00" type="min"/>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8865-792c-7c51-2a63" type="max"/>
           </constraints>
           <selectionEntries>
@@ -7912,9 +7982,6 @@ la pag.100). Si Kor&apos;sarro Khan va montado en Drakkan Lunar, podrá correr e
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
-              <modifiers>
-                <modifier type="set" value="2" field="0861-0c6c-6bd8-057c"/>
-              </modifiers>
             </entryLink>
             <entryLink id="5f67-bbbb-7804-1914" name="Lanzamisiles" hidden="false" collective="false" import="true" targetId="989a-ecb3-a084-9c39" type="selectionEntry">
               <costs>
@@ -7939,6 +8006,39 @@ la pag.100). Si Kor&apos;sarro Khan va montado en Drakkan Lunar, podrá correr e
       <costs>
         <cost name="Pts" typeId="puntos" value="165"/>
       </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Doble Cañón Automático Acoplado" hidden="false" id="26e7-a882-eb81-2cd2">
+          <costs>
+            <cost name="Pts" typeId="puntos" value="20"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1706-b861-2a3f-efe3" includeChildSelections="false"/>
+          </constraints>
+          <modifiers>
+            <modifier type="set" value="0" field="1706-b861-2a3f-efe3">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="63ee-e2d6-1e5c-59ce" childId="c0ae-4abc-f1d2-a249" shared="true"/>
+                    <condition type="atLeast" value="1" field="selections" scope="63ee-e2d6-1e5c-59ce" childId="1c81-0632-b535-1b52" shared="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink import="true" name="Cañón Automático Acoplado" hidden="false" id="12be-1a21-3a8d-817d" collective="false" targetId="9aa1-299c-c1cb-d85b" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" value="2" field="0861-0c6c-6bd8-057c"/>
+              </modifiers>
+              <constraints>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="ff32-6478-07b1-a902-min" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="ff32-6478-07b1-a902-max" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry id="984b-b243-5a7c-1337" name="Baliza de Teleportación" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
