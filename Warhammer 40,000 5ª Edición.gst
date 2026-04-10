@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="8cf6-c83d-3eeb-e95c" name="Warhammer 40,000 5ª Edición " revision="12" battleScribeVersion="2.03" authorName="Diego Muñiz" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorUrl="csddmv@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="8cf6-c83d-3eeb-e95c" name="Warhammer 40,000 5ª Edición " revision="13" battleScribeVersion="2.03" authorName="Diego Muñiz" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorUrl="csddmv@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <readme>Esto es for fun. Cualquier error o sugerencia serán bienvenidas
 
 En este sistema se agruparán el sistema de Warhammer 40000 5ª edición, así como todos los los codex que se usarán en este sistema cerrado.
@@ -24,6 +24,7 @@ Prueba</readme>
     <publication id="11a0-7b47-fa28-1d82" name="Codex Orkos"/>
     <publication id="a105-bc94-46a2-951b" name="Codex: Hermanas de Batalla"/>
     <publication id="6677-c576-13ff-2bc5" name="Codex: Tiránidos"/>
+    <publication name="GitHub" id="b97a-1882-6351-5350" hidden="false" publisherUrl="https://github.com/DiegoMunnizVelazquez/wh40k-5ed" shortName="GitHubRepo" publisher="GitHub"/>
   </publications>
   <costTypes>
     <costType id="puntos" name="Pts" defaultCostLimit="0" hidden="false"/>
