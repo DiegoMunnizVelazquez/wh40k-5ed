@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue library="false" id="fe1e-9d05-9036-5244" name="Orkos" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" revision="1" authorUrl="csddmv@gmail.com" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <sharedRules>
+    <rule name="¡Waaagh!" id="42e1-f7fd-5e72-83fa" hidden="false" publicationId="11a0-7b47-fa28-1d82" page="31">
+      <description>Una vez por partida, el jugador orko puede declarar un ¡Waaagh! durante su fase de Disparo. El ¡Waaagh! no puede declararse en el primer turno ya que debe cobrar fuerza. En el turno en que los orkos declaren un ¡Waaagh! todas las unidades de infanteria orkas estarán sujetas a la regla especial de veloces (excepto las unidades de gretchins que son demasiado debiluchas para organizar un ¡Waaagh! con todas las de la ley). Si una unidad obtiene un resultado de 1 mientras efectúa este movimiento de ¡Waaagh!, los orkos que la componen empiezan a luchar entre si antes de alcanzar al enemigo y una miniatura de la unidad sufrirá una herida. Recuerda que la unidad puede mover los 3 cm y asaltar normalmente.</description>
+    </rule>
+    <rule name="¡La Peña triunfará!" id="5e0f-344d-a5bb-fbdc" hidden="false" publicationId="11a0-7b47-fa28-1d82" page="31">
+      <description> La psicología y la moral orkas dependen fundamentalmente del número de guerreroz orkos que hay en  un momento determinado. Un orko con un grupo de guerreros que le respalde es una visión que ofrece mucho más confianza
+ que uno con solo la mitad de guerreros a sus espaldas. Por este motivo, las peñas de orkos pueden sustituir el número de orkos que compone su peña por su atributo de Liderazgo normal. Si una peña de orkos está formada por 11 o más
+ miniaturas de orkos, está sujeta a la regla especial de coraje.</description>
+    </rule>
+  </sharedRules>
+  <sharedInfoGroups>
+    <infoGroup name="¡Waaagh!" id="27ba-6039-f81b-b5d5" hidden="false">
+      <infoLinks>
+        <infoLink name="¡Waaagh!" id="8740-d159-3902-5c33" hidden="false" type="rule" targetId="42e1-f7fd-5e72-83fa"/>
+        <infoLink name="Veloces" id="4940-576b-009a-8f88" hidden="false" type="rule" targetId="d110-fc1c-250c-54d4"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="¡La Peña triunfará!" id="21c0-417e-b065-027e" hidden="false">
+      <infoLinks>
+        <infoLink name="¡La Peña triunfará!" id="0b2e-82fa-d8d5-f00d" hidden="false" type="rule" targetId="5e0f-344d-a5bb-fbdc"/>
+        <infoLink name="Coraje" id="b85f-0ba8-6922-b77d" hidden="false" type="rule" targetId="b23b-fb5c-4c8c-5ae4"/>
+      </infoLinks>
+    </infoGroup>
+  </sharedInfoGroups>
+  <sharedProfiles>
+    <profile name="Chiko Duro" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="3f14-200f-d916-660b" publicationId="11a0-7b47-fa28-1d82" page="104">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">2</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">2</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">7</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">4+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Badrukk" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="a782-2642-f2a3-ff93" publicationId="11a0-7b47-fa28-1d82" page="104">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Perzonaje Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">5</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">2</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">2</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">3</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">4</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Mekániko" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="3d0e-259b-840b-1f15" publicationId="11a0-7b47-fa28-1d82" page="104">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Perzonaje Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">2</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">2</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">3</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">8</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">6+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Achicharrador" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="ff5e-0571-0785-2eb5" publicationId="11a0-7b47-fa28-1d82" page="104">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">2</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">2</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">7</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">6+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Kóptero" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="9958-a366-7208-b9cd" publicationId="11a0-7b47-fa28-1d82" page="104">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Motocicleta a Reacción</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">2</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4(5)</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">2</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">2</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">7</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">4+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Grotsnik" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="f005-64f0-f533-63be" publicationId="11a0-7b47-fa28-1d82" page="104">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Perzonaje Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">5</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">2</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">5</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">3</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">3</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">4</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">4+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Tipejo Vazilón" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="8fed-829f-866f-c8a0" publicationId="11a0-7b47-fa28-1d82" page="104">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">2</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">2</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">3</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">7</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">4+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Ghazghkull" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="71aa-744e-9154-74f4" publicationId="11a0-7b47-fa28-1d82" page="104">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Personaje Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">6</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">2</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">5</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">5</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">4</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">5</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">2+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Gretchin" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="08a0-a179-5144-bd02" publicationId="11a0-7b47-fa28-1d82" page="104">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">2</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">3</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">2</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">2</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">2</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">1</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">5</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Komando" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="55e5-c7dd-aed8-304d" publicationId="11a0-7b47-fa28-1d82" page="104">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">2</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">2</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">7</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">6+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Zakeador" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="ce6d-9487-9866-2e05" publicationId="11a0-7b47-fa28-1d82" page="104">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">2</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">2</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">7</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">6+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Meganoble" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="38ee-e7fa-958a-7e55" publicationId="11a0-7b47-fa28-1d82" page="104">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">2</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">2</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">3</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">7</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">2+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Chapuzaz" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="1055-4e99-b872-d3fb" publicationId="11a0-7b47-fa28-1d82" page="104">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Perzonaje Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">2</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">2</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">7</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">6+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Noble" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="98f1-ee57-bc9e-3282" publicationId="11a0-7b47-fa28-1d82" page="104">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">2</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">2</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">3</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">7</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">6+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Viejo Zogwort" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="a715-22c3-c837-80dd" publicationId="11a0-7b47-fa28-1d82" page="104">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Perzonaje Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">0</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">5</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">3</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">2</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">8</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">6+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Guerrero Orko" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="31a5-8e1b-a934-a03c" publicationId="11a0-7b47-fa28-1d82" page="104">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">2</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">2</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">7</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">6+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Matazanoz" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="8b16-ab1d-be6f-5ae7" publicationId="11a0-7b47-fa28-1d82" page="104">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Perzonaje Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">2</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">2</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">3</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">7</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">6+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Kaporal" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="ea0c-473a-814e-2b95" publicationId="11a0-7b47-fa28-1d82" page="104">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">2</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">2</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">7</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">6+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Jefe Snikrot" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="c270-e4f8-e5c7-3f59" publicationId="11a0-7b47-fa28-1d82" page="104">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Perzonaje Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">5</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">2</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">5</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">2</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">3</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">4</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">8</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">6+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Zoldado de Azalto" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="e6d7-7324-b67b-ad13" publicationId="11a0-7b47-fa28-1d82" page="104">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería Retropropulzada</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">2</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">2</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">7</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">6+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Petatankez" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="2ad2-9fbd-b0db-b6e8" publicationId="11a0-7b47-fa28-1d82" page="104">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">2</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">2</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">7</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">6+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Motorizta" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="a893-e9f8-b070-a39b" publicationId="11a0-7b47-fa28-1d82" page="104">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Motocicleta a Reacción</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">2</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4(5)</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">2</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">7</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">4+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Kaudillo" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="25d7-d5f7-49ba-47f0" publicationId="11a0-7b47-fa28-1d82" page="104">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Perzonaje Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">5</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">2</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">5</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">5</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">3</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">4</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">6+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Wazdakka" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="8a97-16d1-cfb7-1d02" publicationId="11a0-7b47-fa28-1d82" page="104">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Perzonaje Motocicleta a Reacción</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">5</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">2</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">5(6)</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">3</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">3</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">4</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">4+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Eztrambótiko" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="4630-f31d-893a-1bfa" publicationId="11a0-7b47-fa28-1d82" page="104">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Perzonaje Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">2</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">2</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">3</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">7</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">6+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Jefe Zagstruk" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="6881-ba5c-b8ac-af26" publicationId="11a0-7b47-fa28-1d82" page="104">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Perzonaje Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">5</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">2</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">2</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">3</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">4</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">4+</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</catalogue>
