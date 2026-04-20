@@ -216,7 +216,7 @@ Estos IDs son únicos para cada característica dentro de BattleScribe:
 
 ### Problema: NewRecruit solo detecta el primer perfil
 **Causa**: XPath incorrecto en la búsqueda de elementos con namespace.
-**Solución**: Usar `.//{namespace}elemento[@atributo="valor"]` con ruta completa.
+**Solución**: Usar rutas completas con namespace: `.//{namespace}elemento[@atributo="valor"]`
 
 ### Problema: Caracteres doblemente codificados (Astrá→AstrÃ³)
 **Causa**: Uso de `minidom.toprettyxml()` que causa doble codificación UTF-8.
@@ -226,7 +226,9 @@ Estos IDs son únicos para cada característica dentro de BattleScribe:
 **Causa**: ElementTree genera `<?xml version='1.0' encoding='UTF-8'?>` sin comillas dobles ni `standalone="yes"`.
 **Solución**: Leer el archivo guardado y reemplazar la declaración manualmente.
 
-## 8. Validación de Datos
+### Problema: Namespace no encontrado con findall
+**Causa**: XPath requiere namespace completo cuando está declarado en el documento
+**Solución**: Usar `.//{namespace_uri}elemento` en lugar de `.//elemento`
 
 ### Cantidades Esperadas
 - Unidades: 41 perfiles
@@ -264,13 +266,17 @@ Los perfiles se actualizan en el orden que aparecen en el XML, en correspondenci
 - `PerfilesArmas.csv` - 51 armas
 - `PerfilesBipodes.csv` - 2 bípodes
 
-### Scripts de Actualización
+### Scripts de Actualización de Perfiles
 - `update_unit_profiles.py` - Actualiza unidades
 - `update_vehicle_profiles.py` - Actualiza vehículos
 - `update_weapon_profiles.py` - Actualiza armas
 - `update_bipode_profiles.py` - Actualiza bípodes (alternador)
-- `generate_weapon_shared_info_groups.py` - Genera sharedInfoGroups para armas
 - `generate_init.py` - Genera archivo InitGuardia.cat con estructura base
+
+### Scripts de Generación de Información Compartida
+- `generate_weapon_shared_info_groups.py` - Genera sharedInfoGroups para armas (automático)
+- `generate_all_shared_info_groups.py` - Genera sharedInfoGroups para TODOS los tipos (armas, unidades, vehículos, bípodes)
+- `generate_selection_entries.py` - Genera sharedSelectionEntries que apuntan a infoGroups
 
 ### Scripts de Formateo (Legacy)
 - `format_xml.py` - Formateo XML básico (ya no necesario)
@@ -285,16 +291,22 @@ Los perfiles se actualizan en el orden que aparecen en el XML, en correspondenci
 
 ## 11. Comando de Ejecución
 
-Para actualizar todos los perfiles:
+### Flujo de trabajo completo:
 ```bash
+# 1. Actualizar perfiles desde CSV
 python update_unit_profiles.py
 python update_vehicle_profiles.py
 python update_weapon_profiles.py
 python update_bipode_profiles.py
-python generate_weapon_shared_info_groups.py
+
+# 2. Generar infoGroups para todos los tipos de perfil
+python generate_all_shared_info_groups.py
+
+# 3. Generar selectionEntries que apunten a infoGroups
+python generate_selection_entries.py
 ```
 
-Cada script actualiza independientemente su tipo de perfil. El script `generate_weapon_shared_info_groups.py` debe ejecutarse después de `update_weapon_profiles.py`.
+Cada script actualiza independientemente. El software BattleScribe usará los infoGroups y selectionEntries para permitir seleccionar perfiles desde el catálogo.
 
 ## 11.1 Uso con Parámetros de Línea de Comandos
 
@@ -310,41 +322,89 @@ python update_unit_profiles.py "Marines Espaciales.cat"
 # Especificar ambos archivos
 python update_unit_profiles.py "Eldars.cat" "unidades_eldars.csv"
 
-# Lo mismo aplica para todos los scripts:
-python update_vehicle_profiles.py "Marines Espaciales.cat" "vehiculos_marines.csv"
-python update_weapon_profiles.py "Tau.cat" "armas_tau.csv"
-python update_bipode_profiles.py "Necrones.cat" "bipodes_necrones.csv"
-python generate_weapon_shared_info_groups.py "Orkos.cat" "armas_orkos.csv"
+# Scripts de generación de información (mismo patrón)
+python generate_all_shared_info_groups.py "Marines Espaciales.cat"
+python generate_selection_entries.py "Marines Espaciales.cat"
 ```
 
 **Parámetros:**
 - `archivo_cat`: Archivo CAT a modificar (por defecto: 'Guardia Imperial.cat')
 - `archivo_csv`: Archivo CSV con los datos (por defecto: específico para cada tipo)
 
-## 12. SharedInfoGroups: Conceptos Avanzados
+### Flujo Multi-Catálogo:
+```bash
+# Procesar Marines Espaciales completo
+python update_unit_profiles.py "Marines Espaciales.cat"
+python update_weapon_profiles.py "Marines Espaciales.cat"
+python update_vehicle_profiles.py "Marines Espaciales.cat"
+python generate_all_shared_info_groups.py "Marines Espaciales.cat"
+python generate_selection_entries.py "Marines Espaciales.cat"
+```
+
+## 12. SharedInfoGroups y SharedSelectionEntries: Sistema Completo
 
 ### ¿Qué son los SharedInfoGroups?
-Los sharedInfoGroups son elementos reutilizables en BattleScribe que permiten referenciar información común (perfiles y reglas) desde múltiples lugares del catálogo sin duplicar datos.
+Los sharedInfoGroups son elementos reutilizables que agrupan información común (perfiles y reglas) sin duplicar datos. Cada infoGroup contiene:
+- **Nombre del perfil** (arma, unidad, vehículo, bípode)
+- **infoLink al perfil**: Referencia directa al perfil con características
+- **infoLinks a reglas**: Referencias a reglas aplicables (para armas)
 
-### ¿Por qué son importantes para las armas?
-- **Reutilización**: Una misma arma puede aparecer en múltiples unidades sin duplicar su definición
-- **Consistencia**: Cambios en reglas o perfiles se propagan automáticamente
-- **Organización**: Agrupan toda la información relacionada con un arma en un solo lugar
+### ¿Qué son los SharedSelectionEntries?
+Los sharedSelectionEntries son puntos de selección que BattleScribe utiliza para permitir que los usuarios seleccionen perfiles desde la interfaz. Cada selectionEntry:
+- **Referencia a un infoGroup**: Mediante un infoLink de tipo "infoGroup"
+- **Tipo de selección**: Define si es un arma (upgrade), unidad, vehículo, etc.
+- **ID único**: Para evitar conflictos de referencia
 
-### Estructura Jerárquica
+### Flujo de información:
 ```
-sharedInfoGroups
-├── infoGroup (por cada arma)
-    ├── infoLinks
-        ├── infoLink (al perfil del arma)
-        └── infoLink(s) (a cada regla aplicable)
+Perfil (Arma/Unidad/Vehículo/Bípode)
+       ↓
+   infoGroup
+   (agrupa el perfil + reglas)
+       ↓
+   selectionEntry
+   (permite seleccionar en BattleScribe)
+       ↓
+   Usuario ve la opción en el catálogo
 ```
 
-### IDs Únicos Requeridos
-Cada infoGroup debe tener un ID único generado con UUID para evitar conflictos de referencias cruzadas entre catálogos.
+### Scripts de generación:
 
-### Reglas del Sistema .gst
-Las reglas se referencian desde el archivo `Warhammer 40,000 5ª Edición.gst` que contiene todas las reglas del sistema de juego. Los IDs de reglas son fijos y universales.
+**generate_all_shared_info_groups.py**
+- Crea infoGroups para: Armas (48), Unidades (41), Vehículos (20), Bípodes (2)
+- Total: 111 infoGroups
+- Cada infoGroup contiene referencias a perfiles y (para armas) a reglas
+- Usa: `python generate_all_shared_info_groups.py [archivo_cat]`
+
+**generate_selection_entries.py**
+- Crea selectionEntries correspondientes a cada infoGroup
+- Automáticamente determina el tipo (upgrade para armas, unit para otros)
+- Total: 111 selectionEntries
+- Cada uno apunta a su infoGroup correspondiente
+- Usa: `python generate_selection_entries.py [archivo_cat]`
+
+## 13. Troubleshooting
+
+### Problemas con infoGroups
+- **Error: targetId not found**: Verificar que los perfiles existen en el archivo CAT
+- **Reglas no aparecen en armas**: Asegurarse de que los tipos de arma están correctamente mapeados
+- **IDs duplicados**: Los scripts generan UUIDs únicos, pero si hay conflictos, regenerar
+
+### Problemas con selectionEntries
+- **Opciones no aparecen en BattleScribe**: Verificar que los infoLinks apuntan a infoGroups válidos
+- **Referencias incorrectas**: Ejecutar primero `generate_all_shared_info_groups.py` y luego `generate_selection_entries.py`
+
+### Verificación:
+```bash
+# Verificar que XML es válido
+python -c "import xml.etree.ElementTree as ET; ET.parse('Guardia Imperial.cat'); print('✅ XML válido')"
+
+# Contar elementos
+python -c "with open('Guardia Imperial.cat') as f: 
+    content = f.read()
+    print(f'infoGroups: {content.count(\"<infoGroup name=\")}')
+    print(f'selectionEntries: {content.count(\"<selectionEntry type=\")}')"
+```
 
 ## 13. Troubleshooting Específico
 
@@ -371,4 +431,4 @@ Si hay errores en la generación:
 ---
 
 **Última actualización**: Abril 2026
-**Versión**: 2.2 - Todos los scripts ahora aceptan parámetros de línea de comandos para multi-CAT support
+**Versión**: 3.0 - Sistema completo de generación de infoGroups y selectionEntries para todos los tipos de perfil
