@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="1ca7-d2ef-76ac-a017" name="Imperio Tau" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="12" revision="2" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" publicationId="21fd-62c1-d9f7-e743" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="1ca7-d2ef-76ac-a017" name="Imperio Tau" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="12" revision="3" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" publicationId="21fd-62c1-d9f7-e743" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Etéreo" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="41e8-c086-7f9a-cc4e" publicationId="21fd-62c1-d9f7-e743">
       <characteristics>
@@ -1093,6 +1093,17 @@ Los disparos efectuados con el marcador telemétrico no obtienen los beneficios 
                     <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="75f6-bfcf-68e3-f09c-min" includeChildSelections="false"/>
                     <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="75f6-bfcf-68e3-f09c-max" includeChildSelections="false"/>
                   </constraints>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="decrement" value="1" field="75f6-bfcf-68e3-f09c-min"/>
+                        <modifier type="decrement" value="1" field="75f6-bfcf-68e3-f09c-max"/>
+                      </modifiers>
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="7eae-1495-f507-5b3e" shared="true" roundUp="false" childName="Acoplada" includeChildSelections="true"/>
+                      </repeats>
+                    </modifierGroup>
+                  </modifierGroups>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
@@ -1123,6 +1134,17 @@ Los disparos efectuados con el marcador telemétrico no obtienen los beneficios 
                     <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="5e6f-2bb4-22e3-814f-min" includeChildSelections="false"/>
                     <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="5e6f-2bb4-22e3-814f-max" includeChildSelections="false"/>
                   </constraints>
+                  <modifierGroups>
+                    <modifierGroup type="and">
+                      <modifiers>
+                        <modifier type="decrement" value="1" field="5e6f-2bb4-22e3-814f-min"/>
+                        <modifier type="decrement" value="1" field="5e6f-2bb4-22e3-814f-max"/>
+                      </modifiers>
+                      <repeats>
+                        <repeat value="1" repeats="1" field="selections" scope="parent" childId="7eae-1495-f507-5b3e" shared="true" roundUp="false" childName="Acoplada" includeChildSelections="true"/>
+                      </repeats>
+                    </modifierGroup>
+                  </modifierGroups>
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <entryLinks>
@@ -1159,6 +1181,9 @@ Los disparos efectuados con el marcador telemétrico no obtienen los beneficios 
       <infoLinks>
         <infoLink name="Bláster de Fusión Acoplado" id="6328-5610-0200-3812" hidden="false" type="infoGroup" targetId="d858-b3a4-901b-b2b3"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Acoplada" hidden="false" id="de98-880f-4ee5-e35f" targetId="7eae-1495-f507-5b3e" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Cañón de Inducción" hidden="false" id="1211-e938-a528-7fa2">
       <infoLinks>
@@ -1316,21 +1341,33 @@ Los disparos efectuados con el marcador telemétrico no obtienen los beneficios 
       <infoLinks>
         <infoLink name="Cañón de Inducción Acoplado" id="8092-01a4-4391-34f8" hidden="false" type="infoGroup" targetId="88d0-2d01-c823-e9ef"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Acoplada" hidden="false" id="172e-ae46-3f8a-8f15" targetId="7eae-1495-f507-5b3e" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Lanzallamas Acoplado" hidden="false" id="092a-fc1a-c215-f78f">
       <infoLinks>
         <infoLink name="Lanzallamas Acoplado" id="1b13-b6cb-c4c1-1f55" hidden="false" type="infoGroup" targetId="7615-c90e-fd2a-4625"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Acoplada" hidden="false" id="07e4-c6a1-9ae0-a512" targetId="7eae-1495-f507-5b3e" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Módulo Lanzamisiles Acoplado" hidden="false" id="5b33-0e6e-7f7b-6aa6">
       <infoLinks>
         <infoLink name="Módulo Lanzamisiles Acoplado" id="bea4-d778-741f-15df" hidden="false" type="infoGroup" targetId="4b74-4d28-2a59-147d"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Acoplada" hidden="false" id="4196-1d42-e7ae-908b" targetId="7eae-1495-f507-5b3e" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Rifle de Plasma Acoplado" hidden="false" id="cf4c-19a0-8a4c-0f4c">
       <infoLinks>
         <infoLink name="Rifle de Plasma Acoplado" id="556c-7e4d-f93e-e5ef" hidden="false" type="infoGroup" targetId="6399-3436-a3ef-206c"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Acoplada" hidden="false" id="9a4c-48fa-76d5-508f" targetId="7eae-1495-f507-5b3e" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Shas&apos;vre Crisis" hidden="false" id="5ff6-b4cc-9e8b-d48f">
       <selectionEntryGroups>
@@ -1343,6 +1380,17 @@ Los disparos efectuados con el marcador telemétrico no obtienen los beneficios 
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="5409-97c6-471f-f303-min" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="5409-97c6-471f-f303-max" includeChildSelections="false"/>
           </constraints>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="decrement" value="1" field="5409-97c6-471f-f303-min"/>
+                <modifier type="decrement" value="1" field="5409-97c6-471f-f303-max"/>
+              </modifiers>
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="7eae-1495-f507-5b3e" shared="true" roundUp="false" childName="Acoplada" includeChildSelections="true"/>
+              </repeats>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -1537,6 +1585,17 @@ Los disparos efectuados con el marcador telemétrico no obtienen los beneficios 
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="9df9-7a9f-ff2e-8e40" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="771a-d24e-5187-3ea4" includeChildSelections="false"/>
           </constraints>
+          <modifierGroups>
+            <modifierGroup type="and">
+              <modifiers>
+                <modifier type="decrement" value="1" field="9df9-7a9f-ff2e-8e40"/>
+                <modifier type="decrement" value="1" field="771a-d24e-5187-3ea4"/>
+              </modifiers>
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="7eae-1495-f507-5b3e" shared="true" roundUp="false" childName="Acoplada" includeChildSelections="true"/>
+              </repeats>
+            </modifierGroup>
+          </modifierGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <infoLinks>
@@ -4003,5 +4062,6 @@ Armaduras miméticas, Equipos de Rastreadores, Tanques Cabezamartillo, Tanques M
   <categoryEntries>
     <categoryEntry id="5e46-96ae-6137-a4fe" hidden="false" name="Lider Shas&apos;"/>
     <categoryEntry name="Guardia de Honor" id="0424-0a1f-df0c-789b" hidden="false"/>
+    <categoryEntry name="Acoplada" id="7eae-1495-f507-5b3e" hidden="true"/>
   </categoryEntries>
 </catalogue>
