@@ -1,7 +1,21 @@
 import csv
 import xml.etree.ElementTree as ET
-from xml.dom import minidom
 import sys
+import uuid
+
+FALLBACK_PROFILE_TYPE_ID = '2d6001b0-980e-46d2-bcc2-a9fc60109afd'
+FALLBACK_CHARACTERISTIC_TYPE_IDS = {
+    'Tipo': 'c2b4b061-a0fd-499d-8a3d-6ee52587cbd5',
+    'HA': '5ee4ff0b-b244-4670-9d05-91d10f80c32e',
+    'HP': 'f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5',
+    'F': 'da036dbb-32c2-430a-9dd5-aa74e0c4f74b',
+    'R': '3f9ed75c-36cd-4169-9cef-48391bb55cfd',
+    'H': '17ee558f-3014-4bd2-afc1-b474d8d2b7a8',
+    'I': 'a558b3ef-04d0-440e-a312-bac3255bf592',
+    'A': '5dff3e7c-e024-4030-a71d-03195ec06ea7',
+    'L': '4a42059d-12cd-4c1f-a4c7-bb569d13eeea',
+    'S': 'b215fe72-dbce-4ad6-89ec-c4bb3962c39d',
+}
 
 """
 Script para actualizar perfiles de unidades en archivos CAT de BattleScribe.
@@ -18,17 +32,72 @@ Los perfiles se actualizan en el orden en que aparecen en el XML.
 """
 
 # Este script actualiza perfiles de unidades en archivos XML de NewRecruit.
-# NewRecruit usa una estructura similar a BattleScribe, pero puede tener diferencias
-# en el esquema y en los nombres de etiquetas.
+# Si el CSV contiene más filas que perfiles existentes, crea perfiles nuevos
+# con IDs únicos para que el CAT no dependa de placeholders predefinidos.
+
+
+def get_profile_type_id(root, ns_uri, type_name, profiles):
+    if profiles and profiles[0].get('typeId'):
+        return profiles[0].get('typeId')
+
+    profile_type = root.find(f'.//{{{ns_uri}}}profileType[@name="{type_name}"]')
+    if profile_type is not None and profile_type.get('id'):
+        return profile_type.get('id')
+
+    return FALLBACK_PROFILE_TYPE_ID
+
+
+def get_characteristic_type_ids(root, ns_uri, type_name, profiles):
+    type_ids = {}
+
+    for profile in profiles:
+        characteristics = profile.find(f'{{{ns_uri}}}characteristics')
+        if characteristics is None:
+            continue
+        for char in characteristics:
+            char_name = char.get('name')
+            char_type_id = char.get('typeId')
+            if char_name and char_type_id and char_name not in type_ids:
+                type_ids[char_name] = char_type_id
+
+    if type_ids:
+        return type_ids
+
+    profile_type = root.find(f'.//{{{ns_uri}}}profileType[@name="{type_name}"]')
+    if profile_type is not None:
+        for char_type in profile_type.findall(f'.//{{{ns_uri}}}characteristicType'):
+            char_name = char_type.get('name')
+            char_type_id = char_type.get('id')
+            if char_name and char_type_id:
+                type_ids[char_name] = char_type_id
+
+    for char_name, char_type_id in FALLBACK_CHARACTERISTIC_TYPE_IDS.items():
+        if char_name not in type_ids:
+            type_ids[char_name] = char_type_id
+
+    return type_ids
+
+
+def ensure_xml_declaration(xml_file):
+    with open(xml_file, 'r', encoding='utf-8') as f:
+        content = f.read()
+
+    lines = content.splitlines()
+    if lines and lines[0].startswith('<?xml'):
+        lines[0] = '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>'
+        content = '\n'.join(lines)
+
+    with open(xml_file, 'w', encoding='utf-8') as f:
+        f.write(content)
 
 def update_unit_profiles(xml_file, csv_file):
     # Leer datos del CSV
-    units_data = {}
+    units_data = []
     with open(csv_file, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f)
         for row in reader:
-            name = row['Nombre']
-            units_data[name] = {
+            units_data.append({
+                'Nombre': row['Nombre'],
                 'Tipo': 'Infantería',
                 'HA': row['HA'],
                 'HP': row['HP'],
@@ -39,7 +108,7 @@ def update_unit_profiles(xml_file, csv_file):
                 'A': row['A'],
                 'L': row['L'],
                 'S': row['S'],
-            }
+            })
 
     # Parsear el XML
     tree = ET.parse(xml_file)
@@ -49,49 +118,59 @@ def update_unit_profiles(xml_file, csv_file):
     ns = {'bs': 'http://www.battlescribe.net/schema/catalogueSchema'}
     ET.register_namespace('', ns['bs'])
 
-    # Encontrar perfiles de unidades
-    unit_profiles = []
-    for profile in root.findall('.//bs:profile[@typeName="Unidad"]', ns):
-        unit_profiles.append(profile)
+    ns_uri = ns['bs']
+    shared_profiles = root.find(f'{{{ns_uri}}}sharedProfiles')
+    if shared_profiles is None:
+        raise ValueError('No se encontró la sección sharedProfiles en el CAT')
 
-    # Asumir que los perfiles están en el mismo orden que el CSV
-    unit_names = list(units_data.keys())
+    unit_profiles = root.findall('.//bs:profile[@typeName="Unidad"]', ns)
+    profile_type_id = get_profile_type_id(root, ns_uri, 'Unidad', unit_profiles)
+    characteristic_type_ids = get_characteristic_type_ids(root, ns_uri, 'Unidad', unit_profiles)
+    char_order = ['Tipo', 'HA', 'HP', 'F', 'R', 'H', 'I', 'A', 'L', 'S']
 
-    if len(unit_profiles) < len(unit_names):
-        print(f"Error: Hay más entradas en CSV ({len(unit_names)}) que perfiles en XML ({len(unit_profiles)})")
-        return
-
-    # Actualizar cada perfil
-    for i in range(min(len(unit_profiles), len(unit_names))):
-        profile = unit_profiles[i]
-        name = unit_names[i]
-        data = units_data[name]
+    # Actualizar o crear perfiles según sea necesario
+    for i, data in enumerate(units_data):
+        if i < len(unit_profiles):
+            profile = unit_profiles[i]
+        else:
+            profile_attrs = {
+                'name': data['Nombre'],
+                'typeId': profile_type_id,
+                'typeName': 'Unidad',
+                'hidden': 'false',
+                'id': str(uuid.uuid4())
+            }
+            profile = ET.SubElement(shared_profiles, f'{{{ns_uri}}}profile', profile_attrs)
+            ET.SubElement(profile, f'{{{ns_uri}}}characteristics')
+            unit_profiles.append(profile)
 
         # Cambiar el nombre del perfil
-        profile.set('name', name)
+        profile.set('name', data['Nombre'])
 
         # Actualizar características
-        characteristics = profile.find('bs:characteristics', ns)
-        if characteristics is not None:
-            for char in characteristics:
-                char_name = char.get('name')
-                if char_name in data:
-                    char.text = data[char_name]
+        characteristics = profile.find(f'{{{ns_uri}}}characteristics')
+        if characteristics is None:
+            characteristics = ET.SubElement(profile, f'{{{ns_uri}}}characteristics')
 
-    # Guardar el XML con formato bonito
-    rough_string = ET.tostring(root, encoding='utf-8')
-    reparsed = minidom.parseString(rough_string)
-    pretty_xml = reparsed.toprettyxml(indent="  ", encoding='utf-8')
+        existing_chars = {char.get('name'): char for char in characteristics}
 
-    # Remover líneas vacías extra
-    lines = pretty_xml.decode('utf-8').split('\n')
-    non_empty_lines = [line for line in lines if line.strip()]
-    final_xml = '\n'.join(non_empty_lines)
+        for char_name in char_order:
+            char = existing_chars.get(char_name)
+            if char is None:
+                char_attrs = {'name': char_name}
+                char_type_id = characteristic_type_ids.get(char_name)
+                if char_type_id:
+                    char_attrs['typeId'] = char_type_id
+                char = ET.SubElement(characteristics, f'{{{ns_uri}}}characteristic', char_attrs)
 
-    with open(xml_file, 'w', encoding='utf-8') as f:
-        f.write(final_xml)
+            char.text = data.get(char_name, '')
 
-    print(f"Actualizados {len(unit_names)} perfiles de unidades correctamente")
+    ET.indent(tree, space='  ')
+    tree.write(xml_file, encoding='UTF-8', xml_declaration=True)
+
+    ensure_xml_declaration(xml_file)
+
+    print(f"Actualizados/creados {len(units_data)} perfiles de unidades correctamente")
 
 if __name__ == "__main__":
     # Permitir especificar archivos desde línea de comandos

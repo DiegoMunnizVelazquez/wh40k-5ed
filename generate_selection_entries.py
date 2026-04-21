@@ -70,25 +70,25 @@ def load_infogroups_from_cat(cat_file):
     return infogroups, tree, root
 
 
-def get_profile_type_for_infogroup(cat_file, infogroup_name):
-    """Determine profile type by checking profiles with same name"""
-    tree = ET.parse(cat_file)
-    root = tree.getroot()
-    
-    # Check which type of profile has this name
+def build_profile_type_map(root):
+    """Build a map of profile name -> profile type from CAT root once."""
     ns = 'http://www.battlescribe.net/schema/catalogueSchema'
-    for profile_type in ['Arma', 'Unidad', 'Vehículo', 'Bípode']:
-        for profile in root.findall(f'.//{{{ns}}}profile'):
-            if profile.get('typeName') == profile_type and profile.get('name') == infogroup_name:
-                return profile_type
-    
-    return 'Desconocido'
+    profile_type_map = {}
+
+    for profile in root.findall(f'.//{{{ns}}}profile'):
+        profile_name = profile.get('name')
+        profile_type = profile.get('typeName')
+        if profile_name and profile_type:
+            profile_type_map[profile_name] = profile_type
+
+    return profile_type_map
 
 
 def generate_selection_entries(cat_file):
     """Generate selectionEntries for all infoGroups"""
     # Load infoGroups
     infogroups, tree, root = load_infogroups_from_cat(cat_file)
+    profile_type_map = build_profile_type_map(root)
     
     print(f"Encontrados {len(infogroups)} infoGroups")
     
@@ -115,7 +115,7 @@ def generate_selection_entries(cat_file):
     
     for infogroup_name, infogroup_info in sorted(infogroups.items()):
         # Determine profile type
-        profile_type = get_profile_type_for_infogroup(cat_file, infogroup_name)
+        profile_type = profile_type_map.get(infogroup_name, 'Desconocido')
         
         # Determine selectionEntry type
         selection_type = PROFILE_TO_SELECTION_TYPE.get(profile_type, 'upgrade')

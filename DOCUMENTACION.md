@@ -6,6 +6,7 @@ Este proyecto automatiza la gestión de perfiles de Warhammer 40K 5ª Edición p
 
 **Funcionalidades principales:**
 - Actualización automática de perfiles de unidades, vehículos, armas y bípodes
+- Creación automática de perfiles faltantes con IDs únicos (UUID) cuando el CAT no tiene suficientes entradas
 - Generación automática de sharedInfoGroups para armas con referencias a reglas
 - Formateo XML consistente y válido para BattleScribe
 
@@ -51,7 +52,7 @@ Vigilante,3,3,3,3,1,3,2,9,5+
 - **Cabeceras**: `Arma,Alcance,F,FP,Tipo`
 - **XML typeName**: `Arma`
 - **Características en XML**: Alcance, F, FP, Tipo
-- **Total de entradas en CSV**: 51 armas
+- **Total de entradas en CSV**: 49 armas (CSV actual)
 - **Script de actualización**: `update_weapon_profiles.py`
 
 **Notas especiales:**
@@ -167,11 +168,16 @@ python generate_weapon_shared_info_groups.py "Eldars.cat" "armas_eldars.csv"
 1. Leer datos del CSV (csv.DictReader)
 2. Parsear XML (xml.etree.ElementTree)
 3. Registrar namespace (`ET.register_namespace`)
-4. Buscar perfiles con XPath usando namespace completo:
+4. Buscar perfiles existentes con XPath usando namespace completo:
    - Pattern: `.//{http://www.battlescribe.net/schema/catalogueSchema}profile[@typeName="TipoDeseado"]`
-5. Validar cantidades: Error si CSV > perfiles en XML
-6. Actualizar características en orden secuencial
-7. Guardar XML con declaración correcta
+5. Actualizar perfiles existentes en orden secuencial del CSV
+6. Crear perfiles nuevos si faltan entradas en XML:
+  - ID único del perfil (`uuid4`)
+  - `typeId` del perfil (inferido del CAT o fallback conocido)
+  - Bloque `characteristics` completo con `typeId` por característica
+7. Reindentar XML (`ET.indent`) para conservar formato multilínea legible
+8. Guardar XML y normalizar declaración a:
+  - `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>`
 ```
 
 ### Características Importantes Encontradas
@@ -183,9 +189,15 @@ python generate_weapon_shared_info_groups.py "Eldars.cat" "armas_eldars.csv"
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 ```
 
-**Validación Flexible**: Los scripts solo se detienen si hay MÁS entradas en CSV que perfiles en XML. Si hay MENOS, actualiza solo las disponibles.
+**Generación Autónoma de Perfiles**: Si el CSV tiene MÁS entradas que el XML, los scripts crean automáticamente los perfiles faltantes con UUID y características completas.
 
-## 6. IDs de Características (TypeIds)
+## 6. IDs de Tipo y Características (TypeIds)
+
+### TypeId de perfil por tipo
+- Unidad: `2d6001b0-980e-46d2-bcc2-a9fc60109afd`
+- Vehículo: `725a358c-765b-498c-8de5-399fc0c0725f`
+- Arma: `d5f97c0b-9fc9-478d-aa34-a7c414d3ea48`
+- Bípode: `3dadd2ff-33f1-41dd-85c7-bee5a7dfa413`
 
 Estos IDs son únicos para cada característica dentro de BattleScribe:
 
@@ -222,6 +234,10 @@ Estos IDs son únicos para cada característica dentro de BattleScribe:
 **Causa**: Uso de `minidom.toprettyxml()` que causa doble codificación UTF-8.
 **Solución**: Usar directamente `tree.write()` de ElementTree con reemplazo de declaración XML.
 
+### Problema: perfiles nuevos aparecen en una sola línea
+**Causa**: Guardar con `tree.write()` sin reindentado explícito.
+**Solución**: Aplicar `ET.indent(tree, space="  ")` antes de guardar.
+
 ### Problema: Declaración XML incorrecta
 **Causa**: ElementTree genera `<?xml version='1.0' encoding='UTF-8'?>` sin comillas dobles ni `standalone="yes"`.
 **Solución**: Leer el archivo guardado y reemplazar la declaración manualmente.
@@ -232,12 +248,14 @@ Estos IDs son únicos para cada característica dentro de BattleScribe:
 
 ### Cantidades Esperadas
 - Unidades: 41 perfiles
-- Vehículos: 20 perfiles (previamente verificado)
-- Armas: 1 perfil por defecto en XML (expandible)
+- Vehículos: 20 perfiles
+- Armas: 49 perfiles (CSV actual)
 - Bípodes: 2 perfiles (Sentinel acorazado, Sentinel explorador)
 
 ### Orden de Actualización
-Los perfiles se actualizan en el orden que aparecen en el XML, en correspondencia directa con el orden en el CSV. El primer perfil del CSV actualiza el primer perfil del XML de ese tipo, y así sucesivamente.
+Los perfiles se procesan en orden de CSV:
+1. Si existe perfil en esa posición del XML, se actualiza.
+2. Si no existe, se crea automáticamente al final de `sharedProfiles`.
 
 ## 9. Flujo de Trabajo Completo
 
@@ -256,14 +274,14 @@ Los perfiles se actualizan en el orden que aparecen en el XML, en correspondenci
 8. Si hay errores, ajustar CSV y reintentar
 ```
 
-**Nota**: Los scripts de formateo legacy (format_xml.py, clean_xml.py, etc.) ya no son necesarios ya que los scripts principales generan XML con formato correcto directamente.
+**Nota**: El formateo XML ya está integrado en los scripts principales (`ET.indent` + normalización de cabecera), por lo que no se requieren scripts auxiliares de formateo.
 
 ## 10. Ficheros del Proyecto
 
 ### CSV de Perfil
 - `PerfilesUnidades.csv` - 41 unidades
 - `PerfilesVehiculos.csv` - Vehículos
-- `PerfilesArmas.csv` - 51 armas
+- `PerfilesArmas.csv` - 49 armas (CSV actual)
 - `PerfilesBipodes.csv` - 2 bípodes
 
 ### Scripts de Actualización de Perfiles
@@ -277,12 +295,6 @@ Los perfiles se actualizan en el orden que aparecen en el XML, en correspondenci
 - `generate_weapon_shared_info_groups.py` - Genera sharedInfoGroups para armas (automático)
 - `generate_all_shared_info_groups.py` - Genera sharedInfoGroups para TODOS los tipos (armas, unidades, vehículos, bípodes)
 - `generate_selection_entries.py` - Genera sharedSelectionEntries que apuntan a infoGroups
-
-### Scripts de Formateo (Legacy)
-- `format_xml.py` - Formateo XML básico (ya no necesario)
-- `format_shared_info.py` - Formateo específico de sharedInfoGroups (ya no necesario)
-- `clean_xml.py` - Limpieza de líneas vacías (ya no necesario)
-- `compact_xml.py` - Compactación de XML (ya no necesario)
 
 ### Archivos XML
 - `Guardia Imperial.cat` - Catálogo actualizado
@@ -371,15 +383,15 @@ Perfil (Arma/Unidad/Vehículo/Bípode)
 ### Scripts de generación:
 
 **generate_all_shared_info_groups.py**
-- Crea infoGroups para: Armas (48), Unidades (41), Vehículos (20), Bípodes (2)
-- Total: 111 infoGroups
+- Crea infoGroups para: Armas (49), Unidades (41), Vehículos (20), Bípodes (2)
+- Total: 112 infoGroups
 - Cada infoGroup contiene referencias a perfiles y (para armas) a reglas
 - Usa: `python generate_all_shared_info_groups.py [archivo_cat]`
 
 **generate_selection_entries.py**
 - Crea selectionEntries correspondientes a cada infoGroup
 - Automáticamente determina el tipo (upgrade para armas, unit para otros)
-- Total: 111 selectionEntries
+- Total: 112 selectionEntries
 - Cada uno apunta a su infoGroup correspondiente
 - Usa: `python generate_selection_entries.py [archivo_cat]`
 
@@ -389,6 +401,11 @@ Perfil (Arma/Unidad/Vehículo/Bípode)
 - **Error: targetId not found**: Verificar que los perfiles existen en el archivo CAT
 - **Reglas no aparecen en armas**: Asegurarse de que los tipos de arma están correctamente mapeados
 - **IDs duplicados**: Los scripts generan UUIDs únicos, pero si hay conflictos, regenerar
+
+### Problemas con generación de perfiles en update_*.py
+- **No había perfiles previos en el CAT**: Los scripts ahora crean perfiles nuevos automáticamente.
+- **Falta typeId en el CAT para inferencia**: Se usa fallback de typeId de perfil y características para cada tipo (ver sección 6).
+- **Formato en una línea**: Se corrige con reindentado previo al guardado (`ET.indent`).
 
 ### Problemas con selectionEntries
 - **Opciones no aparecen en BattleScribe**: Verificar que los infoLinks apuntan a infoGroups válidos
@@ -406,17 +423,16 @@ python -c "with open('Guardia Imperial.cat') as f:
     print(f'selectionEntries: {content.count(\"<selectionEntry type=\")}')"
 ```
 
-## 13. Troubleshooting Específico
+### Troubleshooting Específico de SharedInfoGroups
 
-### Problemas con SharedInfoGroups
-- **Error: "targetId not found"**: Verificar que el perfil del arma existe y tiene el ID correcto en WEAPON_PROFILES
-- **Reglas no aparecen**: Verificar que el tipo del arma esté correctamente mapeado en RULE_MAPPING
-- **IDs duplicados**: El script genera UUID únicos, pero verificar que no haya conflictos con elementos existentes
-- **Formato incorrecto**: Asegurarse de que todos los infoLinks tengan `hidden="false"`
+- **Error: "targetId not found"**: Verificar que el perfil del arma existe en el CAT y que `generate_weapon_shared_info_groups.py` está leyendo correctamente los perfiles del archivo.
+- **Reglas no aparecen**: Verificar que el tipo del arma esté correctamente mapeado en `RULE_MAPPING`.
+- **IDs duplicados**: Los scripts generan UUIDs, pero si hay conflictos por ediciones manuales previas, regenerar infoGroups.
+- **Formato incorrecto**: Asegurarse de que todos los `infoLinks` tengan `hidden="false"`.
 
 ### Verificación Post-Generación
 Después de ejecutar `generate_weapon_shared_info_groups.py`:
-1. Verificar que existan 20 infoGroups (uno por arma)
+1. Verificar que existan 49 infoGroups (uno por arma, CSV actual)
 2. Cada infoGroup debe tener al menos un infoLink al perfil del arma
 3. Las reglas deben corresponder con los tipos definidos en el CSV
 4. El XML debe ser válido y parseable
@@ -431,4 +447,4 @@ Si hay errores en la generación:
 ---
 
 **Última actualización**: Abril 2026
-**Versión**: 3.0 - Sistema completo de generación de infoGroups y selectionEntries para todos los tipos de perfil
+**Versión**: 3.1 - Updates con creación automática de perfiles (UUID), fallback de TypeIds y formato XML multilínea consistente

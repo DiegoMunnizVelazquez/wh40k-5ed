@@ -58,8 +58,10 @@ def load_weapon_profiles_from_cat(cat_file):
     # Clear existing profiles
     WEAPON_PROFILES.clear()
     
-    # Find all weapon profiles
-    for profile in root.findall('.//profile[@typeName="Arma"]'):
+    ns_uri = 'http://www.battlescribe.net/schema/catalogueSchema'
+
+    # Find all weapon profiles with namespace
+    for profile in root.findall(f'.//{{{ns_uri}}}profile[@typeName="Arma"]'):
         name = profile.get('name')
         id_val = profile.get('id')
         if name and id_val:
