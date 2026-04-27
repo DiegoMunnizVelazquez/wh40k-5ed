@@ -170,14 +170,34 @@ python generate_weapon_shared_info_groups.py "Eldars.cat" "armas_eldars.csv"
 3. Registrar namespace (`ET.register_namespace`)
 4. Buscar perfiles existentes con XPath usando namespace completo:
    - Pattern: `.//{http://www.battlescribe.net/schema/catalogueSchema}profile[@typeName="TipoDeseado"]`
-5. Actualizar perfiles existentes en orden secuencial del CSV
-6. Crear perfiles nuevos si faltan entradas en XML:
-  - ID único del perfil (`uuid4`)
-  - `typeId` del perfil (inferido del CAT o fallback conocido)
-  - Bloque `characteristics` completo con `typeId` por característica
+5. Indexar perfiles existentes por atributo `name` (soporta nombres duplicados)
+6. Para cada entrada del CSV:
+   - Si existe un perfil con el mismo nombre en el CAT: actualizar sus características
+   - Si no existe: crear perfil nuevo con UUID
+   - Los perfiles que existen solo en el CAT (añadidos manualmente) se preservan intactos
 7. Reindentar XML (`ET.indent`) para conservar formato multilínea legible
 8. Guardar XML y normalizar declaración a:
   - `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>`
+```
+
+### Comportamiento de Matching por Nombre
+
+Los scripts identifican los perfiles existentes por su atributo `name` en el XML, no por posición. Los nombres deben ser únicos dentro de cada tipo de perfil. El comportamiento es:
+
+- **Actualización**: Si el nombre del CSV coincide con un perfil del CAT, se actualizan las características manteniendo el `id` original.
+- **Creación**: Si el nombre del CSV no existe en el CAT, se crea un perfil nuevo con UUID.
+- **Preservación**: Si un perfil existe en el CAT pero no en el CSV (por ejemplo, añadido manualmente desde la aplicación de edición), se mantiene intacto sin modificaciones.
+
+### Detección de Nombres Duplicados en CSV
+
+Si el CSV contiene nombres duplicados, los scripts emiten un aviso indicando qué nombres están repetidos y en qué líneas del fichero. Solo se procesa la primera aparición de cada nombre; las entradas duplicadas se ignoran. Esto evita generar perfiles duplicados en el CAT.
+
+Ejemplo de aviso:
+```
+⚠️  AVISO: Se encontraron nombres duplicados en PerfilesArmas.csv:
+  - "Cañón de plasma" (líneas 13 y 14)
+  Solo se procesará la primera aparición de cada nombre.
+  Revisa el CSV y corrige los nombres duplicados.
 ```
 
 ### Características Importantes Encontradas
@@ -189,7 +209,7 @@ python generate_weapon_shared_info_groups.py "Eldars.cat" "armas_eldars.csv"
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 ```
 
-**Generación Autónoma de Perfiles**: Si el CSV tiene MÁS entradas que el XML, los scripts crean automáticamente los perfiles faltantes con UUID y características completas.
+**Generación Autónoma de Perfiles**: Si el CSV tiene entradas que no existen en el CAT, los scripts crean automáticamente los perfiles faltantes con UUID y características completas.
 
 ## 6. IDs de Tipo y Características (TypeIds)
 
@@ -253,9 +273,10 @@ Estos IDs son únicos para cada característica dentro de BattleScribe:
 - Bípodes: 2 perfiles (Sentinel acorazado, Sentinel explorador)
 
 ### Orden de Actualización
-Los perfiles se procesan en orden de CSV:
-1. Si existe perfil en esa posición del XML, se actualiza.
+Los perfiles se identifican por su atributo `name`:
+1. Si existe un perfil con el mismo nombre en el CAT, se actualizan sus características.
 2. Si no existe, se crea automáticamente al final de `sharedProfiles`.
+3. Los perfiles existentes solo en el CAT (no en el CSV) se preservan intactos.
 
 ## 9. Flujo de Trabajo Completo
 
@@ -264,14 +285,12 @@ Los perfiles se procesan en orden de CSV:
 2. Identificar tipo de perfil (Unidad/Vehículo/Arma/Bípode)
 3. Extraer y transcribir datos al CSV correspondiente
 4. Revisar y corregir errores de transcripción
-5. Ejecutar script de actualización correspondiente:
-   - python update_unit_profiles.py (para unidades)
-   - python update_vehicle_profiles.py (para vehículos)
-   - python update_weapon_profiles.py (para armas)
-   - python update_bipode_profiles.py (para bípodes)
-6. Para armas: Ejecutar python generate_weapon_shared_info_groups.py
-7. Verificar output en NewRecruit
-8. Si hay errores, ajustar CSV y reintentar
+5. Ejecutar el orquestador:
+   - python run_all.py                              (todo, Guardia Imperial)
+   - python run_all.py --cat "Marines Espaciales.cat" (otro ejército)
+   - python run_all.py --only armas,infogroups       (solo ciertos pasos)
+6. Verificar output en NewRecruit
+7. Si hay errores, ajustar CSV y reintentar
 ```
 
 **Nota**: El formateo XML ya está integrado en los scripts principales (`ET.indent` + normalización de cabecera), por lo que no se requieren scripts auxiliares de formateo.
@@ -283,6 +302,9 @@ Los perfiles se procesan en orden de CSV:
 - `PerfilesVehiculos.csv` - Vehículos
 - `PerfilesArmas.csv` - 49 armas (CSV actual)
 - `PerfilesBipodes.csv` - 2 bípodes
+
+### Script Orquestador
+- `run_all.py` - Ejecuta todos los scripts en orden con parámetros configurables (ver sección 11)
 
 ### Scripts de Actualización de Perfiles
 - `update_unit_profiles.py` - Actualiza unidades
@@ -303,26 +325,81 @@ Los perfiles se procesan en orden de CSV:
 
 ## 11. Comando de Ejecución
 
-### Flujo de trabajo completo:
+### Ejecución con el orquestador (recomendado):
+
+El script `run_all.py` ejecuta todos los pasos en el orden correcto con un solo comando:
+
 ```bash
-# 1. Actualizar perfiles desde CSV
-python update_unit_profiles.py
-python update_vehicle_profiles.py
-python update_weapon_profiles.py
-python update_bipode_profiles.py
+# Ejecutar todo con valores por defecto (Guardia Imperial)
+python run_all.py
 
-# 2. Generar infoGroups para todos los tipos de perfil
-python generate_all_shared_info_groups.py
+# Procesar otro ejército
+python run_all.py --cat "Marines Espaciales.cat"
 
-# 3. Generar selectionEntries que apunten a infoGroups
-python generate_selection_entries.py
+# Especificar CSVs personalizados
+python run_all.py --cat "Eldars.cat" --csv-armas armas_eldars.csv --csv-unidades unidades_eldars.csv
+
+# Ver qué se ejecutaría sin hacer nada
+python run_all.py --dry-run
+
+# Mostrar salida completa de cada script
+python run_all.py --verbose
 ```
 
-Cada script actualiza independientemente. El software BattleScribe usará los infoGroups y selectionEntries para permitir seleccionar perfiles desde el catálogo.
+### Orden de ejecución interno:
 
-## 11.1 Uso con Parámetros de Línea de Comandos
+El orquestador ejecuta los 6 pasos en este orden:
 
-Todos los scripts ahora aceptan parámetros opcionales para especificar archivos diferentes:
+| # | Paso ID      | Script                              | CSV utilizado          |
+|---|--------------|-------------------------------------|------------------------|
+| 1 | unidades     | `update_unit_profiles.py`           | PerfilesUnidades.csv   |
+| 2 | vehiculos    | `update_vehicle_profiles.py`        | PerfilesVehiculos.csv  |
+| 3 | armas        | `update_weapon_profiles.py`         | PerfilesArmas.csv      |
+| 4 | bipodes      | `update_bipode_profiles.py`         | PerfilesBipodes.csv    |
+| 5 | infogroups   | `generate_all_shared_info_groups.py` | PerfilesArmas.csv     |
+| 6 | selections   | `generate_selection_entries.py`     | (solo CAT)             |
+
+Los pasos 1-4 actualizan perfiles desde CSV. El paso 5 genera infoGroups a partir de los perfiles del CAT. El paso 6 genera selectionEntries a partir de los infoGroups. Si un paso falla, la ejecución se aborta para evitar corromper el catálogo.
+
+### Control de pasos:
+
+```bash
+# Ejecutar solo ciertos pasos
+python run_all.py --only armas,infogroups,selections
+
+# Saltar pasos concretos
+python run_all.py --skip bipodes
+
+# No se pueden combinar --only y --skip
+```
+
+**IDs de pasos válidos**: `unidades`, `vehiculos`, `armas`, `bipodes`, `infogroups`, `selections`
+
+### Parámetros completos:
+
+| Parámetro          | Descripción                                      | Por defecto              |
+|--------------------|--------------------------------------------------|--------------------------|
+| `--cat`            | Archivo CAT a modificar                          | `Guardia Imperial.cat`   |
+| `--csv-unidades`   | CSV de perfiles de unidades                      | `PerfilesUnidades.csv`   |
+| `--csv-vehiculos`  | CSV de perfiles de vehículos                     | `PerfilesVehiculos.csv`  |
+| `--csv-armas`      | CSV de perfiles de armas                         | `PerfilesArmas.csv`      |
+| `--csv-bipodes`    | CSV de perfiles de bípodes                       | `PerfilesBipodes.csv`    |
+| `--skip`           | Pasos a saltar (separados por comas)             | (ninguno)                |
+| `--only`           | Ejecutar solo estos pasos (separados por comas)  | (todos)                  |
+| `--dry-run`        | Mostrar comandos sin ejecutar                    | `false`                  |
+| `--verbose`        | Mostrar salida completa de cada script           | `false`                  |
+
+### Características del orquestador:
+- Valida que los archivos CAT y CSV existan antes de ejecutar
+- Valida que los IDs de pasos sean correctos
+- Aborta la ejecución si un paso falla (fail-fast)
+- Muestra resumen con tiempos de ejecución por paso
+- Timeout de 120 segundos por script
+- Código de salida 1 si hay fallos (útil para CI/CD)
+
+## 11.1 Ejecución Individual de Scripts
+
+Los scripts también pueden ejecutarse individualmente si se necesita:
 
 ```bash
 # Usar archivos por defecto
@@ -339,16 +416,17 @@ python generate_all_shared_info_groups.py "Marines Espaciales.cat"
 python generate_selection_entries.py "Marines Espaciales.cat"
 ```
 
-**Parámetros:**
+**Parámetros posicionales:**
 - `archivo_cat`: Archivo CAT a modificar (por defecto: 'Guardia Imperial.cat')
 - `archivo_csv`: Archivo CSV con los datos (por defecto: específico para cada tipo)
 
-### Flujo Multi-Catálogo:
+### Flujo Multi-Catálogo (manual):
 ```bash
-# Procesar Marines Espaciales completo
+# Procesar Marines Espaciales completo (equivalente a: python run_all.py --cat "Marines Espaciales.cat")
 python update_unit_profiles.py "Marines Espaciales.cat"
-python update_weapon_profiles.py "Marines Espaciales.cat"
 python update_vehicle_profiles.py "Marines Espaciales.cat"
+python update_weapon_profiles.py "Marines Espaciales.cat"
+python update_bipode_profiles.py "Marines Espaciales.cat"
 python generate_all_shared_info_groups.py "Marines Espaciales.cat"
 python generate_selection_entries.py "Marines Espaciales.cat"
 ```
@@ -403,8 +481,10 @@ Perfil (Arma/Unidad/Vehículo/Bípode)
 - **IDs duplicados**: Los scripts generan UUIDs únicos, pero si hay conflictos, regenerar
 
 ### Problemas con generación de perfiles en update_*.py
-- **No había perfiles previos en el CAT**: Los scripts ahora crean perfiles nuevos automáticamente.
+- **No había perfiles previos en el CAT**: Los scripts crean perfiles nuevos automáticamente con UUID.
 - **Falta typeId en el CAT para inferencia**: Se usa fallback de typeId de perfil y características para cada tipo (ver sección 6).
+- **Perfil añadido manualmente no aparece tras ejecutar scripts**: Esto es correcto, los perfiles solo en CAT se preservan intactos. Verificar que el nombre no coincida exactamente con una entrada del CSV (si coincide, se actualizará con los datos del CSV).
+- **Nombres duplicados en CSV**: Los scripts avisan de nombres repetidos indicando las líneas afectadas. Solo se procesa la primera aparición; las demás se ignoran. Corregir el CSV renombrando las entradas duplicadas para que sean únicas.
 - **Formato en una línea**: Se corrige con reindentado previo al guardado (`ET.indent`).
 
 ### Problemas con selectionEntries
@@ -447,4 +527,4 @@ Si hay errores en la generación:
 ---
 
 **Última actualización**: Abril 2026
-**Versión**: 3.1 - Updates con creación automática de perfiles (UUID), fallback de TypeIds y formato XML multilínea consistente
+**Versión**: 3.4 - Detección de nombres duplicados en CSV con aviso de líneas afectadas; solo se procesa la primera aparición

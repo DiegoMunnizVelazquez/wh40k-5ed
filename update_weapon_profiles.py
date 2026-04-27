@@ -21,12 +21,11 @@ Argumentos:
     archivo_cat: Archivo CAT a modificar (por defecto: 'Guardia Imperial.cat')
     archivo_csv: Archivo CSV con perfiles de armas (por defecto: 'PerfilesArmas.csv')
 
-El script actualiza los perfiles de armas en el archivo CAT usando los datos del CSV.
-Los perfiles se actualizan en el orden en que aparecen en el XML.
+El script identifica los perfiles por su atributo 'name' en el XML:
+- Si un perfil del CSV ya existe en el CAT (mismo nombre), se actualizan sus características.
+- Si un perfil del CSV no existe en el CAT, se crea uno nuevo con UUID.
+- Los perfiles que existen en el CAT pero no en el CSV se mantienen intactos.
 """
-
-# Este script actualiza perfiles de armas en archivos XML de NewRecruit.
-# Si el CSV tiene más filas que el CAT, crea perfiles nuevos con IDs únicos.
 
 
 def get_profile_type_id(root, ns_uri, type_name, profiles):
@@ -84,18 +83,32 @@ def ensure_xml_declaration(xml_file):
         f.write(content)
 
 def update_weapon_profiles(xml_file, csv_file):
-    # Leer datos del CSV
+    # Leer datos del CSV y detectar nombres duplicados
     weapons_data = []
+    seen_names = {}
+    duplicates = []
     with open(csv_file, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f)
-        for row in reader:
+        for line_num, row in enumerate(reader, start=2):
+            nombre = row['Arma']
+            if nombre in seen_names:
+                duplicates.append(f"  - \"{nombre}\" (líneas {seen_names[nombre]} y {line_num})")
+                continue
+            seen_names[nombre] = line_num
             weapons_data.append({
-                'Nombre': row['Arma'],
+                'Nombre': nombre,
                 'Alcance': row['Alcance'],
                 'F': row['F'],
                 'FP': row['FP'],
                 'Tipo': row['Tipo'],
             })
+
+    if duplicates:
+        print(f"⚠️  AVISO: Se encontraron nombres duplicados en {csv_file}:")
+        for d in duplicates:
+            print(d)
+        print("  Solo se procesará la primera aparición de cada nombre.")
+        print("  Revisa el CSV y corrige los nombres duplicados.")
 
     # Parsear el XML
     tree = ET.parse(xml_file)
@@ -115,13 +128,28 @@ def update_weapon_profiles(xml_file, csv_file):
     characteristic_type_ids = get_characteristic_type_ids(root, ns_uri, 'Arma', weapon_profiles)
     char_order = ['Alcance', 'F', 'FP', 'Tipo']
 
-    # Actualizar o crear perfiles según sea necesario
-    for i, data in enumerate(weapons_data):
-        if i < len(weapon_profiles):
-            profile = weapon_profiles[i]
+    # Indexar perfiles existentes por nombre
+    profiles_by_name = {}
+    for profile in weapon_profiles:
+        name = profile.get('name')
+        if name:
+            profiles_by_name[name] = profile
+
+    total_existing = len(profiles_by_name)
+    updated = 0
+    created = 0
+
+    # Actualizar existentes o crear nuevos, identificando por nombre
+    for data in weapons_data:
+        nombre = data['Nombre']
+        profile = profiles_by_name.get(nombre)
+
+        if profile is not None:
+            updated += 1
         else:
+            # No existe en el CAT: crear nuevo
             profile_attrs = {
-                'name': data['Nombre'],
+                'name': nombre,
                 'typeId': profile_type_id,
                 'typeName': 'Arma',
                 'hidden': 'false',
@@ -129,10 +157,7 @@ def update_weapon_profiles(xml_file, csv_file):
             }
             profile = ET.SubElement(shared_profiles, f'{{{ns_uri}}}profile', profile_attrs)
             ET.SubElement(profile, f'{{{ns_uri}}}characteristics')
-            weapon_profiles.append(profile)
-
-        # Cambiar el nombre del perfil
-        profile.set('name', data['Nombre'])
+            created += 1
 
         # Actualizar características
         characteristics = profile.find(f'{{{ns_uri}}}characteristics')
@@ -152,16 +177,16 @@ def update_weapon_profiles(xml_file, csv_file):
 
             char.text = data.get(char_name, '')
 
+    preserved = total_existing - updated
+
     ET.indent(tree, space='  ')
     tree.write(xml_file, encoding='UTF-8', xml_declaration=True)
 
     ensure_xml_declaration(xml_file)
 
-    print(f"Actualizados/creados {len(weapons_data)} perfiles de armas correctamente")
+    print(f"Resultado: {updated} actualizados, {created} creados, {preserved} preservados (solo en CAT)")
 
 if __name__ == "__main__":
-    # Permitir especificar archivos desde línea de comandos
-    # Uso: python update_weapon_profiles.py [archivo_cat] [archivo_csv]
     xml_file = 'Guardia Imperial.cat'
     csv_file = 'PerfilesArmas.csv'
     

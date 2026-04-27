@@ -22,13 +22,11 @@ Argumentos:
     archivo_cat: Archivo CAT a modificar (por defecto: 'Guardia Imperial.cat')
     archivo_csv: Archivo CSV con perfiles de vehículos (por defecto: 'PerfilesVehiculos.csv')
 
-El script actualiza los perfiles de vehículos en el archivo CAT usando los datos del CSV.
-Los perfiles se actualizan en el orden en que aparecen en el XML.
+El script identifica los perfiles por su atributo 'name' en el XML:
+- Si un perfil del CSV ya existe en el CAT (mismo nombre), se actualizan sus características.
+- Si un perfil del CSV no existe en el CAT, se crea uno nuevo con UUID.
+- Los perfiles que existen en el CAT pero no en el CSV se mantienen intactos.
 """
-
-# Este script actualiza perfiles de vehículos en archivos XML de NewRecruit.
-# Si el CSV contiene más filas que perfiles existentes, crea perfiles nuevos
-# con IDs únicos para evitar depender de entradas preexistentes.
 
 
 def get_profile_type_id(root, ns_uri, type_name, profiles):
@@ -86,19 +84,33 @@ def ensure_xml_declaration(xml_file):
         f.write(content)
 
 def update_vehicle_profiles(xml_file, csv_file):
-    # Leer datos del CSV
+    # Leer datos del CSV y detectar nombres duplicados
     vehicles_data = []
+    seen_names = {}
+    duplicates = []
     with open(csv_file, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f)
-        for row in reader:
+        for line_num, row in enumerate(reader, start=2):
+            nombre = row['Nombre']
+            if nombre in seen_names:
+                duplicates.append(f"  - \"{nombre}\" (líneas {seen_names[nombre]} y {line_num})")
+                continue
+            seen_names[nombre] = line_num
             vehicles_data.append({
-                'Nombre': row['Nombre'],
+                'Nombre': nombre,
                 'HP': row['HP'],
-                'Frontal': row['BF'],  # Asumiendo BF = Frontal
-                'Lateral': row['BL'],  # BL = Lateral
-                'Posterior': row['BP'],  # BP = Posterior
+                'Frontal': row['BF'],
+                'Lateral': row['BL'],
+                'Posterior': row['BP'],
                 'Tipo': 'Vehículo'
             })
+
+    if duplicates:
+        print(f"⚠️  AVISO: Se encontraron nombres duplicados en {csv_file}:")
+        for d in duplicates:
+            print(d)
+        print("  Solo se procesará la primera aparición de cada nombre.")
+        print("  Revisa el CSV y corrige los nombres duplicados.")
 
     # Parsear el XML
     tree = ET.parse(xml_file)
@@ -118,13 +130,28 @@ def update_vehicle_profiles(xml_file, csv_file):
     characteristic_type_ids = get_characteristic_type_ids(root, ns_uri, 'Vehículo', vehicle_profiles)
     char_order = ['HP', 'Frontal', 'Lateral', 'Posterior', 'Tipo']
 
-    # Actualizar o crear perfiles según sea necesario
-    for i, data in enumerate(vehicles_data):
-        if i < len(vehicle_profiles):
-            profile = vehicle_profiles[i]
+    # Indexar perfiles existentes por nombre
+    profiles_by_name = {}
+    for profile in vehicle_profiles:
+        name = profile.get('name')
+        if name:
+            profiles_by_name[name] = profile
+
+    total_existing = len(profiles_by_name)
+    updated = 0
+    created = 0
+
+    # Actualizar existentes o crear nuevos, identificando por nombre
+    for data in vehicles_data:
+        nombre = data['Nombre']
+        profile = profiles_by_name.get(nombre)
+
+        if profile is not None:
+            updated += 1
         else:
+            # No existe en el CAT: crear nuevo
             profile_attrs = {
-                'name': data['Nombre'],
+                'name': nombre,
                 'typeId': profile_type_id,
                 'typeName': 'Vehículo',
                 'hidden': 'false',
@@ -132,10 +159,7 @@ def update_vehicle_profiles(xml_file, csv_file):
             }
             profile = ET.SubElement(shared_profiles, f'{{{ns_uri}}}profile', profile_attrs)
             ET.SubElement(profile, f'{{{ns_uri}}}characteristics')
-            vehicle_profiles.append(profile)
-
-        # Cambiar el nombre del perfil
-        profile.set('name', data['Nombre'])
+            created += 1
 
         # Actualizar características
         characteristics = profile.find(f'{{{ns_uri}}}characteristics')
@@ -155,16 +179,16 @@ def update_vehicle_profiles(xml_file, csv_file):
 
             char.text = data.get(char_name, '')
 
+    preserved = total_existing - updated
+
     ET.indent(tree, space='  ')
     tree.write(xml_file, encoding='UTF-8', xml_declaration=True)
 
     ensure_xml_declaration(xml_file)
 
-    print(f"Actualizados/creados {len(vehicles_data)} perfiles de vehículos correctamente")
+    print(f"Resultado: {updated} actualizados, {created} creados, {preserved} preservados (solo en CAT)")
 
 if __name__ == "__main__":
-    # Permitir especificar archivos desde línea de comandos
-    # Uso: python update_vehicle_profiles.py [archivo_cat] [archivo_csv]
     xml_file = 'Guardia Imperial.cat'
     csv_file = 'PerfilesVehiculos.csv'
     
