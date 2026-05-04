@@ -89,22 +89,23 @@ def generate_selection_entries(cat_file):
     # Load infoGroups
     infogroups, tree, root = load_infogroups_from_cat(cat_file)
     profile_type_map = build_profile_type_map(root)
-    
+
     print(f"Encontrados {len(infogroups)} infoGroups")
-    
+
     # Register namespace
     ET.register_namespace('', 'http://www.battlescribe.net/schema/catalogueSchema')
-    
+
     # Find sharedSelectionEntries
+    ns_uri = 'http://www.battlescribe.net/schema/catalogueSchema'
     shared_selection_entries = None
     for elem in root.iter():
         if elem.tag.endswith('sharedSelectionEntries'):
             shared_selection_entries = elem
             break
-    
+
     if shared_selection_entries is None:
-        print("No se encontró la sección sharedSelectionEntries")
-        return
+        print("No se encontró la sección sharedSelectionEntries, creándola...")
+        shared_selection_entries = ET.SubElement(root, f'{{{ns_uri}}}sharedSelectionEntries')
     
     # Clear existing selectionEntries
     for child in list(shared_selection_entries):
@@ -116,7 +117,7 @@ def generate_selection_entries(cat_file):
     for infogroup_name, infogroup_info in sorted(infogroups.items()):
         # Determine profile type
         profile_type = profile_type_map.get(infogroup_name, 'Desconocido')
-        
+
         # Determine selectionEntry type
         selection_type = PROFILE_TO_SELECTION_TYPE.get(profile_type, 'upgrade')
         

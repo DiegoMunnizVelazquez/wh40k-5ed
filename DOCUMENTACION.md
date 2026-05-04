@@ -20,25 +20,27 @@ Este proyecto automatiza la gestión de perfiles de Warhammer 40K 5ª Edición p
 ## 3. Tipos de Perfiles y CSV Asociados
 
 ### 3.1 Perfiles de Unidades
-- **Archivo CSV**: `PerfilesUnidades.csv`
-- **Cabeceras**: `Nombre,HA,HP,F,R,H,I,A,L,S`
+- **Archivo CSV**: `csv/Generico/PerfilesUnidades.csv` (genérico) / `csv/<Ejército>/<Ejército>_Unidades.csv` (por ejército)
+- **Cabeceras**: `Nombre,Tipo,HA,HP,F,R,H,I,A,L,S`
 - **XML typeName**: `Unidad`
 - **Características en XML**: Tipo, HA, HP, F, R, H, I, A, L, S
-- **Total de perfiles**: 41 unidades en el catálogo
+- **Campo Tipo**: Leído dinámicamente del CSV (p.ej. `Infantería`, `Monstruo`, `Caballería`). Ya no está hardcodeado.
+- **Total de perfiles**: 41 unidades en el catálogo de Guardia Imperial
 - **Script de actualización**: `update_unit_profiles.py`
 
 **Ejemplo de datos:**
 ```
-Astrópata,3,4,3,3,1,3,1,7,5+
-Capitán Al'rahem,4,4,3,3,2,3,2,9,5+
-Vigilante,3,3,3,3,1,3,2,9,5+
+Astrópata,Infantería,3,4,3,3,1,3,1,7,5+
+Capitán Al'rahem,Infantería,4,4,3,3,2,3,2,9,5+
+Vigilante,Infantería,3,3,3,3,1,3,2,9,5+
 ```
 
 ### 3.2 Perfiles de Vehículos
-- **Archivo CSV**: `PerfilesVehiculos.csv`
-- **Cabeceras**: `Nombre,HP,BF,BL,BP`
+- **Archivo CSV**: `csv/Generico/PerfilesVehiculos.csv` (genérico) / `csv/<Ejército>/<Ejército>_Vehiculos.csv` (por ejército)
+- **Cabeceras**: `Nombre,HP,BF,BL,BP,Tipo`
 - **XML typeName**: `Vehículo`
 - **Características en XML**: HP, Frontal, Lateral, Posterior, Tipo
+- **Campo Tipo**: Leído dinámicamente del CSV (p.ej. `Vehículo`, `Tanque`). Ya no está hardcodeado.
 - **Script de actualización**: `update_vehicle_profiles.py`
 
 **Significado de características:**
@@ -48,7 +50,7 @@ Vigilante,3,3,3,3,1,3,2,9,5+
 - BP: Blindaje Posterior
 
 ### 3.3 Perfiles de Armas
-- **Archivo CSV**: `PerfilesArmas.csv`
+- **Archivo CSV**: `csv/Generico/PerfilesArmas.csv` (genérico) / `csv/<Ejército>/<Ejército>_Armas.csv` (por ejército)
 - **Cabeceras**: `Arma,Alcance,F,FP,Tipo`
 - **XML typeName**: `Arma`
 - **Características en XML**: Alcance, F, FP, Tipo
@@ -69,17 +71,18 @@ Pistola destraspadora,30cm,X,2,"Pistola, Francotirador"
 ```
 
 ### 3.4 Perfiles de Bípodes
-- **Archivo CSV**: `PerfilesBipodes.csv`
-- **Cabeceras**: `Nombre,HA,HP,F,BF,BL,BP,I,A`
+- **Archivo CSV**: `csv/Generico/PerfilesBipodes.csv` (genérico) / `csv/<Ejército>/<Ejército>_Bipodes.csv` (por ejército)
+- **Cabeceras**: `Nombre,HA,HP,F,BF,BL,BP,I,A,Tipo`
 - **XML typeName**: `Bípode`
 - **Características en XML**: HA, HP, F, Frontal, Lateral, Posterior, I, A, Tipo
+- **Campo Tipo**: Leído dinámicamente del CSV (p.ej. `Bípode`, `Andador`). Ya no está hardcodeado.
 - **Total de perfiles**: 2 bípodes en el catálogo (Sentinel acorazado, Sentinel explorador)
 - **Script de actualización**: `update_bipode_profiles.py`
 
 **Ejemplo de datos:**
 ```
-Sentinel acorazado,3,3,5,12,10,10,3,1
-Sentinel explorador,3,3,5,10,10,10,3,1
+Sentinel acorazado,3,3,5,12,10,10,3,1,Bípode
+Sentinel explorador,3,3,5,10,10,10,3,1,Bípode
 ```
 
 ### 3.5 SharedInfoGroups para Armas
@@ -175,6 +178,7 @@ python generate_weapon_shared_info_groups.py "Eldars.cat" "armas_eldars.csv"
    - Si existe un perfil con el mismo nombre en el CAT: actualizar sus características
    - Si no existe: crear perfil nuevo con UUID
    - Los perfiles que existen solo en el CAT (añadidos manualmente) se preservan intactos
+  - Si falta la sección `<sharedProfiles>` en el CAT: se crea automáticamente antes de insertar perfiles
 7. Reindentar XML (`ET.indent`) para conservar formato multilínea legible
 8. Guardar XML y normalizar declaración a:
   - `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>`
@@ -297,11 +301,36 @@ Los perfiles se identifican por su atributo `name`:
 
 ## 10. Ficheros del Proyecto
 
-### CSV de Perfil
-- `PerfilesUnidades.csv` - 41 unidades
-- `PerfilesVehiculos.csv` - Vehículos
-- `PerfilesArmas.csv` - 49 armas (CSV actual)
-- `PerfilesBipodes.csv` - 2 bípodes
+### Estructura de carpetas CSV
+
+Todos los archivos CSV se organizan bajo la carpeta `csv/`:
+
+```
+csv/
+  Generico/
+    PerfilesArmas.csv        → plantilla genérica de armas
+    PerfilesBipodes.csv      → plantilla genérica de bípodes
+    PerfilesUnidades.csv     → plantilla genérica de unidades
+    PerfilesVehiculos.csv    → plantilla genérica de vehículos
+  Orkos/
+    Orkos_Armas.csv
+    Orkos_Bipodes.csv
+    Orkos_Unidades.csv
+    Orkos_Vehiculos.csv
+  <Ejército>/
+    <Ejército>_Armas.csv
+    <Ejército>_Bipodes.csv
+    <Ejército>_Unidades.csv
+    <Ejército>_Vehiculos.csv
+```
+
+Los CSV de `Generico/` sirven como plantilla de referencia. Para cada ejército se crea una subcarpeta propia con sus CSV específicos. Los archivos CSV ya **no residen en la raíz** del proyecto.
+
+### CSV de Perfil (Guardia Imperial, referencia)
+- `csv/Generico/PerfilesUnidades.csv` - 41 unidades
+- `csv/Generico/PerfilesVehiculos.csv` - Vehículos
+- `csv/Generico/PerfilesArmas.csv` - 49 armas (CSV actual)
+- `csv/Generico/PerfilesBipodes.csv` - 2 bípodes
 
 ### Script Orquestador
 - `run_all.py` - Ejecuta todos los scripts en orden con parámetros configurables (ver sección 11)
@@ -330,14 +359,25 @@ Los perfiles se identifican por su atributo `name`:
 El script `run_all.py` ejecuta todos los pasos en el orden correcto con un solo comando:
 
 ```bash
-# Ejecutar todo con valores por defecto (Guardia Imperial)
+# Ejecutar todo con valores por defecto (Guardia Imperial, CSVs en raíz)
 python run_all.py
 
-# Procesar otro ejército
-python run_all.py --cat "Marines Espaciales.cat"
+# Procesar Orkos con sus CSVs específicos
+python run_all.py --cat Orkos.cat \
+  --csv-unidades csv/Orkos/Orkos_Unidades.csv \
+  --csv-vehiculos csv/Orkos/Orkos_Vehiculos.csv \
+  --csv-armas csv/Orkos/Orkos_Armas.csv \
+  --csv-bipodes csv/Orkos/Orkos_Bipodes.csv
 
-# Especificar CSVs personalizados
-python run_all.py --cat "Eldars.cat" --csv-armas armas_eldars.csv --csv-unidades unidades_eldars.csv
+# Procesar otro ejército con CSVs genéricos
+python run_all.py --cat "Marines Espaciales.cat" \
+  --csv-unidades csv/Generico/PerfilesUnidades.csv \
+  --csv-armas csv/Generico/PerfilesArmas.csv
+
+# Especificar CSVs propios de ejército
+python run_all.py --cat "Eldars.cat" \
+  --csv-armas "csv/Eldars/Eldars_Armas.csv" \
+  --csv-unidades "csv/Eldars/Eldars_Unidades.csv"
 
 # Ver qué se ejecutaría sin hacer nada
 python run_all.py --dry-run
@@ -384,7 +424,7 @@ python run_all.py --skip bipodes
 | `--csv-vehiculos`  | CSV de perfiles de vehículos                     | `PerfilesVehiculos.csv`  |
 | `--csv-armas`      | CSV de perfiles de armas                         | `PerfilesArmas.csv`      |
 | `--csv-bipodes`    | CSV de perfiles de bípodes                       | `PerfilesBipodes.csv`    |
-| `--skip`           | Pasos a saltar (separados por comas)             | (ninguno)                |
+> **Nota sobre rutas CSV**: Los valores por defecto apuntan a la raíz del proyecto (legado). Para usar la nueva estructura de carpetas, pasa siempre la ruta completa: `csv/Generico/PerfilesUnidades.csv` o `csv/<Ejército>/<Ejército>_Unidades.csv`.| `--skip`           | Pasos a saltar (separados por comas)             | (ninguno)                |
 | `--only`           | Ejecutar solo estos pasos (separados por comas)  | (todos)                  |
 | `--dry-run`        | Mostrar comandos sin ejecutar                    | `false`                  |
 | `--verbose`        | Mostrar salida completa de cada script           | `false`                  |
@@ -422,11 +462,11 @@ python generate_selection_entries.py "Marines Espaciales.cat"
 
 ### Flujo Multi-Catálogo (manual):
 ```bash
-# Procesar Marines Espaciales completo (equivalente a: python run_all.py --cat "Marines Espaciales.cat")
-python update_unit_profiles.py "Marines Espaciales.cat"
-python update_vehicle_profiles.py "Marines Espaciales.cat"
-python update_weapon_profiles.py "Marines Espaciales.cat"
-python update_bipode_profiles.py "Marines Espaciales.cat"
+# Procesar Marines Espaciales completo con CSVs propios
+python update_unit_profiles.py "Marines Espaciales.cat" "csv/Marines Espaciales/Marines Espaciales_Unidades.csv"
+python update_vehicle_profiles.py "Marines Espaciales.cat" "csv/Marines Espaciales/Marines Espaciales_Vehiculos.csv"
+python update_weapon_profiles.py "Marines Espaciales.cat" "csv/Marines Espaciales/Marines Espaciales_Armas.csv"
+python update_bipode_profiles.py "Marines Espaciales.cat" "csv/Marines Espaciales/Marines Espaciales_Bipodes.csv"
 python generate_all_shared_info_groups.py "Marines Espaciales.cat"
 python generate_selection_entries.py "Marines Espaciales.cat"
 ```
@@ -464,11 +504,13 @@ Perfil (Arma/Unidad/Vehículo/Bípode)
 - Crea infoGroups para: Armas (49), Unidades (41), Vehículos (20), Bípodes (2)
 - Total: 112 infoGroups
 - Cada infoGroup contiene referencias a perfiles y (para armas) a reglas
+- **Auto-creación de sección**: Si el XML no contiene `<sharedInfoGroups>`, el script la crea automáticamente.
 - Usa: `python generate_all_shared_info_groups.py [archivo_cat]`
 
 **generate_selection_entries.py**
 - Crea selectionEntries correspondientes a cada infoGroup
 - Automáticamente determina el tipo (upgrade para armas, unit para otros)
+- **Auto-creación de sección**: Si el XML no contiene `<sharedSelectionEntries>`, el script la crea automáticamente. Ya no aborta con error si la sección está ausente.
 - Total: 112 selectionEntries
 - Cada uno apunta a su infoGroup correspondiente
 - Usa: `python generate_selection_entries.py [archivo_cat]`
@@ -479,9 +521,11 @@ Perfil (Arma/Unidad/Vehículo/Bípode)
 - **Error: targetId not found**: Verificar que los perfiles existen en el archivo CAT
 - **Reglas no aparecen en armas**: Asegurarse de que los tipos de arma están correctamente mapeados
 - **IDs duplicados**: Los scripts generan UUIDs únicos, pero si hay conflictos, regenerar
+- **Sección `sharedInfoGroups` ausente en el XML**: `generate_all_shared_info_groups.py` la crea automáticamente al detectar que falta.
 
 ### Problemas con generación de perfiles en update_*.py
 - **No había perfiles previos en el CAT**: Los scripts crean perfiles nuevos automáticamente con UUID.
+- **Sección `sharedProfiles` ausente en el XML**: Los scripts `update_unit_profiles.py`, `update_vehicle_profiles.py`, `update_weapon_profiles.py` y `update_bipode_profiles.py` la crean automáticamente antes de procesar el CSV.
 - **Falta typeId en el CAT para inferencia**: Se usa fallback de typeId de perfil y características para cada tipo (ver sección 6).
 - **Perfil añadido manualmente no aparece tras ejecutar scripts**: Esto es correcto, los perfiles solo en CAT se preservan intactos. Verificar que el nombre no coincida exactamente con una entrada del CSV (si coincide, se actualizará con los datos del CSV).
 - **Nombres duplicados en CSV**: Los scripts avisan de nombres repetidos indicando las líneas afectadas. Solo se procesa la primera aparición; las demás se ignoran. Corregir el CSV renombrando las entradas duplicadas para que sean únicas.
@@ -490,6 +534,7 @@ Perfil (Arma/Unidad/Vehículo/Bípode)
 ### Problemas con selectionEntries
 - **Opciones no aparecen en BattleScribe**: Verificar que los infoLinks apuntan a infoGroups válidos
 - **Referencias incorrectas**: Ejecutar primero `generate_all_shared_info_groups.py` y luego `generate_selection_entries.py`
+- **Sección `sharedSelectionEntries` ausente en el XML**: El script `generate_selection_entries.py` la crea automáticamente al detectar que falta. No se requiere intervención manual.
 
 ### Verificación:
 ```bash
@@ -526,5 +571,5 @@ Si hay errores en la generación:
 
 ---
 
-**Última actualización**: Abril 2026
-**Versión**: 3.4 - Detección de nombres duplicados en CSV con aviso de líneas afectadas; solo se procesa la primera aparición
+**Última actualización**: Mayo 2026
+**Versión**: 3.6 - `update_*_profiles.py` auto-crean `sharedProfiles` si falta; `generate_all_shared_info_groups.py` auto-crea `sharedInfoGroups`; se mantiene la auto-creación de `sharedSelectionEntries` en `generate_selection_entries.py`

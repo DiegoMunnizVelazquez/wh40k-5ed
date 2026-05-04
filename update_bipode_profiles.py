@@ -109,7 +109,7 @@ def update_bipode_profiles(xml_file, csv_file):
                 'Posterior': row['BP'],
                 'I': row['I'],
                 'A': row['A'],
-                'Tipo': 'Bípode',
+                'Tipo': row['Tipo'],
             })
 
     if duplicates:
@@ -127,7 +127,8 @@ def update_bipode_profiles(xml_file, csv_file):
 
     shared_profiles = root.find(f'{{{ns_uri}}}sharedProfiles')
     if shared_profiles is None:
-        raise ValueError('No se encontró la sección sharedProfiles en el CAT')
+        print('No se encontró la sección sharedProfiles, creándola...')
+        shared_profiles = ET.SubElement(root, f'{{{ns_uri}}}sharedProfiles')
 
     bipode_profiles = root.findall(f'.//{{{ns_uri}}}profile[@typeName="Bípode"]')
     profile_type_id = get_profile_type_id(root, ns_uri, 'Bípode', bipode_profiles)

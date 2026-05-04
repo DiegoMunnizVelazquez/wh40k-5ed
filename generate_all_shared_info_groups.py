@@ -133,8 +133,9 @@ def generate_infogroups(cat_file, csv_file=None):
             break
     
     if shared_info_groups is None:
-        print("No se encontró la sección sharedInfoGroups")
-        return
+        print("No se encontró la sección sharedInfoGroups, creándola...")
+        ns_uri = 'http://www.battlescribe.net/schema/catalogueSchema'
+        shared_info_groups = ET.SubElement(root, f'{{{ns_uri}}}sharedInfoGroups')
     
     # Clear existing infoGroups (keep only those that reference infoGroups in infoLinks)
     # For now, just clear all to regenerate from scratch

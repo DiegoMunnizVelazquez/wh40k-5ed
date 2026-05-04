@@ -102,7 +102,7 @@ def update_vehicle_profiles(xml_file, csv_file):
                 'Frontal': row['BF'],
                 'Lateral': row['BL'],
                 'Posterior': row['BP'],
-                'Tipo': 'Vehículo'
+                'Tipo': row['Tipo']
             })
 
     if duplicates:
@@ -123,7 +123,8 @@ def update_vehicle_profiles(xml_file, csv_file):
     ns_uri = ns['bs']
     shared_profiles = root.find(f'{{{ns_uri}}}sharedProfiles')
     if shared_profiles is None:
-        raise ValueError('No se encontró la sección sharedProfiles en el CAT')
+        print('No se encontró la sección sharedProfiles, creándola...')
+        shared_profiles = ET.SubElement(root, f'{{{ns_uri}}}sharedProfiles')
 
     vehicle_profiles = root.findall('.//bs:profile[@typeName="Vehículo"]', ns)
     profile_type_id = get_profile_type_id(root, ns_uri, 'Vehículo', vehicle_profiles)

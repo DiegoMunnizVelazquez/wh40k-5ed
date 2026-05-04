@@ -103,7 +103,7 @@ def update_unit_profiles(xml_file, csv_file):
             seen_names[nombre] = line_num
             units_data.append({
                 'Nombre': nombre,
-                'Tipo': 'Infantería',
+                'Tipo': row['Tipo'],
                 'HA': row['HA'],
                 'HP': row['HP'],
                 'F': row['F'],
@@ -133,7 +133,8 @@ def update_unit_profiles(xml_file, csv_file):
     ns_uri = ns['bs']
     shared_profiles = root.find(f'{{{ns_uri}}}sharedProfiles')
     if shared_profiles is None:
-        raise ValueError('No se encontró la sección sharedProfiles en el CAT')
+        print('No se encontró la sección sharedProfiles, creándola...')
+        shared_profiles = ET.SubElement(root, f'{{{ns_uri}}}sharedProfiles')
 
     unit_profiles = root.findall('.//bs:profile[@typeName="Unidad"]', ns)
     profile_type_id = get_profile_type_id(root, ns_uri, 'Unidad', unit_profiles)

@@ -1,2 +1,1935 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="ab83-e92d-e87e-4398" name="Eldar Oscuros" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" revision="1" authorUrl="csddmv@gmail.com" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema"/>
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="ab83-e92d-e87e-4398" name="Eldar Oscuros" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" revision="1" authorUrl="csddmv@gmail.com" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" battleScribeVersion="2.03" type="catalogue">
+  <sharedProfiles>
+    <profile name="Aberración" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="1261e7c1-816c-4fde-b01e-bf281d7677e9">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">1</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">5</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">5</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">3</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">4</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">4</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">6+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Alástor" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="6293b256-14e5-48d7-8ec8-4e4fb3e42b20">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">5</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">5+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Arconte" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="bdf5c094-8f2c-4c8b-96e2-a8e4542af1cb">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">7</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">7</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">3</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">7</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">4</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">5+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Arlequín" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="2e40d9ca-53a2-411b-a2fd-ad9a52ce0d56">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">5</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">6</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Artefacto Cronos" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="133c6b8a-361f-4d56-99c1-57b8f5bbaff3">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">3</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">3</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">5</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">7</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">3</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Artefacto Talos" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="68a9feab-ace8-47be-8010-74683cbf2d1e">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">5</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">3</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">7</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">7</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">3</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">1D6</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Asdrúbal Vect" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="7ade44f5-c11f-4f41-b32d-768cc281dcc8">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Personaje infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">8</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">8</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">4</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">8</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">5</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">4+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Atormentado" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="8fdb18b7-b7dc-41fb-b667-622d454cd615">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">1</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">8</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">6+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Avernarca" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="3f2c5b80-624e-424d-bb6d-ec4208286537">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">6</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">5+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Azote" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="b29b444c-fba8-48ab-95f8-b5d227e3efb2">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">5</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">1</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">8</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">4+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Bandada de filoplumas" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="90b04f55-4616-4850-9d3f-fcf2270bf8fd">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">0</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">5</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">5</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">5</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">5</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">6+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Barón Sathonyx" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="32142d9e-ccb6-4cf1-a953-c968effde1bf">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Personaje infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">6</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">6</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">2</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">6</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">5+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Bestia garrápoda" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="96cacc79-c6c4-4065-8247-f2357f7f94de">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">0</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">5</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">5</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">4</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">5</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">4</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">5</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">6+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Bruja" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="fdf4a9ae-5d02-41dd-84f5-d0b50ae7c0da">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">6</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">1</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">8</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">6+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Bufón de Muerte" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="06642630-4b90-48a0-91b5-2d3f929e35a9">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">5</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">6</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Campeón de la arena" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="7043831c-ceda-4a59-8943-802bc0ef3d2f">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3(4)</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">6</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">5+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Dama Malys" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="f78b6965-7bb8-4987-8682-842fde8670ae">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Personaje infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">7</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">7</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">3</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">7</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">4</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">5+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Draconte" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="38b04160-7684-4314-842f-2f39d7e833a5">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">5</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">5+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Drazhar" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="91e62df0-dfcd-4bcc-bdfd-6212896e20f0">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Personaje infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">7</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">7</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">3</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">7</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">4</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">2+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Duelista" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="463a298c-1aff-46ea-8317-c7fbec30110a">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">6</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">5</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">6</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Duque Sliscus" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="e636009c-0f5b-4e92-990c-2c795d51e7dc">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Personaje infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">6</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">6</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">2</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">6</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">4+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Esposa de la sangre" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="94b810a7-c4b1-4e41-9947-e51de9c133f6">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">6</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">6+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Gran Arlequín" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="f2cfe365-67c8-41d7-8f87-674ae6a6b0ab">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">5</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">6</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Grotesco" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="2757b6d0-2f65-4a05-b46c-9b52b857c838">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">1</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">5</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">5</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">3</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">3</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">6+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Guadaña" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="5f572c4b-eca6-4283-8d9f-0a699277d289">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3(4)</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">6</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">1</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">8</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">5+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Guerrero de la Cábala" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="a9c8882c-e3e2-41a0-a857-8f48ae196d7c">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">5</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">1</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">8</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">5+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Hekatriz" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="87079acc-b165-4138-9fca-72721fce4204">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">6</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">6+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Hemónculo" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="3fd776af-fd50-4b9d-bb26-6cf37975620d">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">2</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">8</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">6+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Hemónculo primigenio" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="8a443b90-89c5-4cfd-80a1-9fb8a37bb7a9">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">5</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">5</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">3</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">5</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">6+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Íncubo" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="647d32ee-2d1d-4139-94f8-3e78fc5718cb">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">5</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">5</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">8</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Infernal" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="bedd5457-9453-4eab-9f82-7f151e6090dc">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">6</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">1</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">8</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">5+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Kheradruakh" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="0af66ccb-24c6-4f4d-aef9-ab294d593605">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Personaje infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">6</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">5</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">5</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">3</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">6</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">4</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Kymera" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="8b734f77-372d-47d7-a363-e9a7fcccae6e">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">0</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">6</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">5</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">6+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Legítimo de la Cábala" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="fe2f7591-569f-4017-84cd-2e72777c17e4">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">5</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">5+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Lelith Hesperax" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="a65c52d5-a50d-41a8-88f6-9cc918a36dee">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Personaje infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">9</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">9</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">3</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">9</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">4</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">6+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Lharnaeana" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="6ea73159-7b69-4e3d-8769-9f641465ac13">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">5</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">1</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">5+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Mandrágora" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="3ca7f175-e837-4fe6-8e1b-91008e6f7d40">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">5</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">8</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Mártir" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="a4f6c81a-1814-407b-afa0-93f4a80cd733">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">6+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Medusa" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="a2e8dbeb-f075-4dc6-81a3-6b7732952159">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">5</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">1</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">5+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Nocturno" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="fa4c5505-486e-4ac6-81a8-f4946ef1f6ea">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">5</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Solarita" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="4149d01e-1427-4731-9985-2e03e2efdff9">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">5</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">4+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Sr. de las Bestias" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="c0866d7f-a086-47e8-91a7-6469ebae6c73">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">6</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">1</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">8</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">5+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Ssliz" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="d264a780-6f4a-45ed-89d1-6a45429303a2">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">5</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">5</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">2</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">3</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">5+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Súcubo" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="de552dca-abe2-4f5c-9cd4-3d577bfd4787">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">8</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">6</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">3</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">8</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">4</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">6+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Syrena" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="2e697f42-a679-42cd-9826-a2a4b025761a">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">6</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">6+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Ur-Crófago" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="8d082def-7d7a-4543-bf82-980d6cfb540c">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">0</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">5</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">3</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Urien Rakarth" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="da8cb6b5-d60d-4d19-8b2a-f6117da9e5c8">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Personaje infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">5</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">5</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">5</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">3</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">5</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">3</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">6+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Vidente de sombras" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="d2c06d44-8ee2-4a0e-9cb9-4a6ed902f7bc">
+      <characteristics>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">5</characteristic>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">3</characteristic>
+        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">6</characteristic>
+        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
+        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">-</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Bombardero Cuervo" typeId="725a358c-765b-498c-8de5-399fc0c0725f" typeName="Vehículo" hidden="false" id="949f7be6-03a1-4aa1-9f7b-2acbd8c9f8ae">
+      <characteristics>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="Frontal" typeId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f">11</characteristic>
+        <characteristic name="Lateral" typeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e">11</characteristic>
+        <characteristic name="Posterior" typeId="0a9f33cb-0412-420a-89d2-20707c360bd2">10</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Vehículo</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Caza Estilete" typeId="725a358c-765b-498c-8de5-399fc0c0725f" typeName="Vehículo" hidden="false" id="6a73ab83-1f1d-4df2-bf00-3f95018d7902">
+      <characteristics>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="Frontal" typeId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f">10</characteristic>
+        <characteristic name="Lateral" typeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e">10</characteristic>
+        <characteristic name="Posterior" typeId="0a9f33cb-0412-420a-89d2-20707c360bd2">10</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Vehículo</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Devastador" typeId="725a358c-765b-498c-8de5-399fc0c0725f" typeName="Vehículo" hidden="false" id="2b7d43ee-592e-415c-ab50-2ea95e20931c">
+      <characteristics>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="Frontal" typeId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f">11</characteristic>
+        <characteristic name="Lateral" typeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e">11</characteristic>
+        <characteristic name="Posterior" typeId="0a9f33cb-0412-420a-89d2-20707c360bd2">10</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Vehículo</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Incursor" typeId="725a358c-765b-498c-8de5-399fc0c0725f" typeName="Vehículo" hidden="false" id="cb8bc1d1-f4bd-4752-baf3-f712b84e4deb">
+      <characteristics>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="Frontal" typeId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f">10</characteristic>
+        <characteristic name="Lateral" typeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e">10</characteristic>
+        <characteristic name="Posterior" typeId="0a9f33cb-0412-420a-89d2-20707c360bd2">10</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Vehículo</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Ponzoña" typeId="725a358c-765b-498c-8de5-399fc0c0725f" typeName="Vehículo" hidden="false" id="81e91ce2-8826-4c86-8b25-43e20af294cf">
+      <characteristics>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
+        <characteristic name="Frontal" typeId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f">10</characteristic>
+        <characteristic name="Lateral" typeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e">10</characteristic>
+        <characteristic name="Posterior" typeId="0a9f33cb-0412-420a-89d2-20707c360bd2">10</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Vehículo</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Aguijón camuflado" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="fdb768f7-e217-45b7-aeee-650f38acc64e">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">5</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 2, Área</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Bláster" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="531500e1-d245-4532-91bb-fece641e7eb2">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">45cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">8</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">2</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 1, Lanza</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Bláster de disrupción" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="cfca9b24-ce5e-44cc-8b2d-50c52d73c364">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 1</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Cañón aullador" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="76748f30-1bc8-4bbc-9c0b-81e044a9a21b">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">6</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 3, Acobardamiento</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Cañón cristalino" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="0303069f-9322-4532-a9a6-37916d8dc675">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">90cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">X</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 4 o Pesada 6*, Envenenada (4+)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Cañón desintegrador" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="42b2b600-2cbf-4c82-8e9a-39cfa8109222">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">90cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">5</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">2</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 3</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Cápsulas cristalinas" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="4f9c6542-a755-49a3-83c3-3adb828826ac">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">45cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">X</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 2, Envenenada (4+)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Carabina cristalina" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="505c75c4-97a6-4311-863d-42b523115cd7">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">18cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">X</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 3, Envenenada (4+)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Cofre desollador" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="98ee4487-2765-4997-9a6b-b16cfaa8a1ee">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">30cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">1D6</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">1D6</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 2D6, Un sólo disparo</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Depredador" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="cbf49d32-206d-48e3-bcf8-96a7eb06f311">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">30cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">6</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">-</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 1, Área</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Fragmento del espejo" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="0f65d61e-c4ed-4ab8-a0ed-83f8e1e981b6">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Plantilla</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">X*</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">X*</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 1, Un sólo disparo</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Lanza de vacío" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="342862b2-5c9e-42dd-939c-b95bdc55198b">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">90cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">9</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">2</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 1, Lanza</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Lanza incandescente" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="4201b605-7baa-4f6b-a48f-ba0fa348255e">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">45cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">6</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">1</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 1, Lanza, Fusión</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Lanza oscura" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="2e972a10-f7b2-4f1f-aab4-f0cacd5f934a">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">90cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">8</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">2</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 1, Lanza</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Mina de vacío" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="22ab7add-05f1-45a2-9df8-0aef6f967381">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">*</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">9</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">2</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Área, Asalto 1, Lanza, Un sólo disparo</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Mirada paralizante" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="e408eff2-9704-4b9c-8963-ad4ff4048ce6">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Plantilla</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">1D6+1</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">1D6</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 1</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Misil de doble núcleo" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="5491a9f7-e6a2-4909-a622-6136fc13e68f">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">120cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">7*</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">-</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 1, Área grande, Un sólo disparo</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Misil de implosión" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="dc2d842a-bdc6-4236-aba3-1edfbb7c4f1a">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">120cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">*</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">2</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 1, Área, Un sólo disparo</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Misil de necrotoxinas" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="f394171e-e7df-430c-96f4-8faff27c1165">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">120cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">X</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 1, Área grande, Envenenada (2+), Acobardamiento, Un sólo disparo</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Misil monoguadaña" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="41eb2d7e-896d-449e-adfb-91e14bff291d">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">120cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">6</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 1, Área grande, Un sólo disparo</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Orbe de angustias" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="40e98732-04e6-470a-aba7-cbd8fe6abc77">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">15cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">10*</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">1</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 1, Área, Un sólo disparo</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Orbes de obsidiana" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="91aa190b-463a-43ba-a46a-ae371be6d254">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">30cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">10*</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 1, Área</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Piedra de sangre" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="9d600767-85c6-4d3b-8d5e-94e2e50ce3bb">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Plantilla</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">3</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 1</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Pistola aguijón" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="c5a03cdf-1806-4b0e-9967-cbb3978869eb">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">30cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">X</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistola, Envenenada (2+)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Pistola bláster" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="28203901-5c18-4524-869a-88673a655a23">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">15cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">8</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">2</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistola, Lanza</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Pistola cristalina" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="c9ac8316-149d-4a0a-9baa-81b4c060de2e">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">30cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">X</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistola, Envenenada (4+)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Pistola de fusión" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="db8b33f0-3cdf-4686-849f-ef4497ce91ee">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">15cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">8</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">1</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistola, Fusión</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Pistola shuriken" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="06c3a5c6-8ed0-418e-b6fa-b72c883727b7">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">30cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistola</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Portal oscuro" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="cb81c0c2-1d3e-4d91-8d5d-f01772388524">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">30cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">10</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">-</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 1, Área grande, Un sólo disparo</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Rayo castigador" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="b2cd7afd-5643-4fde-bc31-c94fbb00da62">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">45cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 2, Acobardamiento</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Rifle cristalino" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="710c5c7a-a95e-4028-ac2a-0270acd2b803">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">X</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Fuego rápido, Envenenada (4+)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Rifle licuador" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="9478b9a8-d44a-4456-8113-eb1149f87c3c">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Plantilla</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">1D6</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 1</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Rifle maléfico" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="b0079921-9c70-4a65-8c35-52624705293e">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">90cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">X</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 1, Francotirador</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Rociada espiritual" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="cce750df-5dc3-4a90-9add-b931672774de">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Plantilla</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 1</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Vórtice espiritual" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="fafac5d2-0c0d-4749-8ebd-af60c099d326">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">45cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">3</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 1, Área grande</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <sharedInfoGroups>
+    <infoGroup name="Aguijón camuflado" id="fe168ff9-52e1-433f-b5bd-952bac577c78" hidden="false">
+      <infoLinks>
+        <infoLink name="Aguijón camuflado" type="profile" targetId="fdb768f7-e217-45b7-aeee-650f38acc64e" id="36bd3f81-ae12-40e7-aada-9816c118aca1" hidden="false"/>
+        <infoLink name="Área" type="rule" targetId="31c7-fe6c-af95-f0b5" id="a51092e0-f45f-4ebb-90cf-ed0d4d3f634a" hidden="false"/>
+        <infoLink name="Asalto" type="rule" targetId="8714-46ad-62c0-ce35" id="e2c46e68-ccab-4e9c-ae0c-f4a7a7a9386a" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Bláster" id="3f7943ac-7a6e-4ff3-9d97-0e652bc2b109" hidden="false">
+      <infoLinks>
+        <infoLink name="Bláster" type="profile" targetId="531500e1-d245-4532-91bb-fece641e7eb2" id="773f9fdd-b8ab-47d8-8a44-8acd663bf077" hidden="false"/>
+        <infoLink name="Asalto" type="rule" targetId="8714-46ad-62c0-ce35" id="3609a2e1-ef44-4397-8b1e-edfc592ce4d6" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Bláster de disrupción" id="c5a9ae0e-e80c-4d21-a631-1e77e7356892" hidden="false">
+      <infoLinks>
+        <infoLink name="Bláster de disrupción" type="profile" targetId="cfca9b24-ce5e-44cc-8b2d-50c52d73c364" id="b8f48fb2-aca1-4129-8bee-0325d4a88eae" hidden="false"/>
+        <infoLink name="Asalto" type="rule" targetId="8714-46ad-62c0-ce35" id="fc8a1435-48a3-4f98-ae52-d22a77fb580c" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Cañón aullador" id="4672324c-b3c9-4476-aefd-2672ad729604" hidden="false">
+      <infoLinks>
+        <infoLink name="Cañón aullador" type="profile" targetId="76748f30-1bc8-4bbc-9c0b-81e044a9a21b" id="34bb7667-540d-4e97-b11d-7db71938f0f4" hidden="false"/>
+        <infoLink name="Asalto" type="rule" targetId="8714-46ad-62c0-ce35" id="abcfc140-bb8b-4d21-a7a7-ec8b6ba2e132" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Cañón cristalino" id="836594c4-96b6-4140-a118-c91ee7d25bb3" hidden="false">
+      <infoLinks>
+        <infoLink name="Cañón cristalino" type="profile" targetId="0303069f-9322-4532-a9a6-37916d8dc675" id="cf278ec1-ae94-479a-9647-d640d77c021f" hidden="false"/>
+        <infoLink name="Asalto" type="rule" targetId="8714-46ad-62c0-ce35" id="84f1d0c7-d909-442c-8e04-2317d4114832" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Cañón desintegrador" id="b121c368-23e1-4e73-ba11-ea9be1d10d91" hidden="false">
+      <infoLinks>
+        <infoLink name="Cañón desintegrador" type="profile" targetId="42b2b600-2cbf-4c82-8e9a-39cfa8109222" id="3691cb7c-addf-40ca-8897-177a13a2c24f" hidden="false"/>
+        <infoLink name="Pesada" type="rule" targetId="2e56-6b02-4343-0e40" id="5c3ecc01-8e01-4815-91fc-5cf701135134" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Cápsulas cristalinas" id="74903c48-27ac-4de2-93cf-50bade9dbaa2" hidden="false">
+      <infoLinks>
+        <infoLink name="Cápsulas cristalinas" type="profile" targetId="4f9c6542-a755-49a3-83c3-3adb828826ac" id="1ecb5e5c-377f-4e23-95ba-4735194a8fd7" hidden="false"/>
+        <infoLink name="Asalto" type="rule" targetId="8714-46ad-62c0-ce35" id="df299b1a-ac1c-400d-afd7-3af2386562b2" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Carabina cristalina" id="472666e8-e5d8-4ea1-a343-0f4c57d41ad6" hidden="false">
+      <infoLinks>
+        <infoLink name="Carabina cristalina" type="profile" targetId="505c75c4-97a6-4311-863d-42b523115cd7" id="1872e258-f58a-406a-ad78-6ea27d06db19" hidden="false"/>
+        <infoLink name="Asalto" type="rule" targetId="8714-46ad-62c0-ce35" id="655e39b4-f28e-4814-9d31-b0f9d6df869c" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Cofre desollador" id="e25782f4-53a1-403f-8237-2a2bd95986ec" hidden="false">
+      <infoLinks>
+        <infoLink name="Cofre desollador" type="profile" targetId="98ee4487-2765-4997-9a6b-b16cfaa8a1ee" id="52753a91-24e4-4ecf-a495-a35646f257f4" hidden="false"/>
+        <infoLink name="Asalto" type="rule" targetId="8714-46ad-62c0-ce35" id="3ccd7a45-9ab1-4d4b-b1ab-6484451cdacb" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Depredador" id="65e677a6-902f-4db3-a31c-1a789603b3b9" hidden="false">
+      <infoLinks>
+        <infoLink name="Depredador" type="profile" targetId="cbf49d32-206d-48e3-bcf8-96a7eb06f311" id="36000260-9143-47b3-9484-1653596db925" hidden="false"/>
+        <infoLink name="Área" type="rule" targetId="31c7-fe6c-af95-f0b5" id="6db017f2-bcd6-4681-9f56-a123ab7b8410" hidden="false"/>
+        <infoLink name="Asalto" type="rule" targetId="8714-46ad-62c0-ce35" id="2c0b0ca2-7fea-40b1-af6e-c0b79ad7a959" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Fragmento del espejo" id="f76f2f8f-8645-4154-b47d-84a302a57737" hidden="false">
+      <infoLinks>
+        <infoLink name="Fragmento del espejo" type="profile" targetId="0f65d61e-c4ed-4ab8-a0ed-83f8e1e981b6" id="50c1adcc-e289-47ef-a46f-e16e11f3861e" hidden="false"/>
+        <infoLink name="Asalto" type="rule" targetId="8714-46ad-62c0-ce35" id="d6de04b8-a607-438f-913c-5f6f37646ad2" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Lanza de vacío" id="99e2edeb-fb3a-403d-99e5-91780dde43a3" hidden="false">
+      <infoLinks>
+        <infoLink name="Lanza de vacío" type="profile" targetId="342862b2-5c9e-42dd-939c-b95bdc55198b" id="813a9036-f981-4443-9489-91bb41ff12e7" hidden="false"/>
+        <infoLink name="Asalto" type="rule" targetId="8714-46ad-62c0-ce35" id="4c8db6a4-5204-4f9f-ad5c-01c542b2d7a6" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Lanza incandescente" id="e3fbbdc0-a278-4c60-a876-c0898b367100" hidden="false">
+      <infoLinks>
+        <infoLink name="Lanza incandescente" type="profile" targetId="4201b605-7baa-4f6b-a48f-ba0fa348255e" id="ce69381a-9deb-4191-a38d-50aebf215ae7" hidden="false"/>
+        <infoLink name="Fusión" type="rule" targetId="2d66-d516-2bf5-5751" id="84608963-6578-4199-8ed0-7435cb0735bf" hidden="false"/>
+        <infoLink name="Asalto" type="rule" targetId="8714-46ad-62c0-ce35" id="9995792c-6a8f-4467-aa98-2bc952c930e9" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Lanza oscura" id="0e8932cd-7cd1-4b9d-b0b8-4a08ffca232a" hidden="false">
+      <infoLinks>
+        <infoLink name="Lanza oscura" type="profile" targetId="2e972a10-f7b2-4f1f-aab4-f0cacd5f934a" id="0928c763-f3fc-432a-a0ec-1341a0fce4f6" hidden="false"/>
+        <infoLink name="Pesada" type="rule" targetId="2e56-6b02-4343-0e40" id="fbebcda8-bab5-4ace-8921-03daa41041f8" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Mina de vacío" id="5f59b655-98a1-4568-bdcf-185334667aec" hidden="false">
+      <infoLinks>
+        <infoLink name="Mina de vacío" type="profile" targetId="22ab7add-05f1-45a2-9df8-0aef6f967381" id="dba70a2f-aaba-46da-9d7c-9605b3d3af50" hidden="false"/>
+        <infoLink name="Área" type="rule" targetId="31c7-fe6c-af95-f0b5" id="0bb100fc-1807-468a-ae76-a92f3ce4808e" hidden="false"/>
+        <infoLink name="Asalto" type="rule" targetId="8714-46ad-62c0-ce35" id="e10f7e0b-8971-4bca-bb77-3100f9978eed" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Mirada paralizante" id="5c722298-27bb-42e1-b219-fd392d067184" hidden="false">
+      <infoLinks>
+        <infoLink name="Mirada paralizante" type="profile" targetId="e408eff2-9704-4b9c-8963-ad4ff4048ce6" id="d3fbee75-2594-4508-be30-aa1ac7db12fb" hidden="false"/>
+        <infoLink name="Asalto" type="rule" targetId="8714-46ad-62c0-ce35" id="bc163862-d34f-42d4-9c41-ce0734c01bdf" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Misil de doble núcleo" id="f1141b71-523e-4de9-96b1-8d9d66e09afd" hidden="false">
+      <infoLinks>
+        <infoLink name="Misil de doble núcleo" type="profile" targetId="5491a9f7-e6a2-4909-a622-6136fc13e68f" id="c84c38a2-a3a4-4135-8ea4-f3fa376dc18e" hidden="false"/>
+        <infoLink name="Área grande" type="rule" targetId="952e-d8aa-7560-44b9" id="646c4491-3bef-4675-9e96-fcacc5252dc6" hidden="false"/>
+        <infoLink name="Asalto" type="rule" targetId="8714-46ad-62c0-ce35" id="26f68da3-7fdf-4a06-a934-13548489a879" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Misil de implosión" id="1d6c975e-2c64-407b-8b24-f2c7ca6f9b42" hidden="false">
+      <infoLinks>
+        <infoLink name="Misil de implosión" type="profile" targetId="dc2d842a-bdc6-4236-aba3-1edfbb7c4f1a" id="d66dbc2b-b5c1-4628-81f5-b2d2c8b2ff41" hidden="false"/>
+        <infoLink name="Área" type="rule" targetId="31c7-fe6c-af95-f0b5" id="bca9f511-4c83-42ed-b4c4-a101ec16c3ea" hidden="false"/>
+        <infoLink name="Asalto" type="rule" targetId="8714-46ad-62c0-ce35" id="30dc8e17-9e53-4238-bbdd-5478b8f72422" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Misil de necrotoxinas" id="d82f2878-12f4-4c71-8cc7-7719ee2dc435" hidden="false">
+      <infoLinks>
+        <infoLink name="Misil de necrotoxinas" type="profile" targetId="f394171e-e7df-430c-96f4-8faff27c1165" id="19f9249f-3a0b-408d-85b5-ffca9e644d70" hidden="false"/>
+        <infoLink name="Área grande" type="rule" targetId="952e-d8aa-7560-44b9" id="b0dc657a-2445-4205-afdc-c6406e399162" hidden="false"/>
+        <infoLink name="Asalto" type="rule" targetId="8714-46ad-62c0-ce35" id="c3b0516e-71a8-46b0-af5a-3a4a74df7aba" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Misil monoguadaña" id="cdbd8efa-13dd-4120-a1ed-4e5dafb609ce" hidden="false">
+      <infoLinks>
+        <infoLink name="Misil monoguadaña" type="profile" targetId="41eb2d7e-896d-449e-adfb-91e14bff291d" id="a4063f63-b860-44f3-bc75-651dee5ade46" hidden="false"/>
+        <infoLink name="Área grande" type="rule" targetId="952e-d8aa-7560-44b9" id="e628f815-2c3a-43cd-a0f7-09f7254270df" hidden="false"/>
+        <infoLink name="Asalto" type="rule" targetId="8714-46ad-62c0-ce35" id="13f8a944-f583-4748-a585-b169bed6f641" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Orbe de angustias" id="e9b93f5f-ff37-4b4d-a0ae-00005a5cc063" hidden="false">
+      <infoLinks>
+        <infoLink name="Orbe de angustias" type="profile" targetId="40e98732-04e6-470a-aba7-cbd8fe6abc77" id="0d56f236-b26c-443c-bfef-3a6ec6544ce7" hidden="false"/>
+        <infoLink name="Área" type="rule" targetId="31c7-fe6c-af95-f0b5" id="69a35772-8cb0-4851-afbe-adcd3e32d710" hidden="false"/>
+        <infoLink name="Asalto" type="rule" targetId="8714-46ad-62c0-ce35" id="379a25cd-cee6-4fb9-aaf6-f9b4c1af48f8" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Orbes de obsidiana" id="d5baee93-22b8-41e2-a4b6-5632cf908ea7" hidden="false">
+      <infoLinks>
+        <infoLink name="Orbes de obsidiana" type="profile" targetId="91aa190b-463a-43ba-a46a-ae371be6d254" id="2fe4eaae-c2ec-4eb8-a711-1d0f14758906" hidden="false"/>
+        <infoLink name="Área" type="rule" targetId="31c7-fe6c-af95-f0b5" id="90997f56-1fd3-4c28-b27e-becbcd7cc18a" hidden="false"/>
+        <infoLink name="Asalto" type="rule" targetId="8714-46ad-62c0-ce35" id="0be774a6-48d3-4161-96c4-77fce77400b4" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Piedra de sangre" id="98d49c03-6d6d-4921-8d08-1a4169bd36e4" hidden="false">
+      <infoLinks>
+        <infoLink name="Piedra de sangre" type="profile" targetId="9d600767-85c6-4d3b-8d5e-94e2e50ce3bb" id="1ace4b6e-bd97-4026-bd94-d869855a8c51" hidden="false"/>
+        <infoLink name="Asalto" type="rule" targetId="8714-46ad-62c0-ce35" id="0539e7ed-4514-4499-8d1a-56d146f5df53" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Pistola aguijón" id="398288b9-3ef6-48a3-8736-86af21f5b574" hidden="false">
+      <infoLinks>
+        <infoLink name="Pistola aguijón" type="profile" targetId="c5a03cdf-1806-4b0e-9967-cbb3978869eb" id="39fbec9a-7de4-4351-b669-f8881365f700" hidden="false"/>
+        <infoLink name="Pistola" type="rule" targetId="ff92-d10b-2808-eb79" id="5c990ae3-87cd-4a5a-902d-540ea4821b0e" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Pistola bláster" id="7ef2134a-e40d-4d49-a298-ebfd5a30720a" hidden="false">
+      <infoLinks>
+        <infoLink name="Pistola bláster" type="profile" targetId="28203901-5c18-4524-869a-88673a655a23" id="382b438d-9bcf-4305-9053-56a962528cbe" hidden="false"/>
+        <infoLink name="Pistola" type="rule" targetId="ff92-d10b-2808-eb79" id="3a9ce57a-4089-4856-ab00-18639b25b505" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Pistola cristalina" id="fe7fbe0e-3c53-4e7b-a91c-d0aed7c56328" hidden="false">
+      <infoLinks>
+        <infoLink name="Pistola cristalina" type="profile" targetId="c9ac8316-149d-4a0a-9baa-81b4c060de2e" id="3ae0bd3d-07da-4430-a48f-35b40dea54f5" hidden="false"/>
+        <infoLink name="Pistola" type="rule" targetId="ff92-d10b-2808-eb79" id="769fd21d-8479-4a1f-91c0-fee261756562" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Pistola de fusión" id="81cdadf2-4579-4bec-b74a-fdebc3a75878" hidden="false">
+      <infoLinks>
+        <infoLink name="Pistola de fusión" type="profile" targetId="db8b33f0-3cdf-4686-849f-ef4497ce91ee" id="4c0c5264-9664-4fb3-a426-a47e05b52d03" hidden="false"/>
+        <infoLink name="Fusión" type="rule" targetId="2d66-d516-2bf5-5751" id="c1a22ac6-8b38-4507-b600-bf27655169c4" hidden="false"/>
+        <infoLink name="Pistola" type="rule" targetId="ff92-d10b-2808-eb79" id="5e065a8c-1bef-4ad9-b484-e69575358de8" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Pistola shuriken" id="c932a401-a724-4d5d-bfe6-a08d33c48736" hidden="false">
+      <infoLinks>
+        <infoLink name="Pistola shuriken" type="profile" targetId="06c3a5c6-8ed0-418e-b6fa-b72c883727b7" id="be7d2c06-51de-41a7-9de1-5053d8942020" hidden="false"/>
+        <infoLink name="Pistola" type="rule" targetId="ff92-d10b-2808-eb79" id="76afcc3b-6917-4ce9-adcd-a6268e530ef2" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Portal oscuro" id="d4d8f2b0-fcf8-431c-8d5c-8605b90082b8" hidden="false">
+      <infoLinks>
+        <infoLink name="Portal oscuro" type="profile" targetId="cb81c0c2-1d3e-4d91-8d5d-f01772388524" id="a4815446-17fe-4518-8a03-fed7e913754d" hidden="false"/>
+        <infoLink name="Área grande" type="rule" targetId="952e-d8aa-7560-44b9" id="a1226b60-2711-4f2f-b829-d0ca4023442d" hidden="false"/>
+        <infoLink name="Asalto" type="rule" targetId="8714-46ad-62c0-ce35" id="9141fcaa-6bf4-4968-ab0b-8ed787a3df05" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Rayo castigador" id="eebfa189-11de-4556-94c4-56e33397c95d" hidden="false">
+      <infoLinks>
+        <infoLink name="Rayo castigador" type="profile" targetId="b2cd7afd-5643-4fde-bc31-c94fbb00da62" id="7af49c84-4ce5-431b-b23e-31a14271492f" hidden="false"/>
+        <infoLink name="Asalto" type="rule" targetId="8714-46ad-62c0-ce35" id="f23d2d3b-007c-4104-b5af-cbb85290ab3f" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Rifle cristalino" id="9467bdf2-6b31-42f5-9efc-78c85c764668" hidden="false">
+      <infoLinks>
+        <infoLink name="Rifle cristalino" type="profile" targetId="710c5c7a-a95e-4028-ac2a-0270acd2b803" id="9d5ea57b-df2f-427f-8891-4d33246ae25f" hidden="false"/>
+        <infoLink name="Fuego rápido" type="rule" targetId="e15d-1437-cfb2-b8dd" id="0aac065a-b03a-4755-ac03-61f8e2af3fb2" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Rifle licuador" id="38cabdf3-8bfc-4b23-aa90-48b427fb847d" hidden="false">
+      <infoLinks>
+        <infoLink name="Rifle licuador" type="profile" targetId="9478b9a8-d44a-4456-8113-eb1149f87c3c" id="b330f239-b0cf-43bc-9124-9e03eabe99c6" hidden="false"/>
+        <infoLink name="Asalto" type="rule" targetId="8714-46ad-62c0-ce35" id="98c42440-5237-4c56-ad4e-3aab517cec00" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Rifle maléfico" id="178ad60b-2681-4b93-82a6-58d879feb830" hidden="false">
+      <infoLinks>
+        <infoLink name="Rifle maléfico" type="profile" targetId="b0079921-9c70-4a65-8c35-52624705293e" id="ebf52e3b-e869-4b07-9eea-fcf727f7ea43" hidden="false"/>
+        <infoLink name="Francotirador" type="rule" targetId="7636-0a2f-8c61-f9b2" id="e3350b91-58a6-41d2-b16c-306a43e20bab" hidden="false"/>
+        <infoLink name="Asalto" type="rule" targetId="8714-46ad-62c0-ce35" id="3a9fb7ba-684d-424e-b9f1-66282ed5915a" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Rociada espiritual" id="2d1c145c-6c0c-4dca-83d7-aaa745ad7905" hidden="false">
+      <infoLinks>
+        <infoLink name="Rociada espiritual" type="profile" targetId="cce750df-5dc3-4a90-9add-b931672774de" id="040dc318-151f-4bc7-87e2-24474c31aee6" hidden="false"/>
+        <infoLink name="Asalto" type="rule" targetId="8714-46ad-62c0-ce35" id="e25cca2a-c087-433e-803a-fd9d5f8cddf1" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Vórtice espiritual" id="5d66a435-e1df-4fe7-a31a-44a1bc39bb13" hidden="false">
+      <infoLinks>
+        <infoLink name="Vórtice espiritual" type="profile" targetId="fafac5d2-0c0d-4749-8ebd-af60c099d326" id="aa94b3ae-584f-4d5f-9689-a01dffbb2d5f" hidden="false"/>
+        <infoLink name="Área grande" type="rule" targetId="952e-d8aa-7560-44b9" id="fc5dc928-b7a5-4f9d-920d-85340cfb3226" hidden="false"/>
+        <infoLink name="Asalto" type="rule" targetId="8714-46ad-62c0-ce35" id="3a1bcf8f-48d5-49c3-88cf-40c734a503a9" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Aberración" id="e4b4c0b4-bae5-4446-bc56-f6b3f49809ff" hidden="false">
+      <infoLinks>
+        <infoLink name="Aberración" type="profile" targetId="1261e7c1-816c-4fde-b01e-bf281d7677e9" id="9b6bcf69-d6da-4d88-ba8d-0965a36f2b7e" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Alástor" id="92552e2a-c828-43c9-bff9-ccb0dc794486" hidden="false">
+      <infoLinks>
+        <infoLink name="Alástor" type="profile" targetId="6293b256-14e5-48d7-8ec8-4e4fb3e42b20" id="1e0c0230-bd35-40a4-b687-59714bab1532" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Arconte" id="ad582eb3-6222-4e58-8536-17815a3330f7" hidden="false">
+      <infoLinks>
+        <infoLink name="Arconte" type="profile" targetId="bdf5c094-8f2c-4c8b-96e2-a8e4542af1cb" id="836b78bd-b195-48d6-8e4e-1dace075ed86" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Arlequín" id="00cc759a-f1e1-4ed9-936b-b59a991a4aa9" hidden="false">
+      <infoLinks>
+        <infoLink name="Arlequín" type="profile" targetId="2e40d9ca-53a2-411b-a2fd-ad9a52ce0d56" id="f36743aa-287e-414c-a82a-83508d0eca91" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Artefacto Cronos" id="2faa08fd-fba7-4c9c-8cdc-3814f4da2c70" hidden="false">
+      <infoLinks>
+        <infoLink name="Artefacto Cronos" type="profile" targetId="133c6b8a-361f-4d56-99c1-57b8f5bbaff3" id="9ab3d0d2-ca37-417e-b5cf-e3e20370f99f" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Artefacto Talos" id="433b0529-f249-4ab1-9c1b-4eb754b98a77" hidden="false">
+      <infoLinks>
+        <infoLink name="Artefacto Talos" type="profile" targetId="68a9feab-ace8-47be-8010-74683cbf2d1e" id="58c36a13-a3c3-4eee-abcf-f1ca8237c974" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Asdrúbal Vect" id="4506b8b1-9d32-46cc-9522-91d1f55d5911" hidden="false">
+      <infoLinks>
+        <infoLink name="Asdrúbal Vect" type="profile" targetId="7ade44f5-c11f-4f41-b32d-768cc281dcc8" id="e4e27468-a481-4958-b37d-11cfb079bdae" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Atormentado" id="a5ef462b-b034-44c5-b09c-758fb46f99f0" hidden="false">
+      <infoLinks>
+        <infoLink name="Atormentado" type="profile" targetId="8fdb18b7-b7dc-41fb-b667-622d454cd615" id="4f1a6504-6c85-416c-9b91-1c156e0192b3" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Avernarca" id="efe9eadb-b1ff-4ddc-ba72-67bc1f32b05f" hidden="false">
+      <infoLinks>
+        <infoLink name="Avernarca" type="profile" targetId="3f2c5b80-624e-424d-bb6d-ec4208286537" id="59b4e60e-1d23-461c-941b-20066e47baa2" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Azote" id="47196022-e7cf-4606-b958-c874ce9c13a2" hidden="false">
+      <infoLinks>
+        <infoLink name="Azote" type="profile" targetId="b29b444c-fba8-48ab-95f8-b5d227e3efb2" id="c8bfabd4-7411-4da1-9564-7a084d4e585e" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Bandada de filoplumas" id="d3c0230a-7605-4cce-8295-03dede11a4cd" hidden="false">
+      <infoLinks>
+        <infoLink name="Bandada de filoplumas" type="profile" targetId="90b04f55-4616-4850-9d3f-fcf2270bf8fd" id="e0e2d330-b6c8-4bc5-bc1c-e545bc22b2bc" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Barón Sathonyx" id="4533309b-32b1-49a0-b87f-a8771ac06340" hidden="false">
+      <infoLinks>
+        <infoLink name="Barón Sathonyx" type="profile" targetId="32142d9e-ccb6-4cf1-a953-c968effde1bf" id="d6a5f31e-a59b-4941-8d9f-07b7d38821d9" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Bestia garrápoda" id="8f804122-6474-49cf-8632-2c4bd21848b5" hidden="false">
+      <infoLinks>
+        <infoLink name="Bestia garrápoda" type="profile" targetId="96cacc79-c6c4-4065-8247-f2357f7f94de" id="5b3390f5-7d65-464e-8254-d43cfa62bb36" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Bruja" id="1469d625-2a34-4cf7-866e-7510b90f2499" hidden="false">
+      <infoLinks>
+        <infoLink name="Bruja" type="profile" targetId="fdf4a9ae-5d02-41dd-84f5-d0b50ae7c0da" id="646e244a-7332-4506-823e-b6f17375eca0" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Bufón de Muerte" id="c9254ce5-2100-4ed4-8a18-fc9e20a3f5a6" hidden="false">
+      <infoLinks>
+        <infoLink name="Bufón de Muerte" type="profile" targetId="06642630-4b90-48a0-91b5-2d3f929e35a9" id="10b26cd1-836a-40a7-98ba-cde26f64de10" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Campeón de la arena" id="06ef53a2-e1b6-4aac-90c5-a91d4ba6bdc3" hidden="false">
+      <infoLinks>
+        <infoLink name="Campeón de la arena" type="profile" targetId="7043831c-ceda-4a59-8943-802bc0ef3d2f" id="9df9cf6d-3086-4d98-ba45-a03e2f9aea90" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Dama Malys" id="baf5cb2b-5d27-4738-9630-8fc8a5884ad3" hidden="false">
+      <infoLinks>
+        <infoLink name="Dama Malys" type="profile" targetId="f78b6965-7bb8-4987-8682-842fde8670ae" id="6f950c3e-ca5f-4cc8-b9bf-aaa3428e3306" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Draconte" id="b597cddc-c0d6-4b99-a491-966bb97f5d26" hidden="false">
+      <infoLinks>
+        <infoLink name="Draconte" type="profile" targetId="38b04160-7684-4314-842f-2f39d7e833a5" id="91dcead7-e343-499c-a1ef-34c7bbca08fc" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Drazhar" id="80f9c616-4ca3-448e-b8f5-5bea3fc864e3" hidden="false">
+      <infoLinks>
+        <infoLink name="Drazhar" type="profile" targetId="91e62df0-dfcd-4bcc-bdfd-6212896e20f0" id="7b9728ca-b75f-447f-bd6d-a694eb3f5db2" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Duelista" id="1d368fad-44c7-44c1-97a2-bb2c8cf19f06" hidden="false">
+      <infoLinks>
+        <infoLink name="Duelista" type="profile" targetId="463a298c-1aff-46ea-8317-c7fbec30110a" id="86047984-4629-4a63-be9f-d1d9473b34a5" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Duque Sliscus" id="c59903f0-82b3-435e-b38e-756b037658ce" hidden="false">
+      <infoLinks>
+        <infoLink name="Duque Sliscus" type="profile" targetId="e636009c-0f5b-4e92-990c-2c795d51e7dc" id="d75a8696-ab6b-4c9b-8db8-36ba1a09226a" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Esposa de la sangre" id="7b2affdc-221b-47cb-9440-3dddcb498a4f" hidden="false">
+      <infoLinks>
+        <infoLink name="Esposa de la sangre" type="profile" targetId="94b810a7-c4b1-4e41-9947-e51de9c133f6" id="8d2c1b13-7a61-48de-b167-a769b49d8d9b" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Gran Arlequín" id="df5e5b85-da81-4642-803d-bdc022c1e63a" hidden="false">
+      <infoLinks>
+        <infoLink name="Gran Arlequín" type="profile" targetId="f2cfe365-67c8-41d7-8f87-674ae6a6b0ab" id="085792ad-52a8-410f-91ca-2303b3632b4b" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Grotesco" id="034c718e-f8c8-4352-a169-51962cd1ead2" hidden="false">
+      <infoLinks>
+        <infoLink name="Grotesco" type="profile" targetId="2757b6d0-2f65-4a05-b46c-9b52b857c838" id="14a43ab7-514e-413e-a25c-5864f2ae7c00" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Guadaña" id="da8ecff5-dc75-4efd-ab23-cbbb620a2830" hidden="false">
+      <infoLinks>
+        <infoLink name="Guadaña" type="profile" targetId="5f572c4b-eca6-4283-8d9f-0a699277d289" id="a2bb8de0-f867-4028-9cc3-d59d9905ed9c" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Guerrero de la Cábala" id="8e1e0929-1fef-47d8-af9d-ff79b084ca6c" hidden="false">
+      <infoLinks>
+        <infoLink name="Guerrero de la Cábala" type="profile" targetId="a9c8882c-e3e2-41a0-a857-8f48ae196d7c" id="5c788083-10aa-477f-be18-96f660d80485" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Hekatriz" id="3d0246a2-b1a0-4bd4-8293-7d00a3f1cc12" hidden="false">
+      <infoLinks>
+        <infoLink name="Hekatriz" type="profile" targetId="87079acc-b165-4138-9fca-72721fce4204" id="ba361ebc-f454-4960-89c1-524ff7c116c1" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Hemónculo" id="e1874443-d2f7-491e-b32d-a359cee35f6a" hidden="false">
+      <infoLinks>
+        <infoLink name="Hemónculo" type="profile" targetId="3fd776af-fd50-4b9d-bb26-6cf37975620d" id="3c938cee-57e8-4759-b2db-5a514ce3058f" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Hemónculo primigenio" id="38e74bd1-6814-4856-937c-1e93eda7950d" hidden="false">
+      <infoLinks>
+        <infoLink name="Hemónculo primigenio" type="profile" targetId="8a443b90-89c5-4cfd-80a1-9fb8a37bb7a9" id="dc005a9d-79c6-4eda-b6a2-c44027e9c485" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Íncubo" id="9a7c2bd3-b967-47ff-b625-e91d8d4035af" hidden="false">
+      <infoLinks>
+        <infoLink name="Íncubo" type="profile" targetId="647d32ee-2d1d-4139-94f8-3e78fc5718cb" id="ee230435-6335-4ddb-a4e0-d11f339f54a6" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Infernal" id="535053c7-c318-4c2e-8332-f4ec586ffda9" hidden="false">
+      <infoLinks>
+        <infoLink name="Infernal" type="profile" targetId="bedd5457-9453-4eab-9f82-7f151e6090dc" id="28425ed6-91aa-4c42-83ac-747a50de6919" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Kheradruakh" id="55986464-0b4b-402e-89a7-d65c8bc6292f" hidden="false">
+      <infoLinks>
+        <infoLink name="Kheradruakh" type="profile" targetId="0af66ccb-24c6-4f4d-aef9-ab294d593605" id="1bd44fd4-215c-47dd-a09a-a7dd0606d8fd" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Kymera" id="c09f56f1-7b2b-4b76-93a3-9534d5c55294" hidden="false">
+      <infoLinks>
+        <infoLink name="Kymera" type="profile" targetId="8b734f77-372d-47d7-a363-e9a7fcccae6e" id="e0263362-532c-43f3-b69c-a8f08bc57e83" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Legítimo de la Cábala" id="0ce3bb72-fbab-4c03-910a-3305486d2743" hidden="false">
+      <infoLinks>
+        <infoLink name="Legítimo de la Cábala" type="profile" targetId="fe2f7591-569f-4017-84cd-2e72777c17e4" id="4b4c5744-40c7-4667-970b-5ef518677049" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Lelith Hesperax" id="2036f4a9-25ed-4a60-bdf8-815344c91478" hidden="false">
+      <infoLinks>
+        <infoLink name="Lelith Hesperax" type="profile" targetId="a65c52d5-a50d-41a8-88f6-9cc918a36dee" id="3e484b1e-e6d8-4521-9ca0-1f6c977857dd" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Lharnaeana" id="e0f8a6cb-b0fc-4da5-b139-89fe2e32ddfe" hidden="false">
+      <infoLinks>
+        <infoLink name="Lharnaeana" type="profile" targetId="6ea73159-7b69-4e3d-8769-9f641465ac13" id="d0f55349-637e-4e8d-a6f6-527f98930ac1" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Mandrágora" id="77e565dd-d975-4d33-b98f-001b2105364c" hidden="false">
+      <infoLinks>
+        <infoLink name="Mandrágora" type="profile" targetId="3ca7f175-e837-4fe6-8e1b-91008e6f7d40" id="1adde965-a118-42a5-ad4c-4f8a9b9ceb78" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Mártir" id="0c5a4406-bcfc-4abe-8f29-db91adb66abd" hidden="false">
+      <infoLinks>
+        <infoLink name="Mártir" type="profile" targetId="a4f6c81a-1814-407b-afa0-93f4a80cd733" id="f2b9b696-af82-4fec-a579-ce955111cb4f" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Medusa" id="61c0798a-7cad-44f4-8029-49333b968106" hidden="false">
+      <infoLinks>
+        <infoLink name="Medusa" type="profile" targetId="a2e8dbeb-f075-4dc6-81a3-6b7732952159" id="c553594b-3b57-458c-83ce-5cc1f269818c" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Nocturno" id="8e9ea36a-2aab-4bdf-b996-f3f351fa48b5" hidden="false">
+      <infoLinks>
+        <infoLink name="Nocturno" type="profile" targetId="fa4c5505-486e-4ac6-81a8-f4946ef1f6ea" id="9783c379-a451-4260-a947-c8eddddccdc5" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Solarita" id="ee2fbd8c-d73b-4121-a87b-83a88a7ae5e6" hidden="false">
+      <infoLinks>
+        <infoLink name="Solarita" type="profile" targetId="4149d01e-1427-4731-9985-2e03e2efdff9" id="13cd0311-4e00-49c8-a01a-bdea0d0aeb28" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Sr. de las Bestias" id="0f548610-9feb-4dec-863f-ba9e217389b2" hidden="false">
+      <infoLinks>
+        <infoLink name="Sr. de las Bestias" type="profile" targetId="c0866d7f-a086-47e8-91a7-6469ebae6c73" id="a6338ea4-7257-4f04-a7b7-9eba8fe9a1de" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Ssliz" id="f2002c58-1b5a-4611-937c-158b9eae25f8" hidden="false">
+      <infoLinks>
+        <infoLink name="Ssliz" type="profile" targetId="d264a780-6f4a-45ed-89d1-6a45429303a2" id="b14f0d00-4e60-490a-b0c1-4ecff5a9df58" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Súcubo" id="c24ce75a-5758-4bb9-9a02-65d5a2e41aed" hidden="false">
+      <infoLinks>
+        <infoLink name="Súcubo" type="profile" targetId="de552dca-abe2-4f5c-9cd4-3d577bfd4787" id="71e73f38-0688-405d-aa71-4b5e6c52624f" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Syrena" id="0c62605d-7f5e-43a4-9e42-5af42095a621" hidden="false">
+      <infoLinks>
+        <infoLink name="Syrena" type="profile" targetId="2e697f42-a679-42cd-9826-a2a4b025761a" id="f1d67f4a-66e8-4d4d-bd4f-66fcc2541d30" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Ur-Crófago" id="05ce772f-899c-497a-b4af-dc66389ed031" hidden="false">
+      <infoLinks>
+        <infoLink name="Ur-Crófago" type="profile" targetId="8d082def-7d7a-4543-bf82-980d6cfb540c" id="208e99d4-f337-4664-a244-ae9dd10ad1f3" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Urien Rakarth" id="534339f7-a9db-43fc-bfb7-dc0afcc63673" hidden="false">
+      <infoLinks>
+        <infoLink name="Urien Rakarth" type="profile" targetId="da8cb6b5-d60d-4d19-8b2a-f6117da9e5c8" id="d71b123c-79c9-4f9b-b498-67f4aeb84311" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Vidente de sombras" id="66f2cc60-e5d3-4471-9704-deb376197e08" hidden="false">
+      <infoLinks>
+        <infoLink name="Vidente de sombras" type="profile" targetId="d2c06d44-8ee2-4a0e-9cb9-4a6ed902f7bc" id="44717196-458d-4860-8712-7035d93efd04" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Bombardero Cuervo" id="b05218aa-7fbe-46bf-bc2a-afcb9c8ab6e6" hidden="false">
+      <infoLinks>
+        <infoLink name="Bombardero Cuervo" type="profile" targetId="949f7be6-03a1-4aa1-9f7b-2acbd8c9f8ae" id="d29c76fc-73fb-4df5-96e4-6592b48880d4" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Caza Estilete" id="711f1326-6339-4653-b4ee-3a8bba052fbc" hidden="false">
+      <infoLinks>
+        <infoLink name="Caza Estilete" type="profile" targetId="6a73ab83-1f1d-4df2-bf00-3f95018d7902" id="44a044b4-7f84-4829-9d15-e4ef2b14a707" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Devastador" id="7c9e7f65-c5c2-48af-80c1-1e48dcc8339d" hidden="false">
+      <infoLinks>
+        <infoLink name="Devastador" type="profile" targetId="2b7d43ee-592e-415c-ab50-2ea95e20931c" id="669f7af4-fd07-4eef-b6c2-6ecd8d35cfd5" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Incursor" id="c6dc8708-1c21-4b19-889d-6a5962cf2358" hidden="false">
+      <infoLinks>
+        <infoLink name="Incursor" type="profile" targetId="cb8bc1d1-f4bd-4752-baf3-f712b84e4deb" id="bfa579f7-b83e-4d29-9aef-f60733b20808" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Ponzoña" id="4ab781eb-8090-457a-8c33-c55b7433467c" hidden="false">
+      <infoLinks>
+        <infoLink name="Ponzoña" type="profile" targetId="81e91ce2-8826-4c86-8b25-43e20af294cf" id="ee321faf-c007-45ff-b3c4-1915f3f9c87d" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+  </sharedInfoGroups>
+  <sharedSelectionEntries>
+    <selectionEntry type="unit" import="true" name="Aberración" hidden="false" id="089da626-b066-49a9-ac33-b71c2a3fc8d9">
+      <infoLinks>
+        <infoLink name="Aberración" id="04ec8c53-495c-4c0e-9682-b78636d6aa1a" hidden="false" type="infoGroup" targetId="e4b4c0b4-bae5-4446-bc56-f6b3f49809ff"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Aguijón camuflado" hidden="false" id="aec5fb50-5fea-4225-8a7f-86e90e950e00">
+      <infoLinks>
+        <infoLink name="Aguijón camuflado" id="d004a363-864f-4005-b91d-7e7d03649c16" hidden="false" type="infoGroup" targetId="fe168ff9-52e1-433f-b5bd-952bac577c78"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Alástor" hidden="false" id="43dad61a-d73b-4c25-b699-a936c4e55d33">
+      <infoLinks>
+        <infoLink name="Alástor" id="31cbf6bd-a10c-46be-b2a6-5ebc7b9d6875" hidden="false" type="infoGroup" targetId="92552e2a-c828-43c9-bff9-ccb0dc794486"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Arconte" hidden="false" id="8ab9e430-781d-4138-b982-1adf28be28ea">
+      <infoLinks>
+        <infoLink name="Arconte" id="8d6c1873-49d1-4a67-bde5-cdbbcec19df9" hidden="false" type="infoGroup" targetId="ad582eb3-6222-4e58-8536-17815a3330f7"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Arlequín" hidden="false" id="3dc345ae-b308-440a-b968-ffeb4ec5a8c3">
+      <infoLinks>
+        <infoLink name="Arlequín" id="ce2497b3-7cef-4910-ba05-2072110a0f3b" hidden="false" type="infoGroup" targetId="00cc759a-f1e1-4ed9-936b-b59a991a4aa9"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Artefacto Cronos" hidden="false" id="f7e27b45-41d4-412a-b0c1-76cd4d8278f7">
+      <infoLinks>
+        <infoLink name="Artefacto Cronos" id="59576997-72d0-4bbf-8a76-a1639299a3bd" hidden="false" type="infoGroup" targetId="2faa08fd-fba7-4c9c-8cdc-3814f4da2c70"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Artefacto Talos" hidden="false" id="58c8f8c1-feb1-4dca-98d7-bcd6b2c0c494">
+      <infoLinks>
+        <infoLink name="Artefacto Talos" id="5f43a327-143a-47e6-8581-20f0ab98bdf5" hidden="false" type="infoGroup" targetId="433b0529-f249-4ab1-9c1b-4eb754b98a77"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Asdrúbal Vect" hidden="false" id="68a6a9c4-1044-4fa9-b764-b7ed90bb8e72">
+      <infoLinks>
+        <infoLink name="Asdrúbal Vect" id="f0bfe9b3-16d2-4172-b68c-03cea2ca51ae" hidden="false" type="infoGroup" targetId="4506b8b1-9d32-46cc-9522-91d1f55d5911"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Atormentado" hidden="false" id="1280740e-2d25-4cba-8796-ab1241d95468">
+      <infoLinks>
+        <infoLink name="Atormentado" id="d788e4c3-f47a-48ed-8102-7d0dad6e1e0a" hidden="false" type="infoGroup" targetId="a5ef462b-b034-44c5-b09c-758fb46f99f0"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Avernarca" hidden="false" id="dc1a9401-43c9-4deb-93b1-901cb9f3e2cc">
+      <infoLinks>
+        <infoLink name="Avernarca" id="0c7e3428-2078-4f37-9661-b45462e1b765" hidden="false" type="infoGroup" targetId="efe9eadb-b1ff-4ddc-ba72-67bc1f32b05f"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Azote" hidden="false" id="4444c1b9-468a-4722-b505-fb77f869c15b">
+      <infoLinks>
+        <infoLink name="Azote" id="64a55866-d313-4476-b267-9185008fd5b4" hidden="false" type="infoGroup" targetId="47196022-e7cf-4606-b958-c874ce9c13a2"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Bandada de filoplumas" hidden="false" id="ab042bc6-23de-480c-a720-bd2653af0a94">
+      <infoLinks>
+        <infoLink name="Bandada de filoplumas" id="bc8e0a6d-e121-4491-ac8f-d1724288331f" hidden="false" type="infoGroup" targetId="d3c0230a-7605-4cce-8295-03dede11a4cd"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Barón Sathonyx" hidden="false" id="f4357f4f-179c-4cbd-8866-3c9c1a515645">
+      <infoLinks>
+        <infoLink name="Barón Sathonyx" id="0cdb1e88-a260-4408-8507-05e40b426d2c" hidden="false" type="infoGroup" targetId="4533309b-32b1-49a0-b87f-a8771ac06340"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Bestia garrápoda" hidden="false" id="6578afb8-5b38-4e3c-94ca-23c8c69143e4">
+      <infoLinks>
+        <infoLink name="Bestia garrápoda" id="1f9c38a0-68e1-47a8-beef-c05860257404" hidden="false" type="infoGroup" targetId="8f804122-6474-49cf-8632-2c4bd21848b5"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Bláster" hidden="false" id="e3e0130e-7926-4ea0-becf-df677647ca11">
+      <infoLinks>
+        <infoLink name="Bláster" id="351d74c6-7f5b-4c3f-8d8c-60a8720d064e" hidden="false" type="infoGroup" targetId="3f7943ac-7a6e-4ff3-9d97-0e652bc2b109"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Bláster de disrupción" hidden="false" id="619f5b87-5a3d-4700-a43b-c8fff49182e5">
+      <infoLinks>
+        <infoLink name="Bláster de disrupción" id="a20977c1-1d5d-4d6a-a671-7a8e152cbc01" hidden="false" type="infoGroup" targetId="c5a9ae0e-e80c-4d21-a631-1e77e7356892"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Bombardero Cuervo" hidden="false" id="27c1c4be-4a16-4cb4-8ba7-7c0155dd4580">
+      <infoLinks>
+        <infoLink name="Bombardero Cuervo" id="6c001aa0-0185-4076-9040-74d80326c58b" hidden="false" type="infoGroup" targetId="b05218aa-7fbe-46bf-bc2a-afcb9c8ab6e6"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Bruja" hidden="false" id="6ad10752-2217-4679-8fad-b4fbd4a234b3">
+      <infoLinks>
+        <infoLink name="Bruja" id="91c87aba-294e-44ca-a1c1-4c09e8813fa0" hidden="false" type="infoGroup" targetId="1469d625-2a34-4cf7-866e-7510b90f2499"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Bufón de Muerte" hidden="false" id="da7f7701-9067-4733-b53d-57f9fbade127">
+      <infoLinks>
+        <infoLink name="Bufón de Muerte" id="5afa5ae4-7c02-40d3-a084-b8a27ca7f0ed" hidden="false" type="infoGroup" targetId="c9254ce5-2100-4ed4-8a18-fc9e20a3f5a6"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Campeón de la arena" hidden="false" id="67da2aa5-1535-406b-a135-fdaef88ef992">
+      <infoLinks>
+        <infoLink name="Campeón de la arena" id="4ef17dbd-196a-43b6-aa27-06e443b9ab5c" hidden="false" type="infoGroup" targetId="06ef53a2-e1b6-4aac-90c5-a91d4ba6bdc3"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Carabina cristalina" hidden="false" id="14ba18ee-a5aa-4811-b931-892efbd465d5">
+      <infoLinks>
+        <infoLink name="Carabina cristalina" id="4c95d789-9a46-4294-be57-5af6cbc325e3" hidden="false" type="infoGroup" targetId="472666e8-e5d8-4ea1-a343-0f4c57d41ad6"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Caza Estilete" hidden="false" id="03e67195-7245-4990-b7e2-f1c3c88a8b51">
+      <infoLinks>
+        <infoLink name="Caza Estilete" id="461b2a45-d81c-4de7-b21c-0d0f1b3cb34a" hidden="false" type="infoGroup" targetId="711f1326-6339-4653-b4ee-3a8bba052fbc"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Cañón aullador" hidden="false" id="0a56068f-baeb-4b90-b480-6e6cc30d4846">
+      <infoLinks>
+        <infoLink name="Cañón aullador" id="3c051685-4627-491f-bfc5-e710726c09b5" hidden="false" type="infoGroup" targetId="4672324c-b3c9-4476-aefd-2672ad729604"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Cañón cristalino" hidden="false" id="9cca8d72-e27a-4b89-b656-3f3dd18d1177">
+      <infoLinks>
+        <infoLink name="Cañón cristalino" id="114eaec1-1cac-4ad2-924e-9e0e3983cab2" hidden="false" type="infoGroup" targetId="836594c4-96b6-4140-a118-c91ee7d25bb3"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Cañón desintegrador" hidden="false" id="475d9856-dcba-408b-83e0-13eba8b27795">
+      <infoLinks>
+        <infoLink name="Cañón desintegrador" id="c8dd11f6-867f-46a0-84e6-5ef2a02ae472" hidden="false" type="infoGroup" targetId="b121c368-23e1-4e73-ba11-ea9be1d10d91"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Cofre desollador" hidden="false" id="9c722070-87ba-4517-aa43-202f92c13fca">
+      <infoLinks>
+        <infoLink name="Cofre desollador" id="03c1dbde-28d4-44ce-ac76-86fa8ac919dd" hidden="false" type="infoGroup" targetId="e25782f4-53a1-403f-8237-2a2bd95986ec"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Cápsulas cristalinas" hidden="false" id="6c7a8381-ac24-4557-9761-69a2b0c52bb1">
+      <infoLinks>
+        <infoLink name="Cápsulas cristalinas" id="4f45472e-d98c-4beb-9f52-7c6d77e060e2" hidden="false" type="infoGroup" targetId="74903c48-27ac-4de2-93cf-50bade9dbaa2"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Dama Malys" hidden="false" id="ee30b9bd-577e-4e1f-8c2f-8a0e0ac29e5d">
+      <infoLinks>
+        <infoLink name="Dama Malys" id="869db494-80d9-4eb4-b8da-0bd9fb919b93" hidden="false" type="infoGroup" targetId="baf5cb2b-5d27-4738-9630-8fc8a5884ad3"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Depredador" hidden="false" id="635e9c30-380c-439d-8ef8-26496b51fa65">
+      <infoLinks>
+        <infoLink name="Depredador" id="1e12b4cb-7707-470b-bbdf-f6f2436ac68c" hidden="false" type="infoGroup" targetId="65e677a6-902f-4db3-a31c-1a789603b3b9"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Devastador" hidden="false" id="71d4213a-b783-4960-acda-40a90a22bf88">
+      <infoLinks>
+        <infoLink name="Devastador" id="c699f8b6-fc44-40bf-a53a-5e68a6596a24" hidden="false" type="infoGroup" targetId="7c9e7f65-c5c2-48af-80c1-1e48dcc8339d"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Draconte" hidden="false" id="7d88346e-ec6e-43d2-837b-a3c7b13b7b6c">
+      <infoLinks>
+        <infoLink name="Draconte" id="b55d7fd6-f3a9-4450-af44-9a696e33e201" hidden="false" type="infoGroup" targetId="b597cddc-c0d6-4b99-a491-966bb97f5d26"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Drazhar" hidden="false" id="9fcba76e-f96f-4529-a3af-965013234ab5">
+      <infoLinks>
+        <infoLink name="Drazhar" id="1501ca2a-ecbe-45ae-958c-19cf92fe9256" hidden="false" type="infoGroup" targetId="80f9c616-4ca3-448e-b8f5-5bea3fc864e3"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Duelista" hidden="false" id="4f806b78-f4ae-4d92-9d74-367d0c08d10e">
+      <infoLinks>
+        <infoLink name="Duelista" id="c102016e-8c75-4e33-97d1-52b08605a76b" hidden="false" type="infoGroup" targetId="1d368fad-44c7-44c1-97a2-bb2c8cf19f06"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Duque Sliscus" hidden="false" id="c266e34b-10c3-4141-856c-129bfbad103e">
+      <infoLinks>
+        <infoLink name="Duque Sliscus" id="743af07f-f78f-42ff-88a2-161e2bd21aa6" hidden="false" type="infoGroup" targetId="c59903f0-82b3-435e-b38e-756b037658ce"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Esposa de la sangre" hidden="false" id="22949b75-84fd-44fb-a684-68535cd56bae">
+      <infoLinks>
+        <infoLink name="Esposa de la sangre" id="42b66a9c-2cc0-4b4a-9b31-ad9500ce1374" hidden="false" type="infoGroup" targetId="7b2affdc-221b-47cb-9440-3dddcb498a4f"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Fragmento del espejo" hidden="false" id="e57d638d-ed0f-4ab0-9ba8-d14ca40dd44c">
+      <infoLinks>
+        <infoLink name="Fragmento del espejo" id="53cb6acc-3573-4376-9dfd-a79898d8043d" hidden="false" type="infoGroup" targetId="f76f2f8f-8645-4154-b47d-84a302a57737"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Gran Arlequín" hidden="false" id="fe125347-80b0-45e8-bf5a-9920acce0fc7">
+      <infoLinks>
+        <infoLink name="Gran Arlequín" id="8b93b35e-9ec6-4929-a8cf-a5843bc530d3" hidden="false" type="infoGroup" targetId="df5e5b85-da81-4642-803d-bdc022c1e63a"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Grotesco" hidden="false" id="4e3bcc37-87a8-4d60-8d4c-07e33257e048">
+      <infoLinks>
+        <infoLink name="Grotesco" id="131ba320-3416-4998-a658-6ff9be7ad766" hidden="false" type="infoGroup" targetId="034c718e-f8c8-4352-a169-51962cd1ead2"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Guadaña" hidden="false" id="31e2af4f-545d-4615-addb-be8974c5dc33">
+      <infoLinks>
+        <infoLink name="Guadaña" id="d2aa11c1-3ea9-48a6-ba24-c45b2e1de607" hidden="false" type="infoGroup" targetId="da8ecff5-dc75-4efd-ab23-cbbb620a2830"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Guerrero de la Cábala" hidden="false" id="97080896-65a4-4c9c-9d1b-dd7679d97231">
+      <infoLinks>
+        <infoLink name="Guerrero de la Cábala" id="bc0824fb-4c44-47bf-9951-66767a839fdd" hidden="false" type="infoGroup" targetId="8e1e0929-1fef-47d8-af9d-ff79b084ca6c"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Hekatriz" hidden="false" id="93d3af22-0eda-49b1-a019-e88e03a1111a">
+      <infoLinks>
+        <infoLink name="Hekatriz" id="aa6e2b9e-617a-486d-9c75-f5bdb3970db4" hidden="false" type="infoGroup" targetId="3d0246a2-b1a0-4bd4-8293-7d00a3f1cc12"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Hemónculo" hidden="false" id="f1249022-39c9-431d-9000-85973b38cc52">
+      <infoLinks>
+        <infoLink name="Hemónculo" id="040d403c-1158-43cd-b363-1a009cf4ee53" hidden="false" type="infoGroup" targetId="e1874443-d2f7-491e-b32d-a359cee35f6a"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Hemónculo primigenio" hidden="false" id="4c697091-643d-4b71-8a14-5303ff80ef1c">
+      <infoLinks>
+        <infoLink name="Hemónculo primigenio" id="b2761eff-9c5f-42e5-bf35-2c9d822f847e" hidden="false" type="infoGroup" targetId="38e74bd1-6814-4856-937c-1e93eda7950d"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Incursor" hidden="false" id="18604108-42bc-4827-8eea-e7d1d9eaa352">
+      <infoLinks>
+        <infoLink name="Incursor" id="35d69e98-e85e-4da6-b198-9a8c96ab45ae" hidden="false" type="infoGroup" targetId="c6dc8708-1c21-4b19-889d-6a5962cf2358"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Infernal" hidden="false" id="c620c2f6-97f2-4257-a823-1882e38da5d0">
+      <infoLinks>
+        <infoLink name="Infernal" id="38faf6c8-cb77-43a6-ab4f-31cd38df6655" hidden="false" type="infoGroup" targetId="535053c7-c318-4c2e-8332-f4ec586ffda9"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Kheradruakh" hidden="false" id="c7903b9d-06f7-40ba-b868-8c61163d5585">
+      <infoLinks>
+        <infoLink name="Kheradruakh" id="c6315f20-df46-4911-aab6-ca8ff81365c7" hidden="false" type="infoGroup" targetId="55986464-0b4b-402e-89a7-d65c8bc6292f"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Kymera" hidden="false" id="d7b4c634-feb8-4c08-965f-18535908b751">
+      <infoLinks>
+        <infoLink name="Kymera" id="b857add0-0565-4130-8b2a-519a50c43711" hidden="false" type="infoGroup" targetId="c09f56f1-7b2b-4b76-93a3-9534d5c55294"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lanza de vacío" hidden="false" id="64ac2064-4086-4d7c-9f4e-6238279611b0">
+      <infoLinks>
+        <infoLink name="Lanza de vacío" id="bf53a0a2-0593-46cd-b689-8062cb2f7f2e" hidden="false" type="infoGroup" targetId="99e2edeb-fb3a-403d-99e5-91780dde43a3"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lanza incandescente" hidden="false" id="c54ab9f2-15cf-4f07-80b8-6e35f0c0e228">
+      <infoLinks>
+        <infoLink name="Lanza incandescente" id="47da11dd-bc7b-4cb9-b249-a115a21f6485" hidden="false" type="infoGroup" targetId="e3fbbdc0-a278-4c60-a876-c0898b367100"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Lanza oscura" hidden="false" id="38bf7b4e-0ad4-4473-a174-617f60b67fe1">
+      <infoLinks>
+        <infoLink name="Lanza oscura" id="fb5c5156-d4e4-496c-9bf8-793fca677cc2" hidden="false" type="infoGroup" targetId="0e8932cd-7cd1-4b9d-b0b8-4a08ffca232a"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Legítimo de la Cábala" hidden="false" id="c45e5e9e-2dee-4e8f-9ed9-9292adcd3dd2">
+      <infoLinks>
+        <infoLink name="Legítimo de la Cábala" id="281b4491-0a61-4ce7-b77c-82223326c247" hidden="false" type="infoGroup" targetId="0ce3bb72-fbab-4c03-910a-3305486d2743"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Lelith Hesperax" hidden="false" id="cb31b085-0cb0-42b0-9749-807d45ee3242">
+      <infoLinks>
+        <infoLink name="Lelith Hesperax" id="490fb7dc-3793-42c1-b779-7b6ed31e548a" hidden="false" type="infoGroup" targetId="2036f4a9-25ed-4a60-bdf8-815344c91478"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Lharnaeana" hidden="false" id="ea60c3c1-8dec-4ff7-a167-dc608ffb121a">
+      <infoLinks>
+        <infoLink name="Lharnaeana" id="9a37b974-8dde-45ef-ae34-bbb28abe2888" hidden="false" type="infoGroup" targetId="e0f8a6cb-b0fc-4da5-b139-89fe2e32ddfe"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Mandrágora" hidden="false" id="25e15e74-7499-4ac5-b7f6-677449074372">
+      <infoLinks>
+        <infoLink name="Mandrágora" id="f2d80c1d-78ae-4d6b-942f-0c2478bffd22" hidden="false" type="infoGroup" targetId="77e565dd-d975-4d33-b98f-001b2105364c"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Medusa" hidden="false" id="ed145957-b505-493d-b1a0-85089df9b139">
+      <infoLinks>
+        <infoLink name="Medusa" id="bd9b2f67-7864-41f8-b3cd-3f86dbe777e2" hidden="false" type="infoGroup" targetId="61c0798a-7cad-44f4-8029-49333b968106"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mina de vacío" hidden="false" id="46d45ea6-f705-48a5-b86a-a3bf09efa7e5">
+      <infoLinks>
+        <infoLink name="Mina de vacío" id="2d67cd7f-c9f6-4ca4-9344-fd0064349e2d" hidden="false" type="infoGroup" targetId="5f59b655-98a1-4568-bdcf-185334667aec"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mirada paralizante" hidden="false" id="aaf32576-2677-495b-a63a-17d625acbb88">
+      <infoLinks>
+        <infoLink name="Mirada paralizante" id="b288bacd-5773-40df-a22d-040d44891818" hidden="false" type="infoGroup" targetId="5c722298-27bb-42e1-b219-fd392d067184"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Misil de doble núcleo" hidden="false" id="b7cc5189-8f78-48cb-9bff-31f57868f69f">
+      <infoLinks>
+        <infoLink name="Misil de doble núcleo" id="54ae3290-be7c-4ba1-8c0f-43bd968a8642" hidden="false" type="infoGroup" targetId="f1141b71-523e-4de9-96b1-8d9d66e09afd"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Misil de implosión" hidden="false" id="64f40df8-4a9e-4ee7-a61f-0f976ffdbe11">
+      <infoLinks>
+        <infoLink name="Misil de implosión" id="0265471d-c614-4031-bbd6-81bb5c0d3f49" hidden="false" type="infoGroup" targetId="1d6c975e-2c64-407b-8b24-f2c7ca6f9b42"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Misil de necrotoxinas" hidden="false" id="e1085b23-b010-4192-ab17-e49fe37ec0a9">
+      <infoLinks>
+        <infoLink name="Misil de necrotoxinas" id="1368d899-fc30-4ec6-8e1f-f2f1ef1f48c4" hidden="false" type="infoGroup" targetId="d82f2878-12f4-4c71-8cc7-7719ee2dc435"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Misil monoguadaña" hidden="false" id="2652d5dc-eb89-4a67-bc16-0d90dbc59b06">
+      <infoLinks>
+        <infoLink name="Misil monoguadaña" id="02d196b2-86ff-43ea-aeeb-030be42accb3" hidden="false" type="infoGroup" targetId="cdbd8efa-13dd-4120-a1ed-4e5dafb609ce"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Mártir" hidden="false" id="9dd8be2b-07a3-4ccc-8a4f-0bacb33ad33d">
+      <infoLinks>
+        <infoLink name="Mártir" id="a7c7ff72-dd51-40df-b23d-8fb769ba54a8" hidden="false" type="infoGroup" targetId="0c5a4406-bcfc-4abe-8f29-db91adb66abd"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Nocturno" hidden="false" id="e24bed51-ccbd-4a92-ada4-c444dc9beca7">
+      <infoLinks>
+        <infoLink name="Nocturno" id="0476e2d4-a2a3-478f-89fd-5a78ce159c01" hidden="false" type="infoGroup" targetId="8e9ea36a-2aab-4bdf-b996-f3f351fa48b5"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Orbe de angustias" hidden="false" id="f1b1b206-da68-46a7-8cc0-32ed2f0f0334">
+      <infoLinks>
+        <infoLink name="Orbe de angustias" id="cfa77e9c-50ca-4701-a417-8f4f0ad3784d" hidden="false" type="infoGroup" targetId="e9b93f5f-ff37-4b4d-a0ae-00005a5cc063"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Orbes de obsidiana" hidden="false" id="b83e1a26-99a8-48ed-b7c4-ab34e0640134">
+      <infoLinks>
+        <infoLink name="Orbes de obsidiana" id="7ee7eab3-18a1-4dca-9fdb-ae9ee075661e" hidden="false" type="infoGroup" targetId="d5baee93-22b8-41e2-a4b6-5632cf908ea7"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Piedra de sangre" hidden="false" id="b19b81a5-ce74-49d5-be82-ed9c5349b79f">
+      <infoLinks>
+        <infoLink name="Piedra de sangre" id="b1b1c511-2f2e-4fcb-943d-64eea48d1d7d" hidden="false" type="infoGroup" targetId="98d49c03-6d6d-4921-8d08-1a4169bd36e4"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Pistola aguijón" hidden="false" id="d813541e-a473-43d9-88bd-ab984229bccc">
+      <infoLinks>
+        <infoLink name="Pistola aguijón" id="adaec894-28c4-4bc8-9b59-82ddf6d0035c" hidden="false" type="infoGroup" targetId="398288b9-3ef6-48a3-8736-86af21f5b574"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Pistola bláster" hidden="false" id="c1073bba-8558-4ad5-a8c3-dfd859b05d74">
+      <infoLinks>
+        <infoLink name="Pistola bláster" id="51a819d3-6435-4985-9553-5777af09d37f" hidden="false" type="infoGroup" targetId="7ef2134a-e40d-4d49-a298-ebfd5a30720a"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Pistola cristalina" hidden="false" id="6d1c7cb8-33e0-4c69-8a0a-3ffd36d59c0c">
+      <infoLinks>
+        <infoLink name="Pistola cristalina" id="3de30f2b-171e-438d-a216-03a2bbdf6f9c" hidden="false" type="infoGroup" targetId="fe7fbe0e-3c53-4e7b-a91c-d0aed7c56328"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Pistola de fusión" hidden="false" id="245d93cc-310d-467c-b692-9282d7134938">
+      <infoLinks>
+        <infoLink name="Pistola de fusión" id="aa6ddf51-d0e2-4073-a5f9-63b6b5ccad2d" hidden="false" type="infoGroup" targetId="81cdadf2-4579-4bec-b74a-fdebc3a75878"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Pistola shuriken" hidden="false" id="503d3730-9ff5-42d2-ae5b-fa77b84d943c">
+      <infoLinks>
+        <infoLink name="Pistola shuriken" id="5de1c3f2-43aa-40aa-9422-6c2e0ab8703a" hidden="false" type="infoGroup" targetId="c932a401-a724-4d5d-bfe6-a08d33c48736"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Ponzoña" hidden="false" id="6b70946e-9fb1-4e7d-93cb-82bf075503b1">
+      <infoLinks>
+        <infoLink name="Ponzoña" id="66f77abd-df9d-4590-91aa-23c01c5c0c36" hidden="false" type="infoGroup" targetId="4ab781eb-8090-457a-8c33-c55b7433467c"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Portal oscuro" hidden="false" id="09406e43-b504-4d73-a32f-6806e4ae693c">
+      <infoLinks>
+        <infoLink name="Portal oscuro" id="3b49b9d2-e2f6-4c75-baa5-e8252febe4f3" hidden="false" type="infoGroup" targetId="d4d8f2b0-fcf8-431c-8d5c-8605b90082b8"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rayo castigador" hidden="false" id="074a2f22-74ef-4ef0-babd-cff4e0caaf5b">
+      <infoLinks>
+        <infoLink name="Rayo castigador" id="4f51ef16-0717-4132-abbf-74aafff68c02" hidden="false" type="infoGroup" targetId="eebfa189-11de-4556-94c4-56e33397c95d"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rifle cristalino" hidden="false" id="185e8f0c-736d-4ce3-bb25-65bd004d2d76">
+      <infoLinks>
+        <infoLink name="Rifle cristalino" id="d3735dd0-c41e-44ba-8f56-79c3d964e54d" hidden="false" type="infoGroup" targetId="9467bdf2-6b31-42f5-9efc-78c85c764668"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rifle licuador" hidden="false" id="6188867b-0520-4580-bd0e-cb56c3d0ffe7">
+      <infoLinks>
+        <infoLink name="Rifle licuador" id="6305008f-7026-42ba-af02-2e658425aa0c" hidden="false" type="infoGroup" targetId="38cabdf3-8bfc-4b23-aa90-48b427fb847d"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rifle maléfico" hidden="false" id="84b2d1b2-f230-4e90-b42c-c30ed894681a">
+      <infoLinks>
+        <infoLink name="Rifle maléfico" id="cab442ab-b2b5-42c5-8abb-8cdbfbae627f" hidden="false" type="infoGroup" targetId="178ad60b-2681-4b93-82a6-58d879feb830"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rociada espiritual" hidden="false" id="7906e87a-5684-46b1-8093-814ddc92f89f">
+      <infoLinks>
+        <infoLink name="Rociada espiritual" id="c2f934ae-ce44-4afb-b15a-6b95d4cf4adb" hidden="false" type="infoGroup" targetId="2d1c145c-6c0c-4dca-83d7-aaa745ad7905"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Solarita" hidden="false" id="e2df5c62-d2f8-4d0a-bc23-cec9f7d52265">
+      <infoLinks>
+        <infoLink name="Solarita" id="c2dc0055-e9bf-4af0-9784-18b93037c733" hidden="false" type="infoGroup" targetId="ee2fbd8c-d73b-4121-a87b-83a88a7ae5e6"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Sr. de las Bestias" hidden="false" id="d41b49da-f59d-4c9b-bda7-d6b5c9f53a08">
+      <infoLinks>
+        <infoLink name="Sr. de las Bestias" id="87d93e6f-86c0-40c3-aceb-19e09330a628" hidden="false" type="infoGroup" targetId="0f548610-9feb-4dec-863f-ba9e217389b2"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Ssliz" hidden="false" id="c72ca24d-cd92-41b0-83de-46921b98359f">
+      <infoLinks>
+        <infoLink name="Ssliz" id="9835b382-bbe0-438e-a3c6-141250388bb9" hidden="false" type="infoGroup" targetId="f2002c58-1b5a-4611-937c-158b9eae25f8"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Syrena" hidden="false" id="7e67ed97-c6af-42b2-a243-6185647defe9">
+      <infoLinks>
+        <infoLink name="Syrena" id="d75da6f3-7c7c-4ba4-a7eb-b085c113861e" hidden="false" type="infoGroup" targetId="0c62605d-7f5e-43a4-9e42-5af42095a621"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Súcubo" hidden="false" id="e52867bc-d765-433a-b628-a61439294480">
+      <infoLinks>
+        <infoLink name="Súcubo" id="ea00c8ff-09c5-4e24-a32e-6fcf9eb96ac3" hidden="false" type="infoGroup" targetId="c24ce75a-5758-4bb9-9a02-65d5a2e41aed"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Ur-Crófago" hidden="false" id="1cdcebf0-3c1b-4d79-ad28-2533ceab6c0b">
+      <infoLinks>
+        <infoLink name="Ur-Crófago" id="1763abdf-c6d2-4b1e-b7e9-c2184b14a08e" hidden="false" type="infoGroup" targetId="05ce772f-899c-497a-b4af-dc66389ed031"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Urien Rakarth" hidden="false" id="310f0232-2229-4d3a-991e-e0e1335f2608">
+      <infoLinks>
+        <infoLink name="Urien Rakarth" id="0583d429-4f41-4173-aa6e-a2005f497357" hidden="false" type="infoGroup" targetId="534339f7-a9db-43fc-bfb7-dc0afcc63673"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Vidente de sombras" hidden="false" id="e6df381e-0377-4429-bbcf-a45209eaff42">
+      <infoLinks>
+        <infoLink name="Vidente de sombras" id="98508e6b-10ae-4d63-9755-749bfc8aa289" hidden="false" type="infoGroup" targetId="66f2cc60-e5d3-4471-9704-deb376197e08"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Vórtice espiritual" hidden="false" id="0c654724-2b1b-4e81-b940-36f2660f8f8e">
+      <infoLinks>
+        <infoLink name="Vórtice espiritual" id="a5e41140-efad-4003-b7e6-448c863e95d7" hidden="false" type="infoGroup" targetId="5d66a435-e1df-4fe7-a31a-44a1bc39bb13"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Íncubo" hidden="false" id="86ee1ad8-688f-49bc-b7a9-af0e3f7bf828">
+      <infoLinks>
+        <infoLink name="Íncubo" id="567e8870-8426-4fb6-8270-23f8b8abdf46" hidden="false" type="infoGroup" targetId="9a7c2bd3-b967-47ff-b625-e91d8d4035af"/>
+      </infoLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+</catalogue>
