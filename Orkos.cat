@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="fe1e-9d05-9036-5244" name="Orkos" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" revision="1" authorUrl="csddmv@gmail.com" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="fe1e-9d05-9036-5244" name="Orkos" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" revision="2" authorUrl="csddmv@gmail.com" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" battleScribeVersion="2.03" type="catalogue">
   <sharedRules>
     <rule name="¡Waaagh!" id="42e1-f7fd-5e72-83fa" hidden="false" publicationId="11a0-7b47-fa28-1d82" page="31">
       <description>Una vez por partida, el jugador orko puede declarar un ¡Waaagh! durante su fase de Disparo. El ¡Waaagh! no puede declararse en el primer turno ya que debe cobrar fuerza. En el turno en que los orkos declaren un ¡Waaagh! todas las unidades de infanteria orkas estarán sujetas a la regla especial de veloces (excepto las unidades de gretchins que son demasiado debiluchas para organizar un ¡Waaagh! con todas las de la ley). Si una unidad obtiene un resultado de 1 mientras efectúa este movimiento de ¡Waaagh!, los orkos que la componen empiezan a luchar entre si antes de alcanzar al enemigo y una miniatura de la unidad sufrirá una herida. Recuerda que la unidad puede mover los 3 cm y asaltar normalmente.</description>
     </rule>
     <rule name="¡La Peña triunfará!" id="5e0f-344d-a5bb-fbdc" hidden="false" publicationId="11a0-7b47-fa28-1d82" page="31">
-      <description> La psicología y la moral orkas dependen fundamentalmente del número de guerreroz orkos que hay en  un momento determinado. Un orko con un grupo de guerreros que le respalde es una visión que ofrece mucho más confianza
- que uno con solo la mitad de guerreros a sus espaldas. Por este motivo, las peñas de orkos pueden sustituir el número de orkos que compone su peña por su atributo de Liderazgo normal. Si una peña de orkos está formada por 11 o más
- miniaturas de orkos, está sujeta a la regla especial de coraje.</description>
+      <description>La psicología y la moral orkas dependen fundamentalmente del número de guerreroz orkos que hay en  un momento determinado. Un orko con un grupo de guerreros que le respalde es una visión que ofrece mucho más confianza que uno con solo la mitad de guerreros a sus espaldas. Por este motivo, las peñas de orkos pueden sustituir el número de orkos que compone su peña por su atributo de Liderazgo normal. Si una peña de orkos está formada por 11 o más  miniaturas de orkos, está sujeta a la regla especial de coraje.</description>
     </rule>
   </sharedRules>
   <sharedInfoGroups>
@@ -64,21 +62,70 @@
       <infoLinks>
         <infoLink name="Kañón buum" type="profile" targetId="baa5a78c-06e6-4661-b630-03afddad1d24" id="cb323c82-d988-470e-91b3-ea98c879882d" hidden="false"/>
         <infoLink name="Artillería" type="rule" targetId="93b8-287b-914c-9e43" id="d54f7235-064d-4095-bc56-9a8aff6b3ebb" hidden="false"/>
-        <infoLink name="Área grande" type="rule" targetId="952e-d8aa-7560-44b9" id="36786c00-c929-4055-a744-da9e71a3ff94" hidden="false"/>
+        <infoLink name="Área Grande" type="rule" targetId="952e-d8aa-7560-44b9" id="36786c00-c929-4055-a744-da9e71a3ff94" hidden="false"/>
       </infoLinks>
     </infoGroup>
     <infoGroup name="Kañón de atake shokk" id="cf9034a7-6316-4f9d-8291-aab00152b3d1" hidden="false">
       <infoLinks>
         <infoLink name="Kañón de atake shokk" type="profile" targetId="ebb42c6a-3017-482e-bc02-ca27787830bf" id="4406fff3-cc93-47de-a229-e27b2e583057" hidden="false"/>
         <infoLink name="Artillería" type="rule" targetId="93b8-287b-914c-9e43" id="2fcc40fc-dedc-4b48-acaf-ff4dbee7cea7" hidden="false"/>
-        <infoLink name="Área grande" type="rule" targetId="952e-d8aa-7560-44b9" id="75bda6cf-d0dc-4929-b853-fd00654fa886" hidden="false"/>
+        <infoLink name="Área Grande" type="rule" targetId="952e-d8aa-7560-44b9" id="75bda6cf-d0dc-4929-b853-fd00654fa886" hidden="false"/>
+        <infoLink name="Pesada" type="rule" targetId="2e56-6b02-4343-0e40" id="f18f-dd55-4bcb-4416" hidden="false"/>
       </infoLinks>
+      <rules>
+        <rule name="Kañón de atake shokk" id="16c9-64b5-2308-fec0" hidden="false">
+          <description>Tira 2D6 para determinar su Fuerza después de situar la plantilla pero antes de tirar el dado de dispersión. Si obtienes el mismo resultado en los dos dados (o uno de 11+) al tirar, consulta la tabla inferior.
+
+
+
+
+Resultado
+1, 1 Destruido:
+El kañón de atake shokk explota, dejando un orbe de irrealidad crepitante en su lugar. El kañón no llega a disparar. Retira al chapuzaz como baja. Las miniaturas a una distancia de 3D6 cm también se retiran del tablero.
+
+
+
+
+2, 2 ¡Upa !:
+El operador mekániko trata desesperadamente de manejar el arma que gira descontrolada. El oponente elige el objetivo del kañón de atake Shokk en este turno, que puede ser una unidad del mismo bando que el chapuzaz.
+
+
+
+
+3, 3 Gah:
+El agujero de salida se materializa en el lugar equivocado. Resuelve este disparo sobre la unidad más próxima al objetivo previsto, sea amiga o enemiga.
+
+
+
+
+4, 4 Sploosh:
+Los snotlings salen disparados del túnel en un torbellino explosivo de huesos y sangre. Resuelve el ataque sobre el objetivo, pero usa la plantilla pequeña. Cualquier impacto se resuelve con F y FP de 6.
+
+
+
+
+5, 5 Zoink:
+En un accidente insólito, el kañón de atake Shokk dispara al chapuzaz y deja a los snotlings en su sitio. El kañón no dispara ningún proyectil. Sitúa al chapuzaz inmediatamente en contacto con el objetivo, y considera que ha sido él quien ha iniciado el asalto en ese turno.
+
+
+
+
+5, 6 Bzzap:
+El ezkudo del kañón de atake Shokk se desploma, abriendo un pequeño portal a la disformidad. Solo la miniatura que esté bajo el agujero de la plantilla recibirá el impacto, pero el disparo tiene Fuerza 10. El kañón no podrá disparar el turno siguiente.
+
+
+
+
+6, 6 Raargh:
+El túnel abre un agujero en la disformidad y una nube de icor demoníaco se desborda dentro del reino material. Cualquier miniatura impactada por el kañón este turno, se retira del juego. Si se trata de un vehículo, recibe un impacto interno automático.</description>
+        </rule>
+      </rules>
     </infoGroup>
     <infoGroup name="Kañón matamáz" id="f7c0ffc6-c689-4aa7-9993-7654845e7784" hidden="false">
       <infoLinks>
         <infoLink name="Kañón matamáz" type="profile" targetId="e8d36b51-c182-4df6-bdf8-2679e88c9be9" id="4746d757-5f2f-4f66-b218-d07f3c567461" hidden="false"/>
         <infoLink name="Artillería" type="rule" targetId="93b8-287b-914c-9e43" id="75802adc-7e91-440d-a3a7-39b63524202a" hidden="false"/>
-        <infoLink name="Área grande" type="rule" targetId="952e-d8aa-7560-44b9" id="41155a9b-4f08-48b0-9032-ba74495994b7" hidden="false"/>
+        <infoLink name="Área Grande" type="rule" targetId="952e-d8aa-7560-44b9" id="41155a9b-4f08-48b0-9032-ba74495994b7" hidden="false"/>
       </infoLinks>
     </infoGroup>
     <infoGroup name="Kañón zzap" id="e5ca9bc2-78fc-4fbe-95f3-40a8bf634ac7" hidden="false">
@@ -140,6 +187,9 @@
     <infoGroup name="Mekániko" id="ede7e5aa-6a7e-45ce-9eaf-911c8c2e2757" hidden="false">
       <infoLinks>
         <infoLink name="Mekániko" type="profile" targetId="3d0e-259b-840b-1f15" id="f6747dde-c6b3-4123-aac9-fe2fc17a1e6c" hidden="false"/>
+        <infoLink name="¡La Peña triunfará!" id="8d79-3bf0-4409-c333" hidden="false" type="rule" targetId="5e0f-344d-a5bb-fbdc"/>
+        <infoLink name="¡Waaagh!" id="8702-e83e-9b99-286a" hidden="false" type="rule" targetId="42e1-f7fd-5e72-83fa"/>
+        <infoLink name="Azalto rabiozo" id="a3c5-1922-4391-7ece" hidden="false" type="infoGroup" targetId="5c05-b913-b540-8e5b"/>
       </infoLinks>
     </infoGroup>
     <infoGroup name="Achicharrador" id="a992068b-2b10-4df0-9c26-05c7c31004d1" hidden="false">
@@ -155,12 +205,46 @@
     <infoGroup name="Grotsnik" id="1e5db304-8caf-4580-8650-7553dbdf8fd2" hidden="false">
       <infoLinks>
         <infoLink name="Grotsnik" type="profile" targetId="f005-64f0-f533-63be" id="78b1fe1a-2e94-4e2c-932f-84715ab1905b" hidden="false"/>
+        <infoLink name="Coraje" id="bc8d-f4d3-a3ef-a0ee" hidden="false" type="rule" targetId="b23b-fb5c-4c8c-5ae4"/>
+        <infoLink name="¡Waaagh!" id="cb18-8d34-ca97-acae" hidden="false" type="rule" targetId="42e1-f7fd-5e72-83fa"/>
+        <infoLink name="Azalto rabiozo" id="a799-d4d6-61ae-8f86" hidden="false" type="infoGroup" targetId="5c05-b913-b540-8e5b"/>
+        <infoLink name="Herramientaz de Matazanos" id="9dd4-3255-ca4c-5c97" hidden="false" type="infoGroup" targetId="547b-bd48-5259-56fe"/>
       </infoLinks>
+      <profiles>
+        <profile name="Zumbao" typeId="c970-b832-a956-1ac8" typeName="Habilidad" hidden="false" id="8371-982f-193c-761a">
+          <characteristics>
+            <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Grotsnik está totalmente chiflado y los orkos creen que está más loco que un puñado de orkos chaladoz enfebrecidos por una noche de luna llena.
+Tanto Grotsnik, como la unidad a la que se incorpore están sujetos a coraje. Además, el matazanos está tan sediento de sangre que siempre se moverá lo más rápido que pueda hacia el enemigo más próximo, asaltándolo si es posible. Esta ansia de sangre también la sufre la unidad en la que esté Grotsnik. Esto significa que, una vez que Grotsnik se ha unido a una unidad, no puede abandonarla a menos que él sea el único componente que queda de la misma.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Gran Matazanos" typeId="c970-b832-a956-1ac8" typeName="Habilidad" hidden="false" id="cbb5-7cd8-a8b2-32ae">
+          <characteristics>
+            <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Cualquier unidad del ejército que incluya a Grotsnik puede modificar a sus componentes para que tengan Kuerpo zibernétiko por +5pts por miniatura</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </infoGroup>
     <infoGroup name="Ghazghkull" id="c33a09e2-724d-4eee-af2d-ef375784bd82" hidden="false">
       <infoLinks>
-        <infoLink name="Ghazghkull" type="profile" targetId="71aa-744e-9154-74f4" id="79840dfd-8ca3-4b98-a0ad-baff5b33a3c7" hidden="false"/>
+        <infoLink name="Ghazghkull" type="profile" targetId="71aa-744e-9154-74f4" id="79840dfd-8ca3-4b98-a0ad-baff5b33a3c7" hidden="false" publicationId="11a0-7b47-fa28-1d82" page="58"/>
+        <infoLink name="¡La Peña triunfará!" id="3d38-f7a5-b798-6e59" hidden="false" type="rule" targetId="5e0f-344d-a5bb-fbdc"/>
+        <infoLink name="Azalto rabiozo" id="4d52-a9f5-1619-4f4f" hidden="false" type="infoGroup" targetId="5c05-b913-b540-8e5b"/>
+        <infoLink name="Por algo ez el jefe" id="c42a-8bc1-d5dd-6ff7" hidden="false" type="profile" targetId="1419-4b99-e869-43f5"/>
       </infoLinks>
+      <profiles>
+        <profile name="Profeta del ¡Waaagh!" typeId="c970-b832-a956-1ac8" typeName="Habilidad" hidden="false" id="f79d-664b-59fa-9706" publicationId="11a0-7b47-fa28-1d82" page="58">
+          <characteristics>
+            <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">¡El ¡Waaagh! de Ghazghkull puede invocarse en cualquier momento de la batalla, pero solo una vez por partida y nunca en el primer turno. Sustituye el ¡Waaagh! habitual del ejército por este que es mucho mejor.
+El ¡Waaagh! de Ghazghkull dura el resto del turno del jugador y todo el turno siguiente del otro jugador. Durante este periodo, la tirada de salvación de Ghazghkull es invulnerable. Además, durante el tiempo que dure el (Waaagh!, todas las unidades de infanteria orka contarán como si hubiesen obtenido un resultado de 6 para el movimiento del ¡Waaagh! que deseen efectuar. Las unidades amigas que no huyan estarán sujetas a coraje mientras dure el ¡Waaagh!
+Recuerda que solo puede invocarse un ¡Waaagh! por turno, así que Ghazghkull no puede combinar su ¡Waaagh! con el generado por un Eztrambótiko.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Kráneo de adamantio" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="8c49-4ddb-ed8e-857d">
+          <characteristics>
+            <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Cuando Ghazghkull carga, cuenta con +2A en lugar del habitual +1. Además, Ghazghkull es inmune a la muerte instantánea.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </infoGroup>
     <infoGroup name="Gretchin" id="1e0590a7-eb4c-47e7-9cdf-5c5c9ac4a126" hidden="false">
       <infoLinks>
@@ -195,7 +279,26 @@
     <infoGroup name="Viejo Zogwort" id="9c97bbd3-f54a-489f-9d8a-9590e1c2eae5" hidden="false">
       <infoLinks>
         <infoLink name="Viejo Zogwort" type="profile" targetId="a715-22c3-c837-80dd" id="fa8fea60-7f7e-4006-9d18-fe7f4b5d0424" hidden="false"/>
+        <infoLink name="¡La Peña triunfará!" id="c754-03f1-43c3-9118" hidden="false" type="rule" targetId="5e0f-344d-a5bb-fbdc"/>
+        <infoLink name="¡Waaagh!" id="f1ba-461a-325b-64d1" hidden="false" type="rule" targetId="42e1-f7fd-5e72-83fa"/>
+        <infoLink name="Azalto rabiozo" id="3616-604a-0f70-e3dc" hidden="false" type="infoGroup" targetId="5c05-b913-b540-8e5b"/>
+        <infoLink name="Kabezadizforme" id="5033-ac0e-d90b-31a6" hidden="false" type="profile" targetId="1081-4478-c332-18ce"/>
+        <infoLink name="Poderes eztrambótikoz" id="e1f3-a65c-992d-9b47" hidden="false" type="profile" targetId="4ff3-1b4d-cb46-3b26"/>
       </infoLinks>
+      <profiles>
+        <profile name="Nido de víboraz" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="1c24-fef8-bfea-f83a">
+          <characteristics>
+            <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">El Viejo Zogwort tiene 1D6 ataques adicionales y una Iniciativa de 4. Todos los ataques de Zogwort se consideran ataques envenenados y siempre hieren con un resultado de 2+.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Maldizión de Zogwort" typeId="c970-b832-a956-1ac8" typeName="Habilidad" hidden="false" id="a75b-3de6-1772-b3ca">
+          <characteristics>
+            <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">El Viejo Zogwort tiene la habilidad de transformar a un enemigo poderoso en un garrapato.
+Zogwort puede usar su maldizión como un poder psíquico en lugar de tirar en la tabla de poderes psíquicos del eztrambótiko. Elige un personaje independiente que esté dentro de la línea de visión de Zogwort. Si la miniatura está a una distancia de hasta 45 cm, ambos jugadores tiran un dado.
+Si el jugador orko obtiene un resultado mayor, la miniatura enemiga se sustituye por un garrapato enfadado, aunque estará bajo el control del enemigo. Eso sí, el jugador orko sustituye la miniatura por el garrapato que tendrá el perfil de atributos aquí indicado y no contará con equipo ni estará sujeto a reglas especiales, aunque es un personaje independiente que cuenta como infantería.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
     </infoGroup>
     <infoGroup name="Matazanoz" id="70d73bcd-f1eb-4b95-91bb-ba1e7eede59d" hidden="false">
       <infoLinks>
@@ -225,16 +328,55 @@
     <infoGroup name="Kaudillo" id="d41b0a4d-4962-46f5-9a50-4db30f93d720" hidden="false">
       <infoLinks>
         <infoLink name="Kaudillo" type="profile" targetId="25d7-d5f7-49ba-47f0" id="b4c1e15b-a3e2-4c74-b5c3-6f5b6e4b064d" hidden="false"/>
+        <infoLink name="Por algo ez el jefe" id="e1a9-f7f1-cc6b-78d4" hidden="false" type="profile" targetId="1419-4b99-e869-43f5"/>
+        <infoLink name="¡La Peña triunfará!" id="b17f-c32a-2042-afeb" hidden="false" type="rule" targetId="5e0f-344d-a5bb-fbdc"/>
+        <infoLink name="¡Waaagh!" id="7526-389a-57ea-b1fa" hidden="false" type="rule" targetId="42e1-f7fd-5e72-83fa"/>
+        <infoLink name="Azalto rabiozo" id="ef8e-ebf2-6b5d-4a9c" hidden="false" type="infoGroup" targetId="5c05-b913-b540-8e5b"/>
       </infoLinks>
     </infoGroup>
     <infoGroup name="Wazdakka" id="f07bf29e-50bb-4d54-b881-275d34df67c3" hidden="false">
       <infoLinks>
         <infoLink name="Wazdakka" type="profile" targetId="8a97-16d1-cfb7-1d02" id="f803b287-5356-453e-88cf-e8083af91a4e" hidden="false"/>
+        <infoLink name="Azalto rabiozo" id="bb94-8096-3870-a4c0" hidden="false" type="infoGroup" targetId="5c05-b913-b540-8e5b"/>
+        <infoLink name="¡La Peña triunfará!" type="rule" targetId="5e0f-344d-a5bb-fbdc" id="14ef-5049-a1cb-26f4" hidden="false"/>
       </infoLinks>
+      <infoGroups>
+        <infoGroup name="Kañón ametrallador" id="309f-94c8-0cbe-9948" hidden="false">
+          <profiles>
+            <profile name="Kañón ametrallador" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="b41c-3de1-d30d-2611" publicationId="11a0-7b47-fa28-1d82">
+              <characteristics>
+                <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60cm</characteristic>
+                <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">8</characteristic>
+                <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
+                <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 4</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Asalto" id="8e3c-160d-ac5a-7082" hidden="false" type="rule" targetId="8714-46ad-62c0-ce35"/>
+          </infoLinks>
+        </infoGroup>
+        <infoGroup name="La moto del Aporkalipsis" id="520d-f57e-ea57-1579" hidden="false" publicationId="11a0-7b47-fa28-1d82">
+          <profiles>
+            <profile name="La moto del Aporkalipsis" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="2670-4658-e7ce-a9ad">
+              <characteristics>
+                <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Wazdakka puede disparar en el turno que use sus turbopropulsores</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Moto" id="32d7-9d57-eedb-36a8" hidden="false" type="infoGroup" targetId="fcf8-74d3-a9d4-b63f"/>
+          </infoLinks>
+        </infoGroup>
+      </infoGroups>
     </infoGroup>
     <infoGroup name="Eztrambótiko" id="8a7f1bbd-0e60-4f3f-99b0-22c132adb411" hidden="false">
       <infoLinks>
         <infoLink name="Eztrambótiko" type="profile" targetId="4630-f31d-893a-1bfa" id="d6836148-7c73-4263-961d-7c1bb6cc28dc" hidden="false"/>
+        <infoLink name="¡La Peña triunfará!" id="f262-412d-97c7-471f" hidden="false" type="rule" targetId="5e0f-344d-a5bb-fbdc"/>
+        <infoLink name="¡Waaagh!" id="0bbb-fa64-96df-ac63" hidden="false" type="rule" targetId="42e1-f7fd-5e72-83fa"/>
+        <infoLink name="Azalto rabiozo" id="df04-7719-5ac0-0f90" hidden="false" type="infoGroup" targetId="5c05-b913-b540-8e5b"/>
+        <infoLink name="Poderes eztrambótikoz" id="8d7a-15c9-da60-dcfe" hidden="false" type="profile" targetId="4ff3-1b4d-cb46-3b26"/>
       </infoLinks>
     </infoGroup>
     <infoGroup name="Jefe Zagstruk" id="266d4725-9a3b-4f68-a152-cc3ee31d6d34" hidden="false">
@@ -297,11 +439,85 @@
         <infoLink name="Lata azezina" type="profile" targetId="7cf9d14b-7ca9-47ae-a097-47ec142ef7b6" id="98d2fc5f-7c5f-40c5-8539-d956bd6b2bcc" hidden="false"/>
       </infoLinks>
     </infoGroup>
+    <infoGroup name="Azalto rabiozo" id="5c05-b913-b540-8e5b" hidden="false">
+      <infoLinks>
+        <infoLink name="Asalto Rabioso" id="3de5-a6af-41d4-e3fc" hidden="false" type="rule" targetId="33b4-1a73-92db-e562">
+          <modifiers>
+            <modifier type="set" value="Azalto Rabiozo" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Granadaz de mano" id="930e-4194-318b-1504" hidden="false">
+      <infoLinks>
+        <infoLink name="Granadaz de mano" id="ffe8-09c5-2b79-0d2a" hidden="false" type="profile" targetId="a47e-47d0-45d3-b977"/>
+        <infoLink name="Granadas de asalto" id="4d1a-0dba-3524-de02" hidden="false" type="rule" targetId="b1c6-9a9a-fc08-321d"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Mega-armadura" id="222a-8d93-794a-3989" hidden="false">
+      <infoLinks>
+        <infoLink name="Mega-armadura" type="profile" targetId="b236-fea8-e6d5-a347" id="329c-7cd3-8239-d533" hidden="false"/>
+        <infoLink name="Avance Sistemático" type="rule" targetId="bb8e-642b-6fbc-bb61" id="608d-ab47-eb36-be62" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Moto" id="fcf8-74d3-a9d4-b63f" hidden="false">
+      <infoLinks>
+        <infoLink name="Moto" id="86af-b580-f25c-9c9c" hidden="false" type="profile" targetId="d03f-f747-6d70-bf83"/>
+        <infoLink name="Humoz de ezkape" id="9c3d-04a0-4864-601a" hidden="false" type="profile" targetId="f844-2b9d-2c89-75e5"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Poderes eztrambótikoz" id="de11-1cd3-b758-481c" hidden="false">
+      <infoLinks>
+        <infoLink name="1 - Explotakabezas" id="5481-b902-d3e4-4172" hidden="false" type="profile" targetId="306d-658f-35c4-28d7"/>
+        <infoLink name="2 - Rayo verde" id="a813-5e61-6d9a-bdfa" hidden="false" type="profile" targetId="d67a-8582-61a6-ead4"/>
+        <infoLink name="3 - Zzap" id="be04-cd7e-efaa-7e91" hidden="false" type="profile" targetId="801d-d958-ea8d-7fa1"/>
+        <infoLink name="4 - ¡Atakad!" id="d441-e4e5-2159-a91c" hidden="false" type="profile" targetId="8056-c4fe-6c87-519d"/>
+        <infoLink name="5 - ¡Allá vamoz!" id="d1f3-f0ea-299b-dc2d" hidden="false" type="profile" targetId="30d7-2511-ef6f-65e6"/>
+        <infoLink name="6 - ¡Waaagh!" id="d823-2b52-cc96-d059" hidden="false" type="profile" targetId="de2f-cfb9-ee3f-842d"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Rebanadora" id="6c38-1cb4-7148-aca6" hidden="false">
+      <infoLinks>
+        <infoLink name="Rebanadora" id="d13c-baf4-311a-57ef" hidden="false" type="profile" targetId="6873-5f89-10d6-710d"/>
+        <infoLink name="Arma de Combate Cuerpo a Cuerpo" id="8643-466f-4b7d-10b0" hidden="false" type="rule" targetId="1e15-345f-8925-f91b"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Gran rebanadora" id="837b-0472-880f-dec1" hidden="false">
+      <infoLinks>
+        <infoLink name="Gran rebanadora" id="6df0-69b1-6a93-e48d" hidden="false" type="profile" targetId="1f88-3e4f-e5d3-e025"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Akribillador acoplado" id="097b-b9e0-c778-360a" hidden="false">
+      <infoLinks>
+        <infoLink name="Akribillador" type="profile" targetId="e24de139-5a11-4ed2-8826-077c3f09abd2" id="81e8-b7b0-5e53-c858" hidden="false">
+          <modifiers>
+            <modifier type="append" value="acoplado" field="name"/>
+            <modifier type="append" value="Acoplada" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", "/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Asalto" type="rule" targetId="8714-46ad-62c0-ce35" id="775e-17c7-f808-15fe" hidden="false"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Garra de combate" id="593f-d9b8-d14b-d935" hidden="false">
+      <infoLinks>
+        <infoLink name="Puño de Combate" id="53d8-89f7-9c70-8359" hidden="false" type="infoGroup" targetId="25b3-7b9d-199b-6d35">
+          <modifiers>
+            <modifier type="set" value="Garra de combate" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Herramientaz de Matazanos" id="547b-bd48-5259-56fe" hidden="false">
+      <infoLinks>
+        <infoLink name="Herramientaz de matazanoz" id="4dc0-ce68-3975-9703" hidden="false" type="profile" targetId="05bf-9b32-26c0-3b14"/>
+        <infoLink name="No Hay Dolor" id="54a6-ffed-88b4-9a05" hidden="false" type="rule" targetId="fe28-c924-099d-aa4e"/>
+      </infoLinks>
+    </infoGroup>
   </sharedInfoGroups>
   <sharedProfiles>
     <profile name="Badrukk" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="a782-2642-f2a3-ff93" publicationId="11a0-7b47-fa28-1d82" page="104">
       <characteristics>
-        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Personaje infantería</characteristic>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Perzonaje infantería</characteristic>
         <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">5</characteristic>
         <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">2</characteristic>
         <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
@@ -357,7 +573,7 @@
     </profile>
     <profile name="Grotsnik" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="f005-64f0-f533-63be" publicationId="11a0-7b47-fa28-1d82" page="104">
       <characteristics>
-        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Perzonaje Infantería</characteristic>
         <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">5</characteristic>
         <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">2</characteristic>
         <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
@@ -371,7 +587,7 @@
     </profile>
     <profile name="Ghazghkull" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="71aa-744e-9154-74f4" publicationId="11a0-7b47-fa28-1d82" page="104">
       <characteristics>
-        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Personaje infantería</characteristic>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Perzonaje infantería</characteristic>
         <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">6</characteristic>
         <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">2</characteristic>
         <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">5</characteristic>
@@ -469,7 +685,7 @@
     </profile>
     <profile name="Viejo Zogwort" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="a715-22c3-c837-80dd" publicationId="11a0-7b47-fa28-1d82" page="104">
       <characteristics>
-        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Personaje infantería</characteristic>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Perzonaje infantería</characteristic>
         <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
         <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">0</characteristic>
         <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
@@ -511,7 +727,7 @@
     </profile>
     <profile name="Jefe Snikrot" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="c270-e4f8-e5c7-3f59" publicationId="11a0-7b47-fa28-1d82" page="104">
       <characteristics>
-        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Personaje infantería</characteristic>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Perzonaje infantería</characteristic>
         <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">5</characteristic>
         <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">2</characteristic>
         <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">5</characteristic>
@@ -553,7 +769,7 @@
     </profile>
     <profile name="Kaudillo" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="25d7-d5f7-49ba-47f0" publicationId="11a0-7b47-fa28-1d82" page="104">
       <characteristics>
-        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Perzonaje Infantería</characteristic>
         <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">5</characteristic>
         <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">2</characteristic>
         <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">5</characteristic>
@@ -567,7 +783,7 @@
     </profile>
     <profile name="Wazdakka" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="8a97-16d1-cfb7-1d02" publicationId="11a0-7b47-fa28-1d82" page="104">
       <characteristics>
-        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Personaje motocicleta</characteristic>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Perzonaje motocicleta</characteristic>
         <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">5</characteristic>
         <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">2</characteristic>
         <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
@@ -581,7 +797,7 @@
     </profile>
     <profile name="Eztrambótiko" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="4630-f31d-893a-1bfa" publicationId="11a0-7b47-fa28-1d82" page="104">
       <characteristics>
-        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Perzonaje Infantería</characteristic>
         <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
         <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">2</characteristic>
         <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
@@ -595,7 +811,7 @@
     </profile>
     <profile name="Jefe Zagstruk" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="6881-ba5c-b8ac-af26" publicationId="11a0-7b47-fa28-1d82" page="104">
       <characteristics>
-        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Personaje retropropulsado</characteristic>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Perzonaje retropropulzado</characteristic>
         <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">5</characteristic>
         <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">2</characteristic>
         <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
@@ -886,9 +1102,179 @@
         <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Vehículo (Bípode)</characteristic>
       </characteristics>
     </profile>
+    <profile name="Eztandarte del jefe" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="50d6-9040-91f8-701b" publicationId="11a0-7b47-fa28-1d82">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Los Noblez orkos suelen tener un eztandarte donde colgar sus trofeos, una mandíbula de metal o algún otro simbolo de su estatus para que el resto de orkos no se confunda.
+Un noble con un Eztandarte del jete a mano ayuda a que una unidad orka no se disperse. Cada vez que una unidad con un Eztandarte del jete no supere un chequeo de Moral, debes elegir entre inflingir una herida a esa unidad (no a la miniatura que porta el Eztandarte del jefe) para poder repetir el chequeo de Moral.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Kuerpo zibernétiko" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="1e19-7727-81d9-8ee1" publicationId="11a0-7b47-fa28-1d82">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Una miniatura con un Kuerpo zibenétiko dispone de una tirada de salvacion invulnerable de 5+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Mega-armadura" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="b236-fea8-e6d5-a347">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">La mega-armadura proporciona al Meganoble una tirada de salvación por armadura de 2+ e incluye un akribillador acoplado y una garra de combate. Una miniatura equipada con mega-armadura está sujeta a la regla especial avance sistemático.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Granadaz de mano" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="a47e-47d0-45d3-b977" publicationId="11a0-7b47-fa28-1d82">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">La granada de mano se considera una granada de fragmentación a todos los efectos.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Kanijo munizionero" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="d65f-b790-71d4-eb41" publicationId="11a0-7b47-fa28-1d82">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un kanijo munizionero es un gretchin que acarrea la munición de su maestro.
+Una miniatura con un kanijo munizionero puede repetir una tirada para impactar en un ataque de disparo una vez por partida. Las miniaturas de kanijo munizionero son puramente decorativas y siempre se ignoran a efectos del juego; solo tienes que retirarlas si se convierten en un problema a la hora de mover otras miniaturas.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Jokepincha" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="ed2e-78dd-8c3a-b95e" publicationId="11a0-7b47-fa28-1d82" page="38">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Los matazanoz llevan jeringuillas enormes llenas de un pegote tóxico virulento. Un Jokepincha es un arma envenenada que siempre causa heridas con 4+.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Herramientaz de matazanoz" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="05bf-9b32-26c0-3b14" publicationId="11a0-7b47-fa28-1d82" page="38">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un matazanoz es experto en reparar el cuerpo robusto de un orko con una gran variedad de herramientas. Por este motivo, confiere la habilidad ¡No hay dolor! a la unidad en la que esté incorporado.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Kanijo kamillero" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="2ccb-faa5-2c1f-0934" publicationId="11a0-7b47-fa28-1d82" page="38">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">A los matazanoz suelen acompaňarlos kanijos kamilleros, cuyo trabajo consiste en transportar herramientas y extremidades de repuesto.
+Los kanijos kamilleros permiten que a la unidad del matazanoz repetir una tirada no superada de ¡No hay dolor! Retira la miniatura de kanijo kamillero una vez la hayas efectuado. Los kanijos kamilleros son miniaturas puramente decorativas y siempre se ignoran a efectos del juego; puedes apartarlas si impiden el movimiento del resto de miniaturas.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Herramientaz de mekániko" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="5108-7d92-380c-2c8d" publicationId="11a0-7b47-fa28-1d82" page="">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Los chapuzaz son expertos en efectuar reparaciones en el campo de batalla.
+Si un chapuzaz o un mekániko están en el interior de un vehiculo (o en base en contacto con él) al inicio de su fase de Disparo, puede intentar reparar un resultado de arma destruida o inmovilizado en lugar de disparar. Tira 1D6 y si obtienes un resultado de 4+, el resultado es anulado. Esto podria permitir que un arma destruida previamente disparase en esa fase de Disparo. Si el resultado es de 1, al chapuzaz se le va un poco la mano y el vehiculo se considera acobardado.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Pantalla de energía ezpezial" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="cb1b-6ba9-14d6-53f1" publicationId="11a0-7b47-fa28-1d82" page="">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Los chapuzaz construirán o saquearán proyectores con pantalla de energia ezpezial con los que proteger a los suyos.
+Una Pantalla de energía ezpezial proporciona una tirada de salvación por cobertura de 5+ a todas las unidades que estén a una distancia máxima de 15 cm del chapuzaz. Los vehiculos orkos que estén a una distancia de hasta 15 cm del chapuzaz se consideran objetivos desenfilados. La Pantalla de energía ezpezial no tiene efecto en un asalto.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Kanijo graziento" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="a1b7-1998-162d-8698" publicationId="11a0-7b47-fa28-1d82">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Los Kanijoz grazientos transportan las herramientaz de sus maestroz chapuzaz.
+Un kanijo graziento permite que un chapuzaz repita una tirada no supe rada de reparación. Recuerda que has de retirar la miniatura del kanijo graziento una vez utilizado. Las miniaturas de los Kanijoz grazientoz son miniaturas puramente decorativas y siempre se ignoran a efectos del juego; puedes apartarlas si impiden el movimiento del resto de miniaturas.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Humoz de ezkape" typeId="c970-b832-a956-1ac8" typeName="Habilidad" hidden="false" id="f844-2b9d-2c89-75e5" publicationId="11a0-7b47-fa28-1d82">
+      <characteristics>
+        <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Los motoriztaz tienen una tirada de salvación por cobertura de 4+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Moto" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="d03f-f747-6d70-bf83" publicationId="11a0-7b47-fa28-1d82">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Una miniatura montada en una moto suma +1 a su Resistencia (aunque no cuenta para determinar si se trata de una muerte instantánea), modifica su tipo de tropa por el de motocicleta, obtiene una tirada de salvación por armadura de 4+ y está sujeta a la regla especial de Humoz de ezkape.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Kabezadizforme" typeId="c970-b832-a956-1ac8" typeName="Habilidad" hidden="false" id="1081-4478-c332-18ce" publicationId="11a0-7b47-fa28-1d82">
+      <characteristics>
+        <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Los kabezadizformes tienen más control de sus poderes que los eztrambótikos.
+En cada tumo, un eztrambótiko que haya sido convertido en kabezadizforme puede repetir la tirada de dados para comprobar el poder psíquico que utiliza.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Poderes eztrambótikoz" typeId="c970-b832-a956-1ac8" typeName="Habilidad" hidden="false" id="4ff3-1b4d-cb46-3b26" publicationId="11a0-7b47-fa28-1d82">
+      <characteristics>
+        <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Los eztrambótikos no pueden controlar sus poderes psíquicos.
+Al inicio de cada fase de Disparo orka, un eztrambótiko debe tirar en la tabla siguiente para averiguar el poder psíquico que debe usar durante ese turno.
+Los eztrambótikos deben efectuar un chequeo psíquico antes de determinar el poder que va a usar. Si no supera el chequeo, no utilizará ningún poder psíquico con lo que no es necesaria la tirada. Recuerda que el Liderazgo de un
+eztrambótiko se ve afectado por la regla ¡La Peña triunfará!.
+Un eztrambótiko que use el poder Rayo verde o Zzap, cuenta como si hubiera disparado un arma en esa fase. Si el eztrambótiko está trabado en combate, no apliques los resultados de 1, 2 ó 3, sino que se considerará que el eztrambótiko tiene un arma de energía durante ese turno.
+
+
+1D6: 1 - Explotakabezas, 2 - Rayo verde, 3 - Zzap, 4 - ¡Atakad!, 5 - ¡Allá vamoz!, 6 - ¡Waaagh!.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="1 - Explotakabezas" typeId="ae70-4738-0161-bec0" typeName="Poder Psíquico" hidden="false" id="306d-658f-35c4-28d7" publicationId="11a0-7b47-fa28-1d82">
+      <characteristics>
+        <characteristic name="Alcance" typeId="fd64-cbc4-94de-24cc">Propio, Área</characteristic>
+        <characteristic name="Detalles" typeId="ad96-dfa4-b4ed-656d">Las energias que fluyen a través del eztrambótiko quedan fuera de control, provocando la explosión de las cabezas de todos cuantos se encuentren cerca de él. Resuelve el poder psíquico Rayo verde situando la plantilla centrada sobre el propio eztrambótiko.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="4 - ¡Atakad!" typeId="ae70-4738-0161-bec0" typeName="Poder Psíquico" hidden="false" id="8056-c4fe-6c87-519d" publicationId="11a0-7b47-fa28-1d82">
+      <characteristics>
+        <characteristic name="Alcance" typeId="fd64-cbc4-94de-24cc">Unidad</characteristic>
+        <characteristic name="Detalles" typeId="ad96-dfa4-b4ed-656d">El eztrambótiko dispersa la energía sobre los guerreros que hay a su alrededor produciendo un efecto espectacular.
+Todos los orkos de la unidad del eztrambótiko suman +1 Ataque hasta el inicio del siguiente turno orko.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="5 - ¡Allá vamoz!" typeId="ae70-4738-0161-bec0" typeName="Poder Psíquico" hidden="false" id="30d7-2511-ef6f-65e6" publicationId="11a0-7b47-fa28-1d82">
+      <characteristics>
+        <characteristic name="Alcance" typeId="fd64-cbc4-94de-24cc">Unidad</characteristic>
+        <characteristic name="Detalles" typeId="ad96-dfa4-b4ed-656d">El eztrambótiko cierra sus ojos fuertemente y teleporta a su unidad a otro lugar del campo de batalla en una tormenta de luz verde.
+El eztrambótiko y la unidad en la que se encuentre, deben situarse en cualquier punto del tablero sujetos a las reglas de despliegue rápido. Este poder debe usarse incluso si hay miniaturas enemigas en contacto peana con peana con la unidad; en este caso, las miniaturas enemigas permanecen en el mismo lugar.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="6 - ¡Waaagh!" typeId="ae70-4738-0161-bec0" typeName="Poder Psíquico" hidden="false" id="de2f-cfb9-ee3f-842d" publicationId="11a0-7b47-fa28-1d82">
+      <characteristics>
+        <characteristic name="Alcance" typeId="fd64-cbc4-94de-24cc">Ejercito</characteristic>
+        <characteristic name="Detalles" typeId="ad96-dfa4-b4ed-656d">El eztrambótiko emite un grito de guerra con todas sus fuerzas, cubriendo a sus camaradas de energía primaria.
+En este mismo turno se invoca automáticamente un ¡Waaagh!. No se trata del mismo ¡Waaagh! disponible para el jugador orko, sino de uno adicional del eztrambótiko. La potencia de la energía es tan fuerte que incluso permite que los orkos puedan lanzar un ¡Waaagh! en el primer turno de juego. Recuerda que los ¡Waaaghs! múltiples no tienen efectos acumulativos.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="2 - Rayo verde" typeId="9c33-b0c8-74bd-e5a7" typeName="Poder Psíquico (Proyectil)" hidden="false" id="d67a-8582-61a6-ead4" publicationId="11a0-7b47-fa28-1d82">
+      <characteristics>
+        <characteristic name="Alcance" typeId="5bf6-378a-0cb7-b079">60cm</characteristic>
+        <characteristic name="F" typeId="12da-9b3e-f37b-bc35">6</characteristic>
+        <characteristic name="FP" typeId="10b5-aa5b-ccde-79cc">3</characteristic>
+        <characteristic name="Tipo" typeId="20e7-cbcb-1781-a732">Área, Acobardamiento</characteristic>
+        <characteristic name="Detalles" typeId="a812-390d-dff6-dabd"/>
+      </characteristics>
+    </profile>
+    <profile name="3 - Zzap" typeId="9c33-b0c8-74bd-e5a7" typeName="Poder Psíquico (Proyectil)" hidden="false" id="801d-d958-ea8d-7fa1" publicationId="11a0-7b47-fa28-1d82">
+      <characteristics>
+        <characteristic name="Alcance" typeId="5bf6-378a-0cb7-b079">90cm</characteristic>
+        <characteristic name="F" typeId="12da-9b3e-f37b-bc35">10</characteristic>
+        <characteristic name="FP" typeId="10b5-aa5b-ccde-79cc">2</characteristic>
+        <characteristic name="Tipo" typeId="20e7-cbcb-1781-a732">Fusión</characteristic>
+        <characteristic name="Detalles" typeId="a812-390d-dff6-dabd"/>
+      </characteristics>
+    </profile>
+    <profile name="Por algo ez el jefe" typeId="c970-b832-a956-1ac8" typeName="Habilidad" hidden="false" id="1419-4b99-e869-43f5" publicationId="11a0-7b47-fa28-1d82">
+      <characteristics>
+        <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Cada Kaudillo permite que una peña de Meganoblez o Noblez se incluya como una opción de tropa de línea</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Rebanadora" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="6873-5f89-10d6-710d">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Las rebanadoras cuentan como armas de combate cuerpo a cuerpo</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Gran rebanadora" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="1f88-3e4f-e5d3-e025" publicationId="11a0-7b47-fa28-1d82">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Las Grandes rebanadoras cuentan son armas de combate a 2 manos que otorgan un +2 a la Fuerza</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Kombiarma" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="5bb4-6de0-8ec7-7edc" publicationId="11a0-7b47-fa28-1d82">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">El kombiarma consta de un Akribillador conectado con otra arma, el Akribillador puede dispararse normalmente pero la otra mitad solo puede usarse una vez por batalla. Tampoco se pueden disparar al mismo tiempo.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Armadura pezada" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="2a5a-bc55-031e-cce8" publicationId="11a0-7b47-fa28-1d82">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">La armadura pezada proporciona una tirada de salvación por armadura de 4+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Garrapato de atake" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="1107-f057-9796-10a8" publicationId="11a0-7b47-fa28-1d82">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un personaje que disponga de un Garrapato de atake contará con +1 ataque adicional.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="¡Eztandarte del Waaagh!" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="a192-f9ac-33ff-141a" publicationId="11a0-7b47-fa28-1d82">
+      <characteristics>
+        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">El ¡Eztandarte del Waaagh! lo lleva un noble que se haya ganado el respeto de su kaudillo.
+El eztandarte tiene un significado casi religioso para los Orkos y lucharán hasta el último aliento en su presencia. Una peña que incluya un ¡Eztandarte del Waaagh! suma +1 a la HA.</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedSelectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Achicharrador" hidden="false" id="0d80fcbd-0758-4114-b9d7-21947ba57dcf">
+    <selectionEntry type="model" import="true" name="Orko Achicharrador" hidden="false" id="0d80fcbd-0758-4114-b9d7-21947ba57dcf">
       <infoLinks>
         <infoLink name="Achicharrador" id="0abc5bf2-d566-4937-bd85-bc7fff2d46bc" hidden="false" type="infoGroup" targetId="a992068b-2b10-4df0-9c26-05c7c31004d1"/>
       </infoLinks>
@@ -918,10 +1304,13 @@
         <infoLink name="Armas gretchin" id="113a2f51-604c-491f-b2de-5b27edf18502" hidden="false" type="infoGroup" targetId="e9443c6d-17df-4d13-ac76-c70ac338ae80"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Badrukk" hidden="false" id="620b208f-6536-44e6-87d4-5f133094c0b6">
+    <selectionEntry type="model" import="true" name="Badrukk" hidden="false" id="620b208f-6536-44e6-87d4-5f133094c0b6">
       <infoLinks>
         <infoLink name="Badrukk" id="668d073f-ca54-4d9f-9964-69c0e6ed4b3b" hidden="false" type="infoGroup" targetId="7f012d3e-f3d1-4cad-8b71-262eab4825ed"/>
       </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="1eb1-7f77-6bfe-940d" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Buggy" hidden="false" id="d0b453da-66b5-4a9e-aff1-d1ee4c07d113">
       <infoLinks>
@@ -942,16 +1331,67 @@
       <infoLinks>
         <infoLink name="Dreadnought" id="c7753c35-ed06-494b-b340-fc675ebbbb38" hidden="false" type="infoGroup" targetId="7c81ba4c-eddb-4cb4-9b32-eb2a979d30a1"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Dread del Mek" hidden="false" id="a9e8-f713-fafa-2ece" type="selectionEntry" targetId="ce50-8b62-b2e5-a617"/>
+      </entryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Eztrambótiko" hidden="false" id="b9065546-5ab4-476a-95f5-fb08b60f627c">
+    <selectionEntry type="model" import="true" name="Eztrambótiko" hidden="false" id="b9065546-5ab4-476a-95f5-fb08b60f627c">
       <infoLinks>
         <infoLink name="Eztrambótiko" id="b3fa54a4-e72f-4762-a652-6cb914184462" hidden="false" type="infoGroup" targetId="8a7f1bbd-0e60-4f3f-99b0-22c132adb411"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Psíquico" hidden="false" id="97ba-c0db-2f96-c1ee" targetId="5880-7871-c903-81d7" primary="false"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Mostrar poderez eztrambótikoz" hidden="false" id="4a13-d218-d4c9-7fce" type="selectionEntry" targetId="cef3-ce61-c29c-8f4d" sortIndex="2"/>
+        <entryLink import="true" name="Kuerpo zibernétiko de Grotsnik" hidden="false" id="b95a-59d5-8610-f9f9" type="selectionEntry" targetId="1453-1c56-2c32-8f5e"/>
+      </entryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Kabezadizforme" hidden="false" id="b5df-a31d-d781-9b4a" sortIndex="1">
+          <infoLinks>
+            <infoLink name="Kabezadizforme" id="1c89-224d-5ab9-03b1" hidden="false" type="profile" targetId="1081-4478-c332-18ce"/>
+          </infoLinks>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="30"/>
+          </costs>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b948-eaf8-facf-44c0" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Pts" typeId="puntos" value="55"/>
+      </costs>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Ghazghkull" hidden="false" id="605b559a-d08d-4d97-9f19-ce9ba291aed5">
+    <selectionEntry type="model" import="true" name="Ghazghkull Thraka" hidden="false" id="605b559a-d08d-4d97-9f19-ce9ba291aed5">
       <infoLinks>
         <infoLink name="Ghazghkull" id="74058baa-1c3b-4742-a980-434f659bbcf2" hidden="false" type="infoGroup" targetId="c33a09e2-724d-4eee-af2d-ef375784bd82"/>
+        <infoLink name="Mega-armadura" id="8a78-5c04-ed1c-3f9a" hidden="false" type="infoGroup" targetId="222a-8d93-794a-3989"/>
+        <infoLink name="Garra de combate" id="e83b-e4b0-0b13-e679" hidden="false" type="infoGroup" targetId="593f-d9b8-d14b-d935"/>
+        <infoLink name="Akribillador pezado" id="4e82-772b-e5dc-5695" hidden="false" type="infoGroup" targetId="59faf8ba-cc1d-42f1-a3ac-8df8765c827a"/>
+        <infoLink name="Granadaz de mano" id="28ab-b767-e13f-fcb5" hidden="false" type="infoGroup" targetId="930e-4194-318b-1504"/>
+        <infoLink name="Kuerpo zibernétiko" id="ef88-2617-e937-49f3" hidden="false" type="profile" targetId="1e19-7727-81d9-8ee1"/>
+        <infoLink name="Eztandarte del jefe" id="d6ad-e8b5-41b0-2267" hidden="false" type="profile" targetId="50d6-9040-91f8-701b"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Kanijo munizionero" hidden="false" id="1775-e8f7-3d60-bef2" type="selectionEntry" targetId="92c5-8053-5037-e0a5" sortIndex="7">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e2af-3ecc-ba6e-0376" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="3"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="puntos" value="225"/>
+      </costs>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="76f8-b0fd-6206-2c9d" includeChildSelections="true"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink name="Kaudillo" hidden="false" id="93ca-c872-a26f-8c6d" targetId="56a1-c146-87ef-5f7c" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Gran Kañón" hidden="false" id="f6c2f994-05a1-4906-9b80-e20ec0e199f5">
       <infoLinks>
@@ -963,25 +1403,45 @@
         <infoLink name="Gretchin" id="5a5638b7-eff3-48a4-828c-f235a49b97c8" hidden="false" type="infoGroup" targetId="1e0590a7-eb4c-47e7-9cdf-5c5c9ac4a126"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Grotsnik" hidden="false" id="5926de2b-cb0b-49a1-83d2-eeb5ed6bc059">
+    <selectionEntry type="model" import="true" name="Matazanos Loko Grotsnik" hidden="false" id="5926de2b-cb0b-49a1-83d2-eeb5ed6bc059">
       <infoLinks>
-        <infoLink name="Grotsnik" id="9170645b-e9eb-43dc-a22e-19f7d44399cb" hidden="false" type="infoGroup" targetId="1e5db304-8caf-4580-8650-7553dbdf8fd2"/>
+        <infoLink name="Grotsnik" id="9170645b-e9eb-43dc-a22e-19f7d44399cb" hidden="false" type="infoGroup" targetId="1e5db304-8caf-4580-8650-7553dbdf8fd2">
+          <infoLinks>
+            <infoLink name="Coraje" id="a38a-12fa-79b0-2b61" hidden="false" type="rule" targetId="b23b-fb5c-4c8c-5ae4"/>
+          </infoLinks>
+        </infoLink>
+        <infoLink name="Garra de combate" id="f6d7-7536-a576-f319" hidden="false" type="infoGroup" targetId="593f-d9b8-d14b-d935"/>
+        <infoLink name="Jokepincha" id="6018-900e-1ab8-bd84" hidden="false" type="profile" targetId="ed2e-78dd-8c3a-b95e"/>
+        <infoLink name="Kuerpo zibernétiko" id="8e06-956b-dd2d-73dc" hidden="false" type="profile" targetId="1e19-7727-81d9-8ee1"/>
+        <infoLink name="Piztola" id="d327-7620-ceed-e6c8" hidden="false" type="infoGroup" targetId="611a3dc9-247d-4449-9be3-e59b22c9a3d4"/>
       </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7057-b9c3-586d-b8c5" includeChildSelections="true"/>
+      </constraints>
+      <costs>
+        <cost name="Pts" typeId="puntos" value="160"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Guerrero orko" hidden="false" id="e730e4e9-5bd7-4dcb-b93c-46fbdd6f844a">
       <infoLinks>
         <infoLink name="Guerrero orko" id="e1819fbc-ad40-4033-860f-244dff157fd4" hidden="false" type="infoGroup" targetId="ea15eee8-4b15-4d03-b03c-0f87fd76a984"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Jefe Snikrot" hidden="false" id="34ecf0b7-ee2d-4482-af0c-725fc1c0e9aa">
+    <selectionEntry type="model" import="true" name="Jefe Snikrot" hidden="false" id="34ecf0b7-ee2d-4482-af0c-725fc1c0e9aa">
       <infoLinks>
         <infoLink name="Jefe Snikrot" id="4104ba69-8323-4d1e-9648-83c77dc27865" hidden="false" type="infoGroup" targetId="68303e9a-d11c-494c-afeb-4033e0eb3dd5"/>
       </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="79e2-5a04-ad48-3560" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Jefe Zagstruk" hidden="false" id="aaf57692-dcb7-4a2e-b9f9-d9d8c61714dd">
+    <selectionEntry type="model" import="true" name="Jefe Zagstruk" hidden="false" id="aaf57692-dcb7-4a2e-b9f9-d9d8c61714dd">
       <infoLinks>
         <infoLink name="Jefe Zagstruk" id="c5fc03d3-2a92-4d00-b4c1-eeee9fc4b5f4" hidden="false" type="infoGroup" targetId="266d4725-9a3b-4f68-a152-cc3ee31d6d34"/>
       </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0112-c165-1cc0-4ac9" includeChildSelections="true"/>
+      </constraints>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Kamión" hidden="false" id="256832a2-d5da-4aaf-8f0e-7029b398d39c">
       <infoLinks>
@@ -997,11 +1457,172 @@
       <infoLinks>
         <infoLink name="Karro de guerra" id="7c380e54-bfcd-42fd-bfe7-11c7e1a706e2" hidden="false" type="infoGroup" targetId="69dbf5ee-ce94-4856-b459-53bdd337c332"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Kañón matamáz" hidden="false" id="472e-069e-81c7-b35b" type="selectionEntry" targetId="4958d926-eeb2-4d0f-9d21-2b90b68b92de">
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="selections" scope="root-entry" shared="true" childId="9de0-7333-fd43-f5aa" childName="Noblez"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Kaudillo" hidden="false" id="119b2ce9-0b71-4e9e-8fe2-973bb686421d">
+    <selectionEntry type="model" import="true" name="Kaudillo" hidden="false" id="119b2ce9-0b71-4e9e-8fe2-973bb686421d">
       <infoLinks>
         <infoLink name="Kaudillo" id="2931e5d0-aeff-4c88-b481-f0051978da99" hidden="false" type="infoGroup" targetId="d41b0a4d-4962-46f5-9a50-4db30f93d720"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink name="Kaudillo" hidden="false" id="a8f5-9f76-8703-2e5e" targetId="56a1-c146-87ef-5f7c" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="puntos" value="60"/>
+      </costs>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Equipo" id="749a-598d-0fe4-18f3" hidden="false" defaultSelectionEntryId="3288-9b52-fad2-a77a" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="370b-bd90-f928-9936-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="370b-bd90-f928-9936-max" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Mega-armadura" hidden="false" id="663c-ce73-ae4b-fd9f" type="selectionEntry" targetId="4259-6ac1-fc1c-f6e1">
+              <costs>
+                <cost name="Pts" typeId="puntos" value="40"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Bázico" hidden="false" id="3288-9b52-fad2-a77a">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Arma de dakka" id="1575-d091-33da-048a" hidden="false" defaultSelectionEntryId="c52b-fa78-b0cc-688d" sortIndex="2">
+                  <entryLinks>
+                    <entryLink import="true" name="Akribillador acoplado" hidden="false" id="9448-4bed-bd79-e096" type="selectionEntry" targetId="bbca-4ea9-8bc8-6cdc" sortIndex="2">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a27-ad33-59a1-629a" includeChildSelections="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Kombiarma" hidden="false" id="0fb8-6127-79d8-c346" type="selectionEntry" targetId="99d4-92b6-b8a6-f1d1" sortIndex="3">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8a00-e06a-8624-6924" includeChildSelections="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Piztola" hidden="false" id="c52b-fa78-b0cc-688d" type="selectionEntry" targetId="ac95c6c9-cd30-43c6-8a42-fcb80143f214" sortIndex="1">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c672-aec7-1ed6-a803" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="096a-e386-5860-2cd5-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="096a-e386-5860-2cd5-max" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Arma de mamporroz" id="0e1c-734c-7afd-0d64" hidden="false" defaultSelectionEntryId="085c-fed7-d5d3-b33a" sortIndex="1">
+                  <entryLinks>
+                    <entryLink import="true" name="Rebanadora" hidden="false" id="085c-fed7-d5d3-b33a" type="selectionEntry" targetId="283f-00b6-5096-8366" sortIndex="1">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d1ee-101a-95db-3667" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Garra de combate" hidden="false" id="27df-03a2-3617-fc9b" type="selectionEntry" targetId="7b62-c4a1-27f3-b270" sortIndex="3">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c832-f8f7-c55b-c272" includeChildSelections="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="25"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Gran rebanadora" hidden="false" id="88ff-6cff-6964-12a3" type="selectionEntry" targetId="b3f3-f7ba-7921-60e4" sortIndex="2">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e9bc-64d8-131c-8f9e" includeChildSelections="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="5"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b491-0322-ade7-1353-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b491-0322-ade7-1353-max" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Moto" hidden="false" id="2e22-3de5-6b4a-0bf9" type="selectionEntry" targetId="31b8-3934-10e8-c218" sortIndex="7">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="12f8-36fb-eff5-c45a" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="40"/>
+          </costs>
+          <modifiers>
+            <modifier type="set" value="true" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="119b2ce9-0b71-4e9e-8fe2-973bb686421d" childId="663c-ce73-ae4b-fd9f" shared="true" childName="Mega-armadura"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink import="true" name="Kanijo munizionero" hidden="false" id="86af-e72e-d70b-a80c" type="selectionEntry" targetId="92c5-8053-5037-e0a5" sortIndex="2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa73-2e76-7d29-10e4" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="3"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Garrapato de atake" hidden="false" id="600c-f9d4-d1d3-de7a" type="selectionEntry" targetId="a856-146c-4e33-6a56" sortIndex="6">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b71-7e0c-e0fe-e136" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="15"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Kuerpo zibernétiko" hidden="false" id="d8b4-05b2-ea9f-5060" type="selectionEntry" targetId="cc08-34ed-32c3-14c8" sortIndex="5">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e262-48a6-d1e1-396a" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="10"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Eztandarte del jefe" hidden="false" id="3954-1194-30b7-4d2a" type="selectionEntry" targetId="4f55-fc13-5f14-6732" sortIndex="4">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1dfb-a632-bf78-9237" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="5"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Armadura pezada" hidden="false" id="e94d-4a0e-72bb-813f" type="selectionEntry" targetId="22c1-9d58-4adb-62c0" sortIndex="3">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d60-db32-3a09-78b4" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="5"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Kuerpo zibernétiko de Grotsnik" hidden="false" id="3605-9548-739c-4c9f" type="selectionEntry" targetId="1453-1c56-2c32-8f5e" sortIndex="8">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="432e-a4e7-2ee4-027b" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="5"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Kañón (frag.)" hidden="false" id="88060fa1-8505-4f9e-8bad-f6cd6250f1f8">
       <infoLinks>
@@ -1078,27 +1699,228 @@
         <infoLink name="Matamuchoz" id="b487972b-45d0-41bf-a736-8eb6a65cfafc" hidden="false" type="infoGroup" targetId="68fdd4e2-5992-4dea-9056-8bb9b0b201cd"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Matazanoz" hidden="false" id="ca705c5f-5cc4-4038-9de6-337d719c45ee">
+    <selectionEntry type="model" import="true" name="Matazanoz" hidden="false" id="ca705c5f-5cc4-4038-9de6-337d719c45ee">
       <infoLinks>
         <infoLink name="Matazanoz" id="18c7ef80-69c5-4e12-bba5-3270090dac40" hidden="false" type="infoGroup" targetId="70d73bcd-f1eb-4b95-91bb-ba1e7eede59d"/>
       </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Kanijo kamillero" hidden="false" id="c616-2b2c-685f-91c8" type="selectionEntry" targetId="148f-b247-1ef4-7712" sortIndex="2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aec3-ed2f-47ed-43b0" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="5"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Equipo" id="c1bc-4da6-bda9-11f4" hidden="false" defaultSelectionEntryId="f408-ba76-f278-67e1" sortIndex="1">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Piztola y Rebanadora" hidden="false" id="f408-ba76-f278-67e1" sortIndex="1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d712-5e36-2ba7-20ec" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Piztola" id="6403-f028-cfed-fc2b" hidden="false" type="infoGroup" targetId="611a3dc9-247d-4449-9be3-e59b22c9a3d4"/>
+                <infoLink name="Rebanadora" id="12dd-2433-8540-df2c" hidden="false" type="infoGroup" targetId="6c38-1cb4-7148-aca6"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Herramientaz y Jokepincha" hidden="false" id="fea0-ca95-a9b5-68d3" sortIndex="2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="97b2-97de-ed4a-6c49" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Jokepincha" id="9418-8a65-de91-7854" hidden="false" type="profile" targetId="ed2e-78dd-8c3a-b95e"/>
+                <infoLink name="Herramientaz de Matazanos" id="3989-a555-4fea-2a6b" hidden="false" type="infoGroup" targetId="547b-bd48-5259-56fe"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bad6-5234-51af-e1f1-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bad6-5234-51af-e1f1-max" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Meganoble" hidden="false" id="4d1492d1-e96f-48d1-a6a8-9e7121c6bde2">
+    <selectionEntry type="model" import="true" name="Meganoble" hidden="false" id="4d1492d1-e96f-48d1-a6a8-9e7121c6bde2">
       <infoLinks>
         <infoLink name="Meganoble" id="aff1de41-5a76-4ed6-b5b9-5e68becea02f" hidden="false" type="infoGroup" targetId="f3538cb0-6de1-4adb-9da5-d8c073b8858a"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Mekániko" hidden="false" id="1f749c53-1ab2-4176-a3d8-03de815d8573">
+    <selectionEntry type="model" import="true" name="Mekániko" hidden="false" id="1f749c53-1ab2-4176-a3d8-03de815d8573">
       <infoLinks>
         <infoLink name="Mekániko" id="f1d18f01-65df-4276-ba96-af90415d645d" hidden="false" type="infoGroup" targetId="ede7e5aa-6a7e-45ce-9eaf-911c8c2e2757"/>
       </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Equipo" id="fb22-a799-479d-29ab" hidden="false" defaultSelectionEntryId="3288-9b52-fad2-a77a" sortIndex="1">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2892-c9a0-e1dc-6f59-min" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2892-c9a0-e1dc-6f59-max" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Mega-armadura" hidden="false" id="b2ad-c2dd-c02c-317b" type="selectionEntry" targetId="4259-6ac1-fc1c-f6e1" sortIndex="2">
+              <costs>
+                <cost name="Pts" typeId="puntos" value="40"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Kañón de atake shokk" hidden="false" id="a9d8-d00a-227f-2408" type="selectionEntry" targetId="634ebc77-b86d-4912-b7d0-5dc01c7e9623" sortIndex="5">
+              <costs>
+                <cost name="Pts" typeId="puntos" value="60"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Pantalla de energía ezpecial" hidden="false" id="15e2-ddae-2447-7fbe" type="selectionEntry" targetId="fd21-74b5-8210-86e2" sortIndex="4">
+              <costs>
+                <cost name="Pts" typeId="puntos" value="50"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Moto" hidden="false" id="096c-dde1-bddb-6187" type="selectionEntry" targetId="31b8-3934-10e8-c218" sortIndex="3">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cb6a-8b8c-1f09-73c7" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="40"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Bázico" hidden="false" id="a81d-e081-6d96-8adc" sortIndex="1">
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Arma de dakka" id="16c2-0b0b-aef3-8966" hidden="false" defaultSelectionEntryId="c52b-fa78-b0cc-688d" sortIndex="2">
+                  <entryLinks>
+                    <entryLink import="true" name="Lanzakohetez ezpezial" hidden="false" id="622a-a4f8-4b05-dba3" type="selectionEntry" targetId="f5128232-89d4-4491-bd37-c4c3ecaeb255" sortIndex="4">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4ff0-c28e-0036-e97a" includeChildSelections="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="15"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Kombiarma" hidden="false" id="94ab-8cbf-4e8b-187b" type="selectionEntry" targetId="99d4-92b6-b8a6-f1d1" sortIndex="3">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ffb4-9798-cfd6-7390" includeChildSelections="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Piztola" hidden="false" id="632c-8b22-577f-c6d0" type="selectionEntry" targetId="ac95c6c9-cd30-43c6-8a42-fcb80143f214" sortIndex="1">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4fcc-e734-6c9e-e18a" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Akribillador" hidden="false" id="c44d-b2dc-f118-eee6" type="selectionEntry" targetId="6d079084-db11-4470-b14c-4631949c4e61" sortIndex="2">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4b5f-17ce-4bd7-7c1d" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f963-07df-79be-9ba6-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f963-07df-79be-9ba6-max" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Arma de mamporroz" id="2534-cb87-2423-91c1" hidden="false" defaultSelectionEntryId="7e31-21ef-b7b5-7a62" sortIndex="1">
+                  <entryLinks>
+                    <entryLink import="true" name="Rebanadora" hidden="false" id="7e31-21ef-b7b5-7a62" type="selectionEntry" targetId="283f-00b6-5096-8366" sortIndex="1">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="20d8-0716-61e1-f34b" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Garra de combate" hidden="false" id="6a3c-73fb-7f6b-22ed" type="selectionEntry" targetId="7b62-c4a1-27f3-b270" sortIndex="3">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cf50-caa3-0b02-5608" includeChildSelections="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="25"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Achicharrador" hidden="false" id="d21f-5d79-640d-990c" type="selectionEntry" targetId="e427-f75a-21db-1452" sortIndex="2">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dff3-60fc-0192-9bbd" includeChildSelections="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="20"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="80c0-0cf2-984c-bc43-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="80c0-0cf2-984c-bc43-max" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink import="true" name="Kanijo munizionero" hidden="false" id="85cc-03fc-1abf-b386" type="selectionEntry" targetId="92c5-8053-5037-e0a5" sortIndex="2">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a5b5-ea49-9439-71c7" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="3"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Armadura pezada" hidden="false" id="9643-2d39-80ca-4568" type="selectionEntry" targetId="22c1-9d58-4adb-62c0" sortIndex="4">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d7bc-8181-077e-a74b" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="5"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Eztandarte del jefe" hidden="false" id="ff36-e122-3202-698c" type="selectionEntry" targetId="4f55-fc13-5f14-6732" sortIndex="5">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="829e-46d5-4cb6-2a68" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="5"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Kuerpo zibernétiko" hidden="false" id="2c9e-4496-46ca-c771" type="selectionEntry" targetId="cc08-34ed-32c3-14c8" sortIndex="6">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c46c-21dc-23bf-aabb" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="10"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Garrapato de atake" hidden="false" id="e08e-7f10-8252-3416" type="selectionEntry" targetId="a856-146c-4e33-6a56" sortIndex="7">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fbae-5523-b8cf-3c9c" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="15"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Kanijo graziento" hidden="false" id="28c6-ed9c-9b32-2fe2" type="selectionEntry" targetId="28ac-858a-4b1c-8fbc" sortIndex="3">
+          <constraints>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="9779-db93-f1a7-9b6f" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="5"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Kuerpo zibernétiko de Grotsnik" hidden="false" id="7f2b-d472-369d-b5c4" type="selectionEntry" targetId="1453-1c56-2c32-8f5e">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="01ac-9350-e192-e63d" includeChildSelections="false"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="5"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="Pts" typeId="puntos" value="35"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Motorizta" hidden="false" id="99c7e48d-ccfc-4447-adfc-ec7ef57d6cce">
       <infoLinks>
         <infoLink name="Motorizta" id="7be23233-ae79-409f-91fc-f01b542de1bf" hidden="false" type="infoGroup" targetId="d2ea3531-6f5e-4043-bda9-ad2f39590f61"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Noble" hidden="false" id="fa949fd5-17e8-456e-87ad-1d181e999212">
+    <selectionEntry type="model" import="true" name="Noble" hidden="false" id="fa949fd5-17e8-456e-87ad-1d181e999212">
       <infoLinks>
         <infoLink name="Noble" id="3a762b84-2728-4aaa-8e5f-1f2ecad3e689" hidden="false" type="infoGroup" targetId="80509a66-48eb-4a97-827b-96a87293cd2e"/>
       </infoLinks>
@@ -1123,15 +1945,55 @@
         <infoLink name="Vehíkulo zakeado" id="ffb0e256-916a-43d2-9567-3bde893f555d" hidden="false" type="infoGroup" targetId="5a225297-06de-4496-a8ad-7a1d0796046e"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Viejo Zogwort" hidden="false" id="559e6a7f-2eb0-448c-8f76-62836c978e3c">
+    <selectionEntry type="model" import="true" name="Viejo Zogwort" hidden="false" id="559e6a7f-2eb0-448c-8f76-62836c978e3c">
       <infoLinks>
         <infoLink name="Viejo Zogwort" id="aa05a78f-af1f-4f40-8747-0de4a77ce7f5" hidden="false" type="infoGroup" targetId="9c97bbd3-f54a-489f-9d8a-9590e1c2eae5"/>
       </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="931a-49ac-3432-d9d5" includeChildSelections="true"/>
+      </constraints>
+      <costs>
+        <cost name="Pts" typeId="puntos" value="145"/>
+      </costs>
+      <entryLinks>
+        <entryLink import="true" name="Mostrar poderez eztrambótikoz" hidden="false" id="edaf-9058-0859-6e92" type="selectionEntry" targetId="cef3-ce61-c29c-8f4d"/>
+      </entryLinks>
+      <profiles>
+        <profile name="Garrapato enfadado" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="5540-3a2a-21de-0c7d">
+          <characteristics>
+            <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+            <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
+            <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">0</characteristic>
+            <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
+            <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">2</characteristic>
+            <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+            <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">3</characteristic>
+            <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">1</characteristic>
+            <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">5</characteristic>
+            <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink name="Psíquico" hidden="false" id="0be6-72b6-1657-af30" targetId="5880-7871-c903-81d7" primary="false"/>
+      </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Wazdakka" hidden="false" id="8effa089-35e3-4af9-b2f0-f5967e954c7e">
+    <selectionEntry type="model" import="true" name="Wazdakka Gutsmek" hidden="false" id="8effa089-35e3-4af9-b2f0-f5967e954c7e">
       <infoLinks>
         <infoLink name="Wazdakka" id="d37c9df5-22da-4333-a393-6494a1a007e7" hidden="false" type="infoGroup" targetId="f07bf29e-50bb-4d54-b881-275d34df67c3"/>
+        <infoLink name="Eztandarte del jefe" id="c82e-221d-2241-df9b" hidden="false" type="profile" targetId="50d6-9040-91f8-701b"/>
+        <infoLink name="Garra de combate" id="0db9-dd57-d72a-e183" hidden="false" type="infoGroup" targetId="593f-d9b8-d14b-d935"/>
+        <infoLink name="Garra de combate" id="304e-9fdf-f6a3-5bb5" hidden="false" type="infoGroup" targetId="593f-d9b8-d14b-d935"/>
+        <infoLink name="Lanzakohetez ezpezial" id="13a4-f9eb-4d51-0e49" hidden="false" type="infoGroup" targetId="95cc8f93-d06a-4ddb-b5ec-80469f6e2c81"/>
+        <infoLink name="Piztola" id="c912-e624-8941-0a05" hidden="false" type="infoGroup" targetId="611a3dc9-247d-4449-9be3-e59b22c9a3d4"/>
+        <infoLink name="Herramientaz de mekániko" id="e5a5-9d67-e5b1-a69f" hidden="false" type="profile" targetId="5108-7d92-380c-2c8d"/>
       </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="7d47-3ccd-6798-aaed" includeChildSelections="true"/>
+      </constraints>
+      <costs>
+        <cost name="Pts" typeId="puntos" value="180"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Zakeador" hidden="false" id="caf786cb-1de2-4e05-8441-c97c8aec2aed">
       <infoLinks>
@@ -1143,5 +2005,475 @@
         <infoLink name="Zoldado de azalto" id="56c1d948-49d5-48ab-b88b-ef63b858d968" hidden="false" type="infoGroup" targetId="7d71341e-f738-4d3d-aa4d-05c5cae179c9"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Achicharrador" hidden="false" id="e427-f75a-21db-1452">
+      <infoLinks>
+        <infoLink name="Achicharrador" id="3fc4-3670-24d8-8ec7" hidden="false" type="infoGroup" targetId="b3ac6bd8-d37d-404e-83d6-d1ee3971d3b5"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Garra de combate" hidden="false" id="7b62-c4a1-27f3-b270">
+      <infoLinks>
+        <infoLink name="Garra de combate" id="0df2-aae3-1a2e-8bf8" hidden="false" type="infoGroup" targetId="593f-d9b8-d14b-d935"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Eztandarte del jefe" hidden="false" id="4f55-fc13-5f14-6732">
+      <infoLinks>
+        <infoLink name="Eztandarte del jefe" id="ac11-cf69-ed8a-1641" hidden="false" type="profile" targetId="50d6-9040-91f8-701b"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Granadaz de mano" hidden="false" id="0087-52bc-3e2f-703e">
+      <infoLinks>
+        <infoLink name="Granadaz de mano" id="7279-7fa7-b988-9be6" hidden="false" type="infoGroup" targetId="930e-4194-318b-1504"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Kuerpo zibernétiko" hidden="false" id="cc08-34ed-32c3-14c8">
+      <infoLinks>
+        <infoLink name="Kuerpo zibernétiko" id="a293-6113-dc0d-a7e1" hidden="false" type="profile" targetId="1e19-7727-81d9-8ee1"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Kanijo munizionero" hidden="false" id="92c5-8053-5037-e0a5">
+      <infoLinks>
+        <infoLink name="Kanijo munizionero" id="eeea-cbde-bc05-6801" hidden="false" type="profile" targetId="d65f-b790-71d4-eb41"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Kanijo kamillero" hidden="false" id="148f-b247-1ef4-7712">
+      <infoLinks>
+        <infoLink name="Kanijo kamillero" id="9267-9244-27aa-0f9c" hidden="false" type="profile" targetId="2ccb-faa5-2c1f-0934"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Jokepincha" hidden="false" id="04ae-600c-b5b7-3eb7">
+      <infoLinks>
+        <infoLink name="Jokepincha" id="e3ac-7da9-b47a-ec32" hidden="false" type="profile" targetId="ed2e-78dd-8c3a-b95e"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Kuerpo zibernétiko de Grotsnik" hidden="true" id="1453-1c56-2c32-8f5e">
+      <infoLinks>
+        <infoLink name="Kuerpo zibernétiko" id="64b7-a955-5338-08b0" hidden="false" type="profile" targetId="1e19-7727-81d9-8ee1"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fd6a-8591-4dd6-9cfc" includeChildSelections="false"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="5926de2b-cb0b-49a1-83d2-eeb5ed6bc059" shared="true" includeChildSelections="true" includeChildForces="true" childName="Matazanos Loko Grotsnik"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" value="5" field="puntos">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="root-entry" shared="true" roundUp="false" childName="model" includeChildSelections="true" childId="model"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Peña de Noblez" hidden="false" id="9de0-7333-fd43-f5aa">
+      <entryLinks>
+        <entryLink import="true" name="Peña de Ghazghkull" hidden="false" id="0876-0eb5-d6c8-a3fe" type="selectionEntry" targetId="9041-bfbc-49bd-bb66" sortIndex="1"/>
+        <entryLink import="true" name="Kuerpo zibernétiko de Grotsnik" hidden="false" id="44a4-1cee-0c20-9f34" type="selectionEntry" targetId="1453-1c56-2c32-8f5e" sortIndex="5"/>
+        <entryLink import="true" name="Granadaz de mano" hidden="false" id="21ea-58cf-23dc-51ae" type="selectionEntry" targetId="0087-52bc-3e2f-703e" sortIndex="3">
+          <modifiers>
+            <modifier type="increment" value="1" field="puntos" affects="self.entries">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" childName="model"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b07b-eece-4369-1474" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Kuerpo zibernétiko" hidden="true" id="25e8-6d1d-df9c-e511" type="selectionEntry" targetId="cc08-34ed-32c3-14c8" sortIndex="4">
+          <modifiers>
+            <modifier type="increment" value="5" field="puntos">
+              <repeats>
+                <repeat value="1" repeats="1" field="selections" scope="root-entry" childId="model" shared="true" roundUp="false" childName="model" includeChildSelections="true"/>
+              </repeats>
+            </modifier>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="parent" childId="ca705c5f-5cc4-4038-9de6-337d719c45ee" shared="true" includeChildSelections="true" childName="Matazanoz"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aa56-55cb-3729-5278" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Tranzporte" id="eafb-29d3-e593-37fc" hidden="false" sortIndex="6" collapsible="true">
+          <entryLinks>
+            <entryLink import="true" name="Moto" hidden="false" id="182c-bb24-5dd7-91ef" type="selectionEntry" targetId="31b8-3934-10e8-c218">
+              <modifiers>
+                <modifier type="increment" value="25" field="puntos">
+                  <repeats>
+                    <repeat value="1" repeats="1" field="selections" scope="parent" childId="model" shared="true" roundUp="false" childName="model" includeChildSelections="true"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Karro de guerra" hidden="false" id="ec35-23f6-a190-97e1" type="selectionEntry" targetId="676c11e7-e059-4344-8bd3-9a2b28abae23">
+              <modifiers>
+                <modifier type="append" value=" asignado" field="name"/>
+              </modifiers>
+            </entryLink>
+            <entryLink import="true" name="Kamión" hidden="false" id="ce7d-411c-7e0c-434f" type="selectionEntry" targetId="256832a2-d5da-4aaf-8f0e-7029b398d39c"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d6bf-ef1c-0591-ab6f" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Noblez" id="dd86-6203-7fe7-3cbe" hidden="false" defaultSelectionEntryId="a1b7-eb23-e222-7b0d" sortIndex="2">
+          <entryLinks>
+            <entryLink import="true" name="Noble" hidden="false" id="a1b7-eb23-e222-7b0d" type="selectionEntry" targetId="fa949fd5-17e8-456e-87ad-1d181e999212" sortIndex="1">
+              <constraints>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="66e9-e803-da44-dde1" includeChildSelections="false"/>
+                <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="61b1-30ac-6af6-57bd" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Arma de mamporroz" id="8808-1c15-acb9-0fe8" hidden="false" sortIndex="1" defaultSelectionEntryId="1b87-f647-c1ba-dc61">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e5a5-abca-5479-7c6b-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e5a5-abca-5479-7c6b-max" includeChildSelections="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Rebanadora" hidden="false" id="1b87-f647-c1ba-dc61" type="selectionEntry" targetId="283f-00b6-5096-8366" sortIndex="1">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eb54-333c-94d0-a9d0" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Gran rebanadora" hidden="false" id="8899-4649-a3c9-30c0" type="selectionEntry" targetId="b3f3-f7ba-7921-60e4" sortIndex="2">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d335-0c36-7e26-3c52" includeChildSelections="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Garra de combate" hidden="false" id="7811-f5d5-f29e-6ecb" type="selectionEntry" targetId="7b62-c4a1-27f3-b270" sortIndex="3">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1ba5-ff6a-4125-7c85" includeChildSelections="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="25"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Arma de dakka" id="2b9b-60d1-b9ee-ea95" hidden="false" sortIndex="2" defaultSelectionEntryId="4711-ec26-a049-eaa5">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="af0a-793c-aaf9-bd10-min" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="af0a-793c-aaf9-bd10-max" includeChildSelections="false"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink import="true" name="Piztola" hidden="false" id="4711-ec26-a049-eaa5" type="selectionEntry" targetId="ac95c6c9-cd30-43c6-8a42-fcb80143f214" sortIndex="1">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db5e-d086-b69b-611a" includeChildSelections="false"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Akribillador acoplado" hidden="false" id="fa36-f1c6-b349-20d2" type="selectionEntry" targetId="bbca-4ea9-8bc8-6cdc" sortIndex="2">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="95de-487e-9b6b-468b" includeChildSelections="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Kombiarma" hidden="false" id="1cf8-a109-f42c-0e1b" type="selectionEntry" targetId="99d4-92b6-b8a6-f1d1" sortIndex="3">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2242-e9d7-7493-8086" includeChildSelections="false"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="5"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name="Armadura pezada" hidden="false" id="0b32-68d9-52f8-6ae8" type="selectionEntry" targetId="22c1-9d58-4adb-62c0" sortIndex="4">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd13-5b82-c759-06a2" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="puntos" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Kanijo munizionero" hidden="false" id="aea1-cc1b-c2b7-331d" type="selectionEntry" targetId="92c5-8053-5037-e0a5" sortIndex="3">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e89-9a3f-e697-9ffa" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="puntos" value="3"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="Eztandarte del jefe" hidden="false" id="7dd7-75e8-666b-ac9a" type="selectionEntry" targetId="4f55-fc13-5f14-6732" sortIndex="5">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0892-30d4-5055-b7b9" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="puntos" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink import="true" name="¡Eztandarte del Waaagh!" hidden="false" id="9982-ead2-691f-416f" type="selectionEntry" targetId="5c65-4ff9-17f1-1926" sortIndex="6">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="849a-5263-bc94-19c6" includeChildSelections="false"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="puntos" value="15"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </entryLink>
+            <entryLink import="true" name="Matazanoz" hidden="false" id="c3ae-9d15-9385-f9c2" type="selectionEntry" targetId="ca705c5f-5cc4-4038-9de6-337d719c45ee" sortIndex="2">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1a7e-78d9-bfd7-3e16" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="30"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <constraints>
+            <constraint type="max" value="10" field="selections" scope="parent" shared="true" id="0173-0bf3-255b-8de2" includeChildSelections="false"/>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="779b-64fb-27b3-591f" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Peña del Kaudillo" hidden="true" id="9041-bfbc-49bd-bb66">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="6a83-9816-50ef-3473" includeChildSelections="true" includeChildForces="false"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set-primary" value="1ebf-bf5c-b1c9-eb84" field="category" scope="parent"/>
+            <modifier type="remove" value="cf43-5aa1-0e52-25d7" field="category" scope="parent"/>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="56a1-c146-87ef-5f7c" shared="true" includeChildSelections="true" includeChildForces="true" childName="Kaudillo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Meganoblez" hidden="false" id="da67-ad47-2315-3af7">
+      <entryLinks>
+        <entryLink import="true" name="Peña de Ghazghkull" hidden="false" id="ffbb-6898-8c5c-8087" type="selectionEntry" targetId="9041-bfbc-49bd-bb66"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Ezcuadrón de Wazdakka" hidden="true" id="3746-229f-67e8-1826">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5559-8c11-0fee-f0b8" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set-primary" value="1ebf-bf5c-b1c9-eb84" field="category" scope="parent"/>
+            <modifier type="remove" value="f5d9-d854-c8fa-782b" field="category" scope="parent"/>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="8effa089-35e3-4af9-b2f0-f5967e954c7e" shared="true" includeChildSelections="true" includeChildForces="true" childName="Wazdakka Gutsmek"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Ezcuadrón de motoz" hidden="true" id="8143-ca67-8548-2544">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="77ba-94f0-9e3a-73d5" includeChildSelections="false" includeChildForces="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Ezcuadrón de Wazdakka" hidden="false" id="0f5d-e01a-3e65-e523" type="selectionEntry" targetId="3746-229f-67e8-1826"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mostrar poderez eztrambótikoz" hidden="false" id="cef3-ce61-c29c-8f4d">
+      <infoLinks>
+        <infoLink name="Poderes eztrambótikoz" id="6f7f-d253-0552-6dc7" hidden="false" type="infoGroup" targetId="de11-1cd3-b758-481c"/>
+      </infoLinks>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1025-e409-a3e5-3819" includeChildSelections="false"/>
+      </constraints>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Rebanadora" hidden="false" id="283f-00b6-5096-8366">
+      <infoLinks>
+        <infoLink name="Rebanadora" id="eeb5-9a89-b366-b6f8" hidden="false" type="infoGroup" targetId="6c38-1cb4-7148-aca6"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Gran rebanadora" hidden="false" id="b3f3-f7ba-7921-60e4">
+      <infoLinks>
+        <infoLink name="Gran rebanadora" id="f858-c253-88bc-317a" hidden="false" type="infoGroup" targetId="837b-0472-880f-dec1"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Akribillador acoplado" hidden="false" id="bbca-4ea9-8bc8-6cdc">
+      <infoLinks>
+        <infoLink name="Akribillador acoplado" id="aee6-d75d-db66-05ed" hidden="false" type="infoGroup" targetId="097b-b9e0-c778-360a"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Kombiarma" hidden="false" id="99d4-92b6-b8a6-f1d1">
+      <infoLinks>
+        <infoLink name="Kombiarma" id="dfa5-236f-8607-fbcf" hidden="false" type="profile" targetId="5bb4-6de0-8ec7-7edc"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink import="true" name="Kombiarma" hidden="false" id="3fe8-74ad-39fc-39f9" type="selectionEntryGroup" targetId="a400-934b-9ab6-90ef"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Akribillador/Kemakema" hidden="false" id="7ba3-5030-0362-da38" collapsible="true">
+      <infoLinks>
+        <infoLink name="Kemakema" id="bb25-ff5b-196b-2ec3" hidden="false" type="infoGroup" targetId="e76dbbde-ba52-4116-b56d-747b1c0dc818"/>
+        <infoLink name="Akribillador" id="37f7-00c7-c85c-6a17" hidden="false" type="infoGroup" targetId="0107f021-b413-4e21-9050-e23c6687a2a2"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Akribillador/Kohete" hidden="false" id="b650-9376-81e7-f334" collapsible="true">
+      <infoLinks>
+        <infoLink name="Akribillador" id="6d44-b256-3bca-4b2f" hidden="false" type="infoGroup" targetId="0107f021-b413-4e21-9050-e23c6687a2a2"/>
+        <infoLink name="Lanzakohetez" id="90c2-c6d8-8dba-8c15" hidden="false" type="infoGroup" targetId="5d2fb2a9-c29a-4542-8677-d4968c01c8bd"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Mega-armadura" hidden="false" id="4259-6ac1-fc1c-f6e1">
+      <infoLinks>
+        <infoLink name="Mega-armadura" id="3c17-402d-4846-9ce1" hidden="false" type="infoGroup" targetId="222a-8d93-794a-3989"/>
+        <infoLink name="Akribillador acoplado" id="9ee8-3f95-90c0-b526" hidden="false" type="infoGroup" targetId="097b-b9e0-c778-360a"/>
+        <infoLink name="Garra de combate" id="6bae-bc98-e0e8-6d3b" hidden="false" type="infoGroup" targetId="593f-d9b8-d14b-d935"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="2+" field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" scope="parent" affects="profiles.Unidad"/>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Armadura pezada" hidden="false" id="22c1-9d58-4adb-62c0">
+      <infoLinks>
+        <infoLink name="Armadura pezada" id="6cae-d98d-af8e-95fe" hidden="false" type="profile" targetId="2a5a-bc55-031e-cce8"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="set" value="4+" field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" scope="parent" affects="profiles.Unidad"/>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Moto" hidden="false" id="31b8-3934-10e8-c218">
+      <infoLinks>
+        <infoLink name="Moto" id="235a-5fa7-760b-f5f6" hidden="false" type="infoGroup" targetId="fcf8-74d3-a9d4-b63f"/>
+        <infoLink name="Akribillador acoplado" id="a62d-f88d-cbac-35f1" hidden="false" type="infoGroup" targetId="097b-b9e0-c778-360a"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="increment" value="1" field="3f9ed75c-36cd-4169-9cef-48391bb55cfd" scope="parent" affects="self.entries.profiles.Unidad"/>
+        <modifier type="replace" value="Motocicleta" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" scope="parent" affects="self.entries.profiles.Unidad" arg="Infantería"/>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Garrapato de atake" hidden="false" id="a856-146c-4e33-6a56">
+      <infoLinks>
+        <infoLink name="Garrapato de atake" id="9a6e-96a1-9514-dbf7" hidden="false" type="profile" targetId="1107-f057-9796-10a8"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="increment" value="1" field="5dff3e7c-e024-4030-a71d-03195ec06ea7" scope="parent" affects="profiles.Unidad"/>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Pantalla de energía ezpecial" hidden="false" id="fd21-74b5-8210-86e2">
+      <infoLinks>
+        <infoLink name="Pantalla de energía ezpezial" id="5d2e-9764-b93c-632e" hidden="false" type="profile" targetId="cb1b-6ba9-14d6-53f1"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Kanijo graziento" hidden="false" id="28ac-858a-4b1c-8fbc">
+      <infoLinks>
+        <infoLink name="Kanijo graziento" id="3be2-3d75-695d-e20b" hidden="false" type="profile" targetId="a1b7-1998-162d-8698"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Dread del Mek" hidden="true" id="ce50-8b62-b2e5-a617">
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="391d-6619-36e9-7a64" includeChildSelections="true" includeChildForces="true"/>
+      </constraints>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <modifiers>
+            <modifier type="set-primary" value="1ebf-bf5c-b1c9-eb84" field="category" scope="parent"/>
+            <modifier type="remove" value="1267-e587-8ef8-b252" field="category" scope="parent"/>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="atLeast" value="1" field="selections" scope="roster" childId="75dc-c461-738a-558c" shared="true" includeChildSelections="true" includeChildForces="true" childName="Mek"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="¡Eztandarte del Waaagh!" hidden="false" id="5c65-4ff9-17f1-1926">
+      <infoLinks>
+        <infoLink name="¡Eztandarte del Waaagh!" id="255e-90a8-2a53-e057" hidden="false" type="profile" targetId="a192-f9ac-33ff-141a"/>
+      </infoLinks>
+      <modifiers>
+        <modifier type="increment" value="1" field="5ee4ff0b-b244-4670-9d05-91d10f80c32e" scope="parent" affects="self.entries.profiles.Unidad"/>
+      </modifiers>
+    </selectionEntry>
   </sharedSelectionEntries>
+  <entryLinks>
+    <entryLink import="true" name="Ghazghkull" hidden="false" id="77c1-ee12-8cb8-2264" type="selectionEntry" targetId="605b559a-d08d-4d97-9f19-ce9ba291aed5">
+      <categoryLinks>
+        <categoryLink name="CG" hidden="false" id="6d42-d690-22cd-eb09" targetId="dd59-30d7-da4f-6ea4" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Matazanos Loko Grotsnik" hidden="false" id="2a11-61ff-d0b5-408f" type="selectionEntry" targetId="5926de2b-cb0b-49a1-83d2-eeb5ed6bc059">
+      <categoryLinks>
+        <categoryLink name="CG" hidden="false" id="34a3-c877-33bd-6cb3" targetId="dd59-30d7-da4f-6ea4" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Noblez" hidden="false" id="6d93-0eed-95de-af94" type="selectionEntry" targetId="9de0-7333-fd43-f5aa">
+      <categoryLinks>
+        <categoryLink name="Élite" hidden="false" id="8200-25e6-72f1-14f9" targetId="cf43-5aa1-0e52-25d7" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Wazdakka Gutsmek" hidden="false" id="5e81-b28d-3b62-2a81" type="selectionEntry" targetId="8effa089-35e3-4af9-b2f0-f5967e954c7e">
+      <categoryLinks>
+        <categoryLink name="CG" hidden="false" id="2275-a4a0-93ef-1341" targetId="dd59-30d7-da4f-6ea4" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Viejo Zogwort" hidden="false" id="76c7-cbbb-810d-b09f" type="selectionEntry" targetId="559e6a7f-2eb0-448c-8f76-62836c978e3c">
+      <categoryLinks>
+        <categoryLink name="CG" hidden="false" id="b1ef-e640-1117-6804" targetId="dd59-30d7-da4f-6ea4" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Kaudillo" hidden="false" id="adb4-1b70-564a-ebc5" type="selectionEntry" targetId="119b2ce9-0b71-4e9e-8fe2-973bb686421d">
+      <categoryLinks>
+        <categoryLink name="CG" hidden="false" id="6321-bddd-dfbd-8bed" targetId="dd59-30d7-da4f-6ea4" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Mekániko" hidden="false" id="54c3-0497-e644-9460" type="selectionEntry" targetId="1f749c53-1ab2-4176-a3d8-03de815d8573">
+      <categoryLinks>
+        <categoryLink name="CG" hidden="false" id="e67d-4793-8874-84d4" targetId="dd59-30d7-da4f-6ea4" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Karro de guerra" hidden="false" id="a309-f943-2193-8828" type="selectionEntry" targetId="676c11e7-e059-4344-8bd3-9a2b28abae23">
+      <categoryLinks>
+        <categoryLink name="Apoyo Pesado" hidden="false" id="8b65-c86b-3f66-b810" targetId="1267-e587-8ef8-b252" primary="true"/>
+      </categoryLinks>
+    </entryLink>
+  </entryLinks>
+  <categoryEntries>
+    <categoryEntry name="Psíquico" id="5880-7871-c903-81d7" hidden="false"/>
+    <categoryEntry name="Kaudillo" id="56a1-c146-87ef-5f7c" hidden="false"/>
+    <categoryEntry name="Mek" id="75dc-c461-738a-558c" hidden="false"/>
+  </categoryEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Kombiarma" id="a400-934b-9ab6-90ef" hidden="false" defaultSelectionEntryId="0b6f-54df-bf8a-e930">
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0c43-f07d-2c3f-5fb2-min" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0c43-f07d-2c3f-5fb2-max" includeChildSelections="false"/>
+      </constraints>
+      <entryLinks>
+        <entryLink import="true" name="Akribillador/Kemakema" hidden="false" id="dfb3-3d9e-51a7-9ccc" type="selectionEntry" targetId="7ba3-5030-0362-da38">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e9b-d92e-d5e3-127c" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Akribillador/Kohete" hidden="false" id="4ac1-bcd3-9ac3-10f0" type="selectionEntry" targetId="b650-9376-81e7-f334">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="065e-2bfd-b369-61d1" includeChildSelections="false"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
 </catalogue>
