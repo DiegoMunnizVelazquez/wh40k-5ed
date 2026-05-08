@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="8cf6-c83d-3eeb-e95c" name="Warhammer 40,000 5ª Edición " revision="13" battleScribeVersion="2.03" authorName="Diego Muñiz" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorUrl="csddmv@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="8cf6-c83d-3eeb-e95c" name="Warhammer 40,000 5ª Edición " revision="14" battleScribeVersion="2.03" authorName="Diego Muñiz" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorUrl="csddmv@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <readme>Esto es for fun. Cualquier error o sugerencia serán bienvenidas
 
 En este sistema se agruparán el sistema de Warhammer 40000 5ª edición, así como todos los los codex que se usarán en este sistema cerrado.
@@ -30,7 +30,7 @@ Prueba</readme>
     <costType id="puntos" name="Pts" defaultCostLimit="0" hidden="false"/>
   </costTypes>
   <profileTypes>
-    <profileType id="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Unidad">
+    <profileType id="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Unidad" kind="model" sortIndex="1">
       <characteristicTypes>
         <characteristicType id="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" name="Tipo"/>
         <characteristicType id="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="HA"/>
@@ -44,7 +44,7 @@ Prueba</readme>
         <characteristicType id="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" name="S"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="725a358c-765b-498c-8de5-399fc0c0725f" name="Vehículo">
+    <profileType id="725a358c-765b-498c-8de5-399fc0c0725f" name="Vehículo" kind="model" sortIndex="3">
       <characteristicTypes>
         <characteristicType id="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="HP"/>
         <characteristicType id="8cdd4fef-d1ba-4007-992c-b6f93e86d43f" name="Frontal"/>
@@ -53,7 +53,7 @@ Prueba</readme>
         <characteristicType id="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Tipo"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" name="Bípode">
+    <profileType id="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" name="Bípode" kind="model" sortIndex="2">
       <characteristicTypes>
         <characteristicType id="5ee4ff0b-b244-4670-9d05-91d10f80c32e" name="HA"/>
         <characteristicType id="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5" name="HP"/>
@@ -66,7 +66,7 @@ Prueba</readme>
         <characteristicType id="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Tipo"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Arma">
+    <profileType id="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" name="Arma" kind="weapon" sortIndex="5">
       <characteristicTypes>
         <characteristicType id="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" name="Alcance"/>
         <characteristicType id="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" name="F"/>
@@ -74,12 +74,12 @@ Prueba</readme>
         <characteristicType id="077c342f-d7b9-45c6-b8af-88e97cafd3a2" name="Tipo"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Equipo">
+    <profileType id="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Equipo" kind="weapon" sortIndex="8">
       <characteristicTypes>
         <characteristicType id="21befb24-fc85-4f52-a745-64b2e48f8228" name="Descripcción"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="286c-0cd4-7630-47d0" name="Edificio">
+    <profileType id="286c-0cd4-7630-47d0" name="Edificio" sortIndex="12">
       <characteristicTypes>
         <characteristicType id="83f8-a458-93f9-3e46" name="Blindaje"/>
         <characteristicType id="0e9c-76b3-2877-614d" name="Capacidad"/>
@@ -88,13 +88,13 @@ Prueba</readme>
         <characteristicType id="ff97-f5f0-521b-eaf4" name="Tipo"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="ae70-4738-0161-bec0" name="Poder Psíquico">
+    <profileType id="ae70-4738-0161-bec0" name="Poder Psíquico" kind="spell" sortIndex="7">
       <characteristicTypes>
         <characteristicType id="fd64-cbc4-94de-24cc" name="Alcance"/>
         <characteristicType id="ad96-dfa4-b4ed-656d" name="Detalles"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="9c33-b0c8-74bd-e5a7" name="Poder Psíquico (Proyectil)">
+    <profileType id="9c33-b0c8-74bd-e5a7" name="Poder Psíquico (Proyectil)" kind="spell" sortIndex="6">
       <characteristicTypes>
         <characteristicType id="5bf6-378a-0cb7-b079" name="Alcance"/>
         <characteristicType id="12da-9b3e-f37b-bc35" name="F"/>
@@ -103,12 +103,12 @@ Prueba</readme>
         <characteristicType id="a812-390d-dff6-dabd" name="Detalles"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="c970-b832-a956-1ac8" name="Habilidad">
+    <profileType id="c970-b832-a956-1ac8" name="Habilidad" kind="ability" sortIndex="9">
       <characteristicTypes>
         <characteristicType id="917b-713d-7c3d-7a9e" name="Descripción"/>
       </characteristicTypes>
     </profileType>
-    <profileType id="d12a-b581-e1f4-1193" name="Transporte">
+    <profileType id="d12a-b581-e1f4-1193" name="Transporte" kind="model" sortIndex="4">
       <characteristicTypes>
         <characteristicType id="eeb7-edf8-2c77-59b6" name="HP"/>
         <characteristicType id="584e-15ce-949b-e298" name="Frontal"/>
@@ -164,16 +164,6 @@ Prueba</readme>
             <constraint field="selections" scope="parent" value="3" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab9d-e6e8-17b8-af1e" type="max"/>
           </constraints>
         </categoryLink>
-      </categoryLinks>
-    </forceEntry>
-    <forceEntry id="41e7-39b7-0228-e766" name="Muerte en las Calles" hidden="false">
-      <categoryLinks>
-        <categoryLink id="6e724632-cf44-9d21-8f7a-c05fff71b966-ff36a6f3-19bf-4f48-8956-adacfd28fe74" name="No Ocupa Espacio" hidden="false" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" primary="false"/>
-      </categoryLinks>
-    </forceEntry>
-    <forceEntry id="d48c-a71b-2cd9-c8e6" name="Apocalipsis" hidden="false">
-      <categoryLinks>
-        <categoryLink id="2ab3ec2f-b302-e8d0-fcd4-4d3d19033c54-ff36a6f3-19bf-4f48-8956-adacfd28fe74" name="No Ocupa Espacio" hidden="false" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" primary="false"/>
       </categoryLinks>
     </forceEntry>
   </forceEntries>
