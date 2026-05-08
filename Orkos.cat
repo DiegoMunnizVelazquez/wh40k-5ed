@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="fe1e-9d05-9036-5244" name="Orkos" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" revision="3" authorUrl="csddmv@gmail.com" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="fe1e-9d05-9036-5244" name="Orkos" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" revision="4" authorUrl="csddmv@gmail.com" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" battleScribeVersion="2.03" type="catalogue">
   <sharedRules>
     <rule name="¡Waaagh!" id="42e1-f7fd-5e72-83fa" hidden="false" publicationId="11a0-7b47-fa28-1d82" page="31">
       <description>Una vez por partida, el jugador orko puede declarar un ¡Waaagh! durante su fase de Disparo. El ¡Waaagh! no puede declararse en el primer turno ya que debe cobrar fuerza. En el turno en que los orkos declaren un ¡Waaagh! todas las unidades de infanteria orkas estarán sujetas a la regla especial de veloces (excepto las unidades de gretchins que son demasiado debiluchas para organizar un ¡Waaagh! con todas las de la ley). Si una unidad obtiene un resultado de 1 mientras efectúa este movimiento de ¡Waaagh!, los orkos que la componen empiezan a luchar entre si antes de alcanzar al enemigo y una miniatura de la unidad sufrirá una herida. Recuerda que la unidad puede mover los 3 cm y asaltar normalmente.</description>
@@ -4512,18 +4512,12 @@ Si obtienes un resultado de 1, ese vehículo debe moverse directamente lo más 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="81aa-affd-5dfd-d4ab" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Arma de combate cuerpo a cuerpo para Dreadnoughts" hidden="false" id="4f86-8050-f114-58f0" type="selectionEntry" targetId="f626-c089-ea56-0ee4" sortIndex="2">
-          <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="6fd8-6382-ee00-d93e-min" includeChildSelections="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6fd8-6382-ee00-d93e-max" includeChildSelections="false"/>
-          </constraints>
-        </entryLink>
       </entryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Arma" id="9c55-e4c6-1e6d-bf87" hidden="false" defaultSelectionEntryId="e28b-e211-59ad-3567" sortIndex="3">
+        <selectionEntryGroup name="Arma" id="9c55-e4c6-1e6d-bf87" hidden="false" defaultSelectionEntryId="32e1-b778-9535-c35e" sortIndex="3">
           <constraints>
-            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="c1a2-ce13-aee8-280e-min" includeChildSelections="false"/>
-            <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c1a2-ce13-aee8-280e-max" includeChildSelections="false"/>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="c1a2-ce13-aee8-280e-min" includeChildSelections="false"/>
+            <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="c1a2-ce13-aee8-280e-max" includeChildSelections="false"/>
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Lanzakohetez" hidden="false" id="29f4-f526-8674-f0b6" type="selectionEntry" targetId="616c2e10-66c8-4acd-a5e8-1ab7bb0414c6" sortIndex="3">
@@ -4560,7 +4554,8 @@ Si obtienes un resultado de 1, ese vehículo debe moverse directamente lo más 
             </entryLink>
             <entryLink import="true" name="Arma de combate cuerpo a cuerpo para Dreadnoughts" hidden="false" id="32e1-b778-9535-c35e" type="selectionEntry" targetId="f626-c089-ea56-0ee4" sortIndex="5">
               <constraints>
-                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e76d-f29f-f803-f5cd" includeChildSelections="false"/>
+                <constraint type="max" value="4" field="selections" scope="parent" shared="true" id="e76d-f29f-f803-f5cd" includeChildSelections="false"/>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="fdde-17d9-fa14-4ddf" includeChildSelections="false"/>
               </constraints>
               <costs>
                 <cost name="Pts" typeId="puntos" value="15"/>
