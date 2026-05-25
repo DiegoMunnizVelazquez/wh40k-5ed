@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="8cf6-c83d-3eeb-e95c" name="Warhammer 40,000 5ª Edición " revision="14" battleScribeVersion="2.03" authorName="Diego Muñiz" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorUrl="csddmv@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="8cf6-c83d-3eeb-e95c" name="Warhammer 40,000 5ª Edición " revision="15" battleScribeVersion="2.03" authorName="Diego Muñiz" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorUrl="csddmv@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <readme>Esto es for fun. Cualquier error o sugerencia serán bienvenidas
 
 En este sistema se agruparán el sistema de Warhammer 40000 5ª edición, así como todos los los codex que se usarán en este sistema cerrado.
@@ -27,7 +27,7 @@ Prueba</readme>
     <publication name="GitHub" id="b97a-1882-6351-5350" hidden="false" publisherUrl="https://github.com/DiegoMunnizVelazquez/wh40k-5ed" shortName="GitHubRepo" publisher="GitHub"/>
   </publications>
   <costTypes>
-    <costType id="puntos" name="Pts" defaultCostLimit="0" hidden="false"/>
+    <costType id="puntos" name="Pts" defaultCostLimit="1750" hidden="false"/>
   </costTypes>
   <profileTypes>
     <profileType id="2d6001b0-980e-46d2-bcc2-a9fc60109afd" name="Unidad" kind="model" sortIndex="1">
@@ -76,7 +76,7 @@ Prueba</readme>
     </profileType>
     <profileType id="72c5eafc-75bf-4ed9-b425-78009f1efe82" name="Equipo" kind="weapon" sortIndex="8">
       <characteristicTypes>
-        <characteristicType id="21befb24-fc85-4f52-a745-64b2e48f8228" name="Descripcción"/>
+        <characteristicType id="21befb24-fc85-4f52-a745-64b2e48f8228" name="Descripción"/>
       </characteristicTypes>
     </profileType>
     <profileType id="286c-0cd4-7630-47d0" name="Edificio" sortIndex="12">
@@ -118,6 +118,11 @@ Prueba</readme>
         <characteristicType id="f90f-9546-155f-c585" name="Capacidad"/>
         <characteristicType id="8cb4-5303-693b-0256" name="Puntos de acceso"/>
         <characteristicType id="85c0-7904-8bac-a359" name="Puntos de disparo"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType name="Arma de combate" id="cdf6-05fb-71d5-1982" hidden="false" kind="weapon">
+      <characteristicTypes>
+        <characteristicType name="Descripción" id="11b5-56ae-f93d-b524" kind="longText"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -426,64 +431,249 @@ Granadas perforantes: 6+1D6
 
 Bombas de fusión: 8+2D6</description>
     </rule>
+    <rule name="Psíquico" id="72c2-fd50-9880-c83c" hidden="false">
+      <description>Los psíquicos son guerreros dotados de poderes increíblemente terribles, que canalizan las malignas energías de la disformidad.
+
+
+
+
+Estos poderes varían de una raza a otra y, en ocasiones, de un psíquico a otro. Los poderes psíquicos disponibles para nuestras miniaturas no los trataremos en esta página, sino que se describen en detalle en los codex, donde encontrarás reglas más completas para cada uno de los poderes. Las reglas generales que tratamos a continuación explican cómo se utilizan los poderes psíquicos. Las excepciones a estas reglas se explican en los codex.
+
+
+
+
+Los psíquicos pueden utilizar un poder psíquico por turno del jugador. Para utilizar un poder de forma eficaz, el psíquico debe superar un chequeo psíquico, que es un chequeo de liderazgo normal. Ten en cuenta que este chequeo
+siempre tiene que efectuarse utilizando el atributo Liderazgo del psíquico. Aunque hay situaciones en las que los chequeos de liderazgo se efectúan con los atributos de Liderazgo de otras miniaturas, los chequeos para utilizar los
+poderes psíquicos siempre se efectúan usando el Liderazgo del propio psíquico.
+
+
+
+
+PELIGROS DE LA DISFORMIDAD
+Si el resultado del chequeo psíquico es un doble 1 o un doble 6, algo horrible le ha sucedido al psíquico. Los demonios de la disformidad entran en la mente del psíquico y amenazan con tragárselo y destruirlo. El psíquico sufre 1
+herida sin ninguna tirada de salvación por armadura o por cobertura posible. Sí puede efectuar una tirada de salvación invulnerable, pero el poder de la disformidad es tan grande que las tiradas de salvación superadas se deberán
+volver a tirar. Ten en cuenta que un psíquico que obtiene un doble 1 en los dados podrá seguir utilizando su poder, incluso si ha resultado herido o muerto.
+
+
+
+
+PROYECTILES PSÍQUICOS
+Es habitual que los poderes psíquicos tomen la forma de proyectiles. Utilizar un proyectil psíquico cuenta como disparar con un arma de fuego (un arma de asalto si no se especifica lo contrario). Por eso el psíquico debe ser capaz
+de ver a la unidad objetivo, no puede estar trabado en combate y no puede haber corrido en la fase de disparo si quiere utilizar un proyectil psíquico. Igualmente, si un psíquico ataca a una unidad con un proyectil psíquico, solo
+podrá asaltar a esa unidad en la subsiguiente fase de asalto. Incluso si posee una regla especial que le permite utilizar más de un poder psíquico por turno, un psíquico solo podrá utilizar un proyectil psíquico (igual que las miniaturas
+solo pueden disparar un arma de fuego por turno). Sin embargo si puede disparar mas de un arma de fuego por turno, el psíquico puede reemplazar el disparo de una de sus armas por un proyectil psíquico (pero seguirá sin poder usar el mismo poder dos veces en un mismo turno).</description>
+    </rule>
+    <rule name="Criatura monstruosa" id="bc40-f8c8-be5a-20ac" hidden="false" publicationId="1595-b68b-b80b-025d" page="51">
+      <description>Estas aterradoras criaturas son mucho más grandes que sus oponentes. Masacran a los enemigos que se atreven a enfrentarse a ellas y apartan los tanques a manotazos. Entre ellas se encuentran los grandes demonios, los avatares eldars o el temido cárnifex tiránido.
+
+
+MOVIMIENTO
+Todas las criaturas monstruosas poseen la regla especial moverse a través de cobertura (consulta la página 75). Simplemente se abren camino derribando árboles y ruinas.
+
+
+DISPARO
+Las criaturas monstruosas pueden disparar hasta dos armas (una vez cada una) por fase de disparo. De todas maneras, deben disparar las dos armas contra el mismo objetivo. Además, las criaturas monstruosas poseen la regla especial implacables (consulta la página 76).
+
+
+A menos que una de sus reglas especiales especifique lo contrario, las criaturas monstruosas no pueden tirarse ¡Cuerpo a tierra!, ni voluntariamente ni de ninguna otra forma. Además, una criatura monstruosa debe tener tras una cobertura como mínimo el 50% de su cuerpo (como se explica en la página 16) para considerarse a cubierto desde el punto de vista de la mayoría de las miniaturas que disparan. Además, estar dentro de una escenografía de área no les proporciona automáticamente la tirada de salvación por cobertura (tiene preferencia la regla del 50% del cuerpo). Para ellas, la cobertura funciona de la misma forma que para los vehículos (consulta la página 62). Como siempre, si no sabes si el 50% del cuerpo de la miniatura está a cubierto, deberás disminuir la tirada de salvación por cobertura en -1.
+
+
+ASALTO
+Las heridas infligidas por una criatura monstruosa en combate cuerpo a cuerpo ignoran la tirada de salvación por armadura, igual que un arma de energía. Además, las criaturas monstruosas tiran un dado adicional (2D6 + Fuerza) para determinar si su ataque en combate cuerpo a cuerpo a un vehículo penetra el blindaje.</description>
+    </rule>
+    <rule name="Unidad retropropulsada" id="d6f4-cfda-75c5-f2f1" hidden="false" publicationId="1595-b68b-b80b-025d" page="51">
+      <description>MOVIMIENTO
+
+Las unidades retropropulsadas pueden utilizar sus retrorreactores para moverse un máximo de 30 cm durante la fase de movimiento. Este movimiento es opcional y pueden decidir mover como la infantería normal si lo prefieren. Al utilizar retrorreactores, pueden moverse libremente por encima de otras miniaturas y toda clase de terrenos. Sin embargo, si el movimiento empieza o finaliza en una zona de terreno difícil, la unidad debe efectuar un chequeo por terreno peligroso. Una unidad retropropulsada no puede finalizar su movimiento encima de otra miniatura o de algún elemento que se considere terreno infranqueable, a no ser que sea posible colocar las miniaturas encima. Si lo hacen, el terreno infranqueable se considerará terreno peligroso. Las unidades retropropulsadas pueden entrar en combate utilizando despliegue rápido (consulta la página 95).
+
+
+Movimiento de retirada
+Las unidades retropropulsadas tiran 3D6 al retirarse (3=8 cm, 4=10 cm, 5=12 cm, 6=15 cm, 7=18 cm, 8=20 cm, 9=22 cm, 10=25 cm, 11=28 cm, 12=30 cm, 13=33 cm, 14= 35 cm, 15=38 cm, 16=40 cm, 17=42 cm, 18=45 cm), pues para ello siempre utilizan sus retrorreactores. Pueden moverse sobre cualquier tipo de obstáculo durante la retirada, pero si finalizan su movimiento en terreno difícil (o encima de algún elemento de terreno infranqueable), deberán realizar un chequeo por terreno peligroso. No podrán finalizar su movimiento encima de otras miniaturas, por lo que deberán desviarse lo menos posible en su retirada para evitarlo, como una unidad normal cuando se retira a pie. Si no pueden hacerlo, quedarán atrapados y destruidos.
+
+
+DISPARAR
+Las unidades retropropulsadas siguen las mismas reglas que las unidades de infantería.
+
+
+ASALTO
+Las unidades retropropulsadas asaltan 15 cm, igual que las tropas de infantería. Este movimiento se ve dificultado por el terreno difícil como en el caso de las unidades de infantería, puesto que cubren siempre a pie los últimos metros de un asalto.</description>
+    </rule>
+    <rule name="Unidad con retrocohetes" id="d1d5-2744-48fb-be81" hidden="false" publicationId="1595-b68b-b80b-025d" page="52">
+      <description>Algunas unidades retropropulsadas están equipadas con un tipo especial de retrorreactor denominado &quot;retrocohete&quot;. Los retrocohetes están diseñados como plataformas de disparo estables en vez de como medio para trabarse en combate cuerpo a cuerpo. Los Tau son los que utilizan esta tecnología de manera más habitual. Los retrocohetes se diferencian de los retrorreactores en lo siguiente:
+
+· Las unidades equipadas con retrocohetes solo mueven 15 cm en la fase de movimiento, pero pueden mover otros 15 cm en la fase de asalto incluso si no asaltan. Cuando las unidades que utilizan retrocohetes se mueven en la fase de asalto y no asaltan, considerarán el terreno difícil como las demás unidades retropropulsadas lo hacen en la fase de movimiento.
+
+· Las miniaturas con retrocohetes son implacables (consulta la página 76).</description>
+    </rule>
+    <rule name="Motocicletas" id="b722-581c-bc45-7f56" hidden="false" publicationId="1595-b68b-b80b-025d" page="53">
+      <description>PROTECCIÓN ADICIONAL
+
+Las motocicletas son grandes y sólidas y suelen tener algún blindaje y escudos deflectores para repeler el fuego enemigo. Los motoristas se benefician de esta protección que incrementa su atributo de Resistencia en 1. Ten en cuenta que este incremento no cuenta a la hora de resolver una muerte instantánea (consulta la página 26).
+
+
+MOVIMIENTO
+Las motocicletas pueden mover hasta 30 cm en la fase de movimiento y no ven reducido su movimiento por el terreno difícil. Sin embargo, consideran el terreno difícil como terreno peligroso.
+
+
+Las motocicletas tienen turbopropulsores (consulta la página 76).
+
+
+Movimiento de retirada
+Puesto que las motocicletas se mueven muy rápido, al retirarse tiran 3D6 en vez de 2D6 (3=8 cm, 4=10 cm, 5=12 cm, 6=15 cm, 7=18 cm, 8=20 cm, 9=22 cm, 10=25 cm,
+11=28 cm, 12=30 cm, 13=33 cm, 14= 35 cm, 15=38 cm, 16=40 cm, 17=42 cm, 18=45 cm). Recuerda que consideran el terreno difícil como peligroso.
+
+
+DISPARO
+Las motocicletas no pueden correr en la fase de disparo.
+
+
+Las motocicletas son implacables (consulta la pág. 76).
+
+
+Cada motocicleta de la unidad puede disparar un arma por cada motorista que la monte. Por tanto, una motocicleta de ataque de los Marines Espaciales con un conductor y un pasajero en un sidecar podrá disparar dos armas.
+
+
+ASALTO
+El terreno difícil no reduce el movimiento de asalto de las motocicletas. Sin embargo, una miniatura que entre en terreno difícil, se mueva a través de él o asalte a un enemigo que esté en terreno difícil o detrás de un obstáculo, deberá efectuar un chequeo por terreno peligroso.</description>
+    </rule>
+    <rule name="Motocicletas a reacción" id="6fea-20ca-60b6-f234" hidden="false" publicationId="1595-b68b-b80b-025d" page="53">
+      <description>Las motocicletas a reacción se mueven como las motocicletas pero con algunas excepciones:
+
+
+· En la fase de movimiento, se pueden mover libremente sobre otras miniaturas y todo tipo de terreno. Sin embargo, si se empiezan o acaban su movimiento en terreno difícil, deberán efectuar un chequeo por terreno peligroso. Las motocicletas a reacción no pueden finalizar su movimiento sobre otras miniaturas o sobre terreno infranqueable, a no ser que sea físicamente posible colocarse encima de este, pero si lo hacen considerarán el terreno infranqueable como terreno peligroso.
+
+
+· En la fase de asalto, actúan como las motocicletas, puesto que deben moverse cerca del suelo para poder luchar.
+
+
+· Cuando se están retirando, también pueden moverse sobre otras miniaturas y terreno, pero si finalizan su movimiento en terreno difícil (o sobre algún elemento de terreno infranqueable) deben efectuar un chequeo por terreno peligroso. No pueden finalizar su movimiento sobre otras miniaturas, por lo que deberán alterar la dirección de su retirada lo mínimo posible para evitarlo, tal como lo hace una unidad normal cuando se retira a pie. Si no pueden hacerlo, quedan atrapados y son destruidos inmediatamente.
+
+
+Motocicletas a reacción eldars
+Las motocicletas a reacción eldars (incluidas las de los Eldars Oscuros) pueden mover un máximo de 15 cm en la fase de asalto, incluso si no asaltan. Cuando se mueven en la fase de asalto y no asaltan, considerarán el terreno difícil como lo hacen en la fase de movimiento.</description>
+    </rule>
+    <rule name="Bestias y Caballería" id="1c05-d1e6-a25a-918b" hidden="false" publicationId="1595-b68b-b80b-025d" page="54">
+      <description>MOVIMIENTO
+
+Las bestias y la caballería mueven como la infantería.
+
+
+Movimiento de retirada
+Las bestias y la caballería se retiran como la infantería, pero tiran 3D6 (3=8 cm, 4=10 cm, 5=12 cm, 6=15 cm, 7=18 cm, 8=20 cm, 9=22 cm, 10=25 cm, 11=28 cm, 12=30 cm, 13=33 cm, 14= 35 cm, 15=38 cm, 16=40 cm, 17=42 cm, 18=45 cm) debido a su velocidad.
+
+
+DISPARO
+Las bestias no pueden disparar, pero la caballería si, y sigue las mismas reglas que la infantería.
+
+
+ASALTO
+Las bestias y la caballería son veloces (consulta la página 75).
+
+
+Las bestias y la caballería pueden efectuar un asalto especialmente rápido para cargar contra los enemigos. Al asaltar, pueden mover hasta 30 cm.
+
+
+Cuando asaltan a través de cobertura, las bestias y la caballería ven reducido su movimiento por el terreno difícil, por lo que se debe tirar un dado para determinar la distancia que pueden moverse, igual que en el caso de la infantería, pero se dobla el resultado mayor obtenido en los dados.
+
+
+Aparte de eso, asaltan como lo hace la infantería.</description>
+    </rule>
+    <rule name="Unidad de artillería" id="01b8-b97f-0668-0498" hidden="false" publicationId="1595-b68b-b80b-025d" page="55">
+      <description>LA UNIDAD
+
+Las unidades de artillería están formadas por un grupo de soldados (dotación) y la propia arma. Estas unidades son bastante complejas debido a que combinan vehículos e infantería. Las armas se consideran vehículos con Blindaje 10 (consulta la sección Vehículos). Cualquier impacto superficial o interno destruye el cañón (no se efectúa la tirada en las tablas de daños del vehículo, el cañón simplemente se retira). Si todos los miembros de la dotación mueren, los cañones se eliminan inmediatamente.
+
+
+Algunas veces, el jugador puede añadir líderes u otras miniaturas a la unidad de artillería. Estas miniaturas forman parte de la dotación en todos los sentidos y utilizarán sus armas de la manera habitual, incluso si son ligeramente diferentes al resto de la dotación. Los personajes independientes que se unan a la unidad no contarán como dotación ni podrán usar los cañones.
+
+
+MOVIMIENTO
+El terreno difícil frena el avance de estas unidades como a las de infantería y los cañones deben efectuar un chequeo por terreno peligroso al atravesar este tipo de terreno. En la unidad debe haber al menos un miembro de la dotación por cañón para que la unidad pueda mover; si hay menos, no podrá moverse.
+
+
+DISPARO
+A diferencia de otros vehículos, el cañón no se podrá disparar si la unidad de artillería ha movido en la fase de movimiento. Cualquier miembro de la dotación podrá disparar el cañón, siempre que esté a 5 cm o menos de él. Los miembros de la dotación que disparen el cañón no podrán disparar ninguna otra arma que lleven
+encima, mientras que los demás miembros (y cualquier personaje independiente que se haya unido a la unidad) si podrán disparar sus armas, incluso contra un objetivo diferente del del cañón. Los cañones no pueden dividir sus disparos y para disparar tanto el cañón como el miembro de la dotación que dispara deben tener línea de visión al objetivo (a no ser que sean armas de barrera de artillería). El alcance se mide desde el cañón.
+
+
+Cuando dispares contra una unidad de artillería tira un dado por cada impacto causado: con un resultado de 1-4 el cañón es impactado, mientras que con un resultado de 5-6 es un miembro de la dotación el que resulta impactado. Tira para herir al miembro de la dotación y para penetrar en el blindaje del arma con diferentes tiradas de dados.
+
+
+Si una unidad de artillería está ¡Cuerpo a tierra!, los cañones de la unidad no tienen protección adicional alguna.
+
+
+Las unidades de artillería no pueden correr en la fase de disparo.
+
+
+ASALTO
+Las unidades de artillería no pueden asaltar mientras incluyan algún cañón.
+
+
+Cuando sean asaltadas, desplaza las miniaturas que asaltan hasta estar en contacto con el miembro de la dotación o con el cañón de la forma habitual, pero a partir de ese momento el cañón se ignora. Todos los enemigos trabados tirarán para impactar y para herir contra la dotación (incluso si solo están trabados con el canon). Los miembros de la dotación que estén trabados pueden contraatacar, pero no los cañones.
+
+
+MORAL Y MOVIMIENTOS DE RETIRADA
+Para realizar los chequeos de moral y otros chequeos de liderazgo, y para la resolución del combate, ignora los cañones, como si no estuvieran. Puesto que necesitan
+como mínimo un miembro de la dotación por canon para poder mover la unidad, si una unidad de artillería no tiene un miembro por cañón cuando se está retirando, los cañones sin dotación se abandonan y se retiran del tablero. A continuación, el resto de la unidad se retira de la forma habitual. Si una unidad de artillería está obligada a retirarse del combate cuerpo a cuerpo y el enemigo puede realizar una persecución arrolladora, la unidad de artillería puede automáticamente la tirada de iniciativa y es destruida.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="27f4-3f80-5047-a64a" name="Granadas defensivas" publicationId="1595-b68b-b80b-025d" page="36, 63" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">La miniatura está equipada con Granadas defensivas</characteristic>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">La miniatura está equipada con Granadas defensivas</characteristic>
       </characteristics>
     </profile>
-    <profile id="8e64-1c75-85f5-7ac0" name="Arma de energía" publicationId="1595-b68b-b80b-025d" page="42" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+    <profile id="8e64-1c75-85f5-7ac0" name="Arma de energía" publicationId="1595-b68b-b80b-025d" page="42" hidden="false" typeId="cdf6-05fb-71d5-1982" typeName="Arma de combate">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">La miniatura se considera equipada con un arma de energía.</characteristic>
+        <characteristic name="Descripción" typeId="11b5-56ae-f93d-b524">La miniatura se considera equipada con un arma de energía.</characteristic>
       </characteristics>
     </profile>
     <profile id="6fa5-b37d-1b93-9529" name="Granadas de asalto" publicationId="1595-b68b-b80b-025d" page="36, 63" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">La miniatura está equipada con Granadas de asalto</characteristic>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">La miniatura está equipada con Granadas de asalto</characteristic>
       </characteristics>
     </profile>
-    <profile id="2434-afee-c960-b04e" name="Arma Psíquica" publicationId="1595-b68b-b80b-025d" page="50" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+    <profile id="2434-afee-c960-b04e" name="Arma Psíquica" publicationId="1595-b68b-b80b-025d" page="50" hidden="false" typeId="cdf6-05fb-71d5-1982" typeName="Arma de combate">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Las Armas Psíquicas se consideran armas de energía.
+        <characteristic name="Descripción" typeId="11b5-56ae-f93d-b524">Las Armas Psíquicas se consideran armas de energía.
 Adicionalmente, tras realizar las tiradas para impactar, herir y salvaciones invulnerables de la manera habitual, el psíquico deberá realizar un chequeo psíquico para poder utilizar el poder del arma contra un objetivo que haya sufrido al menos una herida de la misma. Deben aplicarse las reglas habituales de los poderes psíquicos, respetando el límite de poderes que el portador puede manifestar a lo largo de su turno. Si el psíquico supera el chequeo, la miniatura enemiga sufrirá una muerte instantanea independientenente de su atributo de Resistencia. Este poder no tiene efecto en miniaturas que son inmunes a la muerte instantanea, Vehículos o cualquier miniatura sin atributo de Heridas.</characteristic>
       </characteristics>
     </profile>
     <profile id="ba22-cd8e-0d95-8e72" name="Retrorreactores" publicationId="f176-f140-74d8-da7d" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Las miniaturas equipadas con retrorreactores se consideran unidades retropropulsadas, tal y como se describen en el reglamento de Warhammer 40,000. Además, los Marines Espaciales equipados con retrorreactores pueden saltar desde cañoneras Thunderhawk en vuelo rasante, utilizando sus retrorreactores para descender suavemente hasta el campo de batalla. Para representar esto, estas tropas pueden mantenerse en reserva y entrar en el campo de batalla utilizando las reglas de despliegue rapido (consulta la seccion Reglas Especiales de Misión en el reglamento de Warhammer 40,000).</characteristic>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Las miniaturas equipadas con retrorreactores se consideran unidades retropropulsadas, tal y como se describen en el reglamento de Warhammer 40,000. Además, los Marines Espaciales equipados con retrorreactores pueden saltar desde cañoneras Thunderhawk en vuelo rasante, utilizando sus retrorreactores para descender suavemente hasta el campo de batalla. Para representar esto, estas tropas pueden mantenerse en reserva y entrar en el campo de batalla utilizando las reglas de despliegue rapido (consulta la seccion Reglas Especiales de Misión en el reglamento de Warhammer 40,000).</characteristic>
       </characteristics>
     </profile>
     <profile id="2ce5-817f-85b3-3115" name="Reflector" publicationId="f176-f140-74d8-da7d" page="103" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Los reflectores pueden utilizarse cuando se aplican las reglas de combate nocturno. Si un vehículo dispone de reflector, debera seguir aplicando las reglas de combate nocturno al elegir su objetivo; pero, una vez adquirido un objetivo, lo iluminara con el reflector de forma que, durante el resto de la fase de disparo, cualquier otra unidad que dispare a la unidad iluminada no deberá aplicar la regla de combate nocturno. Sin embargo, el vehiculo que utiliza el reflector podrá ser designado como objetivo en el siguiente turno del enemigo como si las reglas de combate nocturno no estuvieran en efecto, ya que el enemigo puede ver la luz del reflector.</characteristic>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Los reflectores pueden utilizarse cuando se aplican las reglas de combate nocturno. Si un vehículo dispone de reflector, debera seguir aplicando las reglas de combate nocturno al elegir su objetivo; pero, una vez adquirido un objetivo, lo iluminara con el reflector de forma que, durante el resto de la fase de disparo, cualquier otra unidad que dispare a la unidad iluminada no deberá aplicar la regla de combate nocturno. Sin embargo, el vehiculo que utiliza el reflector podrá ser designado como objetivo en el siguiente turno del enemigo como si las reglas de combate nocturno no estuvieran en efecto, ya que el enemigo puede ver la luz del reflector.</characteristic>
       </characteristics>
     </profile>
     <profile id="88ef-f347-6da1-b41f" name="Granadas Perforantes" publicationId="1595-b68b-b80b-025d" page="36, 63" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">La miniatura está equipada con Granadas Perforantes</characteristic>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">La miniatura está equipada con Granadas Perforantes</characteristic>
       </characteristics>
     </profile>
-    <profile id="562f-8ac0-91b5-c835" name="Martillo de Trueno" publicationId="1595-b68b-b80b-025d" page="42" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+    <profile id="562f-8ac0-91b5-c835" name="Martillo de Trueno" publicationId="1595-b68b-b80b-025d" page="42" hidden="false" typeId="cdf6-05fb-71d5-1982" typeName="Arma de combate">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un Martillo de Trueno es un arma de energía que duplica la fuerza del usuario al igual que un puño de combate. Adicionalmente, las miniaturas que no mueran tras recibir al menos una herida por un Martillo de Trueno quedarán aturdidas y verán su Iniciativa reducida a 1 hasta el final del siguiente turno del jugador. Contra los Vehículos sin Iniciativa, los ataques que no inflinjan ningún daño, también inflingirán un resultado de Tripulación Acobardada.</characteristic>
+        <characteristic name="Descripción" typeId="11b5-56ae-f93d-b524">Un Martillo de Trueno es un arma de energía que duplica la fuerza del usuario al igual que un puño de combate. Adicionalmente, las miniaturas que no mueran tras recibir al menos una herida por un Martillo de Trueno quedarán aturdidas y verán su Iniciativa reducida a 1 hasta el final del siguiente turno del jugador. Contra los Vehículos sin Iniciativa, los ataques que no inflinjan ningún daño, también inflingirán un resultado de Tripulación Acobardada.</characteristic>
       </characteristics>
     </profile>
-    <profile id="dfa9-ab46-df3f-727f" name="Puño de Combate" publicationId="1595-b68b-b80b-025d" page="42" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+    <profile id="dfa9-ab46-df3f-727f" name="Puño de Combate" publicationId="1595-b68b-b80b-025d" page="42" hidden="false" typeId="cdf6-05fb-71d5-1982" typeName="Arma de combate">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un puño de combate (o &quot;garra de combate&quot;) es un guantelete blindado rodeado de un campo disruptor de energía. Un puno de combate es un arma de energía que dobla la
+        <characteristic name="Descripción" typeId="11b5-56ae-f93d-b524">Un puño de combate (o &quot;garra de combate&quot;) es un guantelete blindado rodeado de un campo disruptor de energía. Un puno de combate es un arma de energía que dobla la
 Fuerza original de quien la usa (hasta un máximo de 10). No obstante, los punos de combate son difíciles y pesados de manejar, por lo que una miniatura equipada con un
 puño de combate siempre atacará con Iniciativa 1 (ignora cualquier bonificación a la Iniciativa por reglas especiales, equipo, etc.).</characteristic>
       </characteristics>
     </profile>
-    <profile id="729e-f6e7-1eea-7223" name="Cuchillas Relámpago" publicationId="1595-b68b-b80b-025d" page="42" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+    <profile id="729e-f6e7-1eea-7223" name="Cuchillas Relámpago" publicationId="1595-b68b-b80b-025d" page="42" hidden="false" typeId="cdf6-05fb-71d5-1982" typeName="Arma de combate">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Una cuchilla relámpago es un arma de energía que, además, permiten repetir cualquier tirada para herir fallida.</characteristic>
+        <characteristic name="Descripción" typeId="11b5-56ae-f93d-b524">Una cuchilla relámpago es un arma de energía que, además, permiten repetir cualquier tirada para herir fallida.</characteristic>
       </characteristics>
     </profile>
     <profile id="931c-06e0-1d62-e106" name="Armas Envenenadas" publicationId="1595-b68b-b80b-025d" page="42" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Las armas envenenadas van desde espadas recubiertas de veneno a garras hipodermicas. No se basan en la comparación de la Fuerza con la Resistencia para herir, sino que
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Las armas envenenadas van desde espadas recubiertas de veneno a garras hipodermicas. No se basan en la comparación de la Fuerza con la Resistencia para herir, sino que
 siempre hieren con un número fijo, generalmente indicado entre paréntesis. En la mayoría de casos es 4+. Algunos venenos son tan letales que pueden llegar a matar con una
 sola gota (hieren con un 3+, incluso con un 2+, como se describe en el codex correspondiente). Además, si la Fuerza del soldado es igual o superior a la Resistencia de la vícti
 ma, el soldado podrá repetir las tiradas para herir fallidas en combate cuerpo a cuerpo. Estas armas no tienen ventajas contra los vehículos.</characteristic>
@@ -491,12 +681,12 @@ ma, el soldado podrá repetir las tiradas para herir fallidas en combate cuerpo 
     </profile>
     <profile id="59f3-98ac-9e4f-1169" name="Descargadores de Humo" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">El vehículo cuenta con Descargadores de Humo</characteristic>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">El vehículo cuenta con Descargadores de Humo</characteristic>
       </characteristics>
     </profile>
     <profile id="dbc6-a593-44fa-6777" name="Arma de combate cuerpo a cuerpo para Dreadnoughts" publicationId="1595-b68b-b80b-025d" page="73" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un arma de combate cuerpo a cuerpo de un dreadnought es un arma de energía y dobla la Fuerza del bípode en combate cuerpo a cuerpo (hasta un máximo de 10).
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un arma de combate cuerpo a cuerpo de un dreadnought es un arma de energía y dobla la Fuerza del bípode en combate cuerpo a cuerpo (hasta un máximo de 10).
 
 Si el bípode sufre un resultado de armamento destruido y el jugador elige el arma de combate cuerpo a cuerpo, el bípode pierde los modificadores conferidos
 por el arma de combate cuerpo a cuerpo del dreadnought (y los de cualquier otra arma que lleve fijada en el mismo brazo).
@@ -506,7 +696,12 @@ Si un bípode está armado con dos o más armas de combate cuerpo a cuerpo, obti
     </profile>
     <profile id="178c-4e2d-91ce-bc1b" name="Bomba de Fusión" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">La miniatura está equipada con Bombas de Fusión</characteristic>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">La miniatura está equipada con Bombas de Fusión</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Arma de combate cuerpo a cuerpo" typeId="cdf6-05fb-71d5-1982" typeName="Arma de combate" hidden="false" id="232a-872d-f770-2ce7">
+      <characteristics>
+        <characteristic name="Descripción" typeId="11b5-56ae-f93d-b524"/>
       </characteristics>
     </profile>
   </sharedProfiles>
@@ -578,6 +773,55 @@ Si un bípode está armado con dos o más armas de combate cuerpo a cuerpo, obti
       <infoLinks>
         <infoLink id="dc93-d483-1f40-2867" name="Descargadores de Humo" hidden="false" targetId="7654-3d41-1fbd-d710" type="rule"/>
         <infoLink id="27b8-65b1-5b38-10be" name="Descargadores de Humo" hidden="false" targetId="59f3-98ac-9e4f-1169" type="profile"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Arma de combate cuerpo a cuerpo" id="613c-90cb-5674-bf95" hidden="false">
+      <infoLinks>
+        <infoLink name="Arma de combate cuerpo a cuerpo" id="e131-129a-eca1-693a" hidden="false" type="profile" targetId="232a-872d-f770-2ce7"/>
+        <infoLink name="Arma de Combate Cuerpo a Cuerpo" id="dd79-0106-1386-64ee" hidden="false" type="rule" targetId="1e15-345f-8925-f91b"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Criatura monstruosa" id="0cf1-0713-bbc8-cbdc" hidden="false">
+      <infoLinks>
+        <infoLink name="Criatura monstruosa" id="bbc1-8276-7e27-bd2d" hidden="false" type="rule" targetId="bc40-f8c8-be5a-20ac"/>
+        <infoLink name="Implacables" id="04d9-fffc-61b8-f48b" hidden="false" type="rule" targetId="470c-bf6a-caae-15c9"/>
+        <infoLink name="Moverse a Través de Cobertura" id="3696-a02f-5f67-70f9" hidden="false" type="rule" targetId="6cf1-d139-8b14-6083"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Unidad retropropulsada" id="9cdf-bda3-6dab-3a27" hidden="false">
+      <infoLinks>
+        <infoLink name="Unidad retropropulsada" id="3ba0-9233-356e-ffda" hidden="false" type="rule" targetId="d6f4-cfda-75c5-f2f1"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Motocicletas" id="8f6f-a28c-d5e4-9511" hidden="false">
+      <infoLinks>
+        <infoLink name="Turbopropulsores" id="92a8-1a53-e969-bd34" hidden="false" type="rule" targetId="146e-d4a2-283a-f0f5"/>
+        <infoLink name="Motocicletas" id="74b7-f4cf-cf7f-acfe" hidden="false" type="rule" targetId="b722-581c-bc45-7f56"/>
+        <infoLink name="Implacables" id="b5fc-d45f-86d9-c76f" hidden="false" type="rule" targetId="470c-bf6a-caae-15c9"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Unidad con retrocohetes" id="7808-b8a7-4247-8b91" hidden="false">
+      <infoLinks>
+        <infoLink name="Unidad con retrocohetes" id="1333-b311-ed43-31d1" hidden="false" type="rule" targetId="d1d5-2744-48fb-be81"/>
+        <infoLink name="Unidad retropropulsada" id="c496-6f47-6bef-57e7" hidden="false" type="infoGroup" targetId="9cdf-bda3-6dab-3a27"/>
+        <infoLink name="Implacables" id="a501-0094-339e-337f" hidden="false" type="rule" targetId="470c-bf6a-caae-15c9"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Motocicletas a reacción" id="3c91-d34e-f3b2-7232" hidden="false">
+      <infoLinks>
+        <infoLink name="Motocicletas a reacción" id="3ed5-efb8-8942-b504" hidden="false" type="rule" targetId="6fea-20ca-60b6-f234"/>
+        <infoLink name="Motocicletas" id="a0df-da20-f975-824d" hidden="false" type="infoGroup" targetId="8f6f-a28c-d5e4-9511"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Bestias y Caballería" id="0859-a7ad-262b-1463" hidden="false">
+      <infoLinks>
+        <infoLink name="Bestias y Caballería" id="bc32-d5ba-3a3e-9cdb" hidden="false" type="rule" targetId="1c05-d1e6-a25a-918b"/>
+        <infoLink name="Veloces" id="bb54-fdf6-ef5b-5ef7" hidden="false" type="rule" targetId="d110-fc1c-250c-54d4"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Unidad de artillería" id="6f86-bf95-0deb-ce1e" hidden="false">
+      <infoLinks>
+        <infoLink name="Unidad de artillería" id="6b6d-ae76-cdfe-57c8" hidden="false" type="rule" targetId="01b8-b97f-0668-0498"/>
       </infoLinks>
     </infoGroup>
   </sharedInfoGroups>

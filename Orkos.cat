@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="fe1e-9d05-9036-5244" name="Orkos" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" revision="4" authorUrl="csddmv@gmail.com" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="fe1e-9d05-9036-5244" name="Orkos" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" revision="5" authorUrl="csddmv@gmail.com" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" battleScribeVersion="2.03" type="catalogue">
   <sharedRules>
     <rule name="¡Waaagh!" id="42e1-f7fd-5e72-83fa" hidden="false" publicationId="11a0-7b47-fa28-1d82" page="31">
       <description>Una vez por partida, el jugador orko puede declarar un ¡Waaagh! durante su fase de Disparo. El ¡Waaagh! no puede declararse en el primer turno ya que debe cobrar fuerza. En el turno en que los orkos declaren un ¡Waaagh! todas las unidades de infanteria orkas estarán sujetas a la regla especial de veloces (excepto las unidades de gretchins que son demasiado debiluchas para organizar un ¡Waaagh! con todas las de la ley). Si una unidad obtiene un resultado de 1 mientras efectúa este movimiento de ¡Waaagh!, los orkos que la componen empiezan a luchar entre si antes de alcanzar al enemigo y una miniatura de la unidad sufrirá una herida. Recuerda que la unidad puede mover los 3 cm y asaltar normalmente.</description>
     </rule>
     <rule name="¡La Peña triunfará!" id="5e0f-344d-a5bb-fbdc" hidden="false" publicationId="11a0-7b47-fa28-1d82" page="31">
-      <description>La psicología y la moral orkas dependen fundamentalmente del número de guerreroz orkos que hay en  un momento determinado. Un orko con un grupo de guerreros que le respalde es una visión que ofrece mucho más confianza que uno con solo la mitad de guerreros a sus espaldas. Por este motivo, las peñas de orkos pueden sustituir el número de orkos que compone su peña por su atributo de Liderazgo normal. Si una peña de orkos está formada por 11 o más  miniaturas de orkos, está sujeta a la regla especial de coraje.</description>
+      <description>La psicología y la moral orkas dependen fundamentalmente del número de guerreroz orkos que hay en un momento determinado. Un orko con un grupo de guerreros que le respalde es una visión que ofrece mucho más confianza que uno con solo la mitad de guerreros a sus espaldas. Por este motivo, las peñas de orkos pueden sustituir el número de orkos que compone su peña por su atributo de Liderazgo normal. Si una peña de orkos está formada por 11 o más miniaturas de orkos, está sujeta a la regla especial de coraje.</description>
     </rule>
   </sharedRules>
   <sharedInfoGroups>
@@ -186,7 +186,7 @@ El túnel abre un agujero en la disformidad y una nube de icor demoníaco se des
       <profiles>
         <profile name="Armadura Piñod&apos;oro" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="fee9-baf4-b41a-8c40" publicationId="11a0-7b47-fa28-1d82">
           <characteristics>
-            <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">La armadura le proporciona una tirada de salvación por armadura de 3+ y también incorpora una pantalla de energía que hace que el kapitán tenga una tirada de salvación invulnerable de 5+.</characteristic>
+            <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">La armadura le proporciona una tirada de salvación por armadura de 3+ y también incorpora una pantalla de energía que hace que el kapitán tenga una tirada de salvación invulnerable de 5+.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -220,8 +220,8 @@ El túnel abre un agujero en la disformidad y una nube de icor demoníaco se des
       <profiles>
         <profile name="Zumbao" typeId="c970-b832-a956-1ac8" typeName="Habilidad" hidden="false" id="8371-982f-193c-761a">
           <characteristics>
-            <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Grotsnik está totalmente chiflado y los orkos creen que está más loco que un puñado de orkos chaladoz enfebrecidos por una noche de luna llena.
-Tanto Grotsnik, como la unidad a la que se incorpore están sujetos a coraje. Además, el matazanos está tan sediento de sangre que siempre se moverá lo más rápido que pueda hacia el enemigo más próximo, asaltándolo si es posible. Esta ansia de sangre también la sufre la unidad en la que esté Grotsnik. Esto significa que, una vez que Grotsnik se ha unido a una unidad, no puede abandonarla a menos que él sea el único componente que queda de la misma.</characteristic>
+            <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Grotsnik está totalmente chiflado y los orkos creen que está más loco que un puñado de orkos chaladoz enfebrecidos por una noche de luna llena.
+Tanto Grotsnik, como la unidad a la que se incorpore están sujetos a coraje. Además, el matazanos está tan sediento de sangre que siempre se moverá lo más rápido que pueda hacia el enemigo más próximo, asaltándolo si es posible. Esta ansia de sangre también la sufre la unidad en la que esté Grotsnik. Esto significa que, una vez que Grotsnik se ha unido a una unidad, no puede abandonarla a menos que él sea el único componente que queda de la misma.</characteristic>
           </characteristics>
         </profile>
         <profile name="Gran Matazanos" typeId="c970-b832-a956-1ac8" typeName="Habilidad" hidden="false" id="cbb5-7cd8-a8b2-32ae">
@@ -241,14 +241,14 @@ Tanto Grotsnik, como la unidad a la que se incorpore están sujetos a coraje. A
       <profiles>
         <profile name="Profeta del ¡Waaagh!" typeId="c970-b832-a956-1ac8" typeName="Habilidad" hidden="false" id="f79d-664b-59fa-9706" publicationId="11a0-7b47-fa28-1d82" page="58">
           <characteristics>
-            <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">¡El ¡Waaagh! de Ghazghkull puede invocarse en cualquier momento de la batalla, pero solo una vez por partida y nunca en el primer turno. Sustituye el ¡Waaagh! habitual del ejército por este que es mucho mejor.
-El ¡Waaagh! de Ghazghkull dura el resto del turno del jugador y todo el turno siguiente del otro jugador. Durante este periodo, la tirada de salvación de Ghazghkull es invulnerable. Además, durante el tiempo que dure el (Waaagh!, todas las unidades de infanteria orka contarán como si hubiesen obtenido un resultado de 6 para el movimiento del ¡Waaagh! que deseen efectuar. Las unidades amigas que no huyan estarán sujetas a coraje mientras dure el ¡Waaagh!
-Recuerda que solo puede invocarse un ¡Waaagh! por turno, así que Ghazghkull no puede combinar su ¡Waaagh! con el generado por un Eztrambótiko.</characteristic>
+            <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">¡El ¡Waaagh! de Ghazghkull puede invocarse en cualquier momento de la batalla, pero solo una vez por partida y nunca en el primer turno. Sustituye el ¡Waaagh! habitual del ejército por este que es mucho mejor.
+El ¡Waaagh! de Ghazghkull dura el resto del turno del jugador y todo el turno siguiente del otro jugador. Durante este periodo, la tirada de salvación de Ghazghkull es invulnerable. Además, durante el tiempo que dure el (Waaagh!, todas las unidades de infanteria orka contarán como si hubiesen obtenido un resultado de 6 para el movimiento del ¡Waaagh! que deseen efectuar. Las unidades amigas que no huyan estarán sujetas a coraje mientras dure el ¡Waaagh!
+Recuerda que solo puede invocarse un ¡Waaagh! por turno, así que Ghazghkull no puede combinar su ¡Waaagh! con el generado por un Eztrambótiko.</characteristic>
           </characteristics>
         </profile>
         <profile name="Kráneo de adamantio" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="8c49-4ddb-ed8e-857d">
           <characteristics>
-            <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Cuando Ghazghkull carga, cuenta con +2A en lugar del habitual +1. Además, Ghazghkull es inmune a la muerte instantánea.</characteristic>
+            <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Cuando Ghazghkull carga, cuenta con +2A en lugar del habitual +1. Además, Ghazghkull es inmune a la muerte instantánea.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -296,14 +296,14 @@ Recuerda que solo puede invocarse un ¡Waaagh! por turno, así que Ghazghkull n
       <profiles>
         <profile name="Nido de víboraz" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="1c24-fef8-bfea-f83a">
           <characteristics>
-            <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">El Viejo Zogwort tiene 1D6 ataques adicionales y una Iniciativa de 4. Todos los ataques de Zogwort se consideran ataques envenenados y siempre hieren con un resultado de 2+.</characteristic>
+            <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">El Viejo Zogwort tiene 1D6 ataques adicionales y una Iniciativa de 4. Todos los ataques de Zogwort se consideran ataques envenenados y siempre hieren con un resultado de 2+.</characteristic>
           </characteristics>
         </profile>
         <profile name="Maldizión de Zogwort" typeId="c970-b832-a956-1ac8" typeName="Habilidad" hidden="false" id="a75b-3de6-1772-b3ca">
           <characteristics>
-            <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">El Viejo Zogwort tiene la habilidad de transformar a un enemigo poderoso en un garrapato.
-Zogwort puede usar su maldizión como un poder psíquico en lugar de tirar en la tabla de poderes psíquicos del eztrambótiko. Elige un personaje independiente que esté dentro de la línea de visión de Zogwort. Si la miniatura está a una distancia de hasta 45 cm, ambos jugadores tiran un dado.
-Si el jugador orko obtiene un resultado mayor, la miniatura enemiga se sustituye por un garrapato enfadado, aunque estará bajo el control del enemigo. Eso sí, el jugador orko sustituye la miniatura por el garrapato que tendrá el perfil de atributos aquí indicado y no contará con equipo ni estará sujeto a reglas especiales, aunque es un personaje independiente que cuenta como infantería.</characteristic>
+            <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">El Viejo Zogwort tiene la habilidad de transformar a un enemigo poderoso en un garrapato.
+Zogwort puede usar su maldizión como un poder psíquico en lugar de tirar en la tabla de poderes psíquicos del eztrambótiko. Elige un personaje independiente que esté dentro de la línea de visión de Zogwort. Si la miniatura está a una distancia de hasta 45 cm, ambos jugadores tiran un dado.
+Si el jugador orko obtiene un resultado mayor, la miniatura enemiga se sustituye por un garrapato enfadado, aunque estará bajo el control del enemigo. Eso sí, el jugador orko sustituye la miniatura por el garrapato que tendrá el perfil de atributos aquí indicado y no contará con equipo ni estará sujeto a reglas especiales, aunque es un personaje independiente que cuenta como infantería.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -338,7 +338,7 @@ Si el jugador orko obtiene un resultado mayor, la miniatura enemiga se sustituy
         </profile>
         <profile name="Dientes de Morko" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="eb49-7159-d7a1-b06d" publicationId="11a0-7b47-fa28-1d82" page="62">
           <characteristics>
-            <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Snikrot cuenta con un ataque adicional en combate cuerpo a cuerpo, adicionalmente podrá repetir todas las tiradas para impactar fallidas en combate.</characteristic>
+            <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Snikrot cuenta con un ataque adicional en combate cuerpo a cuerpo, adicionalmente podrá repetir todas las tiradas para impactar fallidas en combate.</characteristic>
           </characteristics>
         </profile>
         <profile name="Emboscada" typeId="c970-b832-a956-1ac8" typeName="Habilidad" hidden="false" id="5daa-9e6c-b9d4-0f94" publicationId="11a0-7b47-fa28-1d82" page="62">
@@ -393,7 +393,7 @@ Si el jugador orko obtiene un resultado mayor, la miniatura enemiga se sustituy
           <profiles>
             <profile name="La moto del Aporkalipsis" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="2670-4658-e7ce-a9ad">
               <characteristics>
-                <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Wazdakka puede disparar en el turno que use sus turbopropulsores</characteristic>
+                <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Wazdakka puede disparar en el turno que use sus turbopropulsores</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -421,7 +421,7 @@ Si el jugador orko obtiene un resultado mayor, la miniatura enemiga se sustituy
       <profiles>
         <profile name="Garras" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="2050-b634-8fb9-eb70" publicationId="11a0-7b47-fa28-1d82" page="63">
           <characteristics>
-            <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">El turno  en el que carga, Zagstruk cuenta como si estuviera equipado con una garra de combate en orden de iniciativa normal</characteristic>
+            <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">El turno  en el que carga, Zagstruk cuenta como si estuviera equipado con una garra de combate en orden de iniciativa normal</characteristic>
           </characteristics>
         </profile>
         <profile name="Ataque relámpago" typeId="c970-b832-a956-1ac8" typeName="Habilidad" hidden="false" id="201c-cc32-4fe8-5bea" publicationId="11a0-7b47-fa28-1d82" page="63">
@@ -473,19 +473,19 @@ Si el jugador orko obtiene un resultado mayor, la miniatura enemiga se sustituy
       <profiles>
         <profile name="Deztartalado" typeId="c970-b832-a956-1ac8" typeName="Habilidad" hidden="false" id="f7b9-ce0e-887f-28c2" publicationId="11a0-7b47-fa28-1d82" page="41">
           <characteristics>
-            <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Si un kamión sufre un resultado de ¡vehículo destruido! o ¡El vehículo explota! (destruido), efectúa una tirada en la tabla inferior y aplica el resultado en lugar de aplicar los efectos habituales. Si el kamión sufre más de un resultado de ¡vehículo destruido! o ¡El vehículo explota!, tira un dado en la tabla por cada resultado, pero aplica únicamente el resultado inferior.
+            <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Si un kamión sufre un resultado de ¡vehículo destruido! o ¡El vehículo explota! (destruido), efectúa una tirada en la tabla inferior y aplica el resultado en lugar de aplicar los efectos habituales. Si el kamión sufre más de un resultado de ¡vehículo destruido! o ¡El vehículo explota!, tira un dado en la tabla por cada resultado, pero aplica únicamente el resultado inferior.
 
 
-1-2 ¡Kabuuum!: 
- El kamión queda destruido. Todos los pasajeros y miniaturas en un radio de 3D6 cm reciben un impacto de Fuerza 3. Los pasajeros supervivientes deben desembarcar y efectuar un chequeo de acobardamiento.
+1-2 ¡Kabuuum!: 
+ El kamión queda destruido. Todos los pasajeros y miniaturas en un radio de 3D6 cm reciben un impacto de Fuerza 3. Los pasajeros supervivientes deben desembarcar y efectuar un chequeo de acobardamiento.
 
 
 3-4 ¡Derrape!:
-El disparo deja al kamión fuera de control. Muévelo 8D6 cm tan lejos como sea posible en una dirección aleatoria (el jugador orko elige si obtiene un resultado de impacto en el dado de dispersión). A continuación, aplica el resultado superior de ¡Kabuuum!. Si el kamión va a chocar contra miniaturas enemigas o algún elemento de escenografía, detenlo a 3 cm de distancia.
+El disparo deja al kamión fuera de control. Muévelo 8D6 cm tan lejos como sea posible en una dirección aleatoria (el jugador orko elige si obtiene un resultado de impacto en el dado de dispersión). A continuación, aplica el resultado superior de ¡Kabuuum!. Si el kamión va a chocar contra miniaturas enemigas o algún elemento de escenografía, detenlo a 3 cm de distancia.
 
 
 5-6 ¡Kling-klang-klung!:
-Los pasajeros orkos no sufren daño, pero deben desembarcar de inmediato. El kamión queda entonces destruido.</characteristic>
+Los pasajeros orkos no sufren daño, pero deben desembarcar de inmediato. El kamión queda entonces destruido.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -563,7 +563,7 @@ Los pasajeros orkos no sufren daño, pero deben desembarcar de inmediato. El ka
         <infoLink name="Akribillador" type="profile" targetId="e24de139-5a11-4ed2-8826-077c3f09abd2" id="81e8-b7b0-5e53-c858" hidden="false">
           <modifiers>
             <modifier type="append" value="acoplado" field="name"/>
-            <modifier type="append" value="Acoplada" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", "/>
+            <modifier type="append" value="Acoplada" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", "/>
           </modifiers>
         </infoLink>
         <infoLink name="Asalto" type="rule" targetId="8714-46ad-62c0-ce35" id="775e-17c7-f808-15fe" hidden="false"/>
@@ -595,7 +595,7 @@ Los pasajeros orkos no sufren daño, pero deben desembarcar de inmediato. El ka
         <infoLink name="Akribillador pezado" type="profile" targetId="f9b261a1-4661-46e8-b1ab-1c422ead44b2" id="df45-ed58-caec-5beb" hidden="false">
           <modifiers>
             <modifier type="append" value="acoplado" field="name"/>
-            <modifier type="append" value="Acoplada" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", "/>
+            <modifier type="append" value="Acoplada" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", "/>
           </modifiers>
         </infoLink>
         <infoLink name="Asalto" type="rule" targetId="8714-46ad-62c0-ce35" id="cf96-d5d2-9a0b-e818" hidden="false"/>
@@ -606,7 +606,7 @@ Los pasajeros orkos no sufren daño, pero deben desembarcar de inmediato. El ka
         <infoLink name="Lanzakohetez" type="profile" targetId="5140e06e-4c80-4415-8cde-c1f073abfae5" id="e026-335e-71cf-47f5" hidden="false">
           <modifiers>
             <modifier type="append" value="acoplado" field="name"/>
-            <modifier type="append" value="Acoplada" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", "/>
+            <modifier type="append" value="Acoplada" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", "/>
           </modifiers>
         </infoLink>
         <infoLink name="Asalto" type="rule" targetId="8714-46ad-62c0-ce35" id="13eb-f4c3-5d9c-009a" hidden="false"/>
@@ -1222,63 +1222,63 @@ Los pasajeros orkos no sufren daño, pero deben desembarcar de inmediato. El ka
     </profile>
     <profile name="Eztandarte del jefe" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="50d6-9040-91f8-701b" publicationId="11a0-7b47-fa28-1d82">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Los Noblez orkos suelen tener un eztandarte donde colgar sus trofeos, una mandíbula de metal o algún otro simbolo de su estatus para que el resto de orkos no se confunda.
-Un noble con un Eztandarte del jete a mano ayuda a que una unidad orka no se disperse. Cada vez que una unidad con un Eztandarte del jete no supere un chequeo de Moral, debes elegir entre inflingir una herida a esa unidad (no a la miniatura que porta el Eztandarte del jefe) para poder repetir el chequeo de Moral.</characteristic>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Los Noblez orkos suelen tener un eztandarte donde colgar sus trofeos, una mandíbula de metal o algún otro simbolo de su estatus para que el resto de orkos no se confunda.
+Un noble con un Eztandarte del jete a mano ayuda a que una unidad orka no se disperse. Cada vez que una unidad con un Eztandarte del jete no supere un chequeo de Moral, debes elegir entre inflingir una herida a esa unidad (no a la miniatura que porta el Eztandarte del jefe) para poder repetir el chequeo de Moral.</characteristic>
       </characteristics>
     </profile>
     <profile name="Kuerpo zibernétiko" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="1e19-7727-81d9-8ee1" publicationId="11a0-7b47-fa28-1d82">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Una miniatura con un Kuerpo zibenétiko dispone de una tirada de salvacion invulnerable de 5+</characteristic>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Una miniatura con un Kuerpo zibenétiko dispone de una tirada de salvacion invulnerable de 5+</characteristic>
       </characteristics>
     </profile>
     <profile name="Mega-armadura" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="b236-fea8-e6d5-a347">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">La mega-armadura proporciona al Meganoble una tirada de salvación por armadura de 2+ e incluye un akribillador acoplado y una garra de combate. Una miniatura equipada con mega-armadura está sujeta a la regla especial avance sistemático.</characteristic>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">La mega-armadura proporciona al Meganoble una tirada de salvación por armadura de 2+ e incluye un akribillador acoplado y una garra de combate. Una miniatura equipada con mega-armadura está sujeta a la regla especial avance sistemático.</characteristic>
       </characteristics>
     </profile>
     <profile name="Granadaz de mano" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="a47e-47d0-45d3-b977" publicationId="11a0-7b47-fa28-1d82">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">La granada de mano se considera una granada de fragmentación a todos los efectos.</characteristic>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">La granada de mano se considera una granada de fragmentación a todos los efectos.</characteristic>
       </characteristics>
     </profile>
     <profile name="Kanijo munizionero" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="d65f-b790-71d4-eb41" publicationId="11a0-7b47-fa28-1d82">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un kanijo munizionero es un gretchin que acarrea la munición de su maestro.
-Una miniatura con un kanijo munizionero puede repetir una tirada para impactar en un ataque de disparo una vez por partida. Las miniaturas de kanijo munizionero son puramente decorativas y siempre se ignoran a efectos del juego; solo tienes que retirarlas si se convierten en un problema a la hora de mover otras miniaturas.</characteristic>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un kanijo munizionero es un gretchin que acarrea la munición de su maestro.
+Una miniatura con un kanijo munizionero puede repetir una tirada para impactar en un ataque de disparo una vez por partida. Las miniaturas de kanijo munizionero son puramente decorativas y siempre se ignoran a efectos del juego; solo tienes que retirarlas si se convierten en un problema a la hora de mover otras miniaturas.</characteristic>
       </characteristics>
     </profile>
     <profile name="Jokepincha" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="ed2e-78dd-8c3a-b95e" publicationId="11a0-7b47-fa28-1d82" page="38">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Los matazanoz llevan jeringuillas enormes llenas de un pegote tóxico virulento. Un Jokepincha es un arma envenenada que siempre causa heridas con 4+.</characteristic>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Los matazanoz llevan jeringuillas enormes llenas de un pegote tóxico virulento. Un Jokepincha es un arma envenenada que siempre causa heridas con 4+.</characteristic>
       </characteristics>
     </profile>
     <profile name="Herramientaz de matazanoz" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="05bf-9b32-26c0-3b14" publicationId="11a0-7b47-fa28-1d82" page="38">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un matazanoz es experto en reparar el cuerpo robusto de un orko con una gran variedad de herramientas. Por este motivo, confiere la habilidad ¡No hay dolor! a la unidad en la que esté incorporado.</characteristic>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un matazanoz es experto en reparar el cuerpo robusto de un orko con una gran variedad de herramientas. Por este motivo, confiere la habilidad ¡No hay dolor! a la unidad en la que esté incorporado.</characteristic>
       </characteristics>
     </profile>
     <profile name="Kanijo kamillero" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="2ccb-faa5-2c1f-0934" publicationId="11a0-7b47-fa28-1d82" page="38">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">A los matazanoz suelen acompaňarlos kanijos kamilleros, cuyo trabajo consiste en transportar herramientas y extremidades de repuesto.
-Los kanijos kamilleros permiten que a la unidad del matazanoz repetir una tirada no superada de ¡No hay dolor! Retira la miniatura de kanijo kamillero una vez la hayas efectuado. Los kanijos kamilleros son miniaturas puramente decorativas y siempre se ignoran a efectos del juego; puedes apartarlas si impiden el movimiento del resto de miniaturas.</characteristic>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">A los matazanoz suelen acompaňarlos kanijos kamilleros, cuyo trabajo consiste en transportar herramientas y extremidades de repuesto.
+Los kanijos kamilleros permiten que a la unidad del matazanoz repetir una tirada no superada de ¡No hay dolor! Retira la miniatura de kanijo kamillero una vez la hayas efectuado. Los kanijos kamilleros son miniaturas puramente decorativas y siempre se ignoran a efectos del juego; puedes apartarlas si impiden el movimiento del resto de miniaturas.</characteristic>
       </characteristics>
     </profile>
-    <profile name="Herramientaz de mekániko" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="5108-7d92-380c-2c8d" publicationId="11a0-7b47-fa28-1d82" page="">
+    <profile name="Herramientaz de mekániko" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="5108-7d92-380c-2c8d" publicationId="11a0-7b47-fa28-1d82">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Los chapuzaz son expertos en efectuar reparaciones en el campo de batalla.
-Si un chapuzaz o un mekániko están en el interior de un vehiculo (o en base en contacto con él) al inicio de su fase de Disparo, puede intentar reparar un resultado de arma destruida o inmovilizado en lugar de disparar. Tira 1D6 y si obtienes un resultado de 4+, el resultado es anulado. Esto podria permitir que un arma destruida previamente disparase en esa fase de Disparo. Si el resultado es de 1, al chapuzaz se le va un poco la mano y el vehiculo se considera acobardado.</characteristic>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Los chapuzaz son expertos en efectuar reparaciones en el campo de batalla.
+Si un chapuzaz o un mekániko están en el interior de un vehiculo (o en base en contacto con él) al inicio de su fase de Disparo, puede intentar reparar un resultado de arma destruida o inmovilizado en lugar de disparar. Tira 1D6 y si obtienes un resultado de 4+, el resultado es anulado. Esto podria permitir que un arma destruida previamente disparase en esa fase de Disparo. Si el resultado es de 1, al chapuzaz se le va un poco la mano y el vehiculo se considera acobardado.</characteristic>
       </characteristics>
     </profile>
-    <profile name="Pantalla de energía ezpezial" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="cb1b-6ba9-14d6-53f1" publicationId="11a0-7b47-fa28-1d82" page="">
+    <profile name="Pantalla de energía ezpezial" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="cb1b-6ba9-14d6-53f1" publicationId="11a0-7b47-fa28-1d82">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Los chapuzaz construirán o saquearán proyectores con pantalla de energia ezpezial con los que proteger a los suyos.
-Una Pantalla de energía ezpezial proporciona una tirada de salvación por cobertura de 5+ a todas las unidades que estén a una distancia máxima de 15 cm del chapuzaz. Los vehiculos orkos que estén a una distancia de hasta 15 cm del chapuzaz se consideran objetivos desenfilados. La Pantalla de energía ezpezial no tiene efecto en un asalto.</characteristic>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Los chapuzaz construirán o saquearán proyectores con pantalla de energia ezpezial con los que proteger a los suyos.
+Una Pantalla de energía ezpezial proporciona una tirada de salvación por cobertura de 5+ a todas las unidades que estén a una distancia máxima de 15 cm del chapuzaz. Los vehiculos orkos que estén a una distancia de hasta 15 cm del chapuzaz se consideran objetivos desenfilados. La Pantalla de energía ezpezial no tiene efecto en un asalto.</characteristic>
       </characteristics>
     </profile>
     <profile name="Kanijo graziento" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="a1b7-1998-162d-8698" publicationId="11a0-7b47-fa28-1d82">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Los Kanijoz grazientos transportan las herramientaz de sus maestroz chapuzaz.
-Un kanijo graziento permite que un chapuzaz repita una tirada no supe rada de reparación. Recuerda que has de retirar la miniatura del kanijo graziento una vez utilizado. Las miniaturas de los Kanijoz grazientoz son miniaturas puramente decorativas y siempre se ignoran a efectos del juego; puedes apartarlas si impiden el movimiento del resto de miniaturas.</characteristic>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Los Kanijoz grazientos transportan las herramientaz de sus maestroz chapuzaz.
+Un kanijo graziento permite que un chapuzaz repita una tirada no supe rada de reparación. Recuerda que has de retirar la miniatura del kanijo graziento una vez utilizado. Las miniaturas de los Kanijoz grazientoz son miniaturas puramente decorativas y siempre se ignoran a efectos del juego; puedes apartarlas si impiden el movimiento del resto de miniaturas.</characteristic>
       </characteristics>
     </profile>
     <profile name="Humoz de ezkape" typeId="c970-b832-a956-1ac8" typeName="Habilidad" hidden="false" id="f844-2b9d-2c89-75e5" publicationId="11a0-7b47-fa28-1d82">
@@ -1288,52 +1288,52 @@ Un kanijo graziento permite que un chapuzaz repita una tirada no supe rada de r
     </profile>
     <profile name="Moto" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="d03f-f747-6d70-bf83" publicationId="11a0-7b47-fa28-1d82">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Una miniatura montada en una moto suma +1 a su Resistencia (aunque no cuenta para determinar si se trata de una muerte instantánea), modifica su tipo de tropa por el de motocicleta, obtiene una tirada de salvación por armadura de 4+ y está sujeta a la regla especial de Humoz de ezkape.</characteristic>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Una miniatura montada en una moto suma +1 a su Resistencia (aunque no cuenta para determinar si se trata de una muerte instantánea), modifica su tipo de tropa por el de motocicleta, obtiene una tirada de salvación por armadura de 4+ y está sujeta a la regla especial de Humoz de ezkape.</characteristic>
       </characteristics>
     </profile>
     <profile name="Kabezadizforme" typeId="c970-b832-a956-1ac8" typeName="Habilidad" hidden="false" id="1081-4478-c332-18ce" publicationId="11a0-7b47-fa28-1d82">
       <characteristics>
-        <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Los kabezadizformes tienen más control de sus poderes que los eztrambótikos.
-En cada tumo, un eztrambótiko que haya sido convertido en kabezadizforme puede repetir la tirada de dados para comprobar el poder psíquico que utiliza.</characteristic>
+        <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Los kabezadizformes tienen más control de sus poderes que los eztrambótikos.
+En cada tumo, un eztrambótiko que haya sido convertido en kabezadizforme puede repetir la tirada de dados para comprobar el poder psíquico que utiliza.</characteristic>
       </characteristics>
     </profile>
     <profile name="Poderes eztrambótikoz" typeId="c970-b832-a956-1ac8" typeName="Habilidad" hidden="false" id="4ff3-1b4d-cb46-3b26" publicationId="11a0-7b47-fa28-1d82">
       <characteristics>
         <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Los eztrambótikos no pueden controlar sus poderes psíquicos.
-Al inicio de cada fase de Disparo orka, un eztrambótiko debe tirar en la tabla siguiente para averiguar el poder psíquico que debe usar durante ese turno.
-Los eztrambótikos deben efectuar un chequeo psíquico antes de determinar el poder que va a usar. Si no supera el chequeo, no utilizará ningún poder psíquico con lo que no es necesaria la tirada. Recuerda que el Liderazgo de un
+Al inicio de cada fase de Disparo orka, un eztrambótiko debe tirar en la tabla siguiente para averiguar el poder psíquico que debe usar durante ese turno.
+Los eztrambótikos deben efectuar un chequeo psíquico antes de determinar el poder que va a usar. Si no supera el chequeo, no utilizará ningún poder psíquico con lo que no es necesaria la tirada. Recuerda que el Liderazgo de un
 eztrambótiko se ve afectado por la regla ¡La Peña triunfará!.
-Un eztrambótiko que use el poder Rayo verde o Zzap, cuenta como si hubiera disparado un arma en esa fase. Si el eztrambótiko está trabado en combate, no apliques los resultados de 1, 2 ó 3, sino que se considerará que el eztrambótiko tiene un arma de energía durante ese turno.
+Un eztrambótiko que use el poder Rayo verde o Zzap, cuenta como si hubiera disparado un arma en esa fase. Si el eztrambótiko está trabado en combate, no apliques los resultados de 1, 2 ó 3, sino que se considerará que el eztrambótiko tiene un arma de energía durante ese turno.
 
 
-1D6: 1 - Explotakabezas, 2 - Rayo verde, 3 - Zzap, 4 - ¡Atakad!, 5 - ¡Allá vamoz!, 6 - ¡Waaagh!.</characteristic>
+1D6: 1 - Explotakabezas, 2 - Rayo verde, 3 - Zzap, 4 - ¡Atakad!, 5 - ¡Allá vamoz!, 6 - ¡Waaagh!.</characteristic>
       </characteristics>
     </profile>
     <profile name="1 - Explotakabezas" typeId="ae70-4738-0161-bec0" typeName="Poder Psíquico" hidden="false" id="306d-658f-35c4-28d7" publicationId="11a0-7b47-fa28-1d82">
       <characteristics>
         <characteristic name="Alcance" typeId="fd64-cbc4-94de-24cc">Propio, Área</characteristic>
-        <characteristic name="Detalles" typeId="ad96-dfa4-b4ed-656d">Las energias que fluyen a través del eztrambótiko quedan fuera de control, provocando la explosión de las cabezas de todos cuantos se encuentren cerca de él. Resuelve el poder psíquico Rayo verde situando la plantilla centrada sobre el propio eztrambótiko.</characteristic>
+        <characteristic name="Detalles" typeId="ad96-dfa4-b4ed-656d">Las energias que fluyen a través del eztrambótiko quedan fuera de control, provocando la explosión de las cabezas de todos cuantos se encuentren cerca de él. Resuelve el poder psíquico Rayo verde situando la plantilla centrada sobre el propio eztrambótiko.</characteristic>
       </characteristics>
     </profile>
     <profile name="4 - ¡Atakad!" typeId="ae70-4738-0161-bec0" typeName="Poder Psíquico" hidden="false" id="8056-c4fe-6c87-519d" publicationId="11a0-7b47-fa28-1d82">
       <characteristics>
         <characteristic name="Alcance" typeId="fd64-cbc4-94de-24cc">Unidad</characteristic>
-        <characteristic name="Detalles" typeId="ad96-dfa4-b4ed-656d">El eztrambótiko dispersa la energía sobre los guerreros que hay a su alrededor produciendo un efecto espectacular.
-Todos los orkos de la unidad del eztrambótiko suman +1 Ataque hasta el inicio del siguiente turno orko.</characteristic>
+        <characteristic name="Detalles" typeId="ad96-dfa4-b4ed-656d">El eztrambótiko dispersa la energía sobre los guerreros que hay a su alrededor produciendo un efecto espectacular.
+Todos los orkos de la unidad del eztrambótiko suman +1 Ataque hasta el inicio del siguiente turno orko.</characteristic>
       </characteristics>
     </profile>
     <profile name="5 - ¡Allá vamoz!" typeId="ae70-4738-0161-bec0" typeName="Poder Psíquico" hidden="false" id="30d7-2511-ef6f-65e6" publicationId="11a0-7b47-fa28-1d82">
       <characteristics>
         <characteristic name="Alcance" typeId="fd64-cbc4-94de-24cc">Unidad</characteristic>
         <characteristic name="Detalles" typeId="ad96-dfa4-b4ed-656d">El eztrambótiko cierra sus ojos fuertemente y teleporta a su unidad a otro lugar del campo de batalla en una tormenta de luz verde.
-El eztrambótiko y la unidad en la que se encuentre, deben situarse en cualquier punto del tablero sujetos a las reglas de despliegue rápido. Este poder debe usarse incluso si hay miniaturas enemigas en contacto peana con peana con la unidad; en este caso, las miniaturas enemigas permanecen en el mismo lugar.</characteristic>
+El eztrambótiko y la unidad en la que se encuentre, deben situarse en cualquier punto del tablero sujetos a las reglas de despliegue rápido. Este poder debe usarse incluso si hay miniaturas enemigas en contacto peana con peana con la unidad; en este caso, las miniaturas enemigas permanecen en el mismo lugar.</characteristic>
       </characteristics>
     </profile>
     <profile name="6 - ¡Waaagh!" typeId="ae70-4738-0161-bec0" typeName="Poder Psíquico" hidden="false" id="de2f-cfb9-ee3f-842d" publicationId="11a0-7b47-fa28-1d82">
       <characteristics>
         <characteristic name="Alcance" typeId="fd64-cbc4-94de-24cc">Ejercito</characteristic>
-        <characteristic name="Detalles" typeId="ad96-dfa4-b4ed-656d">El eztrambótiko emite un grito de guerra con todas sus fuerzas, cubriendo a sus camaradas de energía primaria.
-En este mismo turno se invoca automáticamente un ¡Waaagh!. No se trata del mismo ¡Waaagh! disponible para el jugador orko, sino de uno adicional del eztrambótiko. La potencia de la energía es tan fuerte que incluso permite que los orkos puedan lanzar un ¡Waaagh! en el primer turno de juego. Recuerda que los ¡Waaaghs! múltiples no tienen efectos acumulativos.</characteristic>
+        <characteristic name="Detalles" typeId="ad96-dfa4-b4ed-656d">El eztrambótiko emite un grito de guerra con todas sus fuerzas, cubriendo a sus camaradas de energía primaria.
+En este mismo turno se invoca automáticamente un ¡Waaagh!. No se trata del mismo ¡Waaagh! disponible para el jugador orko, sino de uno adicional del eztrambótiko. La potencia de la energía es tan fuerte que incluso permite que los orkos puedan lanzar un ¡Waaagh! en el primer turno de juego. Recuerda que los ¡Waaaghs! múltiples no tienen efectos acumulativos.</characteristic>
       </characteristics>
     </profile>
     <profile name="2 - Rayo verde" typeId="9c33-b0c8-74bd-e5a7" typeName="Poder Psíquico (Proyectil)" hidden="false" id="d67a-8582-61a6-ead4" publicationId="11a0-7b47-fa28-1d82">
@@ -1361,89 +1361,89 @@ En este mismo turno se invoca automáticamente un ¡Waaagh!. No se trata del mis
     </profile>
     <profile name="Rebanadora" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="6873-5f89-10d6-710d">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Las rebanadoras cuentan como armas de combate cuerpo a cuerpo</characteristic>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Las rebanadoras cuentan como armas de combate cuerpo a cuerpo</characteristic>
       </characteristics>
     </profile>
     <profile name="Gran rebanadora" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="1f88-3e4f-e5d3-e025" publicationId="11a0-7b47-fa28-1d82">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Las Grandes rebanadoras cuentan son armas de combate a 2 manos que otorgan un +2 a la Fuerza</characteristic>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Las Grandes rebanadoras cuentan son armas de combate a 2 manos que otorgan un +2 a la Fuerza</characteristic>
       </characteristics>
     </profile>
     <profile name="Kombiarma" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="5bb4-6de0-8ec7-7edc" publicationId="11a0-7b47-fa28-1d82">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">El kombiarma consta de un Akribillador conectado con otra arma, el Akribillador puede dispararse normalmente pero la otra mitad solo puede usarse una vez por batalla. Tampoco se pueden disparar al mismo tiempo.</characteristic>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">El kombiarma consta de un Akribillador conectado con otra arma, el Akribillador puede dispararse normalmente pero la otra mitad solo puede usarse una vez por batalla. Tampoco se pueden disparar al mismo tiempo.</characteristic>
       </characteristics>
     </profile>
     <profile name="Armadura pezada" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="2a5a-bc55-031e-cce8" publicationId="11a0-7b47-fa28-1d82">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">La armadura pezada proporciona una tirada de salvación por armadura de 4+</characteristic>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">La armadura pezada proporciona una tirada de salvación por armadura de 4+</characteristic>
       </characteristics>
     </profile>
     <profile name="Garrapato de atake" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="1107-f057-9796-10a8" publicationId="11a0-7b47-fa28-1d82">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un personaje que disponga de un Garrapato de atake contará con +1 ataque adicional.</characteristic>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un personaje que disponga de un Garrapato de atake contará con +1 ataque adicional.</characteristic>
       </characteristics>
     </profile>
     <profile name="¡Eztandarte del Waaagh!" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="a192-f9ac-33ff-141a" publicationId="11a0-7b47-fa28-1d82">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">El ¡Eztandarte del Waaagh! lo lleva un noble que se haya ganado el respeto de su kaudillo.
-El eztandarte tiene un significado casi religioso para los Orkos y lucharán hasta el último aliento en su presencia. Una peña que incluya un ¡Eztandarte del Waaagh! suma +1 a la HA.</characteristic>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">El ¡Eztandarte del Waaagh! lo lleva un noble que se haya ganado el respeto de su kaudillo.
+El eztandarte tiene un significado casi religioso para los Orkos y lucharán hasta el último aliento en su presencia. Una peña que incluya un ¡Eztandarte del Waaagh! suma +1 a la HA.</characteristic>
       </characteristics>
     </profile>
     <profile name="Granadaz petatankez" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="858c-939b-f458-b278">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Funcionan igual que las granadas perforantes excepto que tienen una penetración de blindaje de 2D6+6</characteristic>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Funcionan igual que las granadas perforantes excepto que tienen una penetración de blindaje de 2D6+6</characteristic>
       </characteristics>
     </profile>
     <profile name="Ayudantez" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="9654-80b6-48ff-7ba2" publicationId="11a0-7b47-fa28-1d82">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un vehículo orko inmovilizado con ayudantez puede tirar un dado durante la fase de disparo orka; con un resultado de 4+, el resultado de inmovilizado se anula. El vehículo podrá iniciar el movimiento en el turno siguiente.</characteristic>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un vehículo orko inmovilizado con ayudantez puede tirar un dado durante la fase de disparo orka; con un resultado de 4+, el resultado de inmovilizado se anula. El vehículo podrá iniciar el movimiento en el turno siguiente.</characteristic>
       </characteristics>
     </profile>
     <profile name="Bola de demolizión" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="4bed-0c55-5041-9d98" publicationId="11a0-7b47-fa28-1d82">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un vehículo con bola de demolizión causa un impacto de Fuerza 9 sobre una unidad enemiga destrabada que esté a una distancia máxima de 5 cm de la bola de demolizión al inicio de la fase de asalto con un resultado de 4+. El vehículo orko no puede usar su bola de demolizión si ya ha movido más de 30 cm en ese turno.</characteristic>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un vehículo con bola de demolizión causa un impacto de Fuerza 9 sobre una unidad enemiga destrabada que esté a una distancia máxima de 5 cm de la bola de demolizión al inicio de la fase de asalto con un resultado de 4+. El vehículo orko no puede usar su bola de demolizión si ya ha movido más de 30 cm en ese turno.</characteristic>
       </characteristics>
     </profile>
     <profile name="Ezpolón reforzado" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="4ecd-9c23-faef-1538" publicationId="11a0-7b47-fa28-1d82">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un vehículo con un ezpolón reforzado puede realizar brutalidad acorazada, y considera su blindaje dos puntos superior al habitual cuando resuelvas los ataques de ¡Victoria o muerte! (hasta un máximo de 14). Además, el vehículo puede repetir los chequeos por terreno peligroso.</characteristic>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un vehículo con un ezpolón reforzado puede realizar brutalidad acorazada, y considera su blindaje dos puntos superior al habitual cuando resuelvas los ataques de ¡Victoria o muerte! (hasta un máximo de 14). Además, el vehículo puede repetir los chequeos por terreno peligroso.</characteristic>
       </characteristics>
     </profile>
     <profile name="Capa de rojo corremáz" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="6f0a-dcf8-80ec-f0cc" publicationId="11a0-7b47-fa28-1d82">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Aunque pueda parecer extraño, es totalmente cierto. Los vehículos orkos con capa de rojo corremáz suman +3 a su movimiento en la fase de movimiento, pero no sufren penalizaciones por este movimiento adicional. Por ejemplo, un vehículo con capa de rojo corremáz pude mover 33 cm pero aún así se considerará que ha movido 30 cm.</characteristic>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Aunque pueda parecer extraño, es totalmente cierto. Los vehículos orkos con capa de rojo corremáz suman +3 a su movimiento en la fase de movimiento, pero no sufren penalizaciones por este movimiento adicional. Por ejemplo, un vehículo con capa de rojo corremáz pude mover 33 cm pero aún así se considerará que ha movido 30 cm.</characteristic>
       </characteristics>
     </profile>
     <profile name="Garra mekánika" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="92ec-136c-dfdc-7f34" publicationId="11a0-7b47-fa28-1d82">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Al inicio de la fase de movimiento enemiga, designa a un vehículo enemigo que esté a una distancia de hasta 5 cm de la garra mekánika. Con un resultado de 4+, el vehículo no puede mover este turno.</characteristic>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Al inicio de la fase de movimiento enemiga, designa a un vehículo enemigo que esté a una distancia de hasta 5 cm de la garra mekánika. Con un resultado de 4+, el vehículo no puede mover este turno.</characteristic>
       </characteristics>
     </profile>
     <profile name="Kajadura" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="84be-7a49-7bcc-0145" publicationId="11a0-7b47-fa28-1d82">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un vehículo con una kajadura no se considera vehículo descubierto. Recuerda que esto afecta a sus puntos de acceso y puntos de disparo, tal y como se especifica en su apartado específico.</characteristic>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un vehículo con una kajadura no se considera vehículo descubierto. Recuerda que esto afecta a sus puntos de acceso y puntos de disparo, tal y como se especifica en su apartado específico.</characteristic>
       </characteristics>
     </profile>
     <profile name="Lanzagranadaz" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="7f82-562a-80ad-8a45" publicationId="11a0-7b47-fa28-1d82">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Cualquier unidad que desembarque de un vehículo con un lanzagranadaz se considera que tienen Granadaz de mano si cargan en combate ese turno.</characteristic>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Cualquier unidad que desembarque de un vehículo con un lanzagranadaz se considera que tienen Granadaz de mano si cargan en combate ese turno.</characteristic>
       </characteristics>
     </profile>
     <profile name="Máz chapa" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="93fb-a44d-c5b1-03f8" publicationId="11a0-7b47-fa28-1d82">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un vehículo orko con máz chapa dispone de placas adicionales de metal acopladas en su casco. Gracias a esta mejora, considera los resultados de tripulación aturdida como resultados de tripulación acobardada.</characteristic>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un vehículo orko con máz chapa dispone de placas adicionales de metal acopladas en su casco. Gracias a esta mejora, considera los resultados de tripulación aturdida como resultados de tripulación acobardada.</characteristic>
       </characteristics>
     </profile>
     <profile name="Plancha pa pazar" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="ea91-02ab-559e-c4bd" publicationId="11a0-7b47-fa28-1d82">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Una plancha pa&apos;pazar sirve para que un orko embarcado en el vehículo ataque cuerpo a cuerpo un vehículo enemigo que esté a una distancia de hasta 5 cm (igual que si el orko hubiera desembarcado y cargado), a condición de que ningún vehícullo haya movido más de 30 cm.</characteristic>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Una plancha pa&apos;pazar sirve para que un orko embarcado en el vehículo ataque cuerpo a cuerpo un vehículo enemigo que esté a una distancia de hasta 5 cm (igual que si el orko hubiera desembarcado y cargado), a condición de que ningún vehícullo haya movido más de 30 cm.</characteristic>
       </characteristics>
     </profile>
     <profile name="Kohete propulzor" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="c36e-2c18-56f8-2d1f" publicationId="11a0-7b47-fa28-1d82" page="47">
       <characteristics>
-        <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Cada vez que la unidad de zoldadoz de azalto utiliza sus kohetez propulzorez para moverse o retirarse, tira 1D6. Si obtienes un resultado de 1, uno de los kohetez propulzorez queda fuera de control. Su propietario aterriza de cabeza y su mochila explota. Retira la miniatura de zoldado de azalto como baja. Independientemente del resultado, a la distancia que mueve la unidad ese turno puedes sumar la siguiente distancia según el resultado del dado:
-1=3 cm, 2=5 cm, 3=8 cm, 4=10 cm, 5=12 cm, 6=15 cm.</characteristic>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Cada vez que la unidad de zoldadoz de azalto utiliza sus kohetez propulzorez para moverse o retirarse, tira 1D6. Si obtienes un resultado de 1, uno de los kohetez propulzorez queda fuera de control. Su propietario aterriza de cabeza y su mochila explota. Retira la miniatura de zoldado de azalto como baja. Independientemente del resultado, a la distancia que mueve la unidad ese turno puedes sumar la siguiente distancia según el resultado del dado:
+1=3 cm, 2=5 cm, 3=8 cm, 4=10 cm, 5=12 cm, 6=15 cm.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
@@ -1488,7 +1488,7 @@ El eztandarte tiene un significado casi religioso para los Orkos y lucharán ha
       <profiles>
         <profile name="Kanijo furriel" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="b845-9f1a-16f1-5273" publicationId="11a0-7b47-fa28-1d82">
           <characteristics>
-            <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Baddruk cuenta con 3 kanijoz munizioneroz. Estos se cuentan aparte de los kanijoz munizioneroz que pueden incluirse en la unidad.</characteristic>
+            <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Baddruk cuenta con 3 kanijoz munizioneroz. Estos se cuentan aparte de los kanijoz munizioneroz que pueden incluirse en la unidad.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -1560,7 +1560,7 @@ El eztandarte tiene un significado casi religioso para los Orkos y lucharán ha
               <profiles>
                 <profile name="Zemi-orugaz" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="248b-2e99-00c8-c969" publicationId="11a0-7b47-fa28-1d82" page="49">
                   <characteristics>
-                    <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un buggy con zemi-orugaz puede repetir las tiradas por terreno peligroso</characteristic>
+                    <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un buggy con zemi-orugaz puede repetir las tiradas por terreno peligroso</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1602,7 +1602,7 @@ El eztandarte tiene un significado casi religioso para los Orkos y lucharán ha
           <profiles>
             <profile name="Zemi-orugaz" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="cbd0-6efd-2b8a-655d" publicationId="11a0-7b47-fa28-1d82" page="49">
               <characteristics>
-                <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un buggy con zemi-orugaz puede repetir las tiradas por terreno peligroso</characteristic>
+                <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un buggy con zemi-orugaz puede repetir las tiradas por terreno peligroso</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2045,7 +2045,7 @@ El eztandarte tiene un significado casi religioso para los Orkos y lucharán ha
       <profiles>
         <profile name="Garrapato mastín" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="b857-4ded-28d4-9ab3" publicationId="11a0-7b47-fa28-1d82" page="50">
           <characteristics>
-            <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Cada vez que una unidad con un garrapato mastín no supere un chequeo de moral, puede retirar 1D3 miniaturas Gretchins para poder volver a repetir el chequeo de moral.</characteristic>
+            <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Cada vez que una unidad con un garrapato mastín no supere un chequeo de moral, puede retirar 1D3 miniaturas Gretchins para poder volver a repetir el chequeo de moral.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -2063,7 +2063,7 @@ El eztandarte tiene un significado casi religioso para los Orkos y lucharán ha
               <profiles>
                 <profile name="Atrapakuellos" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="35c5-0e81-c1e0-f785" publicationId="11a0-7b47-fa28-1d82" page="50">
                   <characteristics>
-                    <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Una miniatura equipada con un atrapakuelloz ataca normalmente, pero en cada fase de Asalto puede provocar que una única miniatura enemiga con la que esté en contacto peana con peana, pierda un ataque (hasta un mínimo de 1).</characteristic>
+                    <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Una miniatura equipada con un atrapakuelloz ataca normalmente, pero en cada fase de Asalto puede provocar que una única miniatura enemiga con la que esté en contacto peana con peana, pierda un ataque (hasta un mínimo de 1).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2075,7 +2075,7 @@ El eztandarte tiene un significado casi religioso para los Orkos y lucharán ha
               <profiles>
                 <profile name="Ezpabilakanijoz" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="99e5-a704-80cc-00bc" publicationId="11a0-7b47-fa28-1d82" page="50">
                   <characteristics>
-                    <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Una miniatura equipada con un ezpabilakanijoz contará como si tuviera un arma envenenada que siempre causa heridas con resultados de 4+.</characteristic>
+                    <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Una miniatura equipada con un ezpabilakanijoz contará como si tuviera un arma envenenada que siempre causa heridas con resultados de 4+.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2169,7 +2169,7 @@ El eztandarte tiene un significado casi religioso para los Orkos y lucharán ha
           </constraints>
           <modifiers>
             <modifier type="set" value="Uno a cada lado del casco y uno posterior" field="8cb4-5303-693b-0256" scope="parent" affects="self.entries.profiles.Transporte"/>
-            <modifier type="replace" value="" field="f141-fc34-4d2a-b484" scope="parent" affects="self.entries.profiles.Transporte" arg=", Descubierto"/>
+            <modifier type="replace" field="f141-fc34-4d2a-b484" scope="parent" affects="self.entries.profiles.Transporte" arg=", Descubierto"/>
             <modifier type="set" value="Dos a cada lado del casco y uno posterior" field="85c0-7904-8bac-a359" scope="parent" affects="self.entries.profiles.Transporte"/>
           </modifiers>
         </entryLink>
@@ -2231,7 +2231,7 @@ El eztandarte tiene un significado casi religioso para los Orkos y lucharán ha
               <profiles>
                 <profile name="Apizonadora de muerte" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="d30a-a672-fdd0-630e">
                   <characteristics>
-                    <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un karro de guerra con una apizonadora de muerte puede repetir las tiradas no superadas por terreno peligroso. La brutalidad acorazada de un karro de guerra con una apizonadora de muerte causa 1D6 impactos de Fuerza 10 a la unidad victima. Si la unidad decide efectuar un ataque de ¡Victoria o muerte!, recibirá de nuevo 1D6 impactos de Fuerza 10 además de los efectos normales.</characteristic>
+                    <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un karro de guerra con una apizonadora de muerte puede repetir las tiradas no superadas por terreno peligroso. La brutalidad acorazada de un karro de guerra con una apizonadora de muerte causa 1D6 impactos de Fuerza 10 a la unidad victima. Si la unidad decide efectuar un ataque de ¡Victoria o muerte!, recibirá de nuevo 1D6 impactos de Fuerza 10 además de los efectos normales.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2560,8 +2560,8 @@ El eztandarte tiene un significado casi religioso para los Orkos y lucharán ha
               <profiles>
                 <profile name="Grankabuum" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="470c-1082-7e85-dc5a" publicationId="11a0-7b47-fa28-1d82">
                   <characteristics>
-                    <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Una vez por partida, un kóptero con un Grankabuum puede efectuar un ataque especial, incluso aunque haya utilizado los turbopropulsores ese turno.
-Coloca la plantilla de área grande con el agujero central situado sobre una miniatura a la que haya sobrevolado durante su fase de Movimiento. El Grankabuum se dispersa 3D6 cm y se resuelve con Fuerza 4 y FP 5.</characteristic>
+                    <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Una vez por partida, un kóptero con un Grankabuum puede efectuar un ataque especial, incluso aunque haya utilizado los turbopropulsores ese turno.
+Coloca la plantilla de área grande con el agujero central situado sobre una miniatura a la que haya sobrevolado durante su fase de Movimiento. El Grankabuum se dispersa 3D6 cm y se resuelve con Fuerza 4 y FP 5.</characteristic>
                   </characteristics>
                 </profile>
                 <profile name="Grankabuum" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="53fd-efc8-8ed9-29a5" publicationId="11a0-7b47-fa28-1d82">
@@ -2586,7 +2586,7 @@ Coloca la plantilla de área grande con el agujero central situado sobre una mi
           <profiles>
             <profile name="Zierra" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="6e78-d07b-6d38-08ca" publicationId="11a0-7b47-fa28-1d82">
               <characteristics>
-                <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un Kóptero con Zierra se considera equipado con garra de combate</characteristic>
+                <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un Kóptero con Zierra se considera equipado con garra de combate</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2995,7 +2995,7 @@ Coloca la plantilla de área grande con el agujero central situado sobre una mi
               <profiles>
                 <profile name="Palokabum" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="4b26-d104-3938-af00" publicationId="11a0-7b47-fa28-1d82">
                   <characteristics>
-                    <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un Palokabum es un arma a dos manos que confiere una F10 a su portador en la fase de asalto</characteristic>
+                    <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un Palokabum es un arma a dos manos que confiere una F10 a su portador en la fase de asalto</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3080,7 +3080,7 @@ Coloca la plantilla de área grande con el agujero central situado sobre una mi
           </constraints>
           <modifiers>
             <modifier type="set" value="Uno posterior" field="8cb4-5303-693b-0256" scope="parent" affects="self.entries.profiles.Transporte"/>
-            <modifier type="replace" value="" field="f141-fc34-4d2a-b484" scope="parent" affects="self.entries.profiles.Transporte" arg=", Descubierto"/>
+            <modifier type="replace" field="f141-fc34-4d2a-b484" scope="parent" affects="self.entries.profiles.Transporte" arg=", Descubierto"/>
             <modifier type="set" value="Dos a cada lado del casco y uno posterior" field="85c0-7904-8bac-a359" scope="parent" affects="self.entries.profiles.Transporte"/>
           </modifiers>
         </entryLink>
@@ -3155,8 +3155,8 @@ Coloca la plantilla de área grande con el agujero central situado sobre una mi
       <profiles>
         <profile name="No tokez ezo" typeId="c970-b832-a956-1ac8" typeName="Habilidad" hidden="false" id="a229-726e-9797-282e" publicationId="11a0-7b47-fa28-1d82">
           <characteristics>
-            <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">El jugador orko debe tirar un dado al inicio de cada fase de Movimiento orka por cada vehízulo zakeado de su ejército.
-Si obtienes un resultado de 1, ese vehículo debe moverse directamente lo más alejado posible llevándose también a la tripulación orka que va en su interior. Esto potencialmente puede significar que el vehículo puede provocar brutalidad acorazada sobre una unidad enemiga. Los pasajeros no pueden desembarcar en este turno.</characteristic>
+            <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">El jugador orko debe tirar un dado al inicio de cada fase de Movimiento orka por cada vehízulo zakeado de su ejército.
+Si obtienes un resultado de 1, ese vehículo debe moverse directamente lo más alejado posible llevándose también a la tripulación orka que va en su interior. Esto potencialmente puede significar que el vehículo puede provocar brutalidad acorazada sobre una unidad enemiga. Los pasajeros no pueden desembarcar en este turno.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -3301,7 +3301,7 @@ Si obtienes un resultado de 1, ese vehículo debe moverse directamente lo más 
         <infoLink name="Azalto rabiozo" id="8e45-d514-f58b-3a23" hidden="false" type="infoGroup" targetId="5c05-b913-b540-8e5b"/>
       </infoLinks>
       <entryLinks>
-        <entryLink import="true" name="Peña de Ghazghkull" hidden="false" id="0876-0eb5-d6c8-a3fe" type="selectionEntry" targetId="9041-bfbc-49bd-bb66" sortIndex="1"/>
+        <entryLink import="true" name="Peña del Kaudillo" hidden="false" id="0876-0eb5-d6c8-a3fe" type="selectionEntry" targetId="9041-bfbc-49bd-bb66" sortIndex="1"/>
         <entryLink import="true" name="Kuerpo zibernétiko de Grotsnik" hidden="false" id="44a4-1cee-0c20-9f34" type="selectionEntry" targetId="1453-1c56-2c32-8f5e" sortIndex="5"/>
         <entryLink import="true" name="Granadaz de mano" hidden="false" id="21ea-58cf-23dc-51ae" type="selectionEntry" targetId="0087-52bc-3e2f-703e" sortIndex="3">
           <modifiers>
@@ -3347,7 +3347,7 @@ Si obtienes un resultado de 1, ese vehículo debe moverse directamente lo más 
             </entryLink>
             <entryLink import="true" name="Karro de guerra" hidden="false" id="ec35-23f6-a190-97e1" type="selectionEntry" targetId="676c11e7-e059-4344-8bd3-9a2b28abae23">
               <modifiers>
-                <modifier type="append" value=" asignado" field="name"/>
+                <modifier type="append" value=" asignado" field="name"/>
               </modifiers>
             </entryLink>
             <entryLink import="true" name="Kamión" hidden="false" id="ce7d-411c-7e0c-434f" type="selectionEntry" targetId="256832a2-d5da-4aaf-8f0e-7029b398d39c"/>
@@ -3497,7 +3497,7 @@ Si obtienes un resultado de 1, ese vehículo debe moverse directamente lo más 
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Meganoblez" hidden="false" id="da67-ad47-2315-3af7">
       <entryLinks>
-        <entryLink import="true" name="Peña de Ghazghkull" hidden="false" id="ffbb-6898-8c5c-8087" type="selectionEntry" targetId="9041-bfbc-49bd-bb66"/>
+        <entryLink import="true" name="Peña del Kaudillo" hidden="false" id="ffbb-6898-8c5c-8087" type="selectionEntry" targetId="9041-bfbc-49bd-bb66"/>
       </entryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Ezcuadrón de Wazdakka" hidden="true" id="3746-229f-67e8-1826">
@@ -3539,7 +3539,7 @@ Si obtienes un resultado de 1, ese vehículo debe moverse directamente lo más 
         <infoLink name="Rebanadora" id="eeb5-9a89-b366-b6f8" hidden="false" type="infoGroup" targetId="6c38-1cb4-7148-aca6"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Gran rebanadora" hidden="false" id="b3f3-f7ba-7921-60e4" defaultAmount="">
+    <selectionEntry type="upgrade" import="true" name="Gran rebanadora" hidden="false" id="b3f3-f7ba-7921-60e4">
       <infoLinks>
         <infoLink name="Gran rebanadora" id="f858-c253-88bc-317a" hidden="false" type="infoGroup" targetId="837b-0472-880f-dec1"/>
       </infoLinks>
@@ -3660,7 +3660,7 @@ Si obtienes un resultado de 1, ese vehículo debe moverse directamente lo más 
           <entryLinks>
             <entryLink import="true" name="Karro de guerra" hidden="false" id="c776-88d7-9776-8c4f" type="selectionEntry" targetId="676c11e7-e059-4344-8bd3-9a2b28abae23">
               <modifiers>
-                <modifier type="append" value=" asignado" field="name"/>
+                <modifier type="append" value=" asignado" field="name"/>
               </modifiers>
             </entryLink>
             <entryLink import="true" name="Kamión" hidden="false" id="f23d-361d-519f-ac7a" type="selectionEntry" targetId="256832a2-d5da-4aaf-8f0e-7029b398d39c">
@@ -3823,7 +3823,7 @@ Si obtienes un resultado de 1, ese vehículo debe moverse directamente lo más 
           <profiles>
             <profile name="Garrapatos bomba" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="915f-c17b-051b-ffe0">
               <characteristics>
-                <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un Petatankez puede soltar un garrapato bomba en lugar de disparar. Tira un dado; si obtienes un resultado de 2+, el garrapato bomba correrá directamente hacia el vehículo enemigo más próximo a una distancia de hasta 45 cm y detonará, causando un impacto de Fuerza 8 en la sección del vehículo que esté encarada en dirección al Petatankez. Si obtienes un resultado de 1. el garrapato correrá hacia el vehículo amigo más próximo a una distancia de hasta 45 cm y detonará allí. Retira al garrapato una vez que lo hayas soltado, esté o no a distancia del objetivo ya que se trata de una miniatura puramente decorativa y no tiene perfil de atributos.</characteristic>
+                <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un Petatankez puede soltar un garrapato bomba en lugar de disparar. Tira un dado; si obtienes un resultado de 2+, el garrapato bomba correrá directamente hacia el vehículo enemigo más próximo a una distancia de hasta 45 cm y detonará, causando un impacto de Fuerza 8 en la sección del vehículo que esté encarada en dirección al Petatankez. Si obtienes un resultado de 1. el garrapato correrá hacia el vehículo amigo más próximo a una distancia de hasta 45 cm y detonará allí. Retira al garrapato una vez que lo hayas soltado, esté o no a distancia del objetivo ya que se trata de una miniatura puramente decorativa y no tiene perfil de atributos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4144,7 +4144,7 @@ Si obtienes un resultado de 1, ese vehículo debe moverse directamente lo más 
           <profiles>
             <profile name="¡Qué dura es la vida del kanijo!" typeId="c970-b832-a956-1ac8" typeName="Habilidad" hidden="false" id="697b-3927-e124-14fb" publicationId="11a0-7b47-fa28-1d82" page="50">
               <characteristics>
-                <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Si una peña de kanijoz se mueve por un campo de minas, retira el marcador de campo de minas y 3D6 kanijoz explotarán en todas direcciones.</characteristic>
+                <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Si una peña de kanijoz se mueve por un campo de minas, retira el marcador de campo de minas y 3D6 kanijoz explotarán en todas direcciones.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4324,8 +4324,8 @@ Si obtienes un resultado de 1, ese vehículo debe moverse directamente lo más 
       <profiles>
         <profile name="Kohete propulzor" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="13be-e186-3037-0202" publicationId="11a0-7b47-fa28-1d82" page="47">
           <characteristics>
-            <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Cada vez que la unidad de zoldadoz de azalto utiliza sus kohetez propulzorez para moverse o retirarse, tira 1D6. Si obtienes un resultado de 1, uno de los kohetez propulzorez queda fuera de control. Su propietario aterriza de cabeza y su mochila explota. Retira la miniatura de zoldado de azalto como baja. Independientemente del resultado, a la distancia que mueve la unidad ese turno puedes sumar la siguiente distancia según el resultado del dado:
-1=3 cm, 2=5 cm, 3=8 cm, 4=10 cm, 5=12 cm, 6=15 cm.</characteristic>
+            <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Cada vez que la unidad de zoldadoz de azalto utiliza sus kohetez propulzorez para moverse o retirarse, tira 1D6. Si obtienes un resultado de 1, uno de los kohetez propulzorez queda fuera de control. Su propietario aterriza de cabeza y su mochila explota. Retira la miniatura de zoldado de azalto como baja. Independientemente del resultado, a la distancia que mueve la unidad ese turno puedes sumar la siguiente distancia según el resultado del dado:
+1=3 cm, 2=5 cm, 3=8 cm, 4=10 cm, 5=12 cm, 6=15 cm.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4666,7 +4666,7 @@ Si obtienes un resultado de 1, ese vehículo debe moverse directamente lo más 
               <profiles>
                 <profile name="Ekzplozivo" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="e9f9-0bfe-d762-8ac7" publicationId="11a0-7b47-fa28-1d82">
                   <characteristics>
-                    <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Cuando efectúes la tirada para determinar el FP de la unidad, resta 1 al resultado (hasta un mínimo de 1). Los akribilladorez molonez con ekzplozivos están sujetos a la regla especial de sobrecalentamiento.</characteristic>
+                    <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Cuando efectúes la tirada para determinar el FP de la unidad, resta 1 al resultado (hasta un mínimo de 1). Los akribilladorez molonez con ekzplozivos están sujetos a la regla especial de sobrecalentamiento.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4681,7 +4681,7 @@ Si obtienes un resultado de 1, ese vehículo debe moverse directamente lo más 
               <profiles>
                 <profile name="Máz dakka" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="3fae-5d61-59a2-fc22" publicationId="11a0-7b47-fa28-1d82">
                   <characteristics>
-                    <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Los akribilladorez molonez con la mejora de máz dakka son de Asalto 2.</characteristic>
+                    <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Los akribilladorez molonez con la mejora de máz dakka son de Asalto 2.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4699,7 +4699,7 @@ Si obtienes un resultado de 1, ese vehículo debe moverse directamente lo más 
               <profiles>
                 <profile name="Máz kalibre" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="9a5d-8e1e-7112-144a" publicationId="11a0-7b47-fa28-1d82">
                   <characteristics>
-                    <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Los akribilladorez molonez con la mejora de máz kalibre tienen F6.</characteristic>
+                    <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Los akribilladorez molonez con la mejora de máz kalibre tienen F6.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4716,7 +4716,7 @@ Si obtienes un resultado de 1, ese vehículo debe moverse directamente lo más 
       <profiles>
         <profile name="Markadiztanzias" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="82c7-4e9e-8781-6ff7" publicationId="11a0-7b47-fa28-1d82">
           <characteristics>
-            <characteristic name="Descripcción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Cuando dispara, el tipejo vazilón puede medir la distancia que haya hasta su objetivo para saber si lo alcanza, antes de declararlo su objetivo.</characteristic>
+            <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Cuando dispara, el tipejo vazilón puede medir la distancia que haya hasta su objetivo para saber si lo alcanza, antes de declararlo su objetivo.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -4752,7 +4752,7 @@ Si obtienes un resultado de 1, ese vehículo debe moverse directamente lo más 
     </selectionEntry>
   </sharedSelectionEntries>
   <entryLinks>
-    <entryLink import="true" name="Ghazghkull" hidden="false" id="77c1-ee12-8cb8-2264" type="selectionEntry" targetId="605b559a-d08d-4d97-9f19-ce9ba291aed5">
+    <entryLink import="true" name="Ghazghkull Thraka" hidden="false" id="77c1-ee12-8cb8-2264" type="selectionEntry" targetId="605b559a-d08d-4d97-9f19-ce9ba291aed5">
       <categoryLinks>
         <categoryLink name="CG" hidden="false" id="6d42-d690-22cd-eb09" targetId="dd59-30d7-da4f-6ea4" primary="true"/>
       </categoryLinks>
@@ -4762,7 +4762,7 @@ Si obtienes un resultado de 1, ese vehículo debe moverse directamente lo más 
         <categoryLink name="CG" hidden="false" id="34a3-c877-33bd-6cb3" targetId="dd59-30d7-da4f-6ea4" primary="true"/>
       </categoryLinks>
     </entryLink>
-    <entryLink import="true" name="Noblez" hidden="false" id="6d93-0eed-95de-af94" type="selectionEntry" targetId="9de0-7333-fd43-f5aa">
+    <entryLink import="true" name="Peña de Noblez" hidden="false" id="6d93-0eed-95de-af94" type="selectionEntry" targetId="9de0-7333-fd43-f5aa">
       <categoryLinks>
         <categoryLink name="Élite" hidden="false" id="8200-25e6-72f1-14f9" targetId="cf43-5aa1-0e52-25d7" primary="true"/>
       </categoryLinks>
