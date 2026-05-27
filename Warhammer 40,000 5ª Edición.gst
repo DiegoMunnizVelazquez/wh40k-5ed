@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="8cf6-c83d-3eeb-e95c" name="Warhammer 40,000 5ª Edición " revision="15" battleScribeVersion="2.03" authorName="Diego Muñiz" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorUrl="csddmv@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="8cf6-c83d-3eeb-e95c" name="Warhammer 40,000 5ª Edición " revision="16" battleScribeVersion="2.03" authorName="Diego Muñiz" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorUrl="csddmv@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <readme>Esto es for fun. Cualquier error o sugerencia serán bienvenidas
 
 En este sistema se agruparán el sistema de Warhammer 40000 5ª edición, así como todos los los codex que se usarán en este sistema cerrado.
@@ -822,6 +822,13 @@ Si un bípode está armado con dos o más armas de combate cuerpo a cuerpo, obti
     <infoGroup name="Unidad de artillería" id="6f86-bf95-0deb-ce1e" hidden="false">
       <infoLinks>
         <infoLink name="Unidad de artillería" id="6b6d-ae76-cdfe-57c8" hidden="false" type="rule" targetId="01b8-b97f-0668-0498"/>
+      </infoLinks>
+    </infoGroup>
+    <infoGroup name="Enjambres" id="1587-f21a-885c-baf3" hidden="false">
+      <infoLinks>
+        <infoLink name="Enjambres" id="7a98-eaac-ed37-9615" hidden="false" type="rule" targetId="4614-34c7-8574-6faf"/>
+        <infoLink name="Sigilo" id="6975-8eba-35cf-140c" hidden="false" type="rule" targetId="f1ee-e19a-a3c3-6797"/>
+        <infoLink name="Vulnerable a las Explosiones" id="361f-f888-4d14-956b" hidden="false" type="rule" targetId="394d-92aa-234a-d417"/>
       </infoLinks>
     </infoGroup>
   </sharedInfoGroups>
