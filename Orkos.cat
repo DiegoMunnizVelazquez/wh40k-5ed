@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="fe1e-9d05-9036-5244" name="Orkos" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" revision="5" authorUrl="csddmv@gmail.com" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="fe1e-9d05-9036-5244" name="Orkos" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" revision="6" authorUrl="csddmv@gmail.com" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" battleScribeVersion="2.03" type="catalogue">
   <sharedRules>
     <rule name="¡Waaagh!" id="42e1-f7fd-5e72-83fa" hidden="false" publicationId="11a0-7b47-fa28-1d82" page="31">
       <description>Una vez por partida, el jugador orko puede declarar un ¡Waaagh! durante su fase de Disparo. El ¡Waaagh! no puede declararse en el primer turno ya que debe cobrar fuerza. En el turno en que los orkos declaren un ¡Waaagh! todas las unidades de infanteria orkas estarán sujetas a la regla especial de veloces (excepto las unidades de gretchins que son demasiado debiluchas para organizar un ¡Waaagh! con todas las de la ley). Si una unidad obtiene un resultado de 1 mientras efectúa este movimiento de ¡Waaagh!, los orkos que la componen empiezan a luchar entre si antes de alcanzar al enemigo y una miniatura de la unidad sufrirá una herida. Recuerda que la unidad puede mover los 3 cm y asaltar normalmente.</description>
@@ -2553,7 +2553,7 @@ El eztandarte tiene un significado casi religioso para los Orkos y lucharán has
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Grankabuum" hidden="false" id="11c5-9d79-f23b-1f15" sortIndex="3">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="root-entry" shared="true" id="201a-e8f6-2422-fcc2" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="201a-e8f6-2422-fcc2" includeChildSelections="false"/>
           </constraints>
           <infoGroups>
             <infoGroup name="Grankabuum" id="b68c-92cd-5cf2-09b9" hidden="false">
@@ -2581,7 +2581,7 @@ Coloca la plantilla de área grande con el agujero central situado sobre una min
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Zierra" hidden="false" id="e493-9b32-e75e-3f63" sortIndex="4">
           <constraints>
-            <constraint type="max" value="1" field="selections" scope="root-entry" shared="true" id="fe90-574e-824b-ad0e" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fe90-574e-824b-ad0e" includeChildSelections="false"/>
           </constraints>
           <profiles>
             <profile name="Zierra" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="6e78-d07b-6d38-08ca" publicationId="11a0-7b47-fa28-1d82">

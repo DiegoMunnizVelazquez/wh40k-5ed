@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="8cf6-c83d-3eeb-e95c" name="Warhammer 40,000 5ª Edición " revision="16" battleScribeVersion="2.03" authorName="Diego Muñiz" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorUrl="csddmv@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="8cf6-c83d-3eeb-e95c" name="Warhammer 40,000 5ª Edición " revision="17" battleScribeVersion="2.03" authorName="Diego Muñiz" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorUrl="csddmv@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <readme>Esto es for fun. Cualquier error o sugerencia serán bienvenidas
 
 En este sistema se agruparán el sistema de Warhammer 40000 5ª edición, así como todos los los codex que se usarán en este sistema cerrado.
@@ -704,6 +704,29 @@ Si un bípode está armado con dos o más armas de combate cuerpo a cuerpo, obti
         <characteristic name="Descripción" typeId="11b5-56ae-f93d-b524"/>
       </characteristics>
     </profile>
+    <profile name="Blindaje adicional" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="cf47-2dba-970c-bb92">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Los vehículos equipados con blindaje adicional cuentan los resultados de Tripulación aturdida de la tabla de daños en vehículos como si fueran resultados de Tripulación acobardada.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Reparación" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="2041-9c89-a1d7-51f3">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">si un Rhino está inmovilizado por cualquier razón, su tripulación puede intentar reparar el vehículo en turnos siguientes en vez de disparar el armamento del vehículo. Tira 1D6 en la fase de Disparo; con un resultado de 6 el vehículo deja de estar inmovilizado.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Pala excavadora" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="cc87-4ebb-33bb-a377">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Los vehículos equipados con palas excavadoras podrán repetir los chequeos fallidos de Terreno Difícil.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Misil cazador asesino" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="fffa-5f18-59af-8106">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Ilimitado</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">8</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 1, Un solo uso</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedInfoGroups>
     <infoGroup id="f5e9-e97c-ca02-307d" name="Granadas defensivas" hidden="false">
@@ -832,4 +855,31 @@ Si un bípode está armado con dos o más armas de combate cuerpo a cuerpo, obti
       </infoLinks>
     </infoGroup>
   </sharedInfoGroups>
+  <sharedSelectionEntries>
+    <selectionEntry type="upgrade" import="true" name="Misil cazador asesino" hidden="false" id="f4a3-48a3-bdaf-c717">
+      <infoLinks>
+        <infoLink name="Misil cazador asesino" id="3649-a4c3-f338-143c" hidden="false" type="profile" targetId="fffa-5f18-59af-8106"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Blindaje adicional" hidden="false" id="9694-1ee2-7ee4-b8ee">
+      <infoLinks>
+        <infoLink name="Blindaje adicional" id="0d16-f1b1-d26c-b577" hidden="false" type="profile" targetId="cf47-2dba-970c-bb92"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Reflector" hidden="false" id="c1ac-63b0-b525-40b4">
+      <infoLinks>
+        <infoLink name="Reflector" id="c419-7827-a6bf-2e4b" hidden="false" type="profile" targetId="2ce5-817f-85b3-3115"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Descargadores de humo" hidden="false" id="236b-e147-1f64-7edc">
+      <infoLinks>
+        <infoLink name="Descargadores de Humo" id="f891-bffa-71a8-d2f1" hidden="false" type="profile" targetId="59f3-98ac-9e4f-1169"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Pala excavadora" hidden="false" id="f2a9-ff54-43f1-b5a8">
+      <infoLinks>
+        <infoLink name="Pala excavadora" id="cd63-d6d7-6ed2-0262" hidden="false" type="profile" targetId="cc87-4ebb-33bb-a377"/>
+      </infoLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
 </gameSystem>
