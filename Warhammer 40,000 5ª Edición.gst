@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="8cf6-c83d-3eeb-e95c" name="Warhammer 40,000 5ª Edición " revision="17" battleScribeVersion="2.03" authorName="Diego Muñiz" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorUrl="csddmv@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
+<gameSystem id="8cf6-c83d-3eeb-e95c" name="Warhammer 40,000 5ª Edición " revision="18" battleScribeVersion="2.03" authorName="Diego Muñiz" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorUrl="csddmv@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema" type="gameSystem">
   <readme>Esto es for fun. Cualquier error o sugerencia serán bienvenidas
 
 En este sistema se agruparán el sistema de Warhammer 40000 5ª edición, así como todos los los codex que se usarán en este sistema cerrado.
@@ -136,17 +136,24 @@ Prueba</readme>
     <categoryEntry id="2aa2-d9e3-bef6-09be" name="Otro" hidden="false"/>
     <categoryEntry id="ee338739-6edf-4620-a2cc-f38d5dd21606" name="Personaje Especial" hidden="false"/>
     <categoryEntry id="c0a6-b371-006e-1e70" name="Personaje Independiente" hidden="false"/>
+    <categoryEntry name="Heraldo" id="ff67-ac85-ed01-ffca" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="dafb-e147-12bb-ca02" name="Destacamento Básico" hidden="false">
       <categoryLinks>
         <categoryLink id="406e599c-14c8-96a7-9b1a-076ac6011d96-ff36a6f3-19bf-4f48-8956-adacfd28fe74" name="No Ocupa Espacio" hidden="false" targetId="ff36a6f3-19bf-4f48-8956-adacfd28fe74" primary="false"/>
-        <categoryLink id="267a-3e9a-654e-fa91" name="Personaje Especial" hidden="false" targetId="ee338739-6edf-4620-a2cc-f38d5dd21606" primary="false"/>
         <categoryLink id="c43c-bef7-5416-465c" name="CG" hidden="false" targetId="dd59-30d7-da4f-6ea4" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c15-a06e-e008-2bf7" type="min"/>
             <constraint field="selections" scope="parent" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da7e-d1f2-0445-9e2a" type="max"/>
           </constraints>
+          <modifiers>
+            <modifier type="increment" value="1" field="da7e-d1f2-0445-9e2a">
+              <repeats>
+                <repeat value="2" repeats="1" field="selections" scope="roster" childId="ff67-ac85-ed01-ffca" shared="true" roundUp="false" includeChildSelections="true" includeChildForces="true" childName="Heraldo"/>
+              </repeats>
+            </modifier>
+          </modifiers>
         </categoryLink>
         <categoryLink id="0e02-60a7-050b-b42f" name="Linea" hidden="false" targetId="1ebf-bf5c-b1c9-eb84" primary="false">
           <constraints>
