@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem name="Warhammer 40,000 5ª Edición " id="8cf6-c83d-3eeb-e95c" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" revision="19" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem name="Warhammer 40,000 5ª Edición " id="8cf6-c83d-3eeb-e95c" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" revision="20" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Esto es for fun. Cualquier error o sugerencia serán bienvenidas
 
 En este sistema se agruparán el sistema de Warhammer 40000 5ª edición, así como todos los los codex que se usarán en este sistema cerrado.
@@ -104,6 +104,7 @@ Prueba</readme>
         <characteristicType name="F" id="a6383362-5aa8-4ff0-b1d0-00e059fc9d45"/>
         <characteristicType name="FP" id="6abee736-f8d3-498e-97ac-a5c68445609f"/>
         <characteristicType name="Tipo" id="077c342f-d7b9-45c6-b8af-88e97cafd3a2"/>
+        <characteristicType name="Nota" id="5cb3-f9d0-8306-fb72" kind="longText"/>
       </characteristicTypes>
     </profileType>
     <profileType name="Equipo" id="72c5eafc-75bf-4ed9-b425-78009f1efe82" kind="weapon" sortIndex="8">
@@ -182,13 +183,13 @@ Prueba</readme>
   <sharedInfoGroups>
     <infoGroup name="Granadas defensivas" id="f5e9-e97c-ca02-307d" hidden="false">
       <infoLinks>
-        <infoLink name="Granadas Defensivas" id="ac3d-01f3-1a4a-ac2c" hidden="false" targetId="e4b4-fbcb-fe82-edaf" type="rule"/>
+        <infoLink name="Granadas defensivas" id="ac3d-01f3-1a4a-ac2c" hidden="false" targetId="e4b4-fbcb-fe82-edaf" type="rule"/>
         <infoLink name="Granadas defensivas" id="67ca-9439-1314-73a0" hidden="false" targetId="27f4-3f80-5047-a64a" type="profile"/>
       </infoLinks>
     </infoGroup>
     <infoGroup name="Granadas de asalto" id="a9de-5c4c-d2c8-6676" hidden="false">
       <infoLinks>
-        <infoLink name="Granadas de Asalto" id="5445-7aa1-0d07-700a" hidden="false" targetId="b1c6-9a9a-fc08-321d" type="rule"/>
+        <infoLink name="Granadas de asalto" id="5445-7aa1-0d07-700a" hidden="false" targetId="b1c6-9a9a-fc08-321d" type="rule"/>
         <infoLink name="Granadas de asalto" id="9f1c-bcfb-2705-e000" hidden="false" targetId="6fa5-b37d-1b93-9529" type="profile"/>
       </infoLinks>
     </infoGroup>
@@ -212,7 +213,7 @@ Prueba</readme>
     </infoGroup>
     <infoGroup name="Granadas perforantes" id="5013-1b13-3fea-2166" hidden="false">
       <infoLinks>
-        <infoLink name="Granadas Perforantes" id="0875-9818-e611-df77" hidden="false" targetId="0903-3583-24c6-b52c" type="rule"/>
+        <infoLink name="Granadas perforantes" id="0875-9818-e611-df77" hidden="false" targetId="0903-3583-24c6-b52c" type="rule"/>
         <infoLink name="Granadas perforantes" id="fea3-483e-d731-523c" hidden="false" targetId="88ef-f347-6da1-b41f" type="profile"/>
       </infoLinks>
     </infoGroup>
@@ -411,6 +412,7 @@ Si un bípode está armado con dos o más armas de combate cuerpo a cuerpo, obti
         <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">8</characteristic>
         <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
         <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 1, Un solo uso</characteristic>
+        <characteristic name="Nota" typeId="5cb3-f9d0-8306-fb72"/>
       </characteristics>
     </profile>
   </sharedProfiles>
