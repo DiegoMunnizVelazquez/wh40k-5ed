@@ -453,8 +453,8 @@ Perfil (Arma/Unidad/Vehículo/Bípode)
 
 ## 13. Troubleshooting
 
-### Catálogos con infoGroups heredados
-- Los scripts ya no generan `sharedInfoGroups`. Los catálogos que todavía los contienen (todos salvo Eldar Oscuros) se migrarán a referencias directas a perfil; hasta entonces los scripts los dejan intactos.
+### infoGroups
+- Ningún catálogo ni el `.gst` usa `sharedInfoGroups` ni infoGroups inline: las entradas enlazan directamente a los perfiles (y, solo para reglas especiales de unidades, personajes y habilidades, a las reglas). Los scripts no los generan.
 
 ### Problemas con generación de perfiles en update_*.py
 - **No había perfiles previos en el CAT**: Los scripts crean perfiles nuevos automáticamente con UUID.
