@@ -7,12 +7,12 @@ Este proyecto automatiza la gestión de perfiles de Warhammer 40K 5ª Edición p
 **Funcionalidades principales:**
 - Actualización automática de perfiles de unidades, vehículos, armas y bípodes
 - Creación automática de perfiles faltantes con IDs únicos (UUID) cuando el CAT no tiene suficientes entradas
-- Generación automática de sharedInfoGroups para armas con referencias a reglas
+- Generación automática de sharedSelectionEntries enlazadas directamente a los perfiles (sin infoGroups ni referencias a reglas)
 - Formateo XML consistente y válido para BattleScribe
 
 ## 2. Archivo Principal
 
-- **Guardia Imperial.cat**: Catálogo XML principal que contiene todos los perfiles (unidades, vehículos, armas, bípodes) y sharedInfoGroups
+- **Guardia Imperial.cat**: Catálogo XML principal que contiene todos los perfiles (unidades, vehículos, armas, bípodes) y sharedSelectionEntries
 - **InitGuardia.cat**: Copia de backup del archivo original sin modificaciones
 - **Formato XML**: BattleScribe/NewRecruit con namespace `http://www.battlescribe.net/schema/catalogueSchema`
 - **Encoding**: UTF-8 con declaración `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>`
@@ -85,64 +85,21 @@ Sentinel acorazado,3,3,5,12,10,10,3,1,Bípode
 Sentinel explorador,3,3,5,10,10,10,3,1,Bípode
 ```
 
-### 3.5 SharedInfoGroups para Armas
-- **Propósito**: Crear grupos de información reutilizables que contienen referencias a perfiles de armas y reglas asociadas
-- **Generación automática**: Se crea un sharedInfoGroup por cada arma con su nombre
-- **Contenido de cada grupo**:
-  - Un infoLink al perfil del arma correspondiente
-  - InfoLinks a cada regla aplicable según el tipo del arma
-- **Script de generación**: `generate_weapon_shared_info_groups.py`
-- **Ubicación en XML**: Sección `<sharedInfoGroups>` del catálogo
+### 3.5 SelectionEntries enlazadas a perfiles
+- **Propósito**: Permitir seleccionar en NewRecruit las armas, unidades, vehículos y bípodes definidos como perfiles
+- **Referencia directa**: Cada selectionEntry lleva un único infoLink de tipo `profile` que apunta al perfil. No se crean infoGroups ni enlaces a reglas de arma
+- **Generación automática**: Se crea una selectionEntry por cada perfil que todavía no tenga una; las existentes no se modifican
+- **Script de generación**: `generate_selection_entries.py`
+- **Ubicación en XML**: Sección `<sharedSelectionEntries>` del catálogo
 
-**Estructura de un sharedInfoGroup:**
+**Estructura de una selectionEntry:**
 ```xml
-<infoGroup name="Bólter" id="unique-id" hidden="false">
+<selectionEntry type="upgrade" import="true" name="Bólter" hidden="false" id="unique-id">
   <infoLinks>
-    <infoLink name="Bólter" type="profile" targetId="weapon-profile-id" id="unique-id" hidden="false"/>
-    <infoLink name="Fuego rápido" type="rule" targetId="rule-id" id="unique-id" hidden="false"/>
+    <infoLink name="Bólter" id="unique-id" hidden="false" type="profile" targetId="weapon-profile-id"/>
   </infoLinks>
-</infoGroup>
+</selectionEntry>
 ```
-
-**Mapeo de tipos a reglas:**
-- Pesada → `2e56-6b02-4343-0e40`
-- Área grande → `952e-d8aa-7560-44b9`
-- Asalto → `8714-46ad-62c0-ce35`
-- Fuego rápido → `e15d-1437-cfb2-b8dd`
-- Acoplado → `a06f-e29d-bcf4-ed75`
-- Área → `31c7-fe6c-af95-f0b5`
-- Fusión → `2d66-d516-2bf5-5751`
-- Sobrecalentamiento → `f6bb-191b-f63a-0ec5`
-- Pistola → `ff92-d10b-2808-eb79`
-- Envenenado → `48c8-bb35-6595-03d1`
-- Francotirador → `7636-0a2f-8c61-f9b2`
-- Artillería → `93b8-287b-914c-9e43`
-- Barrera de artillería → `eae1-d240-afcf-4b81`
-- Plantilla → `d094-3fd7-bd10-443d`
-
-### 3.6 Script generate_weapon_shared_info_groups.py (Automatizado)
-**Funcionalidad mejorada (v2.0):**
-- **Carga automática de perfiles**: Lee todos los perfiles de armas directamente del archivo CAT
-- **Multi-CAT support**: Puede procesar cualquier archivo CAT especificando parámetros
-- **Sin configuración manual**: No requiere mantener diccionarios hardcodeados
-
-**Uso:**
-```bash
-# Procesar archivo por defecto
-python generate_weapon_shared_info_groups.py
-
-# Procesar archivo específico
-python generate_weapon_shared_info_groups.py "Marines Espaciales.cat" "PerfilesArmas.csv"
-
-# Procesar con CSV personalizado
-python generate_weapon_shared_info_groups.py "Eldars.cat" "armas_eldars.csv"
-```
-
-**Ventajas:**
-- ✅ **Genérico**: Funciona con cualquier archivo CAT de BattleScribe
-- ✅ **Automático**: No requiere actualizar diccionarios manualmente
-- ✅ **Flexible**: Acepta parámetros de línea de comandos
-- ✅ **Confiable**: Siempre usa los IDs correctos del archivo CAT
 
 ## 4. Flujo de Extracción de Datos
 
@@ -292,7 +249,7 @@ Los perfiles se identifican por su atributo `name`:
 5. Ejecutar el orquestador:
    - python run_all.py                              (todo, Guardia Imperial)
    - python run_all.py --cat "Marines Espaciales.cat" (otro ejército)
-   - python run_all.py --only armas,infogroups       (solo ciertos pasos)
+   - python run_all.py --only armas,selections       (solo ciertos pasos)
 6. Verificar output en NewRecruit
 7. Si hay errores, ajustar CSV y reintentar
 ```
@@ -343,9 +300,7 @@ Los CSV de `Generico/` sirven como plantilla de referencia. Para cada ejército 
 - `generate_init.py` - Genera archivo InitGuardia.cat con estructura base
 
 ### Scripts de Generación de Información Compartida
-- `generate_weapon_shared_info_groups.py` - Genera sharedInfoGroups para armas (automático)
-- `generate_all_shared_info_groups.py` - Genera sharedInfoGroups para TODOS los tipos (armas, unidades, vehículos, bípodes)
-- `generate_selection_entries.py` - Genera sharedSelectionEntries que apuntan a infoGroups
+- `generate_selection_entries.py` - Genera sharedSelectionEntries que apuntan directamente a los perfiles
 
 ### Archivos XML
 - `Guardia Imperial.cat` - Catálogo actualizado
@@ -388,7 +343,7 @@ python run_all.py --verbose
 
 ### Orden de ejecución interno:
 
-El orquestador ejecuta los 6 pasos en este orden:
+El orquestador ejecuta los 5 pasos en este orden:
 
 | # | Paso ID      | Script                              | CSV utilizado          |
 |---|--------------|-------------------------------------|------------------------|
@@ -396,16 +351,15 @@ El orquestador ejecuta los 6 pasos en este orden:
 | 2 | vehiculos    | `update_vehicle_profiles.py`        | PerfilesVehiculos.csv  |
 | 3 | armas        | `update_weapon_profiles.py`         | PerfilesArmas.csv      |
 | 4 | bipodes      | `update_bipode_profiles.py`         | PerfilesBipodes.csv    |
-| 5 | infogroups   | `generate_all_shared_info_groups.py` | PerfilesArmas.csv     |
-| 6 | selections   | `generate_selection_entries.py`     | (solo CAT)             |
+| 5 | selections   | `generate_selection_entries.py`     | (solo CAT)             |
 
-Los pasos 1-4 actualizan perfiles desde CSV. El paso 5 genera infoGroups a partir de los perfiles del CAT. El paso 6 genera selectionEntries a partir de los infoGroups. Si un paso falla, la ejecución se aborta para evitar corromper el catálogo.
+Los pasos 1-4 actualizan perfiles desde CSV. El paso 5 crea las selectionEntries que falten, enlazadas directamente a los perfiles del CAT. Si un paso falla, la ejecución se aborta para evitar corromper el catálogo.
 
 ### Control de pasos:
 
 ```bash
 # Ejecutar solo ciertos pasos
-python run_all.py --only armas,infogroups,selections
+python run_all.py --only armas,selections
 
 # Saltar pasos concretos
 python run_all.py --skip bipodes
@@ -413,7 +367,7 @@ python run_all.py --skip bipodes
 # No se pueden combinar --only y --skip
 ```
 
-**IDs de pasos válidos**: `unidades`, `vehiculos`, `armas`, `bipodes`, `infogroups`, `selections`
+**IDs de pasos válidos**: `unidades`, `vehiculos`, `armas`, `bipodes`, `selections`
 
 ### Parámetros completos:
 
@@ -452,7 +406,6 @@ python update_unit_profiles.py "Marines Espaciales.cat"
 python update_unit_profiles.py "Eldars.cat" "unidades_eldars.csv"
 
 # Scripts de generación de información (mismo patrón)
-python generate_all_shared_info_groups.py "Marines Espaciales.cat"
 python generate_selection_entries.py "Marines Espaciales.cat"
 ```
 
@@ -467,21 +420,15 @@ python update_unit_profiles.py "Marines Espaciales.cat" "csv/Marines Espaciales/
 python update_vehicle_profiles.py "Marines Espaciales.cat" "csv/Marines Espaciales/Marines Espaciales_Vehiculos.csv"
 python update_weapon_profiles.py "Marines Espaciales.cat" "csv/Marines Espaciales/Marines Espaciales_Armas.csv"
 python update_bipode_profiles.py "Marines Espaciales.cat" "csv/Marines Espaciales/Marines Espaciales_Bipodes.csv"
-python generate_all_shared_info_groups.py "Marines Espaciales.cat"
 python generate_selection_entries.py "Marines Espaciales.cat"
 ```
 
-## 12. SharedInfoGroups y SharedSelectionEntries: Sistema Completo
-
-### ¿Qué son los SharedInfoGroups?
-Los sharedInfoGroups son elementos reutilizables que agrupan información común (perfiles y reglas) sin duplicar datos. Cada infoGroup contiene:
-- **Nombre del perfil** (arma, unidad, vehículo, bípode)
-- **infoLink al perfil**: Referencia directa al perfil con características
-- **infoLinks a reglas**: Referencias a reglas aplicables (para armas)
+## 12. SharedSelectionEntries: Sistema Completo
 
 ### ¿Qué son los SharedSelectionEntries?
-Los sharedSelectionEntries son puntos de selección que BattleScribe utiliza para permitir que los usuarios seleccionen perfiles desde la interfaz. Cada selectionEntry:
-- **Referencia a un infoGroup**: Mediante un infoLink de tipo "infoGroup"
+Los sharedSelectionEntries son puntos de selección que NewRecruit utiliza para permitir que los usuarios seleccionen perfiles desde la interfaz. Cada selectionEntry:
+- **Referencia directa al perfil**: Mediante un infoLink de tipo `profile`
+- **Sin infoGroups ni reglas**: No se enlazan reglas de arma ni se crean `sharedInfoGroups`
 - **Tipo de selección**: Define si es un arma (upgrade), unidad, vehículo, etc.
 - **ID único**: Para evitar conflictos de referencia
 
@@ -489,39 +436,25 @@ Los sharedSelectionEntries son puntos de selección que BattleScribe utiliza par
 ```
 Perfil (Arma/Unidad/Vehículo/Bípode)
        ↓
-   infoGroup
-   (agrupa el perfil + reglas)
-       ↓
    selectionEntry
-   (permite seleccionar en BattleScribe)
+   (infoLink de tipo profile)
        ↓
    Usuario ve la opción en el catálogo
 ```
 
-### Scripts de generación:
-
-**generate_all_shared_info_groups.py**
-- Crea infoGroups para: Armas (49), Unidades (41), Vehículos (20), Bípodes (2)
-- Total: 112 infoGroups
-- Cada infoGroup contiene referencias a perfiles y (para armas) a reglas
-- **Auto-creación de sección**: Si el XML no contiene `<sharedInfoGroups>`, el script la crea automáticamente.
-- Usa: `python generate_all_shared_info_groups.py [archivo_cat]`
+### Script de generación:
 
 **generate_selection_entries.py**
-- Crea selectionEntries correspondientes a cada infoGroup
-- Automáticamente determina el tipo (upgrade para armas, unit para otros)
-- **Auto-creación de sección**: Si el XML no contiene `<sharedSelectionEntries>`, el script la crea automáticamente. Ya no aborta con error si la sección está ausente.
-- Total: 112 selectionEntries
-- Cada uno apunta a su infoGroup correspondiente
+- Crea una selectionEntry por cada perfil de Arma, Unidad, Vehículo o Bípode que aún no esté enlazado por ninguna
+- Determina el tipo automáticamente (upgrade para armas, unit para el resto)
+- **No borra ni modifica** las sharedSelectionEntries existentes, por lo que es seguro ejecutarlo sobre catálogos con entradas hechas a mano
+- **Auto-creación de sección**: Si el XML no contiene `<sharedSelectionEntries>`, el script la crea automáticamente
 - Usa: `python generate_selection_entries.py [archivo_cat]`
 
 ## 13. Troubleshooting
 
-### Problemas con infoGroups
-- **Error: targetId not found**: Verificar que los perfiles existen en el archivo CAT
-- **Reglas no aparecen en armas**: Asegurarse de que los tipos de arma están correctamente mapeados
-- **IDs duplicados**: Los scripts generan UUIDs únicos, pero si hay conflictos, regenerar
-- **Sección `sharedInfoGroups` ausente en el XML**: `generate_all_shared_info_groups.py` la crea automáticamente al detectar que falta.
+### Catálogos con infoGroups heredados
+- Los scripts ya no generan `sharedInfoGroups`. Los catálogos que todavía los contienen (todos salvo Eldar Oscuros) se migrarán a referencias directas a perfil; hasta entonces los scripts los dejan intactos.
 
 ### Problemas con generación de perfiles en update_*.py
 - **No había perfiles previos en el CAT**: Los scripts crean perfiles nuevos automáticamente con UUID.
@@ -532,8 +465,8 @@ Perfil (Arma/Unidad/Vehículo/Bípode)
 - **Formato en una línea**: Se corrige con reindentado previo al guardado (`ET.indent`).
 
 ### Problemas con selectionEntries
-- **Opciones no aparecen en BattleScribe**: Verificar que los infoLinks apuntan a infoGroups válidos
-- **Referencias incorrectas**: Ejecutar primero `generate_all_shared_info_groups.py` y luego `generate_selection_entries.py`
+- **Opciones no aparecen en NewRecruit**: Verificar que los infoLinks de tipo `profile` apuntan a perfiles existentes en el CAT
+- **Entrada duplicada para un perfil**: El script solo crea entradas para perfiles que ninguna selectionEntry enlaza; revisar si la existente enlaza otro id de perfil
 - **Sección `sharedSelectionEntries` ausente en el XML**: El script `generate_selection_entries.py` la crea automáticamente al detectar que falta. No se requiere intervención manual.
 
 ### Verificación:
@@ -544,32 +477,22 @@ python -c "import xml.etree.ElementTree as ET; ET.parse('Guardia Imperial.cat');
 # Contar elementos
 python -c "with open('Guardia Imperial.cat') as f: 
     content = f.read()
-    print(f'infoGroups: {content.count(\"<infoGroup name=\")}')
     print(f'selectionEntries: {content.count(\"<selectionEntry type=\")}')"
 ```
 
-### Troubleshooting Específico de SharedInfoGroups
-
-- **Error: "targetId not found"**: Verificar que el perfil del arma existe en el CAT y que `generate_weapon_shared_info_groups.py` está leyendo correctamente los perfiles del archivo.
-- **Reglas no aparecen**: Verificar que el tipo del arma esté correctamente mapeado en `RULE_MAPPING`.
-- **IDs duplicados**: Los scripts generan UUIDs, pero si hay conflictos por ediciones manuales previas, regenerar infoGroups.
-- **Formato incorrecto**: Asegurarse de que todos los `infoLinks` tengan `hidden="false"`.
-
 ### Verificación Post-Generación
-Después de ejecutar `generate_weapon_shared_info_groups.py`:
-1. Verificar que existan 49 infoGroups (uno por arma, CSV actual)
-2. Cada infoGroup debe tener al menos un infoLink al perfil del arma
-3. Las reglas deben corresponder con los tipos definidos en el CSV
-4. El XML debe ser válido y parseable
+Después de ejecutar `generate_selection_entries.py`:
+1. Cada perfil de arma, unidad, vehículo y bípode debe estar enlazado por una selectionEntry
+2. Cada selectionEntry generada debe tener un único infoLink de tipo `profile`
+3. El XML debe ser válido y parseable
 
 ### Recuperación de Errores
 Si hay errores en la generación:
-1. Revisar el CSV de armas para tipos mal formateados
-2. Verificar que todos los perfiles de armas existan en el XML
-3. Ejecutar nuevamente el script (limpia automáticamente elementos anteriores)
-4. Validar el XML resultante con un parser
+1. Verificar que todos los perfiles existan en el XML
+2. Ejecutar nuevamente el script (solo crea las entradas que falten)
+3. Validar el XML resultante con un parser
 
 ---
 
 **Última actualización**: Mayo 2026
-**Versión**: 3.6 - `update_*_profiles.py` auto-crean `sharedProfiles` si falta; `generate_all_shared_info_groups.py` auto-crea `sharedInfoGroups`; se mantiene la auto-creación de `sharedSelectionEntries` en `generate_selection_entries.py`
+**Versión**: 3.7 - se eliminan los `sharedInfoGroups` y sus generadores; `generate_selection_entries.py` enlaza directamente a los perfiles y no borra las entradas existentes

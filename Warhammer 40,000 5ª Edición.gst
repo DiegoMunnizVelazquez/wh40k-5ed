@@ -326,11 +326,6 @@ Prueba</readme>
 Adicionalmente, tras realizar las tiradas para impactar, herir y salvaciones invulnerables de la manera habitual, el psíquico deberá realizar un chequeo psíquico para poder utilizar el poder del arma contra un objetivo que haya sufrido al menos una herida de la misma. Deben aplicarse las reglas habituales de los poderes psíquicos, respetando el límite de poderes que el portador puede manifestar a lo largo de su turno. Si el psíquico supera el chequeo, la miniatura enemiga sufrirá una muerte instantanea independientenente de su atributo de Resistencia. Este poder no tiene efecto en miniaturas que son inmunes a la muerte instantanea, Vehículos o cualquier miniatura sin atributo de Heridas.</characteristic>
       </characteristics>
     </profile>
-    <profile name="Retrorreactores" id="ba22-cd8e-0d95-8e72" hidden="false" publicationId="f176-f140-74d8-da7d" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
-      <characteristics>
-        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Las miniaturas equipadas con retrorreactores se consideran unidades retropropulsadas, tal y como se describen en el reglamento de Warhammer 40,000. Además, los Marines Espaciales equipados con retrorreactores pueden saltar desde cañoneras Thunderhawk en vuelo rasante, utilizando sus retrorreactores para descender suavemente hasta el campo de batalla. Para representar esto, estas tropas pueden mantenerse en reserva y entrar en el campo de batalla utilizando las reglas de despliegue rapido (consulta la seccion Reglas Especiales de Misión en el reglamento de Warhammer 40,000).</characteristic>
-      </characteristics>
-    </profile>
     <profile name="Reflector" id="2ce5-817f-85b3-3115" hidden="false" page="103" publicationId="f176-f140-74d8-da7d" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
       <characteristics>
         <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Los reflectores pueden utilizarse cuando se aplican las reglas de combate nocturno. Si un vehículo dispone de reflector, debera seguir aplicando las reglas de combate nocturno al elegir su objetivo; pero, una vez adquirido un objetivo, lo iluminara con el reflector de forma que, durante el resto de la fase de disparo, cualquier otra unidad que dispare a la unidad iluminada no deberá aplicar la regla de combate nocturno. Sin embargo, el vehiculo que utiliza el reflector podrá ser designado como objetivo en el siguiente turno del enemigo como si las reglas de combate nocturno no estuvieran en efecto, ya que el enemigo puede ver la luz del reflector.</characteristic>
@@ -391,22 +386,450 @@ Si un bípode está armado con dos o más armas de combate cuerpo a cuerpo, obti
         <characteristic name="Descripción" typeId="11b5-56ae-f93d-b524">No confieren ninguna bonificación, la miniatura realizará sus ataques con su atributo de Fuerza y FP -</characteristic>
       </characteristics>
     </profile>
-    <profile name="Blindaje adicional" id="cf47-2dba-970c-bb92" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
-      <characteristics>
-        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Los vehículos equipados con blindaje adicional cuentan los resultados de Tripulación aturdida de la tabla de daños en vehículos como si fueran resultados de Tripulación acobardada.</characteristic>
-      </characteristics>
-    </profile>
     <profile name="Reparación" id="2041-9c89-a1d7-51f3" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
       <characteristics>
         <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">si un Rhino está inmovilizado por cualquier razón, su tripulación puede intentar reparar el vehículo en turnos siguientes en vez de disparar el armamento del vehículo. Tira 1D6 en la fase de Disparo; con un resultado de 6 el vehículo deja de estar inmovilizado.</characteristic>
       </characteristics>
     </profile>
-    <profile name="Pala excavadora" id="cc87-4ebb-33bb-a377" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+    <profile name="Cañón Demolisher" id="de43-9888-531f-eb64" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">10</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">2</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Artillería 1</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Cañón tormenta infernal" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="e0e4f9ff-55b9-42e5-8e47-15d13a470e9e">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Plantilla</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">6</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 1</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Demolisher" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="649d4083-2853-461d-8097-66d819ede5f1">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">10</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">2</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Artillería 1, Área grande</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Escopeta" id="0e75-5d1d-46fb-e09a" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">30cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">-</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 2</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Lanzagranadas Fragmentación" id="0574-0866-85e8-5aa0" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">30cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">3</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">6</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 1, Área</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Lanzagranadas Perforante" id="d1c6-bc8e-65d7-690b" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">30cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">6</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 1</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Lanzallamas" id="c6ed-e1e6-bd68-1891" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Plantilla</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 1</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Misiles Incendiarios Castellano" id="7205-7734-36d0-59fb" hidden="false" page="79" publicationId="f176-f140-74d8-da7d" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">30-120 cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Artillería 1, Barrera de Artillería, Ignora cobertura</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Misiles Venganza" id="55cf-e452-2c42-9376" hidden="false" page="79" publicationId="f176-f140-74d8-da7d" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">30-120 cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">5</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Artillería 1, Barrera de Artillería</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Pistola infierno" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="90ba7ced-91ae-487c-b88f-af57907602cf">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">15cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">8</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">1</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistola, Fusión</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Pistola lanzallamas" id="43407c32-8d32-4138-af30-745d29b7ba82" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Plantilla</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">3</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">6</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistola</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Pistola láser" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="0954e541-f56e-4616-97f1-e4c786d6632d">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">30cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">3</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">-</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistola</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Proyectiles Infierno" id="0fc7-2f85-4c1c-540a" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">90cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">X</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">-</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 1, Área, Envenenada (2+)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Armadura Artesanal" id="c527-cfdf-ce43-76b7" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Las miniaturas equipadas con una Armadura Artesanal disponen de una tirada de salvación por armadura de 2+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Armadura de Explorador" id="2ced-08ca-3825-72e2" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Las miniaturas equipadas con una Armadura de Explorador disponen de una tirada de salvación por armadura de 4+.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Armas Reliquia" id="cb8e-26ee-644c-deca" hidden="false" page="97" publicationId="f176-f140-74d8-da7d" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un arma reliquia se considera un arma de energia, pero sus impactos se resuelven con Fuerza 6. A causa de su tamaño y peso, una miniatura equipada con un arma reliquia no puede conseguir ataques extras por estar equipada con un arma de combate cuerpo a cuerpo adicional.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Armas de Precisión" id="8f62-4549-a7d1-f500" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Una miniatura equipada con armas de precisión puede repetir una única tirada para impactar no superada por turno de jugador al utilizarla.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Aura de Hierro" id="348b-da15-cc84-c027" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Incorpora un campo de energia muy poderoso capaz de desviar incluso los ataques mas peligrosos. Proporciona a su portador una tirada de salvación invulnerable de 4+.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Baliza de Teleportación" id="d14e-d59a-7b95-bcb0" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Si los exterminadores quieren teleportarse al campo de batalla por medio de un despliegue rápido y deciden hacerlo a 15cm o menos de una miniatura equipada con esta baliza, no se dispersarán. Hay que tener en cuenta que la baliza de teleportación únicamente pueden utilizarla unidades que se teleporten; no pueden hacerlo unidades que entren en juego utilizando retrorreactores, capsulas de desembarco u otros medios de transporte. Tambien hay que tener en cuenta que la baliza debe estar sobre el campo de batalla al inicio del turno en que vaya a utilizarse.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Combiarma" id="b524-ca47-0c30-ae4f" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Una Marine Espacial armado con una combiarma (combirrifle de fusión, combirrifle de plasma o combilanzallamas) puede elegir entre disparar el bólter o el arma  secundaria, cada una con el perfil indicado en su correspondiente descripción. El bolter puede dispararse cada turno, pero el arma secundaria únicamente puede dispararse  una vez por batalla (un combirrifle de plasma puede, evidentemente, disparar en fuego rápido). En un mismo turno no pueden dispararse las dos armas.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Crozius Arcanum" id="e9d2-05f5-51d6-8c9f" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">El crozius arcanum es el simbolo del Capellán Marine Espacial. Se trata de un arma de energía.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Escudo de Combate" id="c317-b66f-1fdf-8662" hidden="false" page="54" publicationId="822e-763d-4a6a-b7fc" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Proporciona al portador una tirada de Salvación Invulnerable de 5+</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Espada Sierra" id="2b7f-19b0-c335-23bc" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Arma de combate Cuerpo a Cuerpo</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Filoarma" id="2ca9-cbee-ed53-8717" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Arma de combate Cuerpo a Cuerpo</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Granadas Perforantes y de Fragmentación" id="e9fd-053f-940d-6f58" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">La miniatura está equipada con granadas Perforantes y de Fragmentación</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Lanzagranadas Auxiliar" id="0e66-17cd-2af2-619f" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un lanzagranadas auxiliar puede dispararse además de otra arma. Cada vez que el lanzagranadas auxiliar dispara, el jugador que lo controla debe decidir el tipo de granada utilizado.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Lanzamisiles Ciclón" id="754b-816e-74aa-4aab" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un exterminador puede disparar su lanzamisiles ciclón además de su bolter de asalto. Cada vez que un lanzamisiles ciclón dispara, el jugador que lo controla puede elegir el tipo de misil que utiliza.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Lanzamisiles múltiple Whirlwind" id="eb93-dfba-cb68-53b0" hidden="false" page="79" publicationId="f176-f140-74d8-da7d" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Cada Whirlwind de tu ejército está equipado con los misiles Venganza y los misiles
+incendiarios Castellano. Declara qué tipo de misil deseas usar antes de que el Whirlwind dispare.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Martillo Sísmico" id="1856-12e8-552e-a86e" hidden="false" page="65" publicationId="f176-f140-74d8-da7d" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un martillo sismico se considera un arma de combate cuerpo a cuerpo para dreadnoughts que suma +1 al resultado en la Tabla de Daños en Vehículos.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Misil Cazador Asesino" id="30f6-7094-77e3-82d8" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un misil cazador asesino es un misil perforante con un alcance ilimitado que puede utilizarse solo una vez por batalla. Se dispara con HP4. Se considera un arma adicional.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Motocicleta Marines Espaciales" id="5042-8639-f05a-298b" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Las miniaturas equipadas con motos marines espaciales siguen las reglas de las tropas de motos descritas en el reglamento de Warhammer 40,000. Las motocicletas marines espaciales estan artilladas con un bolter acoplado.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Proyectiles Infierno" id="6470-b6a1-ef7d-d6d4" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">El Bolter Pesado puede disparar un único proyectil infierno en lugar de disparar normalmente.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Puño Sierra" id="e84b-c9b9-c6f8-1a0c" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Se considera exactamente igual que un puño de combate, pero tira 2D6 al efectuar la tirada de penetración de blindaje.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Servoarmadura" id="35b6-b813-1033-e16a" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Las miniaturas equipadas con Servoarmadura disponen de una tirada de salvación por armadura de 3+.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Servobrazo" id="8d68-53db-c7e0-0678" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Cada servobrazo garantiza a la miniatura que lo porta un Ataque adicional en combate de Iniciativa 1 y Fuerza 8 que ignora las tiradas de salvación por armadura</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Bólter" id="90a7-c0e2-3a06-dc70" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Fuego Rápido</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Bólter Pesado" id="3c0e-4865-97cc-bd9c" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">90cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">5</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 3</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Bólter de Asalto" id="d495-caf7-3c41-4620" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 2</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8f88-6e3b-aa09-289f" name="Cañón Aullador" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">6</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 3, Acobardamiento</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Cañón Automático" id="33e3-aa73-1b0e-2e83" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">120cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">7</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 2</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Cañón Láser" id="b210-a1f3-d328-5739" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">120cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">9</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">2</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 1</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Cañón de Asalto" id="ca47-3295-c193-8e3b" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">6</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 4, Acerada</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Cañón de Fusión" id="8f30-c05c-e72e-4baf" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">8</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">1</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 1, Fusión</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Cañón de Plasma" id="ff28-6505-3158-bff5" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">90cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">7</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">2</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 1, Área, Sobrecalentamiento</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Lanzallamas Pesado" id="ea35-d96a-285e-1a63" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Plantilla</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">5</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 1</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Lanzamisiles Fragmentación" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="e474b109-dc6e-4a0d-928c-1e8c5b08acbf">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">120cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">6</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 1, Área</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Lanzamisiles Perforante" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="ddc7ae3e-7035-4486-9b06-07cb064c8097">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">120cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">8</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 1</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Lanzamisiles Tifón Perforante" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="a2160dfb-ec4e-43ae-b6dd-1b746b63aff7">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">120cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">8</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 2</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Pistola Bólter" id="42da-250f-adf8-65a7" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">30cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistola</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Pistola de Plasma" id="3bbd-3f62-f9b0-4805" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">30cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">7</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">2</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistola, Sobrecalentamiento</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Rifle de Francotirador" id="4626-d95e-5597-ec83" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">90cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">X</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">6</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 1, Francotirador</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Rifle de Fusión" id="d70e-78b0-03b3-f2b2" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">30cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">8</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">1</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 1, Fusión</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Rifle de Plasma" id="223c-ecb9-2104-7007" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">7</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">2</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Fuego Rápido, Sobrecalentamiento</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Cañón de Batalla" id="4008-e41f-0faa-d25d" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">180cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">8</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Artillería 1</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Lanzamisiles Ciclón Fragmentación" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="43017582-0dc3-431b-9b50-5d62539d22f0">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">120cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">6</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 2, Área</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Lanzamisiles Ciclón Perforante" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="563332a8-20d0-4c81-85d3-611c8cc23c5c">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">120cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">8</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 2</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Lanzamisiles Múltiple Whirlwind Incendiario Castellano" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="d985860a-45b5-42af-9d04-a8752248e541">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">30-120cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Artillería 1, Barrera de Artillería, Ignora cobertura</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Lanzamisiles Múltiple Whirlwind Venganza" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="2e361051-f517-45c8-908a-af6de15f3bca">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">30-120cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">5</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Artillería 1, Barrera de Artillería</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Lanzamisiles Tifón Fragmentación" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="5f02b02a-5475-4d5d-ab74-7619ec62da7a">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">120cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">6</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 2, Área</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Lanzamisiles Viento de Muerte" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma" hidden="false" id="6c0e6eb1-bfbb-405d-b32a-23bb10d183a8">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">30cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">5</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">-</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 1, Área Grande</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Pistola de Fusión" id="9236-7c5b-af60-bdcd" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">15cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">8</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">1</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistola, Fusión</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Blindaje Adicional" id="cf47-2dba-970c-bb92" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Los vehículos equipados con blindaje adicional cuentan los resultados de Tripulación aturdida de la tabla de daños en vehículos como si fueran resultados de Tripulación acobardada.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Cinturones Gravitatorios" id="4c8d-1fa6-3e31-ba25" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Los cinturones gravitatorios permiten a los arlequines atravesar cualquier tipo de terreno sin apenas tocar el suelo. Los Arlequines ignoran el terreno difícil.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Pala Excavadora" id="cc87-4ebb-33bb-a377" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
       <characteristics>
         <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Los vehículos equipados con palas excavadoras podrán repetir los chequeos fallidos de Terreno Difícil.</characteristic>
       </characteristics>
     </profile>
-    <profile name="Misil cazador asesino" id="fffa-5f18-59af-8106" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+    <profile name="Misil Cazador Asesino" id="fffa-5f18-59af-8106" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
       <characteristics>
         <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">Ilimitado</characteristic>
         <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">8</characteristic>
@@ -415,6 +838,108 @@ Si un bípode está armado con dos o más armas de combate cuerpo a cuerpo, obti
         <characteristic name="Nota" typeId="5cb3-f9d0-8306-fb72"/>
       </characteristics>
     </profile>
+    <profile name="Pistola Shuriken" id="06c3a5c6-8ed0-418e-b6fa-b72c883727b7" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">30cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pistola</characteristic>
+        <characteristic name="Nota" typeId="5cb3-f9d0-8306-fb72"/>
+      </characteristics>
+    </profile>
+    <profile name="Rifle Láser Sobrecargado" id="6952-4c55-9ab8-4626" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">45cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">3</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Fuego Rápido</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Servoarnés" id="3216-6af7-2bc4-4ef1" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un servoarnes proporciona un servobrazo adicional al Tecnomarine (con lo que dispone de dos ataques con servobrazo), un cortador de plasma (pude dispararse en la fase de disparo como una pistola de plasma acoplada, pero no puede usarse en combate cuerpo a cuerpo) y un lanzallamas. En la fase de disparo, el Tecnomarine puede disparar las dos armas montadas en el arnés, o un arma montada en el arnés y otra normal.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Granadas de Disrupción" id="bfed-c438-e1b1-adef" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Las granadas de disrupción sirven para inutilizar o inmovilizar los vehículos enemigos.
+Estas granadas pueden utilizarse normalmente para atacar vehículos. Tira 1D6 por cada impacto obtenido para determinar los efectos en el vehículo.
+1 - Ningún efecto
+2 - 5 - Impacto superficial
+6 - Impacto interno</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Granadas de Plasma" id="9078-ebc8-e854-bd2e" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Cuentan como Granadas de asalto</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Holoarmadura" id="8abc-0ab6-47c7-f887" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Los Arlequines utilizan la holoarmadura para fragmentar su imagen y evitar los disparos y golpes enemigos. Los Arlequines se benefician de una salvación invulnerable de 5+.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Rosarius" id="c6fa-de9f-e072-202e" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">El Rosarius proporciona una tirada de salvación invulnerable de 4+ a su portador.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Capucha Psíquica" id="170f-9ff2-a535-74e4" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Declara que usarás la capucha psíquica después de que una miniatura enemiga a 60 cm o menos del bibliotecario supere un chequeo psíquico. Si hay varios bibliotecarios dentro del alcance, solo uno puede intentar anular el poder psiquico, asi que hay que elegir uno de ellos.
+
+Cada jugador tira 1D6 y añade el atributo de Liderazgo de su miniatura al resultado. Si el Bibliotecario Marine Espacial supera el resultado de la miniatura enemiga, el poder psiquico se anula y no produce efecto ese turno. Si el resultado de la miniatura enemiga es igual o superior, puede usar su poder psiquico normalmente. La capucha psíquica puede usarse cada vez que una miniatura enemiga use un poder psíquico dentro de su alcance.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Descargadores de Metralla" id="51e2-2c9b-ae69-5354" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">El casco del Land Raider Cruzado y del Land Raider Redentor lleva incorporadas cargas explosivas diseñadas para disparar metralla a las tropas enemigas
+mientras las tropas que hay en el interior cargan. Una unidad que cargue al combate cuerpo a cuerpo en el mismo turno en que desembarque de un Land Raider Cruzado o Redentor, se considera equipada con granadas de fragmentación.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Escudo de Tormenta" id="d95f-e2d7-fdfe-87d9" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Proporciona al portador una tirada de Salvación Invulnerable de 3+, pero nunca podrá aplicar el modificador de +1 Ataque por estar armado por dos armas de combate cuerpo a cuerpo</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Lanzamisiles Tifón" id="bc19-11c8-8784-5816" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">El Lanzamisiles Tifón está equipado con munición Perforante y de Fragmentación. Declara que tipo de munición vas a usar antes de disparar.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Retrorreactores" id="ba22-cd8e-0d95-8e72" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Las miniaturas equipadas con retrorreactores se consideran unidades retropropulsadas, tal y como se describen en el reglamento de Warhammer 40,000. Además, pueden saltar desde cañoneras Thunderhawk en vuelo rasante, utilizando sus retrorreactores para descender suavemente hasta el campo de batalla. Para representar esto, estas tropas pueden mantenerse en reserva y entrar en el campo de batalla utilizando las reglas de despliegue rapido (consulta la seccion Reglas Especiales de Misión en el reglamento de Warhammer 40,000).</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Honor del Capítulo" id="933b-eeef-e5f5-7a50" hidden="false" typeId="c970-b832-a956-1ac8" typeName="Habilidad">
+      <characteristics>
+        <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Un Capellan personifica el honor del capitulo. El Capellán y todos los miembros de la escuadra a la que se ha unido están sujetos a Coraje.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Poder del espiritu máquina" id="2053-f1f6-6887-b1ea" hidden="false" typeId="c970-b832-a956-1ac8" typeName="Habilidad">
+      <characteristics>
+        <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Un Land Raider puede disparar un arma más de lo que normalmente estaría permitido. Además, esta arma puede dispararse a una unidad objetivo diferente de las otras armas, sujeta a las reglas habituales de disparo
+
+Por tanto, un Land Raider que se haya movido a velocidad de combate puede disparar dos armas, y un Land Raider que se haya movido a velocidad de crucero o que haya sufrido un resultado de tripulación aturdida o tripulación acobardada solo puede disparar un arma.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Reparación" id="7d29-e1f8-41b6-7e94" hidden="false" typeId="c970-b832-a956-1ac8" typeName="Habilidad">
+      <characteristics>
+        <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Los Rhinos son vehículos especialmente resistentes y pueden ser reparados por su propia tripulación. Si un Rhino resulta inmovilizado, sea por la razón que sea, su conductor puede intentar repararlo temporalmente en los turnos subsiguientes en vez de disparar con él. Tira un dado en la fase de disparo; si obtienes un 6, el vehículo dejará de estar inmovilizado.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Vehículo de asalto" id="4ec6-163f-1770-4d9b" hidden="false" typeId="c970-b832-a956-1ac8" typeName="Habilidad">
+      <characteristics>
+        <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Las miniaturas que desembarcan desde uno de los puntos de acceso de un Land Raider pueden asaltar ese mismo turno.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Venerable" id="7fc4-8584-09d0-8e96" hidden="false" page="65" publicationId="f176-f140-74d8-da7d" typeId="c970-b832-a956-1ac8" typeName="Habilidad">
+      <characteristics>
+        <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Si un Dreadnought Venerable sufre un impacto superficial o interno, puedes obligar a tu oponente a repetir la tirada en la Tabla de Daños en Vehículos. Debes aceptar el segundo resultado, incluso si es peor que el primero.</characteristic>
+      </characteristics>
+    </profile>
+
   </sharedProfiles>
   <sharedRules>
     <rule name="Fuego Rápido" id="e15d-1437-cfb2-b8dd" hidden="false" page="28" publicationId="1595-b68b-b80b-025d">
@@ -860,16 +1385,28 @@ MORAL Y MOVIMIENTOS DE RETIRADA
 Para realizar los chequeos de moral y otros chequeos de liderazgo, y para la resolución del combate, ignora los cañones, como si no estuvieran. Puesto que necesitan
 como mínimo un miembro de la dotación por canon para poder mover la unidad, si una unidad de artillería no tiene un miembro por cañón cuando se está retirando, los cañones sin dotación se abandonan y se retiran del tablero. A continuación, el resto de la unidad se retira de la forma habitual. Si una unidad de artillería está obligada a retirarse del combate cuerpo a cuerpo y el enemigo puede realizar una persecución arrolladora, la unidad de artillería puede automáticamente la tirada de iniciativa y es destruida.</description>
     </rule>
+    <rule name="Y no conocerán el miedo" id="5ce7-70c4-4a99-db0d" hidden="false" page="51" publicationId="f176-f140-74d8-da7d">
+      <description>Los Marines Espaciales superan automáticamente los chequeos de reagrupamiento y pueden efectuarlos incluso si los efectivos originales de la unidad han quedado reducidos a menos de la mitad de sus fuerzas a causa de las bajas, aunque se aplican todos los demás criterios. Normalmente, las tropas que se reagrupan no pueden moverse normalmente y siempre se consideran en movimiento, lo estén o no; pero estas restricciones no se aplican a miniaturas sujetas a esta regla especial. Si los Marines Espaciales son atrapados en una persecución arrolladora, no son destruidos, sino que continuarán luchando normalmente. Si esto ocurre, a la unidad se le deberá aplicar la regla ¡Manteneos firmes! en esta ronda de combate y, por tanto, puede sufrir bajas adicionales.
+
+Las unidades que incluyen servidores tambien estan sujetas a esta regla, siempre que la unidad incluya al menos un marine.</description>
+    </rule>
+    <rule name="Escuadras de combate" id="22a0-0930-12ab-bd9e" hidden="false">
+      <description>Diversas unidades de diez miniaturas tienen la opción de dividirse en dos unidades de cinco miniaturas, cada una denominada escuadra de combate. Si la unidad dispone de esta opción, así lo especifica. Por ejemplo, una escuadra de diez miniaturas puede luchar como una unidad de diez o dividirse en dos escuadras de combate de cinco miniaturas cada una.
+
+La decisión de dividir la unidad en escuadras de combate, así como cuales son las miniaturas que van en cada escuadra de combate, debe tomarse cuando la unidad se despliega. Ambas escuadras de combate pueden desplegarse en localizaciones separadas. La unica excepcion es cuando la unidad llegue en cápsula de desembarco. En este caso, el jugador decide si divide la unidad en escuadras de combate cuando desembarca.
+
+Si decides dividir una unidad en escuadras de combate, a partir de ese momento cada escuadra de combate se considerará una unidad separada a efectos de juego.</description>
+    </rule>
   </sharedRules>
   <sharedSelectionEntries>
     <selectionEntry name="Misil cazador asesino" id="f4a3-48a3-bdaf-c717" hidden="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink name="Misil cazador asesino" id="3649-a4c3-f338-143c" hidden="false" targetId="fffa-5f18-59af-8106" type="profile"/>
+        <infoLink name="Misil Cazador Asesino" id="3649-a4c3-f338-143c" hidden="false" targetId="fffa-5f18-59af-8106" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Blindaje adicional" id="9694-1ee2-7ee4-b8ee" hidden="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink name="Blindaje adicional" id="0d16-f1b1-d26c-b577" hidden="false" targetId="cf47-2dba-970c-bb92" type="profile"/>
+        <infoLink name="Blindaje Adicional" id="0d16-f1b1-d26c-b577" hidden="false" targetId="cf47-2dba-970c-bb92" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Reflector" id="c1ac-63b0-b525-40b4" hidden="false" import="true" type="upgrade">
@@ -884,7 +1421,7 @@ como mínimo un miembro de la dotación por canon para poder mover la unidad, s
     </selectionEntry>
     <selectionEntry name="Pala excavadora" id="f2a9-ff54-43f1-b5a8" hidden="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink name="Pala excavadora" id="cd63-d6d7-6ed2-0262" hidden="false" targetId="cc87-4ebb-33bb-a377" type="profile"/>
+        <infoLink name="Pala Excavadora" id="cd63-d6d7-6ed2-0262" hidden="false" targetId="cc87-4ebb-33bb-a377" type="profile"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>

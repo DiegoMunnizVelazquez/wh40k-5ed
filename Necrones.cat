@@ -1648,11 +1648,6 @@
             <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
           </characteristics>
         </profile>
-        <profile id="4970-98b4-960c-334c" name="Ataques de Fase" publicationId="20db-6e5e-2c14-0348" page="44" hidden="false" typeId="c970-b832-a956-1ac8" typeName="Habilidad">
-          <characteristics>
-            <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Los ataques de los Espectros Canópticos se consideran ataques Acerados</characteristic>
-          </characteristics>
-        </profile>
         <profile id="1e38-9fff-3eb8-7fca" name="Vuelo Espectral" publicationId="20db-6e5e-2c14-0348" page="44" hidden="false" typeId="c970-b832-a956-1ac8" typeName="Habilidad">
           <characteristics>
             <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">El movimiento de los Espectros Canópticos no se ve afectado por el terreno dificil y superan atomáticamente los chequeos por terreno peligroso.</characteristic>
@@ -1661,21 +1656,16 @@
       </profiles>
       <infoGroups>
         <infoGroup id="b108-9dd9-6f5f-72a0" name="Ataques de Fase" publicationId="20db-6e5e-2c14-0348" page="44" hidden="false">
-          <profiles>
-            <profile id="57c6-e386-f0ba-d7d8" name="Ataques de Fase" hidden="false" typeId="c970-b832-a956-1ac8" typeName="Habilidad">
-              <characteristics>
-                <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Los ataques de los Espectros Canópticos se consideran ataques Acerados</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
           <infoLinks>
             <infoLink id="e546-f103-f334-9cd7" name="Acerada" hidden="false" targetId="7097-6879-0d11-787d" type="rule"/>
+            <infoLink name="Ataques de Fase" id="0061-fd8c-50c6-ea8f" hidden="false" targetId="4970-98b4-960c-334c" type="profile"/>
           </infoLinks>
         </infoGroup>
       </infoGroups>
       <infoLinks>
         <infoLink id="4c63-93db-29d8-a602" name="Coraje" hidden="false" targetId="b23b-fb5c-4c8c-5ae4" type="rule"/>
         <infoLink id="e81c-6dac-e1f5-9fc8" name="Alterador Fásico" hidden="false" targetId="bba7-79bb-6af4-1ca0" type="profile"/>
+        <infoLink name="Ataques de Fase" id="385c-3251-ccce-1ad9" hidden="false" targetId="4970-98b4-960c-334c" type="profile"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry id="8a20-2839-5d47-9b22" name="Látigos Espirales" hidden="false" collective="false" import="true" type="upgrade">
@@ -2175,14 +2165,6 @@
             <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">* Designa una dirección cuando dispares el Cetro del  Destructor. Entonces tira 5D6 y extiende una línea recta desde la peana de Imotek en Ia dirección elegida, una distancia igual al total obtenido. Cualquier unidad, amiga o enemiga debajo  de esta línea sufrirá un número de impactos igual al número de miniaturas que tenga debajo de dicha línea.</characteristic>
           </characteristics>
         </profile>
-        <profile id="7fd3-bed5-8493-7117" name="Cetro del Destructor" publicationId="20db-6e5e-2c14-0348" page="55" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
-          <characteristics>
-            <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">*5D6cm</characteristic>
-            <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">6</characteristic>
-            <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">1</characteristic>
-            <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto1, Un solo uso</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
       <rules>
         <rule id="1081-f6b6-a3f4-3254" name="Derrota humillante" publicationId="20db-6e5e-2c14-0348" page="55" hidden="false">
@@ -2204,6 +2186,7 @@
         <infoLink id="ac8a-89d1-f10c-e9db" name="Personaje independiente" hidden="false" targetId="61b4-c5bb-9d85-8506" type="rule"/>
         <infoLink id="90a6-a499-aa1c-9ea1" name="Phaeron" hidden="false" targetId="a832-03f2-f3d6-cca1" type="rule"/>
         <infoLink id="3493-7a31-5a6c-b13f" name="Protocolos de Reanimación" hidden="false" targetId="853c-783e-45a4-adec" type="rule"/>
+        <infoLink name="Cetro del Destructor" id="a359-d088-732c-b3b4" hidden="false" targetId="606f-cc03-51b7-5a52" type="profile"/>
       </infoLinks>
       <entryLinks>
         <entryLink id="9068-b684-e0de-5403" name="Plataforma de mando Catacumba" hidden="false" collective="false" import="true" targetId="2d22-65d7-ceca-8cf6" type="selectionEntry">
@@ -2923,6 +2906,9 @@ La unidad elegida tendrá esa regla especial hasta el principio de tu próximo t
     <rule id="a832-03f2-f3d6-cca1" name="Phaeron" publicationId="20db-6e5e-2c14-0348" page="30" hidden="false">
       <description>Un Phaeron y cualquier unidad a la que se haya unido, tiene la regla especial Implacables</description>
     </rule>
+    <rule id="4d1a-0ed0-ed68-d7bd" name="Arco" publicationId="20db-6e5e-2c14-0348" page="81" hidden="false">
+      <description>Después de resolver el disparo, tira 1D6 por cada otra unidad a 15cm o menos del objetivo. Si sacas un 6, esa unidad sufrirá 1D6 impactos automáticos de Fuerza 5, FP -</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="b7e3-1975-866b-49f7" name="Lanza Mística" publicationId="20db-6e5e-2c14-0348" page="84" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
@@ -2943,7 +2929,7 @@ La unidad elegida tendrá esa regla especial hasta el principio de tu próximo t
     </profile>
     <profile id="606f-cc03-51b7-5a52" name="Cetro del Destructor" publicationId="20db-6e5e-2c14-0348" page="96" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
       <characteristics>
-        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">5D6cm</characteristic>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">*5D6cm</characteristic>
         <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">6</characteristic>
         <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">1</characteristic>
         <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 1, Un solo uso</characteristic>
@@ -3103,6 +3089,11 @@ La unidad elegida tendrá esa regla especial hasta el principio de tu próximo t
         <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 1, Área, Acoplada</characteristic>
       </characteristics>
     </profile>
+    <profile id="4970-98b4-960c-334c" name="Ataques de Fase" hidden="false" typeId="c970-b832-a956-1ac8" typeName="Habilidad">
+      <characteristics>
+        <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Los ataques de los Espectros Canópticos se consideran ataques Acerados</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedInfoGroups>
     <infoGroup id="1299-ec54-f9b7-8b76" name="Blaster Gauss" publicationId="20db-6e5e-2c14-0348" page="96" hidden="false">
@@ -3231,13 +3222,9 @@ La unidad elegida tendrá esa regla especial hasta el principio de tu próximo t
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="4d1a-0ed0-ed68-d7bd" name="Arco" publicationId="20db-6e5e-2c14-0348" page="81" hidden="false">
-          <description>Después de resolver el disparo, tira 1D6 por cada otra unidad a 15cm o menos del objetivo. Si sacas un 6, esa unidad sufrirá 1D6 impactos automáticos de Fuerza 5, FP -</description>
-        </rule>
-      </rules>
       <infoLinks>
         <infoLink id="6ebc-3767-2cdc-6b3e" name="Tesla" hidden="false" targetId="fa26-e552-8923-ebca" type="rule"/>
+        <infoLink name="Arco" id="9af8-d33a-4f2a-e6aa" hidden="false" targetId="4d1a-0ed0-ed68-d7bd" type="rule"/>
       </infoLinks>
     </infoGroup>
     <infoGroup id="b1dd-d7a0-9358-acc0" name="Lanzarrallos Transdimensional" publicationId="20db-6e5e-2c14-0348" page="96" hidden="false">
@@ -3477,13 +3464,9 @@ La unidad elegida tendrá esa regla especial hasta el principio de tu próximo t
           </characteristics>
         </profile>
       </profiles>
-      <rules>
-        <rule id="157e-c273-a7c0-b590" name="Arco" publicationId="20db-6e5e-2c14-0348" page="81" hidden="false">
-          <description>Después de resolver el disparo, tira 1D6 por cada otra unidad a 15cm o menos del objetivo. Si sacas un 6, esa unidad sufrirá 1D6 impactos automáticos de Fuerza 5, FP -</description>
-        </rule>
-      </rules>
       <infoLinks>
         <infoLink id="b866-e852-09b2-4ab4" name="Tesla" hidden="false" targetId="fa26-e552-8923-ebca" type="rule"/>
+        <infoLink name="Arco" id="b8e5-1971-e237-2c94" hidden="false" targetId="4d1a-0ed0-ed68-d7bd" type="rule"/>
       </infoLinks>
     </infoGroup>
     <infoGroup id="fafa-1df9-7770-2d0c" name="Rayo de muerte" publicationId="20db-6e5e-2c14-0348" page="96" hidden="false">

@@ -13,7 +13,7 @@ Opciones:
     --csv-armas ARCHIVO     CSV de armas (por defecto: 'PerfilesArmas.csv')
     --csv-bipodes ARCHIVO   CSV de bípodes (por defecto: 'PerfilesBipodes.csv')
     --skip PASOS            Pasos a saltar, separados por comas
-                            (unidades,vehiculos,armas,bipodes,infogroups,selections)
+                            (unidades,vehiculos,armas,bipodes,selections)
     --only PASOS            Ejecutar SOLO estos pasos, separados por comas
     --dry-run               Mostrar qué se ejecutaría sin ejecutar nada
     --verbose               Mostrar salida completa de cada script
@@ -25,8 +25,8 @@ Ejemplos:
     # Procesar Marines Espaciales con CSVs personalizados
     python run_all.py --cat "Marines Espaciales.cat" --csv-armas armas_marines.csv
 
-    # Solo actualizar armas y regenerar infoGroups
-    python run_all.py --only armas,infogroups
+    # Solo actualizar armas y generar las selectionEntries que falten
+    python run_all.py --only armas,selections
 
     # Ejecutar todo excepto bípodes
     python run_all.py --skip bipodes
@@ -69,12 +69,6 @@ STEPS = [
         'csv_param': 'csv_bipodes',
     },
     {
-        'id': 'infogroups',
-        'nombre': 'Generar sharedInfoGroups (todos los tipos)',
-        'script': 'generate_all_shared_info_groups.py',
-        'csv_param': 'csv_armas',  # Este script usa el CSV de armas para mapeo de reglas
-    },
-    {
         'id': 'selections',
         'nombre': 'Generar sharedSelectionEntries',
         'script': 'generate_selection_entries.py',
@@ -95,12 +89,10 @@ Orden de ejecución:
   2. update_vehicle_profiles.py   (vehiculos)
   3. update_weapon_profiles.py    (armas)
   4. update_bipode_profiles.py    (bipodes)
-  5. generate_all_shared_info_groups.py (infogroups)
-  6. generate_selection_entries.py (selections)
+  5. generate_selection_entries.py (selections)
 
 Los pasos 1-4 actualizan perfiles desde CSV.
-El paso 5 genera infoGroups a partir de los perfiles del CAT.
-El paso 6 genera selectionEntries a partir de los infoGroups.
+El paso 5 crea las selectionEntries que falten, enlazadas directamente al perfil.
         """
     )
 
@@ -117,7 +109,7 @@ El paso 6 genera selectionEntries a partir de los infoGroups.
     parser.add_argument('--skip', default='',
                         help='Pasos a saltar, separados por comas (ej: bipodes,selections)')
     parser.add_argument('--only', default='',
-                        help='Ejecutar SOLO estos pasos, separados por comas (ej: armas,infogroups)')
+                        help='Ejecutar SOLO estos pasos, separados por comas (ej: armas,selections)')
     parser.add_argument('--dry-run', action='store_true',
                         help='Mostrar qué se ejecutaría sin ejecutar nada')
     parser.add_argument('--verbose', action='store_true',

@@ -1446,6 +1446,11 @@ El eztandarte tiene un significado casi religioso para los Orkos y lucharán has
 1=3 cm, 2=5 cm, 3=8 cm, 4=10 cm, 5=12 cm, 6=15 cm.</characteristic>
       </characteristics>
     </profile>
+    <profile name="Zemi-orugaz" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="248b-2e99-00c8-c969" publicationId="11a0-7b47-fa28-1d82" page="49">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un buggy con zemi-orugaz puede repetir las tiradas por terreno peligroso</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Orko Achicharrador" hidden="false" id="0d80fcbd-0758-4114-b9d7-21947ba57dcf">
@@ -1556,14 +1561,8 @@ El eztandarte tiene un significado casi religioso para los Orkos y lucharán has
             <selectionEntry type="upgrade" import="true" name="Kemakema y zemi-orugaz" hidden="false" id="d783-2350-9f7d-40ca" sortIndex="3">
               <infoLinks>
                 <infoLink name="Kemakema" id="a45b-5a6c-4f33-c813" hidden="false" type="infoGroup" targetId="e76dbbde-ba52-4116-b56d-747b1c0dc818"/>
+                <infoLink name="Zemi-orugaz" id="83c7-88e6-b49d-6d68" hidden="false" targetId="248b-2e99-00c8-c969" type="profile"/>
               </infoLinks>
-              <profiles>
-                <profile name="Zemi-orugaz" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="248b-2e99-00c8-c969" publicationId="11a0-7b47-fa28-1d82" page="49">
-                  <characteristics>
-                    <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un buggy con zemi-orugaz puede repetir las tiradas por terreno peligroso</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
@@ -1599,13 +1598,9 @@ El eztandarte tiene un significado casi religioso para los Orkos y lucharán has
       </entryLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Zemi-orugaz" hidden="false" id="2bd3-567e-dee0-415d" sortIndex="4">
-          <profiles>
-            <profile name="Zemi-orugaz" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="cbd0-6efd-2b8a-655d" publicationId="11a0-7b47-fa28-1d82" page="49">
-              <characteristics>
-                <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un buggy con zemi-orugaz puede repetir las tiradas por terreno peligroso</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <infoLinks>
+            <infoLink name="Zemi-orugaz" id="44ae-0461-4789-b1ab" hidden="false" targetId="248b-2e99-00c8-c969" type="profile"/>
+          </infoLinks>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5aee-e5d7-4235-955d" includeChildSelections="false"/>
           </constraints>
@@ -4209,6 +4204,7 @@ Si obtienes un resultado de 1, ese vehículo debe moverse directamente lo más a
         <infoLink name="¡La Peña triunfará!" id="7bad-06a8-cd9e-b2db" hidden="false" type="rule" targetId="5e0f-344d-a5bb-fbdc"/>
         <infoLink name="Azalto rabiozo" id="c522-3341-39b9-a27d" hidden="false" type="infoGroup" targetId="5c05-b913-b540-8e5b"/>
         <infoLink name="Granadaz de mano" id="dedc-1cd4-763d-2e8e" hidden="false" type="infoGroup" targetId="930e-4194-318b-1504"/>
+        <infoLink name="Kohete propulzor" id="1b21-27b5-c63d-ab03" hidden="false" targetId="c36e-2c18-56f8-2d1f" type="profile"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Kuerpo zibernétiko de Grotsnik" hidden="false" id="04c6-8f23-63f1-12b3" type="selectionEntry" targetId="1453-1c56-2c32-8f5e" sortIndex="3"/>
@@ -4321,14 +4317,6 @@ Si obtienes un resultado de 1, ese vehículo debe moverse directamente lo más a
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <profiles>
-        <profile name="Kohete propulzor" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="13be-e186-3037-0202" publicationId="11a0-7b47-fa28-1d82" page="47">
-          <characteristics>
-            <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Cada vez que la unidad de zoldadoz de azalto utiliza sus kohetez propulzorez para moverse o retirarse, tira 1D6. Si obtienes un resultado de 1, uno de los kohetez propulzorez queda fuera de control. Su propietario aterriza de cabeza y su mochila explota. Retira la miniatura de zoldado de azalto como baja. Independientemente del resultado, a la distancia que mueve la unidad ese turno puedes sumar la siguiente distancia según el resultado del dado:
-1=3 cm, 2=5 cm, 3=8 cm, 4=10 cm, 5=12 cm, 6=15 cm.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Buggies de guerra" hidden="false" id="d44b-8771-97f3-26af">
       <entryLinks>
