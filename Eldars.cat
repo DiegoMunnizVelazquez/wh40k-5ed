@@ -193,7 +193,11 @@
             <selectionEntry id="82e0-4807-2d84-ceda" name="Motocicleta a reacción" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
                 <infoLink name="Motocicleta a reacción" id="f3a8-4c14-42c9-c95a" hidden="false" targetId="94ab-9866-67e9-12a3" type="profile"/>
-                <infoLink name="Catapulta shuriken" id="c15e-08b0-8639-ef60" hidden="false" targetId="22ea-cb9a-07c6-f873" type="profile"/>
+                <infoLink name="Catapulta shuriken" id="e515-3100-9e2a-0394" hidden="false" targetId="22ea-cb9a-07c6-f873" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Asalto 2, Acoplada"/>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="30"/>
@@ -271,7 +275,7 @@
               </modifiers>
               <infoLinks>
                 <infoLink name="Lanza láser (Distancia)" id="c29d-96b2-e01f-d49a" hidden="false" targetId="d5ff-ca35-7026-8c74" type="profile"/>
-                <infoLink name="Lanza Láser" id="b553-1695-8836-c68e" hidden="false" targetId="f54c-3a31-e13c-a7bf" type="profile"/>
+                <infoLink name="Lanza Láser" id="22a8-14d2-fd68-cddf" hidden="false" targetId="f54c-3a31-e13c-a7bf" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="20"/>
@@ -394,7 +398,11 @@
               </constraints>
               <infoLinks>
                 <infoLink name="Motocicleta a reacción" id="afde-46ae-4f43-7e47" hidden="false" targetId="94ab-9866-67e9-12a3" type="profile"/>
-                <infoLink name="Catapulta shuriken" id="c65e-fb76-424d-8c1c" hidden="false" targetId="22ea-cb9a-07c6-f873" type="profile"/>
+                <infoLink name="Catapulta shuriken" id="3421-a1a6-acce-ba3e" hidden="false" targetId="22ea-cb9a-07c6-f873" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Asalto 2, Acoplada"/>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="30"/>
@@ -504,7 +512,7 @@
             <selectionEntry id="2111-cb5f-d390-34b4" name="Lanza bruja" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
                 <infoLink name="Lanza Bruja" id="632a-007e-8005-78a9" hidden="false" targetId="04a7-d046-8c62-9db6" type="profile"/>
-                <infoLink name="Lanza bruja (Distancia)" id="7629-6ff8-1c8c-8581" hidden="false" targetId="fc4e-3eec-3d15-de9c" type="profile"/>
+                <infoLink name="Lanza bruja (Distancia)" id="449d-dc66-d5c3-1bf2" hidden="false" targetId="fc4e-3eec-3d15-de9c" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="3"/>
@@ -695,7 +703,7 @@
             <selectionEntry id="3fb2-522d-b1ad-307d" name="Lanza bruja" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
                 <infoLink name="Lanza Bruja" id="cf8d-c676-7547-1b94" hidden="false" targetId="04a7-d046-8c62-9db6" type="profile"/>
-                <infoLink name="Lanza bruja (Distancia)" id="e1af-3329-2a73-b8fe" hidden="false" targetId="fc4e-3eec-3d15-de9c" type="profile"/>
+                <infoLink name="Lanza bruja (Distancia)" id="64ef-c542-4b3b-a931" hidden="false" targetId="fc4e-3eec-3d15-de9c" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="3"/>
@@ -918,8 +926,19 @@
         <infoLink id="e947-9272-9a13-9740" name="Acróbata" hidden="false" targetId="2f95-f875-cd35-1b4b" type="profile"/>
         <infoLink id="b21f-1d6b-d2d2-5fab" name="Grito de Guerra" hidden="false" targetId="71d1-32be-4b79-a343" type="profile"/>
         <infoLink id="4f44-adee-93eb-eecb" name="Asalto Rabioso" hidden="false" targetId="33b4-1a73-92db-e562" type="rule"/>
-        <infoLink name="Trisquelión (Distancia)" id="45b7-16eb-0d93-562d" hidden="false" targetId="5095-0cd6-afff-ddc0" type="profile"/>
-        <infoLink name="Trisquelión" id="9340-c153-61e8-b46e" hidden="false" targetId="b63a-4c89-931e-523e" type="profile"/>
+        <infoLink name="Trisquelión (Distancia)" id="fcd7-3ce8-3a63-0206" hidden="false" targetId="5095-0cd6-afff-ddc0" type="profile">
+          <modifiers>
+            <modifier type="set" field="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" value="5"/>
+            <modifier type="set" field="name" value="Muerte Silenciosa (Distancia)"/>
+            <modifier type="set" field="page" value="55"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Trisquelión" id="cf46-b3b2-4ae8-15df" hidden="false" targetId="b63a-4c89-931e-523e" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Muerte Silenciosa"/>
+            <modifier type="set" field="page" value="55"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="puntos" value="190"/>
@@ -1315,8 +1334,16 @@
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99de-87a5-7f7f-d815" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Lanzamisiles Perforante" id="1386-defd-6f2a-1128" hidden="false" targetId="ddc7ae3e-7035-4486-9b06-07cb064c8097" type="profile"/>
-                <infoLink name="Lanzamisiles (plasma)" id="f5cb-ea03-2db6-e509" hidden="false" targetId="37e5-cdb2-4668-fa33" type="profile"/>
+                <infoLink name="Lanzamisiles Perforante" id="1386-defd-6f2a-1128" hidden="false" targetId="ddc7ae3e-7035-4486-9b06-07cb064c8097" type="profile">
+                  <modifiers>
+                    <modifier type="append" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value=", Acoplada"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Lanzamisiles (plasma)" id="5b0c-c1ab-45e8-341b" hidden="false" targetId="37e5-cdb2-4668-fa33" type="profile">
+                  <modifiers>
+                    <modifier type="append" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value=", Acoplada"/>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="30"/>
@@ -2200,7 +2227,7 @@
       <infoLinks>
         <infoLink id="85ef-e330-0bae-ba75" name="Visión Ultraterrena" hidden="false" targetId="d400-e23f-4acc-c7c3" type="profile"/>
         <infoLink name="Cañón Espectral" id="0dea-0ea7-4481-9264" hidden="false" targetId="f684-9e50-1709-fedb" type="profile"/>
-        <infoLink name="Cañón Espectral" id="5c82-bd8d-c9a2-e8cb" hidden="false" targetId="a876-3029-2765-7a4b" type="profile"/>
+        <infoLink name="Cañón Espectral" id="6176-560c-9bf3-5104" hidden="false" targetId="a876-3029-2765-7a4b" type="profile"/>
         <infoLink id="3273-99f2-0e80-7d7e" name="Coraje" hidden="false" targetId="b23b-fb5c-4c8c-5ae4" type="rule"/>
       </infoLinks>
       <costs>
@@ -2665,7 +2692,7 @@
       </profiles>
       <infoLinks>
         <infoLink name="Rifle de explorador" id="35cb-3031-3a8d-a178" hidden="false" targetId="d319-4e1d-4da9-cbc6" type="profile"/>
-        <infoLink name="Rifle de Explorador" id="d748-a6e5-5ccb-6985" hidden="false" targetId="8ee8-98f9-d0b4-ea7b" type="profile"/>
+        <infoLink name="Rifle de Explorador" id="4763-d5f0-f986-4e92" hidden="false" targetId="8ee8-98f9-d0b4-ea7b" type="profile"/>
         <infoLink id="64aa-26c2-44bc-3406" name="Veloces" hidden="false" targetId="d110-fc1c-250c-54d4" type="rule"/>
         <infoLink id="c0a0-6767-ae38-83d8" name="Infiltración" hidden="false" targetId="3310-5f06-776a-5b35" type="rule"/>
         <infoLink id="586a-e7cf-c42f-9b1f" name="Sigilo" hidden="false" targetId="f1ee-e19a-a3c3-6797" type="rule"/>
@@ -2692,7 +2719,7 @@
           </constraints>
           <infoLinks>
             <infoLink name="Exploradores" id="a1e5-7dca-59b4-551d" hidden="false" targetId="630b-a220-22d6-31d0" type="rule"/>
-            <infoLink name="Vagabundos" id="2d5a-424a-2596-6b6f" hidden="false" targetId="4ef5-8d48-834c-7fef" type="profile"/>
+            <infoLink name="Vagabundos" id="7e3e-a89f-bcbe-ae1e" hidden="false" targetId="4ef5-8d48-834c-7fef" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="Pts" typeId="puntos" value="0"/>
@@ -2927,7 +2954,7 @@
               </constraints>
               <infoLinks>
                 <infoLink name="Lanzamisiles Perforante" id="ee37-0723-f27a-a795" hidden="false" targetId="ddc7ae3e-7035-4486-9b06-07cb064c8097" type="profile"/>
-                <infoLink name="Lanzamisiles (plasma)" id="6c4b-fa69-dfc8-ba94" hidden="false" targetId="37e5-cdb2-4668-fa33" type="profile"/>
+                <infoLink name="Lanzamisiles (plasma)" id="26cd-8245-02a2-bd12" hidden="false" targetId="37e5-cdb2-4668-fa33" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="20"/>
@@ -3170,7 +3197,7 @@
                   </constraints>
                   <infoLinks>
                     <infoLink name="Lanza láser (Distancia)" id="262e-949e-15cf-1b1e" hidden="false" targetId="d5ff-ca35-7026-8c74" type="profile"/>
-                    <infoLink name="Lanza Láser" id="f458-b7cc-87e9-f3c2" hidden="false" targetId="f54c-3a31-e13c-a7bf" type="profile"/>
+                    <infoLink name="Lanza Láser" id="3b6f-0984-9185-d892" hidden="false" targetId="f54c-3a31-e13c-a7bf" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="Pts" typeId="puntos" value="0"/>
@@ -3247,7 +3274,7 @@
               <infoLinks>
                 <infoLink id="0b83-dfe5-ac21-d580" name="Catapulta Shuriken acoplada" hidden="false" targetId="6619-262f-5342-85cf" type="profile"/>
                 <infoLink name="Lanza láser (Distancia)" id="fd6a-5f3f-3783-760a" hidden="false" targetId="d5ff-ca35-7026-8c74" type="profile"/>
-                <infoLink name="Lanza Láser" id="2588-fa19-f7ef-ca92" hidden="false" targetId="f54c-3a31-e13c-a7bf" type="profile"/>
+                <infoLink name="Lanza Láser" id="d76b-8af0-4f7a-c329" hidden="false" targetId="f54c-3a31-e13c-a7bf" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="35"/>
@@ -3359,7 +3386,7 @@
                       </constraints>
                       <infoLinks>
                         <infoLink name="Lanzamisiles Perforante" id="c8b3-e75e-ec62-9d26" hidden="false" targetId="ddc7ae3e-7035-4486-9b06-07cb064c8097" type="profile"/>
-                        <infoLink name="Lanzamisiles (plasma)" id="fd3a-e20f-1a0b-1e52" hidden="false" targetId="37e5-cdb2-4668-fa33" type="profile"/>
+                        <infoLink name="Lanzamisiles (plasma)" id="7d03-8cc3-88f6-d51a" hidden="false" targetId="37e5-cdb2-4668-fa33" type="profile"/>
                       </infoLinks>
                       <costs>
                         <cost name="Pts" typeId="puntos" value="20"/>
@@ -3448,9 +3475,9 @@
           <selectionEntries>
             <selectionEntry id="20d5-a87a-cb63-60b1" name="Batería" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
-                <infoLink name="Catapulta shuriken" id="225f-a8b5-2b5e-bf0c" hidden="false" targetId="22ea-cb9a-07c6-f873" type="profile"/>
-                <infoLink name="Plataforma con arma pesada" id="3891-a1c0-8a1d-7a6f" hidden="false" targetId="08e5-ecd5-4701-b2ed" type="profile"/>
-                <infoLink name="Batería" id="5794-37bb-34c3-95e3" hidden="false" targetId="6beb-0211-3f17-60ea" type="profile"/>
+                <infoLink name="Catapulta shuriken" id="470b-b91b-d746-110e" hidden="false" targetId="22ea-cb9a-07c6-f873" type="profile"/>
+                <infoLink name="Plataforma con arma pesada" id="3cb1-18be-96a1-78ed" hidden="false" targetId="08e5-ecd5-4701-b2ed" type="profile"/>
+                <infoLink name="Batería" id="55cf-0fe1-834a-a186" hidden="false" targetId="6beb-0211-3f17-60ea" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="0"/>
@@ -3477,7 +3504,7 @@
               </constraints>
               <infoLinks>
                 <infoLink name="Cañón de Distorsión" id="b65d-f67f-a673-c78b" hidden="false" targetId="0068-7a09-f887-cd47" type="profile"/>
-                <infoLink name="Cañón de Distorsión" id="69f4-dccd-54a4-54a2" hidden="false" targetId="14bf-e73b-3462-c6c5" type="profile"/>
+                <infoLink name="Cañón de Distorsión" id="67d6-758e-f5f0-aa33" hidden="false" targetId="14bf-e73b-3462-c6c5" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="0"/>
@@ -3496,7 +3523,7 @@
               </constraints>
               <infoLinks>
                 <infoLink name="Cañón de Vibración" id="e7b8-022c-6bb5-e9e7" hidden="false" targetId="ff1e-2e93-a2a4-3627" type="profile"/>
-                <infoLink name="Cañón de Vibración" id="499f-9f33-925e-70c0" hidden="false" targetId="5feb-639e-93d7-8b82" type="profile"/>
+                <infoLink name="Cañón de Vibración" id="4b03-c748-a20f-4f8e" hidden="false" targetId="5feb-639e-93d7-8b82" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="0"/>
@@ -3556,7 +3583,7 @@
                   </constraints>
                   <infoLinks>
                     <infoLink name="Lanzamisiles Perforante" id="7bf4-6370-926f-c27b" hidden="false" targetId="ddc7ae3e-7035-4486-9b06-07cb064c8097" type="profile"/>
-                    <infoLink name="Lanzamisiles (plasma)" id="f9ad-a134-fad9-849e" hidden="false" targetId="37e5-cdb2-4668-fa33" type="profile"/>
+                    <infoLink name="Lanzamisiles (plasma)" id="f5d7-8f0b-2e4c-9131" hidden="false" targetId="37e5-cdb2-4668-fa33" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="Pts" typeId="puntos" value="10"/>
@@ -3972,7 +3999,7 @@
                       </constraints>
                       <infoLinks>
                         <infoLink name="Lanzamisiles Perforante" id="6483-320b-6aef-5571" hidden="false" targetId="ddc7ae3e-7035-4486-9b06-07cb064c8097" type="profile"/>
-                        <infoLink name="Lanzamisiles (plasma)" id="48ef-829c-308a-11c1" hidden="false" targetId="37e5-cdb2-4668-fa33" type="profile"/>
+                        <infoLink name="Lanzamisiles (plasma)" id="5347-c10e-60e8-8992" hidden="false" targetId="37e5-cdb2-4668-fa33" type="profile"/>
                       </infoLinks>
                       <costs>
                         <cost name="Pts" typeId="puntos" value="20"/>
@@ -4093,7 +4120,7 @@
               </constraints>
               <infoLinks>
                 <infoLink name="Lanzamisiles Perforante" id="5466-37fb-0281-33ff" hidden="false" targetId="ddc7ae3e-7035-4486-9b06-07cb064c8097" type="profile"/>
-                <infoLink name="Lanzamisiles (plasma)" id="81ff-1389-1f2c-77e3" hidden="false" targetId="37e5-cdb2-4668-fa33" type="profile"/>
+                <infoLink name="Lanzamisiles (plasma)" id="4dfa-d4cc-99e2-8042" hidden="false" targetId="37e5-cdb2-4668-fa33" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="20"/>
@@ -4179,8 +4206,8 @@
       </profiles>
       <infoLinks>
         <infoLink name="Cañón Prisma (Rayo)" id="5d16-818d-f9d1-fe85" hidden="false" targetId="401a-8234-b929-eb3e" type="profile"/>
-        <infoLink name="Cañón Prisma (Ráfaga)" id="47d2-c1f7-87b7-6be4" hidden="false" targetId="370c-6a27-9ddf-3041" type="profile"/>
-        <infoLink name="Cañón Prisma" id="de3e-30cb-f345-5d89" hidden="false" targetId="1e8d-597b-bc88-a237" type="profile"/>
+        <infoLink name="Cañón Prisma (Ráfaga)" id="23c2-9f6f-6a53-b7bf" hidden="false" targetId="370c-6a27-9ddf-3041" type="profile"/>
+        <infoLink name="Cañón Prisma" id="8af4-ecc1-99b3-3b67" hidden="false" targetId="1e8d-597b-bc88-a237" type="profile"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="68a2-2ef2-2c3e-59e5" name="Arma principal" hidden="false" collective="false" import="true" defaultSelectionEntryId="ec44-d822-83b5-9948">
