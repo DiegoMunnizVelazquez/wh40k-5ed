@@ -1531,6 +1531,15 @@ Si Mordrak es retirado como baja, los Caballeros Fantasma pierden su vínculo co
     <rule name="Cielos encapotados" id="bb892752-2ea3-4b57-8ccf-aa7536d3bbcc" hidden="false">
       <description>Si la Stormraven se ha movido a toda velocidad los pasajeros podrán desembarcar, pero deberán hacerlo tal como se describe a continuación. Designa un punto que haya sido sobrevolado por la Stormraven ese turno y despliega a la escuadra como si hiciera un Despliegue rápido sobre dicho punto. Si la unidad se dispersa, todas sus miniaturas deberán realizar de inmediato un chequeo de Terreno peligroso. Las miniaturas con teleportadores personales pueden realizar un descenso mucho más preciso: no harán el chequeo por Terreno peligroso (a no ser que caigan sobre Terreno peligroso), y no se dispersarán. Si alguna de las miniaturas no puede ser desplegada, la unidad será destruida como se describe en el resultado 1-2 de la Tabla de Errores en Despliegue Rápido. Nótese que las unidades que desembarquen de este modo no podrán asaltar el turno en el que lleguen.</description>
     </rule>
+    <rule name="Señor de Titán" id="25f49fbb-7ad9-4766-b89c-13fa4bbb2acc" hidden="false">
+      <description>Un ejército que incluya a Lord Kaldor Draigo tratará a las Escuadras de Paladines como Tropas de línea.</description>
+    </rule>
+    <rule name="Guardián de Anarca" id="8cab880f-8b56-481c-b160-431a24e76cb1" hidden="false">
+      <description>Un ejército que incluya al Castellano Crowe tratará a las Escuadras Purificadoras como Tropas de línea.</description>
+    </rule>
+    <rule name="Señor de Formosa" id="45bdb90c-5521-4bb1-af5a-7ef789eeb22a" hidden="false">
+      <description>Los Séquitos Inquisitoriales serán Tropas de línea en un ejército que incluya al Inquisidor Torquemada Coteaz, y no se verán limitadas por el número de Inquisidores del ejército.</description>
+    </rule>
   </sharedRules>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Animus Speculum" hidden="false" id="9ec07514-0539-42b7-84c3-3f32632e7c31">
@@ -2066,6 +2075,7 @@ Si Mordrak es retirado como baja, los Caballeros Fantasma pierden su vínculo co
         <infoLink name="Enemigo predilecto (Demonios)" id="8c08e27e-9cd3-4efe-8b06-557119656e91" hidden="false" targetId="3fe5-67c3-5aee-a5e7" type="rule"/>
         <infoLink name="Psíquico (Nivel de maestría 1)" id="bc783efb-3152-42b6-8e56-143d3e745141" hidden="false" targetId="72c2-fd50-9880-c83c" type="rule"/>
         <infoLink name="Heraldo de Titán" id="8c33126f-24c1-46ba-94be-c64f5fc67af2" hidden="false" targetId="a14cce55-81f4-4e85-8376-3221fb193a73" type="rule"/>
+        <infoLink name="Guardián de Anarca" id="4978b33b-2798-47db-b8b5-d64dd650cf53" hidden="false" targetId="8cab880f-8b56-481c-b160-431a24e76cb1" type="rule"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Cañonera Stormraven" hidden="false" id="5f876cd9-7a5b-44c3-9f66-8a5ebed9d97f" collective="false">
@@ -3638,6 +3648,12 @@ Si Mordrak es retirado como baja, los Caballeros Fantasma pierden su vínculo co
                 <cost name="Pts" typeId="puntos" value="25"/>
               </costs>
               <entryLinks>
+        <entryLink name="Granadas antipsíquicos" id="5678dfa8-42d3-4bc1-83d3-2a5c7ad9c68b" collective="false" hidden="false" import="true" targetId="81daea85-f29c-4c77-b333-3041c261a1f8" type="selectionEntry">
+                  <constraints>
+                    <constraint id="a3e0b270-24ff-48b5-a441-b22798a02e87" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="1f147ab0-37bf-4099-aab9-a6b3804ac194" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                </entryLink>
                 <entryLink name="Servocráneos" id="6eb1be81-9b2f-415c-89b2-0a4e31188166" collective="false" hidden="false" import="true" targetId="43fe5a98-f2a2-4491-8c57-e13301598a5b" type="selectionEntry">
                   <constraints>
                     <constraint id="b7a0b7bd-e786-44f1-8d71-119aa096e185" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="3"/>
@@ -4002,6 +4018,12 @@ Si Mordrak es retirado como baja, los Caballeros Fantasma pierden su vínculo co
                 <cost name="Pts" typeId="puntos" value="25"/>
               </costs>
               <entryLinks>
+        <entryLink name="Granadas antipsíquicos" id="3346963e-ca8c-41e1-b22f-5e1638cea30f" collective="false" hidden="false" import="true" targetId="81daea85-f29c-4c77-b333-3041c261a1f8" type="selectionEntry">
+                  <constraints>
+                    <constraint id="d96136ee-d36a-4307-be4d-d7ea86d710f0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="67dc2113-6786-4388-b495-48543e9016a3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                </entryLink>
                 <entryLink name="Servocráneos" id="41cc1d25-7b3e-434b-af6f-d86be62ce8a1" collective="false" hidden="false" import="true" targetId="43fe5a98-f2a2-4491-8c57-e13301598a5b" type="selectionEntry">
                   <constraints>
                     <constraint id="078444c3-9b0f-4d85-b6b9-e546bebf91c1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="3"/>
@@ -4446,6 +4468,7 @@ Si Mordrak es retirado como baja, los Caballeros Fantasma pierden su vínculo co
         <infoLink name="Testarudo" id="639fabb4-d4a0-436e-9165-acfc877ba597" hidden="false" targetId="6238-4e29-b780-4b11" type="rule"/>
         <infoLink name="Red de espías" id="2d08cea7-a7b0-43de-9c4d-19dfdc5d22d8" hidden="false" targetId="7737fe94-7033-4f17-8c75-017aabeb933d" type="rule"/>
         <infoLink name="Te estaba esperando" id="6a0095a3-e006-4348-b5b1-29cedb027b1a" hidden="false" targetId="8abf5263-c172-45c5-af89-d11e5ef26752" type="rule"/>
+        <infoLink name="Señor de Formosa" id="7ed9946b-f4dc-4fe1-86b5-70926148673a" hidden="false" targetId="45bdb90c-5521-4bb1-af5a-7ef789eeb22a" type="rule"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Inquisidor Karamazov" hidden="false" id="a290c74e-620d-42aa-9fa2-db261c27a1fc">
@@ -4860,6 +4883,7 @@ Si Mordrak es retirado como baja, los Caballeros Fantasma pierden su vínculo co
         <infoLink name="Personaje independiente" id="1c570178-7b1a-4007-adc3-3c145a90fa7f" hidden="false" targetId="61b4-c5bb-9d85-8506" type="rule"/>
         <infoLink name="Enemigo predilecto (Demonios)" id="7be70114-90ab-4f49-b71d-bd3c2a39b051" hidden="false" targetId="3fe5-67c3-5aee-a5e7" type="rule"/>
         <infoLink name="Psíquico (Nivel de maestría 2)" id="2dd94187-7d1a-4c78-83ff-0e8906b4bdfb" hidden="false" targetId="72c2-fd50-9880-c83c" type="rule"/>
+        <infoLink name="Señor de Titán" id="5e8d4b7c-041f-405a-baad-7b7f5b727e7e" hidden="false" targetId="25f49fbb-7ad9-4766-b89c-13fa4bbb2acc" type="rule"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Mirada impía" hidden="false" id="d04cbdb9-e3d2-43dd-8ec2-e4433bba8073">
