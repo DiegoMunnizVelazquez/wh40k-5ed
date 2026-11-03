@@ -111,6 +111,21 @@
         <categoryLink name="Élite" id="41dadb21-e099-4c7b-8b0c-f4e4344921a2" hidden="false" primary="true" targetId="cf43-5aa1-0e52-25d7"/>
       </categoryLinks>
     </entryLink>
+    <entryLink name="Escuadra de Exterminadores Caballeros Grises" id="be298d0d-2ff8-4b57-9ef0-99a40fc0ab0c" collective="false" hidden="false" import="true" targetId="4dd4326e-4d13-4362-bb93-fa177fbf451d" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Linea" id="1b603aa0-d7d9-4404-ac7c-2ee406a50ce5" hidden="false" primary="true" targetId="1ebf-bf5c-b1c9-eb84"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink name="Escuadra de choque de Caballeros Grises" id="4fca544f-d092-4854-b9f4-91815dcbbdff" collective="false" hidden="false" import="true" targetId="1a7a2079-8e03-4be1-8bb2-7620bbd9cea0" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Linea" id="7b16766d-3d24-4ff5-abd1-dbe1cb71b378" hidden="false" primary="true" targetId="1ebf-bf5c-b1c9-eb84"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink name="Justicar Thawn" id="90c287f3-30c0-40d7-afc0-efaea11bff28" collective="false" hidden="false" import="true" targetId="5f38bd95-9559-4de8-b4c2-3abc8c34b1be" type="selectionEntry">
+      <categoryLinks>
+        <categoryLink name="Linea" id="aecbbd84-7989-4bf9-8534-c45c2edc8dd9" hidden="false" primary="true" targetId="1ebf-bf5c-b1c9-eb84"/>
+      </categoryLinks>
+    </entryLink>
   </entryLinks>
   <sharedProfiles>
     <profile name="Acólito guerrero" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="fdcbc80e-e9c7-4ae0-bf78-05d4032c7e70">
@@ -1303,6 +1318,12 @@
         <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">4+</characteristic>
       </characteristics>
     </profile>
+    <profile name="Terremoto disforme" typeId="ae70-4738-0161-bec0" typeName="Poder Psíquico" hidden="false" id="f7b92a07-65ea-4402-933b-48d1a300a9d0">
+      <characteristics>
+        <characteristic name="Alcance" typeId="fd64-cbc4-94de-24cc">Unidad enemiga</characteristic>
+        <characteristic name="Detalles" typeId="ad96-dfa4-b4ed-656d">Los Caballeros Grises causan un temblor en la frontera entre la Disformidad y el espacio real, distorsionando los rayos de teleportación, silenciando los marcadores de posición y desestabilizando los repulsores de aterrizaje. Puedes usar este poder al principio de tu fase de Movimiento, y durará hasta el principio de tu próxima fase de Movimiento. Si el chequeo psíquico tiene éxito, todas las balizas de teleportación del enemigo así como demás equipo que evite que el Despliegue rápido se disperse, que estén a 30 cm o menos de la escuadra, dejarán de funcionar mientras el poder esté activo. Además, cualquier unidad que entre por despliegue rápido a 30 cm o menos de la escuadra (después de dispersarse) sufrirá los efectos de un error en el Despliegue rápido.</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedRules>
     <rule name="Aegis" id="a59515d4-1847-49a3-a8f6-7d820e6a1f0d" hidden="false">
@@ -1416,6 +1437,9 @@ Si Mordrak es retirado como baja, los Caballeros Fantasma pierden su vínculo co
     </rule>
     <rule name="Tiro letal" id="455f1aae-0a89-4cdf-8437-c14a7860e795" hidden="false">
       <description>Las heridas provocadas por los ataques de disparo de un Asesino Vindicare siempre serán asignadas por el jugador que controla al Vindicare.</description>
+    </rule>
+    <rule name="¡No me rendiré!" id="bdb001c7-981f-44ed-a8d1-8b6f02572ab1" hidden="false">
+      <description>Cada vez que Thawn se retire como baja deja un marcador adecuado en el sitio para marcar el lugar en el que "murió". Tira 1D6 al principio de cada uno de tus siguientes turnos. Si el resultado es un 4 o más, colócalo de vuelta en el campo de batalla con su herida recuperada, a 3 cm o menos del marcador. Se le considera una unidad separada de ahora en adelante. Si Thawn quedase a menos de 3 cm de una miniatura enemiga, muévelo la distancia mínima necesaria para que quede a más de 3 cm del enemigo. Thawn puede actuar de forma normal en el turno en el que "resucite". Thawn no otorgará puntos al enemigo si está vivo al final de la partida, independientemente de cuantas veces haya "matado".</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntries>
@@ -1682,11 +1706,6 @@ Si Mordrak es retirado como baja, los Caballeros Fantasma pierden su vínculo co
     <selectionEntry type="upgrade" import="true" name="Bólter pesado" hidden="false" id="a5e0d327-0376-483d-b9ca-7b7f1f371b4b">
       <infoLinks>
         <infoLink name="Bólter Pesado" id="b70ffcc2-e0f5-4aa6-94d9-268ab2239656" hidden="false" targetId="3c0e-4865-97cc-bd9c" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Caballero Gris" hidden="false" id="815dfa2f-717e-4049-baf7-6bcf8bc0234b">
-      <infoLinks>
-        <infoLink name="Caballero Gris" id="e230de16-da67-4036-8bf0-e8cf68dbb623" hidden="false" targetId="5f00f10a-7c52-4763-ba09-517356bd8632" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Caballeros fantasma" hidden="false" id="e062d0d5-7b64-450a-81b1-ee3ce4f2be55">
@@ -2172,11 +2191,6 @@ Si Mordrak es retirado como baja, los Caballeros Fantasma pierden su vínculo co
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Exterminador" hidden="false" id="867b0906-82ed-40b2-bf01-79e80f9a0a07">
-      <infoLinks>
-        <infoLink name="Exterminador" id="36443a34-e224-4a92-bed0-a3fc7d1c6944" hidden="false" targetId="a9b4c25e-5312-4e11-b148-439c4a87161c" type="profile"/>
-      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Generador de gravedad" hidden="false" id="bc0ed641-f965-4c2d-86d4-928928c41dc7">
       <infoLinks>
@@ -4128,19 +4142,61 @@ Si Mordrak es retirado como baja, los Caballeros Fantasma pierden su vínculo co
         <infoLink name="Testarudo" id="752e57da-8673-40d7-908d-405fa6a2c085" hidden="false" targetId="6238-4e29-b780-4b11" type="rule"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Justicar" hidden="false" id="e2b407aa-4368-4438-80e8-b2e83cbf669d">
-      <infoLinks>
-        <infoLink name="Justicar" id="8a855e1e-ff82-41f1-ac58-ec8ba16252d5" hidden="false" targetId="656d72e8-b54a-4ab6-8804-688fd033a3b3" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Justicar Exterminador" hidden="false" id="a0609367-9ab7-47c4-9ecd-dd65b3f746e2">
-      <infoLinks>
-        <infoLink name="Justicar Exterminador" id="673b84db-8a25-46a2-8292-bdafcf229a8f" hidden="false" targetId="f2c5e6c6-dad2-45d7-8687-873554ffd379" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry type="unit" import="true" name="Justicar Thawn" hidden="false" id="5f38bd95-9559-4de8-b4c2-3abc8c34b1be">
+    <selectionEntry type="model" import="true" name="Justicar Thawn" hidden="false" id="5f38bd95-9559-4de8-b4c2-3abc8c34b1be">
+      <costs>
+        <cost name="Pts" typeId="puntos" value="75"/>
+      </costs>
+      <entryLinks>
+        <entryLink name="Armadura de exterminador" id="f35e5876-b04e-479d-9208-0898c50223bb" collective="false" hidden="false" import="true" targetId="55744416-6a6b-4391-8e5a-d3a4875df531" type="selectionEntry">
+          <constraints>
+            <constraint id="d1d300b1-6be4-49bc-aca3-386a37640293" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="d80be2de-c0c5-4baf-a2a6-00e7f6b2f027" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+        </entryLink>
+        <entryLink name="Bólter de asalto" id="54a34582-cffb-4f3b-a69a-583ccf484b17" collective="false" hidden="false" import="true" targetId="0bae0b93-2b77-4cf8-90a6-aa3e11b6db14" type="selectionEntry">
+          <constraints>
+            <constraint id="f17f0a15-c36f-410e-9851-43ffc8ae9265" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="704a7965-27fb-44a6-a959-40450da4b3d3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+        </entryLink>
+        <entryLink name="Alabarda psíquica Némesis" id="287fc923-757a-4ca3-bf35-27f474e86586" collective="false" hidden="false" import="true" targetId="01cb9eab-6496-493a-b2a7-e1500912c327" type="selectionEntry">
+          <constraints>
+            <constraint id="60ba21a3-f4ba-4df4-8878-bf0c3cf13c8d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="6194485e-6121-48a5-90ee-bf584d1b7ba1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+        </entryLink>
+        <entryLink name="Granadas de fragmentación" id="ee6d9b95-ebf0-46e1-a739-48788fe1f4f7" collective="false" hidden="false" import="true" targetId="7a56d752-bf43-48fa-b97a-6e39a9929fbc" type="selectionEntry">
+          <constraints>
+            <constraint id="64969e30-0541-4778-81e4-4d3a7e7bc715" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="17386f67-351c-4563-a342-a8c9b39ba23c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+        </entryLink>
+        <entryLink name="Granadas perforantes" id="df4c68be-9179-4ba5-bf50-3e62ecc50a75" collective="false" hidden="false" import="true" targetId="a6bb8d1c-bdf1-4e2b-87fd-73b2f9df6a95" type="selectionEntry">
+          <constraints>
+            <constraint id="9c283f6c-f846-4620-9e90-07da63a6fece" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="047cf6ac-a7a8-40d8-a08b-4bb40398796e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+        </entryLink>
+        <entryLink name="Granadas antipsíquicos" id="a85ac596-475a-427c-bd32-b299eeb85574" collective="false" hidden="false" import="true" targetId="81daea85-f29c-4c77-b333-3041c261a1f8" type="selectionEntry">
+          <constraints>
+            <constraint id="5c3e4587-d9af-402d-a06b-2a180fac7ba5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="fd448136-df6b-416d-aa94-10d2287ffc22" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+        </entryLink>
+        <entryLink name="Puño divino" id="505e23d1-4794-4388-8053-1162f943068d" collective="false" hidden="false" import="true" targetId="7dfdb61c-329e-4151-b869-3d992ebdcd2d" type="selectionEntry">
+          <constraints>
+            <constraint id="415837e4-f6f0-4919-9cc0-92879b77c25b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="e69ba38e-c6f2-4946-bf74-5f762053a2ca" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <infoLinks>
         <infoLink name="Justicar Thawn" id="d803975a-e477-46e1-8dd0-4e2203267bfb" hidden="false" targetId="ea43413f-a129-470f-8462-b8033c578c15" type="profile"/>
+        <infoLink name="Aegis" id="ae06d7a4-a0ee-4099-bc08-e05ae21ae290" hidden="false" targetId="a59515d4-1847-49a3-a8f6-7d820e6a1f0d" type="rule"/>
+        <infoLink name="Coraje" id="48f142a0-d505-4193-9418-eecfc08e8869" hidden="false" targetId="b23b-fb5c-4c8c-5ae4" type="rule"/>
+        <infoLink name="Enemigo predilecto (Demonios)" id="ccfaa9b9-6096-4e6a-ab96-c5cf7749dcd8" hidden="false" targetId="3fe5-67c3-5aee-a5e7" type="rule"/>
+        <infoLink name="Psíquico (Nivel de maestría 2)" id="9f8a82c8-7d45-4e7c-a434-35750841ef56" hidden="false" targetId="72c2-fd50-9880-c83c" type="rule"/>
+        <infoLink name="¡No me rendiré!" id="9e18e8d7-cd54-48b5-924c-15eb03dccfef" hidden="false" targetId="bdb001c7-981f-44ed-a8d1-8b6f02572ab1" type="rule"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Land Raiders" hidden="false" id="bf917155-210d-4e83-ac02-b7e9fff3cfcc">
@@ -6232,6 +6288,459 @@ Si Mordrak es retirado como baja, los Caballeros Fantasma pierden su vínculo co
         <infoLink name="Sigilo" id="e03b605a-a5eb-498b-bfd3-7e21b720bdc0" hidden="false" targetId="f1ee-e19a-a3c3-6797" type="rule"/>
         <infoLink name="Reflejos relámpago" id="6613afbd-2210-4557-854c-e73ca3574b5a" hidden="false" targetId="6358d6c1-5019-44c4-b335-93aaac2968d6" type="rule"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Terremoto disforme" hidden="false" id="2b079d5e-5a27-4adf-85fe-24a6a68e3047">
+      <infoLinks>
+        <infoLink name="Terremoto disforme" id="08b3dfc7-3ce4-4b8e-90c8-e2636dfa060f" hidden="false" targetId="f7b92a07-65ea-4402-933b-48d1a300a9d0" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Escuadra de Exterminadores Caballeros Grises" hidden="false" id="4dd4326e-4d13-4362-bb93-fa177fbf451d" collective="false">
+      <costs>
+        <cost name="Pts" typeId="puntos" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink name="Puño divino" id="eec5f150-10bb-4cb6-8c08-311a7f242455" collective="false" hidden="false" import="true" targetId="7dfdb61c-329e-4151-b869-3d992ebdcd2d" type="selectionEntry">
+          <constraints>
+            <constraint id="9622fd5e-d91f-49d6-9e18-1669c6fc1cce" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="94b548f6-e5de-454c-ae68-3fc648bf99a5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Aegis" id="aef2da17-fdc9-435f-8059-ba5bac5232d7" hidden="false" targetId="a59515d4-1847-49a3-a8f6-7d820e6a1f0d" type="rule"/>
+        <infoLink name="Y no conocerán el miedo" id="b53bc516-cde3-48b6-846d-eef03811e547" hidden="false" targetId="5ce7-70c4-4a99-db0d" type="rule"/>
+        <infoLink name="Hermandad de psíquicos" id="3737b6e4-3a3b-4bec-b3e0-25ce3d67f0e9" hidden="false" targetId="5c595984-b6bd-42e7-ae74-7e977a1f6606" type="rule"/>
+        <infoLink name="Escuadras de combate" id="2d7af0fd-e3b3-4887-b6cf-15b6202ce896" hidden="false" targetId="22a0-0930-12ab-bd9e" type="rule"/>
+        <infoLink name="Enemigo predilecto (Demonios)" id="b066e3e3-92d1-4dcc-9e90-4988bbce06c5" hidden="false" targetId="3fe5-67c3-5aee-a5e7" type="rule"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Exterminador" hidden="false" id="7387ba76-9420-4d4b-ad3f-cfb340310622" collective="false">
+          <constraints>
+            <constraint id="23a23c5a-6de8-44f0-84aa-ab907ae07ebd" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="4"/>
+            <constraint id="d55fa5d8-e724-4955-bcac-17bf99323895" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="9"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="40"/>
+          </costs>
+          <entryLinks>
+            <entryLink name="Armadura de exterminador" id="8455e6d8-5f9f-4459-8be2-a74d531104e1" collective="false" hidden="false" import="true" targetId="55744416-6a6b-4391-8e5a-d3a4875df531" type="selectionEntry">
+              <constraints>
+                <constraint id="ad5918ee-2d82-4723-9515-6c8189da1d27" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="7421772a-8075-4307-a242-ee00a74b42b6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Bólter de asalto" id="71d54a62-4aed-488d-8829-82519be304cb" collective="false" hidden="false" import="true" targetId="0bae0b93-2b77-4cf8-90a6-aa3e11b6db14" type="selectionEntry">
+              <constraints>
+                <constraint id="faa1ea6f-3d54-41bb-b25a-d2383d580581" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="aa2abaa2-8989-4058-88d3-d9002a40046c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Granadas de fragmentación" id="3815f050-4eed-46a4-8a8a-bb6e14099759" collective="false" hidden="false" import="true" targetId="7a56d752-bf43-48fa-b97a-6e39a9929fbc" type="selectionEntry">
+              <constraints>
+                <constraint id="63717d0c-9f31-4795-8d0d-9264ecfe31ed" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="8ec0fa54-4ca6-4a32-bc7a-30711c60d20d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Granadas perforantes" id="9b1a587b-a92d-481a-85c5-1c293f47bef2" collective="false" hidden="false" import="true" targetId="a6bb8d1c-bdf1-4e2b-87fd-73b2f9df6a95" type="selectionEntry">
+              <constraints>
+                <constraint id="c20df38d-eaca-4714-abb3-c631f4bdaa31" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="c5de085f-e324-4216-be8e-0b3ba1cecbc1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Granadas antipsíquicos" id="ae8b08b2-6433-43bc-ab68-b31a849ed7fc" collective="false" hidden="false" import="true" targetId="81daea85-f29c-4c77-b333-3041c261a1f8" type="selectionEntry">
+              <constraints>
+                <constraint id="dcfb3920-8e95-4b11-97e9-5e5dbe35d710" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="4fca1fde-bd16-43a9-9955-3b57aabc4dfc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Exterminador" id="7d63bcc5-5853-4894-8983-2d818ebb728a" hidden="false" targetId="a9b4c25e-5312-4e11-b148-439c4a87161c" type="profile"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Arma de combate" id="777503ed-668a-4a62-8b3c-198eab67281f" collective="false" hidden="false" import="true" defaultSelectionEntryId="8319d83d-c4ef-4d7c-b5d9-817aa09083a7">
+              <constraints>
+                <constraint id="0aa26354-aa4a-46a5-b8a1-cf4189d271e7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="2e30345c-0db6-461c-aac2-610726a38ca3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <entryLinks>
+                <entryLink name="Espada psíquica Némesis" id="8319d83d-c4ef-4d7c-b5d9-817aa09083a7" collective="false" hidden="false" import="true" targetId="35acf644-7e89-43cd-b7f1-18004b5e784c" type="selectionEntry"/>
+                <entryLink name="Alabarda psíquica Némesis" id="8cffacac-5a76-4e30-a051-00a0a434e039" collective="false" hidden="false" import="true" targetId="01cb9eab-6496-493a-b2a7-e1500912c327" type="selectionEntry"/>
+                <entryLink name="Martillo demonio Némesis" id="7d85b5c9-f281-4926-8d5d-589cb4fa0bef" collective="false" hidden="false" import="true" targetId="89af1e8e-788a-47fa-bc13-094270a4c443" type="selectionEntry"/>
+                <entryLink name="Dos sables Némesis" id="185d0bea-7c5b-40c7-8a19-21ea1dd43a1f" collective="false" hidden="false" import="true" targetId="4bf90bd6-5cb9-4405-bb1b-4624a16642bf" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="puntos" value="5"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Justicar Exterminador" hidden="false" id="7442ba8e-edaa-444b-b434-7a0b8d66707a" collective="false">
+          <constraints>
+            <constraint id="265f7226-dcf8-469a-915d-2faf3fadd425" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="de63218a-5bab-4fbb-baf4-00faa7a1012b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="40"/>
+          </costs>
+          <entryLinks>
+            <entryLink name="Armadura de exterminador" id="8c9782d2-0cf8-478f-b829-a1b7bc55a7b3" collective="false" hidden="false" import="true" targetId="55744416-6a6b-4391-8e5a-d3a4875df531" type="selectionEntry">
+              <constraints>
+                <constraint id="5a869465-7ee5-44d8-ac5b-486e5003885c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="2b74152d-af58-40b0-aca5-5d45b750f71c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Bólter de asalto" id="02866bd4-45ef-423d-851c-19f49af9fd5f" collective="false" hidden="false" import="true" targetId="0bae0b93-2b77-4cf8-90a6-aa3e11b6db14" type="selectionEntry">
+              <constraints>
+                <constraint id="585aed62-8e9c-4d76-b2e6-561cbb3526dc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="ac369b0f-2340-4ebc-9a27-c598359b9759" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Granadas de fragmentación" id="6671b9ad-5205-4a16-943a-fa73a5a0af16" collective="false" hidden="false" import="true" targetId="7a56d752-bf43-48fa-b97a-6e39a9929fbc" type="selectionEntry">
+              <constraints>
+                <constraint id="8850dbd5-1b12-4e1d-b8ea-8d59c32ff957" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="cc38532c-90fe-4d67-987a-bb94e199abb2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Granadas perforantes" id="62da02c3-302b-405c-801a-f381cf0cc349" collective="false" hidden="false" import="true" targetId="a6bb8d1c-bdf1-4e2b-87fd-73b2f9df6a95" type="selectionEntry">
+              <constraints>
+                <constraint id="36621ff4-7ca0-4145-907f-1a186d087e17" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="9ed3b490-8118-4916-a8b6-6e3ffe736673" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Granadas antipsíquicos" id="cad6b3c4-3fbc-44fc-815f-8c3b5a7be8e3" collective="false" hidden="false" import="true" targetId="81daea85-f29c-4c77-b333-3041c261a1f8" type="selectionEntry">
+              <constraints>
+                <constraint id="56665e68-3cd6-4847-905c-6d43ade03ca7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="e61c6a42-4127-4fc0-811e-7201282e5093" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Armas de precisión" id="c46414e5-4bd2-4cbb-8f4a-165e46f15948" collective="false" hidden="false" import="true" targetId="edf9049f-037c-423e-866a-13e5d8505e32" type="selectionEntry">
+              <constraints>
+                <constraint id="5084456f-369a-4fa8-8b27-2acca75fb2be" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="5"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Justicar Exterminador" id="2491447d-b0a9-4a0e-9283-ab96c0c41b42" hidden="false" targetId="f2c5e6c6-dad2-45d7-8687-873554ffd379" type="profile"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Arma de combate" id="6027f9a8-e74b-468e-81f0-cd2992472beb" collective="false" hidden="false" import="true" defaultSelectionEntryId="a8de295b-8878-4eea-bb89-f26d4a803bc9">
+              <constraints>
+                <constraint id="d5b8a24d-798a-4bec-83e9-fbca56f88572" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="b7f2722e-cf22-4c88-9735-51a4a13cfa87" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <entryLinks>
+                <entryLink name="Espada psíquica Némesis" id="a8de295b-8878-4eea-bb89-f26d4a803bc9" collective="false" hidden="false" import="true" targetId="35acf644-7e89-43cd-b7f1-18004b5e784c" type="selectionEntry"/>
+                <entryLink name="Alabarda psíquica Némesis" id="abc54229-187a-48e2-85af-45d3a85fe55e" collective="false" hidden="false" import="true" targetId="01cb9eab-6496-493a-b2a7-e1500912c327" type="selectionEntry"/>
+                <entryLink name="Martillo demonio Némesis" id="eacd4732-aef9-4ae6-970d-49f91abb60e0" collective="false" hidden="false" import="true" targetId="89af1e8e-788a-47fa-bc13-094270a4c443" type="selectionEntry"/>
+                <entryLink name="Dos sables Némesis" id="9040f3dc-e405-449c-a4dd-6b29de463fa2" collective="false" hidden="false" import="true" targetId="4bf90bd6-5cb9-4405-bb1b-4624a16642bf" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="puntos" value="5"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas especiales (1 por cada 5 miniaturas)" id="9a1f5b63-7093-446f-a52f-e483629f5148" collective="false" hidden="false" import="true">
+          <comment>
+            <comment>Sustituyen el bólter de asalto de un Exterminador por cada cinco miniaturas.</comment>
+          </comment>
+          <constraints>
+            <constraint id="b5df3d8f-538d-48ab-bd45-d8c768e64d45" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
+          </constraints>
+          <entryLinks>
+            <entryLink name="Incinerador" id="3f12654f-b50f-40a0-bb13-b74fc7c17a58" collective="false" hidden="false" import="true" targetId="14c12d7e-08ef-4d0c-86ed-0e4501f07d2c" type="selectionEntry">
+              <constraints>
+                <constraint id="01ec563f-ce63-4780-9498-cff4377e030d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink name="Psilenciador" id="523601df-aa5c-4018-8dea-13babd4f7c52" collective="false" hidden="false" import="true" targetId="9e79423e-addb-4f27-87a3-0ef5fd86a790" type="selectionEntry">
+              <constraints>
+                <constraint id="d85a3cad-8e91-4cdb-b8f2-dc126b569abc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="15"/>
+              </costs>
+            </entryLink>
+            <entryLink name="Cañón psi" id="28e52334-24a6-4fd6-925d-ac14d2e8a351" collective="false" hidden="false" import="true" targetId="079dd8d2-85df-4c4d-895e-e1480d8b7125" type="selectionEntry">
+              <constraints>
+                <constraint id="eeb0fa97-b6fb-4510-8cb3-e1bf2fbf5c8f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="25"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo de escuadra" id="11e162d4-1ce9-49e7-90e6-9e04a6ab8fd0" collective="false" hidden="false" import="true">
+          <entryLinks>
+            <entryLink name="Bastón de protección Némesis" id="31473c49-2f07-41a8-83cb-3e62ab154182" collective="false" hidden="false" import="true" targetId="f0c54950-8dec-434d-80ce-05299ea7c740" type="selectionEntry">
+              <constraints>
+                <constraint id="6da712cf-8107-4d36-9496-4ec149055872" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="20"/>
+              </costs>
+            </entryLink>
+            <entryLink name="Estandarte de la hermandad" id="ca5a1162-1595-4d60-b338-fc0bfdc4836a" collective="false" hidden="false" import="true" targetId="d96edabb-ca8b-4f05-b3e5-5fe8f6a0205f" type="selectionEntry">
+              <constraints>
+                <constraint id="fdf3536e-5b81-4b32-ba47-cc03b715b842" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="25"/>
+              </costs>
+            </entryLink>
+            <entryLink name="Munición psíquica" id="5ce001da-4900-4404-836b-121f5c2c3630" collective="false" hidden="false" import="true" targetId="eaf0dc6f-7adc-48db-8f4b-e9c1ad6cd122" type="selectionEntry">
+              <constraints>
+                <constraint id="b6f52311-f49e-4066-9cc9-1e4530fd2853" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="20"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Escuadra de choque de Caballeros Grises" hidden="false" id="1a7a2079-8e03-4be1-8bb2-7620bbd9cea0" collective="false">
+      <costs>
+        <cost name="Pts" typeId="puntos" value="0"/>
+      </costs>
+      <entryLinks>
+        <entryLink name="Puño divino" id="93b33306-6904-498d-98ee-4af837e0046e" collective="false" hidden="false" import="true" targetId="7dfdb61c-329e-4151-b869-3d992ebdcd2d" type="selectionEntry">
+          <constraints>
+            <constraint id="9338984b-f69a-40b9-963f-9e13adc2d38a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="ff94d69a-110f-4509-a81e-b8726f490b25" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+        </entryLink>
+        <entryLink name="Terremoto disforme" id="5ed2fcdc-7a7d-45b4-85bd-be79c3689aad" collective="false" hidden="false" import="true" targetId="2b079d5e-5a27-4adf-85fe-24a6a68e3047" type="selectionEntry">
+          <constraints>
+            <constraint id="5bd27f46-2442-40be-8359-cf1fe2cfe2e8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="e5af7871-ddf5-4b09-85fd-1d56c9d07a96" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Aegis" id="9b528216-5c9e-444c-9bc8-d9dc197c92ce" hidden="false" targetId="a59515d4-1847-49a3-a8f6-7d820e6a1f0d" type="rule"/>
+        <infoLink name="Y no conocerán el miedo" id="db9dd634-b91b-41fd-b9cc-383ebb3ea776" hidden="false" targetId="5ce7-70c4-4a99-db0d" type="rule"/>
+        <infoLink name="Hermandad de psíquicos" id="6bb37604-96b7-48b5-a5f6-82eacb04a630" hidden="false" targetId="5c595984-b6bd-42e7-ae74-7e977a1f6606" type="rule"/>
+        <infoLink name="Escuadras de combate" id="b2a077d9-5d76-44a7-b5dc-20648130b0fc" hidden="false" targetId="22a0-0930-12ab-bd9e" type="rule"/>
+        <infoLink name="Despliegue rápido" id="ddc6cb19-72ff-4919-beed-d8ef843d1cc1" hidden="false" targetId="e73e-593a-922e-a47a" type="rule"/>
+        <infoLink name="Enemigo predilecto (Demonios)" id="d2ba30dc-18e8-430d-b018-69e5109c7fe7" hidden="false" targetId="3fe5-67c3-5aee-a5e7" type="rule"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Caballero Gris" hidden="false" id="8b6265c3-98ef-485f-9073-ed2012f8f69c" collective="false">
+          <constraints>
+            <constraint id="557860e5-303c-4df6-bc1f-a7c01b6c08e1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="4"/>
+            <constraint id="64e6b4cd-ae8a-4205-afa3-e6a92a7984d0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="9"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="20"/>
+          </costs>
+          <entryLinks>
+            <entryLink name="Servoarmadura" id="80751019-99cc-4816-85d7-38b03a728f53" collective="false" hidden="false" import="true" targetId="a2467200-4e57-4cd6-a0fe-48799a01dc27" type="selectionEntry">
+              <constraints>
+                <constraint id="22750090-0266-4d4b-b532-f750623c701e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="c5a39f7c-a7cb-430c-93b5-abc58622732f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Bólter de asalto" id="ae93d01d-2f00-43bc-8360-243006197d9d" collective="false" hidden="false" import="true" targetId="0bae0b93-2b77-4cf8-90a6-aa3e11b6db14" type="selectionEntry">
+              <constraints>
+                <constraint id="524192c9-8f84-43ac-ba63-3d59e2f504e2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="e5e341bf-5080-4830-9eb8-bb1dafcaffdf" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Granadas de fragmentación" id="52b841fc-886d-458d-9214-e879dc448823" collective="false" hidden="false" import="true" targetId="7a56d752-bf43-48fa-b97a-6e39a9929fbc" type="selectionEntry">
+              <constraints>
+                <constraint id="8057cc4a-6eca-47ff-9879-d561a7f3d563" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="2bfef1a1-1c16-4413-8543-a7057e13e845" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Granadas perforantes" id="9073c116-c802-408e-994d-91f48c5cf875" collective="false" hidden="false" import="true" targetId="a6bb8d1c-bdf1-4e2b-87fd-73b2f9df6a95" type="selectionEntry">
+              <constraints>
+                <constraint id="e86e9490-e92f-4056-aa4f-cc3adc461b16" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="8f8e41ec-32d5-4aa2-a432-7d88f9c62283" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Granadas antipsíquicos" id="ffaca063-e963-4c86-9d1a-566f4533d7b1" collective="false" hidden="false" import="true" targetId="81daea85-f29c-4c77-b333-3041c261a1f8" type="selectionEntry">
+              <constraints>
+                <constraint id="c13dca12-0872-4cc1-934e-1cb6120c0d4f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="cf5adfb0-ac8d-4620-884b-f1fae78fbf45" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Caballero Gris" id="f871c81b-8a77-4531-aef5-76ccfe7578c2" hidden="false" targetId="5f00f10a-7c52-4763-ba09-517356bd8632" type="profile"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Arma de combate" id="91cbbe8f-2586-421e-bb08-013c7a4ca2a8" collective="false" hidden="false" import="true" defaultSelectionEntryId="a3012c2f-eee7-4d7b-94c0-1fcd918c1e71">
+              <constraints>
+                <constraint id="debf7784-4bb8-43e1-b4b7-724279e7ca6e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="038666d8-d72f-44f0-a766-3bea547adb1b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <entryLinks>
+                <entryLink name="Espada psíquica Némesis" id="a3012c2f-eee7-4d7b-94c0-1fcd918c1e71" collective="false" hidden="false" import="true" targetId="35acf644-7e89-43cd-b7f1-18004b5e784c" type="selectionEntry"/>
+                <entryLink name="Alabarda psíquica Némesis" id="79d5027b-9a05-431d-afa0-436a5acef8d7" collective="false" hidden="false" import="true" targetId="01cb9eab-6496-493a-b2a7-e1500912c327" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="puntos" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink name="Martillo demonio Némesis" id="f7b46e8a-db6a-4b2d-9634-aa4c6cfdc029" collective="false" hidden="false" import="true" targetId="89af1e8e-788a-47fa-bc13-094270a4c443" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="puntos" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink name="Dos sables Némesis" id="cdbf51e0-c55e-4730-af3f-2f0366125c72" collective="false" hidden="false" import="true" targetId="4bf90bd6-5cb9-4405-bb1b-4624a16642bf" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="puntos" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Justicar" hidden="false" id="49d71383-dee4-4c21-88c4-7d54fcf65670" collective="false">
+          <constraints>
+            <constraint id="67a4005d-abee-45fe-bc45-d1f155361a89" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="0b906e31-b46f-476f-b941-932aef56afe9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="20"/>
+          </costs>
+          <entryLinks>
+            <entryLink name="Servoarmadura" id="d4f432d4-5fdf-43fd-9dbc-0150ec69716b" collective="false" hidden="false" import="true" targetId="a2467200-4e57-4cd6-a0fe-48799a01dc27" type="selectionEntry">
+              <constraints>
+                <constraint id="7e589233-6b89-49b7-9e9f-92d8700395f1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="e1ebb7d9-90a4-4217-92ad-a35b6ffe25b7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Bólter de asalto" id="1e713953-0680-49f5-ba0e-dc48cacd59d7" collective="false" hidden="false" import="true" targetId="0bae0b93-2b77-4cf8-90a6-aa3e11b6db14" type="selectionEntry">
+              <constraints>
+                <constraint id="94bd3491-da33-4082-b571-966c747be01f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="5a88fc45-f81a-41bf-b1ab-88d7bcc358f9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Granadas de fragmentación" id="edc65355-d46d-456e-a1e1-81d007aea5b7" collective="false" hidden="false" import="true" targetId="7a56d752-bf43-48fa-b97a-6e39a9929fbc" type="selectionEntry">
+              <constraints>
+                <constraint id="36a226c5-47ca-4acd-b757-115019640abe" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="ef8594df-11ec-411f-b67b-4c7636193cb4" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Granadas perforantes" id="213d62bf-f9b6-49a4-be17-dfb9fe7785dc" collective="false" hidden="false" import="true" targetId="a6bb8d1c-bdf1-4e2b-87fd-73b2f9df6a95" type="selectionEntry">
+              <constraints>
+                <constraint id="bbe35b8c-2a15-48bd-86f7-71d6fd56d65c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="642b6c85-3aa6-4a14-a95e-7c4b34f0a829" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Granadas antipsíquicos" id="449ae342-6825-4523-b8af-bbdee8bf99f2" collective="false" hidden="false" import="true" targetId="81daea85-f29c-4c77-b333-3041c261a1f8" type="selectionEntry">
+              <constraints>
+                <constraint id="21cacaa2-9278-4030-8c2c-eeacf7e1ed91" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="d0ccb60e-b8ee-4a8f-85ce-cc0d814c38ef" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Armas de precisión" id="7e2b5a3c-9b44-42bc-8bd0-8314b00e369a" collective="false" hidden="false" import="true" targetId="edf9049f-037c-423e-866a-13e5d8505e32" type="selectionEntry">
+              <constraints>
+                <constraint id="89ab68b3-b8f1-46ec-bc30-498b56b390e1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="5"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Justicar" id="94061592-837c-49a2-8c7f-ef678613eaef" hidden="false" targetId="656d72e8-b54a-4ab6-8804-688fd033a3b3" type="profile"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Arma de combate" id="93fd7b5a-32fa-4da1-be81-f59c07453b6c" collective="false" hidden="false" import="true" defaultSelectionEntryId="1e537c79-dae8-45a2-baf4-6c8276948d6a">
+              <constraints>
+                <constraint id="98690f66-151f-438e-adf5-d7692baa502b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="6147322e-c6e7-4e66-9974-bc33901bf7cb" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <entryLinks>
+                <entryLink name="Espada psíquica Némesis" id="1e537c79-dae8-45a2-baf4-6c8276948d6a" collective="false" hidden="false" import="true" targetId="35acf644-7e89-43cd-b7f1-18004b5e784c" type="selectionEntry"/>
+                <entryLink name="Alabarda psíquica Némesis" id="275078d8-89f3-4307-8537-0c25ae2e1e8d" collective="false" hidden="false" import="true" targetId="01cb9eab-6496-493a-b2a7-e1500912c327" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="puntos" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink name="Martillo demonio Némesis" id="49d45741-38f3-4a11-b2b4-28f76e985c24" collective="false" hidden="false" import="true" targetId="89af1e8e-788a-47fa-bc13-094270a4c443" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="puntos" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink name="Dos sables Némesis" id="777bc17d-da8d-44cf-b3d7-a2f63ec91b98" collective="false" hidden="false" import="true" targetId="4bf90bd6-5cb9-4405-bb1b-4624a16642bf" type="selectionEntry">
+                  <costs>
+                    <cost name="Pts" typeId="puntos" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Armas especiales (1 por cada 5 miniaturas)" id="021851ee-f923-47ee-af74-fd3d2ec0db7b" collective="false" hidden="false" import="true">
+          <comment>
+            <comment>Sustituyen el bólter de asalto y la espada psíquica Némesis de un Caballero Gris por cada cinco miniaturas.</comment>
+          </comment>
+          <constraints>
+            <constraint id="81041c63-ac7f-4d81-8c73-8974b82f3824" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
+          </constraints>
+          <entryLinks>
+            <entryLink name="Psilenciador" id="364ba932-636e-4025-9be4-4613aad3d852" collective="false" hidden="false" import="true" targetId="9e79423e-addb-4f27-87a3-0ef5fd86a790" type="selectionEntry">
+              <constraints>
+                <constraint id="12d8bb03-86c7-44b9-ab6a-6395a568aaa4" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Cañón psi" id="78b4d9fb-945b-4497-aaf1-ef1897eeae27" collective="false" hidden="false" import="true" targetId="079dd8d2-85df-4c4d-895e-e1480d8b7125" type="selectionEntry">
+              <constraints>
+                <constraint id="ae23598b-85ef-457b-9324-9d65f4fa95ba" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="10"/>
+              </costs>
+            </entryLink>
+            <entryLink name="Incinerador" id="465a290b-eb42-42b1-b149-7d07e97c57d1" collective="false" hidden="false" import="true" targetId="14c12d7e-08ef-4d0c-86ed-0e4501f07d2c" type="selectionEntry">
+              <constraints>
+                <constraint id="b9bc4319-2621-4f08-9251-722664adaf18" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="20"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Equipo de escuadra" id="8d56556b-c62d-434d-9715-5494b7bb90e3" collective="false" hidden="false" import="true">
+          <entryLinks>
+            <entryLink name="Bastón de protección Némesis" id="596a6280-f0d1-4ec7-8485-74d299e8eabd" collective="false" hidden="false" import="true" targetId="f0c54950-8dec-434d-80ce-05299ea7c740" type="selectionEntry">
+              <constraints>
+                <constraint id="0100243e-898f-4aaf-8265-93a34d75c0cf" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="25"/>
+              </costs>
+            </entryLink>
+            <entryLink name="Munición psíquica" id="509bab36-aa63-4a40-a715-f792447dcade" collective="false" hidden="false" import="true" targetId="eaf0dc6f-7adc-48db-8f4b-e9c1ad6cd122" type="selectionEntry">
+              <constraints>
+                <constraint id="1aada6d4-acd1-474e-b162-a7dd256306ee" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="20"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
   </sharedSelectionEntries>
 </catalogue>
