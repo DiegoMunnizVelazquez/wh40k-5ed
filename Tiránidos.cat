@@ -1109,6 +1109,13 @@ Fuerza 3, FP 2. El Tirano de Enjambre recuperará una única herida perdida por 
         <characteristic name="Descripción" typeId="11b5-56ae-f93d-b524">Una miniatura Tiránida con un único par de Garras afiladas podrá repetir todos los resultados de 1 en sus tiradas para impactar en cuerpo a cuerpo. Una miniatura Tiránida con dos pares de Garras afiladas puede repetir todas las tiradas para impactar en cuerpo a cuerpo fallidas.</characteristic>
       </characteristics>
     </profile>
+    <profile name="Expulsión de minas espora" typeId="c970-b832-a956-1ac8" typeName="Habilidad" hidden="false" id="1616-8ca1-4711-abe5">
+      <characteristics>
+        <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Una vez por partida, las Arpías puede soltar un grupo de Minas Espora durante la fase de movimiento. Para ello, designa una miniatura enemiga que la Arpía haya sobrevolado, y tira la dispersión como si la Arpía disparase un arma de Barrera de artillería en ese punto.
+
+Si después de determinar la posición de la primera plantilla de la barrera de artillería no hay miniaturas enemigas a 15cm del agujero central, no resuelvas el ataque y coloca 1D3 Minas Espora en contacto peana con peana las unas con las otras donde estaría el agujero central. Estas seguirán las reglas de las Minas Espora detalladas en la regla de Bomba viviente de la página 48.</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedSelectionEntries>
     <selectionEntry type="model" import="true" name="Tirano de enjambre" hidden="false" id="b7df-e825-5bd8-ed62">
@@ -1117,8 +1124,11 @@ Fuerza 3, FP 2. El Tirano de Enjambre recuperará una única herida perdida por 
       </costs>
       <infoLinks>
         <infoLink name="Tirano de enjambre" id="cd51-ee65-cd5e-8070" hidden="false" type="profile" targetId="0280-8392-c5c4-0e4d"/>
-        <infoLink name="Criatura monstruosa" id="a62d-3f18-9850-e9dd" hidden="false" type="infoGroup" targetId="0cf1-0713-bbc8-cbdc"/>
-        <infoLink name="Criatura sináptica" id="48ae-9f69-3e2c-8613" hidden="false" type="infoGroup" targetId="3d9a-585f-6808-3463"/>
+        <infoLink name="Criatura monstruosa" id="a62d-3f18-9850-e9dd" hidden="false" targetId="bc40-f8c8-be5a-20ac" type="rule"/>
+        <infoLink name="Implacables" id="5dcb-5aec-d7b4-efd0" hidden="false" targetId="470c-bf6a-caae-15c9" type="rule"/>
+        <infoLink name="Moverse a Través de Cobertura" id="cb42-d81f-ac71-86e1" hidden="false" targetId="6cf1-d139-8b14-6083" type="rule"/>
+        <infoLink name="Criatura sináptica" id="48ae-9f69-3e2c-8613" hidden="false" targetId="c532-63f6-20dd-0d6f" type="profile"/>
+        <infoLink name="Coraje" id="8966-e4b2-c350-12ec" hidden="false" targetId="b23b-fb5c-4c8c-5ae4" type="rule"/>
         <infoLink name="La sombra de la disformidad" id="38b7-ad28-925b-6af2" hidden="false" type="profile" targetId="90e3-72fc-385a-b619"/>
         <infoLink name="Psíquico" id="a463-4537-05cc-4958" hidden="false" type="rule" targetId="72c2-fd50-9880-c83c"/>
       </infoLinks>
@@ -1283,7 +1293,7 @@ Fuerza 3, FP 2. El Tirano de Enjambre recuperará una única herida perdida por 
                 <cost name="Pts" typeId="puntos" value="25"/>
               </costs>
               <infoLinks>
-                <infoLink name="Enjambre pectoral con larvas electrificadas" id="0fe0-80a4-8f49-054a" hidden="false" type="infoGroup" targetId="1864-7a63-f246-946f"/>
+                <infoLink name="Enjambre pectoral con larvas electrificadas" id="0fe0-80a4-8f49-054a" hidden="false" targetId="6d68-3102-357f-54a6" type="profile"/>
               </infoLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db9b-3471-64eb-7203"/>
@@ -1294,7 +1304,7 @@ Fuerza 3, FP 2. El Tirano de Enjambre recuperará una única herida perdida por 
                 <cost name="Pts" typeId="puntos" value="25"/>
               </costs>
               <infoLinks>
-                <infoLink name="Enjambre pectoral con gusanos secantes" id="6aa8-253b-ef22-47da" hidden="false" type="infoGroup" targetId="c2e4-e921-402a-7fd2"/>
+                <infoLink name="Enjambre pectoral con gusanos secantes" id="6aa8-253b-ef22-47da" hidden="false" targetId="4c04-81db-6eb3-090b" type="profile"/>
               </infoLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0539-a880-4797-63b4"/>
@@ -1305,7 +1315,7 @@ Fuerza 3, FP 2. El Tirano de Enjambre recuperará una única herida perdida por 
                 <cost name="Pts" typeId="puntos" value="25"/>
               </costs>
               <infoLinks>
-                <infoLink name="Enjambre pectoral con cucarachas espinadas" id="53f8-2d60-c465-e2d9" hidden="false" type="infoGroup" targetId="46d3-d45a-734d-8fc6"/>
+                <infoLink name="Enjambre pectoral con cucarachas espinadas" id="53f8-2d60-c465-e2d9" hidden="false" targetId="4753-5245-8609-61f9" type="profile"/>
               </infoLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bcb8-2e2f-449d-d38b"/>
@@ -1393,7 +1403,8 @@ Fuerza 3, FP 2. El Tirano de Enjambre recuperará una única herida perdida por 
           <infoLinks>
             <infoLink name="Absorbe-esencias" id="26be-8dcc-6362-93c3" hidden="false" type="profile" targetId="ab18-7b80-6557-e58d"/>
             <infoLink name="Aullido psíquico" id="786a-c7b9-026a-4734" hidden="false" type="profile" targetId="274d-9bf1-8ed2-a660"/>
-            <infoLink name="Criatura sináptica" id="d07e-8bcd-5b7f-97ac" hidden="false" type="infoGroup" targetId="3d9a-585f-6808-3463"/>
+            <infoLink name="Criatura sináptica" id="d07e-8bcd-5b7f-97ac" hidden="false" targetId="c532-63f6-20dd-0d6f" type="profile"/>
+            <infoLink name="Coraje" id="4e23-96a9-f5c8-0277" hidden="false" targetId="b23b-fb5c-4c8c-5ae4" type="rule"/>
             <infoLink name="El horror" id="663d-3c6c-5382-3b0f" hidden="false" type="profile" targetId="685e-61c3-0b20-b391"/>
             <infoLink name="El señor de la horda" id="e207-12de-8306-5ad8" hidden="false" type="profile" targetId="fae9-59c3-c0b2-d822"/>
             <infoLink name="La sombra de la disformidad" id="2b6e-f52c-247f-5d76" hidden="false" type="profile" targetId="90e3-72fc-385a-b619"/>
@@ -1402,7 +1413,9 @@ Fuerza 3, FP 2. El Tirano de Enjambre recuperará una única herida perdida por 
             <infoLink name="Enemigo Predilecto" id="ccb4-ef56-066f-8d17" hidden="false" type="rule" targetId="3fe5-67c3-5aee-a5e7"/>
             <infoLink name="Psíquico" id="7cd7-a732-5488-93e1" hidden="false" type="rule" targetId="72c2-fd50-9880-c83c"/>
             <infoLink name="Visión Nocturna / Sentidos Agudos" id="113a-930d-8e6e-699f" hidden="false" type="rule" targetId="ea4b-af50-a8b0-62b7"/>
-            <infoLink name="Criatura monstruosa" id="d49d-ae46-1652-bafe" hidden="false" type="infoGroup" targetId="0cf1-0713-bbc8-cbdc"/>
+            <infoLink name="Criatura monstruosa" id="d49d-ae46-1652-bafe" hidden="false" targetId="bc40-f8c8-be5a-20ac" type="rule"/>
+            <infoLink name="Implacables" id="23f7-fb45-57d5-2074" hidden="false" targetId="470c-bf6a-caae-15c9" type="rule"/>
+            <infoLink name="Moverse a Través de Cobertura" id="a3a9-b3cc-f678-8c3c" hidden="false" targetId="6cf1-d139-8b14-6083" type="rule"/>
           </infoLinks>
           <profiles>
             <profile name="Astucia alienígena" typeId="c970-b832-a956-1ac8" typeName="Habilidad" hidden="false" id="ed07-6c57-c8ef-b693">
@@ -1441,10 +1454,13 @@ repetirse.</characteristic>
         <cost name="Pts" typeId="puntos" value="160"/>
       </costs>
       <infoLinks>
-        <infoLink name="Criatura monstruosa" id="021e-af45-4165-dcc4" hidden="false" type="infoGroup" targetId="0cf1-0713-bbc8-cbdc"/>
+        <infoLink name="Criatura monstruosa" id="021e-af45-4165-dcc4" hidden="false" targetId="bc40-f8c8-be5a-20ac" type="rule"/>
+        <infoLink name="Implacables" id="de2f-e0d7-0e1e-fbd8" hidden="false" targetId="470c-bf6a-caae-15c9" type="rule"/>
+        <infoLink name="Moverse a Través de Cobertura" id="ecf5-b092-d31d-fbfb" hidden="false" targetId="6cf1-d139-8b14-6083" type="rule"/>
         <infoLink name="Tervigón" id="0734-2656-8a5c-4ede" hidden="false" type="profile" targetId="3f21-d6f8-1e88-8426"/>
         <infoLink name="Garras y dientes" id="45c5-d4b1-ceea-02db" hidden="false" type="profile" targetId="7c9d-9e0a-cc00-defb"/>
-        <infoLink name="Criatura sináptica" id="c2f3-852b-9016-ee11" hidden="false" type="infoGroup" targetId="3d9a-585f-6808-3463"/>
+        <infoLink name="Criatura sináptica" id="c2f3-852b-9016-ee11" hidden="false" targetId="c532-63f6-20dd-0d6f" type="profile"/>
+        <infoLink name="Coraje" id="d77d-fb21-8bae-8d52" hidden="false" targetId="b23b-fb5c-4c8c-5ae4" type="rule"/>
         <infoLink name="Psíquico" id="0377-0922-369c-d6f1" hidden="false" type="rule" targetId="72c2-fd50-9880-c83c"/>
         <infoLink name="La sombra de la disformidad" id="d7c2-cd74-9251-7c26" hidden="false" type="profile" targetId="90e3-72fc-385a-b619"/>
         <infoLink name="Dominación" id="3bd9-86cc-aed8-7f8f" hidden="false" type="profile" targetId="2359-939e-960e-eb47"/>
@@ -1499,7 +1515,8 @@ repetirse.</characteristic>
                 <cost name="Pts" typeId="puntos" value="15"/>
               </costs>
               <infoLinks>
-                <infoLink name="Catalizador" id="7df3-8a99-73fc-a8eb" hidden="false" type="infoGroup" targetId="e6a5-0915-fbfb-50df"/>
+                <infoLink name="Catalizador" id="7df3-8a99-73fc-a8eb" hidden="false" targetId="6308-bcbc-018a-0819" type="profile"/>
+                <infoLink name="No Hay Dolor" id="a138-369d-6b38-643e" hidden="false" targetId="fe28-c924-099d-aa4e" type="rule"/>
               </infoLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab18-c5ba-386c-fa41"/>
@@ -1592,7 +1609,8 @@ En cuanto muere un Tervigón, todas las progenies de Termagantes (engendradas o
       </costs>
       <infoLinks>
         <infoLink name="Tiránido prime" id="c150-7b2b-df7d-def0" hidden="false" type="profile" targetId="07ff-44a8-8ab5-4fe2"/>
-        <infoLink name="Criatura sináptica" id="19dc-16d6-c86e-e291" hidden="false" type="infoGroup" targetId="3d9a-585f-6808-3463"/>
+        <infoLink name="Criatura sináptica" id="19dc-16d6-c86e-e291" hidden="false" targetId="c532-63f6-20dd-0d6f" type="profile"/>
+        <infoLink name="Coraje" id="d06a-acfa-18b7-23e0" hidden="false" targetId="b23b-fb5c-4c8c-5ae4" type="rule"/>
         <infoLink name="Personaje independiente" id="7111-c41f-ad83-b066" hidden="false" type="rule" targetId="61b4-c5bb-9d85-8506"/>
         <infoLink name="La sombra de la disformidad" id="2be9-2732-a53b-2baf" hidden="false" type="profile" targetId="90e3-72fc-385a-b619"/>
       </infoLinks>
@@ -1690,7 +1708,9 @@ En cuanto muere un Tervigón, todas las progenies de Termagantes (engendradas o
           <infoLinks>
             <infoLink name="Enjambres" id="ba53-dcaa-b572-5121" hidden="false" targetId="4614-34c7-8574-6faf" type="rule"/>
             <infoLink name="Garras y dientes" id="21b0-a5d1-3a8e-6fd7" hidden="false" type="profile" targetId="7c9d-9e0a-cc00-defb"/>
-            <infoLink name="Conducta instintiva alimentarse" id="a422-3cae-2dd5-7ddf" hidden="false" type="infoGroup" targetId="3a72-765b-4e1f-c998"/>
+            <infoLink name="Conducta instintiva" id="a422-3cae-2dd5-7ddf" hidden="false" targetId="acf4-69e2-214a-610e" type="profile"/>
+            <infoLink name="Alimentarse" id="bb24-ee76-2cec-c537" hidden="false" targetId="033b-00cf-e0e1-c66c" type="profile"/>
+            <infoLink name="Rabia" id="6e62-0297-b974-5224" hidden="false" targetId="2b48-a95a-9e05-1de0" type="rule"/>
             <infoLink name="Coraje" id="4bc4-725f-5528-1fca" hidden="false" type="rule" targetId="b23b-fb5c-4c8c-5ae4"/>
             <infoLink name="Enjambre devorador" id="6402-bf41-2078-839a" hidden="false" type="profile" targetId="01e0-0fbb-07cb-2388"/>
             <infoLink name="Sin mente" id="abb7-f5b9-9d9f-6e37" hidden="false" targetId="e5f0-a3c4-e7df-9de2" type="profile"/>
@@ -1725,13 +1745,14 @@ unidad de Enjambres Devoradores con un número de bases igual a la suma total d
           </profiles>
           <infoLinks>
             <infoLink name="Aguijón" id="fcff-7abb-dc76-c05b" hidden="false" type="profile" targetId="5597-556d-1de7-5fa9"/>
-            <infoLink name="Alas" id="ebf0-1ff4-1048-d6de" hidden="false" type="infoGroup" targetId="9913-cc70-34e8-b0fe"/>
-            <infoLink name="Criatura sináptica" id="0c55-ebd8-d436-ba3a" hidden="false" type="infoGroup" targetId="3d9a-585f-6808-3463"/>
-            <infoLink name="Garras aceradas" id="c6fa-11a9-3c7c-9771" hidden="false" type="infoGroup" targetId="f2b5-6481-93d3-fe58"/>
+            <infoLink name="Alas" id="ebf0-1ff4-1048-d6de" hidden="false" targetId="4b5c-7fa6-cbb6-81a9" type="profile"/>
+            <infoLink name="Unidad retropropulsada" id="0d34-8574-9269-cb71" hidden="false" targetId="d6f4-cfda-75c5-f2f1" type="rule"/>
+            <infoLink name="Criatura sináptica" id="0c55-ebd8-d436-ba3a" hidden="false" targetId="c532-63f6-20dd-0d6f" type="profile"/>
+            <infoLink name="Coraje" id="42ed-4de2-852e-fbb5" hidden="false" targetId="b23b-fb5c-4c8c-5ae4" type="rule"/>
+            <infoLink name="Garras aceradas" id="c6fa-11a9-3c7c-9771" hidden="false" targetId="b14f-e98f-bb94-e63f" type="profile"/>
             <infoLink name="La sombra de la disformidad" id="ae23-5723-b0b0-3f51" hidden="false" type="profile" targetId="90e3-72fc-385a-b619"/>
             <infoLink name="Parásito de Mortrex" id="2156-3a98-0870-c8fc" hidden="false" type="profile" targetId="03c0-977a-d819-78f8"/>
             <infoLink name="Personaje independiente" id="ee86-76ed-b251-3608" hidden="false" type="rule" targetId="61b4-c5bb-9d85-8506"/>
-            <infoLink name="Unidad retropropulsada" id="22c8-0250-4b20-b2f7" hidden="false" type="infoGroup" targetId="9cdf-bda3-6dab-3a27"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
@@ -1744,7 +1765,7 @@ unidad de Enjambres Devoradores con un número de bases igual a la suma total d
           </costs>
           <infoLinks>
             <infoLink name="Guardia de enjambre" id="c90f-7e01-928a-d4d1" hidden="false" type="profile" targetId="ed35-f5ef-0d26-d342"/>
-            <infoLink name="Cañón empalador" id="4570-093b-c746-e8cb" hidden="false" type="infoGroup" targetId="d279-89c0-c6b2-1b71"/>
+            <infoLink name="Cañón empalador" id="4570-093b-c746-e8cb" hidden="false" targetId="621c-8897-92ec-6ed8" type="profile"/>
             <infoLink name="Garras y dientes" id="c47d-c2d7-0219-9056" hidden="false" type="profile" targetId="7c9d-9e0a-cc00-defb"/>
           </infoLinks>
           <constraints>
@@ -1754,7 +1775,8 @@ unidad de Enjambres Devoradores con un número de bases igual a la suma total d
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
-        <infoLink name="Conducta instintiva acechar" id="9cdf-79c2-5311-c006" hidden="false" type="infoGroup" targetId="720b-b3ba-6527-1a0c"/>
+        <infoLink name="Conducta instintiva" id="9cdf-79c2-5311-c006" hidden="false" targetId="acf4-69e2-214a-610e" type="profile"/>
+        <infoLink name="Acechar" id="7af9-3c09-70e3-04e0" hidden="false" targetId="b0d0-ba0f-5b54-513e" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Progenie de Líctores" hidden="false" id="69da-685f-c2f7-4be7">
@@ -1775,10 +1797,11 @@ unidad de Enjambres Devoradores con un número de bases igual a la suma total d
       <infoLinks>
         <infoLink targetId="269d-06e3-8000-220c" id="d7ee-a42d-90f7-daf4" type="profile" name="Rastro de feronomas" hidden="false"/>
         <infoLink name="Escamas camaleónicas" id="b3db-3708-aa11-b090" hidden="false" type="profile" targetId="59fd-1cf3-9413-7912"/>
-        <infoLink name="Garras garfio" id="7126-bfc5-7c9b-9117" hidden="false" type="infoGroup" targetId="8fc0-c634-500e-5b36"/>
-        <infoLink name="Garras aceradas" id="b8f1-9e9b-2faf-5e77" hidden="false" type="infoGroup" targetId="f2b5-6481-93d3-fe58"/>
+        <infoLink name="Garras garfio" id="7126-bfc5-7c9b-9117" hidden="false" targetId="29d2-7727-8aaa-e025" type="profile"/>
+        <infoLink name="Garras aceradas" id="b8f1-9e9b-2faf-5e77" hidden="false" targetId="b14f-e98f-bb94-e63f" type="profile"/>
         <infoLink name="Garras afiladas" id="5d08-f5a4-871d-e733" hidden="false" type="profile" targetId="4142-8bec-e73c-f7b7"/>
-        <infoLink name="Conducta instintiva acechar" id="ddcf-d2e4-a1e9-abed" hidden="false" type="infoGroup" targetId="720b-b3ba-6527-1a0c"/>
+        <infoLink name="Conducta instintiva" id="ddcf-d2e4-a1e9-abed" hidden="false" targetId="acf4-69e2-214a-610e" type="profile"/>
+        <infoLink name="Acechar" id="0cc5-9cef-a366-3972" hidden="false" targetId="b0d0-ba0f-5b54-513e" type="profile"/>
         <infoLink name="Veloces" id="88c9-c2fb-6e30-6b19" hidden="false" type="rule" targetId="d110-fc1c-250c-54d4"/>
         <infoLink name="Atacar y Huir" id="447d-3fb6-f018-2954" hidden="false" type="rule" targetId="e664-80ee-cd50-fd59"/>
         <infoLink name="Moverse a Través de Cobertura" id="367e-7f32-c866-698d" hidden="false" type="rule" targetId="6cf1-d139-8b14-6083"/>
@@ -1792,10 +1815,11 @@ unidad de Enjambres Devoradores con un número de bases igual a la suma total d
       <infoLinks>
         <infoLink name="Muerte silenciosa" id="815a-89af-7e48-5ed9" hidden="false" type="profile" targetId="75e9-fd36-3e92-19d1"/>
         <infoLink name="Escamas camaleónicas" id="41b0-53db-4a5d-a82a" hidden="false" type="profile" targetId="59fd-1cf3-9413-7912"/>
-        <infoLink name="Garras garfio" id="d668-d91e-e828-c5ed" hidden="false" type="infoGroup" targetId="8fc0-c634-500e-5b36"/>
-        <infoLink name="Garras aceradas" id="28dd-81f2-8cc1-fa43" hidden="false" type="infoGroup" targetId="f2b5-6481-93d3-fe58"/>
+        <infoLink name="Garras garfio" id="d668-d91e-e828-c5ed" hidden="false" targetId="29d2-7727-8aaa-e025" type="profile"/>
+        <infoLink name="Garras aceradas" id="28dd-81f2-8cc1-fa43" hidden="false" targetId="b14f-e98f-bb94-e63f" type="profile"/>
         <infoLink name="Garras afiladas" id="dfd1-ea54-6c1b-b02e" hidden="false" type="profile" targetId="4142-8bec-e73c-f7b7"/>
-        <infoLink name="Conducta instintiva acechar" id="3f33-8434-c8a5-facf" hidden="false" type="infoGroup" targetId="720b-b3ba-6527-1a0c"/>
+        <infoLink name="Conducta instintiva" id="3f33-8434-c8a5-facf" hidden="false" targetId="acf4-69e2-214a-610e" type="profile"/>
+        <infoLink name="Acechar" id="6b0f-da60-e6c1-1d10" hidden="false" targetId="b0d0-ba0f-5b54-513e" type="profile"/>
         <infoLink name="Coraje" id="0e3a-125f-d74c-6798" hidden="false" type="rule" targetId="b23b-fb5c-4c8c-5ae4"/>
         <infoLink name="Veloces" id="9c26-e587-4023-1590" hidden="false" type="rule" targetId="d110-fc1c-250c-54d4"/>
         <infoLink name="Moverse a Través de Cobertura" id="5c37-9e25-bd74-5c24" hidden="false" type="rule" targetId="6cf1-d139-8b14-6083"/>
@@ -1851,7 +1875,9 @@ unidad de Enjambres Devoradores con un número de bases igual a la suma total d
       </selectionEntries>
       <infoLinks>
         <infoLink name="Látigo orgánico" id="fd18-ffb8-b52a-a143" hidden="false" type="profile" targetId="03cb-0385-2167-e4be"/>
-        <infoLink name="Conducta instintiva alimentarse" id="fd4b-4d0e-f9d8-23f5" hidden="false" type="infoGroup" targetId="3a72-765b-4e1f-c998"/>
+        <infoLink name="Conducta instintiva" id="fd4b-4d0e-f9d8-23f5" hidden="false" targetId="acf4-69e2-214a-610e" type="profile"/>
+        <infoLink name="Alimentarse" id="3f32-5586-949a-3699" hidden="false" targetId="033b-00cf-e0e1-c66c" type="profile"/>
+        <infoLink name="Rabia" id="f9b2-38dd-e459-c647" hidden="false" targetId="2b48-a95a-9e05-1de0" type="rule"/>
         <infoLink name="Miasma tóxico" id="ba95-659e-dfa0-1f3b" hidden="false" type="profile" targetId="f0af-7b7b-bae0-b9fe"/>
         <infoLink name="Envenenada" id="fa46-e830-e1ba-e648" hidden="false" type="rule" targetId="48c8-bb35-6595-03d1"/>
       </infoLinks>
@@ -1881,7 +1907,9 @@ unidad de Enjambres Devoradores con un número de bases igual a la suma total d
       </costs>
       <infoLinks>
         <infoLink name="Espora micética" id="4186-eace-ae55-1fcc" hidden="false" type="profile" targetId="cc29-1e38-f9f4-8e31"/>
-        <infoLink name="Criatura monstruosa" id="c796-2c3f-440a-7055" hidden="false" type="infoGroup" targetId="0cf1-0713-bbc8-cbdc"/>
+        <infoLink name="Criatura monstruosa" id="c796-2c3f-440a-7055" hidden="false" targetId="bc40-f8c8-be5a-20ac" type="rule"/>
+        <infoLink name="Implacables" id="5476-078c-79ac-a617" hidden="false" targetId="470c-bf6a-caae-15c9" type="rule"/>
+        <infoLink name="Moverse a Través de Cobertura" id="51c2-b568-8622-41fb" hidden="false" targetId="6cf1-d139-8b14-6083" type="rule"/>
         <infoLink name="Látigo orgánico" id="e916-55ec-f825-96fc" hidden="false" type="profile" targetId="03cb-0385-2167-e4be"/>
         <infoLink name="Tentáculos destripadores" id="2c9f-9289-24c9-e262" hidden="false" type="profile" targetId="5854-62b8-77e0-576e"/>
         <infoLink name="Despliegue Rápido" id="15fa-3789-b84b-7892" hidden="false" type="rule" targetId="e73e-593a-922e-a47a"/>
@@ -1977,7 +2005,8 @@ Una Espora Micética puede llevar en su interior reforzado una única unidad de
       </selectionEntries>
       <infoLinks>
         <infoLink targetId="6622-3596-f6bb-091d" id="5dda-95ff-6fa5-1c78" type="profile" name="Campo disforme" hidden="false"/>
-        <infoLink name="Criatura sináptica" id="52b5-0d14-0a38-2fe1" hidden="false" type="infoGroup" targetId="3d9a-585f-6808-3463"/>
+        <infoLink name="Criatura sináptica" id="52b5-0d14-0a38-2fe1" hidden="false" targetId="c532-63f6-20dd-0d6f" type="profile"/>
+        <infoLink name="Coraje" id="b4a7-23b2-db1e-b949" hidden="false" targetId="b23b-fb5c-4c8c-5ae4" type="rule"/>
         <infoLink name="Psíquico" id="e6b0-dde3-773f-2cb6" hidden="false" type="rule" targetId="72c2-fd50-9880-c83c"/>
         <infoLink name="La sombra de la disformidad" id="dcb0-a2f9-4d2d-6f3b" hidden="false" type="profile" targetId="90e3-72fc-385a-b619"/>
       </infoLinks>
@@ -1996,7 +2025,9 @@ Una Espora Micética puede llevar en su interior reforzado una única unidad de
       <infoLinks>
         <infoLink name="La maldición de Malan&apos;tai" id="ff37-a286-4083-a3b2" hidden="false" type="profile" targetId="463b-78ff-04f9-d748"/>
         <infoLink name="Garras y dientes" id="3514-889d-3923-b73f" hidden="false" type="profile" targetId="7c9d-9e0a-cc00-defb"/>
-        <infoLink name="Conducta instintiva alimentarse" id="b179-d02c-19ae-e508" hidden="false" type="infoGroup" targetId="3a72-765b-4e1f-c998"/>
+        <infoLink name="Conducta instintiva" id="b179-d02c-19ae-e508" hidden="false" targetId="acf4-69e2-214a-610e" type="profile"/>
+        <infoLink name="Alimentarse" id="4e5c-ae73-7b2d-7e86" hidden="false" targetId="033b-00cf-e0e1-c66c" type="profile"/>
+        <infoLink name="Rabia" id="4f7c-0c05-b7a3-ddc1" hidden="false" targetId="2b48-a95a-9e05-1de0" type="rule"/>
         <infoLink name="Coraje" id="dac0-5f3e-b0a4-d586" hidden="false" type="rule" targetId="b23b-fb5c-4c8c-5ae4"/>
         <infoLink name="Psíquico" id="9224-20ad-dd88-be05" hidden="false" type="rule" targetId="72c2-fd50-9880-c83c"/>
         <infoLink name="La sombra de la disformidad" id="fb32-da9d-dce7-1ec2" hidden="false" type="profile" targetId="90e3-72fc-385a-b619"/>
@@ -2061,8 +2092,10 @@ Después de utilizar el poder, pero antes de ganar heridas por la absorción vit
         <infoLink name="Sangre ácida" id="6bd9-f2e1-c124-c433" hidden="false" type="profile" targetId="932f-f50f-f25b-029b"/>
         <infoLink name="Mandíbula ácida" id="5053-48d4-8d6b-95de" hidden="false" type="profile" targetId="0b26-f58c-c911-5671"/>
         <infoLink name="Garras y dientes" id="bd5c-8884-215d-8580" hidden="false" type="profile" targetId="7c9d-9e0a-cc00-defb"/>
-        <infoLink name="Racha llameante" id="0c2f-0485-f7f5-0706" hidden="false" type="infoGroup" targetId="8301-28bc-b2cc-980c"/>
-        <infoLink name="Conducta instintiva alimentarse" id="41f7-6b84-7464-1d35" hidden="false" type="infoGroup" targetId="3a72-765b-4e1f-c998"/>
+        <infoLink name="Racha llameante" id="0c2f-0485-f7f5-0706" hidden="false" targetId="6cef-235a-8b53-e760" type="profile"/>
+        <infoLink name="Conducta instintiva" id="41f7-6b84-7464-1d35" hidden="false" targetId="acf4-69e2-214a-610e" type="profile"/>
+        <infoLink name="Alimentarse" id="5cd8-daf0-dec1-34fb" hidden="false" targetId="033b-00cf-e0e1-c66c" type="profile"/>
+        <infoLink name="Rabia" id="5dfb-8850-34e0-6387" hidden="false" targetId="2b48-a95a-9e05-1de0" type="rule"/>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Espora micética" hidden="false" id="87cb-1e0f-1ce5-9749" type="selectionEntry" targetId="c059-7987-8ef4-3a9c">
@@ -2096,7 +2129,7 @@ Después de utilizar el poder, pero antes de ganar heridas por la absorción vit
       </selectionEntries>
       <infoLinks>
         <infoLink targetId="4d6c-98fb-0e8b-b1a1" id="9721-a010-1964-976f" type="profile" name="Telepatía de progenie" hidden="false"/>
-        <infoLink name="Garras aceradas" id="a483-39f8-0173-81d3" hidden="false" type="infoGroup" targetId="f2b5-6481-93d3-fe58"/>
+        <infoLink name="Garras aceradas" id="a483-39f8-0173-81d3" hidden="false" targetId="b14f-e98f-bb94-e63f" type="profile"/>
         <infoLink name="Veloces" id="fac5-addb-b211-e915" hidden="false" type="rule" targetId="d110-fc1c-250c-54d4"/>
         <infoLink name="Moverse a Través de Cobertura" id="c1ee-b9fb-3b3c-5547" hidden="false" type="rule" targetId="6cf1-d139-8b14-6083"/>
       </infoLinks>
@@ -2133,7 +2166,8 @@ Los Genestealers de Ymgarl reciben un +1 a su valor de Resistencia.</characteris
         </entryLink>
       </entryLinks>
       <infoLinks>
-        <infoLink name="Criatura sináptica" id="8ae7-2064-75f0-a8da" hidden="false" type="infoGroup" targetId="3d9a-585f-6808-3463"/>
+        <infoLink name="Criatura sináptica" id="8ae7-2064-75f0-a8da" hidden="false" targetId="c532-63f6-20dd-0d6f" type="profile"/>
+        <infoLink name="Coraje" id="1547-576e-91f7-ac71" hidden="false" targetId="b23b-fb5c-4c8c-5ae4" type="rule"/>
         <infoLink name="La sombra de la disformidad" id="b138-aa7c-95c6-56ac" hidden="false" type="profile" targetId="90e3-72fc-385a-b619"/>
       </infoLinks>
       <selectionEntryGroups>
@@ -2513,7 +2547,7 @@ Los Genestealers de Ymgarl reciben un +1 a su valor de Resistencia.</characteris
         </selectionEntryGroup>
       </selectionEntryGroups>
       <infoLinks>
-        <infoLink name="Garras aceradas" id="a2f4-f2aa-7587-ef9a" hidden="false" type="infoGroup" targetId="f2b5-6481-93d3-fe58"/>
+        <infoLink name="Garras aceradas" id="a2f4-f2aa-7587-ef9a" hidden="false" targetId="b14f-e98f-bb94-e63f" type="profile"/>
         <infoLink name="Telepatía de progenie" id="b9f6-c010-bdc9-3fe9" hidden="false" type="profile" targetId="4d6c-98fb-0e8b-b1a1"/>
         <infoLink name="Veloces" id="19c7-e2f0-315f-7d9b" hidden="false" type="rule" targetId="d110-fc1c-250c-54d4"/>
         <infoLink name="Infiltración" id="1017-2167-8d38-568d" hidden="false" type="rule" targetId="3310-5f06-776a-5b35"/>
@@ -2573,7 +2607,7 @@ Los Genestealers de Ymgarl reciben un +1 a su valor de Resistencia.</characteris
                   </costs>
                   <infoLinks>
                     <infoLink name="Termagante" id="1376-830a-029e-c548" hidden="false" type="profile" targetId="5f70-0aa0-c80f-013e"/>
-                    <infoLink name="Estrangulador" id="43fa-6e2f-3146-0f29" hidden="false" type="infoGroup" targetId="9197-55c3-b0c6-5f8a"/>
+                    <infoLink name="Estrangulador" id="43fa-6e2f-3146-0f29" hidden="false" targetId="00bb-38f3-55ea-96bf" type="profile"/>
                   </infoLinks>
                   <constraints>
                     <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="0dcf-a2a6-4576-7a5b" includeChildSelections="false"/>
@@ -2705,7 +2739,8 @@ Los Genestealers de Ymgarl reciben un +1 a su valor de Resistencia.</characteris
       <infoLinks>
         <infoLink name="Garras y dientes" id="04f2-e39c-98e5-114a" hidden="false" type="profile" targetId="7c9d-9e0a-cc00-defb"/>
         <infoLink name="Moverse a Través de Cobertura" id="2a0a-2591-1a6d-1bca" hidden="false" type="rule" targetId="6cf1-d139-8b14-6083"/>
-        <infoLink name="Conducta instintiva acechar" id="d197-a7da-7a3b-f763" hidden="false" type="infoGroup" targetId="720b-b3ba-6527-1a0c"/>
+        <infoLink name="Conducta instintiva" id="d197-a7da-7a3b-f763" hidden="false" targetId="acf4-69e2-214a-610e" type="profile"/>
+        <infoLink name="Acechar" id="6243-b54b-ad0a-4f96" hidden="false" targetId="b0d0-ba0f-5b54-513e" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Progenie de Hormagantes" hidden="false" id="c1ea-33fd-b106-ab15">
@@ -2783,7 +2818,9 @@ Los Genestealers de Ymgarl reciben un +1 a su valor de Resistencia.</characteris
       </selectionEntryGroups>
       <infoLinks>
         <infoLink name="Garras afiladas" id="4d76-77ec-4079-cc2c" hidden="false" type="profile" targetId="4142-8bec-e73c-f7b7"/>
-        <infoLink name="Conducta instintiva alimentarse" id="a6bf-8032-8016-285e" hidden="false" type="infoGroup" targetId="3a72-765b-4e1f-c998"/>
+        <infoLink name="Conducta instintiva" id="a6bf-8032-8016-285e" hidden="false" targetId="acf4-69e2-214a-610e" type="profile"/>
+        <infoLink name="Alimentarse" id="90a1-d753-a853-3ba6" hidden="false" targetId="033b-00cf-e0e1-c66c" type="profile"/>
+        <infoLink name="Rabia" id="21c9-17fe-b82a-a006" hidden="false" targetId="2b48-a95a-9e05-1de0" type="rule"/>
         <infoLink name="Veloces" id="65f8-8828-505a-07eb" hidden="false" type="rule" targetId="d110-fc1c-250c-54d4"/>
         <infoLink name="Moverse a Través de Cobertura" id="ce78-76bf-f44a-04a0" hidden="false" type="rule" targetId="6cf1-d139-8b14-6083"/>
       </infoLinks>
@@ -2811,9 +2848,13 @@ Los Genestealers de Ymgarl reciben un +1 a su valor de Resistencia.</characteris
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
-        <infoLink targetId="1587-f21a-885c-baf3" id="e14e-0f54-18f2-ec3a" type="infoGroup" name="Enjambres" hidden="false"/>
+        <infoLink name="Enjambres" id="e14e-0f54-18f2-ec3a" hidden="false" targetId="4614-34c7-8574-6faf" type="rule"/>
+        <infoLink name="Sigilo" id="5d9a-847b-eba5-0f58" hidden="false" targetId="f1ee-e19a-a3c3-6797" type="rule"/>
+        <infoLink name="Vulnerable a las Explosiones" id="ecb6-7bf2-9a28-79dc" hidden="false" targetId="394d-92aa-234a-d417" type="rule"/>
         <infoLink name="Garras y dientes" id="31c6-8797-0cf7-ca8a" hidden="false" type="profile" targetId="7c9d-9e0a-cc00-defb"/>
-        <infoLink name="Conducta instintiva alimentarse" id="0dd3-1e09-1b34-559a" hidden="false" type="infoGroup" targetId="3a72-765b-4e1f-c998"/>
+        <infoLink name="Conducta instintiva" id="0dd3-1e09-1b34-559a" hidden="false" targetId="acf4-69e2-214a-610e" type="profile"/>
+        <infoLink name="Alimentarse" id="2305-361f-d1ff-cefb" hidden="false" targetId="033b-00cf-e0e1-c66c" type="profile"/>
+        <infoLink name="Rabia" id="fcaa-156d-bc32-c81a" hidden="false" targetId="2b48-a95a-9e05-1de0" type="rule"/>
         <infoLink name="Coraje" id="e1e0-c74a-7b5c-820d" hidden="false" type="rule" targetId="b23b-fb5c-4c8c-5ae4"/>
         <infoLink name="Sin mente" id="e8a8-4961-81ed-1e19" hidden="false" type="profile" targetId="e5f0-a3c4-e7df-9de2"/>
       </infoLinks>
@@ -2895,8 +2936,10 @@ Los Genestealers de Ymgarl reciben un +1 a su valor de Resistencia.</characteris
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Progenie de Élitros tiránidos" hidden="false" id="0189-36bf-3860-ac9c">
       <infoLinks>
-        <infoLink name="Alas" id="288a-c65e-397e-3206" hidden="false" type="infoGroup" targetId="9913-cc70-34e8-b0fe"/>
-        <infoLink name="Criatura sináptica" id="0edc-eb98-41e1-f5c5" hidden="false" type="infoGroup" targetId="3d9a-585f-6808-3463"/>
+        <infoLink name="Alas" id="288a-c65e-397e-3206" hidden="false" targetId="4b5c-7fa6-cbb6-81a9" type="profile"/>
+        <infoLink name="Unidad retropropulsada" id="a3e2-3bf0-9abd-1c8a" hidden="false" targetId="d6f4-cfda-75c5-f2f1" type="rule"/>
+        <infoLink name="Criatura sináptica" id="0edc-eb98-41e1-f5c5" hidden="false" targetId="c532-63f6-20dd-0d6f" type="profile"/>
+        <infoLink name="Coraje" id="49d4-c6e0-70af-ab02" hidden="false" targetId="b23b-fb5c-4c8c-5ae4" type="rule"/>
         <infoLink name="La sombra de la disformidad" id="19bf-bb7e-55ba-0ff8" hidden="false" type="profile" targetId="90e3-72fc-385a-b619"/>
       </infoLinks>
       <selectionEntryGroups>
@@ -3165,10 +3208,13 @@ Los Genestealers de Ymgarl reciben un +1 a su valor de Resistencia.</characteris
       <infoLinks>
         <infoLink name="Visión Nocturna / Sentidos Agudos" id="9a16-dfbc-3b4f-66a8" hidden="false" type="rule" targetId="ea4b-af50-a8b0-62b7"/>
         <infoLink name="Despliegue Rápido" id="06e8-ce23-7ca0-9fbe" hidden="false" type="rule" targetId="e73e-593a-922e-a47a"/>
-        <infoLink name="Conducta instintiva alimentarse" id="3022-58aa-614b-8607" hidden="false" type="infoGroup" targetId="3a72-765b-4e1f-c998"/>
+        <infoLink name="Conducta instintiva" id="3022-58aa-614b-8607" hidden="false" targetId="acf4-69e2-214a-610e" type="profile"/>
+        <infoLink name="Alimentarse" id="2c63-b22b-49f7-82b4" hidden="false" targetId="033b-00cf-e0e1-c66c" type="profile"/>
+        <infoLink name="Rabia" id="81f5-bbfe-c719-47fc" hidden="false" targetId="2b48-a95a-9e05-1de0" type="rule"/>
         <infoLink name="Moverse a Través de Cobertura" id="537f-a32c-ecf6-496b" hidden="false" type="rule" targetId="6cf1-d139-8b14-6083"/>
         <infoLink name="Garras afiladas" id="4b49-a49f-f6ae-af0c" hidden="false" type="profile" targetId="4142-8bec-e73c-f7b7"/>
-        <infoLink name="Bestias y Caballería" id="2c9a-c98e-6cb8-338d" hidden="false" type="infoGroup" targetId="0859-a7ad-262b-1463"/>
+        <infoLink name="Bestias y Caballería" id="2c9a-c98e-6cb8-338d" hidden="false" targetId="1c05-d1e6-a25a-918b" type="rule"/>
+        <infoLink name="Veloces" id="c8bc-8bee-1bf0-fedf" hidden="false" targetId="d110-fc1c-250c-54d4" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Armas" id="c4b9-85ac-26b2-9f95" hidden="false" defaultSelectionEntryId="387b-a222-4047-00c4">
@@ -3295,11 +3341,16 @@ Los Genestealers de Ymgarl reciben un +1 a su valor de Resistencia.</characteris
         </selectionEntry>
       </selectionEntries>
       <infoLinks>
-        <infoLink name="Enjambres" id="037c-adbb-49ba-ae38" hidden="false" targetId="1587-f21a-885c-baf3" type="infoGroup"/>
+        <infoLink name="Enjambres" id="037c-adbb-49ba-ae38" hidden="false" targetId="4614-34c7-8574-6faf" type="rule"/>
+        <infoLink name="Sigilo" id="f1bd-e1ae-6e58-eec9" hidden="false" targetId="f1ee-e19a-a3c3-6797" type="rule"/>
+        <infoLink name="Vulnerable a las Explosiones" id="5d5b-c2e4-723c-fe02" hidden="false" targetId="394d-92aa-234a-d417" type="rule"/>
         <infoLink name="Garras y dientes" id="6125-59fa-68f2-4db5" hidden="false" type="profile" targetId="7c9d-9e0a-cc00-defb"/>
-        <infoLink name="Conducta instintiva alimentarse" id="f313-c1ab-add8-12b3" hidden="false" type="infoGroup" targetId="3a72-765b-4e1f-c998"/>
+        <infoLink name="Conducta instintiva" id="f313-c1ab-add8-12b3" hidden="false" targetId="acf4-69e2-214a-610e" type="profile"/>
+        <infoLink name="Alimentarse" id="49bf-1d35-c230-c676" hidden="false" targetId="033b-00cf-e0e1-c66c" type="profile"/>
+        <infoLink name="Rabia" id="7876-a0ae-ecd8-61ea" hidden="false" targetId="2b48-a95a-9e05-1de0" type="rule"/>
         <infoLink name="Coraje" id="9451-7994-8578-6df6" hidden="false" type="rule" targetId="b23b-fb5c-4c8c-5ae4"/>
-        <infoLink name="Alas" id="c39b-39b2-9468-5bfd" hidden="false" type="infoGroup" targetId="9913-cc70-34e8-b0fe"/>
+        <infoLink name="Alas" id="c39b-39b2-9468-5bfd" hidden="false" targetId="4b5c-7fa6-cbb6-81a9" type="profile"/>
+        <infoLink name="Unidad retropropulsada" id="f84f-dba7-d25e-0b75" hidden="false" targetId="d6f4-cfda-75c5-f2f1" type="rule"/>
         <infoLink name="Sin mente" id="e52c-b4a9-5de5-bd0f" hidden="false" type="profile" targetId="e5f0-a3c4-e7df-9de2"/>
       </infoLinks>
       <selectionEntryGroups>
@@ -3371,9 +3422,11 @@ Los Genestealers de Ymgarl reciben un +1 a su valor de Resistencia.</characteris
       </selectionEntries>
       <infoLinks>
         <infoLink name="Garras y dientes" id="5175-3166-afb0-f8e5" hidden="false" type="profile" targetId="7c9d-9e0a-cc00-defb"/>
-        <infoLink name="Perforacarne" id="7413-789e-07cd-5dcf" hidden="false" type="infoGroup" targetId="2b47-18f1-aa02-70a7"/>
-        <infoLink name="Alas" id="fa45-beb6-eb14-b15a" hidden="false" type="infoGroup" targetId="9913-cc70-34e8-b0fe"/>
-        <infoLink name="Conducta instintiva acechar" id="402a-c3cd-ad1f-6a71" hidden="false" type="infoGroup" targetId="720b-b3ba-6527-1a0c"/>
+        <infoLink name="Perforacarne" id="7413-789e-07cd-5dcf" hidden="false" targetId="92e8-4499-60cc-d8f0" type="profile"/>
+        <infoLink name="Alas" id="fa45-beb6-eb14-b15a" hidden="false" targetId="4b5c-7fa6-cbb6-81a9" type="profile"/>
+        <infoLink name="Unidad retropropulsada" id="3861-4461-4996-a4ac" hidden="false" targetId="d6f4-cfda-75c5-f2f1" type="rule"/>
+        <infoLink name="Conducta instintiva" id="402a-c3cd-ad1f-6a71" hidden="false" targetId="acf4-69e2-214a-610e" type="profile"/>
+        <infoLink name="Acechar" id="d9d8-e4d6-0707-d353" hidden="false" targetId="b0d0-ba0f-5b54-513e" type="profile"/>
       </infoLinks>
       <profiles>
         <profile name="Veneno cegador" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="974a-7e13-c9a2-8ca9">
@@ -3426,10 +3479,15 @@ Los Genestealers de Ymgarl reciben un +1 a su valor de Resistencia.</characteris
       <infoLinks>
         <infoLink name="Arpía" id="6123-c2f0-cba4-2578" hidden="false" type="profile" targetId="4142-76a3-09e8-af29"/>
         <infoLink name="Garras afiladas" id="90eb-995b-b3d3-0895" hidden="false" type="profile" targetId="4142-8bec-e73c-f7b7"/>
-        <infoLink name="Criatura monstruosa" id="fa86-6bbe-674f-f0f6" hidden="false" type="infoGroup" targetId="0cf1-0713-bbc8-cbdc"/>
-        <infoLink name="Expulsión de minas espora" id="3b74-3ba5-962b-c0fe" hidden="false" type="infoGroup" targetId="46d2-b5d8-91e6-eefe"/>
-        <infoLink name="Alas" id="bc17-ffe8-3df4-5470" hidden="false" type="infoGroup" targetId="9913-cc70-34e8-b0fe"/>
-        <infoLink name="Conducta instintiva acechar" id="b670-0102-581e-2f26" hidden="false" type="infoGroup" targetId="720b-b3ba-6527-1a0c"/>
+        <infoLink name="Criatura monstruosa" id="fa86-6bbe-674f-f0f6" hidden="false" targetId="bc40-f8c8-be5a-20ac" type="rule"/>
+        <infoLink name="Implacables" id="4c6f-cf7e-46c9-d5ac" hidden="false" targetId="470c-bf6a-caae-15c9" type="rule"/>
+        <infoLink name="Moverse a Través de Cobertura" id="2ec4-e697-eb6a-1234" hidden="false" targetId="6cf1-d139-8b14-6083" type="rule"/>
+        <infoLink name="Expulsión de minas espora" id="3b74-3ba5-962b-c0fe" hidden="false" targetId="4f36-d562-609c-dc73" type="profile"/>
+        <infoLink name="Expulsión de minas espora" id="7691-9689-bdc9-4d1b" hidden="false" targetId="1616-8ca1-4711-abe5" type="profile"/>
+        <infoLink name="Alas" id="bc17-ffe8-3df4-5470" hidden="false" targetId="4b5c-7fa6-cbb6-81a9" type="profile"/>
+        <infoLink name="Unidad retropropulsada" id="835d-8629-a10d-9241" hidden="false" targetId="d6f4-cfda-75c5-f2f1" type="rule"/>
+        <infoLink name="Conducta instintiva" id="b670-0102-581e-2f26" hidden="false" targetId="acf4-69e2-214a-610e" type="profile"/>
+        <infoLink name="Acechar" id="7d23-dbdf-7858-2820" hidden="false" targetId="b0d0-ba0f-5b54-513e" type="profile"/>
         <infoLink name="Coraje" id="c15b-8ef1-ed78-ae99" hidden="false" type="rule" targetId="b23b-fb5c-4c8c-5ae4"/>
         <infoLink name="Mina espora" id="d292-16e6-e728-8a03" hidden="false" type="profile" targetId="f0bf-63c7-ed8d-4464"/>
         <infoLink name="Bomba viviente" id="b1d2-b868-e8f1-3f63" hidden="false" type="profile" targetId="d421-bc38-3f2d-7fee"/>
@@ -3560,7 +3618,8 @@ Racimo quedará destruido al completo, como se describe en el resultado de 1-2 
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Espinas de fragmentación" hidden="false" id="843b-9cb6-b025-16cf" sortIndex="1">
               <infoLinks>
-                <infoLink name="Espinas de fragmentación" id="d858-2bfd-5fc6-fe5c" hidden="false" type="infoGroup" targetId="21a3-d8a9-b099-9900"/>
+                <infoLink name="Espinas de fragmentación" id="d858-2bfd-5fc6-fe5c" hidden="false" targetId="0571-b003-4f15-3a92" type="profile"/>
+                <infoLink name="Granadas de asalto" id="11f0-ee63-1a38-1735" hidden="false" targetId="6fa5-b37d-1b93-9529" type="profile"/>
               </infoLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="011e-d0e7-7a96-91b2"/>
@@ -3724,8 +3783,12 @@ Racimo quedará destruido al completo, como se describe en el resultado de 1-2 
       </selectionEntries>
       <infoLinks>
         <infoLink targetId="1cf6-a779-a032-78d5" id="020b-3817-6785-c7e8" type="profile" name="Ariete viviente" hidden="false"/>
-        <infoLink name="Criatura monstruosa" id="62e9-cfe9-cb01-4777" hidden="false" type="infoGroup" targetId="0cf1-0713-bbc8-cbdc"/>
-        <infoLink name="Conducta instintiva alimentarse" id="092d-e2cb-c39d-34b4" hidden="false" type="infoGroup" targetId="3a72-765b-4e1f-c998"/>
+        <infoLink name="Criatura monstruosa" id="62e9-cfe9-cb01-4777" hidden="false" targetId="bc40-f8c8-be5a-20ac" type="rule"/>
+        <infoLink name="Implacables" id="6e88-0512-da88-2c81" hidden="false" targetId="470c-bf6a-caae-15c9" type="rule"/>
+        <infoLink name="Moverse a Través de Cobertura" id="eeb6-39fb-6f18-7acd" hidden="false" targetId="6cf1-d139-8b14-6083" type="rule"/>
+        <infoLink name="Conducta instintiva" id="092d-e2cb-c39d-34b4" hidden="false" targetId="acf4-69e2-214a-610e" type="profile"/>
+        <infoLink name="Alimentarse" id="c3dd-b94c-e8c2-cb07" hidden="false" targetId="033b-00cf-e0e1-c66c" type="profile"/>
+        <infoLink name="Rabia" id="63ea-86ff-c31e-5491" hidden="false" targetId="2b48-a95a-9e05-1de0" type="rule"/>
         <infoLink name="Coraje" id="b528-0614-d4d6-72c7" hidden="false" type="rule" targetId="b23b-fb5c-4c8c-5ae4"/>
       </infoLinks>
     </selectionEntry>
@@ -3737,10 +3800,14 @@ Racimo quedará destruido al completo, como se describe en el resultado de 1-2 
         <infoLink name="Viejo un ojo" id="6986-13d2-05ca-1182" hidden="false" type="profile" targetId="7432-6527-0223-c2a4"/>
         <infoLink name="Garras trituradoras" id="4321-9646-3829-6d3a" hidden="false" type="profile" targetId="2d7b-ae8e-20dd-559d"/>
         <infoLink name="Garras afiladas" id="9d45-0cbf-5d42-3ebe" hidden="false" type="profile" targetId="4142-8bec-e73c-f7b7"/>
-        <infoLink name="Conducta instintiva alimentarse" id="b762-bf2e-248b-4667" hidden="false" type="infoGroup" targetId="3a72-765b-4e1f-c998"/>
+        <infoLink name="Conducta instintiva" id="b762-bf2e-248b-4667" hidden="false" targetId="acf4-69e2-214a-610e" type="profile"/>
+        <infoLink name="Alimentarse" id="e1f8-6d53-313e-cb73" hidden="false" targetId="033b-00cf-e0e1-c66c" type="profile"/>
+        <infoLink name="Rabia" id="6db0-9a60-daa6-6f9e" hidden="false" targetId="2b48-a95a-9e05-1de0" type="rule"/>
         <infoLink name="Coraje" id="30d7-61d3-b30b-e26a" hidden="false" type="rule" targetId="b23b-fb5c-4c8c-5ae4"/>
         <infoLink name="Ariete viviente" id="89f4-b221-3e8b-332e" hidden="false" type="profile" targetId="1cf6-a779-a032-78d5"/>
-        <infoLink name="Criatura monstruosa" id="a68f-df63-f83e-f917" hidden="false" type="infoGroup" targetId="0cf1-0713-bbc8-cbdc"/>
+        <infoLink name="Criatura monstruosa" id="a68f-df63-f83e-f917" hidden="false" targetId="bc40-f8c8-be5a-20ac" type="rule"/>
+        <infoLink name="Implacables" id="933d-1d26-bdc1-7109" hidden="false" targetId="470c-bf6a-caae-15c9" type="rule"/>
+        <infoLink name="Moverse a Través de Cobertura" id="c8a1-ad5b-77a8-4c2d" hidden="false" targetId="6cf1-d139-8b14-6083" type="rule"/>
       </infoLinks>
       <profiles>
         <profile name="Regeneración veloz" typeId="c970-b832-a956-1ac8" typeName="Habilidad" hidden="false" id="6324-4b41-0e7c-6657">
@@ -3780,8 +3847,9 @@ Racimo quedará destruido al completo, como se describe en el resultado de 1-2 
       </selectionEntries>
       <infoLinks>
         <infoLink name="Garras y dientes" id="27e1-b171-8a02-e0f0" hidden="false" type="profile" targetId="7c9d-9e0a-cc00-defb"/>
-        <infoLink name="Lanzador de minas espora" id="5c5f-855a-0b7d-6362" hidden="false" type="infoGroup" targetId="0dfe-b258-1e00-af16"/>
-        <infoLink name="Conducta instintiva acechar" id="27f3-645f-a99a-7371" hidden="false" type="infoGroup" targetId="720b-b3ba-6527-1a0c"/>
+        <infoLink name="Lanzador de minas espora" id="5c5f-855a-0b7d-6362" hidden="false" targetId="4950-2dbf-7422-e7c5" type="profile"/>
+        <infoLink name="Conducta instintiva" id="27f3-645f-a99a-7371" hidden="false" targetId="acf4-69e2-214a-610e" type="profile"/>
+        <infoLink name="Acechar" id="3c0f-48c6-122b-7764" hidden="false" targetId="b0d0-ba0f-5b54-513e" type="profile"/>
         <infoLink name="Bomba viviente" id="0d65-9faf-494d-3549" hidden="false" type="profile" targetId="d421-bc38-3f2d-7fee"/>
         <infoLink name="Mina espora" id="230b-390d-b983-40cc" hidden="false" type="profile" targetId="f0bf-63c7-ed8d-4464"/>
       </infoLinks>
@@ -3796,7 +3864,9 @@ Racimo quedará destruido al completo, como se describe en el resultado de 1-2 
               </costs>
               <infoLinks>
                 <infoLink name="Trygon" id="1468-0fb6-536c-b279" hidden="false" type="profile" targetId="7cb5-8c62-8d6e-90ba"/>
-                <infoLink name="Conducta instintiva alimentarse" id="22e6-20c0-b724-e2a4" hidden="false" type="infoGroup" targetId="3a72-765b-4e1f-c998"/>
+                <infoLink name="Conducta instintiva" id="22e6-20c0-b724-e2a4" hidden="false" targetId="acf4-69e2-214a-610e" type="profile"/>
+                <infoLink name="Alimentarse" id="c66c-54a9-335e-bb88" hidden="false" targetId="033b-00cf-e0e1-c66c" type="profile"/>
+                <infoLink name="Rabia" id="b666-aadf-8809-9c84" hidden="false" targetId="2b48-a95a-9e05-1de0" type="rule"/>
               </infoLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5283-b2b7-08fb-f285"/>
@@ -3808,8 +3878,9 @@ Racimo quedará destruido al completo, como se describe en el resultado de 1-2 
               </costs>
               <infoLinks>
                 <infoLink name="Trygon Prime" id="90c6-60c4-73dd-b2de" hidden="false" type="profile" targetId="667d-2e98-a6cc-8f66"/>
-                <infoLink name="Puas de contención" id="7f66-56c7-8126-9ca1" hidden="false" type="infoGroup" targetId="7e23-9965-5dc6-8038"/>
-                <infoLink name="Criatura sináptica" id="29d0-42fb-5fcf-7918" hidden="false" type="infoGroup" targetId="3d9a-585f-6808-3463"/>
+                <infoLink name="Puas de contención" id="7f66-56c7-8126-9ca1" hidden="false" targetId="0fb4-a9e9-6f26-2315" type="profile"/>
+                <infoLink name="Criatura sináptica" id="29d0-42fb-5fcf-7918" hidden="false" targetId="c532-63f6-20dd-0d6f" type="profile"/>
+                <infoLink name="Coraje" id="a56a-d0d6-67ad-6002" hidden="false" targetId="b23b-fb5c-4c8c-5ae4" type="rule"/>
                 <infoLink name="La sombra de la disformidad" id="97fd-aada-2023-a69b" hidden="false" type="profile" targetId="90e3-72fc-385a-b619"/>
               </infoLinks>
               <constraints>
@@ -3852,12 +3923,14 @@ Racimo quedará destruido al completo, como se describe en el resultado de 1-2 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <infoLinks>
-        <infoLink name="Pulsación bioeléctrica" id="0ffd-d40a-0483-44df" hidden="false" type="infoGroup" targetId="9279-b50b-59d3-0ce2"/>
+        <infoLink name="Pulsación bioeléctrica" id="0ffd-d40a-0483-44df" hidden="false" targetId="504c-d63e-269f-1d4a" type="profile"/>
         <infoLink name="Dos pares de garras afiladas" id="2f6a-718f-5da7-94ac" hidden="false" type="profile" targetId="07b0-be0e-0eb1-df89"/>
         <infoLink name="Despliegue Rápido" id="9fe7-1326-3f9e-8c04" hidden="false" type="rule" targetId="e73e-593a-922e-a47a"/>
         <infoLink name="Coraje" id="6453-8d29-fbeb-3f10" hidden="false" type="rule" targetId="b23b-fb5c-4c8c-5ae4"/>
         <infoLink name="Veloces" id="467e-dcca-f53c-2459" hidden="false" type="rule" targetId="d110-fc1c-250c-54d4"/>
-        <infoLink name="Criatura monstruosa" id="e05a-9d90-b516-0491" hidden="false" type="infoGroup" targetId="0cf1-0713-bbc8-cbdc"/>
+        <infoLink name="Criatura monstruosa" id="e05a-9d90-b516-0491" hidden="false" targetId="bc40-f8c8-be5a-20ac" type="rule"/>
+        <infoLink name="Implacables" id="7900-0221-9211-26ed" hidden="false" targetId="470c-bf6a-caae-15c9" type="rule"/>
+        <infoLink name="Moverse a Través de Cobertura" id="f435-64d5-6e13-7f36" hidden="false" targetId="6cf1-d139-8b14-6083" type="rule"/>
       </infoLinks>
       <profiles>
         <profile name="Asalto subterráneo" typeId="c970-b832-a956-1ac8" typeName="Habilidad" hidden="false" id="e79b-49cb-6eec-87fc">
@@ -3877,11 +3950,15 @@ Después de que emerja el Trigón (o Trigón Prime), marca la posición debajo d
       <infoLinks>
         <infoLink name="Mawloc" id="f6ab-f3ec-9374-5ffb" hidden="false" type="profile" targetId="ec7e-6534-bb2e-4c9b"/>
         <infoLink name="Garras y dientes" id="fc38-68ba-a689-38ff" hidden="false" type="profile" targetId="7c9d-9e0a-cc00-defb"/>
-        <infoLink name="Conducta instintiva alimentarse" id="ecfe-0708-6d19-a870" hidden="false" type="infoGroup" targetId="3a72-765b-4e1f-c998"/>
+        <infoLink name="Conducta instintiva" id="ecfe-0708-6d19-a870" hidden="false" targetId="acf4-69e2-214a-610e" type="profile"/>
+        <infoLink name="Alimentarse" id="34f3-c6ff-44ee-b0fb" hidden="false" targetId="033b-00cf-e0e1-c66c" type="profile"/>
+        <infoLink name="Rabia" id="c2ea-8481-202c-be14" hidden="false" targetId="2b48-a95a-9e05-1de0" type="rule"/>
         <infoLink name="Despliegue Rápido" id="87a0-e686-91ad-5ea1" hidden="false" type="rule" targetId="e73e-593a-922e-a47a"/>
         <infoLink name="Coraje" id="c2bc-e91c-f200-3913" hidden="false" type="rule" targetId="b23b-fb5c-4c8c-5ae4"/>
         <infoLink name="Atacar y Huir" id="d4c5-8579-080f-4533" hidden="false" type="rule" targetId="e664-80ee-cd50-fd59"/>
-        <infoLink name="Criatura monstruosa" id="b925-a8eb-b4d2-32d1" hidden="false" type="infoGroup" targetId="0cf1-0713-bbc8-cbdc"/>
+        <infoLink name="Criatura monstruosa" id="b925-a8eb-b4d2-32d1" hidden="false" targetId="bc40-f8c8-be5a-20ac" type="rule"/>
+        <infoLink name="Implacables" id="e903-3ee5-7d09-52e3" hidden="false" targetId="470c-bf6a-caae-15c9" type="rule"/>
+        <infoLink name="Moverse a Través de Cobertura" id="6a2b-e1c5-14c1-1456" hidden="false" targetId="6cf1-d139-8b14-6083" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Biomorfos" id="e1d2-b9aa-7f81-7f4b" hidden="false">
@@ -3934,9 +4011,12 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
       </costs>
       <infoLinks>
         <infoLink name="Tyrannofex" id="b446-f461-19ee-01d2" hidden="false" type="profile" targetId="2744-7e34-284c-0c62"/>
-        <infoLink name="Criatura monstruosa" id="c9b7-d1ea-615e-7e26" hidden="false" type="infoGroup" targetId="0cf1-0713-bbc8-cbdc"/>
+        <infoLink name="Criatura monstruosa" id="c9b7-d1ea-615e-7e26" hidden="false" targetId="bc40-f8c8-be5a-20ac" type="rule"/>
+        <infoLink name="Implacables" id="a5ca-a012-6d46-0282" hidden="false" targetId="470c-bf6a-caae-15c9" type="rule"/>
+        <infoLink name="Moverse a Través de Cobertura" id="5fbb-9d61-42bb-557c" hidden="false" targetId="6cf1-d139-8b14-6083" type="rule"/>
         <infoLink name="Garras y dientes" id="b6f8-4099-fac4-89b8" hidden="false" type="profile" targetId="7c9d-9e0a-cc00-defb"/>
-        <infoLink name="Conducta instintiva acechar" id="f53b-5310-4ebf-4b68" hidden="false" type="infoGroup" targetId="720b-b3ba-6527-1a0c"/>
+        <infoLink name="Conducta instintiva" id="f53b-5310-4ebf-4b68" hidden="false" targetId="acf4-69e2-214a-610e" type="profile"/>
+        <infoLink name="Acechar" id="39ea-5dbd-3b24-6557" hidden="false" targetId="b0d0-ba0f-5b54-513e" type="profile"/>
         <infoLink name="Coraje" id="ef84-2bdd-3284-70bd" hidden="false" type="rule" targetId="b23b-fb5c-4c8c-5ae4"/>
       </infoLinks>
       <selectionEntryGroups>
@@ -3944,7 +4024,7 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Spray ácido" hidden="false" id="ed1e-63de-d0cf-3aab" sortIndex="1">
               <infoLinks>
-                <infoLink name="Spray ácido" id="cd6d-ea1c-c4e6-9ab2" hidden="false" type="infoGroup" targetId="3d51-0f34-f539-3207"/>
+                <infoLink name="Spray ácido" id="cd6d-ea1c-c4e6-9ab2" hidden="false" targetId="22d1-385f-56f0-8466" type="profile"/>
               </infoLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e56-1d99-37ef-49c3"/>
@@ -3955,7 +4035,7 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
               <infoLinks>
-                <infoLink name="Enjambre perforacarnes" id="3df7-4206-d764-d7b6" hidden="false" type="infoGroup" targetId="2ff1-816c-da69-e210"/>
+                <infoLink name="Enjambre perforacarnes" id="3df7-4206-d764-d7b6" hidden="false" targetId="c30d-59ea-4eb1-ee27" type="profile"/>
               </infoLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="445e-36dd-ca4b-d8da"/>
@@ -3966,7 +4046,7 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
                 <cost name="Pts" typeId="puntos" value="15"/>
               </costs>
               <infoLinks>
-                <infoLink name="Cañón quebrantador" id="fe37-00d7-e834-38f5" hidden="false" type="infoGroup" targetId="3713-77a0-911a-9102"/>
+                <infoLink name="Cañón quebrantador" id="fe37-00d7-e834-38f5" hidden="false" targetId="95da-185c-8c2a-797c" type="profile"/>
               </infoLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a89-59a1-2ad8-9423"/>
@@ -4028,7 +4108,7 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Enjambre pectoral con larvas electrificadas" hidden="false" id="09d4-955f-7a11-89cd" sortIndex="1">
               <infoLinks>
-                <infoLink name="Enjambre pectoral con larvas electrificadas" id="f561-2abe-7091-ade5" hidden="false" type="infoGroup" targetId="1864-7a63-f246-946f"/>
+                <infoLink name="Enjambre pectoral con larvas electrificadas" id="f561-2abe-7091-ade5" hidden="false" targetId="6d68-3102-357f-54a6" type="profile"/>
               </infoLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="94d4-ceda-b6b6-0bba"/>
@@ -4036,7 +4116,7 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Enjambre pectoral con gusanos secantes" hidden="false" id="57b4-94d6-ed64-8226" sortIndex="3">
               <infoLinks>
-                <infoLink name="Enjambre pectoral con gusanos secantes" id="a7de-549a-8611-4d8f" hidden="false" type="infoGroup" targetId="c2e4-e921-402a-7fd2"/>
+                <infoLink name="Enjambre pectoral con gusanos secantes" id="a7de-549a-8611-4d8f" hidden="false" targetId="4c04-81db-6eb3-090b" type="profile"/>
               </infoLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0291-6d5b-a8b8-af40"/>
@@ -4044,7 +4124,7 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
             </selectionEntry>
             <selectionEntry type="upgrade" import="true" name="Enjambre pectoral con cucarachas espinadas" hidden="false" id="5078-7ed2-96ee-aa7f" sortIndex="2">
               <infoLinks>
-                <infoLink name="Enjambre pectoral con cucarachas espinadas" id="f89c-14d8-e75d-c519" hidden="false" type="infoGroup" targetId="46d3-d45a-734d-8fc6"/>
+                <infoLink name="Enjambre pectoral con cucarachas espinadas" id="f89c-14d8-e75d-c519" hidden="false" targetId="4753-5245-8609-61f9" type="profile"/>
               </infoLinks>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7e9a-9a0a-77bd-434b"/>
@@ -4068,10 +4148,13 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
         <infoLink targetId="fbec-19cb-9f29-de3a" id="b357-f3aa-972f-1417" type="profile" name="Massive Rending Claws" hidden="false"/>
         <infoLink name="Warp Área" id="fa39-1f0c-54e5-6e6b" hidden="false" type="profile" targetId="03e2-2b5f-2690-f68e"/>
         <infoLink name="Garras afiladas" id="849e-2e26-6e7d-a370" hidden="false" type="profile" targetId="4142-8bec-e73c-f7b7"/>
-        <infoLink name="Criatura sináptica" id="0cd3-09f0-e875-521e" hidden="false" type="infoGroup" targetId="3d9a-585f-6808-3463"/>
+        <infoLink name="Criatura sináptica" id="0cd3-09f0-e875-521e" hidden="false" targetId="c532-63f6-20dd-0d6f" type="profile"/>
+        <infoLink name="Coraje" id="fc44-0155-4a15-414f" hidden="false" targetId="b23b-fb5c-4c8c-5ae4" type="rule"/>
         <infoLink name="La sombra de la disformidad" id="2e33-403c-b1aa-fc82" hidden="false" type="profile" targetId="90e3-72fc-385a-b619"/>
         <infoLink name="Psíquico" id="7c85-8409-4915-12f5" hidden="false" type="rule" targetId="72c2-fd50-9880-c83c"/>
-        <infoLink name="Criatura monstruosa" id="f5d9-61a9-0d57-48df" hidden="false" type="infoGroup" targetId="0cf1-0713-bbc8-cbdc"/>
+        <infoLink name="Criatura monstruosa" id="f5d9-61a9-0d57-48df" hidden="false" targetId="bc40-f8c8-be5a-20ac" type="rule"/>
+        <infoLink name="Implacables" id="d894-9af0-95bc-5db9" hidden="false" targetId="470c-bf6a-caae-15c9" type="rule"/>
+        <infoLink name="Moverse a Través de Cobertura" id="7ae1-1008-b982-a30f" hidden="false" targetId="6cf1-d139-8b14-6083" type="rule"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Armoured Shell" hidden="false" id="5ef9-5e16-0166-ce93">
@@ -4138,10 +4221,13 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
         <infoLink targetId="b528-0acf-251c-f647" id="9510-03dd-2832-5cc3" type="profile" name="Toxinjector Harpoons" hidden="false"/>
         <infoLink targetId="1066-3349-9e22-15da" id="3936-bf7a-b1e5-782e" type="profile" name="Norn Assimilator" hidden="false"/>
         <infoLink name="Garras afiladas" id="2e59-7aec-66b2-df64" hidden="false" type="profile" targetId="4142-8bec-e73c-f7b7"/>
-        <infoLink name="Criatura sináptica" id="06e4-13e2-d346-ebc6" hidden="false" type="infoGroup" targetId="3d9a-585f-6808-3463"/>
+        <infoLink name="Criatura sináptica" id="06e4-13e2-d346-ebc6" hidden="false" targetId="c532-63f6-20dd-0d6f" type="profile"/>
+        <infoLink name="Coraje" id="bbe3-9844-f02f-c171" hidden="false" targetId="b23b-fb5c-4c8c-5ae4" type="rule"/>
         <infoLink name="La sombra de la disformidad" id="19f2-ddec-bb9d-d5f1" hidden="false" type="profile" targetId="90e3-72fc-385a-b619"/>
         <infoLink name="Garras garfio" id="38d7-1064-99c4-7004" hidden="false" type="profile" targetId="29d2-7727-8aaa-e025"/>
-        <infoLink name="Criatura monstruosa" id="ca9d-410c-de21-e348" hidden="false" type="infoGroup" targetId="0cf1-0713-bbc8-cbdc"/>
+        <infoLink name="Criatura monstruosa" id="ca9d-410c-de21-e348" hidden="false" targetId="bc40-f8c8-be5a-20ac" type="rule"/>
+        <infoLink name="Implacables" id="973c-4d08-62ce-2165" hidden="false" targetId="470c-bf6a-caae-15c9" type="rule"/>
+        <infoLink name="Moverse a Través de Cobertura" id="6f1f-9a4e-22ca-e083" hidden="false" targetId="6cf1-d139-8b14-6083" type="rule"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Barbgaunt Brood" hidden="false" id="35ce-75e3-12a8-f579">
@@ -4236,7 +4322,9 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
       </selectionEntries>
       <infoLinks>
         <infoLink name="Acechar" id="c3ef-524e-7c6a-8b3a" hidden="false" type="profile" targetId="b0d0-ba0f-5b54-513e"/>
-        <infoLink name="Criatura monstruosa" id="af2d-bebe-c2f7-ba96" hidden="false" type="infoGroup" targetId="0cf1-0713-bbc8-cbdc"/>
+        <infoLink name="Criatura monstruosa" id="af2d-bebe-c2f7-ba96" hidden="false" targetId="bc40-f8c8-be5a-20ac" type="rule"/>
+        <infoLink name="Implacables" id="913c-83cf-96a4-37ba" hidden="false" targetId="470c-bf6a-caae-15c9" type="rule"/>
+        <infoLink name="Moverse a Través de Cobertura" id="7530-e409-201c-c1f9" hidden="false" targetId="6cf1-d139-8b14-6083" type="rule"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Haruspex Brood" hidden="false" id="6fa3-901c-ff96-9d70">
@@ -4257,7 +4345,9 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
       </selectionEntries>
       <infoLinks>
         <infoLink name="Alimentarse" id="7e5f-a4dc-b650-8794" hidden="false" type="profile" targetId="033b-00cf-e0e1-c66c"/>
-        <infoLink name="Criatura monstruosa" id="c506-185a-89dc-8467" hidden="false" type="infoGroup" targetId="0cf1-0713-bbc8-cbdc"/>
+        <infoLink name="Criatura monstruosa" id="c506-185a-89dc-8467" hidden="false" targetId="bc40-f8c8-be5a-20ac" type="rule"/>
+        <infoLink name="Implacables" id="c994-73fd-8a99-723b" hidden="false" targetId="470c-bf6a-caae-15c9" type="rule"/>
+        <infoLink name="Moverse a Través de Cobertura" id="15b9-d5bc-e3a6-82b6" hidden="false" targetId="6cf1-d139-8b14-6083" type="rule"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Maleceptor Brood" hidden="false" id="c402-878a-7ff1-ce46">
@@ -4280,7 +4370,9 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
       <infoLinks>
         <infoLink name="Criatura sináptica" id="b467-21d2-ea7a-d787" hidden="false" type="profile" targetId="c532-63f6-20dd-0d6f"/>
         <infoLink name="La sombra de la disformidad" id="1c9c-d654-76ea-b4ff" hidden="false" type="profile" targetId="90e3-72fc-385a-b619"/>
-        <infoLink name="Criatura monstruosa" id="ab93-ba4d-418a-852f" hidden="false" type="infoGroup" targetId="0cf1-0713-bbc8-cbdc"/>
+        <infoLink name="Criatura monstruosa" id="ab93-ba4d-418a-852f" hidden="false" targetId="bc40-f8c8-be5a-20ac" type="rule"/>
+        <infoLink name="Implacables" id="d260-f2c9-582b-91e8" hidden="false" targetId="470c-bf6a-caae-15c9" type="rule"/>
+        <infoLink name="Moverse a Través de Cobertura" id="a064-7694-1a8f-f41d" hidden="false" targetId="6cf1-d139-8b14-6083" type="rule"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Neurogaunt Brood" hidden="false" id="c944-e22d-1fd0-37ef">
@@ -4339,7 +4431,8 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink name="Criatura sináptica" id="22b1-1cdd-7899-1040" hidden="false" type="infoGroup" targetId="3d9a-585f-6808-3463"/>
+                <infoLink name="Criatura sináptica" id="22b1-1cdd-7899-1040" hidden="false" targetId="c532-63f6-20dd-0d6f" type="profile"/>
+                <infoLink name="Coraje" id="8684-cfbe-a26e-e243" hidden="false" targetId="b23b-fb5c-4c8c-5ae4" type="rule"/>
                 <infoLink name="La sombra de la disformidad" id="80d1-d968-327e-da3e" hidden="false" type="profile" targetId="90e3-72fc-385a-b619"/>
                 <infoLink name="Garras y dientes" id="8e80-2cf7-a677-1810" hidden="false" type="profile" targetId="7c9d-9e0a-cc00-defb"/>
               </infoLinks>
@@ -4379,7 +4472,8 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
         <infoLink name="Garras afiladas" id="01da-73cc-1aff-ee1f" hidden="false" type="profile" targetId="4142-8bec-e73c-f7b7"/>
         <infoLink name="Veloces" id="b0c0-e070-24fc-5955" hidden="false" type="rule" targetId="d110-fc1c-250c-54d4"/>
         <infoLink name="Sigilo" id="f316-23d6-79c8-8a1e" hidden="false" type="rule" targetId="f1ee-e19a-a3c3-6797"/>
-        <infoLink name="Criatura sináptica" id="0836-96e7-531c-d7d4" hidden="false" type="infoGroup" targetId="3d9a-585f-6808-3463"/>
+        <infoLink name="Criatura sináptica" id="0836-96e7-531c-d7d4" hidden="false" targetId="c532-63f6-20dd-0d6f" type="profile"/>
+        <infoLink name="Coraje" id="54c6-d446-0fd0-9c6c" hidden="false" targetId="b23b-fb5c-4c8c-5ae4" type="rule"/>
         <infoLink name="La sombra de la disformidad" id="4118-9f90-3e22-9bbc" hidden="false" type="profile" targetId="90e3-72fc-385a-b619"/>
         <infoLink name="Atacar y Huir" id="460d-5677-d398-73e0" hidden="false" type="rule" targetId="e664-80ee-cd50-fd59"/>
         <infoLink name="Moverse a Través de Cobertura" id="9686-9c17-fb57-4e6d" hidden="false" type="rule" targetId="6cf1-d139-8b14-6083"/>
@@ -4391,12 +4485,15 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
       </costs>
       <infoLinks>
         <infoLink targetId="afc8-3f1d-9f25-1ff3" id="559b-3aa0-428b-c9aa" type="profile" name="Neurotyrant" hidden="false"/>
-        <infoLink name="Criatura sináptica" id="bdc5-9d25-2ae8-84a2" hidden="false" type="infoGroup" targetId="3d9a-585f-6808-3463"/>
+        <infoLink name="Criatura sináptica" id="bdc5-9d25-2ae8-84a2" hidden="false" targetId="c532-63f6-20dd-0d6f" type="profile"/>
+        <infoLink name="Coraje" id="3aad-18b9-6bdb-414a" hidden="false" targetId="b23b-fb5c-4c8c-5ae4" type="rule"/>
         <infoLink name="La sombra de la disformidad" id="e8a9-fa13-a99e-c05b" hidden="false" type="profile" targetId="90e3-72fc-385a-b619"/>
         <infoLink name="Psíquico" id="0111-4423-3fba-8961" hidden="false" type="rule" targetId="72c2-fd50-9880-c83c"/>
         <infoLink name="Warp Área" id="98d5-bdd9-fe43-5b8b" hidden="false" type="profile" targetId="03e2-2b5f-2690-f68e"/>
         <infoLink name="Warp Lance" id="e842-d0de-0ec3-dfc3" hidden="false" type="profile" targetId="516b-72ea-d906-7389"/>
-        <infoLink name="Criatura monstruosa" id="41ea-20df-f206-9b36" hidden="false" type="infoGroup" targetId="0cf1-0713-bbc8-cbdc"/>
+        <infoLink name="Criatura monstruosa" id="41ea-20df-f206-9b36" hidden="false" targetId="bc40-f8c8-be5a-20ac" type="rule"/>
+        <infoLink name="Implacables" id="b6ed-f177-87a4-730a" hidden="false" targetId="470c-bf6a-caae-15c9" type="rule"/>
+        <infoLink name="Moverse a Través de Cobertura" id="743b-0822-8ffd-6d9e" hidden="false" targetId="6cf1-d139-8b14-6083" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Take any of the following abilities" id="1f19-9ddd-8ba1-609d" hidden="false">
@@ -4664,7 +4761,9 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
       <infoLinks>
         <infoLink name="No Hay Dolor" id="e72d-5944-5ddc-2a27" hidden="false" type="rule" targetId="fe28-c924-099d-aa4e"/>
         <infoLink name="Alimentarse" id="e362-8d50-5fde-7fde" hidden="false" type="profile" targetId="033b-00cf-e0e1-c66c"/>
-        <infoLink name="Criatura monstruosa" id="a58a-b2af-640d-4a2d" hidden="false" type="infoGroup" targetId="0cf1-0713-bbc8-cbdc"/>
+        <infoLink name="Criatura monstruosa" id="a58a-b2af-640d-4a2d" hidden="false" targetId="bc40-f8c8-be5a-20ac" type="rule"/>
+        <infoLink name="Implacables" id="eeae-f78c-f94c-09f3" hidden="false" targetId="470c-bf6a-caae-15c9" type="rule"/>
+        <infoLink name="Moverse a Través de Cobertura" id="2e1a-a492-6500-4731" hidden="false" targetId="6cf1-d139-8b14-6083" type="rule"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Toxicrene Brood" hidden="false" id="3874-46da-2f62-2da3">
@@ -4704,7 +4803,9 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
       <infoLinks>
         <infoLink name="Alimentarse" id="870c-8558-6a7c-006c" hidden="false" type="profile" targetId="033b-00cf-e0e1-c66c"/>
         <infoLink name="Miasma tóxico" id="4370-5403-675b-1783" hidden="false" type="profile" targetId="f0af-7b7b-bae0-b9fe"/>
-        <infoLink name="Criatura monstruosa" id="b4f4-1b3f-a8e3-024d" hidden="false" type="infoGroup" targetId="0cf1-0713-bbc8-cbdc"/>
+        <infoLink name="Criatura monstruosa" id="b4f4-1b3f-a8e3-024d" hidden="false" targetId="bc40-f8c8-be5a-20ac" type="rule"/>
+        <infoLink name="Implacables" id="1426-4684-98a3-a9a8" hidden="false" targetId="470c-bf6a-caae-15c9" type="rule"/>
+        <infoLink name="Moverse a Través de Cobertura" id="20e5-7e2b-289a-e656" hidden="false" targetId="6cf1-d139-8b14-6083" type="rule"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Von Ryan&apos;s Leaper Brood" hidden="false" id="982e-3f63-f7ac-a50e">
@@ -4749,12 +4850,12 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Escupemuerte acoplado" hidden="false" id="7fef-1e1a-c140-0b34">
       <infoLinks>
-        <infoLink name="Escupemuerte acoplado" id="6993-22f8-18a9-0f22" hidden="false" type="infoGroup" targetId="bbef-80db-6626-b8c4"/>
+        <infoLink name="Escupemuerte acoplado" id="6993-22f8-18a9-0f22" hidden="false" targetId="00e2-7771-a8dd-5bf8" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Devorador acoplado con Sanguijuelas cerebrales" hidden="false" id="b6ab-1eaf-1dca-e5e4">
       <infoLinks>
-        <infoLink name="Devorador acoplado con Sanguijuelas cerebrales" id="ab5d-c9e4-676b-7b3d" hidden="false" type="infoGroup" targetId="54d2-f749-e0e3-49be"/>
+        <infoLink name="Devorador acoplado con Sanguijuelas cerebrales" id="ab5d-c9e4-676b-7b3d" hidden="false" targetId="c2c8-8387-5e85-1269" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Látigo orgánico" hidden="false" id="702c-4a0d-e15f-ef68">
@@ -4764,12 +4865,12 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Cañón venenoso pesado" hidden="false" id="035d-b1dd-1c09-6035">
       <infoLinks>
-        <infoLink name="Cañón venenoso pesado" id="b9bc-d13b-e5b8-216d" hidden="false" type="infoGroup" targetId="49b6-0b51-66e4-549c"/>
+        <infoLink name="Cañón venenoso pesado" id="b9bc-d13b-e5b8-216d" hidden="false" targetId="c008-395f-3bd0-8b72" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Cañón estrangulador" hidden="false" id="9323-3dfe-d837-5bf3">
       <infoLinks>
-        <infoLink name="Cañón estrangulador" id="477f-95b9-5622-d148" hidden="false" type="infoGroup" targetId="a785-137b-43b4-163d"/>
+        <infoLink name="Cañón estrangulador" id="477f-95b9-5622-d148" hidden="false" targetId="b1f6-94cd-91f8-1517" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Sangre ácida" hidden="false" id="89bb-9af0-f412-764d">
@@ -4779,7 +4880,7 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Glándula de adrenalina" hidden="false" id="fac7-2223-7ace-0ece">
       <infoLinks>
-        <infoLink name="Glándula de adrenalina" id="1e23-5ab6-8b8b-1c01" hidden="false" type="infoGroup" targetId="2eb2-bfed-c055-fa2e"/>
+        <infoLink name="Glándula de adrenalina" id="1e23-5ab6-8b8b-1c01" hidden="false" targetId="ba15-539b-8427-fa0b" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Aguijón" hidden="false" id="3fc8-e037-e089-2102">
@@ -4799,12 +4900,13 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Glándulas de toxinas" hidden="false" id="39d6-dfa6-5ea6-e2d8">
       <infoLinks>
-        <infoLink name="Glándulas de toxinas" id="fa54-eb3a-79b6-dc24" hidden="false" type="infoGroup" targetId="0226-2b8c-c6ff-d598"/>
+        <infoLink name="Glándulas de toxinas" id="fa54-eb3a-79b6-dc24" hidden="false" targetId="bf9b-5f6f-7099-c9e8" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Alas" hidden="false" id="0883-4735-8df1-aacc">
       <infoLinks>
-        <infoLink name="Alas" id="a00e-aa4d-b4d3-4030" hidden="false" type="infoGroup" targetId="9913-cc70-34e8-b0fe"/>
+        <infoLink name="Alas" id="a00e-aa4d-b4d3-4030" hidden="false" targetId="4b5c-7fa6-cbb6-81a9" type="profile"/>
+        <infoLink name="Unidad retropropulsada" id="effb-c46e-27d5-7835" hidden="false" targetId="d6f4-cfda-75c5-f2f1" type="rule"/>
       </infoLinks>
       <modifiers>
         <modifier type="append" value="retropropulsada" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" scope="parent" affects="profiles.Unidad"/>
@@ -4836,7 +4938,9 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Progenie de Guardias tiránidos" hidden="false" id="fd01-1f87-04cb-ea22" collapsible="true">
       <infoLinks>
-        <infoLink name="Conducta instintiva alimentarse" id="bfdf-259b-e6de-a747" hidden="false" type="infoGroup" targetId="3a72-765b-4e1f-c998"/>
+        <infoLink name="Conducta instintiva" id="bfdf-259b-e6de-a747" hidden="false" targetId="acf4-69e2-214a-610e" type="profile"/>
+        <infoLink name="Alimentarse" id="ee07-37ff-bdcf-c028" hidden="false" targetId="033b-00cf-e0e1-c66c" type="profile"/>
+        <infoLink name="Rabia" id="5b52-55f1-c4f8-8f15" hidden="false" targetId="2b48-a95a-9e05-1de0" type="rule"/>
         <infoLink name="Asalto Rabioso" id="299c-50c2-a84f-ebb4" hidden="false" type="rule" targetId="33b4-1a73-92db-e562"/>
         <infoLink name="Rabia" id="d907-c5d0-7534-6d67" hidden="false" type="rule" targetId="2b48-a95a-9e05-1de0"/>
       </infoLinks>
@@ -4857,7 +4961,7 @@ una unidad de Guardias Tiránidos, esa unidad no podrá echarse ¡Cuerpo a tier
         <selectionEntry type="model" import="true" name="Guardia tiránido" hidden="false" id="1d66-cb73-2757-3555">
           <infoLinks>
             <infoLink name="Guardia tiránido" id="ddc2-e9d6-ba54-9450" hidden="false" type="profile" targetId="bbc9-f26d-d296-4a2d"/>
-            <infoLink name="Garras aceradas" id="ce54-491c-3e07-7a5c" hidden="false" type="infoGroup" targetId="f2b5-6481-93d3-fe58"/>
+            <infoLink name="Garras aceradas" id="ce54-491c-3e07-7a5c" hidden="false" targetId="b14f-e98f-bb94-e63f" type="profile"/>
           </infoLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3d66-019e-1003-dbf4"/>
@@ -4943,7 +5047,7 @@ una unidad de Guardias Tiránidos, esa unidad no podrá echarse ¡Cuerpo a tier
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Garras aceradas" hidden="false" id="3f64-013d-d12c-6233">
       <infoLinks>
-        <infoLink name="Garras aceradas" id="9fb9-7241-6101-7b20" hidden="false" type="infoGroup" targetId="f2b5-6481-93d3-fe58"/>
+        <infoLink name="Garras aceradas" id="9fb9-7241-6101-7b20" hidden="false" targetId="b14f-e98f-bb94-e63f" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Par de espadas óseas" hidden="false" id="9e56-a509-cc09-7078">
@@ -4953,47 +5057,47 @@ una unidad de Guardias Tiránidos, esa unidad no podrá echarse ¡Cuerpo a tier
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Escupemuerte" hidden="false" id="2aa3-4189-9361-ddc8">
       <infoLinks>
-        <infoLink name="Escupemuerte" id="aa73-7f9a-9da2-d722" hidden="false" type="infoGroup" targetId="145f-fa92-0322-b139"/>
+        <infoLink name="Escupemuerte" id="aa73-7f9a-9da2-d722" hidden="false" targetId="7fef-72a3-7feb-5273" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Devorador" hidden="false" id="dc55-d745-bb27-a3f4">
       <infoLinks>
-        <infoLink name="Devorador" id="a1ce-f8a4-c962-6efd" hidden="false" type="infoGroup" targetId="313b-b7d1-857b-6cee"/>
+        <infoLink name="Devorador" id="a1ce-f8a4-c962-6efd" hidden="false" targetId="d150-d6bc-04ca-634b" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Lanzadardos" hidden="false" id="768b-607e-37c2-052c">
       <infoLinks>
-        <infoLink name="Lanzadardos" id="8fd3-be3b-5bde-2db5" hidden="false" type="infoGroup" targetId="c231-a5eb-3ad5-5515"/>
+        <infoLink name="Lanzadardos" id="8fd3-be3b-5bde-2db5" hidden="false" targetId="527c-ef0c-0fc4-a542" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Cañón venenoso" hidden="false" id="9d04-abbe-c90a-8f23">
       <infoLinks>
-        <infoLink name="Cañón venenoso" id="a74f-1acd-d403-c3fc" hidden="false" type="infoGroup" targetId="8a24-5dd2-d44d-3e2c"/>
+        <infoLink name="Cañón venenoso" id="a74f-1acd-d403-c3fc" hidden="false" targetId="ceb3-7424-1f03-0ca7" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Cañón enredadera" hidden="false" id="1889-8931-a893-b44a">
       <infoLinks>
-        <infoLink name="Cañón enredadera" id="a86a-950b-b573-b77b" hidden="false" type="infoGroup" targetId="3981-ddc9-0394-c611"/>
+        <infoLink name="Cañón enredadera" id="a86a-950b-b573-b77b" hidden="false" targetId="d3b6-6b49-23b8-30fd" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Andanada de espinas" hidden="false" id="a0de-fc38-26df-e647">
       <infoLinks>
-        <infoLink name="Andanada de espinas" id="22d6-6ddf-4856-a142" hidden="false" type="infoGroup" targetId="4313-5ec3-97f4-5959"/>
+        <infoLink name="Andanada de espinas" id="22d6-6ddf-4856-a142" hidden="false" targetId="624c-10a6-80bd-fd9f" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Racimo de espinas" hidden="false" id="b3ef-84b2-2104-3a05">
       <infoLinks>
-        <infoLink name="Racimo de espinas" id="3fb4-1004-577a-9650" hidden="false" type="infoGroup" targetId="ec4f-43ed-35ff-73d8"/>
+        <infoLink name="Racimo de espinas" id="3fb4-1004-577a-9650" hidden="false" targetId="45f6-a36b-9494-e369" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Perforacarne" hidden="false" id="0a8a-3aac-6386-515e">
       <infoLinks>
-        <infoLink name="Perforacarne" id="4da6-691c-5d0d-f694" hidden="false" type="infoGroup" targetId="2b47-18f1-aa02-70a7"/>
+        <infoLink name="Perforacarne" id="4da6-691c-5d0d-f694" hidden="false" targetId="92e8-4499-60cc-d8f0" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Rifle de dardos" hidden="false" id="c9a1-198d-0198-6d56">
       <infoLinks>
-        <infoLink name="Rifle de dardos" id="3fc9-4adc-d1a1-e2d6" hidden="false" type="infoGroup" targetId="b567-d17b-1445-4f70"/>
+        <infoLink name="Rifle de dardos" id="3fc9-4adc-d1a1-e2d6" hidden="false" targetId="c1ad-8cb3-666e-ac6a" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Estrangulador" hidden="false" id="1361-82c2-a511-3307">
@@ -5003,307 +5107,20 @@ una unidad de Guardias Tiránidos, esa unidad no podrá echarse ¡Cuerpo a tier
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Cañón venenoso pesado acoplado" hidden="false" id="6f99-d0ee-ca01-a680">
       <infoLinks>
-        <infoLink name="Cañón venenoso pesado acoplado" id="c9ad-eeba-cbbf-0044" hidden="false" type="infoGroup" targetId="6a40-d346-d934-104f"/>
+        <infoLink name="Cañón venenoso pesado acoplado" id="c9ad-eeba-cbbf-0044" hidden="false" targetId="1713-4155-f08d-d8ef" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Cañón estrangulador acoplado" hidden="false" id="978e-a037-fca2-e5bd">
       <infoLinks>
-        <infoLink name="Cañón estrangulador acoplado" id="0d12-ae61-445f-8c52" hidden="false" type="infoGroup" targetId="bfd9-84dd-d2f8-121b"/>
+        <infoLink name="Cañón estrangulador acoplado" id="0d12-ae61-445f-8c52" hidden="false" targetId="6578-a80d-0865-64e7" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Bio-plasma" hidden="false" id="4cbb-6420-24c2-a8e2">
       <infoLinks>
-        <infoLink name="Bio-plasma" id="68ba-2c54-0342-3c25" hidden="false" type="infoGroup" targetId="846c-59f3-5eb9-21f8"/>
+        <infoLink name="Bio-plasma" id="68ba-2c54-0342-3c25" hidden="false" targetId="9add-55c0-a791-7c5b" type="profile"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
-  <sharedInfoGroups>
-    <infoGroup name="Lanza disforme" id="549d-2efd-e5b2-9dd9" hidden="false">
-      <infoLinks>
-        <infoLink name="Asalto" id="2154-bd00-83c4-7c98" hidden="false" type="rule" targetId="8714-46ad-62c0-ce35"/>
-        <infoLink name="Lanza" id="5c99-ae4d-d681-fdb1" hidden="false" type="rule" targetId="7157-0eb6-5c30-32e8"/>
-        <infoLink name="Lanza disforme" id="e779-5a78-900a-aa56" hidden="false" type="profile" targetId="b668-86a4-7289-8ed9"/>
-      </infoLinks>
-    </infoGroup>
-    <infoGroup name="Rayo disforme" id="280d-ab05-fb94-993d" hidden="false">
-      <infoLinks>
-        <infoLink name="Asalto" id="7372-72b1-2a08-40bd" hidden="false" type="rule" targetId="8714-46ad-62c0-ce35"/>
-        <infoLink name="Área" id="5b98-2478-598f-7bb2" hidden="false" type="rule" targetId="31c7-fe6c-af95-f0b5"/>
-        <infoLink name="Rayo disforme" id="317b-cd52-65da-0dc1" hidden="false" type="profile" targetId="643f-06ae-2d16-05df"/>
-      </infoLinks>
-    </infoGroup>
-    <infoGroup name="Criatura sináptica" id="3d9a-585f-6808-3463" hidden="false">
-      <infoLinks>
-        <infoLink name="Criatura sináptica" id="efbc-a530-1e19-7f1a" hidden="false" type="profile" targetId="c532-63f6-20dd-0d6f"/>
-        <infoLink name="Coraje" id="29d2-f2f1-b34e-8ed5" hidden="false" type="rule" targetId="b23b-fb5c-4c8c-5ae4"/>
-      </infoLinks>
-    </infoGroup>
-    <infoGroup name="Conducta instintiva alimentarse" id="3a72-765b-4e1f-c998" hidden="false">
-      <infoLinks>
-        <infoLink name="Conducta instintiva" id="fa9c-965e-cbc3-c7b8" hidden="false" type="profile" targetId="acf4-69e2-214a-610e"/>
-        <infoLink name="Alimentarse" id="cc49-b14f-7712-f614" hidden="false" type="profile" targetId="033b-00cf-e0e1-c66c"/>
-        <infoLink name="Rabia" id="8b56-3989-9ee9-adc1" hidden="false" type="rule" targetId="2b48-a95a-9e05-1de0"/>
-      </infoLinks>
-    </infoGroup>
-    <infoGroup name="Conducta instintiva acechar" id="720b-b3ba-6527-1a0c" hidden="false">
-      <infoLinks>
-        <infoLink name="Conducta instintiva" id="1742-56b1-4f23-56e5" hidden="false" type="profile" targetId="acf4-69e2-214a-610e"/>
-        <infoLink name="Acechar" id="35a8-f1fa-7ffc-a10b" hidden="false" type="profile" targetId="b0d0-ba0f-5b54-513e"/>
-      </infoLinks>
-    </infoGroup>
-    <infoGroup name="Garras aceradas" id="f2b5-6481-93d3-fe58" hidden="false">
-      <infoLinks>
-        <infoLink name="Acerada" id="560d-bcb8-beb9-c37b" hidden="false" type="rule" targetId="7097-6879-0d11-787d"/>
-        <infoLink name="Garras aceradas" id="9e3e-5616-ac18-41d1" hidden="false" type="profile" targetId="b14f-e98f-bb94-e63f"/>
-      </infoLinks>
-    </infoGroup>
-    <infoGroup name="Escupemuerte acoplado" id="bbef-80db-6626-b8c4" hidden="false">
-      <infoLinks>
-        <infoLink name="Acoplada" id="715f-be80-a0a6-aba3" hidden="false" type="rule" targetId="a06f-e29d-bcf4-ed75"/>
-        <infoLink name="Escupemuerte acoplado" id="43fe-6a70-af56-6281" hidden="false" type="profile" targetId="00e2-7771-a8dd-5bf8"/>
-        <infoLink name="Asalto" id="136a-f15c-097a-4ed7" hidden="false" type="rule" targetId="8714-46ad-62c0-ce35"/>
-      </infoLinks>
-    </infoGroup>
-    <infoGroup name="Devorador acoplado con Sanguijuelas cerebrales" id="54d2-f749-e0e3-49be" hidden="false">
-      <infoLinks>
-        <infoLink name="Acoplada" id="8215-e61a-7f0f-f316" hidden="false" type="rule" targetId="a06f-e29d-bcf4-ed75"/>
-        <infoLink name="Devorador acoplado con Sanguijuelas cerebrales" id="0f92-bec6-63a2-ed7b" hidden="false" type="profile" targetId="c2c8-8387-5e85-1269"/>
-        <infoLink name="Asalto" id="063a-8799-927e-2eb7" hidden="false" type="rule" targetId="8714-46ad-62c0-ce35"/>
-      </infoLinks>
-    </infoGroup>
-    <infoGroup name="Enjambre pectoral con cucarachas espinadas" id="46d3-d45a-734d-8fc6" hidden="false">
-      <infoLinks>
-        <infoLink name="Acerada" id="5017-39de-0143-f52d" hidden="false" type="rule" targetId="7097-6879-0d11-787d"/>
-        <infoLink name="Enjambre pectoral con cucarachas espinadas" id="a07f-f826-3ead-5cae" hidden="false" type="profile" targetId="4753-5245-8609-61f9"/>
-        <infoLink name="Asalto" id="2892-1fdc-2464-bc69" hidden="false" type="rule" targetId="8714-46ad-62c0-ce35"/>
-        <infoLink name="Plantilla" id="8e45-d20e-8de4-26d7" hidden="false" type="rule" targetId="d094-3fd7-bd10-443d"/>
-      </infoLinks>
-    </infoGroup>
-    <infoGroup name="Cañón estrangulador" id="a785-137b-43b4-163d" hidden="false">
-      <infoLinks>
-        <infoLink name="Área Grande" id="651b-ce99-12c9-9423" hidden="false" type="rule" targetId="952e-d8aa-7560-44b9"/>
-        <infoLink name="Cañón estrangulador" id="53e2-3497-868c-ae91" hidden="false" type="profile" targetId="b1f6-94cd-91f8-1517"/>
-        <infoLink name="Asalto" id="fe8e-30e8-26bf-6f1e" hidden="false" type="rule" targetId="8714-46ad-62c0-ce35"/>
-        <infoLink name="Acobardamiento" id="0a07-495d-e0cf-8d09" hidden="false" type="rule" targetId="ec6e-0120-4bbd-590e"/>
-      </infoLinks>
-    </infoGroup>
-    <infoGroup name="Glándula de adrenalina" id="2eb2-bfed-c055-fa2e" hidden="false">
-      <infoLinks>
-        <infoLink name="Glándula de adrenalina" id="fa14-b463-0489-4779" hidden="false" type="profile" targetId="ba15-539b-8427-fa0b"/>
-        <infoLink name="Asalto Rabioso" id="3a69-f083-160f-98ce" hidden="false" type="rule" targetId="33b4-1a73-92db-e562"/>
-      </infoLinks>
-    </infoGroup>
-    <infoGroup name="Glándulas de toxinas" id="0226-2b8c-c6ff-d598" hidden="false">
-      <infoLinks>
-        <infoLink name="Glándulas de toxinas" id="63b0-3ed0-d0f8-407f" hidden="false" type="profile" targetId="bf9b-5f6f-7099-c9e8"/>
-        <infoLink name="Envenenada" id="389d-648b-c651-2207" hidden="false" type="rule" targetId="48c8-bb35-6595-03d1"/>
-      </infoLinks>
-    </infoGroup>
-    <infoGroup name="Alas" id="9913-cc70-34e8-b0fe" hidden="false">
-      <infoLinks>
-        <infoLink name="Alas" id="44b0-7622-d09f-0687" hidden="false" type="profile" targetId="4b5c-7fa6-cbb6-81a9"/>
-        <infoLink name="Unidad retropropulsada" id="e7ad-c008-a2ec-b2b7" hidden="false" type="infoGroup" targetId="9cdf-bda3-6dab-3a27"/>
-      </infoLinks>
-    </infoGroup>
-    <infoGroup name="Espinas de fragmentación" id="21a3-d8a9-b099-9900" hidden="false">
-      <infoLinks>
-        <infoLink name="Espinas de fragmentación" id="88e7-bfcf-f963-640b" hidden="false" type="profile" targetId="0571-b003-4f15-3a92"/>
-        <infoLink name="Granadas de asalto" id="c9ff-64a6-4642-b9c3" hidden="false" type="infoGroup" targetId="a9de-5c4c-d2c8-6676"/>
-      </infoLinks>
-    </infoGroup>
-    <infoGroup name="Cañón venenoso pesado" id="49b6-0b51-66e4-549c" hidden="false">
-      <infoLinks>
-        <infoLink name="Área" id="7e6a-3c77-fa3f-e2e0" hidden="false" type="rule" targetId="31c7-fe6c-af95-f0b5"/>
-        <infoLink name="Cañón venenoso pesado" id="a0d4-7abf-bc46-a5bb" hidden="false" type="profile" targetId="c008-395f-3bd0-8b72"/>
-        <infoLink name="Asalto" id="7131-40ee-1ee3-8544" hidden="false" type="rule" targetId="8714-46ad-62c0-ce35"/>
-      </infoLinks>
-    </infoGroup>
-    <infoGroup name="Enjambre pectoral con gusanos secantes" id="c2e4-e921-402a-7fd2" hidden="false">
-      <infoLinks>
-        <infoLink name="Enjambre pectoral con gusanos secantes" id="4f0a-a82a-6212-86af" hidden="false" type="profile" targetId="4c04-81db-6eb3-090b"/>
-        <infoLink name="Asalto" id="4bee-b2f7-a9ba-ae03" hidden="false" type="rule" targetId="8714-46ad-62c0-ce35"/>
-        <infoLink name="Plantilla" id="9795-fe50-bc0c-c299" hidden="false" type="rule" targetId="d094-3fd7-bd10-443d"/>
-      </infoLinks>
-    </infoGroup>
-    <infoGroup name="Enjambre pectoral con larvas electrificadas" id="1864-7a63-f246-946f" hidden="false">
-      <infoLinks>
-        <infoLink name="Enjambre pectoral con larvas electrificadas" id="8d0d-c533-e556-88e8" hidden="false" type="profile" targetId="6d68-3102-357f-54a6"/>
-        <infoLink name="Asalto" id="9bca-c76a-4521-42db" hidden="false" type="rule" targetId="8714-46ad-62c0-ce35"/>
-        <infoLink name="Plantilla" id="36b0-6fe5-6369-d75e" hidden="false" type="rule" targetId="d094-3fd7-bd10-443d"/>
-      </infoLinks>
-    </infoGroup>
-    <infoGroup name="Andanada de espinas" id="4313-5ec3-97f4-5959" hidden="false">
-      <infoLinks>
-        <infoLink name="Andanada de espinas" id="9a72-4827-5f2e-53da" hidden="false" type="profile" targetId="624c-10a6-80bd-fd9f"/>
-        <infoLink name="Asalto" id="44af-afd6-07f9-d746" hidden="false" type="rule" targetId="8714-46ad-62c0-ce35"/>
-      </infoLinks>
-    </infoGroup>
-    <infoGroup name="Racimo de espinas" id="ec4f-43ed-35ff-73d8" hidden="false">
-      <infoLinks>
-        <infoLink name="Racimo de espinas" id="c225-4de7-a16d-fd47" hidden="false" type="profile" targetId="45f6-a36b-9494-e369"/>
-        <infoLink name="Asalto" id="9d48-6c69-d3b1-657d" hidden="false" type="rule" targetId="8714-46ad-62c0-ce35"/>
-        <infoLink name="Área Grande" id="233e-2549-0e37-499a" hidden="false" type="rule" targetId="952e-d8aa-7560-44b9"/>
-      </infoLinks>
-    </infoGroup>
-    <infoGroup name="Catalizador" id="e6a5-0915-fbfb-50df" hidden="false">
-      <infoLinks>
-        <infoLink name="Catalizador" id="32ad-8950-a093-36e6" hidden="false" type="profile" targetId="6308-bcbc-018a-0819"/>
-        <infoLink name="No Hay Dolor" id="953c-87a9-7c8e-8f02" hidden="false" type="rule" targetId="fe28-c924-099d-aa4e"/>
-      </infoLinks>
-    </infoGroup>
-    <infoGroup name="Escupemuerte" id="145f-fa92-0322-b139" hidden="false">
-      <infoLinks>
-        <infoLink name="Escupemuerte" id="413a-054b-601f-8fa9" hidden="false" type="profile" targetId="7fef-72a3-7feb-5273"/>
-        <infoLink name="Asalto" id="1d16-9ad3-8edf-3bde" hidden="false" type="rule" targetId="8714-46ad-62c0-ce35"/>
-      </infoLinks>
-    </infoGroup>
-    <infoGroup name="Devorador" id="313b-b7d1-857b-6cee" hidden="false">
-      <infoLinks>
-        <infoLink name="Devorador" id="42c3-a72f-9e11-271d" hidden="false" type="profile" targetId="d150-d6bc-04ca-634b"/>
-        <infoLink name="Asalto" id="5969-060c-08c2-c34e" hidden="false" type="rule" targetId="8714-46ad-62c0-ce35"/>
-      </infoLinks>
-    </infoGroup>
-    <infoGroup name="Lanzadardos" id="c231-a5eb-3ad5-5515" hidden="false">
-      <infoLinks>
-        <infoLink name="Lanzadardos" id="3892-d790-e7c8-d01c" hidden="false" type="profile" targetId="527c-ef0c-0fc4-a542"/>
-        <infoLink name="Asalto" id="1e8c-0011-ef08-5197" hidden="false" type="rule" targetId="8714-46ad-62c0-ce35"/>
-        <infoLink name="Acoplada" id="86e7-31d1-5782-5575" hidden="false" type="rule" targetId="a06f-e29d-bcf4-ed75"/>
-      </infoLinks>
-    </infoGroup>
-    <infoGroup name="Cañón empalador" id="d279-89c0-c6b2-1b71" hidden="false">
-      <infoLinks>
-        <infoLink name="Cañón empalador" id="05a3-e0da-2818-9fd6" hidden="false" type="profile" targetId="621c-8897-92ec-6ed8"/>
-        <infoLink name="Asalto" id="816c-dad5-635f-35c8" hidden="false" type="rule" targetId="8714-46ad-62c0-ce35"/>
-      </infoLinks>
-    </infoGroup>
-    <infoGroup name="Garras garfio" id="8fc0-c634-500e-5b36" hidden="false">
-      <infoLinks>
-        <infoLink name="Garras garfio" id="0960-b325-164e-1eb3" hidden="false" type="profile" targetId="29d2-7727-8aaa-e025"/>
-        <infoLink name="Asalto" id="2a75-7aef-b5c6-7ffb" hidden="false" type="rule" targetId="8714-46ad-62c0-ce35"/>
-        <infoLink name="Acerada" id="61a7-169a-de3d-f157" hidden="false" type="rule" targetId="7097-6879-0d11-787d"/>
-      </infoLinks>
-    </infoGroup>
-    <infoGroup name="Racha llameante" id="8301-28bc-b2cc-980c" hidden="false">
-      <infoLinks>
-        <infoLink name="Racha llameante" id="7ade-1768-c9ad-ab0f" hidden="false" type="profile" targetId="6cef-235a-8b53-e760"/>
-        <infoLink name="Asalto" id="caa0-5ac8-bc43-cedd" hidden="false" type="rule" targetId="8714-46ad-62c0-ce35"/>
-        <infoLink name="Plantilla" id="846a-c187-68d3-3ee0" hidden="false" type="rule" targetId="d094-3fd7-bd10-443d"/>
-      </infoLinks>
-    </infoGroup>
-    <infoGroup name="Cañón venenoso" id="8a24-5dd2-d44d-3e2c" hidden="false">
-      <infoLinks>
-        <infoLink name="Área" id="217c-fa38-9fad-63f6" hidden="false" type="rule" targetId="31c7-fe6c-af95-f0b5"/>
-        <infoLink name="Cañón venenoso" id="bf6d-ecd5-570c-be9c" hidden="false" type="profile" targetId="ceb3-7424-1f03-0ca7"/>
-        <infoLink name="Asalto" id="1bc5-37f7-d7f3-89ba" hidden="false" type="rule" targetId="8714-46ad-62c0-ce35"/>
-      </infoLinks>
-    </infoGroup>
-    <infoGroup name="Cañón enredadera" id="3981-ddc9-0394-c611" hidden="false">
-      <infoLinks>
-        <infoLink name="Área Grande" id="868a-64b7-15a1-9b43" hidden="false" type="rule" targetId="952e-d8aa-7560-44b9"/>
-        <infoLink name="Cañón enredadera" id="1d7c-7662-dc94-be15" hidden="false" type="profile" targetId="d3b6-6b49-23b8-30fd"/>
-        <infoLink name="Asalto" id="0d2c-7e00-d02e-74c8" hidden="false" type="rule" targetId="8714-46ad-62c0-ce35"/>
-        <infoLink name="Acobardamiento" id="31dc-3a28-71a8-c028" hidden="false" type="rule" targetId="ec6e-0120-4bbd-590e"/>
-      </infoLinks>
-    </infoGroup>
-    <infoGroup name="Perforacarne" id="2b47-18f1-aa02-70a7" hidden="false">
-      <infoLinks>
-        <infoLink name="Perforacarne" id="4d46-3666-cc0a-17b1" hidden="false" type="profile" targetId="92e8-4499-60cc-d8f0"/>
-        <infoLink name="Asalto" id="f2be-f00a-7a76-ecf1" hidden="false" type="rule" targetId="8714-46ad-62c0-ce35"/>
-      </infoLinks>
-    </infoGroup>
-    <infoGroup name="Rifle de dardos" id="b567-d17b-1445-4f70" hidden="false">
-      <infoLinks>
-        <infoLink name="Rifle de dardos" id="2ab1-7216-5eea-061b" hidden="false" type="profile" targetId="c1ad-8cb3-666e-ac6a"/>
-        <infoLink name="Asalto" id="1cab-01c3-9d02-a908" hidden="false" type="rule" targetId="8714-46ad-62c0-ce35"/>
-      </infoLinks>
-    </infoGroup>
-    <infoGroup name="Estrangulador" id="9197-55c3-b0c6-5f8a" hidden="false">
-      <infoLinks>
-        <infoLink name="Estrangulador" id="027c-f55f-4418-91f0" hidden="false" type="profile" targetId="00bb-38f3-55ea-96bf"/>
-        <infoLink name="Asalto" id="7e9f-215b-6ab1-f552" hidden="false" type="rule" targetId="8714-46ad-62c0-ce35"/>
-        <infoLink name="Acobardamiento" id="8224-3230-2d92-1ee9" hidden="false" type="rule" targetId="ec6e-0120-4bbd-590e"/>
-      </infoLinks>
-    </infoGroup>
-    <infoGroup name="Cañón venenoso pesado acoplado" id="6a40-d346-d934-104f" hidden="false">
-      <infoLinks>
-        <infoLink name="Acoplada" id="c12c-d584-6eed-dc80" hidden="false" type="rule" targetId="a06f-e29d-bcf4-ed75"/>
-        <infoLink name="Cañón venenoso pesado acoplado" id="1492-122a-67eb-ec59" hidden="false" type="profile" targetId="1713-4155-f08d-d8ef"/>
-        <infoLink name="Asalto" id="56fe-c799-76bf-0910" hidden="false" type="rule" targetId="8714-46ad-62c0-ce35"/>
-        <infoLink name="Área" id="e4e4-5f3b-dc5d-b380" hidden="false" type="rule" targetId="31c7-fe6c-af95-f0b5"/>
-      </infoLinks>
-    </infoGroup>
-    <infoGroup name="Cañón estrangulador acoplado" id="bfd9-84dd-d2f8-121b" hidden="false">
-      <infoLinks>
-        <infoLink name="Acoplada" id="ce6a-b92c-605f-4dd1" hidden="false" type="rule" targetId="a06f-e29d-bcf4-ed75"/>
-        <infoLink name="Cañón estrangulador acoplado" id="fe13-5626-7fd3-fdd8" hidden="false" type="profile" targetId="6578-a80d-0865-64e7"/>
-        <infoLink name="Asalto" id="ce80-5fb2-f5dd-ebbe" hidden="false" type="rule" targetId="8714-46ad-62c0-ce35"/>
-        <infoLink name="Área Grande" id="3bc8-199c-8bde-7a6b" hidden="false" type="rule" targetId="952e-d8aa-7560-44b9"/>
-        <infoLink name="Acobardamiento" id="9f67-db03-f7fa-5afa" hidden="false" type="rule" targetId="ec6e-0120-4bbd-590e"/>
-      </infoLinks>
-    </infoGroup>
-    <infoGroup name="Expulsión de minas espora" id="46d2-b5d8-91e6-eefe" hidden="false">
-      <infoLinks>
-        <infoLink name="Expulsión de minas espora" id="8902-cf21-689c-3cdc" hidden="false" type="profile" targetId="4f36-d562-609c-dc73"/>
-        <infoLink name="Asalto" id="4846-2cdc-3ec3-9653" hidden="false" type="rule" targetId="8714-46ad-62c0-ce35"/>
-        <infoLink name="Área Grande" id="747a-17de-6890-683c" hidden="false" type="rule" targetId="952e-d8aa-7560-44b9"/>
-      </infoLinks>
-      <profiles>
-        <profile name="Expulsión de minas espora" typeId="c970-b832-a956-1ac8" typeName="Habilidad" hidden="false" id="1616-8ca1-4711-abe5">
-          <characteristics>
-            <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Una vez por partida, las Arpías puede soltar un grupo de Minas Espora durante la fase de movimiento. Para ello, designa una miniatura enemiga que la Arpía haya sobrevolado, y tira la dispersión como si la Arpía disparase un arma de Barrera de artillería en ese punto.
-
-Si después de determinar la posición de la primera plantilla de la barrera de artillería no hay miniaturas enemigas a 15cm del agujero central, no resuelvas el ataque y coloca 1D3 Minas Espora en contacto peana con peana las unas con las otras donde estaría el agujero central. Estas seguirán las reglas de las Minas Espora detalladas en la regla de Bomba viviente de la página 48.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
-    </infoGroup>
-    <infoGroup name="Bio-plasma" id="846c-59f3-5eb9-21f8" hidden="false">
-      <infoLinks>
-        <infoLink name="Bio-plasma" id="50cb-913a-d729-af19" hidden="false" type="profile" targetId="9add-55c0-a791-7c5b"/>
-        <infoLink name="Asalto" id="a15c-84bc-4dd8-b8bd" hidden="false" type="rule" targetId="8714-46ad-62c0-ce35"/>
-        <infoLink name="Área" id="2896-8ddd-8428-8d1a" hidden="false" type="rule" targetId="31c7-fe6c-af95-f0b5"/>
-      </infoLinks>
-    </infoGroup>
-    <infoGroup name="Lanzador de minas espora" id="0dfe-b258-1e00-af16" hidden="false">
-      <infoLinks>
-        <infoLink name="Lanzador de minas espora" id="8410-6981-7b9f-b2ff" hidden="false" type="profile" targetId="4950-2dbf-7422-e7c5"/>
-        <infoLink name="Asalto" id="7256-bc52-d09a-a821" hidden="false" type="rule" targetId="8714-46ad-62c0-ce35"/>
-        <infoLink name="Área Grande" id="fed6-5466-6100-2de2" hidden="false" type="rule" targetId="952e-d8aa-7560-44b9"/>
-        <infoLink name="Barrera de Artillería" id="ec52-785e-9ae5-c45f" hidden="false" type="rule" targetId="eae1-d240-afcf-4b81"/>
-      </infoLinks>
-    </infoGroup>
-    <infoGroup name="Puas de contención" id="7e23-9965-5dc6-8038" hidden="false">
-      <infoLinks>
-        <infoLink name="Puas de contención" id="187e-9c6d-b1e9-616b" hidden="false" type="profile" targetId="0fb4-a9e9-6f26-2315"/>
-        <infoLink name="Asalto" id="b076-54f5-8319-9b7c" hidden="false" type="rule" targetId="8714-46ad-62c0-ce35"/>
-      </infoLinks>
-    </infoGroup>
-    <infoGroup name="Pulsación bioeléctrica" id="9279-b50b-59d3-0ce2" hidden="false">
-      <infoLinks>
-        <infoLink name="Pulsación bioeléctrica" id="1235-0dba-3b6e-9301" hidden="false" type="profile" targetId="504c-d63e-269f-1d4a"/>
-        <infoLink name="Asalto" id="4ee0-96cc-f0ea-d493" hidden="false" type="rule" targetId="8714-46ad-62c0-ce35"/>
-      </infoLinks>
-    </infoGroup>
-    <infoGroup name="Spray ácido" id="3d51-0f34-f539-3207" hidden="false">
-      <infoLinks>
-        <infoLink name="Spray ácido" id="090d-a709-e299-e98f" hidden="false" type="profile" targetId="22d1-385f-56f0-8466"/>
-        <infoLink name="Asalto" id="6489-d1c6-29d0-4103" hidden="false" type="rule" targetId="8714-46ad-62c0-ce35"/>
-        <infoLink name="Plantilla" id="0306-be1e-2962-66e0" hidden="false" type="rule" targetId="d094-3fd7-bd10-443d"/>
-      </infoLinks>
-    </infoGroup>
-    <infoGroup name="Enjambre perforacarnes" id="2ff1-816c-da69-e210" hidden="false">
-      <infoLinks>
-        <infoLink name="Enjambre perforacarnes" id="aca7-4948-cca6-240b" hidden="false" type="profile" targetId="c30d-59ea-4eb1-ee27"/>
-        <infoLink name="Asalto" id="4913-1f74-82e9-d508" hidden="false" type="rule" targetId="8714-46ad-62c0-ce35"/>
-      </infoLinks>
-    </infoGroup>
-    <infoGroup name="Cañón quebrantador" id="3713-77a0-911a-9102" hidden="false">
-      <infoLinks>
-        <infoLink name="Cañón quebrantador" id="c5ae-fdac-c73f-f42e" hidden="false" type="profile" targetId="95da-185c-8c2a-797c"/>
-        <infoLink name="Asalto" id="ca1e-db28-9a21-26b3" hidden="false" type="rule" targetId="8714-46ad-62c0-ce35"/>
-      </infoLinks>
-    </infoGroup>
-  </sharedInfoGroups>
   <entryLinks>
     <entryLink import="true" name="Tirano de enjambre" hidden="false" id="e8f5-755a-d764-7d3d" type="selectionEntry" targetId="b7df-e825-5bd8-ed62">
       <categoryLinks>
