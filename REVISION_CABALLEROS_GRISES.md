@@ -27,7 +27,7 @@ Resumen de los casos a revisar tras añadir todas las secciones (CG, Élite, Lí
 - **Mordrak y Caballeros fantasma**: «Guardaespaldas fantasmal» es solo texto; no añade miniaturas ni está enlazado a la unidad.
 - **Aluvión psíquico**, **Aegis** y **Hermandad de psíquicos**: son reglas de texto; sin automatismos de modificadores.
 - **Servoterror Némesis**: el perfil se cambió a «Criatura monstruosa» por el PDF; revisar que no rompa otras referencias.
-- **Perfil genérico «Asesino»**: sigue en el catálogo sin usar (los 4 Asesinos tienen su perfil propio).
+- **Entradas compartidas sin enlazar**: eliminadas (lanzamisiles, rayo de conversión, transmisor orbital, cañón láser, Asesino genérico…). Torrente de energía y Mirada impía ahora cuelgan del Huésped demoníaco (tabla de Poder demoníaco).
 
 ## 5. Errores corregidos al repasar
 - Ordo Hereticus y Ordo Xenos no incluían granadas antipsíquicos (solo Malleus). Corregido.

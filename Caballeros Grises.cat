@@ -217,20 +217,6 @@
         <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">-</characteristic>
       </characteristics>
     </profile>
-    <profile name="Asesino" id="d2cae4fb-f734-439a-888a-a57b257ef278" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
-      <characteristics>
-        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Personaje infantería</characteristic>
-        <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">8</characteristic>
-        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">8</characteristic>
-        <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
-        <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
-        <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">2</characteristic>
-        <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">7</characteristic>
-        <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">4</characteristic>
-        <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
-        <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">4+</characteristic>
-      </characteristics>
-    </profile>
     <profile name="Asesino culto de muerte" id="35126efc-d9be-4b3e-8c88-41836fab2a7f" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
       <characteristics>
         <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
@@ -811,7 +797,7 @@
       <characteristics>
         <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60cm</characteristic>
         <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">8</characteristic>
-        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">-</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
         <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 1</characteristic>
       </characteristics>
     </profile>
@@ -1635,11 +1621,6 @@ Esta habilidad no funciona cuando atacan a vehículos sin Habilidad de Armas.</d
         <infoLink name="Animus speculum" id="8bcc4b77-fea5-43cc-ab0d-afc3605302b4" hidden="false" targetId="5b601576-9ca5-4941-b34c-7c5267e63752" type="rule"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Asesino" id="e535746a-d2cb-4643-be1b-d0c28ee240f1" collapsible="true" hidden="false" import="true" type="unit">
-      <infoLinks>
-        <infoLink name="Asesino" id="bdd43084-f62a-4210-bc7a-576094e3d5cd" hidden="false" targetId="d2cae4fb-f734-439a-888a-a57b257ef278" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry name="Bibliotecario" id="ba89250a-39ab-4a9c-aa7f-7125ab975327" collapsible="true" hidden="false" import="true" type="model">
       <costs>
         <cost name="Pts" typeId="puntos" value="150"/>
@@ -2220,11 +2201,6 @@ Esta habilidad no funciona cuando atacan a vehículos sin Habilidad de Armas.</d
     <selectionEntry name="Cañón de plasma" id="a9b39a58-0829-44c9-91e2-4a2542eb9859" hidden="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink name="Cañón de Plasma" id="2c7d9a34-9ef0-4d7e-9b23-72d98b938cbd" hidden="false" targetId="ff28-6505-3158-bff5" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Cañón láser" id="f0f027d9-10a2-4048-8bbd-90240250de87" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Cañón Láser" id="ad738179-1de9-4fcc-a332-9a80ab50c0d1" hidden="false" targetId="b210-a1f3-d328-5739" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Cañón psi" id="079dd8d2-85df-4c4d-895e-e1480d8b7125" hidden="false" import="true" type="upgrade">
@@ -4970,26 +4946,6 @@ Esta habilidad no funciona cuando atacan a vehículos sin Habilidad de Armas.</d
         <infoLink name="Lanzallamas Pesado" id="8cdd5448-bb65-45c9-8c35-0c18a7c9642a" hidden="false" targetId="ea35-d96a-285e-1a63" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Lanzamisiles (Fragmentación)" id="9cb875e8-9f44-45cc-8f27-9a31db52803d" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Lanzamisiles Fragmentación" id="21913920-1699-4ebf-88d5-6669c60531bb" hidden="false" targetId="e474b109-dc6e-4a0d-928c-1e8c5b08acbf" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Lanzamisiles (Perforante)" id="d1ec7b47-42e6-476b-995a-8e9fbd1aa57f" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Lanzamisiles Perforante" id="82d1a369-765c-429a-8866-e614e7dd7c63" hidden="false" targetId="ddc7ae3e-7035-4486-9b06-07cb064c8097" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Lanzamisiles Tifón (Fragmentación)" id="87a33f07-b6fa-4726-910d-1fa4ea3dae19" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Lanzamisiles Tifón Fragmentación" id="8c81c0b2-7ffa-4b30-86a3-0ae151566fd0" hidden="false" targetId="5f02b02a-5475-4d5d-ab74-7619ec62da7a" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Lanzamisiles Tifón (Perforante)" id="72a5b924-0ca6-4b62-b08a-7179424199c1" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Lanzamisiles Tifón Perforante" id="339ad275-9cdd-4af4-80cb-c2114f4b8078" hidden="false" targetId="a2160dfb-ec4e-43ae-b6dd-1b746b63aff7" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry name="Lord Kaldor Draigo" id="aa43dd32-24ac-4e8c-a06d-6827092df148" collapsible="true" hidden="false" import="true" type="model">
       <costs>
         <cost name="Pts" typeId="puntos" value="275"/>
@@ -5069,11 +5025,6 @@ Esta habilidad no funciona cuando atacan a vehículos sin Habilidad de Armas.</d
         <infoLink name="Señor de Titán" id="5e8d4b7c-041f-405a-baad-7b7f5b727e7e" hidden="false" targetId="25f49fbb-7ad9-4766-b89c-13fa4bbb2acc" type="rule"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Mirada impía" id="d04cbdb9-e3d2-43dd-8ec2-e4433bba8073" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Mirada impía" id="1f540c25-2564-4b42-b9cb-aca0d594e2c0" hidden="false" targetId="9ed63eca-d43b-40f9-9c17-98d7cbc802f2" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry name="Misiles psicoasalto" id="7a84609f-b2c3-498d-b9bc-eaf60c32008a" hidden="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink name="Misiles psicoasalto" id="c442627f-4e83-4096-bd3d-14284fdd9d64" hidden="false" targetId="76ad08fb-a632-43a2-bf00-30b7982f182c" type="profile"/>
@@ -5126,21 +5077,6 @@ Esta habilidad no funciona cuando atacan a vehículos sin Habilidad de Armas.</d
       <infoLinks>
         <infoLink name="Psilenciador gatling" id="b49205d5-8e75-4d68-81fe-52327b279b7a" hidden="false" targetId="89f51521-c949-4604-b01c-2c425d466c18" type="profile"/>
         <infoLink name="Psilenciador" id="5e82d532-62dc-4bb6-9d5e-c4a378024290" hidden="false" targetId="baf031ee-b81a-4e7a-a252-064d471f30b1" type="rule"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Rayo de conversión (105-180cm)" id="28afcfef-190e-4958-b6ff-ad4133604e36" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Rayo de conversión (105-180cm)" id="918ae6bb-dba3-4d7c-8cac-125c69291e0d" hidden="false" targetId="cd762407-11a1-4583-8a1b-88382c26dd61" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Rayo de conversión (45-105cm)" id="1052c1d0-c651-4a96-ac20-89fdeca21afb" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Rayo de conversión (45-105cm)" id="f6e7ff98-cc24-49a7-8377-912536ec904e" hidden="false" targetId="f1ca8fe1-5064-4ac7-9601-d8cf64beb2c8" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Rayo de conversión (hasta 45cm)" id="6967b20c-bbb9-4c44-860a-45343135c637" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Rayo de conversión (hasta 45cm)" id="c7a9950b-0bc2-423b-9073-78b7d490a3f9" hidden="false" targetId="b3a9e43b-12fa-46ec-9651-d47cc221ce3f" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Razorback" id="80ee8c1b-b215-4887-9294-0b11dfb7fc0f" collapsible="true" collective="false" hidden="false" import="true" type="model">
@@ -5742,29 +5678,6 @@ Esta habilidad no funciona cuando atacan a vehículos sin Habilidad de Armas.</d
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
-    </selectionEntry>
-    <selectionEntry name="Torrente de energía" id="31a98eeb-7614-4b42-995e-3a84857f8aca" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Torrente de energía" id="6eb72cec-799b-4f7d-9370-d832abbc2025" hidden="false" targetId="a49e6a6c-f3f3-4ebe-b618-ad7c385e330a" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Transmisor de Asalto orbital (Bomba antipsíquicos)" id="286bb153-3628-48f1-ac11-ecbd15601390" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Transmisor de Asalto orbital" id="a03ee41b-5779-4602-aeea-b9409712af7f" hidden="false" targetId="1aa189d8-e46d-41d7-b4e9-fa30f6d5ce1f" type="rule"/>
-        <infoLink name="Transmisor de Asalto orbital (Bomba antipsíquicos)" id="156dca83-1a61-4840-b88d-31978b968d36" hidden="false" targetId="443a8029-ed62-40ca-a26e-b39f39f6cfc1" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Transmisor de Asalto orbital (Bombardeo)" id="9c5be452-ab59-4525-87a0-066a3c493bcc" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Transmisor de Asalto orbital" id="11413b11-7c0b-4fcf-ae38-9357e40a3050" hidden="false" targetId="1aa189d8-e46d-41d7-b4e9-fa30f6d5ce1f" type="rule"/>
-        <infoLink name="Transmisor de Asalto orbital (Bombardeo)" id="8c4a957b-8dfa-448e-afac-fd2eb23c6f8a" hidden="false" targetId="af6fadcd-acb1-4b0b-bc86-b0e7f83cd0ec" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Transmisor de Asalto orbital (Impacto de lanza)" id="c4f27e78-47d2-4139-8d7d-28daacb24e26" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Transmisor de Asalto orbital" id="4492a908-172e-44be-8a65-e2db529c406d" hidden="false" targetId="1aa189d8-e46d-41d7-b4e9-fa30f6d5ce1f" type="rule"/>
-        <infoLink name="Transmisor de Asalto orbital (Impacto de lanza)" id="308ae7cf-0f85-4c9b-8bd0-89d2be011069" hidden="false" targetId="0971fea7-b951-4cde-ae11-0b16ca521c00" type="profile"/>
-      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Espada psíquica" id="f91efe16-6097-48a2-84b4-1b6662431629" hidden="false" import="true" type="upgrade">
       <infoLinks>
@@ -7073,6 +6986,8 @@ Esta habilidad no funciona cuando atacan a vehículos sin Habilidad de Armas.</d
                 <infoLink name="Huésped demoníaco" id="a32d91cb-c747-4535-b5c5-32d33ce5ccfd" hidden="false" targetId="11ca0bca-199b-4a68-8c7c-3bc5fc765c88" type="profile"/>
                 <infoLink name="Escudo disforme" id="2e8595d0-cc4d-453a-ae52-a710b44eff68" hidden="false" targetId="e067116c-59de-4cbc-a433-df362e130d41" type="rule"/>
                 <infoLink name="Poder demoníaco" id="fe4d03e6-3a7e-482c-8a02-6ffc94b4c041" hidden="false" targetId="270de381-35e8-4d82-91f5-df3cbb4dce0d" type="rule"/>
+                <infoLink name="Torrente de energía" id="4c01ac1d-5816-4cf9-b9c1-ffb2c12b87aa" hidden="false" targetId="a49e6a6c-f3f3-4ebe-b618-ad7c385e330a" type="profile"/>
+                <infoLink name="Mirada impía" id="b66f2103-29b1-4e9f-a7b4-5c39fe76548e" hidden="false" targetId="9ed63eca-d43b-40f9-9c17-98d7cbc802f2" type="profile"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry name="Místico" id="3f1a4ffc-e247-49d2-b3a4-4587c38dd382" collapsible="true" collective="false" hidden="false" import="true" sortIndex="3" type="model">
