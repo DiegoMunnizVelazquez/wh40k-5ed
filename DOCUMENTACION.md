@@ -301,6 +301,7 @@ Los CSV de `Generico/` sirven como plantilla de referencia. Para cada ejército 
 
 ### Scripts de Generación de Información Compartida
 - `generate_selection_entries.py` - Genera sharedSelectionEntries que apuntan directamente a los perfiles
+- `sort_selection_options.py` - Ordena las opciones de equipo por coste y nombre (ver sección 14.3)
 
 ### Archivos XML
 - `Guardia Imperial.cat` - Catálogo actualizado
@@ -451,6 +452,50 @@ Perfil (Arma/Unidad/Vehículo/Bípode)
 - **Auto-creación de sección**: Si el XML no contiene `<sharedSelectionEntries>`, el script la crea automáticamente
 - Usa: `python generate_selection_entries.py [archivo_cat]`
 
+## 14. Migración de datos desde PDF y edición manual de catálogos
+
+Los catálogos de ejércitos completos (hoy, Caballeros Grises) no se generan con los scripts `update_*.py`: se construyen a mano leyendo el codex en PDF y editando el `.cat`. Los scripts de las secciones 5 a 12 solo cubren perfiles y entradas básicas.
+
+### 14.1 Lectura del PDF
+- Los codex son **fotos escaneadas sin capa de texto**: `pdftotext` devuelve vacío y no hay OCR instalado. La transcripción es visual y puede tener errores de lectura.
+- Para verlas se renderizan las páginas a PNG con PyMuPDF (`pip install --target <carpeta_temporal> pymupdf`, `page.get_pixmap(dpi=100).save(...)`). Se instala en una carpeta temporal, no en el repo.
+- Se trabaja por secciones del libro (CG, Élite, Línea, Transportes asignados, Ataque Rápido, Apoyo Pesado), un commit por sección. La página 2 recoge las reglas especiales comunes; las páginas de entradas se leen unidad por unidad.
+- Las dudas de lectura (costes borrosos, ambigüedades) se anotan en `REVISION_CABALLEROS_GRISES.md`, no se resuelven en silencio.
+
+### 14.2 Estructura de las entradas
+- **Raíz**: cada unidad se enlaza con un `entryLink` que lleva la categoría principal (CG, Élite, Línea…).
+- **Tipos**: `model` para personajes y entradas básicas, `unit` para escuadras con varias miniaturas, `upgrade` para armas, equipo y poderes.
+- **Opciones de equipo**: `selectionEntryGroup` con `defaultSelectionEntryId` en la opción gratuita y restricciones `min`/`max`; el coste del suplemento va en el `<costs>` del `entryLink` (`typeId="puntos"`). Los grupos compartidos (p. ej. «Transporte Asignado») se enlazan desde varias unidades.
+- **Selección por defecto**: un grupo solo admite un `defaultSelectionEntryId`. Cuando varias opciones deben venir marcadas al añadir la unidad (p. ej. espada sierra y pistola láser del Acólito guerrero, dentro de un grupo con mínimo y máximo 2), se marca `defaultAmount="1"` en cada `entryLink`.
+- **Límites de opciones de equipo**: no se usan categorías (`categoryEntry`) para limitar opciones de equipo; las categorías se reservan para clasificar unidades (p. ej. «Inquisidor»). Un máximo repartido entre varias miniaturas se pone como `constraint` de tipo `max` en el grupo, con `scope` el id de la unidad ancestro (p. ej. «hasta 3 armas especiales por séquito»: el grupo de armas especiales lleva `max 1` con `scope="parent"` y `max 3` con `scope` el id del Séquito).
+- **Armas especiales de escuadra**: van dentro de las opciones de arma del modelo que las lleva, no en un grupo suelto de la unidad. Si sustituyen el arma a distancia (Exterminadores, Paladines) el bólter de asalto pasa a ser una opción más de un grupo «Arma a distancia» junto a las armas especiales. Si sustituyen bólter y espada (Purificadores, Choque, Interceptora, Expiación) se añaden al grupo «Arma de combate» y el bólter de asalto fijo se oculta con modificadores condicionados a que se elija alguna de ellas. El estandarte, el bastón de protección siguen el mismo criterio, con máximo 1 por escuadra (`scope` el id de la unidad). El Apotecario no es un arma: es una alternativa al Paladín normal dentro del grupo «Tipo de Paladín» (mínimo y máximo 1), y las opciones de arma a distancia cuelgan de la opción «Paladín (arma a distancia)», de modo que al elegir Apotecario desaparecen sin dejar selecciones con error.
+- **Máximo que escala con el tamaño de la unidad** («2 por cada 5 miniaturas»): cada arma lleva un `constraint` `max` con valor 0, `scope` el id de la unidad e `includeChildSelections="true"`, y un `modifier` `increment` de valor 2 sobre ese constraint con un `repeat` (`childId="model"`, `value="5"`, `repeats="1"`, `roundUp="false"`, `scope` el id de la unidad). `childId="model"` cuenta todas las miniaturas de la unidad.
+- **Opciones que arrastran otra selección** (p. ej. el bólter de asalto incorporado del Dreadnought, que solo existe con el Puño de perdición): un `entryLink` no puede contener grupos, así que la opción se crea como `selectionEntry` local con un `entryLink` al arma compartida y el grupo de la selección dependiente dentro. Al desmarcar la opción se oculta todo a la vez, sin dejar selecciones huérfanas con error (mejor que ocultar el grupo con un `modifier`).
+- **Una opción por lista**: Justicar Thawn es una alternativa al Justicar de la escuadra de Exterminadores (grupo «Justicar de la escuadra») con `max 1` y `scope="roster"`; ya no existe como entrada suelta.
+- **Reglas, perfiles y poderes**: se declaran una vez (`sharedRules`, `sharedProfiles`) y las entradas los referencian con `infoLink`.
+- **Psíquicos**: cada psíquico enlaza la regla `Psíquico` y la regla `Nivel de maestría N` (1, 2 o 3) con el nivel que indica el PDF (el texto de «Niveles de maestría psíquica» está en la pág. 2 del codex). Las mejoras de nivel («puede potenciarse a Nivel de maestría 2/3») son una opción más que enlaza la regla de su nivel. Los vehículos usan «Piloto psíquico» (equivale a Nivel 1).
+- **Enemigo predilecto**: la regla del `.gst` no lleva palabra clave. En Caballeros Grises se usa la regla propia `Enemigo predilecto (Demonios)` del catálogo; para otro ejército o palabra clave se crea una regla específica en su `.cat` (en lugar de modificar el título con un `modifier` en cada enlace o cambiar la regla del `.gst`).
+- **Transportes**: los vehículos que transportan miniaturas usan el perfil «Transporte» (vida, blindajes, tipo, capacidad, puntos de acceso y de disparo) en lugar de «Vehículo». Cada variante de Land Raider tiene su propio perfil. La Munición psíquica de una unidad se propaga a las armas de su transporte asignado; cada transporte resta 1 de F a esas armas si la unidad la lleva, para que solo la reciba quien la elige.
+- Los límites que el modelo no puede expresar (p. ej. «uno por cada cinco miniaturas») se aproximan con un máximo fijo y se listan en `REVISION_CABALLEROS_GRISES.md`.
+
+### 14.3 Orden de las opciones de equipo
+Dentro de cada grupo de opciones, las entradas se ordenan por **coste en puntos ascendente y, a igualdad de coste, alfabéticamente** (sin distinguir acentos ni mayúsculas). La opción gratuita (la de por defecto) queda siempre primera. Cualquier opción nueva debe respetar este orden.
+
+```bash
+# Ver qué grupos incumplen el orden (dry-run)
+python sort_selection_options.py "Caballeros Grises.cat"
+
+# Reordenarlos
+python sort_selection_options.py "Caballeros Grises.cat" write
+```
+**Importante:** BattleScribe/NewRecruit ordena las opciones por el atributo `sortIndex`, no por la posición en el XML. El script numera cada opción de cada grupo con `sortIndex="1"`, `"2"`… además de reordenarlas en el archivo. Al añadir una opción a mano hay que renumerar el grupo (volver a ejecutar el script). Si un `entryLink` no tiene coste propio, se usa el de la entrada a la que apunta. El script no cambia IDs ni restricciones.
+
+### 14.4 Edición del `.cat` sin romper el archivo
+- Los `.cat` usan UTF-8 y saltos de línea **CRLF**: al editar con scripts, leer y escribir en binario (`rb`/`wb`) y decodificar como UTF-8 para no corromper acentos ni convertir los saltos de línea.
+- Los IDs deben ser únicos (UUID v4 para entradas nuevas) y todos los `targetId` deben resolverse.
+- Validación mínima tras cada cambio: parsear el XML, comprobar que no hay IDs duplicados ni `targetId` sin resolver, y ejecutar `sort_selection_options.py` en dry-run (debe informar 0 grupos reordenados).
+- Aún no se ha abierto el catálogo en NewRecruit: queda pendiente comprobar categorías y restricciones en la aplicación.
+
 ## 13. Troubleshooting
 
 ### infoGroups
@@ -494,5 +539,5 @@ Si hay errores en la generación:
 
 ---
 
-**Última actualización**: Mayo 2026
-**Versión**: 3.7 - se eliminan los `sharedInfoGroups` y sus generadores; `generate_selection_entries.py` enlaza directamente a los perfiles y no borra las entradas existentes
+**Última actualización**: Noviembre 2026
+**Versión**: 3.8 - nueva sección 14 (migración desde PDF, edición manual de catálogos y orden de opciones); 3.7 - se eliminan los `sharedInfoGroups` y sus generadores; `generate_selection_entries.py` enlaza directamente a los perfiles y no borra las entradas existentes
