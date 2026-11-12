@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="de8b-5a14-0e15-e5d9" name="Lobos Espaciales" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" revision="2" authorUrl="csddmv@gmail.com" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="de8b-5a14-0e15-e5d9" name="Lobos Espaciales" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" revision="3" authorUrl="csddmv@gmail.com" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" battleScribeVersion="2.03" type="catalogue">
+  <categoryEntries>
+    <categoryEntry name="Saga del Matabestias" id="fef6905f-c2f1-4a8d-b98c-d7462c932abb" hidden="false"/>
+    <categoryEntry name="Saga de Majestad" id="70d9fb2b-ea58-469d-ae4b-eecb10ad3642" hidden="false"/>
+    <categoryEntry name="Saga de los Lobos" id="0f0e97ac-549c-47fd-bdeb-818ff78dce8c" hidden="false"/>
+    <categoryEntry name="Saga del Nacido Guerrero" id="8cd6542c-0d99-406d-82e8-7c133ed09402" hidden="false"/>
+    <categoryEntry name="Saga del Oso" id="171e63b4-9d12-4028-ba87-0f6e6e824ab4" hidden="false"/>
+    <categoryEntry name="Saga del Cazador" id="6121bf00-97b3-4865-a192-858dca534b2b" hidden="false"/>
+  </categoryEntries>
   <entryLinks>
     <entryLink name="Logan Grimnar, el Gran Lobo" id="535cebed-bf3b-438d-bd6d-5794c35b9dcd" collective="false" hidden="false" import="true" targetId="29aa3050-1299-46fa-8887-07287ebbce02" type="selectionEntry">
       <categoryLinks>
@@ -1616,6 +1624,9 @@
               <constraints>
                 <constraint id="3c608d84-16bd-4cce-b920-106a43f0af9d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink name="Saga del Cazador" id="5220a088-c0b7-42d0-8b97-3862689b6482" hidden="false" primary="false" targetId="6121bf00-97b3-4865-a192-858dca534b2b"/>
+              </categoryLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
@@ -1632,39 +1643,104 @@
                     <modifier field="hidden" type="set" value="true"/>
                   </modifiers>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition childId="6121bf00-97b3-4865-a192-858dca534b2b" childName="Saga del Cazador" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+                    <condition childId="2425e295-dffe-4cb4-9ce0-076c8814c362" childName="Saga del Cazador" field="selections" includeChildForces="false" includeChildSelections="true" scope="4ba87243-0baa-4ebc-b77e-14453c20aa04" shared="true" type="lessThan" value="1"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="true"/>
+                  </modifiers>
+                </modifierGroup>
               </modifierGroups>
             </entryLink>
             <entryLink name="Saga del Matabestias" id="50fabe83-0ed0-4433-b2de-6de8d9d24d0a" collective="false" hidden="false" import="true" sortIndex="2" targetId="007d8dc4-8aba-4456-87ef-86567ada32e4" type="selectionEntry">
               <constraints>
                 <constraint id="ff008291-4861-48da-bdcb-c3309789c5fa" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink name="Saga del Matabestias" id="e9ff7e8e-52e2-4d10-bc6c-f947a8d1484f" hidden="false" primary="false" targetId="fef6905f-c2f1-4a8d-b98c-d7462c932abb"/>
+              </categoryLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition childId="fef6905f-c2f1-4a8d-b98c-d7462c932abb" childName="Saga del Matabestias" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+                    <condition childId="007d8dc4-8aba-4456-87ef-86567ada32e4" childName="Saga del Matabestias" field="selections" includeChildForces="false" includeChildSelections="true" scope="4ba87243-0baa-4ebc-b77e-14453c20aa04" shared="true" type="lessThan" value="1"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="true"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </entryLink>
             <entryLink name="Saga de los Lobos" id="306ec5e2-40a0-4979-85b7-0f3366254fab" collective="false" hidden="false" import="true" sortIndex="3" targetId="08419059-4bd3-4519-ad5f-866832f38bc5" type="selectionEntry">
               <constraints>
                 <constraint id="0e150b8a-ab3d-4279-a7b6-7c90423f2c2e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink name="Saga de los Lobos" id="8bd2975d-97ba-4feb-84fc-6d8a71fc1b95" hidden="false" primary="false" targetId="0f0e97ac-549c-47fd-bdeb-818ff78dce8c"/>
+              </categoryLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="15"/>
               </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition childId="0f0e97ac-549c-47fd-bdeb-818ff78dce8c" childName="Saga de los Lobos" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+                    <condition childId="08419059-4bd3-4519-ad5f-866832f38bc5" childName="Saga de los Lobos" field="selections" includeChildForces="false" includeChildSelections="true" scope="4ba87243-0baa-4ebc-b77e-14453c20aa04" shared="true" type="lessThan" value="1"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="true"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </entryLink>
             <entryLink name="Saga de Majestad" id="5126ff68-269f-47e0-a7e7-5f79dcaafd1c" collective="false" hidden="false" import="true" sortIndex="4" targetId="aa2edaac-a547-4d78-9424-45781d9b13c6" type="selectionEntry">
               <constraints>
                 <constraint id="f18bdbfd-ac08-4a02-b4eb-fd043d17ad28" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink name="Saga de Majestad" id="a939a79a-0f80-491c-9073-93b0ce87997c" hidden="false" primary="false" targetId="70d9fb2b-ea58-469d-ae4b-eecb10ad3642"/>
+              </categoryLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="15"/>
               </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition childId="70d9fb2b-ea58-469d-ae4b-eecb10ad3642" childName="Saga de Majestad" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+                    <condition childId="aa2edaac-a547-4d78-9424-45781d9b13c6" childName="Saga de Majestad" field="selections" includeChildForces="false" includeChildSelections="true" scope="4ba87243-0baa-4ebc-b77e-14453c20aa04" shared="true" type="lessThan" value="1"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="true"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </entryLink>
             <entryLink name="Saga del Nacido Guerrero" id="51537bd9-2b95-4dec-95e2-934903a65983" collective="false" hidden="false" import="true" sortIndex="5" targetId="ab09a43c-8c39-432e-8222-e7fbb409ffe8" type="selectionEntry">
               <constraints>
                 <constraint id="7b73c87f-9999-4f90-a40b-1e426569b9a9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink name="Saga del Nacido Guerrero" id="6dac0188-60a7-448b-84de-40e756f9cb5d" hidden="false" primary="false" targetId="8cd6542c-0d99-406d-82e8-7c133ed09402"/>
+              </categoryLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="35"/>
               </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition childId="8cd6542c-0d99-406d-82e8-7c133ed09402" childName="Saga del Nacido Guerrero" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+                    <condition childId="ab09a43c-8c39-432e-8222-e7fbb409ffe8" childName="Saga del Nacido Guerrero" field="selections" includeChildForces="false" includeChildSelections="true" scope="4ba87243-0baa-4ebc-b77e-14453c20aa04" shared="true" type="lessThan" value="1"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="true"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -2435,6 +2511,9 @@
               <constraints>
                 <constraint id="da2f4fcf-cdf3-4237-a2fe-6a3072342ad6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink name="Saga del Cazador" id="0664e442-012a-462a-8f4b-1b1b2586a57d" hidden="false" primary="false" targetId="6121bf00-97b3-4865-a192-858dca534b2b"/>
+              </categoryLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
@@ -2450,31 +2529,82 @@
                     <modifier field="hidden" type="set" value="true"/>
                   </modifiers>
                 </modifierGroup>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition childId="6121bf00-97b3-4865-a192-858dca534b2b" childName="Saga del Cazador" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+                    <condition childId="2425e295-dffe-4cb4-9ce0-076c8814c362" childName="Saga del Cazador" field="selections" includeChildForces="false" includeChildSelections="true" scope="2e6a6d93-4bf5-4be1-89e5-da3c1df8d1f3" shared="true" type="lessThan" value="1"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="true"/>
+                  </modifiers>
+                </modifierGroup>
               </modifierGroups>
             </entryLink>
             <entryLink name="Saga del Matabestias" id="e435ca31-97fd-4bff-98ef-b8a731eca175" collective="false" hidden="false" import="true" sortIndex="2" targetId="007d8dc4-8aba-4456-87ef-86567ada32e4" type="selectionEntry">
               <constraints>
                 <constraint id="1cc2160d-9ee4-421a-a34a-5fb878d7ad42" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink name="Saga del Matabestias" id="7007ebd3-d02a-4bfb-b2ca-d0a3086c6719" hidden="false" primary="false" targetId="fef6905f-c2f1-4a8d-b98c-d7462c932abb"/>
+              </categoryLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition childId="fef6905f-c2f1-4a8d-b98c-d7462c932abb" childName="Saga del Matabestias" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+                    <condition childId="007d8dc4-8aba-4456-87ef-86567ada32e4" childName="Saga del Matabestias" field="selections" includeChildForces="false" includeChildSelections="true" scope="2e6a6d93-4bf5-4be1-89e5-da3c1df8d1f3" shared="true" type="lessThan" value="1"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="true"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </entryLink>
             <entryLink name="Saga de los Lobos" id="0325e31b-27cb-4bf4-ad32-3ca04803298b" collective="false" hidden="false" import="true" sortIndex="3" targetId="08419059-4bd3-4519-ad5f-866832f38bc5" type="selectionEntry">
               <constraints>
                 <constraint id="7d43b2db-32d6-4e91-ba66-5ab367811b62" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink name="Saga de los Lobos" id="47f5e270-98e2-4cab-bce9-ae834fcd31de" hidden="false" primary="false" targetId="0f0e97ac-549c-47fd-bdeb-818ff78dce8c"/>
+              </categoryLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="15"/>
               </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition childId="0f0e97ac-549c-47fd-bdeb-818ff78dce8c" childName="Saga de los Lobos" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+                    <condition childId="08419059-4bd3-4519-ad5f-866832f38bc5" childName="Saga de los Lobos" field="selections" includeChildForces="false" includeChildSelections="true" scope="2e6a6d93-4bf5-4be1-89e5-da3c1df8d1f3" shared="true" type="lessThan" value="1"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="true"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </entryLink>
             <entryLink name="Saga del Nacido Guerrero" id="c0382406-5d50-4b1e-889c-ef0ded0a35c7" collective="false" hidden="false" import="true" sortIndex="4" targetId="ab09a43c-8c39-432e-8222-e7fbb409ffe8" type="selectionEntry">
               <constraints>
                 <constraint id="4d94168b-4bc5-4c83-9ef4-74c22eaa0230" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink name="Saga del Nacido Guerrero" id="4a1127ad-ecee-4a1d-95dc-fccfe74a1ae8" hidden="false" primary="false" targetId="8cd6542c-0d99-406d-82e8-7c133ed09402"/>
+              </categoryLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="35"/>
               </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition childId="8cd6542c-0d99-406d-82e8-7c133ed09402" childName="Saga del Nacido Guerrero" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+                    <condition childId="ab09a43c-8c39-432e-8222-e7fbb409ffe8" childName="Saga del Nacido Guerrero" field="selections" includeChildForces="false" includeChildSelections="true" scope="2e6a6d93-4bf5-4be1-89e5-da3c1df8d1f3" shared="true" type="lessThan" value="1"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="true"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -2813,17 +2943,45 @@
               <constraints>
                 <constraint id="c04cc3ae-1b7a-4ed6-bfbc-74ab386d368f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink name="Saga del Matabestias" id="410b1237-bb07-4817-97c6-784ab8d46cb1" hidden="false" primary="false" targetId="fef6905f-c2f1-4a8d-b98c-d7462c932abb"/>
+              </categoryLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition childId="fef6905f-c2f1-4a8d-b98c-d7462c932abb" childName="Saga del Matabestias" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+                    <condition childId="007d8dc4-8aba-4456-87ef-86567ada32e4" childName="Saga del Matabestias" field="selections" includeChildForces="false" includeChildSelections="true" scope="49e9b914-d353-47d1-8651-2a9d7b1a64bd" shared="true" type="lessThan" value="1"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="true"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </entryLink>
             <entryLink name="Saga del Nacido Guerrero" id="af4741ca-7994-4a40-9053-38d04a1621fb" collective="false" hidden="false" import="true" sortIndex="2" targetId="ab09a43c-8c39-432e-8222-e7fbb409ffe8" type="selectionEntry">
               <constraints>
                 <constraint id="2ee76dfc-cecd-4ae7-bfc6-666b6a890c3e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink name="Saga del Nacido Guerrero" id="02d2beb2-54d6-4c1d-b2b0-1afffb34dd8c" hidden="false" primary="false" targetId="8cd6542c-0d99-406d-82e8-7c133ed09402"/>
+              </categoryLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="35"/>
               </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition childId="8cd6542c-0d99-406d-82e8-7c133ed09402" childName="Saga del Nacido Guerrero" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+                    <condition childId="ab09a43c-8c39-432e-8222-e7fbb409ffe8" childName="Saga del Nacido Guerrero" field="selections" includeChildForces="false" includeChildSelections="true" scope="49e9b914-d353-47d1-8651-2a9d7b1a64bd" shared="true" type="lessThan" value="1"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="true"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -3397,41 +3555,111 @@
               <constraints>
                 <constraint id="b527dddd-8a7b-4ffb-9eec-b47e73b92126" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink name="Saga del Matabestias" id="8dc0dd49-358c-42d6-b2ee-c2c24d1e70dc" hidden="false" primary="false" targetId="fef6905f-c2f1-4a8d-b98c-d7462c932abb"/>
+              </categoryLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition childId="fef6905f-c2f1-4a8d-b98c-d7462c932abb" childName="Saga del Matabestias" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+                    <condition childId="007d8dc4-8aba-4456-87ef-86567ada32e4" childName="Saga del Matabestias" field="selections" includeChildForces="false" includeChildSelections="true" scope="e18ef137-ece0-4958-b713-32129c30cd11" shared="true" type="lessThan" value="1"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="true"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </entryLink>
             <entryLink name="Saga de los Lobos" id="8f11ea27-49cc-46cf-a30e-cd58cc94ed3f" collective="false" hidden="false" import="true" sortIndex="2" targetId="08419059-4bd3-4519-ad5f-866832f38bc5" type="selectionEntry">
               <constraints>
                 <constraint id="ce3e6f75-7562-4351-88bb-3da2495e5d4f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink name="Saga de los Lobos" id="5a96d118-8fd3-4450-a695-957fc6ebaa8a" hidden="false" primary="false" targetId="0f0e97ac-549c-47fd-bdeb-818ff78dce8c"/>
+              </categoryLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="15"/>
               </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition childId="0f0e97ac-549c-47fd-bdeb-818ff78dce8c" childName="Saga de los Lobos" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+                    <condition childId="08419059-4bd3-4519-ad5f-866832f38bc5" childName="Saga de los Lobos" field="selections" includeChildForces="false" includeChildSelections="true" scope="e18ef137-ece0-4958-b713-32129c30cd11" shared="true" type="lessThan" value="1"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="true"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </entryLink>
             <entryLink name="Saga de Majestad" id="8ed6dc11-ff17-454f-910f-56319688164b" collective="false" hidden="false" import="true" sortIndex="3" targetId="aa2edaac-a547-4d78-9424-45781d9b13c6" type="selectionEntry">
               <constraints>
                 <constraint id="54022c03-b274-49cf-860e-d96c5ada48c8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink name="Saga de Majestad" id="593198a3-d045-4902-9200-2566de054244" hidden="false" primary="false" targetId="70d9fb2b-ea58-469d-ae4b-eecb10ad3642"/>
+              </categoryLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="15"/>
               </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition childId="70d9fb2b-ea58-469d-ae4b-eecb10ad3642" childName="Saga de Majestad" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+                    <condition childId="aa2edaac-a547-4d78-9424-45781d9b13c6" childName="Saga de Majestad" field="selections" includeChildForces="false" includeChildSelections="true" scope="e18ef137-ece0-4958-b713-32129c30cd11" shared="true" type="lessThan" value="1"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="true"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </entryLink>
             <entryLink name="Saga del Nacido Guerrero" id="3460cef9-3461-4701-9603-1e6b640fa70c" collective="false" hidden="false" import="true" sortIndex="4" targetId="ab09a43c-8c39-432e-8222-e7fbb409ffe8" type="selectionEntry">
               <constraints>
                 <constraint id="cf5034ca-112e-4fb4-82f7-018c45200721" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink name="Saga del Nacido Guerrero" id="2a7a3c41-6573-4b72-bd88-dc69013f3039" hidden="false" primary="false" targetId="8cd6542c-0d99-406d-82e8-7c133ed09402"/>
+              </categoryLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="35"/>
               </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition childId="8cd6542c-0d99-406d-82e8-7c133ed09402" childName="Saga del Nacido Guerrero" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+                    <condition childId="ab09a43c-8c39-432e-8222-e7fbb409ffe8" childName="Saga del Nacido Guerrero" field="selections" includeChildForces="false" includeChildSelections="true" scope="e18ef137-ece0-4958-b713-32129c30cd11" shared="true" type="lessThan" value="1"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="true"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </entryLink>
             <entryLink name="Saga del Oso" id="8c46ae93-95b4-400a-aed9-0ee7576f46f7" collective="false" hidden="false" import="true" sortIndex="5" targetId="66c82453-e3d9-47a1-a8ee-98f5832de082" type="selectionEntry">
               <constraints>
                 <constraint id="5d557f3f-792c-4886-895a-77fcb5e0e3a6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
+              <categoryLinks>
+                <categoryLink name="Saga del Oso" id="fc370df8-8359-46d7-9469-8549b1d0acff" hidden="false" primary="false" targetId="171e63b4-9d12-4028-ba87-0f6e6e824ab4"/>
+              </categoryLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="35"/>
               </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition childId="171e63b4-9d12-4028-ba87-0f6e6e824ab4" childName="Saga del Oso" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+                    <condition childId="66c82453-e3d9-47a1-a8ee-98f5832de082" childName="Saga del Oso" field="selections" includeChildForces="false" includeChildSelections="true" scope="e18ef137-ece0-4958-b713-32129c30cd11" shared="true" type="lessThan" value="1"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="true"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
