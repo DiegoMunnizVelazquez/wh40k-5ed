@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="de8b-5a14-0e15-e5d9" name="Lobos Espaciales" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" revision="3" authorUrl="csddmv@gmail.com" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" battleScribeVersion="2.03" type="catalogue">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" library="false" id="de8b-5a14-0e15-e5d9" name="Lobos Espaciales" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" revision="4" authorUrl="csddmv@gmail.com" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" battleScribeVersion="2.03" type="catalogue">
   <categoryEntries>
     <categoryEntry name="Saga del Matabestias" id="fef6905f-c2f1-4a8d-b98c-d7462c932abb" hidden="false"/>
     <categoryEntry name="Saga de Majestad" id="70d9fb2b-ea58-469d-ae4b-eecb10ad3642" hidden="false"/>
@@ -13,16 +13,49 @@
       <categoryLinks>
         <categoryLink name="CG" id="1e6b4f91-0bbc-4282-993d-70f448632ab3" hidden="false" primary="true" targetId="dd59-30d7-da4f-6ea4"/>
       </categoryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition childId="70d9fb2b-ea58-469d-ae4b-eecb10ad3642" childName="Saga de Majestad" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+            <condition childId="29aa3050-1299-46fa-8887-07287ebbce02" childName="Logan Grimnar, el Gran Lobo" field="selections" includeChildForces="false" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+          </conditions>
+          <modifiers>
+            <modifier field="hidden" type="set" value="true"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </entryLink>
     <entryLink name="Njal Stormcaller, Señor de las Tormentas" id="506e8eca-8583-4af7-828a-568d04a6b415" collective="false" hidden="false" import="true" targetId="93a680e2-6dee-4398-8f0a-c525a887b9ab" type="selectionEntry">
       <categoryLinks>
         <categoryLink name="CG" id="21fba6c0-b72f-401d-b509-0a8c863fb722" hidden="false" primary="true" targetId="dd59-30d7-da4f-6ea4"/>
       </categoryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition childId="70d9fb2b-ea58-469d-ae4b-eecb10ad3642" childName="Saga de Majestad" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+            <condition childId="93a680e2-6dee-4398-8f0a-c525a887b9ab" childName="Njal Stormcaller, Señor de las Tormentas" field="selections" includeChildForces="false" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+          </conditions>
+          <modifiers>
+            <modifier field="hidden" type="set" value="true"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </entryLink>
     <entryLink name="Señor Lobo Ragnar Blackmane" id="4be5dd08-6387-48dc-a15d-da9556fbbc7e" collective="false" hidden="false" import="true" targetId="41120dee-c23e-423e-8f2f-4500e0005923" type="selectionEntry">
       <categoryLinks>
         <categoryLink name="CG" id="8ec80877-2b5c-46a2-92f0-ec5d784d7c7e" hidden="false" primary="true" targetId="dd59-30d7-da4f-6ea4"/>
       </categoryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition childId="8cd6542c-0d99-406d-82e8-7c133ed09402" childName="Saga del Nacido Guerrero" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+            <condition childId="41120dee-c23e-423e-8f2f-4500e0005923" childName="Señor Lobo Ragnar Blackmane" field="selections" includeChildForces="false" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+          </conditions>
+          <modifiers>
+            <modifier field="hidden" type="set" value="true"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </entryLink>
     <entryLink name="Ulrik el Matador" id="c58e8526-687e-4179-82b3-9cc507c7c219" collective="false" hidden="false" import="true" targetId="435bfa06-6b78-4afa-b4df-f0efdbfd1dd3" type="selectionEntry">
       <categoryLinks>
@@ -33,6 +66,17 @@
       <categoryLinks>
         <categoryLink name="CG" id="eb7f98bb-f2bf-4b64-b8c6-20b08b4a2469" hidden="false" primary="true" targetId="dd59-30d7-da4f-6ea4"/>
       </categoryLinks>
+      <modifierGroups>
+        <modifierGroup type="and">
+          <conditions>
+            <condition childId="0f0e97ac-549c-47fd-bdeb-818ff78dce8c" childName="Saga de los Lobos" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="atLeast" value="1"/>
+            <condition childId="150f32b7-b0e8-4dbd-b0e5-57d49c9233e6" childName="Canis Nacido Lobo" field="selections" includeChildForces="false" includeChildSelections="true" scope="roster" shared="true" type="lessThan" value="1"/>
+          </conditions>
+          <modifiers>
+            <modifier field="hidden" type="set" value="true"/>
+          </modifiers>
+        </modifierGroup>
+      </modifierGroups>
     </entryLink>
     <entryLink name="Bjorn Garra Implacable" id="225cff94-b885-4d26-bbb3-912cdd480086" collective="false" hidden="false" import="true" targetId="ecb1dea1-2e34-4d07-863f-19514f7d6163" type="selectionEntry">
       <categoryLinks>
@@ -958,6 +1002,9 @@
             <constraint id="307d1fd9-f0bf-447e-a537-a57197c7cb94" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="1a6460ae-370f-44ef-8035-79966f80223a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="Saga de los Lobos" id="5eebd283-7d77-4f2f-b97d-a194bc52ca10" hidden="false" primary="false" targetId="0f0e97ac-549c-47fd-bdeb-818ff78dce8c"/>
+          </categoryLinks>
         </entryLink>
       </entryLinks>
       <infoLinks>
@@ -1885,6 +1932,9 @@
             <constraint id="434a8ff8-b2ab-4b9d-9f8d-3c4b342805ea" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="47a3768a-38e4-44af-9096-983085eb52ff" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="Saga de Majestad" id="b17548e5-f91e-4027-a14a-b935f61cbb00" hidden="false" primary="false" targetId="70d9fb2b-ea58-469d-ae4b-eecb10ad3642"/>
+          </categoryLinks>
         </entryLink>
       </entryLinks>
       <infoLinks>
@@ -1957,6 +2007,9 @@
             <constraint id="33f22c6d-0d7c-41cf-8415-24878c039bbc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="4f5122bf-c12d-4734-9401-278028528b8b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="Saga de Majestad" id="9d4e7469-4d92-4cc9-b624-4099d58574c1" hidden="false" primary="false" targetId="70d9fb2b-ea58-469d-ae4b-eecb10ad3642"/>
+          </categoryLinks>
         </entryLink>
         <entryLink name="Trueno" id="5a84bb09-3095-4c6c-9ccd-0d4c71428977" collective="false" hidden="false" import="true" targetId="a842a5ae-08f3-4618-bce8-4d640df7f31c" type="selectionEntry">
           <constraints>
@@ -2119,6 +2172,9 @@
             <constraint id="dd62ed30-c793-4ede-a392-36c468a908d7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="fc96193a-9b87-4ed4-a727-cd1947a25cec" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
+          <categoryLinks>
+            <categoryLink name="Saga del Nacido Guerrero" id="a3fdfdce-f13b-4b82-b8be-3933c9d4e837" hidden="false" primary="false" targetId="8cd6542c-0d99-406d-82e8-7c133ed09402"/>
+          </categoryLinks>
         </entryLink>
       </entryLinks>
       <infoLinks>
