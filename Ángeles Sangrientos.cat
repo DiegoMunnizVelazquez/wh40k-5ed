@@ -6082,6 +6082,10 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
         <infoLink name="Bólter" id="3edac49d-a3bc-484c-be2b-6eedf18118ad" hidden="false" targetId="90a7-c0e2-3a06-dc70" type="profile"/>
         <infoLink name="Bólter" id="1ae2e9b9-740b-4d0a-a7d7-766389170b27" hidden="false" targetId="90a7-c0e2-3a06-dc70" type="profile"/>
       </infoLinks>
+      <modifiers>
+        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry name="Rhino" id="c183ba42-73f3-4ac0-9ac7-104afcc58d71" collapsible="true" hidden="false" import="true" type="unit">
       <costs>
@@ -7881,14 +7885,6 @@ Si un vehículo detona las minas de racimo, los impactos siempre se resuelven co
             <constraint id="f0d79a21-897b-4ca8-a0f1-af15d104ae4e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="4"/>
           </constraints>
         </entryLink>
-        <entryLink name="Bólteres huracán (ambas barquillas)" id="0601675a-8ecf-455f-8380-7a2fc73fbf63" collective="false" hidden="false" import="true" targetId="cdf7377b-4d22-4971-ab7a-342b87b6533a" type="selectionEntry">
-          <constraints>
-            <constraint id="527d375b-951a-45ec-9bb5-560f45b4a3de" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="Pts" typeId="puntos" value="30"/>
-          </costs>
-        </entryLink>
       </entryLinks>
       <infoLinks>
         <infoLink name="Stormraven" id="3ca447ab-f8d4-4fcc-a0b6-a7b662ff37b7" hidden="false" targetId="f5dcdde8-c171-4ff8-94df-201aace81631" type="profile"/>
@@ -7898,6 +7894,24 @@ Si un vehículo detona las minas de racimo, los impactos siempre se resuelven co
         <infoLink name="Cielos encarnados" id="422bf970-8da4-4936-ae9f-9935507da98f" hidden="false" targetId="c77dcc68-08fa-4fe0-900b-56baa6b26168" type="rule"/>
         <infoLink name="Placas de ceramita" id="4c49c8bc-ede6-4490-aebe-2ea1371ed0f8" hidden="false" targetId="1d84b2ac-5c3d-409a-9fc8-911a4624d7ad" type="rule"/>
       </infoLinks>
+      <selectionEntries>
+        <selectionEntry name="Bolters huracán en barquillas" id="0f37-dedd-3a01-a4a3" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="7f9b-be7b-a35a-721d" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="30"/>
+          </costs>
+          <entryLinks>
+            <entryLink name="Bólteres huracán" id="0601675a-8ecf-455f-8380-7a2fc73fbf63" collective="false" hidden="false" import="true" targetId="cdf7377b-4d22-4971-ab7a-342b87b6533a" type="selectionEntry">
+              <constraints>
+                <constraint id="527d375b-951a-45ec-9bb5-560f45b4a3de" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
+                <constraint id="e20d-d285-e834-5df4" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="2"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Arma acoplada de la cabina" id="41aff1a7-6973-4311-9100-eb2013da833d" collapsible="true" collective="false" defaultSelectionEntryId="fd8d0e18-fd3a-4ac4-838d-eab15ffc3723" hidden="false" import="true">
           <constraints>
