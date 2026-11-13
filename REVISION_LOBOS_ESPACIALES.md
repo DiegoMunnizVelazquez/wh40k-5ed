@@ -168,6 +168,13 @@ Rhino (35), Razorback (40) y Cápsula de desembarco (35) pasan al perfil «Trans
 - Reglas «Jefe de batalla de la Guardia del Lobo» (enlazada al Jefe de batalla) y «Los líderes de la manada» (enlazada a las 10 unidades de CG).
 - `.bsr` regenerado con índice de Lobos Espaciales en revisión 9.
 
+## Revisión en NewRecruit: correcciones
+- **Límite de CG**: el `.gst` limita a 2; se añadió la categoría «Líder de la manada» (en las 10 unidades de CG) y un modificador `increment` +2 al máximo de CG en el Destacamento Básico del `.gst` (máx. 4 con un CG de Lobos).
+- **Motocicleta**: modificadores de perfil en cada `entryLink` (Tipo «Motocicletas», R `4(5)`) y bólter acoplado en el perfil de la moto.
+- **Montura de lobo de trueno**: Tipo «Caballería» y F, R y A con `increment` 1; reglas Bestias y Caballería y Armas aceradas enlazadas.
+- **Saga del Cazador** (Sacerdote Lobo y Jefe de batalla): ahora se oculta si NO hay servoarmadura seleccionada o si hay retrorreactor o motocicleta (y montura en el Jefe). Las condiciones «o» pasan a `conditionGroup type="or"` dentro de un `modifier`, el formato estándar, en lugar de `modifierGroup type="or"`. **Confirmado en NewRecruit que así funciona.** Si falla otra ocultación con condiciones «o», migrarla igual (ver `DOCUMENTACION.md` 14.2).
+- Guía general en `DOCUMENTACION.md` (14.2, «Movilidad que cambia el perfil»).
+
 ## PENDIENTE DE REVISAR EN NEWRECRUIT (no probado)
 El catálogo valida (ids únicos, enlaces resueltos) pero **no se ha abierto en NewRecruit**. Casos a comprobar:
 1. **Etiquetas de saga (CG)**: que al elegir una saga en un personaje genérico se oculte en el resto, y que los personajes especiales (saga fija) no la bloqueen.

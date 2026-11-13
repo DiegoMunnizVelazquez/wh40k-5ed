@@ -16,6 +16,7 @@ Prueba</readme>
     <categoryEntry name="Personaje Especial" id="ee338739-6edf-4620-a2cc-f38d5dd21606" hidden="false"/>
     <categoryEntry name="Personaje Independiente" id="c0a6-b371-006e-1e70" hidden="false"/>
     <categoryEntry name="Heraldo" id="ff67-ac85-ed01-ffca" hidden="false"/>
+    <categoryEntry name="Líder de la manada" id="9e4c1d52-7b3a-4f0e-a6d1-3c58b2e91f74" hidden="false"/>
   </categoryEntries>
   <costTypes>
     <costType name="Pts" id="puntos" defaultCostLimit="1750" hidden="false"/>
@@ -34,6 +35,11 @@ Prueba</readme>
               <repeats>
                 <repeat childId="ff67-ac85-ed01-ffca" childName="Heraldo" field="selections" includeChildForces="true" includeChildSelections="true" repeats="1" roundUp="false" scope="roster" shared="true" value="2"/>
               </repeats>
+            </modifier>
+            <modifier field="da7e-d1f2-0445-9e2a" type="increment" value="2">
+              <conditions>
+                <condition childId="9e4c1d52-7b3a-4f0e-a6d1-3c58b2e91f74" childName="Líder de la manada" field="selections" includeChildForces="true" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="atLeast" value="1"/>
+              </conditions>
             </modifier>
           </modifiers>
         </categoryLink>
