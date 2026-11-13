@@ -999,10 +999,10 @@
       <description>Los Lobos Solitarios suelen buscar a los enemigos más grandes y peligrosos para tratar de recuperar el honor perdido de su manada. Un Lobo Solitario puede repetir las tiradas para impactar no superadas contra bípodes, criaturas monstruosas y miniaturas con un atributo de Resistencia de 5 o superior.</description>
     </rule>
     <rule name="Carga asesina" id="b22283bf-9c20-4227-b042-6ffa2f9cf427" hidden="false">
-      <description>Los Garras Sangrientas son famosos por su sangrienta ferocidad en las cargas. Por ello, se benefician de un modificador de +2 Ataques cuando cargan (en lugar del habitual +1). Recuerda que esta regla especial no se aplica a otras miniaturas que se hayan unido a la manada y tampoco puede utilizarse al efectuar un contraataque.</description>
+      <description>Las miniaturas con esta regla especial son famosas por su sangrienta ferocidad en las cargas. Por ello, se benefician de un modificador de +2 Ataques cuando cargan (en lugar del habitual +1). Recuerda que esta regla especial no se aplica a otras miniaturas que se hayan unido a la unidad y tampoco puede utilizarse al efectuar un contraataque.</description>
     </rule>
     <rule name="Temerarios" id="e56311ed-d006-4b59-9004-90e483437da3" hidden="false">
-      <description>Los Garras Sangrientas correrán muchos riesgos en su búsqueda de gloria personal. Si una manada de Garras Sangrientas se halla a una distancia de hasta 15 cm de una miniatura enemiga al inicio de su fase de Disparo, la manada olvidará que es su fase de Disparo y se preparará para efectuar una carga devastadora (¡se han dejado llevar por la furia y no pueden apuntar!). La manada debe intentar atacar en la fase de asalto siguiente si es posible, beneficiándose de la regla especial carga asesina. Si un Guardián del Lobo o un personaje independiente acompaña a los Garras Sangrientas, no se aplica la regla temerarios, ya que la presencia de su mentor les hace actuar con más sentido común.</description>
+      <description>Las miniaturas con esta regla especial correrán muchos riesgos en su búsqueda de gloria personal. Si una unidad con esta regla se halla a una distancia de hasta 15 cm de una miniatura enemiga al inicio de su fase de Disparo, la unidad olvidará que es su fase de Disparo y se preparará para efectuar una carga devastadora (¡se han dejado llevar por la furia y no pueden apuntar!). La unidad debe intentar atacar en la fase de asalto siguiente si es posible, beneficiándose de la regla especial carga asesina. Si un Guardián del Lobo o un personaje independiente acompaña a la unidad, no se aplica la regla temerarios, ya que la presencia de su mentor les hace actuar con más sentido común.</description>
     </rule>
     <rule name="Rebelde" id="5098c758-a10f-44af-904c-a6b397767623" hidden="false">
       <description>Lukas no siente respeto alguno por la autoridad. Su liderazgo no puede incrementarse nunca de ninguna forma, y su presencia socava tanto la moral que la unidad a la que se haya unido tendrá un Liderazgo máximo de 8.</description>
@@ -1207,12 +1207,12 @@
                 <constraint id="ac6f508c-93c5-4525-a4db-8670e6568158" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
               <entryLinks>
-                <entryLink name="Bólter" id="e163a269-d3b6-4283-80c3-e4c9cf1acf81" collective="false" hidden="false" import="true" sortIndex="1" targetId="f0fd9c11-59b1-4221-98e1-8fa04c6fa7c3" type="selectionEntry">
+                <entryLink name="Bólter" id="e163a269-d3b6-4283-80c3-e4c9cf1acf81" collective="false" hidden="false" import="true" sortIndex="2" targetId="f0fd9c11-59b1-4221-98e1-8fa04c6fa7c3" type="selectionEntry">
                   <constraints>
                     <constraint id="f699b2b0-38c0-4b95-92d6-5373df1d766d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                 </entryLink>
-                <entryLink name="Pistola bólter" id="25d774c5-bdd8-4f70-900f-6ced1bbe1a6c" collective="false" hidden="false" import="true" sortIndex="2" targetId="9dd14127-5e61-4f0d-820e-4d1d7930a698" type="selectionEntry">
+                <entryLink name="Pistola bólter" id="25d774c5-bdd8-4f70-900f-6ced1bbe1a6c" collective="false" hidden="false" import="true" sortIndex="1" targetId="9dd14127-5e61-4f0d-820e-4d1d7930a698" type="selectionEntry">
                   <constraints>
                     <constraint id="230faa95-061c-4c32-847e-6b4d964f4c2f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
@@ -2722,14 +2722,14 @@
                 <constraint id="df100804-4d52-40ab-a080-d3a28b59e491" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
               <entryLinks>
-                <entryLink name="Pistola bólter" id="c90a5fc1-8717-46e0-9e81-3416992b4062" collective="false" hidden="false" import="true" sortIndex="2" targetId="9dd14127-5e61-4f0d-820e-4d1d7930a698" type="selectionEntry">
+                <entryLink name="Pistola bólter" id="c90a5fc1-8717-46e0-9e81-3416992b4062" collective="false" hidden="false" import="true" sortIndex="1" targetId="9dd14127-5e61-4f0d-820e-4d1d7930a698" type="selectionEntry">
                   <constraints>
                     <constraint id="23a92ec9-3db2-4ea2-8236-bc154fb6be46" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
               <selectionEntries>
-                <selectionEntry name="Arma especial (una por escuadra)" id="a2b2e226-79cb-497f-b0bf-b41509678bce" collapsible="true" hidden="false" import="true" sortIndex="1" type="upgrade">
+                <selectionEntry name="Arma especial (una por escuadra)" id="a2b2e226-79cb-497f-b0bf-b41509678bce" collapsible="true" hidden="false" import="true" sortIndex="2" type="upgrade">
                   <constraints>
                     <constraint id="8d6bcfe4-a019-4578-8f41-36059bc16ed5" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="4239240e-6a5b-434d-b9ae-2bd988091167" shared="true" type="max" value="1"/>
                   </constraints>
@@ -4290,6 +4290,9 @@
               </constraints>
               <selectionEntries>
                 <selectionEntry name="Land Speeder Tifón" id="0437d966-6636-43ed-9519-5cafb4fbb360" collapsible="true" hidden="false" import="true" sortIndex="1" type="upgrade">
+                  <constraints>
+                    <constraint id="a4ee8815-61f1-462a-af0d-d54ee6748e9d" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="82eeef3a-e33b-43b0-86af-0c5ab89bf579" shared="true" type="max" value="1"/>
+                  </constraints>
                   <entryLinks>
                     <entryLink name="Lanzamisiles tifón" id="b367f4c3-9420-4698-bcd9-af4837ee9583" collective="false" hidden="false" import="true" targetId="a73538b2-c53a-4cdf-ac08-893d6bcf6f15" type="selectionEntry">
                       <constraints>
@@ -4683,47 +4686,51 @@
           </modifiers>
         </modifierGroup>
       </modifierGroups>
-      <selectionEntries>
-        <selectionEntry name="Lobo de Fenris" id="38b080a2-3c09-4cfc-888c-268ce654ec11" collapsible="true" hidden="false" import="true" sortIndex="1" type="model">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Tipo de lobo" id="e732379b-3f08-46d6-ac5f-715992180d36" collapsible="true" collective="false" defaultSelectionEntryId="d3125f9c-171e-41af-a3e1-d8e74ed23f23" hidden="false" import="true">
           <constraints>
-            <constraint id="7d76bc41-97e3-4bc5-b6c5-7382c974038a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="5"/>
-            <constraint id="198454fd-0ba5-4324-b1fd-8fef0d2e5e17" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="15"/>
+            <constraint id="86bb48f5-8222-4513-8f34-b9d450a2f944" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="5"/>
+            <constraint id="b29f34ee-a93c-44de-86e2-5016e47c8df6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="15"/>
           </constraints>
-          <costs>
-            <cost name="Pts" typeId="puntos" value="8"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Arma de combate cuerpo a cuerpo" id="1639f6fe-c8c5-4b8c-89bb-398bc0e36042" collective="false" hidden="false" import="true" targetId="883cc55e-3355-4d80-bf46-24ae0117730b" type="selectionEntry">
+          <selectionEntries>
+            <selectionEntry name="Lobo de Fenris" id="d3125f9c-171e-41af-a3e1-d8e74ed23f23" collapsible="true" hidden="false" import="true" sortIndex="1" type="model">
+              <costs>
+                <cost name="Pts" typeId="puntos" value="8"/>
+              </costs>
+              <entryLinks>
+                <entryLink name="Arma de combate cuerpo a cuerpo" id="2b64d7d8-f3a3-41ad-bbcd-022859075819" collective="false" hidden="false" import="true" targetId="883cc55e-3355-4d80-bf46-24ae0117730b" type="selectionEntry">
+                  <constraints>
+                    <constraint id="4c265c9b-547a-4c9c-9fae-9086984a4de1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="5c98bd2c-4c21-4b06-9f68-e90cf5d3da36" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Lobo de Fenris" id="2b296026-6dde-477f-babc-afa3398b01b6" hidden="false" targetId="e31561ee-c6f6-4e0a-83ac-f9465fee218a" type="profile"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry name="Lobo cibernético" id="704b513a-9265-48c8-bc9f-58d305ca87aa" collapsible="true" hidden="false" import="true" sortIndex="2" type="model">
               <constraints>
-                <constraint id="63f21900-726b-4884-a0c8-13e034905dca" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                <constraint id="3e7af307-115f-406e-b5d8-1670ab9e1a4c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                <constraint id="e3e45733-35eb-4097-8c42-0fb01b1d1c47" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="f784d923-65a8-408c-9057-9facd7ed78f8" shared="true" type="max" value="1"/>
               </constraints>
-            </entryLink>
-          </entryLinks>
-          <infoLinks>
-            <infoLink name="Lobo de Fenris" id="129f82bc-9d7b-4f61-8e1d-89872f3cefd5" hidden="false" targetId="e31561ee-c6f6-4e0a-83ac-f9465fee218a" type="profile"/>
-          </infoLinks>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Tipo de lobo" id="e732379b-3f08-46d6-ac5f-715992180d36" collapsible="true" collective="false" defaultSelectionEntryId="d3125f9c-171e-41af-a3e1-d8e74ed23f23" hidden="false" import="true">
-              <constraints>
-                <constraint id="eed5a3b3-5ad0-475b-a4d9-9c7e5ec6cff4" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                <constraint id="4cf94fa1-d9fc-446f-97b2-edb24a353902" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry name="Lobo de Fenris" id="d3125f9c-171e-41af-a3e1-d8e74ed23f23" collapsible="true" hidden="false" import="true" sortIndex="1" type="upgrade"/>
-                <selectionEntry name="Lobo cibernético" id="704b513a-9265-48c8-bc9f-58d305ca87aa" collapsible="true" hidden="false" import="true" sortIndex="2" type="upgrade">
-                  <costs>
-                    <cost name="Pts" typeId="puntos" value="8"/>
-                  </costs>
-                  <infoLinks>
-                    <infoLink name="Lobo cibernético" id="a2fb241c-5b9f-4d4d-9f28-e55ad1488a63" hidden="false" targetId="a984a7ee-44c7-4f11-90bb-fb5b8a368443" type="profile"/>
-                  </infoLinks>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-        </selectionEntry>
-      </selectionEntries>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="16"/>
+              </costs>
+              <entryLinks>
+                <entryLink name="Arma de combate cuerpo a cuerpo" id="a1300bad-f13b-4894-8b91-097d206c1a55" collective="false" hidden="false" import="true" targetId="883cc55e-3355-4d80-bf46-24ae0117730b" type="selectionEntry">
+                  <constraints>
+                    <constraint id="15189b96-d52b-4350-b468-4ffa222d2ae7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="ad92491e-b55d-4325-88ff-2573c45d9cb6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Lobo cibernético" id="15f31ff0-b5d1-4a6c-a2a7-ab32a8dd135b" hidden="false" targetId="a984a7ee-44c7-4f11-90bb-fb5b8a368443" type="profile"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry name="Logan Grimnar, el Gran Lobo" id="29aa3050-1299-46fa-8887-07287ebbce02" collapsible="true" hidden="false" import="true" type="model">
       <constraints>
@@ -4908,14 +4915,14 @@
                 <constraint id="1e7cf5d4-6e8c-432a-9357-947881585bbf" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
               <entryLinks>
-                <entryLink name="Pistola bólter" id="e4d11495-bf70-421a-8c03-fefdde41430b" collective="false" hidden="false" import="true" sortIndex="2" targetId="9dd14127-5e61-4f0d-820e-4d1d7930a698" type="selectionEntry">
+                <entryLink name="Pistola bólter" id="e4d11495-bf70-421a-8c03-fefdde41430b" collective="false" hidden="false" import="true" sortIndex="1" targetId="9dd14127-5e61-4f0d-820e-4d1d7930a698" type="selectionEntry">
                   <constraints>
                     <constraint id="01e2cd39-201c-4ed2-8a0f-2bd6e9cea17a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
               <selectionEntries>
-                <selectionEntry name="Arma especial (una por escuadra)" id="36933073-6010-4ff4-a2bb-a140f41c39d5" collapsible="true" hidden="false" import="true" sortIndex="1" type="upgrade">
+                <selectionEntry name="Arma especial (una por escuadra)" id="36933073-6010-4ff4-a2bb-a140f41c39d5" collapsible="true" hidden="false" import="true" sortIndex="2" type="upgrade">
                   <constraints>
                     <constraint id="3730fef8-9b3b-41f1-b11b-e9e98616da0c" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="b6954ec8-a032-467e-8489-c75a6f87ece7" shared="true" type="max" value="1"/>
                   </constraints>
