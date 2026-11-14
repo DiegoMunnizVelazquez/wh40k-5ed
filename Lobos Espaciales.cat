@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Lobos Espaciales" id="de8b-5a14-0e15-e5d9" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="2" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Lobos Espaciales" id="de8b-5a14-0e15-e5d9" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="10" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Saga del Matabestias" id="fef6905f-c2f1-4a8d-b98c-d7462c932abb" hidden="false"/>
     <categoryEntry name="Saga de Majestad" id="70d9fb2b-ea58-469d-ae4b-eecb10ad3642" hidden="false"/>
@@ -7649,6 +7649,10 @@
         <infoLink name="Cañón Láser" id="2fc67115-4110-491b-848e-4f88da529cbf" hidden="false" targetId="b210-a1f3-d328-5739" type="profile"/>
         <infoLink name="Acoplada" id="7f1d6253-f5db-4fff-97d3-b5890801eae9" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
       </infoLinks>
+      <modifiers>
+        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry name="Bombas de fusión" id="1df535b4-9762-4052-99f5-19e0b1d5a183" hidden="false" import="true" type="upgrade">
       <infoLinks>
@@ -7892,18 +7896,30 @@
         <infoLink name="Lanzallamas Pesado" id="e4e643d3-ca76-49c6-99c1-8d030c26125f" hidden="false" targetId="ea35-d96a-285e-1a63" type="profile"/>
         <infoLink name="Acoplada" id="0ad89899-733a-496f-9d1a-737212a4dab7" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
       </infoLinks>
+      <modifiers>
+        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry name="Bólter pesado acoplado" id="3eddab81-d82e-4c3c-9f6e-7f5101f752f0" hidden="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink name="Bólter Pesado" id="3f0bb90d-50c7-4eff-9872-da43b6aced07" hidden="false" targetId="3c0e-4865-97cc-bd9c" type="profile"/>
         <infoLink name="Acoplada" id="e6c8c1c2-7293-4bd2-844c-fdb75aafc5d7" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
       </infoLinks>
+      <modifiers>
+        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry name="Cañón automático acoplado" id="3ea3154b-cad6-4322-97e4-9c980a9b1822" hidden="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink name="Cañón Automático" id="41f78910-2a2b-42d6-bf7d-ad4b64abf733" hidden="false" targetId="33e3-aa73-1b0e-2e83" type="profile"/>
         <infoLink name="Acoplada" id="b6e70f62-2bbc-41d3-a40c-e8bc8a23dbfb" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
       </infoLinks>
+      <modifiers>
+        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry name="Pellejo de Doppelgangrel" id="186ee6b7-2e30-4b19-b571-61107e477720" hidden="false" import="true" type="upgrade">
       <infoLinks>
@@ -7931,14 +7947,24 @@
       <infoLinks>
         <infoLink name="Bólter huracán" id="86878a38-09d1-439c-afc3-f509719113d4" hidden="false" targetId="cd4ba0b5-c5ae-4255-8838-b8900536e592" type="profile"/>
         <infoLink name="Bólter" id="c91f70fc-ab61-45b2-bcc4-34938f4a9ad1" hidden="false" targetId="90a7-c0e2-3a06-dc70" type="profile"/>
+        <infoLink name="Bólter" id="ff48352e-23fe-41b3-b176-5b61034a04e1" hidden="false" targetId="90a7-c0e2-3a06-dc70" type="profile"/>
+        <infoLink name="Bólter" id="4d678ccf-531a-488f-97bd-9c6fdc7b879f" hidden="false" targetId="90a7-c0e2-3a06-dc70" type="profile"/>
         <infoLink name="Acoplada" id="98aa560b-980b-4fdb-803b-b823da1e7487" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
       </infoLinks>
+      <modifiers>
+        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry name="Cañón de asalto acoplado" id="4d2f2276-67a6-4c2c-8b2e-d1649c82c1d4" hidden="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink name="Cañón de Asalto" id="b357a852-7093-45d8-b14d-fcaab40256fc" hidden="false" targetId="ca47-3295-c193-8e3b" type="profile"/>
         <infoLink name="Acoplada" id="628f5b57-2085-4ae5-8a1b-12c7c128a670" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
       </infoLinks>
+      <modifiers>
+        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry name="Descargadores de metralla" id="7f1dee53-ff45-4661-b2e5-fde8539417db" hidden="false" import="true" type="upgrade">
       <infoLinks>
@@ -7979,6 +8005,10 @@
         <infoLink name="Rifle de Plasma" id="bde98fa2-3998-486f-8836-84281b6d1ea0" hidden="false" targetId="223c-ecb9-2104-7007" type="profile"/>
         <infoLink name="Acoplada" id="b2dc48f1-ce62-4bd8-be25-8d3125490f28" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
       </infoLinks>
+      <modifiers>
+        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
