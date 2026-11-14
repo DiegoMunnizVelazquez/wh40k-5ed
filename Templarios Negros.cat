@@ -2209,11 +2209,14 @@
             <cost name="Pts" typeId="puntos" value="41"/>
           </costs>
           <entryLinks>
-            <entryLink name="Estandarte de compañía" id="511de64a-d9de-4408-9708-1bfce585e6c2" collective="false" hidden="false" import="true" targetId="e466c401-3e48-4455-8dc3-113df466439c" type="selectionEntry">
+            <entryLink name="Estandarte de compañía" id="e8583282-dbe2-4cc8-8358-3bf91343727e" collective="false" hidden="false" import="true" targetId="e466c401-3e48-4455-8dc3-113df466439c" type="selectionEntry">
               <constraints>
-                <constraint id="89fc3337-7745-4cf7-abfc-42b6fbb0facc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                <constraint id="e8583282-dbe2-4cc8-8358-3bf91343727e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                <constraint id="2fb6d45d-64c4-4bb9-962d-e1c8ec41c803" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="89fc3337-7745-4cf7-abfc-42b6fbb0facc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
+            </entryLink>
+            <entryLink name="Armería" id="511de64a-d9de-4408-9708-1bfce585e6c2" collective="false" hidden="false" import="true" targetId="b5252208-877b-49cf-bbfc-b0cfb69b4b5c" type="selectionEntryGroup">
+              <comment>Armería de Portaestandarte de compañía (ARMERÍA 1 HERIDA)</comment>
             </entryLink>
           </entryLinks>
           <infoLinks>
@@ -2227,13 +2230,8 @@
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
-              <entryLinks>
-                <entryLink name="Armería" id="6b2475ab-aca0-4b1d-a50b-a61f2e43ccef" collective="false" hidden="false" import="true" targetId="b5252208-877b-49cf-bbfc-b0cfb69b4b5c" type="selectionEntryGroup">
-                  <comment>Armería de Portaestandarte de compañía con honores (ARMERÍA 1 HERIDA)</comment>
-                </entryLink>
-              </entryLinks>
               <infoLinks>
-                <infoLink name="Honores de exterminador" id="2fb6d45d-64c4-4bb9-962d-e1c8ec41c803" hidden="false" targetId="5d38deed-edf0-4fae-ba14-b86a42cc9510" type="profile"/>
+                <infoLink name="Honores de exterminador" id="6b2475ab-aca0-4b1d-a50b-a61f2e43ccef" hidden="false" targetId="5d38deed-edf0-4fae-ba14-b86a42cc9510" type="profile"/>
               </infoLinks>
               <modifiers>
                 <modifier field="hidden" type="set" value="true">
@@ -2844,11 +2842,14 @@
             <cost name="Pts" typeId="puntos" value="41"/>
           </costs>
           <entryLinks>
-            <entryLink name="Estandarte de compañía" id="cc972afd-dda7-4725-a519-971b34345750" collective="false" hidden="false" import="true" targetId="e466c401-3e48-4455-8dc3-113df466439c" type="selectionEntry">
+            <entryLink name="Estandarte de compañía" id="3787f6de-0a74-42e2-bcee-84ddbe1eddb6" collective="false" hidden="false" import="true" targetId="e466c401-3e48-4455-8dc3-113df466439c" type="selectionEntry">
               <constraints>
-                <constraint id="b43497cc-723b-46dc-9a41-2a5e1d9af835" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                <constraint id="3787f6de-0a74-42e2-bcee-84ddbe1eddb6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                <constraint id="070c7180-62b2-4169-93a1-58a1129c6638" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="b43497cc-723b-46dc-9a41-2a5e1d9af835" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
+            </entryLink>
+            <entryLink name="Armería" id="cc972afd-dda7-4725-a519-971b34345750" collective="false" hidden="false" import="true" targetId="e18fcf8c-749b-4222-bda6-0785394a9b73" type="selectionEntryGroup">
+              <comment>Armería de Portaestandarte de compañía (ARMERÍA 1 HERIDA)</comment>
             </entryLink>
           </entryLinks>
           <infoLinks>
@@ -2862,13 +2863,8 @@
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
-              <entryLinks>
-                <entryLink name="Armería" id="33918d78-3dce-4477-927d-572a0c590808" collective="false" hidden="false" import="true" targetId="e18fcf8c-749b-4222-bda6-0785394a9b73" type="selectionEntryGroup">
-                  <comment>Armería de Portaestandarte de compañía con honores (ARMERÍA 1 HERIDA)</comment>
-                </entryLink>
-              </entryLinks>
               <infoLinks>
-                <infoLink name="Honores de exterminador" id="070c7180-62b2-4169-93a1-58a1129c6638" hidden="false" targetId="5d38deed-edf0-4fae-ba14-b86a42cc9510" type="profile"/>
+                <infoLink name="Honores de exterminador" id="33918d78-3dce-4477-927d-572a0c590808" hidden="false" targetId="5d38deed-edf0-4fae-ba14-b86a42cc9510" type="profile"/>
               </infoLinks>
               <modifiers>
                 <modifier field="hidden" type="set" value="true">
