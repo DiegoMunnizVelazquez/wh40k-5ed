@@ -5543,6 +5543,18 @@
               <costs>
                 <cost name="Pts" typeId="puntos" value="30"/>
               </costs>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <conditions>
+                    <condition childId="3b499ad2-605b-488a-a551-26d7f07ab956" field="selections" includeChildForces="true" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="lessThan" value="1"/>
+                    <condition childId="8e374ba1-9838-48b5-80f5-f64e6c0e0d18" field="selections" includeChildForces="true" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="lessThan" value="1"/>
+                    <condition childId="a8bf41c8-8bfa-4261-a16b-0235953bfe4e" field="selections" includeChildForces="true" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="lessThan" value="1"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="true"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </entryLink>
             <entryLink name="Manto de adamantina" id="dfa94328-4eb4-493b-ad47-1f1137ff0492" collective="false" hidden="false" import="true" targetId="afad6bfa-f26a-44c9-b7f9-4b53e74ed71d" type="selectionEntry" sortIndex="14">
               <constraints>
