@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Templarios Negros" id="7757-a04a-5363-3a75" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="18" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Templarios Negros" id="7757-a04a-5363-3a75" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="19" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink name="Capellán Grimaldus" id="874b023e-ec65-4682-b884-fb43a2a26e02" collective="false" hidden="false" import="true" targetId="a8bf41c8-8bfa-4261-a16b-0235953bfe4e" type="selectionEntry">
       <categoryLinks>
@@ -791,6 +791,9 @@
     </rule>
     <rule name="Tripulación del Predator" id="1c4100de-f9e4-43f6-b622-e6302316a7bf" hidden="false">
       <description>Tripulación: dos Iniciados.</description>
+    </rule>
+    <rule name="Servitécnico" id="05b34a16-a6d3-4477-8ea5-e86a1d4c234f" hidden="false">
+      <description>Por cada Servitécnico incluido en la escolta del Tecnomarine, este podrá añadir +1 al resultado del dado al intentar reparar un vehículo (consulta la regla bendición de Omnissiah).</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntries>
@@ -5442,9 +5445,6 @@
                 <constraint id="025c1e27-9d3e-4085-bdac-c684d5b77844" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
-            <entryLink name="Armería" id="f739eb24-43a9-4d5c-b15d-db2e0b805018" collective="false" hidden="false" import="true" targetId="4d7d96b3-027d-477a-9594-2f39a8b8cef9" type="selectionEntryGroup">
-              <comment>Armería de Tecnomarine (ARMERÍA 2+ HERIDAS)</comment>
-            </entryLink>
           </entryLinks>
           <infoLinks>
             <infoLink name="Tecnomarine" id="2626d0fa-97fe-44d5-b057-ac57776314d6" hidden="false" targetId="ac57d277-9a6d-4fca-884d-f4ec99390e9f" type="profile"/>
@@ -5455,7 +5455,7 @@
             <infoLink name="¡Sin piedad! ¡Sin remordimientos! ¡Sin miedo!" id="16201141-5f1e-4be8-b31f-627dde169e75" hidden="false" targetId="56922595-df87-4445-b7b8-ba009291c683" type="rule"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry name="Servoarnés" id="8f41c935-3322-4d95-bd2a-1baf00e759f1" collapsible="true" hidden="false" import="true" type="upgrade">
+            <selectionEntry name="Servoarnés" id="8f41c935-3322-4d95-bd2a-1baf00e759f1" collapsible="true" hidden="false" import="true" type="upgrade" sortIndex="2">
               <constraints>
                 <constraint id="683301e6-6242-4a28-867e-5e5fe853a41d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -5470,10 +5470,70 @@
                 <infoLink name="Lanzallamas" id="a22c8a0b-ab6b-4f8f-8411-e6d6f1a9c556" hidden="false" targetId="c6ed-e1e6-bd68-1891" type="profile"/>
               </infoLinks>
               <modifiers>
-                <modifier affects="profiles.Unidad" field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" scope="aeff67dd-b625-4ca1-bea4-e39842b1a85d" type="set" value="2+"/>
+                <modifier affects="profiles.Unidad" field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" scope="246b90bf-2c95-4158-a8f6-7dc67a22e9d0" type="set" value="2+"/>
+                <modifier field="hidden" type="set" value="true">
+                  <conditions>
+                    <condition childId="776b39b7-fc1b-49a9-a989-7f584ad1f27b" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="246b90bf-2c95-4158-a8f6-7dc67a22e9d0" shared="true" type="atLeast" value="1"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </selectionEntry>
           </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Armadura" id="47fe7795-5e50-488d-a81e-dff962f451f4" collapsible="true" collective="false" defaultSelectionEntryId="dc75ffe7-48d4-4517-86d7-df3a09a315ca" hidden="false" import="true" sortIndex="1">
+              <constraints>
+                <constraint id="b61426b8-0aa6-4cd9-841a-12644c2f18ea" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                <constraint id="e5664721-f6f6-41c4-9019-c4ed5b6a08b7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry name="Servoarmadura" id="dc75ffe7-48d4-4517-86d7-df3a09a315ca" collapsible="true" hidden="false" import="true" sortIndex="1" type="upgrade">
+                  <costs>
+                    <cost name="Pts" typeId="puntos" value="0"/>
+                  </costs>
+                  <entryLinks>
+                    <entryLink name="Armería" id="5fc7f60d-4971-4b23-8e12-38c985e15f7d" collective="false" hidden="false" import="true" targetId="4d7d96b3-027d-477a-9594-2f39a8b8cef9" type="selectionEntryGroup">
+                      <comment>Armería de Tecnomarine (ARMERÍA 2+ HERIDAS)</comment>
+                    </entryLink>
+                  </entryLinks>
+                  <infoLinks>
+                    <infoLink name="Servoarmadura" id="9c5d84ab-3ab7-44cd-b319-2820811983b1" hidden="false" targetId="35b6-b813-1033-e16a" type="profile">
+                      <modifiers>
+                        <modifier field="hidden" type="set" value="true">
+                          <conditions>
+                            <condition childId="5ad26ad5-4a2b-4792-b45e-8a14f600a187" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="dc75ffe7-48d4-4517-86d7-df3a09a315ca" shared="true" type="atLeast" value="1"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry name="Armadura de exterminador" id="776b39b7-fc1b-49a9-a989-7f584ad1f27b" collapsible="true" hidden="false" import="true" sortIndex="2" type="upgrade">
+                  <costs>
+                    <cost name="Pts" typeId="puntos" value="25"/>
+                  </costs>
+                  <entryLinks>
+                    <entryLink name="Armería" id="2811a607-8b00-470f-9f90-0e93ac655e86" collective="false" hidden="false" import="true" targetId="36aec812-f4fc-412f-99e8-75e13e42d0f1" type="selectionEntryGroup">
+                      <comment>Armería de Tecnomarine (ARMERÍA 2+ HERIDAS)</comment>
+                    </entryLink>
+                  </entryLinks>
+                  <infoLinks>
+                    <infoLink name="Armadura de exterminador" id="86033c32-0608-4b53-8fa7-7cbf0f2fe4b1" hidden="false" targetId="f51f4cef-3d60-41d0-b1de-2928f2078ffa" type="profile"/>
+                    <infoLink name="Honores de exterminador" id="bfe94b79-dfe6-4cf7-a1d7-1518df361930" hidden="false" targetId="5d38deed-edf0-4fae-ba14-b86a42cc9510" type="profile"/>
+                    <infoLink name="Implacables" id="0a3a3c6b-96ee-41de-833d-68f10c0a671d" hidden="false" targetId="470c-bf6a-caae-15c9" type="rule"/>
+                  </infoLinks>
+                  <modifiers>
+                    <modifier affects="profiles.Unidad" field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" scope="246b90bf-2c95-4158-a8f6-7dc67a22e9d0" type="set" value="2+"/>
+                    <modifier affects="profiles.Unidad" field="5dff3e7c-e024-4030-a71d-03195ec06ea7" scope="246b90bf-2c95-4158-a8f6-7dc67a22e9d0" type="increment" value="1"/>
+                    <modifier field="hidden" type="set" value="true">
+                      <conditions>
+                        <condition childId="8f41c935-3322-4d95-bd2a-1baf00e759f1" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="246b90bf-2c95-4158-a8f6-7dc67a22e9d0" shared="true" type="atLeast" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
@@ -5533,6 +5593,8 @@
               </entryLinks>
               <infoLinks>
                 <infoLink name="Servitécnico" id="bdf0d479-b848-4158-87b8-642622b4be83" hidden="false" targetId="43a64aee-7430-489a-a4a4-821c9a29b098" type="profile"/>
+                <infoLink name="Servitécnico" id="bd5dfbc2-adf0-4098-8f9a-9c8db4cdecb3" hidden="false" targetId="05b34a16-a6d3-4477-8ea5-e86a1d4c234f" type="rule"/>
+                <infoLink name="Bendición de Omnissiah" id="d193667b-8f7d-41d9-8899-200e9d73249e" hidden="false" targetId="f1e003d8-720f-4107-9394-78ce68c32219" type="rule"/>
               </infoLinks>
             </selectionEntry>
             <selectionEntry name="Servidor de Combate" id="f96e8fff-cab9-49e9-a378-1ebfbc87ce75" collapsible="true" hidden="false" import="true" sortIndex="3" type="model">
@@ -8189,7 +8251,7 @@
                 <cost name="Pts" typeId="puntos" value="15"/>
               </costs>
               <modifiers>
-                <modifier affects="profiles.Unidad" field="5dff3e7c-e024-4030-a71d-03195ec06ea7" scope="aeff67dd-b625-4ca1-bea4-e39842b1a85d" type="increment" value="1"/>
+                <modifier affects="profiles.Unidad" field="5dff3e7c-e024-4030-a71d-03195ec06ea7" scope="246b90bf-2c95-4158-a8f6-7dc67a22e9d0" type="increment" value="1"/>
               </modifiers>
             </entryLink>
             <entryLink name="Armadura artesanal" id="b81ec7af-2c8a-48cf-b31f-d292124d8cb0" collective="false" hidden="false" import="true" sortIndex="11" targetId="5ad26ad5-4a2b-4792-b45e-8a14f600a187" type="selectionEntry">
@@ -8200,7 +8262,7 @@
                 <cost name="Pts" typeId="puntos" value="20"/>
               </costs>
               <modifiers>
-                <modifier affects="profiles.Unidad" field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" scope="aeff67dd-b625-4ca1-bea4-e39842b1a85d" type="set" value="2+"/>
+                <modifier affects="profiles.Unidad" field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" scope="246b90bf-2c95-4158-a8f6-7dc67a22e9d0" type="set" value="2+"/>
               </modifiers>
             </entryLink>
             <entryLink name="Retrorreactor" id="8c608b0f-c0bc-4608-8972-94fcb23f4cf0" collective="false" hidden="false" import="true" sortIndex="12" targetId="eed4dfe0-4ab6-4a2f-9b30-1ecc1d721940" type="selectionEntry">
@@ -8227,8 +8289,8 @@
                 <cost name="Pts" typeId="puntos" value="30"/>
               </costs>
               <modifiers>
-                <modifier affects="profiles.Unidad" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" scope="aeff67dd-b625-4ca1-bea4-e39842b1a85d" type="set" value="Motocicletas"/>
-                <modifier affects="profiles.Unidad" field="3f9ed75c-36cd-4169-9cef-48391bb55cfd" scope="aeff67dd-b625-4ca1-bea4-e39842b1a85d" type="set" value="4(5)"/>
+                <modifier affects="profiles.Unidad" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" scope="246b90bf-2c95-4158-a8f6-7dc67a22e9d0" type="set" value="Motocicletas"/>
+                <modifier affects="profiles.Unidad" field="3f9ed75c-36cd-4169-9cef-48391bb55cfd" scope="246b90bf-2c95-4158-a8f6-7dc67a22e9d0" type="set" value="4(5)"/>
               </modifiers>
             </entryLink>
             <entryLink name="Manto de adamantina" id="c0c55bb1-4a89-46aa-a229-bcd985b213ca" collective="false" hidden="false" import="true" sortIndex="15" targetId="afad6bfa-f26a-44c9-b7f9-4b53e74ed71d" type="selectionEntry">
