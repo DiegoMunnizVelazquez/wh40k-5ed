@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Templarios Negros" id="7757-a04a-5363-3a75" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="17" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Templarios Negros" id="7757-a04a-5363-3a75" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="18" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink name="Capellán Grimaldus" id="874b023e-ec65-4682-b884-fb43a2a26e02" collective="false" hidden="false" import="true" targetId="a8bf41c8-8bfa-4261-a16b-0235953bfe4e" type="selectionEntry">
       <categoryLinks>
@@ -2161,16 +2161,6 @@
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
-              <entryLinks>
-                <entryLink name="Escudo de combate" id="b986d6ab-54ae-4687-9846-77a1c5900c36" collective="false" hidden="false" import="true" targetId="43224edc-6072-4c16-aac2-bf0ecc60dac5" type="selectionEntry">
-                  <constraints>
-                    <constraint id="db4fd099-8d9e-492b-92e6-2134290b1927" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="puntos" value="5"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
               <infoLinks>
                 <infoLink name="Honores de exterminador" id="f2dd14f8-8835-486c-b4bb-24b643219820" hidden="false" targetId="5d38deed-edf0-4fae-ba14-b86a42cc9510" type="profile"/>
               </infoLinks>
@@ -2178,54 +2168,6 @@
                 <modifier affects="profiles.Unidad" field="5dff3e7c-e024-4030-a71d-03195ec06ea7" scope="56eb8cfd-2049-4215-ab50-f14b366ff246" type="increment" value="1"/>
                 <modifier affects="profiles.Unidad" field="4a42059d-12cd-4c1f-a4c7-bb569d13eeea" scope="56eb8cfd-2049-4215-ab50-f14b366ff246" type="set" value="9"/>
               </modifiers>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Equipo de veterano" id="388933b9-bf74-4c34-b08c-ec85755b2ec6" collapsible="true" collective="false" hidden="false" import="true">
-                  <constraints>
-                    <constraint id="aa0eaf06-6902-4e2e-bfde-4279283f87a6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="0"/>
-                    <constraint id="0be30b6d-41bb-4143-ba29-459aa917588b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry name="Escudo de tormenta y arma de combate cuerpo a cuerpo" id="090ba71d-0e83-41f7-9ad0-6fc173ec9f6a" collapsible="true" hidden="false" import="true" sortIndex="1" type="upgrade">
-                      <costs>
-                        <cost name="Pts" typeId="puntos" value="10"/>
-                      </costs>
-                      <entryLinks>
-                        <entryLink name="Escudo de tormenta" id="6f7ac5df-347f-48d1-abea-a19c3baf023b" collective="false" hidden="false" import="true" targetId="7b750e29-7924-40ec-bc21-f1ca0e2c648f" type="selectionEntry">
-                          <constraints>
-                            <constraint id="0fea74cc-eb75-4ff8-8b0c-318a0b182dcb" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                            <constraint id="ff190148-08b4-4951-9630-e77034fcd8e7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                          </constraints>
-                        </entryLink>
-                        <entryLink name="Arma de combate cuerpo a cuerpo" id="e4bfb9cd-0ced-4d20-902f-bf4c0b54e60a" collective="false" hidden="false" import="true" targetId="3cbb7fed-ef23-4cef-a0db-ac9efe060cc9" type="selectionEntry">
-                          <constraints>
-                            <constraint id="f670921b-6ea2-4ed1-8065-2f0232ea2720" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                            <constraint id="ce5a20ac-7369-456c-8491-8f6756fd3567" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                          </constraints>
-                        </entryLink>
-                      </entryLinks>
-                    </selectionEntry>
-                    <selectionEntry name="Escudo de tormenta y pistola bólter" id="f3e0d158-58c0-40b8-a614-4508661ef230" collapsible="true" hidden="false" import="true" sortIndex="2" type="upgrade">
-                      <costs>
-                        <cost name="Pts" typeId="puntos" value="10"/>
-                      </costs>
-                      <entryLinks>
-                        <entryLink name="Escudo de tormenta" id="d9fcd788-d247-473d-a9c7-f74762fcb6c4" collective="false" hidden="false" import="true" targetId="7b750e29-7924-40ec-bc21-f1ca0e2c648f" type="selectionEntry">
-                          <constraints>
-                            <constraint id="599b86d3-abcd-497a-93d4-134ed7805d3f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                            <constraint id="d7bec949-6826-4e88-8f0a-cff2f5fe5c20" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                          </constraints>
-                        </entryLink>
-                        <entryLink name="Pistola bólter" id="b15e92bd-ccaf-4bb4-b537-703823099745" collective="false" hidden="false" import="true" targetId="50b70690-5f4a-4555-89c1-850e65d4527e" type="selectionEntry">
-                          <constraints>
-                            <constraint id="c9a87312-9be7-403f-ad92-e61d1c75a10a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                            <constraint id="cf08331c-7ece-4122-95c4-4a788eb046f7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                          </constraints>
-                        </entryLink>
-                      </entryLinks>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
@@ -2383,7 +2325,74 @@
                         <constraint id="94dc77f6-8947-4dcc-bd11-31f4b4041b6c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
                     </entryLink>
+                    <entryLink name="Escudo de combate" id="b986d6ab-54ae-4687-9846-77a1c5900c36" collective="false" hidden="false" import="true" targetId="43224edc-6072-4c16-aac2-bf0ecc60dac5" type="selectionEntry">
+                      <constraints>
+                        <constraint id="db4fd099-8d9e-492b-92e6-2134290b1927" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="5"/>
+                      </costs>
+                      <modifiers>
+                        <modifier field="hidden" type="set" value="true">
+                          <conditions>
+                            <condition childId="9f875bc7-9e30-458c-b5c6-35a5c70c1046" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="56eb8cfd-2049-4215-ab50-f14b366ff246" shared="true" type="lessThan" value="1"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
                   </entryLinks>
+                </selectionEntry>
+                <selectionEntry name="Escudo de tormenta y arma de combate cuerpo a cuerpo" id="090ba71d-0e83-41f7-9ad0-6fc173ec9f6a" collapsible="true" hidden="false" import="true" sortIndex="5" type="upgrade">
+                  <costs>
+                    <cost name="Pts" typeId="puntos" value="10"/>
+                  </costs>
+                  <entryLinks>
+                    <entryLink name="Escudo de tormenta" id="6f7ac5df-347f-48d1-abea-a19c3baf023b" collective="false" hidden="false" import="true" targetId="7b750e29-7924-40ec-bc21-f1ca0e2c648f" type="selectionEntry">
+                      <constraints>
+                        <constraint id="0fea74cc-eb75-4ff8-8b0c-318a0b182dcb" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                        <constraint id="ff190148-08b4-4951-9630-e77034fcd8e7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink name="Arma de combate cuerpo a cuerpo" id="e4bfb9cd-0ced-4d20-902f-bf4c0b54e60a" collective="false" hidden="false" import="true" targetId="3cbb7fed-ef23-4cef-a0db-ac9efe060cc9" type="selectionEntry">
+                      <constraints>
+                        <constraint id="f670921b-6ea2-4ed1-8065-2f0232ea2720" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                        <constraint id="ce5a20ac-7369-456c-8491-8f6756fd3567" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="true">
+                      <conditions>
+                        <condition childId="9f875bc7-9e30-458c-b5c6-35a5c70c1046" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="56eb8cfd-2049-4215-ab50-f14b366ff246" shared="true" type="lessThan" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntry>
+                <selectionEntry name="Escudo de tormenta y pistola bólter" id="f3e0d158-58c0-40b8-a614-4508661ef230" collapsible="true" hidden="false" import="true" sortIndex="6" type="upgrade">
+                  <costs>
+                    <cost name="Pts" typeId="puntos" value="10"/>
+                  </costs>
+                  <entryLinks>
+                    <entryLink name="Escudo de tormenta" id="d9fcd788-d247-473d-a9c7-f74762fcb6c4" collective="false" hidden="false" import="true" targetId="7b750e29-7924-40ec-bc21-f1ca0e2c648f" type="selectionEntry">
+                      <constraints>
+                        <constraint id="599b86d3-abcd-497a-93d4-134ed7805d3f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                        <constraint id="d7bec949-6826-4e88-8f0a-cff2f5fe5c20" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink name="Pistola bólter" id="b15e92bd-ccaf-4bb4-b537-703823099745" collective="false" hidden="false" import="true" targetId="50b70690-5f4a-4555-89c1-850e65d4527e" type="selectionEntry">
+                      <constraints>
+                        <constraint id="c9a87312-9be7-403f-ad92-e61d1c75a10a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                        <constraint id="cf08331c-7ece-4122-95c4-4a788eb046f7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="true">
+                      <conditions>
+                        <condition childId="9f875bc7-9e30-458c-b5c6-35a5c70c1046" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="56eb8cfd-2049-4215-ab50-f14b366ff246" shared="true" type="lessThan" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
