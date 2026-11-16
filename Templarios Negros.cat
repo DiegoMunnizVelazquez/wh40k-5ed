@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Templarios Negros" id="7757-a04a-5363-3a75" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="10" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Templarios Negros" id="7757-a04a-5363-3a75" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="11" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink name="Capellán Grimaldus" id="874b023e-ec65-4682-b884-fb43a2a26e02" collective="false" hidden="false" import="true" targetId="a8bf41c8-8bfa-4261-a16b-0235953bfe4e" type="selectionEntry">
       <categoryLinks>
@@ -2112,9 +2112,9 @@
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Habilidad especial" id="d8e8ba02-b42f-4621-ad0a-5e180aae35cf" collapsible="true" collective="false" hidden="false" import="true" sortIndex="5">
+        <selectionEntryGroup name="Habilidad especial" id="d8e8ba02-b42f-4621-ad0a-5e180aae35cf" collapsible="true" collective="false" defaultSelectionEntryId="a504fcd7-c1b1-459e-a05e-3345ce3d7264" hidden="false" import="true" sortIndex="5">
           <constraints>
-            <constraint id="27163070-4b22-4ea0-93d6-fdce9bca77c3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="0"/>
+            <constraint id="27163070-4b22-4ea0-93d6-fdce9bca77c3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="c205822c-318b-486c-b49f-f89b4a35b820" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <selectionEntries>
@@ -2125,13 +2125,6 @@
               <infoLinks>
                 <infoLink name="Asalto Rabioso" id="f50ce4eb-1af9-412a-9d0f-86dc91e8e2e3" hidden="false" targetId="33b4-1a73-92db-e562" type="rule"/>
               </infoLinks>
-              <modifiers>
-                <modifier field="puntos" type="increment" value="3">
-                  <repeats>
-                    <repeat childId="model" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" repeats="1" roundUp="false" scope="929df1d0-9d2f-44f1-83d3-de9ad960d0cf" shared="true" value="1"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
             </selectionEntry>
             <selectionEntry name="Contraataque" id="3e756771-6a2b-4b76-8c63-2c4cc77c6dfc" collapsible="true" hidden="false" import="true" sortIndex="2" type="upgrade">
               <costs>
@@ -2140,13 +2133,6 @@
               <infoLinks>
                 <infoLink name="Contraataque" id="37a611a4-34e8-445c-a477-40800de527ab" hidden="false" targetId="3e32-1b73-9eb0-f59e" type="rule"/>
               </infoLinks>
-              <modifiers>
-                <modifier field="puntos" type="increment" value="3">
-                  <repeats>
-                    <repeat childId="model" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" repeats="1" roundUp="false" scope="929df1d0-9d2f-44f1-83d3-de9ad960d0cf" shared="true" value="1"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
             </selectionEntry>
             <selectionEntry name="Infiltradores" id="7814d0f0-e43f-4f5e-bda9-f11af9f42d59" collapsible="true" hidden="false" import="true" sortIndex="3" type="upgrade">
               <costs>
@@ -2156,11 +2142,6 @@
                 <infoLink name="Infiltración" id="99455d2c-b87e-424a-9e57-5d19aa1a145b" hidden="false" targetId="3310-5f06-776a-5b35" type="rule"/>
               </infoLinks>
               <modifiers>
-                <modifier field="puntos" type="increment" value="3">
-                  <repeats>
-                    <repeat childId="model" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" repeats="1" roundUp="false" scope="929df1d0-9d2f-44f1-83d3-de9ad960d0cf" shared="true" value="1"/>
-                  </repeats>
-                </modifier>
                 <modifier field="hidden" type="set" value="true">
                   <conditions>
                     <condition childId="unit" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="929df1d0-9d2f-44f1-83d3-de9ad960d0cf" shared="true" type="atLeast" value="1"/>
