@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Templarios Negros" id="7757-a04a-5363-3a75" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="13" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Templarios Negros" id="7757-a04a-5363-3a75" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="14" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink name="Capellán Grimaldus" id="874b023e-ec65-4682-b884-fb43a2a26e02" collective="false" hidden="false" import="true" targetId="a8bf41c8-8bfa-4261-a16b-0235953bfe4e" type="selectionEntry">
       <categoryLinks>
@@ -3720,41 +3720,6 @@
                 <constraint id="14366837-bb73-4585-b4c7-6dccc175d120" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                 <constraint id="c90835ca-dc5c-49fc-855c-5fbf28251804" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
-              <modifiers>
-                <modifier field="hidden" type="set" value="true">
-                  <conditions>
-                    <condition childId="4491b639-4a27-40e1-b938-369905a96c4f" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="db4e658c-8576-44cb-bbdf-740add924945" shared="true" type="atLeast" value="1"/>
-                  </conditions>
-                </modifier>
-                <modifier field="14366837-bb73-4585-b4c7-6dccc175d120" type="set" value="0">
-                  <conditions>
-                    <condition childId="4491b639-4a27-40e1-b938-369905a96c4f" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="db4e658c-8576-44cb-bbdf-740add924945" shared="true" type="atLeast" value="1"/>
-                  </conditions>
-                </modifier>
-                <modifier field="c90835ca-dc5c-49fc-855c-5fbf28251804" type="set" value="0">
-                  <conditions>
-                    <condition childId="4491b639-4a27-40e1-b938-369905a96c4f" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="db4e658c-8576-44cb-bbdf-740add924945" shared="true" type="atLeast" value="1"/>
-                  </conditions>
-                </modifier>
-                <modifier field="hidden" type="set" value="true">
-                  <conditions>
-                    <condition childId="d2d0ab9a-ca63-41fa-bc2d-4d4d51b5562f" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="db4e658c-8576-44cb-bbdf-740add924945" shared="true" type="atLeast" value="1"/>
-                  </conditions>
-                </modifier>
-                <modifier field="14366837-bb73-4585-b4c7-6dccc175d120" type="set" value="0">
-                  <conditions>
-                    <condition childId="d2d0ab9a-ca63-41fa-bc2d-4d4d51b5562f" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="db4e658c-8576-44cb-bbdf-740add924945" shared="true" type="atLeast" value="1"/>
-                  </conditions>
-                </modifier>
-                <modifier field="c90835ca-dc5c-49fc-855c-5fbf28251804" type="set" value="0">
-                  <conditions>
-                    <condition childId="d2d0ab9a-ca63-41fa-bc2d-4d4d51b5562f" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="db4e658c-8576-44cb-bbdf-740add924945" shared="true" type="atLeast" value="1"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink name="Armería" id="05cf8d67-e63d-4625-9f17-8f34bfd99857" collective="false" hidden="false" import="true" targetId="ca2d58d8-53d4-49db-b4a8-8f90a8014b1e" type="selectionEntryGroup">
-              <comment>Armería de Portaestandarte de compañía (EQUIPO DE PORTAESTANDARTE)</comment>
             </entryLink>
           </entryLinks>
           <infoLinks>
