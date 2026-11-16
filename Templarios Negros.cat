@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Templarios Negros" id="7757-a04a-5363-3a75" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="9" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Templarios Negros" id="7757-a04a-5363-3a75" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="10" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink name="Capellán Grimaldus" id="874b023e-ec65-4682-b884-fb43a2a26e02" collective="false" hidden="false" import="true" targetId="a8bf41c8-8bfa-4261-a16b-0235953bfe4e" type="selectionEntry">
       <categoryLinks>
@@ -345,7 +345,7 @@
         <characteristic name="Frontal" typeId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f">11</characteristic>
         <characteristic name="Lateral" typeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e">11</characteristic>
         <characteristic name="Posterior" typeId="0a9f33cb-0412-420a-89d2-20707c360bd2">10</characteristic>
-        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Vehículo</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Tanque</characteristic>
       </characteristics>
     </profile>
     <profile name="Rhino" id="32ee317c-b920-46b4-bde9-d93aa9fcc4cb" hidden="false" typeId="725a358c-765b-498c-8de5-399fc0c0725f" typeName="Vehículo">
@@ -354,7 +354,7 @@
         <characteristic name="Frontal" typeId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f">11</characteristic>
         <characteristic name="Lateral" typeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e">11</characteristic>
         <characteristic name="Posterior" typeId="0a9f33cb-0412-420a-89d2-20707c360bd2">10</characteristic>
-        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Vehículo</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Tanque</characteristic>
       </characteristics>
     </profile>
     <profile name="Vindicator" id="f0074e39-b517-42cf-a970-561944ccf0fb" hidden="false" typeId="725a358c-765b-498c-8de5-399fc0c0725f" typeName="Vehículo">
@@ -606,6 +606,25 @@
         <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">2+</characteristic>
       </characteristics>
     </profile>
+    <profile name="Espíritu máquina" id="bc4bc41c-9b71-4950-a675-054d0dd5c18d" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">El espíritu máquina es una combinación de componentes orgánicos y mecánicos que ayudan a controlar el movimiento y los sistemas armamentísticos de un vehículo. Aunque el vehículo sufra un resultado de tripulación aturdida en las tablas de daños en vehículos, el espíritu máquina le permite mover su capacidad de movimiento máxima en línea recta. Además, el espíritu máquina puede disparar un arma por turno, incluso si el vehículo sufre un resultado de tripulación acobardada o tripulación aturdida, siempre que el vehículo no haya movido más de 15 cm ese turno. El disparo de esta arma es adicional al resto del armamento que se pueda disparar habitualmente desde el vehículo. El espíritu máquina tiene HP 2.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Bólter de asalto en afuste exterior" id="58b7a62f-9050-4507-b077-93d51839ccb4" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Estos bólteres de asalto están fijados en el exterior del vehículo y los puede disparar un miembro de la tripulación a través de una escotilla abierta o por control remoto desde el interior del vehículo. Se considera armamento ligero adicional.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Cápsula de desembarco" id="1bb213b1-ceb5-41f1-805d-8fa91f861394" hidden="false" typeId="725a358c-765b-498c-8de5-399fc0c0725f" typeName="Vehículo">
+      <characteristics>
+        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">2</characteristic>
+        <characteristic name="Frontal" typeId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f">12</characteristic>
+        <characteristic name="Lateral" typeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e">12</characteristic>
+        <characteristic name="Posterior" typeId="0a9f33cb-0412-420a-89d2-20707c360bd2">12</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Vehículo, inmóvil, descubierto</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedRules>
     <rule name="Celo justiciero" id="b74753e8-b815-4ad7-97f1-85717a9e8672" hidden="false">
@@ -664,6 +683,18 @@
     </rule>
     <rule name="Dreadnought Venerable" id="bc4ae3e1-cfde-4d0e-b872-971a7083fa92" hidden="false">
       <description>Puede convertirse en Venerable un solo Dreadnought por destacamento. Es muy difícil acabar con un Dreadnought Venerable. Para representar esta circunstancia, cada vez que sufra un impacto superficial o interno, podrás pedir a tu oponente que repita la tirada del resultado obtenido en las tablas de daños en vehículos (tienes que aceptar el segundo resultado aunque sea peor).</description>
+    </rule>
+    <rule name="Transporte del Rhino" id="dcb1d655-bc0d-42c5-894b-7fa6a278c829" hidden="false">
+      <description>Tripulación: un Iniciado. El Rhino puede llevar hasta 10 Marines Espaciales, que no pueden ser Exterminadores. Puntos de disparo: hasta dos miniaturas pueden disparar por la abertura de disparo. Puntos de acceso: un acceso en cada uno de los lados y otro en la parte posterior.</description>
+    </rule>
+    <rule name="Reparación del Rhino" id="0124e260-aa79-434d-9e4d-2b0305a28f2b" hidden="false">
+      <description>El Rhino es un vehículo especialmente resistente que puede llegar a ser reparado por su propia tripulación durante la batalla. Si un Rhino resulta inmovilizado, sea por la razón que sea, su conductor puede intentar repararlo temporalmente en los turnos subsiguientes en vez de disparar. Tira un dado en la fase de disparo; si obtienes un 6, el vehículo podrá mover normalmente en su siguiente turno.</description>
+    </rule>
+    <rule name="Transporte del Razorback" id="e7568dd4-0375-440a-b61f-69adb0b7c71f" hidden="false">
+      <description>Tripulación: un Iniciado. El Razorback puede llevar hasta 6 Marines Espaciales, que no pueden ser Exterminadores. Puntos de disparo: ninguno. Puntos de acceso: un acceso en cada uno de los lados y otro en la parte posterior.</description>
+    </rule>
+    <rule name="Transporte de la cápsula de desembarco" id="954c395f-6d13-4272-b412-e12a2fad4225" hidden="false">
+      <description>Tripulación: ninguna. Puede transportar hasta 10 Marines Espaciales, hasta 5 Exterminadores o 1 Dreadnought. Tras desembarcar, los pasajeros no podrán volver a embarcar. Puntos de disparo: ninguno. Puntos de acceso: vehículo descubierto. Una cápsula de desembarco siempre tiene la modificación espíritu máquina sin coste adicional en puntos. Las cápsulas de desembarco pueden disparar en el mismo turno en el que aterrizan. La unidad que la lleve no podrá equiparse con ningún otro vehículo y permanecerá en reserva hasta llegar a la batalla en su cápsula de desembarco.</description>
     </rule>
   </sharedRules>
   <sharedSelectionEntries>
@@ -953,6 +984,19 @@
               <costs>
                 <cost name="Pts" typeId="puntos" value="20"/>
               </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Transporte asignado" id="03514bbe-c7c4-46fa-a1e7-84d24b45aab5" collapsible="true" collective="false" hidden="false" import="true" sortIndex="99">
+          <constraints>
+            <constraint id="3fde727a-fc1e-48e1-ac0e-7b3f62a5eeb8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="0"/>
+            <constraint id="1492230d-5bda-4fa8-ab87-263a3c093535" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <entryLinks>
+            <entryLink name="Cápsula de desembarco" id="432de66b-73e0-41ca-b963-ad2bee4b01b3" collective="false" hidden="false" import="true" sortIndex="1" targetId="977f8e9c-42a1-405f-87ad-428fd5860577" type="selectionEntry">
+              <constraints>
+                <constraint id="03db9a50-fd78-4358-a703-3230e8777e86" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -1379,6 +1423,37 @@
         <infoLink name="Servidor Cenobita" id="b5d66f59-c06e-41c4-9fff-0abf76c304e1" hidden="false" targetId="a3685cc4-52f6-4e89-903f-77c4117f3d1f" type="profile"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry name="Cápsula de desembarco" id="977f8e9c-42a1-405f-87ad-428fd5860577" collapsible="true" hidden="false" import="true" type="unit">
+      <costs>
+        <cost name="Pts" typeId="puntos" value="30"/>
+      </costs>
+      <entryLinks>
+        <entryLink name="Bólter de asalto" id="923b242f-6dfc-43ca-81b7-096ebe79a420" collective="false" hidden="false" import="true" targetId="842b4b8c-b085-4f8a-b8d4-38c6fd8b1be9" type="selectionEntry">
+          <constraints>
+            <constraint id="96b64878-4873-44b0-94e5-0ba517aab28f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="205108f7-2565-459c-90e0-86d1cb271e99" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+        </entryLink>
+        <entryLink name="Espíritu máquina" id="63f60c2b-f7e7-4b69-948b-5a5a2fde65cd" collective="false" hidden="false" import="true" targetId="79f78d7c-cdde-490d-8abb-d9577564131e" type="selectionEntry">
+          <constraints>
+            <constraint id="9dcdef35-eaab-407d-b77d-fe8f4232de9f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="2ce2bb86-21af-4b9c-9ac2-9466f3fe64f3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+        </entryLink>
+        <entryLink name="Lanzador Ala de Muerte" id="7e53866c-b106-4adf-856e-72b1653e2a73" collective="false" hidden="false" import="true" sortIndex="3" targetId="cbc27f78-422a-41da-a096-85bbc6615655" type="selectionEntry">
+          <constraints>
+            <constraint id="45683c18-34ac-44da-bcbd-8803d01b27d2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="20"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Cápsula de desembarco" id="62cf5471-dce0-498e-baec-6bcb3672d300" hidden="false" targetId="1bb213b1-ceb5-41f1-805d-8fa91f861394" type="profile"/>
+        <infoLink name="Transporte de la cápsula de desembarco" id="52f31056-3954-4b83-87e5-8bb8efc3dadc" hidden="false" targetId="954c395f-6d13-4272-b412-e12a2fad4225" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry name="Escuadra de Cruzados" id="ce511e70-80b1-4890-a6f6-fcee8bb5836a" collapsible="true" hidden="false" import="true" type="unit">
       <costs>
         <cost name="Pts" typeId="puntos" value="0"/>
@@ -1683,6 +1758,52 @@
           </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Transporte asignado" id="7d5db6c4-0869-4864-8cb6-39ea728da6c1" collapsible="true" collective="false" hidden="false" import="true" sortIndex="6">
+          <constraints>
+            <constraint id="af6e4b17-0146-4c8b-ab60-771c5b462a2e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="0"/>
+            <constraint id="1535804c-b17e-4580-86ee-db8052f7d5c3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <entryLinks>
+            <entryLink name="Cápsula de desembarco" id="8fcad387-094c-4c82-a41f-0aa3e45a7ece" collective="false" hidden="false" import="true" sortIndex="1" targetId="977f8e9c-42a1-405f-87ad-428fd5860577" type="selectionEntry">
+              <constraints>
+                <constraint id="cd27f1d6-f56f-4947-8880-4d892f76a8d9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <modifiers>
+                <modifier field="hidden" type="set" value="true">
+                  <conditions>
+                    <condition childId="model" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="ce511e70-80b1-4890-a6f6-fcee8bb5836a" shared="true" type="atLeast" value="11"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink name="Rhino" id="5b49e368-2dda-41e3-bd68-e91d02072f7e" collective="false" hidden="false" import="true" sortIndex="2" targetId="858ce951-0ae2-46f3-8b7f-3a2b5ef4cc46" type="selectionEntry">
+              <constraints>
+                <constraint id="a9ca8f82-4078-4ade-ba81-92310ec499a3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <modifiers>
+                <modifier field="hidden" type="set" value="true">
+                  <conditions>
+                    <condition childId="model" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="ce511e70-80b1-4890-a6f6-fcee8bb5836a" shared="true" type="atLeast" value="11"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink name="Razorback" id="93a8c7d2-65df-4d18-8b8e-b800cf21c9b1" collective="false" hidden="false" import="true" sortIndex="3" targetId="c0e3eb4a-8abe-4e1a-8078-fb9d8ac0f650" type="selectionEntry">
+              <constraints>
+                <constraint id="85182286-c142-4c2a-819d-3d2d7c4e58ce" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <modifiers>
+                <modifier field="hidden" type="set" value="true">
+                  <conditions>
+                    <condition childId="model" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="ce511e70-80b1-4890-a6f6-fcee8bb5836a" shared="true" type="atLeast" value="7"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry name="Escuadra de Hermanos de Armas" id="929df1d0-9d2f-44f1-83d3-de9ad960d0cf" collapsible="true" hidden="false" import="true" type="unit">
       <costs>
@@ -2040,9 +2161,73 @@
                     <repeat childId="model" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" repeats="1" roundUp="false" scope="929df1d0-9d2f-44f1-83d3-de9ad960d0cf" shared="true" value="1"/>
                   </repeats>
                 </modifier>
+                <modifier field="hidden" type="set" value="true">
+                  <conditions>
+                    <condition childId="unit" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="929df1d0-9d2f-44f1-83d3-de9ad960d0cf" shared="true" type="atLeast" value="1"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </selectionEntry>
           </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Transporte asignado" id="df581796-7ffd-4592-8405-638803ba1209" collapsible="true" collective="false" hidden="false" import="true" sortIndex="6">
+          <constraints>
+            <constraint id="0328e203-f896-48f3-97cc-e1e2ad4e3acb" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="0"/>
+            <constraint id="ad4f82d7-e24c-440a-a607-15bb3f45b4f6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <entryLinks>
+            <entryLink name="Cápsula de desembarco" id="efc26304-0d19-48a9-a774-831a8b02bacd" collective="false" hidden="false" import="true" sortIndex="1" targetId="977f8e9c-42a1-405f-87ad-428fd5860577" type="selectionEntry">
+              <constraints>
+                <constraint id="5e9bf335-190e-4132-9304-54090a628867" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <modifiers>
+                <modifier field="hidden" type="set" value="true">
+                  <conditions>
+                    <condition childId="model" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="929df1d0-9d2f-44f1-83d3-de9ad960d0cf" shared="true" type="atLeast" value="11"/>
+                  </conditions>
+                </modifier>
+                <modifier field="hidden" type="set" value="true">
+                  <conditions>
+                    <condition childId="7814d0f0-e43f-4f5e-bda9-f11af9f42d59" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="929df1d0-9d2f-44f1-83d3-de9ad960d0cf" shared="true" type="atLeast" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink name="Rhino" id="a11d5ce9-7100-4ead-bdc1-130072b7d6cd" collective="false" hidden="false" import="true" sortIndex="2" targetId="858ce951-0ae2-46f3-8b7f-3a2b5ef4cc46" type="selectionEntry">
+              <constraints>
+                <constraint id="0ee5752d-91c3-4dce-8fba-827cc2987f76" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <modifiers>
+                <modifier field="hidden" type="set" value="true">
+                  <conditions>
+                    <condition childId="model" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="929df1d0-9d2f-44f1-83d3-de9ad960d0cf" shared="true" type="atLeast" value="11"/>
+                  </conditions>
+                </modifier>
+                <modifier field="hidden" type="set" value="true">
+                  <conditions>
+                    <condition childId="7814d0f0-e43f-4f5e-bda9-f11af9f42d59" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="929df1d0-9d2f-44f1-83d3-de9ad960d0cf" shared="true" type="atLeast" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink name="Razorback" id="d2cc8f8e-ad10-4ec5-9232-1308da150f08" collective="false" hidden="false" import="true" sortIndex="3" targetId="c0e3eb4a-8abe-4e1a-8078-fb9d8ac0f650" type="selectionEntry">
+              <constraints>
+                <constraint id="eddb4806-ec5b-476b-be10-5ebf20dcb71e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <modifiers>
+                <modifier field="hidden" type="set" value="true">
+                  <conditions>
+                    <condition childId="model" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="929df1d0-9d2f-44f1-83d3-de9ad960d0cf" shared="true" type="atLeast" value="7"/>
+                  </conditions>
+                </modifier>
+                <modifier field="hidden" type="set" value="true">
+                  <conditions>
+                    <condition childId="7814d0f0-e43f-4f5e-bda9-f11af9f42d59" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="929df1d0-9d2f-44f1-83d3-de9ad960d0cf" shared="true" type="atLeast" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
@@ -2772,9 +2957,73 @@
                     <repeat childId="model" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" repeats="1" roundUp="false" scope="c334f51d-e484-4e1f-84c4-e942cf36ac74" shared="true" value="1"/>
                   </repeats>
                 </modifier>
+                <modifier field="hidden" type="set" value="true">
+                  <conditions>
+                    <condition childId="unit" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="c334f51d-e484-4e1f-84c4-e942cf36ac74" shared="true" type="atLeast" value="1"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </selectionEntry>
           </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Transporte asignado" id="f35b45c5-36c1-4902-97ce-6a221f761450" collapsible="true" collective="false" hidden="false" import="true" sortIndex="11">
+          <constraints>
+            <constraint id="4a0216c8-2ef1-46f5-bd73-b4f5fc35e9e3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="0"/>
+            <constraint id="969ad160-1828-454d-8983-eaa277632d26" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <entryLinks>
+            <entryLink name="Cápsula de desembarco" id="66e04c61-eda9-4ccc-935b-eba0ab680a95" collective="false" hidden="false" import="true" sortIndex="1" targetId="977f8e9c-42a1-405f-87ad-428fd5860577" type="selectionEntry">
+              <constraints>
+                <constraint id="d7d06b7e-c04e-4614-9ce2-8a79817169ad" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <modifiers>
+                <modifier field="hidden" type="set" value="true">
+                  <conditions>
+                    <condition childId="model" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="c334f51d-e484-4e1f-84c4-e942cf36ac74" shared="true" type="atLeast" value="11"/>
+                  </conditions>
+                </modifier>
+                <modifier field="hidden" type="set" value="true">
+                  <conditions>
+                    <condition childId="4a63b694-776e-4e2c-9348-3d8735e82e05" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="c334f51d-e484-4e1f-84c4-e942cf36ac74" shared="true" type="atLeast" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink name="Rhino" id="b990a2f6-83c6-4389-94ae-d733442e2be2" collective="false" hidden="false" import="true" sortIndex="2" targetId="858ce951-0ae2-46f3-8b7f-3a2b5ef4cc46" type="selectionEntry">
+              <constraints>
+                <constraint id="bad6eb31-c4b4-41b8-b579-1cee6dacb3a5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <modifiers>
+                <modifier field="hidden" type="set" value="true">
+                  <conditions>
+                    <condition childId="model" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="c334f51d-e484-4e1f-84c4-e942cf36ac74" shared="true" type="atLeast" value="11"/>
+                  </conditions>
+                </modifier>
+                <modifier field="hidden" type="set" value="true">
+                  <conditions>
+                    <condition childId="4a63b694-776e-4e2c-9348-3d8735e82e05" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="c334f51d-e484-4e1f-84c4-e942cf36ac74" shared="true" type="atLeast" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink name="Razorback" id="52cda08e-d5d0-4fcc-86cc-306a5b061061" collective="false" hidden="false" import="true" sortIndex="3" targetId="c0e3eb4a-8abe-4e1a-8078-fb9d8ac0f650" type="selectionEntry">
+              <constraints>
+                <constraint id="8510af56-38bc-4abc-aa94-e6cf116e658b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <modifiers>
+                <modifier field="hidden" type="set" value="true">
+                  <conditions>
+                    <condition childId="model" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="c334f51d-e484-4e1f-84c4-e942cf36ac74" shared="true" type="atLeast" value="7"/>
+                  </conditions>
+                </modifier>
+                <modifier field="hidden" type="set" value="true">
+                  <conditions>
+                    <condition childId="4a63b694-776e-4e2c-9348-3d8735e82e05" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="c334f51d-e484-4e1f-84c4-e942cf36ac74" shared="true" type="atLeast" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
@@ -3398,9 +3647,73 @@
                     <repeat childId="model" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" repeats="1" roundUp="false" scope="dc456b39-a19f-47a2-a80d-b56941813548" shared="true" value="1"/>
                   </repeats>
                 </modifier>
+                <modifier field="hidden" type="set" value="true">
+                  <conditions>
+                    <condition childId="unit" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="dc456b39-a19f-47a2-a80d-b56941813548" shared="true" type="atLeast" value="1"/>
+                  </conditions>
+                </modifier>
               </modifiers>
             </selectionEntry>
           </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Transporte asignado" id="cbbb3dfb-b0fa-4973-8cf5-23fed2c090da" collapsible="true" collective="false" hidden="false" import="true" sortIndex="10">
+          <constraints>
+            <constraint id="737f41c6-2542-4be7-9fe5-8d15f1880b47" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="0"/>
+            <constraint id="598486cc-75fd-4a4b-888d-5febf168e1de" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <entryLinks>
+            <entryLink name="Cápsula de desembarco" id="19530ecf-608d-402e-b850-5ba889727402" collective="false" hidden="false" import="true" sortIndex="1" targetId="977f8e9c-42a1-405f-87ad-428fd5860577" type="selectionEntry">
+              <constraints>
+                <constraint id="6ef431cb-d666-4e75-b27b-ecc9d08508ff" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <modifiers>
+                <modifier field="hidden" type="set" value="true">
+                  <conditions>
+                    <condition childId="model" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="dc456b39-a19f-47a2-a80d-b56941813548" shared="true" type="atLeast" value="11"/>
+                  </conditions>
+                </modifier>
+                <modifier field="hidden" type="set" value="true">
+                  <conditions>
+                    <condition childId="f8860cda-a08a-4358-b108-d663d1d51698" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="dc456b39-a19f-47a2-a80d-b56941813548" shared="true" type="atLeast" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink name="Rhino" id="79ab8af3-8c92-4184-96a2-656caf4eb348" collective="false" hidden="false" import="true" sortIndex="2" targetId="858ce951-0ae2-46f3-8b7f-3a2b5ef4cc46" type="selectionEntry">
+              <constraints>
+                <constraint id="dc38bbb5-d8c9-42e4-9be1-5fd02061d4be" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <modifiers>
+                <modifier field="hidden" type="set" value="true">
+                  <conditions>
+                    <condition childId="model" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="dc456b39-a19f-47a2-a80d-b56941813548" shared="true" type="atLeast" value="11"/>
+                  </conditions>
+                </modifier>
+                <modifier field="hidden" type="set" value="true">
+                  <conditions>
+                    <condition childId="f8860cda-a08a-4358-b108-d663d1d51698" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="dc456b39-a19f-47a2-a80d-b56941813548" shared="true" type="atLeast" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+            <entryLink name="Razorback" id="ada2fc81-6662-42a7-8b53-7ac746559484" collective="false" hidden="false" import="true" sortIndex="3" targetId="c0e3eb4a-8abe-4e1a-8078-fb9d8ac0f650" type="selectionEntry">
+              <constraints>
+                <constraint id="5b44ba6a-0925-49da-a4c7-6b588b560983" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <modifiers>
+                <modifier field="hidden" type="set" value="true">
+                  <conditions>
+                    <condition childId="model" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="dc456b39-a19f-47a2-a80d-b56941813548" shared="true" type="atLeast" value="7"/>
+                  </conditions>
+                </modifier>
+                <modifier field="hidden" type="set" value="true">
+                  <conditions>
+                    <condition childId="f8860cda-a08a-4358-b108-d663d1d51698" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="dc456b39-a19f-47a2-a80d-b56941813548" shared="true" type="atLeast" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
@@ -3631,6 +3944,26 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Transporte asignado" id="33888916-8790-43ae-8e9e-9fef523d3b50" collapsible="true" collective="false" hidden="false" import="true" sortIndex="5">
+          <constraints>
+            <constraint id="9edc6f20-6828-4c18-84a5-a320913ee71a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="0"/>
+            <constraint id="727e492b-13d6-4658-b557-0df1faecc20d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <entryLinks>
+            <entryLink name="Cápsula de desembarco" id="273b1c5d-3f1d-4b17-9bf5-6ac77231482d" collective="false" hidden="false" import="true" sortIndex="1" targetId="977f8e9c-42a1-405f-87ad-428fd5860577" type="selectionEntry">
+              <constraints>
+                <constraint id="6ba1fe2c-acdf-42ff-a739-01b348353716" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <modifiers>
+                <modifier field="hidden" type="set" value="true">
+                  <conditions>
+                    <condition childId="model" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="f2150e88-2957-4b9d-9ecd-8268e8a54c0d" shared="true" type="atLeast" value="6"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry name="Escuadra de mando de Hermanos de Armas Exterminadores (opción de CG)" id="70ebf562-30e9-4de3-8369-2aac809db368" collapsible="true" hidden="false" import="true" type="unit">
@@ -3832,6 +4165,26 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Transporte asignado" id="809ab729-7944-44ab-a000-17b7e4efc831" collapsible="true" collective="false" hidden="false" import="true" sortIndex="5">
+          <constraints>
+            <constraint id="61285ea5-19af-4ebc-8f79-be03568511e8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="0"/>
+            <constraint id="58d31dce-2e6d-4057-abbc-79a3fa55b2ab" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <entryLinks>
+            <entryLink name="Cápsula de desembarco" id="708a805f-bac7-42eb-9204-18c52fc09c1f" collective="false" hidden="false" import="true" sortIndex="1" targetId="977f8e9c-42a1-405f-87ad-428fd5860577" type="selectionEntry">
+              <constraints>
+                <constraint id="dfdb5a4a-7cd7-49ec-9d8b-fb951e557203" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <modifiers>
+                <modifier field="hidden" type="set" value="true">
+                  <conditions>
+                    <condition childId="model" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="70ebf562-30e9-4de3-8369-2aac809db368" shared="true" type="atLeast" value="6"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry name="Hermanos de Armas Exterminadores" id="caa1241d-9ba5-475c-8e1b-54bdd99e5a5b" collapsible="true" hidden="false" import="true" type="unit">
@@ -4000,6 +4353,26 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Transporte asignado" id="6a7037aa-d969-42e0-89f5-a9e9d1244592" collapsible="true" collective="false" hidden="false" import="true" sortIndex="4">
+          <constraints>
+            <constraint id="1b1b589e-87ef-4f4c-a981-669146b89a72" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="0"/>
+            <constraint id="a6e8d3cb-3217-4921-8cc0-d2fc8f2b7968" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <entryLinks>
+            <entryLink name="Cápsula de desembarco" id="60cfc19a-477d-49df-b0ab-ae3485c5702e" collective="false" hidden="false" import="true" sortIndex="1" targetId="977f8e9c-42a1-405f-87ad-428fd5860577" type="selectionEntry">
+              <constraints>
+                <constraint id="cb7a8a83-faa7-4d16-b74b-e4e7b7e5c403" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <modifiers>
+                <modifier field="hidden" type="set" value="true">
+                  <conditions>
+                    <condition childId="model" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="caa1241d-9ba5-475c-8e1b-54bdd99e5a5b" shared="true" type="atLeast" value="6"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry name="Hermanos de Armas Exterminadores de Asalto" id="c96778be-f6f9-456c-8f56-037407b431c8" collapsible="true" hidden="false" import="true" type="unit">
@@ -4120,6 +4493,26 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Transporte asignado" id="81da3170-b052-4f21-9856-bcac81e537b9" collapsible="true" collective="false" hidden="false" import="true" sortIndex="4">
+          <constraints>
+            <constraint id="0ba0cb08-e289-4322-bfcc-c77b7510f313" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="0"/>
+            <constraint id="78ede74b-5d27-4fb2-97c8-9d74f17dc2fb" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <entryLinks>
+            <entryLink name="Cápsula de desembarco" id="8c45ba46-1811-4af5-8165-d94aeaa9682d" collective="false" hidden="false" import="true" sortIndex="1" targetId="977f8e9c-42a1-405f-87ad-428fd5860577" type="selectionEntry">
+              <constraints>
+                <constraint id="e1d0fc51-2701-4fe8-9314-132b51bb1bcb" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <modifiers>
+                <modifier field="hidden" type="set" value="true">
+                  <conditions>
+                    <condition childId="model" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="c96778be-f6f9-456c-8f56-037407b431c8" shared="true" type="atLeast" value="6"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry name="Land Raider" id="e9f1aa15-8e56-427c-9c36-69fafd59bb9a" hidden="false" import="true" type="unit">
@@ -4147,14 +4540,55 @@
         <infoLink name="Predator" id="b9ffc16b-c2e0-441f-afa3-767c38d74b71" hidden="false" targetId="7739cbe0-c14f-4ab4-bd47-5820b492def6" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Razorback" id="c0e3eb4a-8abe-4e1a-8078-fb9d8ac0f650" hidden="false" import="true" type="unit">
+    <selectionEntry name="Razorback" id="c0e3eb4a-8abe-4e1a-8078-fb9d8ac0f650" collapsible="true" hidden="false" import="true" type="unit">
+      <costs>
+        <cost name="Pts" typeId="puntos" value="70"/>
+      </costs>
+      <entryLinks>
+        <entryLink name="Modificaciones para vehículos" id="22aeb893-15d4-4849-98b0-8bfaa92626c4" collective="false" hidden="false" import="true" sortIndex="2" targetId="3024f77e-e29f-4127-9d03-bf182fa409f7" type="selectionEntryGroup"/>
+      </entryLinks>
       <infoLinks>
-        <infoLink name="Razorback" id="2e903f7d-e05b-40ce-be19-7ce5d08d4b5d" hidden="false" targetId="8a25e65b-b6bd-4f6e-9f20-3d390bb905e9" type="profile"/>
+        <infoLink name="Razorback" id="e2ceb405-1f66-4451-9b9d-ab4841576405" hidden="false" targetId="8a25e65b-b6bd-4f6e-9f20-3d390bb905e9" type="profile"/>
+        <infoLink name="Transporte del Razorback" id="922c5dc9-a76c-41e2-9acf-48d958d10907" hidden="false" targetId="e7568dd4-0375-440a-b61f-69adb0b7c71f" type="rule"/>
       </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Arma" id="af47ace9-20ef-454b-86b0-0a6221305e28" collapsible="true" collective="false" defaultSelectionEntryId="d31dd20a-85e7-4b02-989b-a6dd8475d2dd" hidden="false" import="true">
+          <constraints>
+            <constraint id="9afcd685-1962-41e0-b923-42f3e3cfadaa" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="fa46b838-cb2d-48b3-9aab-425fe3832c54" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <entryLinks>
+            <entryLink name="Bólter pesado acoplado" id="d31dd20a-85e7-4b02-989b-a6dd8475d2dd" collective="false" hidden="false" import="true" sortIndex="1" targetId="6c7f6e08-ca9e-4690-aa57-08ff0af2d49e" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="puntos" value="0"/>
+              </costs>
+            </entryLink>
+            <entryLink name="Cañón láser acoplado" id="6b754426-bbfd-4f29-a47d-ecf9ce30d502" collective="false" hidden="false" import="true" sortIndex="2" targetId="e8e78ff6-7b55-44c7-ba73-f9520eff2940" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="puntos" value="20"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry name="Rhino" id="858ce951-0ae2-46f3-8b7f-3a2b5ef4cc46" hidden="false" import="true" type="unit">
+    <selectionEntry name="Rhino" id="858ce951-0ae2-46f3-8b7f-3a2b5ef4cc46" collapsible="true" hidden="false" import="true" type="unit">
+      <costs>
+        <cost name="Pts" typeId="puntos" value="50"/>
+      </costs>
+      <entryLinks>
+        <entryLink name="Bólter de asalto" id="d6aab410-0c94-4fbe-971d-dd19f09002f1" collective="false" hidden="false" import="true" targetId="842b4b8c-b085-4f8a-b8d4-38c6fd8b1be9" type="selectionEntry">
+          <constraints>
+            <constraint id="91e2b413-47e9-4b5f-bd88-7f0368594ee6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="04344e56-130b-4ec6-a8dc-467b878aa7af" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+        </entryLink>
+        <entryLink name="Modificaciones para vehículos" id="b848b0f2-d49d-4ff0-bfd5-81b97ae0af95" collective="false" hidden="false" import="true" sortIndex="2" targetId="3024f77e-e29f-4127-9d03-bf182fa409f7" type="selectionEntryGroup"/>
+      </entryLinks>
       <infoLinks>
-        <infoLink name="Rhino" id="ad8cba50-d658-41a7-8de0-69380888b7e1" hidden="false" targetId="32ee317c-b920-46b4-bde9-d93aa9fcc4cb" type="profile"/>
+        <infoLink name="Rhino" id="734f7b73-896b-4ecd-bc28-fb4d230d20c0" hidden="false" targetId="32ee317c-b920-46b4-bde9-d93aa9fcc4cb" type="profile"/>
+        <infoLink name="Transporte del Rhino" id="956949cc-acd4-485a-8ca6-b873054bf2cb" hidden="false" targetId="dcb1d655-bc0d-42c5-894b-7fa6a278c829" type="rule"/>
+        <infoLink name="Reparación del Rhino" id="aa833524-3f2d-4ff5-ba6b-6f16826a4533" hidden="false" targetId="0124e260-aa79-434d-9e4d-2b0305a28f2b" type="rule"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Tecnomarine" id="aeff67dd-b625-4ca1-bea4-e39842b1a85d" collapsible="true" hidden="false" import="true" type="unit">
@@ -4324,6 +4758,24 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup name="Transporte asignado" id="84522324-f803-42f4-8517-71b7afa46566" collapsible="true" collective="false" hidden="false" import="true" sortIndex="3">
+          <constraints>
+            <constraint id="7c4cd15f-0586-475b-bd5c-65e49005f77b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="0"/>
+            <constraint id="4ce0d233-bcff-4fa9-aa51-3fb3b98bc932" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <entryLinks>
+            <entryLink name="Rhino" id="abc6f32a-eac2-405d-abf2-bf6142637627" collective="false" hidden="false" import="true" sortIndex="1" targetId="858ce951-0ae2-46f3-8b7f-3a2b5ef4cc46" type="selectionEntry">
+              <constraints>
+                <constraint id="a7e90166-361d-498e-8bf3-2780e17ab53a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Razorback" id="2061dd8f-a322-47e7-b9cc-3a6c4d6390c6" collective="false" hidden="false" import="true" sortIndex="2" targetId="c0e3eb4a-8abe-4e1a-8078-fb9d8ac0f650" type="selectionEntry">
+              <constraints>
+                <constraint id="be858e0e-57a7-42d7-98b1-d9cdfabfa5c0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry name="Vindicator" id="198b67d0-a93c-486b-bc47-a5335b5445b3" hidden="false" import="true" type="unit">
@@ -4402,9 +4854,21 @@
         <infoLink name="Bólter de Asalto" id="376f1bce-d342-4c60-b54b-55ec0b618f84" hidden="false" targetId="d495-caf7-3c41-4620" type="profile"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry name="Bólter de asalto en afuste exterior" id="e6e10037-bac3-4442-891c-fcb3e83f88d5" collapsible="true" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Bólter de asalto en afuste exterior" id="a54a62e3-4d9e-4b62-bd46-004d5b1dc357" hidden="false" targetId="58b7a62f-9050-4507-b077-93d51839ccb4" type="profile"/>
+        <infoLink name="Bólter de Asalto" id="66f71051-b40f-4232-bf8e-abbbf63d989d" hidden="false" targetId="d495-caf7-3c41-4620" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry name="Bólter pesado" id="d0889088-5c1d-4c97-8f72-eaf40adcf72c" hidden="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink name="Bólter Pesado" id="89e897b3-e995-45b5-a1da-cc663185eeff" hidden="false" targetId="3c0e-4865-97cc-bd9c" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Bólter pesado acoplado" id="6c7f6e08-ca9e-4690-aa57-08ff0af2d49e" collapsible="true" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Bólter Pesado" id="acbf3be3-038a-4f18-abc1-72d5e503afa8" hidden="false" targetId="3c0e-4865-97cc-bd9c" type="profile"/>
+        <infoLink name="Acoplada" id="21edaa11-ddaa-4159-8505-689e9af48c33" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Bólter-lanzallamas" id="d32927a9-d62d-43b1-93ca-6af03f1dfe54" collapsible="true" hidden="false" import="true" type="upgrade">
@@ -4517,6 +4981,11 @@
         <infoLink name="Arma de energía" id="9474a074-a9d1-471e-99f7-6bf43d525ba4" hidden="false" targetId="8e64-1c75-85f5-7ac0" type="profile"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry name="Espíritu máquina" id="79f78d7c-cdde-490d-8abb-d9577564131e" collapsible="true" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Espíritu máquina" id="30e77a52-e71b-4149-8dc4-71dcbb800c7c" hidden="false" targetId="bc4bc41c-9b71-4950-a675-054d0dd5c18d" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry name="Estandarte de compañía" id="e466c401-3e48-4455-8dc3-113df466439c" collapsible="true" hidden="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink name="Estandarte de compañía" id="db2ba8bf-808b-4dd2-93b6-514e4d707b46" hidden="false" targetId="51dd1a12-9a69-474e-8484-41ba01f1b146" type="profile"/>
@@ -4593,6 +5062,12 @@
         <infoLink name="Martillo de Trueno" id="ae94f4f7-185f-4ce6-9ff6-9c89d8a01d5e" hidden="false" targetId="562f-8ac0-91b5-c835" type="profile"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry name="Misil cazador asesino" id="26d554aa-1a69-4284-94bf-69ded9706aec" collapsible="true" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Misil Cazador Asesino" id="d7c47e8b-d942-4934-b4d3-62338cae66dc" hidden="false" targetId="30f6-7094-77e3-82d8" type="profile"/>
+        <infoLink name="Misil Cazador Asesino" id="92178d81-ad65-40e4-ac7e-2aea4d389978" hidden="false" targetId="fffa-5f18-59af-8106" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry name="Motocicleta" id="9f1e2390-4ecc-4096-8df0-36e50d49aba6" collapsible="true" hidden="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink name="Motocicleta Marines Espaciales" id="448f26af-e5d2-40b3-8444-d6a232f1257f" hidden="false" targetId="5042-8639-f05a-298b" type="profile"/>
@@ -4606,6 +5081,11 @@
     <selectionEntry name="Orbe sagrado de Antioch" id="bf306e7b-bc36-43e6-83af-9cacfa021c36" collapsible="true" hidden="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink name="Orbe sagrado de Antioch" id="e23ed744-53d0-451b-8c85-28f978285f9f" hidden="false" targetId="31cf4b20-47f3-4eef-92c4-df364ae5a6d5" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Pala excavadora" id="05c7aa0b-c8bc-444f-84a2-1ac6dcbd181c" collapsible="true" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Pala Excavadora" id="a1aca6c9-ee26-4e3c-87ac-11fab5e7a2f5" hidden="false" targetId="cc87-4ebb-33bb-a377" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Pistola bólter" id="50b70690-5f4a-4555-89c1-850e65d4527e" hidden="false" import="true" type="upgrade">
@@ -6891,6 +7371,58 @@
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Modificaciones para vehículos" id="3024f77e-e29f-4127-9d03-bf182fa409f7" collapsible="true" collective="false" hidden="false" import="true">
+      <entryLinks>
+        <entryLink name="Reflector" id="422f2d6b-60a5-42d4-b3de-50caae28ecdc" collective="false" hidden="false" import="true" sortIndex="1" targetId="d8615ddb-ff66-4cc0-85ae-63aac5072734" type="selectionEntry">
+          <constraints>
+            <constraint id="704ad995-5000-413c-bdab-d4fa4f5d42b9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="1"/>
+          </costs>
+        </entryLink>
+        <entryLink name="Descargadores de humo" id="98eaa186-3ec8-4203-af50-4835b2e6ec18" collective="false" hidden="false" import="true" sortIndex="2" targetId="bb9db3fa-1db4-484a-babb-3be12b83b92a" type="selectionEntry">
+          <constraints>
+            <constraint id="0622aabc-035f-422a-a3c3-eefffff50437" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="3"/>
+          </costs>
+        </entryLink>
+        <entryLink name="Blindaje adicional" id="d14dd163-7e45-4057-b143-28df0da84397" collective="false" hidden="false" import="true" sortIndex="3" targetId="2f985e63-fb27-4462-86fc-7375955be38f" type="selectionEntry">
+          <constraints>
+            <constraint id="33408caa-c677-4afd-b205-fc7afdd4a12d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="5"/>
+          </costs>
+        </entryLink>
+        <entryLink name="Pala excavadora" id="2d03da7f-2b06-412c-87f6-1bca24672860" collective="false" hidden="false" import="true" sortIndex="4" targetId="05c7aa0b-c8bc-444f-84a2-1ac6dcbd181c" type="selectionEntry">
+          <constraints>
+            <constraint id="b2268761-a80e-49cd-9ddd-0548078d521a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="5"/>
+          </costs>
+        </entryLink>
+        <entryLink name="Bólter de asalto en afuste exterior" id="20b14879-967e-4494-aab0-42c1af96d5af" collective="false" hidden="false" import="true" sortIndex="5" targetId="e6e10037-bac3-4442-891c-fcb3e83f88d5" type="selectionEntry">
+          <constraints>
+            <constraint id="f3c0b738-9f33-4f80-b38f-2853f9153afc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="10"/>
+          </costs>
+        </entryLink>
+        <entryLink name="Misil cazador asesino" id="b4226e54-d396-4170-afdd-0a2a66382749" collective="false" hidden="false" import="true" sortIndex="6" targetId="26d554aa-1a69-4284-94bf-69ded9706aec" type="selectionEntry">
+          <constraints>
+            <constraint id="d2bf519f-b03f-4c4e-a35d-4c38ba32fd21" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="15"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
 </catalogue>
