@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Templarios Negros" id="7757-a04a-5363-3a75" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="6" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Templarios Negros" id="7757-a04a-5363-3a75" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="7" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink name="Capellán Grimaldus" id="874b023e-ec65-4682-b884-fb43a2a26e02" collective="false" hidden="false" import="true" targetId="a8bf41c8-8bfa-4261-a16b-0235953bfe4e" type="selectionEntry">
       <categoryLinks>
@@ -1839,6 +1839,26 @@
             <repeat childId="a8bf41c8-8bfa-4261-a16b-0235953bfe4e" field="selections" includeChildForces="true" includeChildSelections="true" percentValue="false" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
           </repeats>
         </modifier>
+        <modifier field="d8623735-54c9-4b9f-bf6f-bb372b48ba74" type="decrement" value="1">
+          <repeats>
+            <repeat childId="2e719eae-ba52-4a54-9028-e85724d0428b" field="selections" includeChildForces="true" includeChildSelections="true" percentValue="false" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
+          </repeats>
+        </modifier>
+        <modifier field="d8623735-54c9-4b9f-bf6f-bb372b48ba74" type="decrement" value="1">
+          <repeats>
+            <repeat childId="32ea33a9-886e-4173-8976-9ea18d3509e0" field="selections" includeChildForces="true" includeChildSelections="true" percentValue="false" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
+          </repeats>
+        </modifier>
+        <modifier field="d8623735-54c9-4b9f-bf6f-bb372b48ba74" type="decrement" value="1">
+          <repeats>
+            <repeat childId="10a0fd86-6618-4a42-adb2-e24384819503" field="selections" includeChildForces="true" includeChildSelections="true" percentValue="false" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
+          </repeats>
+        </modifier>
+        <modifier field="d8623735-54c9-4b9f-bf6f-bb372b48ba74" type="decrement" value="1">
+          <repeats>
+            <repeat childId="b40131d6-de54-49cd-be23-f1eb2b969be2" field="selections" includeChildForces="true" includeChildSelections="true" percentValue="false" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
+          </repeats>
+        </modifier>
       </modifiers>
       <selectionEntries>
         <selectionEntry name="Sargento" id="edd88041-9b7a-436d-bfe2-d16c2e045848" collapsible="true" hidden="false" import="true" sortIndex="1" type="model">
@@ -3108,32 +3128,22 @@
       <modifiers>
         <modifier field="e243473a-31ec-4283-906b-3be1921f65e8" type="increment" value="1">
           <repeats>
-            <repeat childId="61cebf34-a567-46a7-b9ce-50ae6dfa8040" field="selections" includeChildForces="true" includeChildSelections="true" percentValue="false" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
+            <repeat childId="2e719eae-ba52-4a54-9028-e85724d0428b" field="selections" includeChildForces="true" includeChildSelections="true" percentValue="false" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
           </repeats>
         </modifier>
         <modifier field="e243473a-31ec-4283-906b-3be1921f65e8" type="increment" value="1">
           <repeats>
-            <repeat childId="d12bd781-480c-417e-8762-cf90f1ca42d1" field="selections" includeChildForces="true" includeChildSelections="true" percentValue="false" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
+            <repeat childId="32ea33a9-886e-4173-8976-9ea18d3509e0" field="selections" includeChildForces="true" includeChildSelections="true" percentValue="false" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
           </repeats>
         </modifier>
         <modifier field="e243473a-31ec-4283-906b-3be1921f65e8" type="increment" value="1">
           <repeats>
-            <repeat childId="3b499ad2-605b-488a-a551-26d7f07ab956" field="selections" includeChildForces="true" includeChildSelections="true" percentValue="false" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
+            <repeat childId="10a0fd86-6618-4a42-adb2-e24384819503" field="selections" includeChildForces="true" includeChildSelections="true" percentValue="false" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
           </repeats>
         </modifier>
         <modifier field="e243473a-31ec-4283-906b-3be1921f65e8" type="increment" value="1">
           <repeats>
-            <repeat childId="8e374ba1-9838-48b5-80f5-f64e6c0e0d18" field="selections" includeChildForces="true" includeChildSelections="true" percentValue="false" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
-          </repeats>
-        </modifier>
-        <modifier field="e243473a-31ec-4283-906b-3be1921f65e8" type="increment" value="1">
-          <repeats>
-            <repeat childId="698de7d7-de80-43b0-adaa-04cf30057888" field="selections" includeChildForces="true" includeChildSelections="true" percentValue="false" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
-          </repeats>
-        </modifier>
-        <modifier field="e243473a-31ec-4283-906b-3be1921f65e8" type="increment" value="1">
-          <repeats>
-            <repeat childId="a8bf41c8-8bfa-4261-a16b-0235953bfe4e" field="selections" includeChildForces="true" includeChildSelections="true" percentValue="false" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
+            <repeat childId="b40131d6-de54-49cd-be23-f1eb2b969be2" field="selections" includeChildForces="true" includeChildSelections="true" percentValue="false" repeats="1" roundUp="false" scope="roster" shared="true" value="1"/>
           </repeats>
         </modifier>
       </modifiers>
