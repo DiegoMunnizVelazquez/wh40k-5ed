@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Templarios Negros" id="7757-a04a-5363-3a75" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="19" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Templarios Negros" id="7757-a04a-5363-3a75" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="20" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink name="Capellán Grimaldus" id="874b023e-ec65-4682-b884-fb43a2a26e02" collective="false" hidden="false" import="true" targetId="a8bf41c8-8bfa-4261-a16b-0235953bfe4e" type="selectionEntry">
       <categoryLinks>
@@ -5501,6 +5501,11 @@
                         <modifier field="hidden" type="set" value="true">
                           <conditions>
                             <condition childId="5ad26ad5-4a2b-4792-b45e-8a14f600a187" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="dc75ffe7-48d4-4517-86d7-df3a09a315ca" shared="true" type="atLeast" value="1"/>
+                          </conditions>
+                        </modifier>
+                        <modifier field="hidden" type="set" value="true">
+                          <conditions>
+                            <condition childId="8f41c935-3322-4d95-bd2a-1baf00e759f1" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="246b90bf-2c95-4158-a8f6-7dc67a22e9d0" shared="true" type="atLeast" value="1"/>
                           </conditions>
                         </modifier>
                       </modifiers>
