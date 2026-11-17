@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Lobos Espaciales" id="de8b-5a14-0e15-e5d9" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="13" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Lobos Espaciales" id="de8b-5a14-0e15-e5d9" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="14" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Saga del Matabestias" id="fef6905f-c2f1-4a8d-b98c-d7462c932abb" hidden="false"/>
     <categoryEntry name="Saga de Majestad" id="70d9fb2b-ea58-469d-ae4b-eecb10ad3642" hidden="false"/>
@@ -3139,7 +3139,7 @@
                                             <constraint id="fab6-e63b-645f-c65d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                                           </constraints>
                                         </entryLink>
-                                        <entryLink name="Lanzamisiles ciclón" id="8871-428c-a245-0fda" collective="false" hidden="false" import="true" targetId="20a6b980-8993-4178-8bf1-8e42dae12c52" type="selectionEntry">
+                                        <entryLink name="Lanzamisiles ciclón" id="8871-428c-a245-0fda" collective="false" hidden="false" import="true" targetId="60e971c6-812f-40be-b523-d9ab7fd9f5c5" type="selectionEntry">
                                           <constraints>
                                             <constraint id="1d36-c3be-d4b9-9a7d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                                             <constraint id="0d6c-5dda-f666-6248" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -4239,7 +4239,7 @@
                     <constraint id="a4ee8815-61f1-462a-af0d-d54ee6748e9d" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="82eeef3a-e33b-43b0-86af-0c5ab89bf579" shared="true" type="max" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Lanzamisiles tifón" id="b367f4c3-9420-4698-bcd9-af4837ee9583" collective="false" hidden="false" import="true" targetId="a73538b2-c53a-4cdf-ac08-893d6bcf6f15" type="selectionEntry">
+                    <entryLink name="Lanzamisiles tifón" id="b367f4c3-9420-4698-bcd9-af4837ee9583" collective="false" hidden="false" import="true" targetId="ca646e87-0f2f-4b69-ace0-4ab09e540470" type="selectionEntry">
                       <constraints>
                         <constraint id="61fa3102-a74f-4293-a04d-6c5a959e894a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                         <constraint id="50c6eb00-4a30-452b-b80f-5d15f3a17cf2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -7703,13 +7703,6 @@
         <infoLink name="Saga del Lobo de hierro" id="f98798f3-48a5-433a-a089-d0f380ebf054" hidden="false" targetId="1c08842b-806e-41ba-8e3c-c795900e3d07" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Lanzamisiles ciclón" id="20a6b980-8993-4178-8bf1-8e42dae12c52" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Lanzamisiles Ciclón" id="11f5d50d-cf3b-436c-9e2d-bd9a748d2628" hidden="false" targetId="754b-816e-74aa-4aab" type="profile"/>
-        <infoLink name="Lanzamisiles Ciclón Fragmentación" id="24ff5405-5b5c-408c-8b9f-c3a049a3945e" hidden="false" targetId="43017582-0dc3-431b-9b50-5d62539d22f0" type="profile"/>
-        <infoLink name="Lanzamisiles Ciclón Perforante" id="1f5e4edb-7b37-4d07-8d09-67b8b80b160b" hidden="false" targetId="563332a8-20d0-4c81-85d3-611c8cc23c5c" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry name="Pellejo de Doppelgangrel" id="186ee6b7-2e30-4b19-b571-61107e477720" hidden="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink name="Pellejo de Doppelgangrel" id="64a9966e-30b1-42b8-b204-1c928ee34427" hidden="false" targetId="800bd5d3-f017-4164-92e2-4ec42ac4eb4e" type="profile"/>
@@ -7718,13 +7711,6 @@
     <selectionEntry name="Estandarte del Lobo" id="16a3d30f-1a33-4f1c-86d0-d61175c6c97e" hidden="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink name="Estandarte del Lobo" id="18983cc2-4b48-4f26-971c-dba08939619a" hidden="false" targetId="7cbc9ba1-64c3-4c29-a6cb-692ac019567f" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Lanzamisiles tifón" id="a73538b2-c53a-4cdf-ac08-893d6bcf6f15" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Lanzamisiles Tifón" id="55ed3c22-44c3-476a-9d94-a15a2380b8ff" hidden="false" targetId="bc19-11c8-8784-5816" type="profile"/>
-        <infoLink name="Lanzamisiles Tifón Fragmentación" id="f0d514db-e25c-437a-a3fb-1be44175a5fb" hidden="false" targetId="5f02b02a-5475-4d5d-ab74-7619ec62da7a" type="profile"/>
-        <infoLink name="Lanzamisiles Tifón Perforante" id="0dc2e11a-8d14-4e66-bbce-2cd226c28c5d" hidden="false" targetId="a2160dfb-ec4e-43ae-b6dd-1b746b63aff7" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Escudo de asedio" id="c0725a31-f13d-41cf-b087-3a6ce82ae50c" hidden="false" import="true" type="upgrade">

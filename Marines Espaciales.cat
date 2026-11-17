@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Marines Espaciales" id="8964-cc67-2c68-196d" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" library="false" revision="6" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Marines Espaciales" id="8964-cc67-2c68-196d" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" library="false" revision="7" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Esto es for fun. Cualquier error o sugerencia serán bienvenidas
 
 En este sistema se agruparán las reglas del Codex de Marines Espaciales utilizado en la 5ed de Warhammer 40k</readme>
@@ -4399,7 +4399,7 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
                         <cost name="Pts" typeId="puntos" value="5"/>
                       </costs>
                     </entryLink>
-                    <entryLink name="Lanzamisiles Ciclón" id="7d53-078a-eda4-8838" collective="false" hidden="false" import="true" targetId="b489-ef23-275b-8e33" type="selectionEntry">
+                    <entryLink name="Lanzamisiles Ciclón" id="7d53-078a-eda4-8838" collective="false" hidden="false" import="true" targetId="60e971c6-812f-40be-b523-d9ab7fd9f5c5" type="selectionEntry">
                       <constraints>
                         <constraint id="6257-8155-8c68-1ba1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -5646,7 +5646,7 @@ aplica a los gravíticos, cuyos delicados motores gravitatorios se ven dañados 
             <constraint id="329a-1dd5-8681-f1a7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Lanzamisiles Tifón" id="092f-2a33-2011-b9a9" collective="false" hidden="false" import="true" targetId="a81e-c6c9-2583-3ca1" type="selectionEntry">
+            <entryLink name="Lanzamisiles Tifón" id="092f-2a33-2011-b9a9" collective="false" hidden="false" import="true" targetId="ca646e87-0f2f-4b69-ace0-4ab09e540470" type="selectionEntry">
               <constraints>
                 <constraint id="001f-10df-9f5a-ad5c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -9359,19 +9359,6 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
         </entryLink>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry name="Lanzamisiles Tifón" id="a81e-c6c9-2583-3ca1" collective="false" hidden="false" import="true" type="upgrade">
-      <constraints>
-        <constraint id="caec-25c7-84ab-bccb" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <costs>
-        <cost name="Pts" typeId="puntos" value="0"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Lanzamisiles Tifón Fragmentación" id="5a0c-9a79-5e55-c689" hidden="false" targetId="5f02b02a-5475-4d5d-ab74-7619ec62da7a" type="profile"/>
-        <infoLink name="Lanzamisiles Tifón Perforante" id="097a-d9c9-aef7-1ab6" hidden="false" targetId="a2160dfb-ec4e-43ae-b6dd-1b746b63aff7" type="profile"/>
-        <infoLink name="Lanzamisiles Tifón" id="3dd4-a5fd-e7cc-21e6" hidden="false" targetId="bc19-11c8-8784-5816" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry name="Escuadrón de Motocicletas de Ataque" id="9209-288b-9ba9-8366" collective="false" hidden="false" import="true" page="68" publicationId="f176-f140-74d8-da7d" type="unit">
       <costs>
         <cost name="Pts" typeId="puntos" value="0"/>
@@ -9578,16 +9565,6 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
       </constraints>
       <infoLinks>
         <infoLink name="Lanzallamas" id="899e-d055-5a47-a430" hidden="false" targetId="c6ed-e1e6-bd68-1891" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Lanzamisiles Ciclón" id="b489-ef23-275b-8e33" hidden="false" import="true" type="upgrade">
-      <constraints>
-        <constraint id="b0ff-3218-2945-df3a" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <infoLinks>
-        <infoLink name="Lanzamisiles Ciclón" id="0876-c5c9-3528-4265" hidden="false" targetId="754b-816e-74aa-4aab" type="profile"/>
-        <infoLink name="Lanzamisiles Ciclón Fragmentación" id="911d-280f-20a0-7d70" hidden="false" targetId="43017582-0dc3-431b-9b50-5d62539d22f0" type="profile"/>
-        <infoLink name="Lanzamisiles Ciclón Perforante" id="13c7-2c94-2498-2ea4" hidden="false" targetId="563332a8-20d0-4c81-85d3-611c8cc23c5c" type="profile"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>

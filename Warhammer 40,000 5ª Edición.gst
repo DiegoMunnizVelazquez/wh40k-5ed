@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem name="Warhammer 40,000 5ª Edición " id="8cf6-c83d-3eeb-e95c" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" revision="26" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem name="Warhammer 40,000 5ª Edición " id="8cf6-c83d-3eeb-e95c" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" revision="27" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Esto es for fun. Cualquier error o sugerencia serán bienvenidas
 
 En este sistema se agruparán el sistema de Warhammer 40000 5ª edición, así como todos los los codex que se usarán en este sistema cerrado.
@@ -1653,6 +1653,20 @@ Si decides dividir una unidad en escuadras de combate, a partir de ese momento c
         <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
         <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry name="Lanzamisiles Tifón" id="ca646e87-0f2f-4b69-ace0-4ab09e540470" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Lanzamisiles Tifón" id="704812d5-320e-44d9-b753-0abba57065ea" hidden="false" targetId="bc19-11c8-8784-5816" type="profile"/>
+        <infoLink name="Lanzamisiles Tifón Fragmentación" id="b6003b26-8493-4186-82ad-533bd56844d7" hidden="false" targetId="5f02b02a-5475-4d5d-ab74-7619ec62da7a" type="profile"/>
+        <infoLink name="Lanzamisiles Tifón Perforante" id="17aae9a4-81d8-43a2-963c-37617b25e7f6" hidden="false" targetId="a2160dfb-ec4e-43ae-b6dd-1b746b63aff7" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Lanzamisiles Ciclón" id="60e971c6-812f-40be-b523-d9ab7fd9f5c5" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Lanzamisiles Ciclón" id="d66eed76-fccb-44d1-9e60-d9cb2b63447a" hidden="false" targetId="754b-816e-74aa-4aab" type="profile"/>
+        <infoLink name="Lanzamisiles Ciclón Fragmentación" id="ee51fa9b-8b63-42ea-b59f-2e6d46d42f74" hidden="false" targetId="43017582-0dc3-431b-9b50-5d62539d22f0" type="profile"/>
+        <infoLink name="Lanzamisiles Ciclón Perforante" id="46d1bf31-6649-4577-8a15-1a273bee33d0" hidden="false" targetId="563332a8-20d0-4c81-85d3-611c8cc23c5c" type="profile"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
 </gameSystem>

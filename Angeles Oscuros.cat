@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Angeles Oscuros" id="125b-6623-f648-fc9a" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" library="false" revision="11" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Angeles Oscuros" id="125b-6623-f648-fc9a" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" library="false" revision="12" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Terminado</comment>
   <readme>Esto es for fun. Cualquier error o sugerencia serán bienvenidas
 
@@ -2424,7 +2424,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                         <cost name="Pts" typeId="puntos" value="5"/>
                       </costs>
                     </entryLink>
-                    <entryLink name="Lanzamisiles Ciclón" id="7d53-078a-eda4-8838" collective="false" hidden="false" import="true" targetId="6902-fdec-18ba-5326" type="selectionEntry">
+                    <entryLink name="Lanzamisiles Ciclón" id="7d53-078a-eda4-8838" collective="false" hidden="false" import="true" targetId="60e971c6-812f-40be-b523-d9ab7fd9f5c5" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="puntos" value="20"/>
                       </costs>
@@ -3139,7 +3139,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
             <constraint id="329a-1dd5-8681-f1a7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Lanzamisiles Tifón" id="092f-2a33-2011-b9a9" collective="false" hidden="false" import="true" targetId="a81e-c6c9-2583-3ca1" type="selectionEntry">
+            <entryLink name="Lanzamisiles Tifón" id="092f-2a33-2011-b9a9" collective="false" hidden="false" import="true" targetId="ca646e87-0f2f-4b69-ace0-4ab09e540470" type="selectionEntry">
               <constraints>
                 <constraint id="001f-10df-9f5a-ad5c" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="7c4e-3e52-fe5f-9b1a" shared="true" type="max" value="1"/>
               </constraints>
@@ -4497,19 +4497,6 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
         </entryLink>
       </entryLinks>
     </selectionEntry>
-    <selectionEntry name="Lanzamisiles Tifón" id="a81e-c6c9-2583-3ca1" collective="false" hidden="false" import="true" type="upgrade">
-      <constraints>
-        <constraint id="caec-25c7-84ab-bccb" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <costs>
-        <cost name="Pts" typeId="puntos" value="0"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Lanzamisiles Tifón Fragmentación" id="5a0c-9a79-5e55-c689" hidden="false" targetId="5f02b02a-5475-4d5d-ab74-7619ec62da7a" type="profile"/>
-        <infoLink name="Lanzamisiles Tifón Perforante" id="eae0-dcd6-06bb-e59c" hidden="false" targetId="a2160dfb-ec4e-43ae-b6dd-1b746b63aff7" type="profile"/>
-        <infoLink name="Lanzamisiles Tifón" id="a96e-94a8-dde5-8dc3" hidden="false" targetId="bc19-11c8-8784-5816" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry name="Land Raider Cruzado" id="567a-97a0-be59-c18f" collective="false" hidden="false" import="true" page="82" publicationId="f176-f140-74d8-da7d" type="unit">
       <costs>
         <cost name="Pts" typeId="puntos" value="250"/>
@@ -4979,19 +4966,6 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
         <infoLink name="Lanzallamas" id="651a-37f2-fcc8-dc76" hidden="false" targetId="c6ed-e1e6-bd68-1891" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Lanzamisiles Ciclón" id="6902-fdec-18ba-5326" collective="false" hidden="false" import="true" type="upgrade">
-      <constraints>
-        <constraint id="ed3b-ea97-9329-e112" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <costs>
-        <cost name="Pts" typeId="puntos" value="0"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Lanzamisiles Ciclón Fragmentación" id="d18c-c1dd-f376-a770" hidden="false" targetId="43017582-0dc3-431b-9b50-5d62539d22f0" type="profile"/>
-        <infoLink name="Lanzamisiles Ciclón Perforante" id="c09d-9fbc-3d1b-4844" hidden="false" targetId="563332a8-20d0-4c81-85d3-611c8cc23c5c" type="profile"/>
-        <infoLink name="Lanzamisiles Ciclón" id="b404-1a40-393d-c469" hidden="false" targetId="754b-816e-74aa-4aab" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry name="Escuadra del Ala de Muerte (Linea)" id="b3e5-efb0-8550-0725" collective="false" hidden="false" import="true" page="28" publicationId="822e-763d-4a6a-b7fc" type="unit">
       <costs>
         <cost name="Pts" typeId="puntos" value="215"/>
@@ -5078,7 +5052,7 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
                         <cost name="Pts" typeId="puntos" value="5"/>
                       </costs>
                     </entryLink>
-                    <entryLink name="Lanzamisiles Ciclón" id="a312-d01c-3c4d-fe9e" collective="false" hidden="false" import="true" targetId="6902-fdec-18ba-5326" type="selectionEntry">
+                    <entryLink name="Lanzamisiles Ciclón" id="a312-d01c-3c4d-fe9e" collective="false" hidden="false" import="true" targetId="60e971c6-812f-40be-b523-d9ab7fd9f5c5" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="puntos" value="20"/>
                       </costs>
@@ -5383,7 +5357,7 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
                         <cost name="Pts" typeId="puntos" value="5"/>
                       </costs>
                     </entryLink>
-                    <entryLink name="Lanzamisiles Ciclón" id="1806-a0a3-33bb-ae63" collective="false" hidden="false" import="true" targetId="6902-fdec-18ba-5326" type="selectionEntry">
+                    <entryLink name="Lanzamisiles Ciclón" id="1806-a0a3-33bb-ae63" collective="false" hidden="false" import="true" targetId="60e971c6-812f-40be-b523-d9ab7fd9f5c5" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="puntos" value="20"/>
                       </costs>
