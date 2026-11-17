@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Marines Espaciales" id="8964-cc67-2c68-196d" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" library="false" revision="7" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Marines Espaciales" id="8964-cc67-2c68-196d" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" library="false" revision="8" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Esto es for fun. Cualquier error o sugerencia serán bienvenidas
 
 En este sistema se agruparán las reglas del Codex de Marines Espaciales utilizado en la 5ed de Warhammer 40k</readme>
@@ -2539,7 +2539,11 @@ ejército está sujeto a la regla especial doctrina de combate, debes elegir qu�
                   </constraints>
                   <entryLinks>
                     <entryLink name="Motocicleta Marines Espaciales" id="a330-c931-3468-1960" collective="false" hidden="false" import="true" targetId="8292-d319-84f5-7f19" type="selectionEntry"/>
-                    <entryLink name="Retroreactores" id="24bd-e100-8db9-4831" collective="false" hidden="false" import="true" targetId="3f17-3e88-f7da-960b" type="selectionEntry"/>
+                    <entryLink name="Retroreactores" id="24bd-e100-8db9-4831" collective="false" hidden="false" import="true" targetId="5063e534-87cf-438e-8dc7-49b0e9293b5c" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="25"/>
+                      </costs>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -7475,7 +7479,11 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
                   </constraints>
                   <entryLinks>
                     <entryLink name="Motocicleta Marines Espaciales" id="68dd-bf36-a5b7-b966" collective="false" hidden="false" import="true" targetId="8292-d319-84f5-7f19" type="selectionEntry"/>
-                    <entryLink name="Retroreactores" id="5115-9f73-9158-cb84" collective="false" hidden="false" import="true" targetId="3f17-3e88-f7da-960b" type="selectionEntry"/>
+                    <entryLink name="Retroreactores" id="5115-9f73-9158-cb84" collective="false" hidden="false" import="true" targetId="5063e534-87cf-438e-8dc7-49b0e9293b5c" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="25"/>
+                      </costs>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -7689,7 +7697,11 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
                   </constraints>
                   <entryLinks>
                     <entryLink name="Motocicleta Marines Espaciales" id="53e8-b972-6c44-2547" collective="false" hidden="false" import="true" targetId="8292-d319-84f5-7f19" type="selectionEntry"/>
-                    <entryLink name="Retroreactores" id="98a9-3009-749f-ad9b" collective="false" hidden="false" import="true" targetId="3f17-3e88-f7da-960b" type="selectionEntry"/>
+                    <entryLink name="Retroreactores" id="98a9-3009-749f-ad9b" collective="false" hidden="false" import="true" targetId="5063e534-87cf-438e-8dc7-49b0e9293b5c" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="25"/>
+                      </costs>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -7896,7 +7908,11 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
                   </constraints>
                   <entryLinks>
                     <entryLink name="Motocicleta Marines Espaciales" id="3801-48be-c0fb-73aa" collective="false" hidden="false" import="true" targetId="8292-d319-84f5-7f19" type="selectionEntry"/>
-                    <entryLink name="Retroreactores" id="410c-99c6-417e-307b" collective="false" hidden="false" import="true" targetId="3f17-3e88-f7da-960b" type="selectionEntry"/>
+                    <entryLink name="Retroreactores" id="410c-99c6-417e-307b" collective="false" hidden="false" import="true" targetId="5063e534-87cf-438e-8dc7-49b0e9293b5c" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="25"/>
+                      </costs>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -9049,17 +9065,6 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
       <infoLinks>
         <infoLink name="Motocicleta Marines Espaciales" id="819b-ddc0-50b5-28a4" hidden="false" targetId="5042-8639-f05a-298b" type="profile"/>
         <infoLink name="Bólter" id="0b8c-08b7-77f4-686c" hidden="false" targetId="90a7-c0e2-3a06-dc70" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Retroreactores" id="3f17-3e88-f7da-960b" collective="false" hidden="false" import="true" type="upgrade">
-      <constraints>
-        <constraint id="8e77-33fb-cb8d-21cd" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <costs>
-        <cost name="Pts" typeId="puntos" value="25"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Retrorreactores" id="726a-fdab-a517-c80b" hidden="false" targetId="ba22-cd8e-0d95-8e72" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Arma Psíquica" id="be4e-94f2-2d2f-cb4f" collective="false" hidden="false" import="true" type="upgrade">

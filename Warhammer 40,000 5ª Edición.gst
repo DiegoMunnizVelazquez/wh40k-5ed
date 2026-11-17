@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem name="Warhammer 40,000 5ª Edición " id="8cf6-c83d-3eeb-e95c" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" revision="27" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem name="Warhammer 40,000 5ª Edición " id="8cf6-c83d-3eeb-e95c" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" revision="28" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Esto es for fun. Cualquier error o sugerencia serán bienvenidas
 
 En este sistema se agruparán el sistema de Warhammer 40000 5ª edición, así como todos los los codex que se usarán en este sistema cerrado.
@@ -1666,6 +1666,12 @@ Si decides dividir una unidad en escuadras de combate, a partir de ese momento c
         <infoLink name="Lanzamisiles Ciclón" id="d66eed76-fccb-44d1-9e60-d9cb2b63447a" hidden="false" targetId="754b-816e-74aa-4aab" type="profile"/>
         <infoLink name="Lanzamisiles Ciclón Fragmentación" id="ee51fa9b-8b63-42ea-b59f-2e6d46d42f74" hidden="false" targetId="43017582-0dc3-431b-9b50-5d62539d22f0" type="profile"/>
         <infoLink name="Lanzamisiles Ciclón Perforante" id="46d1bf31-6649-4577-8a15-1a273bee33d0" hidden="false" targetId="563332a8-20d0-4c81-85d3-611c8cc23c5c" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Retrorreactor" id="5063e534-87cf-438e-8dc7-49b0e9293b5c" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Retrorreactores" id="31786456-ce9c-494c-abf7-4907cb0fb9ee" hidden="false" targetId="ba22-cd8e-0d95-8e72" type="profile"/>
+        <infoLink name="Unidad retropropulsada" id="032e71f4-eee1-412c-b30a-9c76133a153a" hidden="false" targetId="d6f4-cfda-75c5-f2f1" type="rule"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>

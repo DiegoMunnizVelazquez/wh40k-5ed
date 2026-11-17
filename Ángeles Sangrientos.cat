@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Ángeles Sangrientos" id="0bd2-882e-45d3-4a62" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="8" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Ángeles Sangrientos" id="0bd2-882e-45d3-4a62" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="9" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink name="Astorath el siniestro" id="e67513f3-0100-513d-9c20-4354ac74503c" collective="false" hidden="false" import="true" targetId="58277361-f888-5d25-98ae-d0d18f93a6d3" type="selectionEntry">
       <categoryLinks>
@@ -1465,13 +1465,16 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
         <cost name="Pts" typeId="puntos" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink name="Retrorreactor" id="93a1fcc8-5af1-5324-995f-d8c154e3e841" collective="false" hidden="false" import="true" targetId="f7ebcf54-0196-5d00-b5f8-ac6628aa8fb9" type="selectionEntry">
+        <entryLink name="Retrorreactor" id="93a1fcc8-5af1-5324-995f-d8c154e3e841" collective="false" hidden="false" import="true" targetId="5063e534-87cf-438e-8dc7-49b0e9293b5c" type="selectionEntry">
           <constraints>
             <constraint id="9603de81-d607-5cb0-85e4-a1e69cee4a42" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <costs>
             <cost name="Pts" typeId="puntos" value="0"/>
           </costs>
+          <infoLinks>
+            <infoLink name="El descenso de los Ángeles" id="df10a50d-84cf-4b66-83ee-6a79194251e7" hidden="false" targetId="a05eb70f-08ce-5d05-971c-cd02f3d65060" type="rule"/>
+          </infoLinks>
           <modifiers>
             <modifier field="puntos" type="increment" value="15">
               <repeats>
@@ -1489,7 +1492,7 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
           <modifiers>
             <modifier field="hidden" type="set" value="true">
               <conditions>
-                <condition childId="f7ebcf54-0196-5d00-b5f8-ac6628aa8fb9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="atLeast" value="1"/>
+                <condition childId="5063e534-87cf-438e-8dc7-49b0e9293b5c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="atLeast" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -1664,11 +1667,14 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
                 <constraint id="ca521df8-3d53-5c6c-b47a-1053ade32b81" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
-            <entryLink name="Retrorreactor" id="2c8ceb8a-c579-5fa7-9db1-8702832ae14b" collective="false" hidden="false" import="true" targetId="f7ebcf54-0196-5d00-b5f8-ac6628aa8fb9" type="selectionEntry">
+            <entryLink name="Retrorreactor" id="2c8ceb8a-c579-5fa7-9db1-8702832ae14b" collective="false" hidden="false" import="true" targetId="5063e534-87cf-438e-8dc7-49b0e9293b5c" type="selectionEntry">
               <constraints>
                 <constraint id="e24a8aed-0d8a-578f-9123-fdc8df9fd019" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                 <constraint id="84f01585-5c81-51ae-b735-cea8d2a2d256" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
+              <infoLinks>
+                <infoLink name="El descenso de los Ángeles" id="39ffb86c-49ae-4e92-ac76-09b3bcd29737" hidden="false" targetId="a05eb70f-08ce-5d05-971c-cd02f3d65060" type="rule"/>
+              </infoLinks>
             </entryLink>
             <entryLink name="Rosarius" id="52758c8a-5035-58de-aec7-f01975a0526d" collective="false" hidden="false" import="true" targetId="1edb9f5b-d4d4-5e30-9eee-d25d7cea2243" type="selectionEntry">
               <constraints>
@@ -2079,11 +2085,14 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
                 <constraint id="197e0bab-bcea-5de5-b712-3831ab9a8f47" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
-            <entryLink name="Retrorreactor" id="b0d384f2-713f-5d11-b9d7-502f44e81830" collective="false" hidden="false" import="true" targetId="f7ebcf54-0196-5d00-b5f8-ac6628aa8fb9" type="selectionEntry">
+            <entryLink name="Retrorreactor" id="b0d384f2-713f-5d11-b9d7-502f44e81830" collective="false" hidden="false" import="true" targetId="5063e534-87cf-438e-8dc7-49b0e9293b5c" type="selectionEntry">
               <constraints>
                 <constraint id="f1607e3e-9160-5c63-acf9-4752a2e36494" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                 <constraint id="e57d16d6-5145-535e-a8a2-26dae710c696" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
+              <infoLinks>
+                <infoLink name="El descenso de los Ángeles" id="cf460985-ae8d-4e20-af7a-5daedcb3e86d" hidden="false" targetId="a05eb70f-08ce-5d05-971c-cd02f3d65060" type="rule"/>
+              </infoLinks>
               <modifiers>
                 <modifier field="f1607e3e-9160-5c63-acf9-4752a2e36494" type="set" value="0">
                   <conditions>
@@ -2240,11 +2249,14 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
                 <constraint id="ff57b289-313b-5434-b086-475c5a628ba2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
-            <entryLink name="Retrorreactor" id="fce66969-c0c5-56d8-9303-80050b0dd5a9" collective="false" hidden="false" import="true" targetId="f7ebcf54-0196-5d00-b5f8-ac6628aa8fb9" type="selectionEntry">
+            <entryLink name="Retrorreactor" id="fce66969-c0c5-56d8-9303-80050b0dd5a9" collective="false" hidden="false" import="true" targetId="5063e534-87cf-438e-8dc7-49b0e9293b5c" type="selectionEntry">
               <constraints>
                 <constraint id="4e7b2aa6-08cf-508f-a481-ad0f967b582c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                 <constraint id="73e8eb78-171c-5a2b-ac33-83ecb3ac0375" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
+              <infoLinks>
+                <infoLink name="El descenso de los Ángeles" id="0416bc12-5983-4de8-9362-8baada88bde0" hidden="false" targetId="a05eb70f-08ce-5d05-971c-cd02f3d65060" type="rule"/>
+              </infoLinks>
               <modifiers>
                 <modifier field="4e7b2aa6-08cf-508f-a481-ad0f967b582c" type="set" value="0">
                   <conditions>
@@ -2549,10 +2561,13 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
                     <constraint id="afd0a0ea-1cec-5bc3-9634-1ead9779feef" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Retrorreactor" id="bae2387a-6c35-5d7f-bd0a-cb0bcf0b493e" collective="false" hidden="false" import="true" sortIndex="1" targetId="f7ebcf54-0196-5d00-b5f8-ac6628aa8fb9" type="selectionEntry">
+                    <entryLink name="Retrorreactor" id="bae2387a-6c35-5d7f-bd0a-cb0bcf0b493e" collective="false" hidden="false" import="true" sortIndex="1" targetId="5063e534-87cf-438e-8dc7-49b0e9293b5c" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="puntos" value="25"/>
                       </costs>
+                      <infoLinks>
+                        <infoLink name="El descenso de los Ángeles" id="c29f95e7-39ef-4e4e-be61-fe9e7890f772" hidden="false" targetId="a05eb70f-08ce-5d05-971c-cd02f3d65060" type="rule"/>
+                      </infoLinks>
                     </entryLink>
                     <entryLink name="Motocicleta de los Marines Espaciales" id="dd500d81-8f6f-5152-9a12-3c43e061ceef" collective="false" hidden="false" import="true" sortIndex="2" targetId="1e7c4ad8-63ea-5833-9325-707c391a2bbc" type="selectionEntry">
                       <costs>
@@ -2652,11 +2667,14 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
                 <constraint id="8b145c30-b513-5376-b6d9-d4989815abd2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
-            <entryLink name="Retrorreactor" id="cd28fefd-4879-50bb-907e-974489015cc3" collective="false" hidden="false" import="true" targetId="f7ebcf54-0196-5d00-b5f8-ac6628aa8fb9" type="selectionEntry">
+            <entryLink name="Retrorreactor" id="cd28fefd-4879-50bb-907e-974489015cc3" collective="false" hidden="false" import="true" targetId="5063e534-87cf-438e-8dc7-49b0e9293b5c" type="selectionEntry">
               <constraints>
                 <constraint id="f290e4a2-76e3-560c-8c8e-f242cfc5bd3c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                 <constraint id="40eef636-8d4d-5b8d-a709-7e90f59ea7f7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
+              <infoLinks>
+                <infoLink name="El descenso de los Ángeles" id="6af0e4de-caac-4edd-a872-e2e9dad399ab" hidden="false" targetId="a05eb70f-08ce-5d05-971c-cd02f3d65060" type="rule"/>
+              </infoLinks>
             </entryLink>
             <entryLink name="Granadas de fragmentación" id="ec7edf9e-161e-5114-8ad5-d973fa339eac" collective="false" hidden="false" import="true" targetId="076be029-6121-54c1-9d39-0e6a7f2f4737" type="selectionEntry">
               <constraints>
@@ -3236,7 +3254,11 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
               </constraints>
               <entryLinks>
                 <entryLink name="Servobrazo" id="f6818651-8433-5dfe-8aa6-c2176f0ada83" collective="false" hidden="false" import="true" sortIndex="1" targetId="4e1fa5a5-54f1-4dec-8bdb-64f97b5632a8" type="selectionEntry"/>
-                <entryLink name="Retrorreactor" id="75854851-6be4-5384-a0aa-54d3cd2798d9" collective="false" hidden="false" import="true" sortIndex="2" targetId="f7ebcf54-0196-5d00-b5f8-ac6628aa8fb9" type="selectionEntry"/>
+                <entryLink name="Retrorreactor" id="75854851-6be4-5384-a0aa-54d3cd2798d9" collective="false" hidden="false" import="true" sortIndex="2" targetId="5063e534-87cf-438e-8dc7-49b0e9293b5c" type="selectionEntry">
+                  <infoLinks>
+                    <infoLink name="El descenso de los Ángeles" id="2e727b3c-43a3-4e17-b838-565087a2898a" hidden="false" targetId="a05eb70f-08ce-5d05-971c-cd02f3d65060" type="rule"/>
+                  </infoLinks>
+                </entryLink>
                 <entryLink name="Servoarnés" id="8ad08c88-5004-5e25-8e40-e41658c00b98" collective="false" hidden="false" import="true" sortIndex="3" targetId="d3b6bd1b-879c-50e1-af7b-1ff365fd700d" type="selectionEntry">
                   <costs>
                     <cost name="Pts" typeId="puntos" value="25"/>
@@ -3844,10 +3866,13 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
                         <constraint id="134f40ba-e75d-55dc-bd62-5f4676797d63" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
                       <entryLinks>
-                        <entryLink name="Retrorreactor" id="da478d77-65c1-51ce-b406-f09d98bd0751" collective="false" hidden="false" import="true" sortIndex="1" targetId="f7ebcf54-0196-5d00-b5f8-ac6628aa8fb9" type="selectionEntry">
+                        <entryLink name="Retrorreactor" id="da478d77-65c1-51ce-b406-f09d98bd0751" collective="false" hidden="false" import="true" sortIndex="1" targetId="5063e534-87cf-438e-8dc7-49b0e9293b5c" type="selectionEntry">
                           <costs>
                             <cost name="Pts" typeId="puntos" value="25"/>
                           </costs>
+                          <infoLinks>
+                            <infoLink name="El descenso de los Ángeles" id="3227f80b-7989-4139-b68b-17fee9ebe030" hidden="false" targetId="a05eb70f-08ce-5d05-971c-cd02f3d65060" type="rule"/>
+                          </infoLinks>
                         </entryLink>
                         <entryLink name="Motocicleta de los Marines Espaciales" id="729a86e5-a102-5322-be57-581a2aaea051" collective="false" hidden="false" import="true" sortIndex="2" targetId="1e7c4ad8-63ea-5833-9325-707c391a2bbc" type="selectionEntry">
                           <costs>
@@ -4013,11 +4038,14 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
             <constraint id="90bd7583-519b-57be-bebe-05798d04516a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
         </entryLink>
-        <entryLink name="Retrorreactor" id="ee645c8a-dc92-5bd7-8977-5d6fcfdbb5e3" collective="false" hidden="false" import="true" targetId="f7ebcf54-0196-5d00-b5f8-ac6628aa8fb9" type="selectionEntry">
+        <entryLink name="Retrorreactor" id="ee645c8a-dc92-5bd7-8977-5d6fcfdbb5e3" collective="false" hidden="false" import="true" targetId="5063e534-87cf-438e-8dc7-49b0e9293b5c" type="selectionEntry">
           <constraints>
             <constraint id="480db1d2-2511-5b8d-ad11-b76e0134f7e4" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="158238f9-e0fe-5798-b8ef-267d49fcfa9d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
+          <infoLinks>
+            <infoLink name="El descenso de los Ángeles" id="789e017a-17e0-4ace-b6bb-6dcbb609ebc7" hidden="false" targetId="a05eb70f-08ce-5d05-971c-cd02f3d65060" type="rule"/>
+          </infoLinks>
         </entryLink>
         <entryLink name="Granadas de fragmentación" id="b23eaf32-5993-5c75-a179-63058bbb0e1f" collective="false" hidden="false" import="true" targetId="076be029-6121-54c1-9d39-0e6a7f2f4737" type="selectionEntry">
           <constraints>
@@ -4145,11 +4173,14 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
             <constraint id="a46c4ce8-f8cc-5fd7-8ecc-2cdf8e5f407d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
         </entryLink>
-        <entryLink name="Retrorreactor" id="65dbb83f-2b0e-5125-840a-1778140331cf" collective="false" hidden="false" import="true" targetId="f7ebcf54-0196-5d00-b5f8-ac6628aa8fb9" type="selectionEntry">
+        <entryLink name="Retrorreactor" id="65dbb83f-2b0e-5125-840a-1778140331cf" collective="false" hidden="false" import="true" targetId="5063e534-87cf-438e-8dc7-49b0e9293b5c" type="selectionEntry">
           <constraints>
             <constraint id="5aa9d7b8-77f7-5323-8c7e-d0b8d295c2cc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="0c82f578-9bc5-5352-9636-d89c0e1d5db6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
+          <infoLinks>
+            <infoLink name="El descenso de los Ángeles" id="a0a986b8-b2df-43dd-ac75-38df267cf790" hidden="false" targetId="a05eb70f-08ce-5d05-971c-cd02f3d65060" type="rule"/>
+          </infoLinks>
         </entryLink>
         <entryLink name="Rosarius" id="68be4596-8829-59cb-a419-bfbf05718d46" collective="false" hidden="false" import="true" targetId="1edb9f5b-d4d4-5e30-9eee-d25d7cea2243" type="selectionEntry">
           <constraints>
@@ -4194,11 +4225,14 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
             <constraint id="626ed7a6-3a92-59fb-8a8b-289237bc53bf" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
         </entryLink>
-        <entryLink name="Retrorreactor" id="9195a4fd-c4bf-599a-92a3-6286a4fec0d4" collective="false" hidden="false" import="true" targetId="f7ebcf54-0196-5d00-b5f8-ac6628aa8fb9" type="selectionEntry">
+        <entryLink name="Retrorreactor" id="9195a4fd-c4bf-599a-92a3-6286a4fec0d4" collective="false" hidden="false" import="true" targetId="5063e534-87cf-438e-8dc7-49b0e9293b5c" type="selectionEntry">
           <constraints>
             <constraint id="46eb66e0-7acb-527e-8208-5d67383476ac" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="7f7c04ed-2167-509c-a450-bbe83764d07e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
+          <infoLinks>
+            <infoLink name="El descenso de los Ángeles" id="5eda9dea-96a9-452c-ab2a-ca62f94bed3e" hidden="false" targetId="a05eb70f-08ce-5d05-971c-cd02f3d65060" type="rule"/>
+          </infoLinks>
         </entryLink>
         <entryLink name="Arma Encarmine" id="585b8f65-11e7-5692-9089-6135a1d8d2bc" collective="false" hidden="false" import="true" targetId="ea93100e-cf20-566f-b7dc-f18ea0919caf" type="selectionEntry">
           <constraints>
@@ -4553,10 +4587,13 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
                     <constraint id="804a30b2-73ef-5873-92f1-882e71496de1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Retrorreactor" id="bf5b4461-4aa7-5a33-a8f9-21f07053b08f" collective="false" hidden="false" import="true" sortIndex="1" targetId="f7ebcf54-0196-5d00-b5f8-ac6628aa8fb9" type="selectionEntry">
+                    <entryLink name="Retrorreactor" id="bf5b4461-4aa7-5a33-a8f9-21f07053b08f" collective="false" hidden="false" import="true" sortIndex="1" targetId="5063e534-87cf-438e-8dc7-49b0e9293b5c" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="puntos" value="25"/>
                       </costs>
+                      <infoLinks>
+                        <infoLink name="El descenso de los Ángeles" id="80508488-a230-4d13-8a35-f0eec0c79011" hidden="false" targetId="a05eb70f-08ce-5d05-971c-cd02f3d65060" type="rule"/>
+                      </infoLinks>
                     </entryLink>
                     <entryLink name="Motocicleta de los Marines Espaciales" id="57ec4385-05ec-56a9-b363-38be9fbd9085" collective="false" hidden="false" import="true" sortIndex="2" targetId="1e7c4ad8-63ea-5833-9325-707c391a2bbc" type="selectionEntry">
                       <costs>
@@ -4796,10 +4833,13 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
                     <constraint id="f4b4141a-85d1-5b3e-ba41-9f44720ce7f2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Retrorreactor" id="a67cda06-9c18-54ce-b6cb-52dbae2bb3a3" collective="false" hidden="false" import="true" sortIndex="1" targetId="f7ebcf54-0196-5d00-b5f8-ac6628aa8fb9" type="selectionEntry">
+                    <entryLink name="Retrorreactor" id="a67cda06-9c18-54ce-b6cb-52dbae2bb3a3" collective="false" hidden="false" import="true" sortIndex="1" targetId="5063e534-87cf-438e-8dc7-49b0e9293b5c" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="puntos" value="25"/>
                       </costs>
+                      <infoLinks>
+                        <infoLink name="El descenso de los Ángeles" id="76f6d329-6955-465c-b0a0-becc0c898bd7" hidden="false" targetId="a05eb70f-08ce-5d05-971c-cd02f3d65060" type="rule"/>
+                      </infoLinks>
                     </entryLink>
                     <entryLink name="Motocicleta de los Marines Espaciales" id="be0da5cb-3339-50fa-9e84-d57ae08ec605" collective="false" hidden="false" import="true" sortIndex="2" targetId="1e7c4ad8-63ea-5833-9325-707c391a2bbc" type="selectionEntry">
                       <costs>
@@ -5069,10 +5109,13 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
                     <constraint id="a52f6251-6f6e-5997-932d-f47164cd6370" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Retrorreactor" id="43fe7ba1-ef88-58e4-82d0-3bb4de6f0aa6" collective="false" hidden="false" import="true" sortIndex="1" targetId="f7ebcf54-0196-5d00-b5f8-ac6628aa8fb9" type="selectionEntry">
+                    <entryLink name="Retrorreactor" id="43fe7ba1-ef88-58e4-82d0-3bb4de6f0aa6" collective="false" hidden="false" import="true" sortIndex="1" targetId="5063e534-87cf-438e-8dc7-49b0e9293b5c" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="puntos" value="25"/>
                       </costs>
+                      <infoLinks>
+                        <infoLink name="El descenso de los Ángeles" id="d75367a8-543f-4fbb-a302-0a818d6bd501" hidden="false" targetId="a05eb70f-08ce-5d05-971c-cd02f3d65060" type="rule"/>
+                      </infoLinks>
                     </entryLink>
                     <entryLink name="Motocicleta de los Marines Espaciales" id="4c9bba81-25ca-5d95-8e99-5146ccc1a726" collective="false" hidden="false" import="true" sortIndex="2" targetId="1e7c4ad8-63ea-5833-9325-707c391a2bbc" type="selectionEntry">
                       <costs>
@@ -5134,13 +5177,16 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
         <cost name="Pts" typeId="puntos" value="115"/>
       </costs>
       <entryLinks>
-        <entryLink name="Retrorreactor" id="fee3cae9-ba4d-5ca8-92fd-708e85b051f2" collective="false" hidden="false" import="true" sortIndex="4" targetId="f7ebcf54-0196-5d00-b5f8-ac6628aa8fb9" type="selectionEntry">
+        <entryLink name="Retrorreactor" id="fee3cae9-ba4d-5ca8-92fd-708e85b051f2" collective="false" hidden="false" import="true" sortIndex="4" targetId="5063e534-87cf-438e-8dc7-49b0e9293b5c" type="selectionEntry">
           <constraints>
             <constraint id="fc03f3a9-2849-54a9-a9c2-b0fbfb9af874" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <costs>
             <cost name="Pts" typeId="puntos" value="50"/>
           </costs>
+          <infoLinks>
+            <infoLink name="El descenso de los Ángeles" id="34a92e58-32ac-472c-bc4c-e6166a753a01" hidden="false" targetId="a05eb70f-08ce-5d05-971c-cd02f3d65060" type="rule"/>
+          </infoLinks>
           <modifiers>
             <modifier field="hidden" type="set" value="true">
               <conditions>
@@ -5153,7 +5199,7 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
           <modifiers>
             <modifier field="hidden" type="set" value="true">
               <conditions>
-                <condition childId="f7ebcf54-0196-5d00-b5f8-ac6628aa8fb9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="atLeast" value="1"/>
+                <condition childId="5063e534-87cf-438e-8dc7-49b0e9293b5c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="atLeast" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -5547,13 +5593,6 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
     <selectionEntry name="Tormento del Alma" id="19bdf5ec-7146-5ea3-a406-49f1509c6b77" hidden="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink name="Tormento del Alma" id="15a9481e-3de1-57d6-b3dd-ef930d1d5d72" hidden="false" targetId="b913f7a6-545b-5c42-848e-123e48a3563c" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Retrorreactor" id="f7ebcf54-0196-5d00-b5f8-ac6628aa8fb9" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Retrorreactores" id="b53ce41b-0d35-5212-add9-64b7b152e4da" hidden="false" targetId="ba22-cd8e-0d95-8e72" type="profile"/>
-        <infoLink name="El descenso de los Ángeles" id="11919ae1-0ded-522d-96d5-2d7f8f84fa9a" hidden="false" targetId="a05eb70f-08ce-5d05-971c-cd02f3d65060" type="rule"/>
-        <infoLink name="Unidad retropropulsada" id="40657288-3a18-5c4d-aa2e-a4bd2aa57ae9" hidden="false" targetId="d6f4-cfda-75c5-f2f1" type="rule"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Motocicleta de los Marines Espaciales" id="1e7c4ad8-63ea-5833-9325-707c391a2bbc" hidden="false" import="true" type="upgrade">
@@ -6216,13 +6255,16 @@ Si un vehículo detona las minas de racimo, los impactos siempre se resuelven co
         <cost name="Pts" typeId="puntos" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink name="Retrorreactor" id="8b12e8db-8515-4ea8-9f80-2171218d2fe8" collective="false" hidden="false" import="true" targetId="f7ebcf54-0196-5d00-b5f8-ac6628aa8fb9" type="selectionEntry">
+        <entryLink name="Retrorreactor" id="8b12e8db-8515-4ea8-9f80-2171218d2fe8" collective="false" hidden="false" import="true" targetId="5063e534-87cf-438e-8dc7-49b0e9293b5c" type="selectionEntry">
           <constraints>
             <constraint id="54eee777-2bdd-4b29-8838-922b4bc1c24e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <costs>
             <cost name="Pts" typeId="puntos" value="0"/>
           </costs>
+          <infoLinks>
+            <infoLink name="El descenso de los Ángeles" id="71d1ca05-909d-4621-8257-bc91fe936439" hidden="false" targetId="a05eb70f-08ce-5d05-971c-cd02f3d65060" type="rule"/>
+          </infoLinks>
           <modifiers>
             <modifier field="puntos" type="increment" value="10">
               <repeats>
@@ -6240,7 +6282,7 @@ Si un vehículo detona las minas de racimo, los impactos siempre se resuelven co
           <modifiers>
             <modifier field="hidden" type="set" value="true">
               <conditions>
-                <condition childId="f7ebcf54-0196-5d00-b5f8-ac6628aa8fb9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="atLeast" value="1"/>
+                <condition childId="5063e534-87cf-438e-8dc7-49b0e9293b5c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="atLeast" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
