@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Marines Espaciales" id="8964-cc67-2c68-196d" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" library="false" revision="8" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Marines Espaciales" id="8964-cc67-2c68-196d" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" library="false" revision="9" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Esto es for fun. Cualquier error o sugerencia serán bienvenidas
 
 En este sistema se agruparán las reglas del Codex de Marines Espaciales utilizado en la 5ed de Warhammer 40k</readme>
@@ -1295,18 +1295,17 @@ ejército está sujeto a la regla especial doctrina de combate, debes elegir qu�
               </conditions>
             </modifier>
           </modifiers>
-          <selectionEntries>
-            <selectionEntry name="Retroreactores" id="fcc8-7c88-cafb-5e7c" collective="false" hidden="false" import="true" type="upgrade">
+          <entryLinks>
+            <entryLink name="Retroreactores" id="6e7f1681-31e7-4208-a73d-3d598b3a257e" collective="false" hidden="false" import="true" targetId="5063e534-87cf-438e-8dc7-49b0e9293b5c" type="selectionEntry">
               <constraints>
-                <constraint id="ffeb-73da-8b98-fb5c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                <constraint id="8bf146c3-8baa-48d2-9ee5-f64ecf701bf1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
               <costs>
                 <cost name="Pts" typeId="puntos" value="25"/>
               </costs>
-              <infoLinks>
-                <infoLink name="Retrorreactores" id="9b27-6779-9cd3-446d" hidden="false" targetId="ba22-cd8e-0d95-8e72" type="profile"/>
-              </infoLinks>
-            </selectionEntry>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
             <selectionEntry name="Motocicleta Marines Espaciales" id="85ff-1938-8fe1-b16b" collective="false" hidden="false" import="true" type="upgrade">
               <constraints>
                 <constraint id="9fb2-1d4a-fdc9-dd2b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -3563,6 +3562,23 @@ ejército está sujeto a la regla especial doctrina de combate, debes elegir qu�
 podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si un personaje independiente se ha unido a la Escuadra de Veteranos de Vanguardia.</description>
         </rule>
       </rules>
+      <entryLinks>
+        <entryLink name="Retroreactores" id="95049c31-9c5a-4e1a-846b-5ea339034d2a" collective="false" hidden="false" import="true" targetId="5063e534-87cf-438e-8dc7-49b0e9293b5c" type="selectionEntry">
+          <constraints>
+            <constraint id="ea9d20d0-9e9a-4116-8e9f-11c89a840504" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier field="puntos" type="increment" value="10">
+              <repeats>
+                <repeat childId="model" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" repeats="1" roundUp="false" scope="parent" shared="true" value="1"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
       <selectionEntries>
         <selectionEntry name="Marine Espacial Veterano" id="f92a-4505-f7eb-5560" collective="false" hidden="false" import="true" type="model">
           <constraints>
@@ -3848,21 +3864,6 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
-        </selectionEntry>
-        <selectionEntry name="Retroreactores" id="f01a-216b-c776-b06d" collective="false" hidden="false" import="true" type="upgrade">
-          <constraints>
-            <constraint id="411d-fc92-22d5-2e52" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="Pts" typeId="puntos" value="0"/>
-          </costs>
-          <modifiers>
-            <modifier field="puntos" type="increment" value="10">
-              <repeats>
-                <repeat childId="model" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" repeats="1" roundUp="false" scope="parent" shared="true" value="1"/>
-              </repeats>
-            </modifier>
-          </modifiers>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -7015,6 +7016,7 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
         <infoLink name="Granadas perforantes" id="cf74-8771-4c73-882f" hidden="false" targetId="88ef-f347-6da1-b41f" type="profile"/>
         <infoLink name="Granadas Perforantes y de Fragmentación" id="4e5e-8fbe-4e0a-c421" hidden="false" targetId="e9fd-053f-940d-6f58" type="profile"/>
         <infoLink name="Retrorreactores" id="d822-b1b0-5073-221a" hidden="false" targetId="ba22-cd8e-0d95-8e72" type="profile"/>
+        <infoLink name="Unidad retropropulsada" id="6312b2d1-3a38-484c-9c9d-07336d70c831" hidden="false" targetId="d6f4-cfda-75c5-f2f1" type="rule"/>
         <infoLink name="Aura de Hierro" id="943c-7d9a-92f6-88be" hidden="false" targetId="348b-da15-cc84-c027" type="profile"/>
         <infoLink name="Infiltración" id="e8fb-a7fb-d492-e735" hidden="false" targetId="3310-5f06-776a-5b35" type="rule"/>
         <infoLink name="Ve, pero permanece invisible" id="7031-d59e-6a8a-01f1" hidden="false" targetId="a138-27b4-66b6-dd70" type="profile"/>
