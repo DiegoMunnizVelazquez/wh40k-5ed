@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem name="Warhammer 40,000 5ª Edición " id="8cf6-c83d-3eeb-e95c" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" revision="22" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem name="Warhammer 40,000 5ª Edición " id="8cf6-c83d-3eeb-e95c" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" revision="23" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Esto es for fun. Cualquier error o sugerencia serán bienvenidas
 
 En este sistema se agruparán el sistema de Warhammer 40000 5ª edición, así como todos los los codex que se usarán en este sistema cerrado.
@@ -1283,6 +1283,7 @@ Si decides dividir una unidad en escuadras de combate, a partir de ese momento c
   <sharedSelectionEntries>
     <selectionEntry name="Misil cazador asesino" id="f4a3-48a3-bdaf-c717" hidden="false" import="true" type="upgrade">
       <infoLinks>
+        <infoLink name="Misil Cazador Asesino" id="b3163f07-28fa-41ca-848e-dd9a7afcc704" hidden="false" targetId="30f6-7094-77e3-82d8" type="profile" />
         <infoLink name="Misil Cazador Asesino" id="3649-a4c3-f338-143c" hidden="false" targetId="fffa-5f18-59af-8106" type="profile"/>
       </infoLinks>
     </selectionEntry>
