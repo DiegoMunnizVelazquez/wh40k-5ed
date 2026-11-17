@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Templarios Negros" id="7757-a04a-5363-3a75" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="24" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Templarios Negros" id="7757-a04a-5363-3a75" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="25" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink name="Capellán Grimaldus" id="874b023e-ec65-4682-b884-fb43a2a26e02" collective="false" hidden="false" import="true" targetId="a8bf41c8-8bfa-4261-a16b-0235953bfe4e" type="selectionEntry">
       <categoryLinks>
@@ -5270,24 +5270,34 @@
             <constraint id="13903a98-4bd5-4206-9923-a11bd23e86d0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="0"/>
             <constraint id="9e3251e6-1fa9-412d-a765-4850e239acb1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
-          <entryLinks>
-            <entryLink name="Bólter pesado" id="bd30b53e-2a56-415a-a69c-74a18eff9020" collective="false" hidden="false" import="true" sortIndex="1" targetId="d0889088-5c1d-4c97-8f72-eaf40adcf72c" type="selectionEntry">
-              <constraints>
-                <constraint id="a2370fb2-918d-4509-b563-783e5ae0f5fa" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-              </constraints>
+          <selectionEntries>
+            <selectionEntry name="Bólter pesado" id="0dbf2aaf-3405-4ff1-bb94-5c32bfeb4504" collapsible="true" hidden="false" import="true" sortIndex="1" type="upgrade">
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
-            </entryLink>
-            <entryLink name="Cañón láser" id="814aa819-726c-4d56-bd13-f2a5d8950ff5" collective="false" hidden="false" import="true" sortIndex="2" targetId="517a2c13-cfec-426a-ae50-b166a8949ef7" type="selectionEntry">
-              <constraints>
-                <constraint id="78850392-026f-4d7b-a74c-210997cdbd54" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-              </constraints>
+              <entryLinks>
+                <entryLink name="Bólter pesado" id="102419e7-070b-4f46-9301-e41a25426c57" collective="false" hidden="false" import="true" targetId="d0889088-5c1d-4c97-8f72-eaf40adcf72c" type="selectionEntry">
+                  <constraints>
+                    <constraint id="953be7a4-b6fa-4453-a3d6-b8b392d06184" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
+                    <constraint id="bd809c81-0474-4c7e-abb4-89a20cfaf77f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry name="Cañón láser" id="7cfadd28-d3d0-4dc9-9498-302ce63512d8" collapsible="true" hidden="false" import="true" sortIndex="2" type="upgrade">
               <costs>
                 <cost name="Pts" typeId="puntos" value="25"/>
               </costs>
-            </entryLink>
-          </entryLinks>
+              <entryLinks>
+                <entryLink name="Cañón láser" id="0d862ee4-be76-4464-869f-2ee3000f2da5" collective="false" hidden="false" import="true" targetId="517a2c13-cfec-426a-ae50-b166a8949ef7" type="selectionEntry">
+                  <constraints>
+                    <constraint id="a11e865f-bd5a-4993-8db1-f215af9d77bf" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
+                    <constraint id="96a9dd52-7ea8-4792-943f-a524725811a1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
@@ -5313,24 +5323,34 @@
             <constraint id="6b2bf1f4-eb47-40c2-a63b-9bc649105af7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="0"/>
             <constraint id="c60611d5-08d8-468f-8686-559cad10a3ca" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
-          <entryLinks>
-            <entryLink name="Bólter pesado" id="d641e2e6-4709-452c-9ebd-287f620a9af8" collective="false" hidden="false" import="true" sortIndex="1" targetId="d0889088-5c1d-4c97-8f72-eaf40adcf72c" type="selectionEntry">
-              <constraints>
-                <constraint id="5ffe6e75-2dfe-4a85-a0a3-6c4a493ae7a4" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-              </constraints>
+          <selectionEntries>
+            <selectionEntry name="Bólter pesado" id="e7b8e948-0af4-4f71-aac9-e484dedf606b" collapsible="true" hidden="false" import="true" sortIndex="1" type="upgrade">
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
-            </entryLink>
-            <entryLink name="Cañón láser" id="6a3c3f34-63ac-4711-8e7d-c0e64a27a290" collective="false" hidden="false" import="true" sortIndex="2" targetId="517a2c13-cfec-426a-ae50-b166a8949ef7" type="selectionEntry">
-              <constraints>
-                <constraint id="39921aaf-262c-48d4-b24f-dca9535047d2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-              </constraints>
+              <entryLinks>
+                <entryLink name="Bólter pesado" id="e1477ac1-8559-4d80-834d-08574087647f" collective="false" hidden="false" import="true" targetId="d0889088-5c1d-4c97-8f72-eaf40adcf72c" type="selectionEntry">
+                  <constraints>
+                    <constraint id="94b43699-b387-4c3a-a58f-c8e7386a132c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
+                    <constraint id="2ab176e8-93a7-408e-8b4b-69cd45abf37d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+            <selectionEntry name="Cañón láser" id="48d549db-1d62-4ab5-8402-81f58f79f4fa" collapsible="true" hidden="false" import="true" sortIndex="2" type="upgrade">
               <costs>
                 <cost name="Pts" typeId="puntos" value="25"/>
               </costs>
-            </entryLink>
-          </entryLinks>
+              <entryLinks>
+                <entryLink name="Cañón láser" id="f31fd6b5-41c4-4b16-b710-cc5180af8888" collective="false" hidden="false" import="true" targetId="517a2c13-cfec-426a-ae50-b166a8949ef7" type="selectionEntry">
+                  <constraints>
+                    <constraint id="7be7aec0-57b3-47d1-a9dc-d020ed8da892" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
+                    <constraint id="e1d5151f-b60f-47b3-9d8d-a988cbefbe2f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
