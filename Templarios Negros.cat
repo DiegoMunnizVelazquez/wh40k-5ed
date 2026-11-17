@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Templarios Negros" id="7757-a04a-5363-3a75" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="29" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Templarios Negros" id="7757-a04a-5363-3a75" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="30" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink name="Capellán Grimaldus" id="874b023e-ec65-4682-b884-fb43a2a26e02" collective="false" hidden="false" import="true" targetId="a8bf41c8-8bfa-4261-a16b-0235953bfe4e" type="selectionEntry">
       <categoryLinks>
@@ -4518,16 +4518,6 @@
                 <constraint id="77b32ea9-b155-4d40-8c0d-c2b2d07e97d7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="0"/>
                 <constraint id="33e523eb-8163-4eef-adbf-3f7f2994ced6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
-              <entryLinks>
-                <entryLink name="Lanzamisiles Tifón" id="be2d7770-8099-4b82-9231-627576466638" collective="false" hidden="false" import="true" sortIndex="2" targetId="d796b3ec-52c2-4999-b83a-842d8b360d97" type="selectionEntry">
-                  <constraints>
-                    <constraint id="9f1d9f04-4e9d-4d0e-8ed5-f74b913ac65e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="puntos" value="20"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
               <selectionEntries>
                 <selectionEntry name="Tornado (con lanzallamas pesado)" id="7ec95515-7fa4-4eb3-9d03-a3c43ed20d13" collapsible="true" hidden="false" import="true" sortIndex="1" type="upgrade">
                   <costs>
@@ -4548,6 +4538,19 @@
                       </conditions>
                     </modifier>
                   </modifiers>
+                </selectionEntry>
+                <selectionEntry name="Tifón" id="3323d045-91e9-4464-b8de-558efe807f24" collapsible="true" hidden="false" import="true" sortIndex="2" type="upgrade">
+                  <costs>
+                    <cost name="Pts" typeId="puntos" value="20"/>
+                  </costs>
+                  <entryLinks>
+                    <entryLink name="Lanzamisiles Tifón" id="04204762-3139-464a-803a-e9fabfcb0415" collective="false" hidden="false" import="true" targetId="d796b3ec-52c2-4999-b83a-842d8b360d97" type="selectionEntry">
+                      <constraints>
+                        <constraint id="9a81f7b3-d684-49ec-a4eb-4ce279dd9a05" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                        <constraint id="21833d1c-7447-48b6-8aa4-45dcaae918e4" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
                 </selectionEntry>
                 <selectionEntry name="Tornado (con cañón de asalto)" id="28584fb6-2ffb-4388-9c7d-b5ca4bfbfee4" collapsible="true" hidden="false" import="true" sortIndex="3" type="upgrade">
                   <costs>
