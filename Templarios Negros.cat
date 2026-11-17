@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Templarios Negros" id="7757-a04a-5363-3a75" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="22" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Templarios Negros" id="7757-a04a-5363-3a75" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="3" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink name="Capellán Grimaldus" id="874b023e-ec65-4682-b884-fb43a2a26e02" collective="false" hidden="false" import="true" targetId="a8bf41c8-8bfa-4261-a16b-0235953bfe4e" type="selectionEntry">
       <categoryLinks>
@@ -83,7 +83,7 @@
     </entryLink>
     <entryLink name="Escuadra de Cruzados" id="3c4548cd-ee5e-4031-a2d1-700924b40eba" collective="false" hidden="false" import="true" targetId="ce511e70-80b1-4890-a6f6-fcee8bb5836a" type="selectionEntry">
       <categoryLinks>
-        <categoryLink name="Línea" id="2d7ca6ac-d96b-4997-b34a-9f6c5e351e28" hidden="false" primary="true" targetId="1ebf-bf5c-b1c9-eb84"/>
+        <categoryLink name="Linea" id="2d7ca6ac-d96b-4997-b34a-9f6c5e351e28" hidden="false" primary="true" targetId="1ebf-bf5c-b1c9-eb84"/>
       </categoryLinks>
     </entryLink>
     <entryLink name="Escuadra de Asalto" id="bac2c31d-56f9-4665-ba0e-3e1798cfaad7" collective="false" hidden="false" import="true" targetId="687a24ca-31ab-4482-b9ba-97f56762cbf5" type="selectionEntry">
@@ -713,7 +713,7 @@
         <characteristic name="Lateral" typeId="27a5-c15e-f5b6-9c11">14</characteristic>
         <characteristic name="Posterior" typeId="e7fb-2121-c86d-7a50">14</characteristic>
         <characteristic name="Tipo" typeId="f141-fc34-4d2a-b484">Vehículo (Tanque)</characteristic>
-        <characteristic name="Capacidad" typeId="f90f-9546-155f-c585">15 Marines Espaciales con servoarmadura u 8 Exterminadores</characteristic>
+        <characteristic name="Capacidad" typeId="f90f-9546-155f-c585">16 Marines Espaciales con servoarmadura u 8 Exterminadores</characteristic>
         <characteristic name="Puntos de acceso" typeId="8cb4-5303-693b-0256">Un punto de acceso frontal y uno a cada lado del casco</characteristic>
         <characteristic name="Puntos de disparo" typeId="85c0-7904-8bac-a359">Ninguno</characteristic>
       </characteristics>
@@ -785,12 +785,6 @@
     </rule>
     <rule name="Despliegue rápido de los Land Speeders" id="310e4926-93fa-4462-8207-a38882fa8102" hidden="false">
       <description>Un Escuadrón de Land Speeders puede caer sobre las líneas enemigas desde una gran altura, por lo que puede usar la regla especial despliegue rápido siempre que la misión lo permita. Tripulación: dos Iniciados.</description>
-    </rule>
-    <rule name="Tripulación del Vindicator" id="5fbc48a8-a6f9-4987-bab1-4a913491ee0d" hidden="false">
-      <description>Tripulación: dos Iniciados.</description>
-    </rule>
-    <rule name="Tripulación del Predator" id="1c4100de-f9e4-43f6-b622-e6302316a7bf" hidden="false">
-      <description>Tripulación: dos Iniciados.</description>
     </rule>
     <rule name="Servitécnico" id="05b34a16-a6d3-4477-8ea5-e86a1d4c234f" hidden="false">
       <description>Por cada Servitécnico incluido en la escolta del Tecnomarine, este podrá añadir +1 al resultado del dado al intentar reparar un vehículo (consulta la regla bendición de Omnissiah).</description>
@@ -1539,7 +1533,7 @@
             <constraint id="2ce2bb86-21af-4b9c-9ac2-9466f3fe64f3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
         </entryLink>
-        <entryLink name="Lanzador Ala de Muerte" id="7e53866c-b106-4adf-856e-72b1653e2a73" collective="false" hidden="false" import="true" sortIndex="3" targetId="cbc27f78-422a-41da-a096-85bbc6615655" type="selectionEntry">
+        <entryLink name="Ala de Muerte" id="7e53866c-b106-4adf-856e-72b1653e2a73" collective="false" hidden="false" import="true" sortIndex="3" targetId="cbc27f78-422a-41da-a096-85bbc6615655" type="selectionEntry">
           <constraints>
             <constraint id="45683c18-34ac-44da-bcbd-8803d01b27d2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
@@ -4621,7 +4615,7 @@
             <cost name="Pts" typeId="puntos" value="32"/>
           </costs>
           <entryLinks>
-            <entryLink name="Bólter acoplado (dos)" id="7f8be942-bc03-406f-9dad-01c53e322934" collective="false" hidden="false" import="true" targetId="992335bc-8bd0-4119-8cf0-914f43913224" type="selectionEntry">
+            <entryLink name="Bólter acoplado" id="7f8be942-bc03-406f-9dad-01c53e322934" collective="false" hidden="false" import="true" targetId="992335bc-8bd0-4119-8cf0-914f43913224" type="selectionEntry">
               <constraints>
                 <constraint id="1e2ea4f1-bbdf-493d-8739-d932a0e8c26b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                 <constraint id="290731e5-1f38-41cb-9b19-d342a7d8e3e7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -4711,7 +4705,7 @@
             <cost name="Pts" typeId="puntos" value="50"/>
           </costs>
           <entryLinks>
-            <entryLink name="Bólter acoplado (dos)" id="24f38ac3-c905-41e7-a1bb-912452e049e6" collective="false" hidden="false" import="true" targetId="992335bc-8bd0-4119-8cf0-914f43913224" type="selectionEntry">
+            <entryLink name="Bólter acoplado" id="24f38ac3-c905-41e7-a1bb-912452e049e6" collective="false" hidden="false" import="true" targetId="992335bc-8bd0-4119-8cf0-914f43913224" type="selectionEntry">
               <constraints>
                 <constraint id="f2abec56-2cf3-41f2-8577-e08a5becccab" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                 <constraint id="c90524fa-f167-4368-8ad0-d558f028477f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -4778,7 +4772,7 @@
             <cost name="Pts" typeId="puntos" value="50"/>
           </costs>
           <entryLinks>
-            <entryLink name="Bólter acoplado (dos)" id="9bb1c3a3-b33f-4379-82fe-545a756c77e9" collective="false" hidden="false" import="true" targetId="992335bc-8bd0-4119-8cf0-914f43913224" type="selectionEntry">
+            <entryLink name="Bólter acoplado" id="9bb1c3a3-b33f-4379-82fe-545a756c77e9" collective="false" hidden="false" import="true" targetId="992335bc-8bd0-4119-8cf0-914f43913224" type="selectionEntry">
               <constraints>
                 <constraint id="ee7e0fbf-a386-4f77-9cc3-6e23111316d6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                 <constraint id="8b48e5a1-772c-4dd1-b537-b17f8b40a2aa" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -5183,13 +5177,13 @@
         <cost name="Pts" typeId="puntos" value="250"/>
       </costs>
       <entryLinks>
-        <entryLink name="Bólteres pesados acoplados (dos)" id="2691c6ef-a3a5-4fdd-a58f-306e9cfd9e11" collective="false" hidden="false" import="true" targetId="6c7f6e08-ca9e-4690-aa57-08ff0af2d49e" type="selectionEntry">
+        <entryLink name="Bólter pesado acoplado" id="2691c6ef-a3a5-4fdd-a58f-306e9cfd9e11" collective="false" hidden="false" import="true" targetId="6c7f6e08-ca9e-4690-aa57-08ff0af2d49e" type="selectionEntry">
           <constraints>
             <constraint id="9ed5027f-c9eb-4cd6-a6f9-f2501af048b5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="a090a3cc-f059-4420-82c3-aadf4763a1f1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
         </entryLink>
-        <entryLink name="Cañones láser acoplados (cuatro)" id="db8b0ddf-5e40-4971-9698-bd66f2c23946" collective="false" hidden="false" import="true" targetId="e8e78ff6-7b55-44c7-ba73-f9520eff2940" type="selectionEntry">
+        <entryLink name="Cañón láser acoplado" id="db8b0ddf-5e40-4971-9698-bd66f2c23946" collective="false" hidden="false" import="true" targetId="e8e78ff6-7b55-44c7-ba73-f9520eff2940" type="selectionEntry">
           <constraints>
             <constraint id="3351269d-db01-4a6a-9263-5e4b8ea32fab" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="0b69b306-7c14-4379-9af0-5c943f9c56a8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -5212,7 +5206,7 @@
         <cost name="Pts" typeId="puntos" value="265"/>
       </costs>
       <entryLinks>
-        <entryLink name="Cañones de asalto acoplados (dos)" id="d7daa4f3-a308-4f2d-8bee-591b91872e52" collective="false" hidden="false" import="true" targetId="b315fcc3-439a-4a2d-a3cb-31392f07cf7e" type="selectionEntry">
+        <entryLink name="Cañón de asalto acoplado" id="d7daa4f3-a308-4f2d-8bee-591b91872e52" collective="false" hidden="false" import="true" targetId="b315fcc3-439a-4a2d-a3cb-31392f07cf7e" type="selectionEntry">
           <constraints>
             <constraint id="80dd146c-284e-44f0-8e90-041405f2129d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="6ff51755-0d90-4570-a51c-0ff32db6f02e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -5259,7 +5253,7 @@
         <cost name="Pts" typeId="puntos" value="120"/>
       </costs>
       <entryLinks>
-        <entryLink name="Cañones láser acoplados (dos)" id="063e4e26-f5ff-4b19-8cae-63b67bf2df13" collective="false" hidden="false" import="true" targetId="e8e78ff6-7b55-44c7-ba73-f9520eff2940" type="selectionEntry">
+        <entryLink name="Cañón láser acoplado" id="063e4e26-f5ff-4b19-8cae-63b67bf2df13" collective="false" hidden="false" import="true" targetId="e8e78ff6-7b55-44c7-ba73-f9520eff2940" type="selectionEntry">
           <constraints>
             <constraint id="be230647-215a-4eb9-ade3-29d69f450579" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="4c2c00e9-a043-4500-811c-8b677b252c26" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -5269,7 +5263,6 @@
       </entryLinks>
       <infoLinks>
         <infoLink name="Predator Annihilator" id="be99c1de-47f5-4628-8a5c-8bdc40d01d23" hidden="false" targetId="7739cbe0-c14f-4ab4-bd47-5820b492def6" type="profile"/>
-        <infoLink name="Tripulación del Predator" id="f35f25a0-4b44-4e22-89d0-cb0f6777fd1a" hidden="false" targetId="1c4100de-f9e4-43f6-b622-e6302316a7bf" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Barquillas laterales" id="e1376551-0b4b-48a4-8525-8481124adfc9" collapsible="true" collective="false" hidden="false" import="true">
@@ -5278,7 +5271,7 @@
             <constraint id="9e3251e6-1fa9-412d-a765-4850e239acb1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Bólteres pesados (dos)" id="bd30b53e-2a56-415a-a69c-74a18eff9020" collective="false" hidden="false" import="true" sortIndex="1" targetId="d0889088-5c1d-4c97-8f72-eaf40adcf72c" type="selectionEntry">
+            <entryLink name="Bólter pesado" id="bd30b53e-2a56-415a-a69c-74a18eff9020" collective="false" hidden="false" import="true" sortIndex="1" targetId="d0889088-5c1d-4c97-8f72-eaf40adcf72c" type="selectionEntry">
               <constraints>
                 <constraint id="a2370fb2-918d-4509-b563-783e5ae0f5fa" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -5286,7 +5279,7 @@
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
             </entryLink>
-            <entryLink name="Cañones láser (dos)" id="814aa819-726c-4d56-bd13-f2a5d8950ff5" collective="false" hidden="false" import="true" sortIndex="2" targetId="517a2c13-cfec-426a-ae50-b166a8949ef7" type="selectionEntry">
+            <entryLink name="Cañón láser" id="814aa819-726c-4d56-bd13-f2a5d8950ff5" collective="false" hidden="false" import="true" sortIndex="2" targetId="517a2c13-cfec-426a-ae50-b166a8949ef7" type="selectionEntry">
               <constraints>
                 <constraint id="78850392-026f-4d7b-a74c-210997cdbd54" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -5313,7 +5306,6 @@
       </entryLinks>
       <infoLinks>
         <infoLink name="Predator Destructor" id="d920383e-b527-483a-9e99-a1e1baeba564" hidden="false" targetId="c4d996bb-50a7-445e-937b-907f040c07a0" type="profile"/>
-        <infoLink name="Tripulación del Predator" id="76dd3571-03fc-427d-aa43-37ba65859865" hidden="false" targetId="1c4100de-f9e4-43f6-b622-e6302316a7bf" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Barquillas laterales" id="f6bb1864-be5e-4635-bca4-494cd242e8ab" collapsible="true" collective="false" hidden="false" import="true">
@@ -5322,7 +5314,7 @@
             <constraint id="c60611d5-08d8-468f-8686-559cad10a3ca" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Bólteres pesados (dos)" id="d641e2e6-4709-452c-9ebd-287f620a9af8" collective="false" hidden="false" import="true" sortIndex="1" targetId="d0889088-5c1d-4c97-8f72-eaf40adcf72c" type="selectionEntry">
+            <entryLink name="Bólter pesado" id="d641e2e6-4709-452c-9ebd-287f620a9af8" collective="false" hidden="false" import="true" sortIndex="1" targetId="d0889088-5c1d-4c97-8f72-eaf40adcf72c" type="selectionEntry">
               <constraints>
                 <constraint id="5ffe6e75-2dfe-4a85-a0a3-6c4a493ae7a4" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -5330,7 +5322,7 @@
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
             </entryLink>
-            <entryLink name="Cañones láser (dos)" id="6a3c3f34-63ac-4711-8e7d-c0e64a27a290" collective="false" hidden="false" import="true" sortIndex="2" targetId="517a2c13-cfec-426a-ae50-b166a8949ef7" type="selectionEntry">
+            <entryLink name="Cañón láser" id="6a3c3f34-63ac-4711-8e7d-c0e64a27a290" collective="false" hidden="false" import="true" sortIndex="2" targetId="517a2c13-cfec-426a-ae50-b166a8949ef7" type="selectionEntry">
               <constraints>
                 <constraint id="39921aaf-262c-48d4-b24f-dca9535047d2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -5451,7 +5443,7 @@
             <infoLink name="¡Sin piedad! ¡Sin remordimientos! ¡Sin miedo!" id="16201141-5f1e-4be8-b31f-627dde169e75" hidden="false" targetId="56922595-df87-4445-b7b8-ba009291c683" type="rule"/>
           </infoLinks>
           <selectionEntries>
-            <selectionEntry name="Servoarnés" id="8f41c935-3322-4d95-bd2a-1baf00e759f1" collapsible="true" hidden="false" import="true" type="upgrade" sortIndex="2">
+            <selectionEntry name="Servoarnés" id="8f41c935-3322-4d95-bd2a-1baf00e759f1" collapsible="true" hidden="false" import="true" sortIndex="2" type="upgrade">
               <constraints>
                 <constraint id="683301e6-6242-4a28-867e-5e5fe853a41d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -5663,7 +5655,6 @@
       </entryLinks>
       <infoLinks>
         <infoLink name="Vindicator" id="4462afd5-f0ce-459d-80d6-e3dc6347bea1" hidden="false" targetId="f0074e39-b517-42cf-a970-561944ccf0fb" type="profile"/>
-        <infoLink name="Tripulación del Vindicator" id="3fb527f8-77cc-4cb4-939d-8aa04959a06f" hidden="false" targetId="5fbc48a8-a6f9-4987-bab1-4a913491ee0d" type="rule"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Ala de Muerte" id="cbc27f78-422a-41da-a096-85bbc6615655" hidden="false" import="true" type="upgrade">
