@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Lobos Espaciales" id="de8b-5a14-0e15-e5d9" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="12" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Lobos Espaciales" id="de8b-5a14-0e15-e5d9" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="13" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Saga del Matabestias" id="fef6905f-c2f1-4a8d-b98c-d7462c932abb" hidden="false"/>
     <categoryEntry name="Saga de Majestad" id="70d9fb2b-ea58-469d-ae4b-eecb10ad3642" hidden="false"/>
@@ -7509,16 +7509,6 @@
         <infoLink name="Rifle de Plasma" id="6e6e7230-fe26-44b2-8f22-2afe3d66f7d8" hidden="false" targetId="223c-ecb9-2104-7007" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Cañón láser acoplado" id="62bf8544-1c87-4575-9f2b-1887a93989d3" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Cañón Láser" id="2fc67115-4110-491b-848e-4f88da529cbf" hidden="false" targetId="b210-a1f3-d328-5739" type="profile"/>
-        <infoLink name="Acoplada" id="7f1d6253-f5db-4fff-97d3-b5890801eae9" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
-      </infoLinks>
-      <modifiers>
-        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
-        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
-      </modifiers>
-    </selectionEntry>
     <selectionEntry name="Retrorreactor" id="b99988f5-2dbb-4960-84cb-45ba344069c9" hidden="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink name="Retrorreactores" id="3b5ae5ce-305a-4331-a104-fbe742f07e0e" hidden="false" targetId="ba22-cd8e-0d95-8e72" type="profile"/>
@@ -7720,36 +7710,6 @@
         <infoLink name="Lanzamisiles Ciclón Perforante" id="1f5e4edb-7b37-4d07-8d09-67b8b80b160b" hidden="false" targetId="563332a8-20d0-4c81-85d3-611c8cc23c5c" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Lanzallamas pesado acoplado" id="7c920bc2-4c08-4d31-bae6-f6962b4e78fe" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Lanzallamas Pesado" id="e4e643d3-ca76-49c6-99c1-8d030c26125f" hidden="false" targetId="ea35-d96a-285e-1a63" type="profile"/>
-        <infoLink name="Acoplada" id="0ad89899-733a-496f-9d1a-737212a4dab7" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
-      </infoLinks>
-      <modifiers>
-        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
-        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
-      </modifiers>
-    </selectionEntry>
-    <selectionEntry name="Bólter pesado acoplado" id="3eddab81-d82e-4c3c-9f6e-7f5101f752f0" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Bólter Pesado" id="3f0bb90d-50c7-4eff-9872-da43b6aced07" hidden="false" targetId="3c0e-4865-97cc-bd9c" type="profile"/>
-        <infoLink name="Acoplada" id="e6c8c1c2-7293-4bd2-844c-fdb75aafc5d7" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
-      </infoLinks>
-      <modifiers>
-        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
-        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
-      </modifiers>
-    </selectionEntry>
-    <selectionEntry name="Cañón automático acoplado" id="3ea3154b-cad6-4322-97e4-9c980a9b1822" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Cañón Automático" id="41f78910-2a2b-42d6-bf7d-ad4b64abf733" hidden="false" targetId="33e3-aa73-1b0e-2e83" type="profile"/>
-        <infoLink name="Acoplada" id="b6e70f62-2bbc-41d3-a40c-e8bc8a23dbfb" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
-      </infoLinks>
-      <modifiers>
-        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
-        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
-      </modifiers>
-    </selectionEntry>
     <selectionEntry name="Pellejo de Doppelgangrel" id="186ee6b7-2e30-4b19-b571-61107e477720" hidden="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink name="Pellejo de Doppelgangrel" id="64a9966e-30b1-42b8-b204-1c928ee34427" hidden="false" targetId="800bd5d3-f017-4164-92e2-4ec42ac4eb4e" type="profile"/>
@@ -7772,16 +7732,6 @@
         <infoLink name="Escudo de asedio" id="786f516f-3954-42e5-94f5-5e43f3da8322" hidden="false" targetId="34c865e1-8f6f-4bde-b9a6-4925a834f565" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Cañón de asalto acoplado" id="4d2f2276-67a6-4c2c-8b2e-d1649c82c1d4" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Cañón de Asalto" id="b357a852-7093-45d8-b14d-fcaab40256fc" hidden="false" targetId="ca47-3295-c193-8e3b" type="profile"/>
-        <infoLink name="Acoplada" id="628f5b57-2085-4ae5-8a1b-12c7c128a670" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
-      </infoLinks>
-      <modifiers>
-        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
-        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
-      </modifiers>
-    </selectionEntry>
     <selectionEntry name="Lanzamisiles múltiple Whirlwind" id="fa9ba8b7-cbdc-4353-af89-8a717c18afa0" hidden="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink name="Lanzamisiles múltiple Whirlwind" id="4080e119-a07b-4d75-a43d-b393fe2c4c5a" hidden="false" targetId="eb93-dfba-cb68-53b0" type="profile"/>
@@ -7798,17 +7748,6 @@
       <infoLinks>
         <infoLink name="Cañón Láser" id="c4db7c21-50fb-4b76-88e9-6c538a628e93" hidden="false" targetId="b210-a1f3-d328-5739" type="profile"/>
       </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Cañón láser y rifle de plasma acoplado" id="7ff7e554-a5c3-461d-921b-77fbd33c4e4f" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Cañón Láser" id="4fc9ab70-140a-4aed-97bc-95665c0e142c" hidden="false" targetId="b210-a1f3-d328-5739" type="profile"/>
-        <infoLink name="Rifle de Plasma" id="bde98fa2-3998-486f-8836-84281b6d1ea0" hidden="false" targetId="223c-ecb9-2104-7007" type="profile"/>
-        <infoLink name="Acoplada" id="b2dc48f1-ce62-4bd8-be25-8d3125490f28" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
-      </infoLinks>
-      <modifiers>
-        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
-        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
-      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Ángeles Sangrientos" id="0bd2-882e-45d3-4a62" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="6" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Ángeles Sangrientos" id="0bd2-882e-45d3-4a62" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="7" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink name="Astorath el siniestro" id="e67513f3-0100-513d-9c20-4354ac74503c" collective="false" hidden="false" import="true" targetId="58277361-f888-5d25-98ae-d0d18f93a6d3" type="selectionEntry">
       <categoryLinks>
@@ -1053,11 +1053,6 @@
         <characteristic name="Capacidad" typeId="f90f-9546-155f-c585">12 Miniaturas</characteristic>
         <characteristic name="Puntos de acceso" typeId="8cb4-5303-693b-0256">Un punto de acceso a cada lado del casco y uno en la parte frontal</characteristic>
         <characteristic name="Puntos de disparo" typeId="85c0-7904-8bac-a359">Ninguno</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Bólteres huracán" id="7b050aff-d5da-4020-88a2-d2f07c66cf42" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
-      <characteristics>
-        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Cada bólter huracán consta de tres bólteres acoplados que disparan como una sola arma.</characteristic>
       </characteristics>
     </profile>
     <profile name="Stormraven" id="f5dcdde8-c171-4ff8-94df-201aace81631" hidden="false" typeId="d12a-b581-e1f4-1193" typeName="Transporte">
@@ -5762,79 +5757,6 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
         <infoLink name="Pistola lanzallamas" id="db28deca-623c-490e-9ba3-f259a5591e90" hidden="false" targetId="43407c32-8d32-4138-af30-745d29b7ba82" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Bólter pesado acoplado" id="524693cd-2b6f-4053-a0ba-3a3a5a54d875" collapsible="true" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Bólter Pesado" id="569070c7-6b21-4956-8d47-835a04283d59" hidden="false" targetId="3c0e-4865-97cc-bd9c" type="profile"/>
-      </infoLinks>
-      <modifiers>
-        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
-        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
-      </modifiers>
-    </selectionEntry>
-    <selectionEntry name="Lanzallamas pesado acoplado" id="7fdf8892-9593-46c4-9827-a93fd8fcfcef" collapsible="true" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Lanzallamas Pesado" id="867df4f7-8720-4e74-90e6-06ee2a806538" hidden="false" targetId="ea35-d96a-285e-1a63" type="profile"/>
-      </infoLinks>
-      <modifiers>
-        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
-        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
-      </modifiers>
-    </selectionEntry>
-    <selectionEntry name="Cañón de asalto acoplado" id="d0539639-519b-4465-b284-37a7cfc7060d" collapsible="true" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Cañón de Asalto" id="758e8518-618d-479e-a77c-040944d324d3" hidden="false" targetId="ca47-3295-c193-8e3b" type="profile"/>
-      </infoLinks>
-      <modifiers>
-        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
-        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
-      </modifiers>
-    </selectionEntry>
-    <selectionEntry name="Cañón láser acoplado" id="0e855642-ff8c-4ac2-9cc5-abef08c8afcb" collapsible="true" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Cañón Láser" id="058b25b5-c4e5-4afc-b7d6-16bf98ed33fb" hidden="false" targetId="b210-a1f3-d328-5739" type="profile"/>
-      </infoLinks>
-      <modifiers>
-        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
-        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
-      </modifiers>
-    </selectionEntry>
-    <selectionEntry name="Rifle de plasma acoplado" id="b3809282-529f-4e28-b0d5-8517a25e1cba" collapsible="true" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Rifle de Plasma" id="7b507f96-d27b-463d-aab0-7d3fc6cce9ae" hidden="false" targetId="223c-ecb9-2104-7007" type="profile"/>
-      </infoLinks>
-      <modifiers>
-        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
-        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
-      </modifiers>
-    </selectionEntry>
-    <selectionEntry name="Cañón láser y rifle de plasma acoplado" id="c8bf88b6-07d2-4e26-bf12-4af9b6f91e6c" collapsible="true" hidden="false" import="true" type="upgrade">
-      <entryLinks>
-        <entryLink name="Cañón láser" id="073859b0-025f-4ddc-b856-6ed8c70c647b" collective="false" hidden="false" import="true" targetId="547088bb-3771-4e08-a094-795742a45b36" type="selectionEntry">
-          <constraints>
-            <constraint id="339e8841-1139-40bd-85ad-221f51c5290e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-            <constraint id="fcec0b28-8c45-4d82-be6c-6b2c2353c8ae" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-        </entryLink>
-        <entryLink name="Rifle de plasma acoplado" id="84c9a213-1df4-4789-9ec9-e3226bf4f5d3" collective="false" hidden="false" import="true" targetId="b3809282-529f-4e28-b0d5-8517a25e1cba" type="selectionEntry">
-          <constraints>
-            <constraint id="a2caffd7-e730-41e2-a300-9dd7ae0ab2b6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-            <constraint id="f634d267-aec9-464c-bfc5-f9c8464d8b90" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-    </selectionEntry>
-    <selectionEntry name="Bólteres huracán" id="cdf7377b-4d22-4971-ab7a-342b87b6533a" collapsible="true" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Bólteres huracán" id="87f1dfe7-6f4c-42f0-8dc8-60116f315186" hidden="false" targetId="7b050aff-d5da-4020-88a2-d2f07c66cf42" type="profile"/>
-        <infoLink name="Bólter" id="82b51a41-98fb-4b98-9f38-70e2d1b17cc8" hidden="false" targetId="90a7-c0e2-3a06-dc70" type="profile"/>
-        <infoLink name="Bólter" id="3edac49d-a3bc-484c-be2b-6eedf18118ad" hidden="false" targetId="90a7-c0e2-3a06-dc70" type="profile"/>
-        <infoLink name="Bólter" id="1ae2e9b9-740b-4d0a-a7d7-766389170b27" hidden="false" targetId="90a7-c0e2-3a06-dc70" type="profile"/>
-      </infoLinks>
-      <modifiers>
-        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
-        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
-      </modifiers>
-    </selectionEntry>
     <selectionEntry name="Rhino" id="c183ba42-73f3-4ac0-9ac7-104afcc58d71" collapsible="true" hidden="false" import="true" type="unit">
       <costs>
         <cost name="Pts" typeId="puntos" value="50"/>
@@ -5934,23 +5856,23 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
             <constraint id="e9573f18-83f2-47ab-a163-570de01db8d1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Bólter pesado acoplado" id="85b01bc9-75b3-45fc-a3d2-3e4bcf4aaa42" collective="false" hidden="false" import="true" sortIndex="1" targetId="524693cd-2b6f-4053-a0ba-3a3a5a54d875" type="selectionEntry"/>
-            <entryLink name="Lanzallamas pesado acoplado" id="27845936-b67c-481e-9db2-03ba28a71567" collective="false" hidden="false" import="true" sortIndex="2" targetId="7fdf8892-9593-46c4-9827-a93fd8fcfcef" type="selectionEntry">
+            <entryLink name="Bólter pesado acoplado" id="85b01bc9-75b3-45fc-a3d2-3e4bcf4aaa42" collective="false" hidden="false" import="true" sortIndex="1" targetId="3eddab81-d82e-4c3c-9f6e-7f5101f752f0" type="selectionEntry"/>
+            <entryLink name="Lanzallamas pesado acoplado" id="27845936-b67c-481e-9db2-03ba28a71567" collective="false" hidden="false" import="true" sortIndex="2" targetId="7c920bc2-4c08-4d31-bae6-f6962b4e78fe" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="0"/>
               </costs>
             </entryLink>
-            <entryLink name="Cañón de asalto acoplado" id="ba84bedd-599a-4820-a273-c651e233c72b" collective="false" hidden="false" import="true" sortIndex="3" targetId="d0539639-519b-4465-b284-37a7cfc7060d" type="selectionEntry">
+            <entryLink name="Cañón de asalto acoplado" id="ba84bedd-599a-4820-a273-c651e233c72b" collective="false" hidden="false" import="true" sortIndex="3" targetId="4d2f2276-67a6-4c2c-8b2e-d1649c82c1d4" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="35"/>
               </costs>
             </entryLink>
-            <entryLink name="Cañón láser acoplado" id="1b7acb83-5bbd-4e4d-94f3-e9254f84f505" collective="false" hidden="false" import="true" sortIndex="4" targetId="0e855642-ff8c-4ac2-9cc5-abef08c8afcb" type="selectionEntry">
+            <entryLink name="Cañón láser acoplado" id="1b7acb83-5bbd-4e4d-94f3-e9254f84f505" collective="false" hidden="false" import="true" sortIndex="4" targetId="62bf8544-1c87-4575-9f2b-1887a93989d3" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="35"/>
               </costs>
             </entryLink>
-            <entryLink name="Cañón láser y rifle de plasma acoplado" id="e341f0d7-ca62-498f-a142-e6b9ddbfa2e4" collective="false" hidden="false" import="true" sortIndex="5" targetId="c8bf88b6-07d2-4e26-bf12-4af9b6f91e6c" type="selectionEntry">
+            <entryLink name="Cañón láser y rifle de plasma acoplado" id="e341f0d7-ca62-498f-a142-e6b9ddbfa2e4" collective="false" hidden="false" import="true" sortIndex="5" targetId="7ff7e554-a5c3-461d-921b-77fbd33c4e4f" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="35"/>
               </costs>
@@ -6045,13 +5967,13 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
         <cost name="Pts" typeId="puntos" value="250"/>
       </costs>
       <entryLinks>
-        <entryLink name="Bólter pesado acoplado" id="185a9a17-5c7b-4741-b9a7-0f25de2a6a76" collective="false" hidden="false" import="true" targetId="524693cd-2b6f-4053-a0ba-3a3a5a54d875" type="selectionEntry">
+        <entryLink name="Bólter pesado acoplado" id="185a9a17-5c7b-4741-b9a7-0f25de2a6a76" collective="false" hidden="false" import="true" targetId="3eddab81-d82e-4c3c-9f6e-7f5101f752f0" type="selectionEntry">
           <constraints>
             <constraint id="78240b7e-bd60-49b3-adc3-5104b2f319e9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="2b686ede-bb27-42ad-a6f0-d78abf077a63" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
         </entryLink>
-        <entryLink name="Cañón láser acoplado" id="4a9c27d9-2970-4d13-82f8-068cf966dafa" collective="false" hidden="false" import="true" targetId="0e855642-ff8c-4ac2-9cc5-abef08c8afcb" type="selectionEntry">
+        <entryLink name="Cañón láser acoplado" id="4a9c27d9-2970-4d13-82f8-068cf966dafa" collective="false" hidden="false" import="true" targetId="62bf8544-1c87-4575-9f2b-1887a93989d3" type="selectionEntry">
           <constraints>
             <constraint id="ec98e4fa-8690-43cb-aff9-1df019c5bb31" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
             <constraint id="631a83e7-4e0c-40b0-8eb2-3e6bfa678c52" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
@@ -6122,13 +6044,13 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
         <cost name="Pts" typeId="puntos" value="250"/>
       </costs>
       <entryLinks>
-        <entryLink name="Cañón de asalto acoplado" id="116e87a0-0f13-4736-9b3c-1fd37e01ce2e" collective="false" hidden="false" import="true" targetId="d0539639-519b-4465-b284-37a7cfc7060d" type="selectionEntry">
+        <entryLink name="Cañón de asalto acoplado" id="116e87a0-0f13-4736-9b3c-1fd37e01ce2e" collective="false" hidden="false" import="true" targetId="4d2f2276-67a6-4c2c-8b2e-d1649c82c1d4" type="selectionEntry">
           <constraints>
             <constraint id="b6ad2646-c5ca-4fbe-97d6-0654043c41ac" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="d20f1f3b-06d9-4c90-b857-904e59421a4f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
         </entryLink>
-        <entryLink name="Bólteres huracán" id="501dfd98-a542-42cd-967a-82a2349498df" collective="false" hidden="false" import="true" targetId="cdf7377b-4d22-4971-ab7a-342b87b6533a" type="selectionEntry">
+        <entryLink name="Bólteres huracán" id="501dfd98-a542-42cd-967a-82a2349498df" collective="false" hidden="false" import="true" targetId="c15fb49a-42eb-4b9d-aada-77d5ce2e22c8" type="selectionEntry">
           <constraints>
             <constraint id="e3e78cca-69c3-43eb-a71f-7bfe29fb8907" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
             <constraint id="f6c833da-9d13-4b19-9961-1e8a046e49d3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
@@ -6205,7 +6127,7 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
         <cost name="Pts" typeId="puntos" value="240"/>
       </costs>
       <entryLinks>
-        <entryLink name="Cañón de asalto acoplado" id="621729f3-2858-4502-b826-3fa7fc127038" collective="false" hidden="false" import="true" targetId="d0539639-519b-4465-b284-37a7cfc7060d" type="selectionEntry">
+        <entryLink name="Cañón de asalto acoplado" id="621729f3-2858-4502-b826-3fa7fc127038" collective="false" hidden="false" import="true" targetId="4d2f2276-67a6-4c2c-8b2e-d1649c82c1d4" type="selectionEntry">
           <constraints>
             <constraint id="3a2b4887-ab88-4640-b994-730a5a2e7609" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="44a3d1c3-8089-46c2-b790-822d64063f33" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -6732,7 +6654,7 @@ Si un vehículo detona las minas de racimo, los impactos siempre se resuelven co
                     <cost name="Pts" typeId="puntos" value="40"/>
                   </costs>
                   <entryLinks>
-                    <entryLink name="Cañón de asalto acoplado" id="1f06ec8a-4795-4bcc-bd04-ad808236a41d" collective="false" hidden="false" import="true" targetId="d0539639-519b-4465-b284-37a7cfc7060d" type="selectionEntry">
+                    <entryLink name="Cañón de asalto acoplado" id="1f06ec8a-4795-4bcc-bd04-ad808236a41d" collective="false" hidden="false" import="true" targetId="4d2f2276-67a6-4c2c-8b2e-d1649c82c1d4" type="selectionEntry">
                       <constraints>
                         <constraint id="4288b57b-3f34-485e-8783-6266f25d4d00" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                         <constraint id="fb18dadf-884d-4116-a367-694834c0d386" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -6769,7 +6691,7 @@ Si un vehículo detona las minas de racimo, los impactos siempre se resuelven co
             <constraint id="2ebc3bcf-1efd-436b-8eed-8c430e537600" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Cañón de asalto acoplado" id="f960ad9a-fd79-456b-926d-091a7ae997e7" collective="false" defaultAmount="1" hidden="false" import="true" sortIndex="1" targetId="d0539639-519b-4465-b284-37a7cfc7060d" type="selectionEntry">
+            <entryLink name="Cañón de asalto acoplado" id="f960ad9a-fd79-456b-926d-091a7ae997e7" collective="false" defaultAmount="1" hidden="false" import="true" sortIndex="1" targetId="4d2f2276-67a6-4c2c-8b2e-d1649c82c1d4" type="selectionEntry">
               <constraints>
                 <constraint id="a8c298c0-0670-41e0-97a4-78b9600bc377" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -7441,33 +7363,6 @@ Si un vehículo detona las minas de racimo, los impactos siempre se resuelven co
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry name="Cañón automático acoplado" id="059bb959-907b-4e41-8c83-1a7efd14c338" collapsible="true" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Cañón Automático" id="e92acc4e-8bbc-42ff-91ef-763eb6b3891e" hidden="false" targetId="33e3-aa73-1b0e-2e83" type="profile"/>
-      </infoLinks>
-      <modifiers>
-        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
-        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
-      </modifiers>
-    </selectionEntry>
-    <selectionEntry name="Cañón de fusión acoplado" id="f791d483-a224-4b9a-819a-3aa3d17457da" collapsible="true" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Cañón de Fusión" id="ad85a754-4716-478d-b616-92e82a587fc3" hidden="false" targetId="8f30-c05c-e72e-4baf" type="profile"/>
-      </infoLinks>
-      <modifiers>
-        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
-        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
-      </modifiers>
-    </selectionEntry>
-    <selectionEntry name="Cañón de plasma acoplado" id="b276e600-8167-47e2-a67c-6572bf9a71a6" collapsible="true" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Cañón de Plasma" id="2a0b81bd-aede-4b1e-aa36-fe509b9a9f96" hidden="false" targetId="ff28-6505-3158-bff5" type="profile"/>
-      </infoLinks>
-      <modifiers>
-        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
-        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
-      </modifiers>
-    </selectionEntry>
     <selectionEntry name="Barquillas con cañones láser" id="3d3adecf-4703-49c1-a25c-fea3ced15229" collapsible="true" hidden="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink name="Cañón Láser" id="7d28336d-8437-4211-b453-fa0c3f4e2a9d" hidden="false" targetId="b210-a1f3-d328-5739" type="profile"/>
@@ -7544,12 +7439,12 @@ Si un vehículo detona las minas de racimo, los impactos siempre se resuelven co
                 <constraint id="e5b61564-c89e-432b-9645-d1521b179528" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
-            <entryLink name="Lanzallamas pesado acoplado" id="87fe137c-f21b-44cb-85da-2f7c82127f9e" collective="false" hidden="false" import="true" sortIndex="2" targetId="7fdf8892-9593-46c4-9827-a93fd8fcfcef" type="selectionEntry">
+            <entryLink name="Lanzallamas pesado acoplado" id="87fe137c-f21b-44cb-85da-2f7c82127f9e" collective="false" hidden="false" import="true" sortIndex="2" targetId="7c920bc2-4c08-4d31-bae6-f6962b4e78fe" type="selectionEntry">
               <constraints>
                 <constraint id="6fb3c54b-4b30-49b6-a352-5256ae2a1145" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
-            <entryLink name="Bólter pesado acoplado" id="17b227a1-1f63-4400-832f-35bf0fcad9d2" collective="false" hidden="false" import="true" sortIndex="3" targetId="524693cd-2b6f-4053-a0ba-3a3a5a54d875" type="selectionEntry">
+            <entryLink name="Bólter pesado acoplado" id="17b227a1-1f63-4400-832f-35bf0fcad9d2" collective="false" hidden="false" import="true" sortIndex="3" targetId="3eddab81-d82e-4c3c-9f6e-7f5101f752f0" type="selectionEntry">
               <constraints>
                 <constraint id="cff446c0-0d96-44bc-a927-30b188d53ef8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -7557,7 +7452,7 @@ Si un vehículo detona las minas de racimo, los impactos siempre se resuelven co
                 <cost name="Pts" typeId="puntos" value="5"/>
               </costs>
             </entryLink>
-            <entryLink name="Cañón automático acoplado" id="6c625983-a1be-43f2-a19f-d3506470e1f8" collective="false" hidden="false" import="true" sortIndex="4" targetId="059bb959-907b-4e41-8c83-1a7efd14c338" type="selectionEntry">
+            <entryLink name="Cañón automático acoplado" id="6c625983-a1be-43f2-a19f-d3506470e1f8" collective="false" hidden="false" import="true" sortIndex="4" targetId="3ea3154b-cad6-4322-97e4-9c980a9b1822" type="selectionEntry">
               <constraints>
                 <constraint id="7c92444f-d39d-4358-a1eb-1282c161dd52" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -7581,7 +7476,7 @@ Si un vehículo detona las minas de racimo, los impactos siempre se resuelven co
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
             </entryLink>
-            <entryLink name="Cañón láser acoplado" id="9138a6cd-6478-475a-b0f4-1ce4c1a38af8" collective="false" hidden="false" import="true" sortIndex="7" targetId="0e855642-ff8c-4ac2-9cc5-abef08c8afcb" type="selectionEntry">
+            <entryLink name="Cañón láser acoplado" id="9138a6cd-6478-475a-b0f4-1ce4c1a38af8" collective="false" hidden="false" import="true" sortIndex="7" targetId="62bf8544-1c87-4575-9f2b-1887a93989d3" type="selectionEntry">
               <constraints>
                 <constraint id="5fa0f0ff-59e1-4753-ae82-d4286a75c635" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -7602,7 +7497,7 @@ Si un vehículo detona las minas de racimo, los impactos siempre se resuelven co
                 <constraint id="31f892eb-2815-4aa7-95c2-dd41164131c2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
-            <entryLink name="Cañón automático acoplado" id="a9679fb0-dbd0-4aa2-b6df-e16578e95ef6" collective="false" hidden="false" import="true" sortIndex="2" targetId="059bb959-907b-4e41-8c83-1a7efd14c338" type="selectionEntry">
+            <entryLink name="Cañón automático acoplado" id="a9679fb0-dbd0-4aa2-b6df-e16578e95ef6" collective="false" hidden="false" import="true" sortIndex="2" targetId="3ea3154b-cad6-4322-97e4-9c980a9b1822" type="selectionEntry">
               <constraints>
                 <constraint id="54f6b385-1fc9-4849-9cf8-49c887b0ea28" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -7651,7 +7546,7 @@ Si un vehículo detona las minas de racimo, los impactos siempre se resuelven co
             <cost name="Pts" typeId="puntos" value="30"/>
           </costs>
           <entryLinks>
-            <entryLink name="Bólteres huracán" id="0601675a-8ecf-455f-8380-7a2fc73fbf63" collective="false" hidden="false" import="true" targetId="cdf7377b-4d22-4971-ab7a-342b87b6533a" type="selectionEntry">
+            <entryLink name="Bólteres huracán" id="0601675a-8ecf-455f-8380-7a2fc73fbf63" collective="false" hidden="false" import="true" targetId="c15fb49a-42eb-4b9d-aada-77d5ce2e22c8" type="selectionEntry">
               <constraints>
                 <constraint id="527d375b-951a-45ec-9bb5-560f45b4a3de" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
                 <constraint id="e20d-d285-e834-5df4" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="2"/>
@@ -7667,7 +7562,7 @@ Si un vehículo detona las minas de racimo, los impactos siempre se resuelven co
             <constraint id="f7bb4a56-c5ff-40c5-957b-896133986624" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Bólter pesado acoplado" id="fd8d0e18-fd3a-4ac4-838d-eab15ffc3723" collective="false" defaultAmount="1" hidden="false" import="true" sortIndex="1" targetId="524693cd-2b6f-4053-a0ba-3a3a5a54d875" type="selectionEntry">
+            <entryLink name="Bólter pesado acoplado" id="fd8d0e18-fd3a-4ac4-838d-eab15ffc3723" collective="false" defaultAmount="1" hidden="false" import="true" sortIndex="1" targetId="3eddab81-d82e-4c3c-9f6e-7f5101f752f0" type="selectionEntry">
               <constraints>
                 <constraint id="b13e9094-4da5-49db-8938-11c44f59abb2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -7693,7 +7588,7 @@ Si un vehículo detona las minas de racimo, los impactos siempre se resuelven co
             <constraint id="e5dc2357-2b07-48d0-ace0-8fa34f9179fa" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Cañón de asalto acoplado" id="9eb7dfa6-a75e-4bfa-95b5-22d09d4422c8" collective="false" defaultAmount="1" hidden="false" import="true" sortIndex="1" targetId="d0539639-519b-4465-b284-37a7cfc7060d" type="selectionEntry">
+            <entryLink name="Cañón de asalto acoplado" id="9eb7dfa6-a75e-4bfa-95b5-22d09d4422c8" collective="false" defaultAmount="1" hidden="false" import="true" sortIndex="1" targetId="4d2f2276-67a6-4c2c-8b2e-d1649c82c1d4" type="selectionEntry">
               <constraints>
                 <constraint id="74317466-d434-4ec4-9465-039a2d876bf0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -7703,7 +7598,7 @@ Si un vehículo detona las minas de racimo, los impactos siempre se resuelven co
                 <constraint id="8e5c6937-7fee-463d-b72c-3c18c9683e1b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
-            <entryLink name="Cañón láser acoplado" id="c8b61559-250e-4a26-ab11-cd8f4a92c901" collective="false" hidden="false" import="true" sortIndex="3" targetId="0e855642-ff8c-4ac2-9cc5-abef08c8afcb" type="selectionEntry">
+            <entryLink name="Cañón láser acoplado" id="c8b61559-250e-4a26-ab11-cd8f4a92c901" collective="false" hidden="false" import="true" sortIndex="3" targetId="62bf8544-1c87-4575-9f2b-1887a93989d3" type="selectionEntry">
               <constraints>
                 <constraint id="11307138-25d5-462a-8758-7aa795515d57" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -7767,7 +7662,7 @@ Si un vehículo detona las minas de racimo, los impactos siempre se resuelven co
                 <constraint id="243a9801-2a69-4271-932f-234f1fe3c37d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
-            <entryLink name="Cañón láser acoplado" id="a4761452-3455-4d0a-a1eb-d22707c958a9" collective="false" hidden="false" import="true" sortIndex="2" targetId="0e855642-ff8c-4ac2-9cc5-abef08c8afcb" type="selectionEntry">
+            <entryLink name="Cañón láser acoplado" id="a4761452-3455-4d0a-a1eb-d22707c958a9" collective="false" hidden="false" import="true" sortIndex="2" targetId="62bf8544-1c87-4575-9f2b-1887a93989d3" type="selectionEntry">
               <constraints>
                 <constraint id="ac5b66d0-5923-4d62-8b69-9d7d0190be8c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
