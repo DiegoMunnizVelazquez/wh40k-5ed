@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Angeles Oscuros" id="125b-6623-f648-fc9a" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" library="false" revision="10" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Angeles Oscuros" id="125b-6623-f648-fc9a" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" library="false" revision="11" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Terminado</comment>
   <readme>Esto es for fun. Cualquier error o sugerencia serán bienvenidas
 
@@ -384,14 +384,6 @@ Si el resultado es 6+, un resultado de arma destruida o de inmovilizado (elige e
 Cualquier miniatura equipada con Armadura de Exterminador puede ser teleportada al campo de batalla. Siempre puede empezar el juego en reserva y llegar siguiendo las reglas de despliegue rápido, incluso si la misión no lo contempla.
 
 Las miniaturas con armadura de exterminador no pueden embarcar en Rhino o Razorback y cuentan como 2 miniaturas</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Bolter Huracán" id="11ca-250d-5f39-edcb" hidden="false" page="35" publicationId="822e-763d-4a6a-b7fc" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
-      <characteristics>
-        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60cm</characteristic>
-        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
-        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
-        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Fuego Rápido 3, Acoplada</characteristic>
       </characteristics>
     </profile>
     <profile name="Cápsula de Desembarco" id="62db-42db-1469-bad4" hidden="false" page="35" publicationId="822e-763d-4a6a-b7fc" typeId="d12a-b581-e1f4-1193" typeName="Transporte">
@@ -4470,17 +4462,6 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
         <infoLink name="Blindaje Adicional" id="af44-6c18-ed5d-2f7d" hidden="false" targetId="cf47-2dba-970c-bb92" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Bolter Huracán" id="5328-fb02-5e9d-2e62" collective="false" hidden="false" import="true" type="upgrade">
-      <constraints>
-        <constraint id="b236-0e3c-6cf0-cb49" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <costs>
-        <cost name="Pts" typeId="puntos" value="0"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Bolter Huracán" id="fa7d-a852-7d04-9cf5" hidden="false" targetId="11ca-250d-5f39-edcb" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry name="Misil Cazador Asesino" id="109e-11bc-a0a8-ddc5" collective="false" hidden="false" import="true" type="upgrade">
       <costs>
         <cost name="Pts" typeId="puntos" value="0"/>
@@ -4570,7 +4551,7 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
             <constraint id="15c6-1c85-0aab-25e8-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
         </entryLink>
-        <entryLink name="Bolter Huracán" id="a912-0cfa-4992-3633" collective="false" hidden="false" import="true" sortIndex="1" targetId="5328-fb02-5e9d-2e62" type="selectionEntry">
+        <entryLink name="Bolter Huracán" id="a912-0cfa-4992-3633" collective="false" hidden="false" import="true" sortIndex="1" targetId="c15fb49a-42eb-4b9d-aada-77d5ce2e22c8" type="selectionEntry">
           <constraints>
             <constraint id="7b6d-b0c3-db4b-0898-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="2"/>
             <constraint id="7b6d-b0c3-db4b-0898-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>

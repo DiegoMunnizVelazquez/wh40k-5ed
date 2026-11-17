@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Marines Espaciales" id="8964-cc67-2c68-196d" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" library="false" revision="5" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Marines Espaciales" id="8964-cc67-2c68-196d" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" library="false" revision="6" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Esto es for fun. Cualquier error o sugerencia serán bienvenidas
 
 En este sistema se agruparán las reglas del Codex de Marines Espaciales utilizado en la 5ed de Warhammer 40k</readme>
@@ -594,11 +594,6 @@ Si el resultado es 5+, un resultado de arma destruida o de inmovilizado (elige e
 Cualquier miniatura equipada con Armadura de Exterminador puede ser teleportada al campo de batalla. Siempre puede empezar el juego en reserva y llegar siguiendo las reglas de despliegue rápido, incluso si la misión no lo contempla.
 
 Los exterminadores cuentan como dos miniaturas a efectos de capacidad de transporte, y no pueden embarcarse en Rhinos o Razorbacks.</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Bolter Huracán" id="11ca-250d-5f39-edcb" hidden="false" publicationId="f176-f140-74d8-da7d" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
-      <characteristics>
-        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Cada Bolter Huracan consta de tres bolteres acoplados que disparan como una sola arma.</characteristic>
       </characteristics>
     </profile>
     <profile name="Escudo de Combate" id="0416-94da-2f3d-218c" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
@@ -8132,7 +8127,7 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
             <constraint id="476b-ceb4-6fab-7271" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Bolter Huracán" id="456f-ed38-c5a7-6001" collective="false" hidden="false" import="true" targetId="5328-fb02-5e9d-2e62" type="selectionEntry"/>
+            <entryLink name="Bolter Huracán" id="456f-ed38-c5a7-6001" collective="false" hidden="false" import="true" targetId="c15fb49a-42eb-4b9d-aada-77d5ce2e22c8" type="selectionEntry"/>
           </entryLinks>
           <selectionEntries>
             <selectionEntry name="Arma de combate cuerpo a cuerpo para Dreadnoughts" id="a5e8-7aec-069b-8b0e" collective="false" hidden="false" import="true" type="upgrade">
@@ -8410,7 +8405,7 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
             <constraint id="a104-1964-ea11-3099" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Bolter Huracán" id="e1e9-79b3-5273-6f76" collective="false" hidden="false" import="true" targetId="5328-fb02-5e9d-2e62" type="selectionEntry"/>
+            <entryLink name="Bolter Huracán" id="e1e9-79b3-5273-6f76" collective="false" hidden="false" import="true" targetId="c15fb49a-42eb-4b9d-aada-77d5ce2e22c8" type="selectionEntry"/>
           </entryLinks>
           <selectionEntries>
             <selectionEntry name="Arma de combate cuerpo a cuerpo para Dreadnoughts" id="3e42-7b6c-4111-0f7a" collective="false" hidden="false" import="true" type="upgrade">
@@ -9329,18 +9324,6 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
         <infoLink name="Blindaje Adicional" id="af44-6c18-ed5d-2f7d" hidden="false" targetId="cf47-2dba-970c-bb92" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Bolter Huracán" id="5328-fb02-5e9d-2e62" collective="false" hidden="false" import="true" type="upgrade">
-      <constraints>
-        <constraint id="b236-0e3c-6cf0-cb49" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <costs>
-        <cost name="Pts" typeId="puntos" value="0"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Bólter" id="fa7d-a852-7d04-9cf5" hidden="false" targetId="90a7-c0e2-3a06-dc70" type="profile"/>
-        <infoLink name="Bolter Huracán" id="7b57-2259-0e4b-33ae" hidden="false" targetId="11ca-250d-5f39-edcb" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry name="Misil Cazador Asesino" id="109e-11bc-a0a8-ddc5" collective="false" hidden="false" import="true" type="upgrade">
       <costs>
         <cost name="Pts" typeId="puntos" value="0"/>
@@ -9454,7 +9437,7 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
             <constraint id="38b6-efe2-15c5-25d2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
           </constraints>
         </entryLink>
-        <entryLink name="Bolter Huracán" id="a912-0cfa-4992-3633" collective="false" hidden="false" import="true" targetId="5328-fb02-5e9d-2e62" type="selectionEntry">
+        <entryLink name="Bolter Huracán" id="a912-0cfa-4992-3633" collective="false" hidden="false" import="true" targetId="c15fb49a-42eb-4b9d-aada-77d5ce2e22c8" type="selectionEntry">
           <constraints>
             <constraint id="0463-d4ad-107d-fb46" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
           </constraints>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem name="Warhammer 40,000 5ª Edición " id="8cf6-c83d-3eeb-e95c" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" revision="25" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem name="Warhammer 40,000 5ª Edición " id="8cf6-c83d-3eeb-e95c" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" revision="26" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Esto es for fun. Cualquier error o sugerencia serán bienvenidas
 
 En este sistema se agruparán el sistema de Warhammer 40000 5ª edición, así como todos los los codex que se usarán en este sistema cerrado.
@@ -827,6 +827,14 @@ Por tanto, un Land Raider que se haya movido a velocidad de combate puede dispar
         <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Cada bólter huracán consta de tres bólteres acoplados que disparan como una sola arma.</characteristic>
       </characteristics>
     </profile>
+    <profile name="Bólter huracán" id="291942da-fb48-4f7f-9e32-fd94377bd25d" hidden="false" page="35" publicationId="822e-763d-4a6a-b7fc" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Fuego Rápido 3</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedRules>
     <rule name="Fuego Rápido" id="e15d-1437-cfb2-b8dd" hidden="false" page="28" publicationId="1595-b68b-b80b-025d">
@@ -1496,9 +1504,7 @@ Si decides dividir una unidad en escuadras de combate, a partir de ese momento c
     <selectionEntry name="Bólter huracán" id="c15fb49a-42eb-4b9d-aada-77d5ce2e22c8" hidden="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink name="Bólter huracán" id="86878a38-09d1-439c-afc3-f509719113d4" hidden="false" targetId="cd4ba0b5-c5ae-4255-8838-b8900536e592" type="profile"/>
-        <infoLink name="Bólter" id="c91f70fc-ab61-45b2-bcc4-34938f4a9ad1" hidden="false" targetId="90a7-c0e2-3a06-dc70" type="profile"/>
-        <infoLink name="Bólter" id="ff48352e-23fe-41b3-b176-5b61034a04e1" hidden="false" targetId="90a7-c0e2-3a06-dc70" type="profile"/>
-        <infoLink name="Bólter" id="4d678ccf-531a-488f-97bd-9c6fdc7b879f" hidden="false" targetId="90a7-c0e2-3a06-dc70" type="profile"/>
+        <infoLink name="Bólter huracán" id="5c9e61df-57d4-4c56-8441-18f1ff8ac793" hidden="false" targetId="291942da-fb48-4f7f-9e32-fd94377bd25d" type="profile"/>
         <infoLink name="Acoplada" id="98aa560b-980b-4fdb-803b-b823da1e7487" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
       </infoLinks>
       <modifiers>
@@ -1599,13 +1605,14 @@ Si decides dividir una unidad en escuadras de combate, a partir de ese momento c
     <selectionEntry name="Cañón láser y rifle de plasma acoplado" id="7ff7e554-a5c3-461d-921b-77fbd33c4e4f" hidden="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink name="Cañón Láser" id="4fc9ab70-140a-4aed-97bc-95665c0e142c" hidden="false" targetId="b210-a1f3-d328-5739" type="profile"/>
-        <infoLink name="Rifle de Plasma" id="bde98fa2-3998-486f-8836-84281b6d1ea0" hidden="false" targetId="223c-ecb9-2104-7007" type="profile"/>
+        <infoLink name="Rifle de Plasma" id="bde98fa2-3998-486f-8836-84281b6d1ea0" hidden="false" targetId="223c-ecb9-2104-7007" type="profile">
+          <modifiers>
+            <modifier field="name" type="append" value="acoplado"/>
+            <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+          </modifiers>
+        </infoLink>
         <infoLink name="Acoplada" id="a340e47e-6421-49a4-ac72-a2ed6beeeb75" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
       </infoLinks>
-      <modifiers>
-        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
-        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
-      </modifiers>
     </selectionEntry>
     <selectionEntry name="Cañón de fusión acoplado" id="f791d483-a224-4b9a-819a-3aa3d17457da" hidden="false" import="true" type="upgrade">
       <infoLinks>
