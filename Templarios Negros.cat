@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Templarios Negros" id="7757-a04a-5363-3a75" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="20" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Templarios Negros" id="7757-a04a-5363-3a75" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="21" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink name="Capellán Grimaldus" id="874b023e-ec65-4682-b884-fb43a2a26e02" collective="false" hidden="false" import="true" targetId="a8bf41c8-8bfa-4261-a16b-0235953bfe4e" type="selectionEntry">
       <categoryLinks>
@@ -357,13 +357,16 @@
         <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
       </characteristics>
     </profile>
-    <profile name="Land Raider" id="3fdfa6ab-a39d-401d-bb07-9871b9fbcf90" hidden="false" typeId="725a358c-765b-498c-8de5-399fc0c0725f" typeName="Vehículo">
+    <profile name="Land Raider" id="3fdfa6ab-a39d-401d-bb07-9871b9fbcf90" hidden="false" typeId="d12a-b581-e1f4-1193" typeName="Transporte">
       <characteristics>
-        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
-        <characteristic name="Frontal" typeId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f">14</characteristic>
-        <characteristic name="Lateral" typeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e">14</characteristic>
-        <characteristic name="Posterior" typeId="0a9f33cb-0412-420a-89d2-20707c360bd2">14</characteristic>
-        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Tanque</characteristic>
+        <characteristic name="HP" typeId="eeb7-edf8-2c77-59b6">4</characteristic>
+        <characteristic name="Frontal" typeId="584e-15ce-949b-e298">14</characteristic>
+        <characteristic name="Lateral" typeId="27a5-c15e-f5b6-9c11">14</characteristic>
+        <characteristic name="Posterior" typeId="e7fb-2121-c86d-7a50">14</characteristic>
+        <characteristic name="Tipo" typeId="f141-fc34-4d2a-b484">Vehículo (Tanque)</characteristic>
+        <characteristic name="Capacidad" typeId="f90f-9546-155f-c585">10 Marines Espaciales con servoarmadura o 5 Exterminadores</characteristic>
+        <characteristic name="Puntos de acceso" typeId="8cb4-5303-693b-0256">Un punto de acceso frontal y uno a cada lado del casco</characteristic>
+        <characteristic name="Puntos de disparo" typeId="85c0-7904-8bac-a359">Ninguno</characteristic>
       </characteristics>
     </profile>
     <profile name="Land Speeder" id="f66010d0-2dc1-44c9-94eb-2c9b26456c3d" hidden="false" typeId="725a358c-765b-498c-8de5-399fc0c0725f" typeName="Vehículo">
@@ -384,22 +387,28 @@
         <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Tanque</characteristic>
       </characteristics>
     </profile>
-    <profile name="Razorback" id="8a25e65b-b6bd-4f6e-9f20-3d390bb905e9" hidden="false" typeId="725a358c-765b-498c-8de5-399fc0c0725f" typeName="Vehículo">
+    <profile name="Razorback" id="8a25e65b-b6bd-4f6e-9f20-3d390bb905e9" hidden="false" typeId="d12a-b581-e1f4-1193" typeName="Transporte">
       <characteristics>
-        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
-        <characteristic name="Frontal" typeId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f">11</characteristic>
-        <characteristic name="Lateral" typeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e">11</characteristic>
-        <characteristic name="Posterior" typeId="0a9f33cb-0412-420a-89d2-20707c360bd2">10</characteristic>
-        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Tanque</characteristic>
+        <characteristic name="HP" typeId="eeb7-edf8-2c77-59b6">4</characteristic>
+        <characteristic name="Frontal" typeId="584e-15ce-949b-e298">11</characteristic>
+        <characteristic name="Lateral" typeId="27a5-c15e-f5b6-9c11">11</characteristic>
+        <characteristic name="Posterior" typeId="e7fb-2121-c86d-7a50">10</characteristic>
+        <characteristic name="Tipo" typeId="f141-fc34-4d2a-b484">Vehículo (Tanque)</characteristic>
+        <characteristic name="Capacidad" typeId="f90f-9546-155f-c585">6 Marines Espaciales, que no pueden ser Exterminadores</characteristic>
+        <characteristic name="Puntos de acceso" typeId="8cb4-5303-693b-0256">Un punto de acceso a cada lado del casco y uno en la parte posterior</characteristic>
+        <characteristic name="Puntos de disparo" typeId="85c0-7904-8bac-a359">Ninguno</characteristic>
       </characteristics>
     </profile>
-    <profile name="Rhino" id="32ee317c-b920-46b4-bde9-d93aa9fcc4cb" hidden="false" typeId="725a358c-765b-498c-8de5-399fc0c0725f" typeName="Vehículo">
+    <profile name="Rhino" id="32ee317c-b920-46b4-bde9-d93aa9fcc4cb" hidden="false" typeId="d12a-b581-e1f4-1193" typeName="Transporte">
       <characteristics>
-        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
-        <characteristic name="Frontal" typeId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f">11</characteristic>
-        <characteristic name="Lateral" typeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e">11</characteristic>
-        <characteristic name="Posterior" typeId="0a9f33cb-0412-420a-89d2-20707c360bd2">10</characteristic>
-        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Tanque</characteristic>
+        <characteristic name="HP" typeId="eeb7-edf8-2c77-59b6">4</characteristic>
+        <characteristic name="Frontal" typeId="584e-15ce-949b-e298">11</characteristic>
+        <characteristic name="Lateral" typeId="27a5-c15e-f5b6-9c11">11</characteristic>
+        <characteristic name="Posterior" typeId="e7fb-2121-c86d-7a50">10</characteristic>
+        <characteristic name="Tipo" typeId="f141-fc34-4d2a-b484">Vehículo (Tanque)</characteristic>
+        <characteristic name="Capacidad" typeId="f90f-9546-155f-c585">10 Marines Espaciales, que no pueden ser Exterminadores</characteristic>
+        <characteristic name="Puntos de acceso" typeId="8cb4-5303-693b-0256">Un punto de acceso a cada lado del casco y uno en la parte posterior</characteristic>
+        <characteristic name="Puntos de disparo" typeId="85c0-7904-8bac-a359">Hasta dos miniaturas pueden disparar por la abertura de disparo</characteristic>
       </characteristics>
     </profile>
     <profile name="Vindicator" id="f0074e39-b517-42cf-a970-561944ccf0fb" hidden="false" typeId="725a358c-765b-498c-8de5-399fc0c0725f" typeName="Vehículo">
@@ -661,13 +670,16 @@
         <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Estos bólteres de asalto están fijados en el exterior del vehículo y los puede disparar un miembro de la tripulación a través de una escotilla abierta o por control remoto desde el interior del vehículo. Se considera armamento ligero adicional.</characteristic>
       </characteristics>
     </profile>
-    <profile name="Cápsula de desembarco" id="1bb213b1-ceb5-41f1-805d-8fa91f861394" hidden="false" typeId="725a358c-765b-498c-8de5-399fc0c0725f" typeName="Vehículo">
+    <profile name="Cápsula de desembarco" id="1bb213b1-ceb5-41f1-805d-8fa91f861394" hidden="false" typeId="d12a-b581-e1f4-1193" typeName="Transporte">
       <characteristics>
-        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">2</characteristic>
-        <characteristic name="Frontal" typeId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f">12</characteristic>
-        <characteristic name="Lateral" typeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e">12</characteristic>
-        <characteristic name="Posterior" typeId="0a9f33cb-0412-420a-89d2-20707c360bd2">12</characteristic>
-        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Vehículo, inmóvil, descubierto</characteristic>
+        <characteristic name="HP" typeId="eeb7-edf8-2c77-59b6">2</characteristic>
+        <characteristic name="Frontal" typeId="584e-15ce-949b-e298">12</characteristic>
+        <characteristic name="Lateral" typeId="27a5-c15e-f5b6-9c11">12</characteristic>
+        <characteristic name="Posterior" typeId="e7fb-2121-c86d-7a50">12</characteristic>
+        <characteristic name="Tipo" typeId="f141-fc34-4d2a-b484">Vehículo (Inmóvil, Descubierto)</characteristic>
+        <characteristic name="Capacidad" typeId="f90f-9546-155f-c585">10 Marines Espaciales, 5 Exterminadores o 1 Dreadnought. Tras desembarcar, los pasajeros no podrán volver a embarcar</characteristic>
+        <characteristic name="Puntos de acceso" typeId="8cb4-5303-693b-0256">Vehículo descubierto</characteristic>
+        <characteristic name="Puntos de disparo" typeId="85c0-7904-8bac-a359">Ninguno</characteristic>
       </characteristics>
     </profile>
     <profile name="Bólter huracán" id="d28b601c-d57f-46c7-98f1-0e084cae8f94" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
@@ -694,13 +706,16 @@
         <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Tanque</characteristic>
       </characteristics>
     </profile>
-    <profile name="Land Raider Cruzado" id="13e7e276-3448-4c00-a827-e8721826da29" hidden="false" typeId="725a358c-765b-498c-8de5-399fc0c0725f" typeName="Vehículo">
+    <profile name="Land Raider Cruzado" id="13e7e276-3448-4c00-a827-e8721826da29" hidden="false" typeId="d12a-b581-e1f4-1193" typeName="Transporte">
       <characteristics>
-        <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
-        <characteristic name="Frontal" typeId="8cdd4fef-d1ba-4007-992c-b6f93e86d43f">14</characteristic>
-        <characteristic name="Lateral" typeId="5f9a3780-eecb-4c70-be1d-e5bd06b06e9e">14</characteristic>
-        <characteristic name="Posterior" typeId="0a9f33cb-0412-420a-89d2-20707c360bd2">14</characteristic>
-        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Tanque</characteristic>
+        <characteristic name="HP" typeId="eeb7-edf8-2c77-59b6">4</characteristic>
+        <characteristic name="Frontal" typeId="584e-15ce-949b-e298">14</characteristic>
+        <characteristic name="Lateral" typeId="27a5-c15e-f5b6-9c11">14</characteristic>
+        <characteristic name="Posterior" typeId="e7fb-2121-c86d-7a50">14</characteristic>
+        <characteristic name="Tipo" typeId="f141-fc34-4d2a-b484">Vehículo (Tanque)</characteristic>
+        <characteristic name="Capacidad" typeId="f90f-9546-155f-c585">15 Marines Espaciales con servoarmadura u 8 Exterminadores</characteristic>
+        <characteristic name="Puntos de acceso" typeId="8cb4-5303-693b-0256">Un punto de acceso frontal y uno a cada lado del casco</characteristic>
+        <characteristic name="Puntos de disparo" typeId="85c0-7904-8bac-a359">Ninguno</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
@@ -762,29 +777,14 @@
     <rule name="Dreadnought Venerable" id="bc4ae3e1-cfde-4d0e-b872-971a7083fa92" hidden="false">
       <description>Puede convertirse en Venerable un solo Dreadnought por destacamento. Es muy difícil acabar con un Dreadnought Venerable. Para representar esta circunstancia, cada vez que sufra un impacto superficial o interno, podrás pedir a tu oponente que repita la tirada del resultado obtenido en las tablas de daños en vehículos (tienes que aceptar el segundo resultado aunque sea peor).</description>
     </rule>
-    <rule name="Transporte del Rhino" id="dcb1d655-bc0d-42c5-894b-7fa6a278c829" hidden="false">
-      <description>Tripulación: un Iniciado. El Rhino puede llevar hasta 10 Marines Espaciales, que no pueden ser Exterminadores. Puntos de disparo: hasta dos miniaturas pueden disparar por la abertura de disparo. Puntos de acceso: un acceso en cada uno de los lados y otro en la parte posterior.</description>
-    </rule>
-    <rule name="Reparación del Rhino" id="0124e260-aa79-434d-9e4d-2b0305a28f2b" hidden="false">
-      <description>El Rhino es un vehículo especialmente resistente que puede llegar a ser reparado por su propia tripulación durante la batalla. Si un Rhino resulta inmovilizado, sea por la razón que sea, su conductor puede intentar repararlo temporalmente en los turnos subsiguientes en vez de disparar. Tira un dado en la fase de disparo; si obtienes un 6, el vehículo podrá mover normalmente en su siguiente turno.</description>
-    </rule>
-    <rule name="Transporte del Razorback" id="e7568dd4-0375-440a-b61f-69adb0b7c71f" hidden="false">
-      <description>Tripulación: un Iniciado. El Razorback puede llevar hasta 6 Marines Espaciales, que no pueden ser Exterminadores. Puntos de disparo: ninguno. Puntos de acceso: un acceso en cada uno de los lados y otro en la parte posterior.</description>
-    </rule>
-    <rule name="Transporte de la cápsula de desembarco" id="954c395f-6d13-4272-b412-e12a2fad4225" hidden="false">
-      <description>Tripulación: ninguna. Puede transportar hasta 10 Marines Espaciales, hasta 5 Exterminadores o 1 Dreadnought. Tras desembarcar, los pasajeros no podrán volver a embarcar. Puntos de disparo: ninguno. Puntos de acceso: vehículo descubierto. Una cápsula de desembarco siempre tiene la modificación espíritu máquina sin coste adicional en puntos. Las cápsulas de desembarco pueden disparar en el mismo turno en el que aterrizan. La unidad que la lleve no podrá equiparse con ningún otro vehículo y permanecerá en reserva hasta llegar a la batalla en su cápsula de desembarco.</description>
+    <rule name="Cápsula de desembarco" id="954c395f-6d13-4272-b412-e12a2fad4225" hidden="false">
+      <description>Las cápsulas de desembarco pueden disparar en el mismo turno en el que aterrizan. Una cápsula de desembarco siempre tiene la modificación espíritu máquina sin coste adicional en puntos. La unidad que la lleve no podrá equiparse con ningún otro vehículo y permanecerá en reserva hasta llegar a la batalla en su cápsula de desembarco.</description>
     </rule>
     <rule name="Despliegue rápido de la Escuadra de Asalto" id="6fe4c503-1a5e-4d02-91dd-071413e599cc" hidden="false">
       <description>Una Escuadra de Asalto con retrorreactores puede desplegar desde una cañonera Thunderhawk, por lo que puede usar la regla especial despliegue rápido siempre que la misión lo permita.</description>
     </rule>
     <rule name="Despliegue rápido de los Land Speeders" id="310e4926-93fa-4462-8207-a38882fa8102" hidden="false">
       <description>Un Escuadrón de Land Speeders puede caer sobre las líneas enemigas desde una gran altura, por lo que puede usar la regla especial despliegue rápido siempre que la misión lo permita. Tripulación: dos Iniciados.</description>
-    </rule>
-    <rule name="Transporte del Land Raider" id="3c2f2742-fb31-457c-abd0-3b6f4132c831" hidden="false">
-      <description>Tripulación: tres Iniciados. El Land Raider puede transportar hasta 10 Marines Espaciales con servoarmadura o hasta 5 Exterminadores. Puntos de disparo: ninguno. Puntos de acceso: un acceso frontal y uno en cada uno de los lados. En su coste en puntos se incluye la modificación para vehículos espíritu máquina.</description>
-    </rule>
-    <rule name="Transporte del Land Raider Cruzado" id="5c6a05fd-33ab-4e6b-9374-71f6df90b1dd" hidden="false">
-      <description>Tripulación: tres Iniciados. Sin los generadores necesarios para disparar los cañones láser, el Land Raider Cruzado tiene más capacidad de transporte de lo habitual: puede llevar hasta 15 Marines Espaciales con servoarmadura o hasta 8 Exterminadores. Puntos de disparo: ninguno. Puntos de acceso: un acceso frontal y uno en cada uno de los lados. En su coste en puntos se incluyen las modificaciones para vehículos espíritu máquina y blindaje adicional.</description>
     </rule>
     <rule name="Tripulación del Vindicator" id="5fbc48a8-a6f9-4987-bab1-4a913491ee0d" hidden="false">
       <description>Tripulación: dos Iniciados.</description>
@@ -1550,7 +1550,7 @@
       </entryLinks>
       <infoLinks>
         <infoLink name="Cápsula de desembarco" id="62cf5471-dce0-498e-baec-6bcb3672d300" hidden="false" targetId="1bb213b1-ceb5-41f1-805d-8fa91f861394" type="profile"/>
-        <infoLink name="Transporte de la cápsula de desembarco" id="52f31056-3954-4b83-87e5-8bb8efc3dadc" hidden="false" targetId="954c395f-6d13-4272-b412-e12a2fad4225" type="rule"/>
+        <infoLink name="Cápsula de desembarco" id="52f31056-3954-4b83-87e5-8bb8efc3dadc" hidden="false" targetId="954c395f-6d13-4272-b412-e12a2fad4225" type="rule"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Escuadra de Asalto" id="687a24ca-31ab-4482-b9ba-97f56762cbf5" collapsible="true" hidden="false" import="true" type="unit">
@@ -5205,7 +5205,6 @@
       </entryLinks>
       <infoLinks>
         <infoLink name="Land Raider" id="330b7dbf-1fb0-4c0b-8826-ee2264d06700" hidden="false" targetId="3fdfa6ab-a39d-401d-bb07-9871b9fbcf90" type="profile"/>
-        <infoLink name="Transporte del Land Raider" id="887de28f-1464-4342-8412-b8340026f672" hidden="false" targetId="3c2f2742-fb31-457c-abd0-3b6f4132c831" type="rule"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Land Raider Cruzado" id="1fe99fdd-4a0f-48e2-9c72-69efa9adb7c3" collapsible="true" hidden="false" import="true" type="unit">
@@ -5253,7 +5252,6 @@
       </entryLinks>
       <infoLinks>
         <infoLink name="Land Raider Cruzado" id="28ff163e-5d08-433e-afb3-fb532c254241" hidden="false" targetId="13e7e276-3448-4c00-a827-e8721826da29" type="profile"/>
-        <infoLink name="Transporte del Land Raider Cruzado" id="79e92e77-42e0-4b5a-97ae-9702f8f2723a" hidden="false" targetId="5c6a05fd-33ab-4e6b-9374-71f6df90b1dd" type="rule"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Predator Annihilator" id="72b17526-63e6-49e8-8fcf-1eb6ea1f5104" collapsible="true" hidden="false" import="true" type="unit">
@@ -5353,7 +5351,6 @@
       </entryLinks>
       <infoLinks>
         <infoLink name="Razorback" id="e2ceb405-1f66-4451-9b9d-ab4841576405" hidden="false" targetId="8a25e65b-b6bd-4f6e-9f20-3d390bb905e9" type="profile"/>
-        <infoLink name="Transporte del Razorback" id="922c5dc9-a76c-41e2-9acf-48d958d10907" hidden="false" targetId="e7568dd4-0375-440a-b61f-69adb0b7c71f" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Arma" id="af47ace9-20ef-454b-86b0-0a6221305e28" collapsible="true" collective="false" defaultSelectionEntryId="d31dd20a-85e7-4b02-989b-a6dd8475d2dd" hidden="false" import="true">
@@ -5391,8 +5388,7 @@
       </entryLinks>
       <infoLinks>
         <infoLink name="Rhino" id="734f7b73-896b-4ecd-bc28-fb4d230d20c0" hidden="false" targetId="32ee317c-b920-46b4-bde9-d93aa9fcc4cb" type="profile"/>
-        <infoLink name="Transporte del Rhino" id="956949cc-acd4-485a-8ca6-b873054bf2cb" hidden="false" targetId="dcb1d655-bc0d-42c5-894b-7fa6a278c829" type="rule"/>
-        <infoLink name="Reparación del Rhino" id="aa833524-3f2d-4ff5-ba6b-6f16826a4533" hidden="false" targetId="0124e260-aa79-434d-9e4d-2b0305a28f2b" type="rule"/>
+        <infoLink name="Reparación" id="aa833524-3f2d-4ff5-ba6b-6f16826a4533" hidden="false" targetId="7d29-e1f8-41b6-7e94" type="rule"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Tecnomarine" id="aeff67dd-b625-4ca1-bea4-e39842b1a85d" collapsible="true" hidden="false" import="true" type="unit">
