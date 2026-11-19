@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="03cf-272b-fe2f-5ba6" name="Eldars" revision="6" battleScribeVersion="2.03" authorName="Diego Muñiz" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com csddmv@gmail.com" authorUrl="csddmv@gmail.com" library="false" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="03cf-272b-fe2f-5ba6" name="Eldars" revision="7" battleScribeVersion="2.03" authorName="Diego Muñiz" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com csddmv@gmail.com" authorUrl="csddmv@gmail.com" library="false" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>Unidades del Codex Eldar de 4ª edición compatible con el reglamento de Warhammer 40.000 5ª edición.</readme>
   <entryLinks>
     <entryLink id="d5f6-2a01-eeaa-c62c" name="Autarca" hidden="false" collective="false" import="true" targetId="4516-1291-677a-59f7" type="selectionEntry">
@@ -138,7 +138,7 @@
       <profiles>
         <profile id="d7f7-49a5-c5f6-52a7" name="Autarca" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
           <modifiers>
-            <modifier type="set" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Unidad retropropulsada">
+            <modifier type="set" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Retropropulsada (Personaje)">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
@@ -148,7 +148,7 @@
                 </conditionGroup>
               </conditionGroups>
             </modifier>
-            <modifier type="set" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Motocicleta a reacción">
+            <modifier type="set" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Motocicleta a reacción (Personaje)">
               <conditions>
                 <condition field="selections" scope="4516-1291-677a-59f7" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="82e0-4807-2d84-ceda" type="equalTo"/>
               </conditions>
@@ -160,7 +160,7 @@
             </modifier>
           </modifiers>
           <characteristics>
-            <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infanteria</characteristic>
+            <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería (Personaje)</characteristic>
             <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">6</characteristic>
             <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">6</characteristic>
             <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
@@ -180,6 +180,7 @@
         <infoLink name="Granadas de Plasma" id="43e6-3ee5-3cdd-9487" hidden="false" targetId="9078-ebc8-e854-bd2e" type="profile"/>
         <infoLink name="Granadas de Disrupción" id="f656-0932-d23c-ff09" hidden="false" targetId="bfed-c438-e1b1-adef" type="profile"/>
         <infoLink id="11f6-5c68-7715-cdad" name="Gran estratega" hidden="false" targetId="b2c3-6c82-5fd6-26fb" type="rule"/>
+        <infoLink name="Personaje independiente" id="b5d7939d-b93d-4495-8c32-8209fab95fe8" hidden="false" targetId="61b4-c5bb-9d85-8506" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="ce1d-f900-82a8-c96b" name="Personaje Independiente" hidden="false" targetId="c0a6-b371-006e-1e70" primary="false"/>
@@ -208,6 +209,7 @@
             <selectionEntry id="806d-a2d0-fa09-efc4" name="Alas de halcón" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
                 <infoLink id="1fc1-d808-b8b2-3ced" name="Alas de halcón" hidden="false" targetId="a0d9-4441-5c2d-ce4b" type="profile"/>
+                <infoLink id="48c628bb-d7c5-4ca8-a2a8-53af643e6abd" name="Unidad retropropulsada" hidden="false" targetId="d6f4-cfda-75c5-f2f1" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="20"/>
@@ -216,6 +218,7 @@
             <selectionEntry id="4c3e-a812-dc9c-8b16" name="Generador de salto disforme" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
                 <infoLink id="bed2-f28d-0768-28a4" name="Generador de salto disforme" hidden="false" targetId="2ae1-790c-01bc-f6c8" type="profile"/>
+                <infoLink id="a780b015-e000-4432-b8a3-58cba79fb72e" name="Unidad retropropulsada" hidden="false" targetId="d6f4-cfda-75c5-f2f1" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="25"/>
@@ -869,8 +872,15 @@
     <selectionEntry id="2003-370b-6614-cbee" name="Señor Fénix" hidden="false" collective="false" import="true" type="unit">
       <profiles>
         <profile id="ef50-1195-6f30-4672" name="Señor Fénix" publicationId="a951-e6d2-e0d6-b951" page="54" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
+          <modifiers>
+            <modifier type="set" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Retropropulsada (Personaje)">
+              <conditions>
+                <condition field="selections" scope="2003-370b-6614-cbee" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="74a8-4774-8dae-5868" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <characteristics>
-            <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
+            <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería (Personaje)</characteristic>
             <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">7</characteristic>
             <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">7</characteristic>
             <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
@@ -892,6 +902,7 @@
         <infoLink id="e377-616a-b120-bec6" name="Veloces" hidden="false" targetId="d110-fc1c-250c-54d4" type="rule"/>
         <infoLink id="8d67-4e2c-55dd-db22" name="Coraje" hidden="false" targetId="b23b-fb5c-4c8c-5ae4" type="rule"/>
         <infoLink id="f956-d994-ec02-5461" name="Guerrero Eterno" hidden="false" targetId="71c3-7c34-f6f0-b284" type="rule"/>
+        <infoLink name="Personaje independiente" id="2269ea77-86a7-4d97-9c71-797d657fd616" hidden="false" targetId="61b4-c5bb-9d85-8506" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="2682-5a13-bcdb-ebb9" name="Señor Fénix" hidden="false" collective="false" import="true">
@@ -973,6 +984,7 @@
         <infoLink id="f53a-64ff-b71e-10db" name="Garra de halcón" hidden="false" targetId="cb57-0dfe-77cd-8aff" type="profile"/>
         <infoLink id="f57d-ff3a-3af1-ebdd" name="Levantar el Vuelo" hidden="false" targetId="8884-bf50-7c26-8b5c" type="profile"/>
         <infoLink id="98f2-b972-90eb-dff9" name="Intercepción" hidden="false" targetId="9ec6-becc-86d6-8f3a" type="profile"/>
+        <infoLink id="f308e892-fbae-43e8-94ae-a4880dc61e02" name="Unidad retropropulsada" hidden="false" targetId="d6f4-cfda-75c5-f2f1" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="puntos" value="200"/>
@@ -1932,7 +1944,7 @@
       <profiles>
         <profile id="d028-c938-f6b9-b036" name="Halcón Cazador" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
           <characteristics>
-            <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería Retropropulsada</characteristic>
+            <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Retropropulsada</characteristic>
             <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
             <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
             <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
@@ -1965,7 +1977,7 @@
           <infoLinks>
             <infoLink id="2bca-71e2-883f-d082" name="Exarca" hidden="false" targetId="bdef-4cd4-0b4f-98cc" type="profile">
               <modifiers>
-                <modifier type="set" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Infantería retropropulsada"/>
+                <modifier type="set" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Retropropulsada"/>
               </modifiers>
             </infoLink>
           </infoLinks>
@@ -2080,6 +2092,9 @@
       <costs>
         <cost name="Pts" typeId="puntos" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Unidad retropropulsada" id="5bcdb530-f9c8-43a5-9913-ef0114daf1a4" hidden="false" targetId="d6f4-cfda-75c5-f2f1" type="rule"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="80cd-8fa3-deeb-463b" name="Araña de Disformidad" hidden="false" collective="false" import="true" type="model">
       <constraints>
@@ -2089,7 +2104,7 @@
       <profiles>
         <profile id="0e5d-65e9-adf1-e815" name="Araña de Disformidad" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
           <characteristics>
-            <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería Retropropulsada</characteristic>
+            <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Retropropulsada</characteristic>
             <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
             <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
             <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">3</characteristic>
@@ -2119,7 +2134,7 @@
           <infoLinks>
             <infoLink id="35d4-0030-0520-6f60" name="Exarca" hidden="false" targetId="bdef-4cd4-0b4f-98cc" type="profile">
               <modifiers>
-                <modifier type="set" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Infantería retropropulsada"/>
+                <modifier type="set" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" value="Retropropulsada"/>
               </modifiers>
             </infoLink>
           </infoLinks>
@@ -2240,6 +2255,9 @@
       <costs>
         <cost name="Pts" typeId="puntos" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Unidad retropropulsada" id="d88a484e-bac8-414e-891a-21b7ef3f85cc" hidden="false" targetId="d6f4-cfda-75c5-f2f1" type="rule"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="c3e3-5cd8-25e6-a8ba" name="Guardián Espectral" hidden="false" collective="false" import="true" type="model">
       <constraints>

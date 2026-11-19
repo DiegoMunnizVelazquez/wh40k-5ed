@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Templarios Negros" id="7757-a04a-5363-3a75" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="42" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Templarios Negros" id="7757-a04a-5363-3a75" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="43" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink name="Capellán Grimaldus" id="874b023e-ec65-4682-b884-fb43a2a26e02" collective="false" hidden="false" import="true" targetId="a8bf41c8-8bfa-4261-a16b-0235953bfe4e" type="selectionEntry">
       <categoryLinks>
@@ -1587,6 +1587,9 @@
                 <constraint id="eb13a404-7c22-4426-8388-5f96af8e4a69" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                 <constraint id="101f05f9-a024-4eef-ac62-42cff47e000d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
+              <modifiers>
+                <modifier affects="profiles.Unidad" arg="Infantería" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" scope="e487c120-4295-4513-9cf1-6cd284f55886" type="replace" value="Retropropulsada"/>
+              </modifiers>
             </entryLink>
           </entryLinks>
           <infoLinks>
@@ -6072,6 +6075,9 @@
               <costs>
                 <cost name="Pts" typeId="puntos" value="20"/>
               </costs>
+              <modifiers>
+                <modifier affects="profiles.Unidad" arg="Infantería" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" scope="61cebf34-a567-46a7-b9ce-50ae6dfa8040" type="replace" value="Retropropulsada"/>
+              </modifiers>
             </entryLink>
             <entryLink name="Aura de Hierro" id="89931ee6-1642-481a-a186-1aa1cb14dd4e" collective="false" hidden="false" import="true" sortIndex="13" targetId="8339dd80-d37d-5fcc-8979-5b3f2db4da24" type="selectionEntry">
               <constraints>
@@ -6350,6 +6356,9 @@
               <costs>
                 <cost name="Pts" typeId="puntos" value="20"/>
               </costs>
+              <modifiers>
+                <modifier affects="profiles.Unidad" arg="Infantería" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" scope="d12bd781-480c-417e-8762-cf90f1ca42d1" type="replace" value="Retropropulsada"/>
+              </modifiers>
             </entryLink>
             <entryLink name="Aura de Hierro" id="20dff3f8-8e39-4fcc-8d29-d7e0061ef514" collective="false" hidden="false" import="true" sortIndex="13" targetId="8339dd80-d37d-5fcc-8979-5b3f2db4da24" type="selectionEntry">
               <constraints>
@@ -6636,6 +6645,9 @@
               <costs>
                 <cost name="Pts" typeId="puntos" value="20"/>
               </costs>
+              <modifiers>
+                <modifier affects="profiles.Unidad" arg="Infantería" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" scope="3b499ad2-605b-488a-a551-26d7f07ab956" type="replace" value="Retropropulsada"/>
+              </modifiers>
             </entryLink>
             <entryLink name="Motocicleta" id="8c99f17f-dc59-4f81-b224-2433da8b5176" collective="false" hidden="false" import="true" sortIndex="14" targetId="9f1e2390-4ecc-4096-8df0-36e50d49aba6" type="selectionEntry">
               <constraints>
@@ -6914,6 +6926,9 @@
               <costs>
                 <cost name="Pts" typeId="puntos" value="20"/>
               </costs>
+              <modifiers>
+                <modifier affects="profiles.Unidad" arg="Infantería" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" scope="8e374ba1-9838-48b5-80f5-f64e6c0e0d18" type="replace" value="Retropropulsada"/>
+              </modifiers>
             </entryLink>
             <entryLink name="Motocicleta" id="01291a2b-28d3-4ea6-916c-414bf5fdbbcb" collective="false" hidden="false" import="true" sortIndex="14" targetId="9f1e2390-4ecc-4096-8df0-36e50d49aba6" type="selectionEntry">
               <constraints>
@@ -7985,6 +8000,9 @@
               <costs>
                 <cost name="Pts" typeId="puntos" value="20"/>
               </costs>
+              <modifiers>
+                <modifier affects="profiles.Unidad" arg="Infantería" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" scope="246b90bf-2c95-4158-a8f6-7dc67a22e9d0" type="replace" value="Retropropulsada"/>
+              </modifiers>
             </entryLink>
             <entryLink name="Aura de Hierro" id="80b52c42-e3d0-4807-ae31-68d5b457a852" collective="false" hidden="false" import="true" sortIndex="13" targetId="8339dd80-d37d-5fcc-8979-5b3f2db4da24" type="selectionEntry">
               <constraints>

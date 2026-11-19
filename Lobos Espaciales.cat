@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Lobos Espaciales" id="de8b-5a14-0e15-e5d9" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="19" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Lobos Espaciales" id="de8b-5a14-0e15-e5d9" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="20" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Saga del Matabestias" id="fef6905f-c2f1-4a8d-b98c-d7462c932abb" hidden="false"/>
     <categoryEntry name="Saga de Majestad" id="70d9fb2b-ea58-469d-ae4b-eecb10ad3642" hidden="false"/>
@@ -258,7 +258,7 @@
     </profile>
     <profile name="Garra del Cielo" id="f6d19d7d-0a36-4724-a7c5-fe1782145f27" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
       <characteristics>
-        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Unidades retropropulsadas</characteristic>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Retropropulsada</characteristic>
         <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">3</characteristic>
         <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">3</characteristic>
         <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
@@ -2993,6 +2993,9 @@
                               <costs>
                                 <cost name="Pts" typeId="puntos" value="25"/>
                               </costs>
+                              <modifiers>
+                                <modifier affects="profiles.Unidad" arg="Infantería" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" scope="4277aa99-1778-4ce0-8c6b-d276e51b415c" type="replace" value="Retropropulsada"/>
+                              </modifiers>
                             </entryLink>
                             <entryLink name="Motocicleta de los Marines Espaciales" id="2ed1-d5e5-01e2-5b5e" collective="false" hidden="false" import="true" sortIndex="2" targetId="0851f98b-7a83-4daf-ba6d-12d2a97b8247" type="selectionEntry">
                               <constraints>
@@ -3436,6 +3439,9 @@
                       <costs>
                         <cost name="Pts" typeId="puntos" value="25"/>
                       </costs>
+                      <modifiers>
+                        <modifier affects="profiles.Unidad" arg="Infantería" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" scope="4ba87243-0baa-4ebc-b77e-14453c20aa04" type="replace" value="Retropropulsada"/>
+                      </modifiers>
                     </entryLink>
                     <entryLink name="Motocicleta de los Marines Espaciales" id="782b26bd-949f-4d7c-83e0-f7ddb89b8eaa" collective="false" hidden="false" import="true" sortIndex="2" targetId="0851f98b-7a83-4daf-ba6d-12d2a97b8247" type="selectionEntry">
                       <constraints>
@@ -3617,6 +3623,9 @@
                       <costs>
                         <cost name="Pts" typeId="puntos" value="25"/>
                       </costs>
+                      <modifiers>
+                        <modifier affects="profiles.Unidad" arg="Infantería" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" scope="4ba87243-0baa-4ebc-b77e-14453c20aa04" type="replace" value="Retropropulsada"/>
+                      </modifiers>
                     </entryLink>
                     <entryLink name="Motocicleta de los Marines Espaciales" id="487f811c-ea14-412e-86c4-c4cf63544030" collective="false" hidden="false" import="true" sortIndex="2" targetId="0851f98b-7a83-4daf-ba6d-12d2a97b8247" type="selectionEntry">
                       <constraints>
@@ -5662,6 +5671,9 @@
                       <costs>
                         <cost name="Pts" typeId="puntos" value="25"/>
                       </costs>
+                      <modifiers>
+                        <modifier affects="profiles.Unidad" arg="Infantería" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" scope="2e6a6d93-4bf5-4be1-89e5-da3c1df8d1f3" type="replace" value="Retropropulsada"/>
+                      </modifiers>
                     </entryLink>
                     <entryLink name="Motocicleta de los Marines Espaciales" id="3c92ddae-1bc8-4f15-a8b7-089f98fb7d28" collective="false" hidden="false" import="true" sortIndex="2" targetId="0851f98b-7a83-4daf-ba6d-12d2a97b8247" type="selectionEntry">
                       <constraints>
@@ -5818,6 +5830,9 @@
                       <costs>
                         <cost name="Pts" typeId="puntos" value="25"/>
                       </costs>
+                      <modifiers>
+                        <modifier affects="profiles.Unidad" arg="Infantería" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" scope="2e6a6d93-4bf5-4be1-89e5-da3c1df8d1f3" type="replace" value="Retropropulsada"/>
+                      </modifiers>
                     </entryLink>
                     <entryLink name="Motocicleta de los Marines Espaciales" id="ea322c36-dc44-4c95-9fc5-789ddba6f763" collective="false" hidden="false" import="true" sortIndex="2" targetId="0851f98b-7a83-4daf-ba6d-12d2a97b8247" type="selectionEntry">
                       <constraints>
@@ -6299,6 +6314,9 @@
                       <costs>
                         <cost name="Pts" typeId="puntos" value="25"/>
                       </costs>
+                      <modifiers>
+                        <modifier affects="profiles.Unidad" arg="Infantería" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" scope="49e9b914-d353-47d1-8651-2a9d7b1a64bd" type="replace" value="Retropropulsada"/>
+                      </modifiers>
                     </entryLink>
                     <entryLink name="Motocicleta de los Marines Espaciales" id="0071c0e9-30da-48aa-851b-645628789b39" collective="false" hidden="false" import="true" sortIndex="2" targetId="0851f98b-7a83-4daf-ba6d-12d2a97b8247" type="selectionEntry">
                       <constraints>
@@ -6431,6 +6449,9 @@
                       <costs>
                         <cost name="Pts" typeId="puntos" value="25"/>
                       </costs>
+                      <modifiers>
+                        <modifier affects="profiles.Unidad" arg="Infantería" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" scope="49e9b914-d353-47d1-8651-2a9d7b1a64bd" type="replace" value="Retropropulsada"/>
+                      </modifiers>
                     </entryLink>
                     <entryLink name="Motocicleta de los Marines Espaciales" id="ebcc84ea-c20e-4fb9-83bc-896dddf56261" collective="false" hidden="false" import="true" sortIndex="2" targetId="0851f98b-7a83-4daf-ba6d-12d2a97b8247" type="selectionEntry">
                       <constraints>
@@ -6769,6 +6790,9 @@
                       <costs>
                         <cost name="Pts" typeId="puntos" value="25"/>
                       </costs>
+                      <modifiers>
+                        <modifier affects="profiles.Unidad" arg="Infantería" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" scope="e18ef137-ece0-4958-b713-32129c30cd11" type="replace" value="Retropropulsada"/>
+                      </modifiers>
                     </entryLink>
                     <entryLink name="Motocicleta de los Marines Espaciales" id="05c2e007-4d67-43a3-a2b9-e3c7125665a2" collective="false" hidden="false" import="true" sortIndex="2" targetId="0851f98b-7a83-4daf-ba6d-12d2a97b8247" type="selectionEntry">
                       <constraints>
@@ -6950,6 +6974,9 @@
                       <costs>
                         <cost name="Pts" typeId="puntos" value="25"/>
                       </costs>
+                      <modifiers>
+                        <modifier affects="profiles.Unidad" arg="Infantería" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" scope="e18ef137-ece0-4958-b713-32129c30cd11" type="replace" value="Retropropulsada"/>
+                      </modifiers>
                     </entryLink>
                     <entryLink name="Motocicleta de los Marines Espaciales" id="adebc62b-4479-420e-861c-7982f9aafe71" collective="false" hidden="false" import="true" sortIndex="2" targetId="0851f98b-7a83-4daf-ba6d-12d2a97b8247" type="selectionEntry">
                       <constraints>

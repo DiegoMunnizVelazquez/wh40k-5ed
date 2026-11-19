@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Marines Espaciales del Caos" id="95e5-9796-aa2a-f5ee" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="10" library="false" publicationId="f744-f28b-4145-1729" revision="16" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Marines Espaciales del Caos" id="95e5-9796-aa2a-f5ee" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="10" library="false" publicationId="f744-f28b-4145-1729" revision="17" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Esto es for fun. Cualquier error o sugerencia serán bienvenidas
 
 
@@ -709,7 +709,7 @@ En este sistema se agruparán las reglas del Codex de Marines Espaciales del Cao
     </profile>
     <profile name="Rapax" id="59ac-18f2-8b75-ac7e" hidden="false" page="34" publicationId="f744-f28b-4145-1729" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
       <characteristics>
-        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería Retropropulsada</characteristic>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Retropropulsada</characteristic>
         <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
         <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
         <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
@@ -943,7 +943,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
     </profile>
     <profile name="Paladín Rapax" id="4fae-990a-8771-9d62" hidden="false" page="34" publicationId="f744-f28b-4145-1729" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
       <characteristics>
-        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería Retropropulsada</characteristic>
+        <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Retropropulsada</characteristic>
         <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
         <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
         <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
@@ -1022,7 +1022,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
           <modifierGroups>
             <modifierGroup type="and">
               <modifiers>
-                <modifier field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" join=" " type="append" value="Retropropulsada">
+                <modifier field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" arg="Infantería" type="replace" value="Retropropulsada">
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
@@ -3510,6 +3510,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
       </constraints>
       <infoLinks>
         <infoLink name="Retrorreactores" id="726a-fdab-a517-c80b" hidden="false" targetId="ba22-cd8e-0d95-8e72" type="profile"/>
+        <infoLink name="Unidad retropropulsada" id="06d60380-ba50-405c-a2f6-458cd59a8116" hidden="false" targetId="d6f4-cfda-75c5-f2f1" type="rule"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Arma Psíquica" id="be4e-94f2-2d2f-cb4f" collective="false" hidden="false" import="true" type="upgrade">
@@ -4278,6 +4279,7 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
       </costs>
       <infoLinks>
         <infoLink name="Alas" id="6872-48a0-d41c-a4d2" hidden="false" targetId="61fd-1eba-d8f1-7646" type="profile"/>
+        <infoLink name="Unidad retropropulsada" id="807b4466-566b-45f3-9087-924a06e6243e" hidden="false" targetId="d6f4-cfda-75c5-f2f1" type="rule"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Marca de Khorne" id="8877-a24b-dfdf-f14b" hidden="false" import="true" type="upgrade">
@@ -4420,7 +4422,7 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
           <modifierGroups>
             <modifierGroup type="and">
               <modifiers>
-                <modifier field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" join=" " type="append" value="Retropropulsada">
+                <modifier field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" arg="Infantería" type="replace" value="Retropropulsada">
                   <conditionGroups>
                     <conditionGroup type="or">
                       <conditions>
@@ -6033,6 +6035,7 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
         <infoLink name="Granadas de asalto" id="ede8-dadc-67f6-87f1" hidden="false" targetId="6fa5-b37d-1b93-9529" type="profile"/>
         <infoLink name="Granadas perforantes" id="6b36-0ae2-9928-6968" hidden="false" targetId="88ef-f347-6da1-b41f" type="profile"/>
         <infoLink name="Granadas Perforantes y de Fragmentación" id="c6c4-40c4-c5e4-54c7" hidden="false" targetId="e9fd-053f-940d-6f58" type="profile"/>
+        <infoLink name="Unidad retropropulsada" id="2548c36b-4c42-4867-a4a5-248d74fca6ed" hidden="false" targetId="d6f4-cfda-75c5-f2f1" type="rule"/>
       </infoLinks>
       <modifierGroups>
         <modifierGroup type="and">
@@ -7218,6 +7221,7 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
           </costs>
           <infoLinks>
             <infoLink name="Disco de Tzeentch" id="d857-9071-7c42-c212" hidden="false" targetId="6c44-e6db-b690-7d4d" type="profile"/>
+            <infoLink name="Unidad retropropulsada" id="c6077264-55bc-41f1-88a4-b99be03e3c60" hidden="false" targetId="d6f4-cfda-75c5-f2f1" type="rule"/>
           </infoLinks>
           <modifiers>
             <modifier field="hidden" type="set" value="true">
