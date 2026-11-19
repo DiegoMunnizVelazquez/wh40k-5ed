@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6e44-2117-7deb-8ff5" name="Necrones" revision="6" battleScribeVersion="2.03" authorName="Diego Muñiz" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com csddmv@gmail.com" authorUrl="csddmv@gmail.com" library="false" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="6e44-2117-7deb-8ff5" name="Necrones" revision="7" battleScribeVersion="2.03" authorName="Diego Muñiz" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com csddmv@gmail.com" authorUrl="csddmv@gmail.com" library="false" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>Unidades del Codex Necronesde 5ª edición compatible con el reglamento de Warhammer 40.000 5ª edición.</readme>
   <profileTypes>
     <profileType id="cbe8-a0a5-b650-b92d" name="Poder C&apos;tan (Disparo)" sortIndex="10">
@@ -1123,11 +1123,16 @@
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="423e-e967-7d63-4bdb" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Cañón pesado Gauss acoplado" id="1752-1553-3af1-4687" hidden="false" targetId="0281-9800-06d0-fa52" type="profile"/>
+                <infoLink name="Cañón pesado Gauss" id="1752-1553-3af1-4687" hidden="false" targetId="f0d7-954d-659a-6d4d" type="profile"/>
+                <infoLink name="Acoplada" id="d220f645-3f87-46c8-9e76-5bc9de9698ea" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="15"/>
               </costs>
+              <modifiers>
+                <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+                <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1364,22 +1369,32 @@
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c441-028e-1f37-3703" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Carabina Tesla acoplada" id="2263-e22d-8a13-73b4" hidden="false" targetId="94f5-6712-8712-3173" type="profile"/>
+                <infoLink name="Carabina Tesla" id="2263-e22d-8a13-73b4" hidden="false" targetId="6629-12dc-0ea6-f972" type="profile"/>
+                <infoLink name="Acoplada" id="e127e10b-248c-494f-b037-e7e35adcdace" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="0"/>
               </costs>
+              <modifiers>
+                <modifier affects="profiles.Arma" field="name" type="append" value="acoplada"/>
+                <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+              </modifiers>
             </selectionEntry>
             <selectionEntry id="d4c2-75fe-de8b-7faa" name="Blaster Gauss acoplado" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="331e-1364-2e1f-4f5e" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink name="Blaster Gauss acoplado" id="fbe3-81bf-5b99-327a" hidden="false" targetId="2dd3-03e1-8479-d8f6" type="profile"/>
+                <infoLink name="Blaster Gauss" id="fbe3-81bf-5b99-327a" hidden="false" targetId="cc7b-8363-9e1b-c4f5" type="profile"/>
+                <infoLink name="Acoplada" id="55bcdab4-741e-48d9-957a-feeb46dd2516" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="0"/>
               </costs>
+              <modifiers>
+                <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+                <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+              </modifiers>
             </selectionEntry>
             <selectionEntry id="c5f7-1dbd-ba2a-1a9e" name="Cañónes de Partículas" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -1777,11 +1792,16 @@
             <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d620-2754-67ca-e4a1" type="max"/>
           </constraints>
           <infoLinks>
-            <infoLink id="c4bc-fd58-d8e3-6b68" name="Cañón de Partículas acoplado" hidden="false" targetId="dbd6-cffc-c6b5-bd67" type="profile"/>
+            <infoLink id="c4bc-fd58-d8e3-6b68" name="Cañón de Partículas" hidden="false" targetId="be16-d0a7-dfed-8ab9" type="profile"/>
+            <infoLink name="Acoplada" id="9ed5ba07-8f0e-4680-8efe-a0a4290dd948" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="Pts" typeId="puntos" value="25"/>
           </costs>
+          <modifiers>
+            <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+            <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+          </modifiers>
         </selectionEntry>
       </selectionEntries>
       <costs>
@@ -1866,7 +1886,13 @@
       <infoLinks>
         <infoLink id="f7ce-6007-9b57-3120" name="Metal Viviente" hidden="false" targetId="fcea-ca1b-b048-7de3" type="rule"/>
         <infoLink id="7de1-ea9e-1217-d71c" name="Escudos Cuanticos" hidden="false" targetId="e9f9-1f1c-d44d-0134" type="profile"/>
-        <infoLink name="Destructor Tesla acoplado" id="6775-bc61-c0ee-8ddb" hidden="false" targetId="a026-d361-a8b4-e8a7" type="profile"/>
+        <infoLink name="Destructor Tesla" id="6775-bc61-c0ee-8ddb" hidden="false" targetId="a1c3a245-0a48-4660-8bd2-b651a6d52ee5" type="profile">
+          <modifiers>
+            <modifier field="name" type="append" value="acoplado"/>
+            <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Acoplada" id="c69265fe-cfe1-4d1f-9179-f198694d8db2" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="43ff-ea8c-afbc-e6ff" name="Arma" hidden="false" collective="false" import="true" defaultSelectionEntryId="4a75-6324-f790-c6cb">
@@ -1958,13 +1984,19 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Destructor Tesla acoplado" id="88c7-4570-1d9b-79e7" hidden="false" targetId="a026-d361-a8b4-e8a7" type="profile"/>
+        <infoLink name="Destructor Tesla" id="88c7-4570-1d9b-79e7" hidden="false" targetId="a1c3a245-0a48-4660-8bd2-b651a6d52ee5" type="profile">
+          <modifiers>
+            <modifier field="name" type="append" value="acoplado"/>
+            <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+          </modifiers>
+        </infoLink>
         <infoLink name="Rayo de muerte" id="1d0c-49df-6a06-d004" hidden="false" targetId="6cf9-0721-5101-5793" type="profile"/>
         <infoLink name="Rayo de muerte" id="206a-a3cd-fad1-7bc0" hidden="false" targetId="6db7-6152-6767-957f" type="profile"/>
         <infoLink id="6409-44ed-42a7-4c91" name="Despliegue Rápido" hidden="false" targetId="e73e-593a-922e-a47a" type="rule"/>
         <infoLink id="029a-b035-8139-cc5d" name="Metal Viviente" hidden="false" targetId="fcea-ca1b-b048-7de3" type="rule"/>
         <infoLink id="92ef-77fe-1a2f-b97b" name="Asalto aéreo" hidden="false" targetId="9576-2ec1-330d-c126" type="rule"/>
         <infoLink id="9ad1-396a-5ca5-1ab7" name="Supersónica" hidden="false" targetId="fb7e-f6d4-a7fe-eaef" type="rule"/>
+        <infoLink name="Acoplada" id="d8a69a32-e8b7-4037-85bc-38eb341c3bce" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="puntos" value="175"/>
@@ -1991,11 +2023,17 @@
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Destructor Tesla acoplado" id="7091-e8ba-b64a-f81c" hidden="false" targetId="a026-d361-a8b4-e8a7" type="profile"/>
+        <infoLink name="Destructor Tesla" id="7091-e8ba-b64a-f81c" hidden="false" targetId="a1c3a245-0a48-4660-8bd2-b651a6d52ee5" type="profile">
+          <modifiers>
+            <modifier field="name" type="append" value="acoplado"/>
+            <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+          </modifiers>
+        </infoLink>
         <infoLink id="356d-8f42-779f-3a42" name="Despliegue Rápido" hidden="false" targetId="e73e-593a-922e-a47a" type="rule"/>
         <infoLink id="1910-e9b6-e45d-c3f9" name="Metal Viviente" hidden="false" targetId="fcea-ca1b-b048-7de3" type="rule"/>
         <infoLink id="a4bc-7b23-5bc0-d6fe" name="Asalto aéreo" hidden="false" targetId="9576-2ec1-330d-c126" type="rule"/>
         <infoLink id="404b-76df-5289-6723" name="Supersónica" hidden="false" targetId="fb7e-f6d4-a7fe-eaef" type="rule"/>
+        <infoLink name="Acoplada" id="ce86ee43-9f36-4a57-8f69-9b362627f7ae" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="Pts" typeId="puntos" value="100"/>
@@ -3061,14 +3099,6 @@ La unidad elegida tendrá esa regla especial hasta el principio de tu próximo t
         <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Tira 1D6+2 y designa una unidad enemiga al principio de la fase de Asalto del enemigo. Si la unidad designada intenta asaltar al Criptecnólogo o a su unidad, reduce su movimiento de asalto tantos Cm como el resultado obtenido en el dado.</characteristic>
       </characteristics>
     </profile>
-    <profile id="dbd6-cffc-c6b5-bd67" name="Cañón de Partículas acoplado" publicationId="20db-6e5e-2c14-0348" page="96" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
-      <characteristics>
-        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60cm</characteristic>
-        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">6</characteristic>
-        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
-        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 1, Área, Acoplada</characteristic>
-      </characteristics>
-    </profile>
     <profile id="4970-98b4-960c-334c" name="Ataques de Fase" hidden="false" typeId="c970-b832-a956-1ac8" typeName="Habilidad">
       <characteristics>
         <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Los ataques de los Espectros Canópticos se consideran ataques Acerados</characteristic>
@@ -3097,14 +3127,6 @@ La unidad elegida tendrá esa regla especial hasta el principio de tu próximo t
     <profile name="Terremoto" id="88f1-a26a-dac1-050e" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
       <characteristics>
         <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Todas las unidades enemigas impactadas por un arma de este tipo considerarán el terreno abierto como terreno dificil para la póxima fase de movimiento.</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="0281-9800-06d0-fa52" name="Cañón pesado Gauss acoplado" publicationId="20db-6e5e-2c14-0348" page="96" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
-      <characteristics>
-        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">90cm</characteristic>
-        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">9</characteristic>
-        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">2</characteristic>
-        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 1, Gauss, Acoplada</characteristic>
       </characteristics>
     </profile>
     <profile id="0db9-d457-8eed-befc" name="Sistema binario de rifles Gauss" publicationId="20db-6e5e-2c14-0348" page="48" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
@@ -3139,14 +3161,6 @@ La unidad elegida tendrá esa regla especial hasta el principio de tu próximo t
         <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">5</characteristic>
         <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">2</characteristic>
         <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 1</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="2dd3-03e1-8479-d8f6" name="Blaster Gauss acoplado" publicationId="20db-6e5e-2c14-0348" page="96" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
-      <characteristics>
-        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60cm</characteristic>
-        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">5</characteristic>
-        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
-        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Fuego Rápido, Gauss, Acoplada</characteristic>
       </characteristics>
     </profile>
     <profile id="3266-f250-d41b-c103" name="Bastón Abisal" publicationId="20db-6e5e-2c14-0348" page="84" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
@@ -3243,14 +3257,6 @@ La unidad elegida tendrá esa regla especial hasta el principio de tu próximo t
         <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">La Puerta de la Eternidad solo se podrá usar como Corredor Dimensional o Portal del Exilio en cada turno. La puerta no cuenta en cualquier caso como Arma a la hora de elegirla como resultado de Armamento Destruido.</characteristic>
       </characteristics>
     </profile>
-    <profile id="94f5-6712-8712-3173" name="Carabina Tesla acoplada" publicationId="20db-6e5e-2c14-0348" page="96" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
-      <characteristics>
-        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60cm</characteristic>
-        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">5</characteristic>
-        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">-</characteristic>
-        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 1, Tesla, Acoplada</characteristic>
-      </characteristics>
-    </profile>
     <profile id="9e60-4adf-b46c-fce4" name="Bastón Voltáico" publicationId="20db-6e5e-2c14-0348" page="84" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
       <characteristics>
         <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">30cm</characteristic>
@@ -3259,12 +3265,12 @@ La unidad elegida tendrá esa regla especial hasta el principio de tu próximo t
         <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 4, Sobrecarga</characteristic>
       </characteristics>
     </profile>
-    <profile id="a026-d361-a8b4-e8a7" name="Destructor Tesla acoplado" publicationId="20db-6e5e-2c14-0348" page="96" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+    <profile id="a1c3a245-0a48-4660-8bd2-b651a6d52ee5" name="Destructor Tesla" publicationId="20db-6e5e-2c14-0348" page="96" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
       <characteristics>
         <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60cm</characteristic>
         <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">7</characteristic>
         <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">-</characteristic>
-        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 4, Tesla, Arco, Acoplada</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 4, Tesla, Arco</characteristic>
       </characteristics>
     </profile>
     <profile id="b424-d4aa-ceed-02fc" name="Cañón Tesla" publicationId="20db-6e5e-2c14-0348" page="96" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">

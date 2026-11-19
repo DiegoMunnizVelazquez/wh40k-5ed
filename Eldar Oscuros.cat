@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Eldar Oscuros" id="ab83-e92d-e87e-4398" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="4" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Eldar Oscuros" id="ab83-e92d-e87e-4398" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="5" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Arconte" id="8acd-28cf-f540-726f" hidden="false"/>
   </categoryEntries>
@@ -3048,10 +3048,11 @@ impactar, la consciencia que habita en el arma se rebela: ambos ataques fallan a
                 <infoLink name="Cañón cristalino" id="4b05-554d-62e9-6a07" hidden="false" targetId="0303069f-9322-4532-a9a6-37916d8dc675" type="profile"/>
                 <infoLink name="Rifle cristalino" id="018e-b046-1de5-271b" hidden="false" targetId="710c5c7a-a95e-4028-ac2a-0270acd2b803" type="profile">
                   <modifiers>
-                    <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
-                    <modifier field="name" join=" " type="append" value="acoplado"/>
+                    <modifier field="name" type="append" value="acoplado"/>
+                    <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
                   </modifiers>
                 </infoLink>
+                <infoLink name="Acoplada" id="993f17fd-7116-4291-b735-4908ef0e14b2" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
@@ -6266,51 +6267,66 @@ dudarán ante la visión de una ilusión tan cercana y no podrán atacar al port
       <infoLinks>
         <infoLink name="Rifle cristalino" id="e229-5f5a-96cb-5398" hidden="false" targetId="710c5c7a-a95e-4028-ac2a-0270acd2b803" type="profile">
           <modifiers>
-            <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
-            <modifier field="name" join=" " type="append" value="acoplado"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Acoplada" id="82d04404-d400-4b1a-87cb-31546ccf0bfd" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
       </infoLinks>
+      <modifiers>
+        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry name="Cañón cristalino acoplado" id="a590-2f3c-7299-84a2" hidden="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink name="Cañón cristalino" id="1c9a-3866-f4b6-bd08" hidden="false" targetId="0303069f-9322-4532-a9a6-37916d8dc675" type="profile">
           <modifiers>
-            <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
-            <modifier field="name" join=" " type="append" value="acoplado"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Acoplada" id="6e6dd201-d567-4b79-8ce6-0eac035476c1" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
       </infoLinks>
+      <modifiers>
+        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry name="Bláster de disrupción acoplado" id="51ec-b2cb-b196-9ae0" hidden="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink name="Bláster de disrupción" id="40f1-8b35-c779-a788" hidden="false" targetId="cfca9b24-ce5e-44cc-8b2d-50c52d73c364" type="profile">
           <modifiers>
-            <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
-            <modifier field="name" join=" " type="append" value="acoplado"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Acoplada" id="d83dae23-5c07-4123-ba09-fcadc68826a1" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
       </infoLinks>
+      <modifiers>
+        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry name="Lanza incandescente acoplada" id="be65-0dd5-118a-2974" hidden="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink name="Lanza incandescente" id="48f2-8f72-98ac-25ae" hidden="false" targetId="4201b605-7baa-4f6b-a48f-ba0fa348255e" type="profile">
           <modifiers>
-            <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
-            <modifier field="name" join=" " type="append" value="acoplada"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Acoplada" id="103ebd96-7fb3-493c-b4fb-bd347d80b9d6" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
       </infoLinks>
+      <modifiers>
+        <modifier affects="profiles.Arma" field="name" type="append" value="acoplada"/>
+        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry name="Rifle licuador acoplado" id="5eff-f60c-5a3a-ad46" hidden="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink name="Rifle licuador" id="00eb-7952-2b84-1ba9" hidden="false" targetId="9478b9a8-d44a-4456-8113-eb1149f87c3c" type="profile">
           <modifiers>
-            <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
-            <modifier field="name" join=" " type="append" value="acoplado"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Acoplada" id="09aa7375-bfcc-4978-85b5-e305bed5fd85" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
       </infoLinks>
+      <modifiers>
+        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>

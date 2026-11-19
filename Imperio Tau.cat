@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="1ca7-d2ef-76ac-a017" name="Imperio Tau" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="12" revision="4" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" publicationId="21fd-62c1-d9f7-e743" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="1ca7-d2ef-76ac-a017" name="Imperio Tau" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="12" revision="5" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" publicationId="21fd-62c1-d9f7-e743" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedProfiles>
     <profile name="Etéreo" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad" hidden="false" id="41e8-c086-7f9a-cc4e" publicationId="21fd-62c1-d9f7-e743">
       <characteristics>
@@ -909,10 +909,15 @@ Los disparos efectuados con el marcador telemétrico no obtienen los beneficios 
     <selectionEntry type="upgrade" import="true" name="Bláster de Fusión Acoplado" hidden="false" id="6076-9528-2cfd-2be5">
       <infoLinks>
         <infoLink name="Bláster de Fusión" id="6328-5610-0200-3812" hidden="false" targetId="ea89-d8d8-626a-0bea" type="profile"/>
+        <infoLink name="Acoplada" id="6ad64294-7de2-41eb-8fca-5bb561370937" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Acoplada" hidden="false" id="de98-880f-4ee5-e35f" targetId="7eae-1495-f507-5b3e" primary="false"/>
       </categoryLinks>
+      <modifiers>
+        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Cañón de Inducción" hidden="false" id="1211-e938-a528-7fa2">
       <infoLinks>
@@ -1065,34 +1070,54 @@ Los disparos efectuados con el marcador telemétrico no obtienen los beneficios 
     <selectionEntry type="upgrade" import="true" name="Cañón de Inducción Acoplado" hidden="false" id="d9bf-04a3-260b-8b8c">
       <infoLinks>
         <infoLink name="Cañón de Inducción" id="8092-01a4-4391-34f8" hidden="false" targetId="f80f-bd82-a400-6d2c" type="profile"/>
+        <infoLink name="Acoplada" id="9fc7f19e-9d3f-4d92-86f9-af8840683f35" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Acoplada" hidden="false" id="172e-ae46-3f8a-8f15" targetId="7eae-1495-f507-5b3e" primary="false"/>
       </categoryLinks>
+      <modifiers>
+        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Lanzallamas Acoplado" hidden="false" id="092a-fc1a-c215-f78f">
       <infoLinks>
         <infoLink name="Lanzallamas" id="1b13-b6cb-c4c1-1f55" hidden="false" targetId="c6ed-e1e6-bd68-1891" type="profile"/>
+        <infoLink name="Acoplada" id="f03e09a4-f79d-4d93-86cc-58ad10d77cd4" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Acoplada" hidden="false" id="07e4-c6a1-9ae0-a512" targetId="7eae-1495-f507-5b3e" primary="false"/>
       </categoryLinks>
+      <modifiers>
+        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Módulo Lanzamisiles Acoplado" hidden="false" id="5b33-0e6e-7f7b-6aa6">
       <infoLinks>
         <infoLink name="Módulo Lanzamisiles" id="bea4-d778-741f-15df" hidden="false" targetId="2c26-3dca-d021-98be" type="profile"/>
+        <infoLink name="Acoplada" id="dc2c7755-b3f5-4f70-a880-7ef416f57a88" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Acoplada" hidden="false" id="4196-1d42-e7ae-908b" targetId="7eae-1495-f507-5b3e" primary="false"/>
       </categoryLinks>
+      <modifiers>
+        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Rifle de Plasma Acoplado" hidden="false" id="cf4c-19a0-8a4c-0f4c">
       <infoLinks>
         <infoLink name="Rifle de Plasma" id="556c-7e4d-f93e-e5ef" hidden="false" targetId="de39-5b0f-d695-9bb5" type="profile"/>
+        <infoLink name="Acoplada" id="1116490b-c1da-496c-bef0-69fbbbf5f82a" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Acoplada" hidden="false" id="9a4c-48fa-76d5-508f" targetId="7eae-1495-f507-5b3e" primary="false"/>
       </categoryLinks>
+      <modifiers>
+        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="model" import="true" name="Shas&apos;vre Crisis" hidden="false" id="5ff6-b4cc-9e8b-d48f">
       <selectionEntryGroups>
@@ -2020,7 +2045,12 @@ Los disparos efectuados con el marcador telemétrico no obtienen los beneficios 
     <selectionEntry type="upgrade" import="true" name="Carabina de Inducción Acoplada" hidden="false" id="450d-89e4-4fe9-9f40">
       <infoLinks>
         <infoLink name="Carabina de Inducción" id="a110-4271-2d71-8f03" hidden="false" targetId="22e4-d37e-e20b-8a6a" type="profile"/>
+        <infoLink name="Acoplada" id="3f6ebfe5-5b56-4cf0-bbfe-54f5dda9bfd7" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
       </infoLinks>
+      <modifiers>
+        <modifier affects="profiles.Arma" field="name" type="append" value="acoplada"/>
+        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Escuadrón de Rastreadores" hidden="false" id="1c88-112c-f477-3080">
       <entryLinks>
@@ -2480,7 +2510,12 @@ Los disparos efectuados con el marcador telemétrico no obtienen los beneficios 
     <selectionEntry type="upgrade" import="true" name="Acel. lineal Acoplado" hidden="false" id="e20e-2a5a-b603-472b">
       <infoLinks>
         <infoLink name="Acel. lineal (Proyectil)" id="5997-abf1-21cc-b762" hidden="false" targetId="83fc-d268-4d96-fafa" type="profile"/>
+        <infoLink name="Acoplada" id="448418a8-e959-475a-bc09-ed34a4966f92" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
       </infoLinks>
+      <modifiers>
+        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Equipo de Drones Francotiradores" hidden="false" id="520d-fbea-a253-50cb" subType="unit-group">
       <entryLinks>
