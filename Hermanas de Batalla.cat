@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Hermanas de Batalla" id="e44c-71d1-0783-bf45" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="3" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Hermanas de Batalla" id="e44c-71d1-0783-bf45" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="4" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Confesor" id="cfb8-d719-3891-0a47" hidden="false"/>
   </categoryEntries>
@@ -1361,12 +1361,12 @@ Si tanto una unidad como un personaje independiente tienen un Acto de Fe que pr
             <constraint id="02e5-2a56-1572-2217-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Lanzallamas pesado acoplado" id="e1ba-768c-56a8-6696" hidden="false" import="true" sortIndex="1" targetId="e95d-f48f-eba9-968c" type="selectionEntry">
+            <entryLink name="Lanzallamas pesado acoplado" id="e1ba-768c-56a8-6696" hidden="false" import="true" sortIndex="1" targetId="7c920bc2-4c08-4d31-bae6-f6962b4e78fe" type="selectionEntry">
               <constraints>
                 <constraint id="60ba-d4b8-1752-3c05" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
-            <entryLink name="Bólter pesado acoplado" id="00b5-1779-0a8a-57e6" hidden="false" import="true" sortIndex="2" targetId="95c8-9564-745a-6c9d" type="selectionEntry">
+            <entryLink name="Bólter pesado acoplado" id="00b5-1779-0a8a-57e6" hidden="false" import="true" sortIndex="2" targetId="3eddab81-d82e-4c3c-9f6e-7f5101f752f0" type="selectionEntry">
               <constraints>
                 <constraint id="3e44-1575-8c69-9d8e" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -1377,7 +1377,7 @@ Si tanto una unidad como un personaje independiente tienen un Acto de Fe que pr
                 <modifier field="name" type="append" value="con munición inferno"/>
               </modifiers>
             </entryLink>
-            <entryLink name="Cañón de fusión acoplado" id="ed57-2af4-b95d-c14b" hidden="false" import="true" sortIndex="3" targetId="19ab-674a-852f-dc98" type="selectionEntry">
+            <entryLink name="Cañón de fusión acoplado" id="ed57-2af4-b95d-c14b" hidden="false" import="true" sortIndex="3" targetId="f791d483-a224-4b9a-819a-3aa3d17457da" type="selectionEntry">
               <constraints>
                 <constraint id="a7ad-d08c-d4cf-97ef" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -2095,32 +2095,6 @@ Celestine puede actuar normalmente en el turno en que &quot;resucita&quot;. Cel
           </characteristics>
         </profile>
       </profiles>
-    </selectionEntry>
-    <selectionEntry name="Lanzallamas pesado acoplado" id="e95d-f48f-eba9-968c" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Lanzallamas Pesado" id="e08e-906c-0c4f-ec82" hidden="false" targetId="ea35-d96a-285e-1a63" type="profile"/>
-      </infoLinks>
-      <modifiers>
-        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
-        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
-      </modifiers>
-    </selectionEntry>
-    <selectionEntry name="Bólter pesado acoplado" id="95c8-9564-745a-6c9d" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Bólter Pesado" id="e4bc-c05e-2340-2a8d" hidden="false" targetId="3c0e-4865-97cc-bd9c" type="profile"/>
-      </infoLinks>
-      <modifiers>
-        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
-      </modifiers>
-    </selectionEntry>
-    <selectionEntry name="Cañón de fusión acoplado" id="19ab-674a-852f-dc98" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Cañón de Fusión" id="8264-648f-fc9c-5f02" hidden="false" targetId="8f30-c05c-e72e-4baf" type="profile"/>
-      </infoLinks>
-      <modifiers>
-        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
-        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
-      </modifiers>
     </selectionEntry>
     <selectionEntry name="Escuadra de Hermanas de batalla" id="9dee-7d24-b7b2-92a8" hidden="false" import="true" type="unit">
       <entryLinks>

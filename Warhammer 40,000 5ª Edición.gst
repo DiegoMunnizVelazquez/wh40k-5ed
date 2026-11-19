@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem name="Warhammer 40,000 5ª Edición " id="8cf6-c83d-3eeb-e95c" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" revision="30" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem name="Warhammer 40,000 5ª Edición " id="8cf6-c83d-3eeb-e95c" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" revision="31" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Esto es for fun. Cualquier error o sugerencia serán bienvenidas
 
 En este sistema se agruparán el sistema de Warhammer 40000 5ª edición, así como todos los los codex que se usarán en este sistema cerrado.
@@ -1619,6 +1619,46 @@ Si decides dividir una unidad en escuadras de combate, a partir de ese momento c
       </infoLinks>
       <modifiers>
         <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry name="Bólter de asalto acoplado" id="1b738fae-f941-4e2d-92e1-fabefdcc9942" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Bólter de Asalto" id="72f06852-50f7-440f-9e38-7268a20c8c4b" hidden="false" targetId="d495-caf7-3c41-4620" type="profile"/>
+        <infoLink name="Acoplada" id="9dd0b556-552b-4336-b3ee-86c7aa72ba62" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
+      </infoLinks>
+      <modifiers>
+        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry name="Rifle de fusión acoplado" id="40961eda-9b90-46c8-ba70-923fcd050d47" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Rifle de Fusión" id="fc1254e7-ea69-4eaf-9b2d-da59991965e6" hidden="false" targetId="d70e-78b0-03b3-f2b2" type="profile"/>
+        <infoLink name="Acoplada" id="a922a1fb-d77c-432a-8b40-73d9e84f57e4" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
+      </infoLinks>
+      <modifiers>
+        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry name="Lanzallamas acoplado" id="6926e6f6-a7bb-4ce0-8022-722fc02d606b" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Lanzallamas" id="ffea41c1-b695-41b8-b226-aa2f9697d1bf" hidden="false" targetId="c6ed-e1e6-bd68-1891" type="profile"/>
+        <infoLink name="Acoplada" id="29be8d82-5625-4a3f-8a6e-369c16e3481b" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
+      </infoLinks>
+      <modifiers>
+        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry name="Pistola láser acoplada" id="3efbda22-0718-4f92-b16f-633874aa75ec" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Pistola láser" id="964af1f3-a73b-4e8f-bf63-de7a1b9652a8" hidden="false" targetId="0954e541-f56e-4616-97f1-e4c786d6632d" type="profile"/>
+        <infoLink name="Acoplada" id="ca48f4a9-1cc3-4631-ab05-84610792b667" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
+      </infoLinks>
+      <modifiers>
+        <modifier affects="profiles.Arma" field="name" type="append" value="acoplada"/>
         <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
       </modifiers>
     </selectionEntry>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Guardia Imperial" id="9abe-493b-fadf-0c37" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="11" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Guardia Imperial" id="9abe-493b-fadf-0c37" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="12" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink name="Escuadra de mando de Compañía" id="6c26-fa8d-d226-1cf3" hidden="false" import="true" targetId="a017-df9a-2aff-b453" type="selectionEntry">
       <categoryLinks>
@@ -6084,7 +6084,7 @@ La misión Tras las líneas enemigas otorga al escuadrón la regla especial Infi
             <constraint id="ba90-4911-b5dd-7777-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
         </entryLink>
-        <entryLink name="Pistola láser acoplada" id="ac93-7bc6-11bb-46f9" hidden="false" import="true" targetId="893c-4133-c6a1-1acb" type="selectionEntry">
+        <entryLink name="Pistola láser acoplada" id="ac93-7bc6-11bb-46f9" hidden="false" import="true" targetId="3efbda22-0718-4f92-b16f-633874aa75ec" type="selectionEntry">
           <constraints>
             <constraint id="2649-caa1-38bd-7e7a-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="2649-caa1-38bd-7e7a-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
@@ -6213,7 +6213,7 @@ La misión Tras las líneas enemigas otorga al escuadrón la regla especial Infi
             <constraint id="479d-9cca-8f98-e499-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
         </entryLink>
-        <entryLink name="Cañón láser acoplado" id="4990-1036-7e6b-dfad" hidden="false" import="true" sortIndex="1" targetId="5115-29d4-374e-29c5" type="selectionEntry">
+        <entryLink name="Cañón láser acoplado" id="4990-1036-7e6b-dfad" hidden="false" import="true" sortIndex="1" targetId="62bf8544-1c87-4575-9f2b-1887a93989d3" type="selectionEntry">
           <constraints>
             <constraint id="d54b-7824-7876-b98d-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="d54b-7824-7876-b98d-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
@@ -6263,7 +6263,7 @@ La misión Tras las líneas enemigas otorga al escuadrón la regla especial Infi
             </selectionEntry>
             <selectionEntry name="2 cañones láser acoplados" id="1767-c0bb-335e-ba7c" hidden="false" import="true" sortIndex="1" type="upgrade">
               <entryLinks>
-                <entryLink name="Cañón láser acoplado" id="6614-1bb5-7151-c0ad" hidden="false" import="true" targetId="5115-29d4-374e-29c5" type="selectionEntry">
+                <entryLink name="Cañón láser acoplado" id="6614-1bb5-7151-c0ad" hidden="false" import="true" targetId="62bf8544-1c87-4575-9f2b-1887a93989d3" type="selectionEntry">
                   <constraints>
                     <constraint id="cecf-4349-fc92-5012-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="2"/>
                     <constraint id="cecf-4349-fc92-5012-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
@@ -6731,15 +6731,6 @@ La misión Tras las líneas enemigas otorga al escuadrón la regla especial Infi
         <infoLink name="Lanzamisiles" id="2074-68a1-1762-59f9" hidden="false" targetId="5114-9261-0097-95a8" type="profile"/>
         <infoLink name="Lanzamisiles Fragmentación" id="d274-9112-61b6-ae16" hidden="false" targetId="e474b109-dc6e-4a0d-928c-1e8c5b08acbf" type="profile"/>
         <infoLink name="Lanzamisiles Penetración" id="3072-a807-716d-3cc7" hidden="false" targetId="f15e-87da-994b-59e8" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Pistola láser acoplada" id="893c-4133-c6a1-1acb" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Pistola láser" id="7519-8eea-617e-e52e" hidden="false" targetId="0954e541-f56e-4616-97f1-e4c786d6632d" type="profile">
-          <modifiers>
-            <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
-          </modifiers>
-        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Destripador" id="3ef6-d32e-74e4-c805" hidden="false" import="true" type="upgrade">
@@ -8430,16 +8421,6 @@ Cuenta como si los legionarios tuvieran un arma de cuerpo a cuerpo adicional apa
           </constraints>
         </entryLink>
       </entryLinks>
-    </selectionEntry>
-    <selectionEntry name="Cañón láser acoplado" id="5115-29d4-374e-29c5" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Cañón Láser" id="18d8-ce5e-d6d0-8680" hidden="false" targetId="b210-a1f3-d328-5739" type="profile">
-          <modifiers>
-            <modifier field="name" join=" " type="append" value="acoplado"/>
-            <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Escuadrón Leman Russ" id="0107-8819-e20a-8dac" hidden="false" import="true" type="unit">
       <entryLinks>

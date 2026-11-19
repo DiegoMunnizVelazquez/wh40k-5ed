@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Marines Espaciales" id="8964-cc67-2c68-196d" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" library="false" revision="11" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Marines Espaciales" id="8964-cc67-2c68-196d" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" library="false" revision="12" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Esto es for fun. Cualquier error o sugerencia serán bienvenidas
 
 En este sistema se agruparán las reglas del Codex de Marines Espaciales utilizado en la 5ed de Warhammer 40k</readme>
@@ -4478,7 +4478,7 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
             <cost name="Pts" typeId="puntos" value="20"/>
           </costs>
           <entryLinks>
-            <entryLink name="Cañón Automático Acoplado" id="0ec2-b1c4-912b-f0e7" collective="false" hidden="false" import="true" targetId="9aa1-299c-c1cb-d85b" type="selectionEntry">
+            <entryLink name="Cañón automático acoplado" id="0ec2-b1c4-912b-f0e7" collective="false" hidden="false" import="true" targetId="3ea3154b-cad6-4322-97e4-9c980a9b1822" type="selectionEntry">
               <constraints>
                 <constraint id="179b-7912-37e3-7e6c-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="2"/>
                 <constraint id="179b-7912-37e3-7e6c-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
@@ -4508,7 +4508,10 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
             <constraint id="e185-ba77-17f3-44af" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Cañón Automático Acoplado" id="86c7-33ec-a81b-4afa" collective="false" hidden="false" import="true" targetId="9aa1-299c-c1cb-d85b" type="selectionEntry">
+            <entryLink name="Cañón automático acoplado" id="86c7-33ec-a81b-4afa" collective="false" hidden="false" import="true" targetId="3ea3154b-cad6-4322-97e4-9c980a9b1822" type="selectionEntry">
+              <constraints>
+                <constraint id="5bedb280-db27-4ec6-aa7f-d2d92146ac56" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
@@ -4538,13 +4541,23 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
             <constraint id="94ab-35d0-d976-40fc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Cañón Automático Acoplado" id="7766-9899-c57a-bc9b" collective="false" hidden="false" import="true" targetId="9aa1-299c-c1cb-d85b" type="selectionEntry">
+            <entryLink name="Cañón automático acoplado" id="7766-9899-c57a-bc9b" collective="false" hidden="false" import="true" targetId="3ea3154b-cad6-4322-97e4-9c980a9b1822" type="selectionEntry">
+              <constraints>
+                <constraint id="eb22d192-bfb1-41c7-bd87-4eb5a184095b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
             </entryLink>
-            <entryLink name="Lanzallamas Pesado Acoplado" id="8bb9-69a0-7400-cfcf" collective="false" hidden="false" import="true" targetId="ca5b-9e07-ff3b-235f" type="selectionEntry"/>
-            <entryLink name="Bolter Pesado Acoplado" id="88b7-948a-1347-7cc8" collective="false" hidden="false" import="true" targetId="badb-9789-58cb-53c2" type="selectionEntry">
+            <entryLink name="Lanzallamas pesado acoplado" id="8bb9-69a0-7400-cfcf" collective="false" hidden="false" import="true" targetId="7c920bc2-4c08-4d31-bae6-f6962b4e78fe" type="selectionEntry">
+              <constraints>
+                <constraint id="813cef07-8943-4188-bfb9-866d3f412689" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Bólter pesado acoplado" id="88b7-948a-1347-7cc8" collective="false" hidden="false" import="true" targetId="3eddab81-d82e-4c3c-9f6e-7f5101f752f0" type="selectionEntry">
+              <constraints>
+                <constraint id="136792e9-03d0-48c7-9e19-dd93ae6f9fd1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
               <costs>
                 <cost name="Pts" typeId="puntos" value="5"/>
               </costs>
@@ -4560,7 +4573,10 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
             </entryLink>
-            <entryLink name="Cañón Láser Acoplado" id="5550-f52f-d646-3682" collective="false" hidden="false" import="true" targetId="3af6-fb74-ae8f-b888" type="selectionEntry">
+            <entryLink name="Cañón láser acoplado" id="5550-f52f-d646-3682" collective="false" hidden="false" import="true" targetId="62bf8544-1c87-4575-9f2b-1887a93989d3" type="selectionEntry">
+              <constraints>
+                <constraint id="49630002-507e-419b-a6d6-d6d373b45e1f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
               <costs>
                 <cost name="Pts" typeId="puntos" value="30"/>
               </costs>
@@ -4888,7 +4904,12 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
                   <infoLinks>
                     <infoLink name="Motocicleta Marines Espaciales" id="9458-7c99-b305-6a7c" hidden="false" targetId="5042-8639-f05a-298b" type="profile"/>
                     <infoLink name="Bólter" id="4858-ad33-481a-c6cd" hidden="false" targetId="90a7-c0e2-3a06-dc70" type="profile"/>
+                    <infoLink name="Acoplada" id="0fc9a69e-3b8f-445e-a7c6-0a38f1bbf52e" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
                   </infoLinks>
+                  <modifiers>
+                    <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+                    <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+                  </modifiers>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -5862,12 +5883,12 @@ aplica a los gravíticos, cuyos delicados motores gravitatorios se ven dañados 
             <constraint id="0f37-9fd9-8c56-1d87" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Bolter Pesado Acoplado" id="17d1-2cb9-ff89-7c0e" collective="false" hidden="false" import="true" targetId="badb-9789-58cb-53c2" type="selectionEntry">
+            <entryLink name="Bólter pesado acoplado" id="17d1-2cb9-ff89-7c0e" collective="false" hidden="false" import="true" targetId="3eddab81-d82e-4c3c-9f6e-7f5101f752f0" type="selectionEntry">
               <constraints>
                 <constraint id="159c-4e21-4096-6cdd" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
-            <entryLink name="Cañón de Asalto Acoplado" id="d311-4500-da4e-1900" collective="false" hidden="false" import="true" targetId="07fb-bcab-8d04-f652" type="selectionEntry">
+            <entryLink name="Cañón de asalto acoplado" id="d311-4500-da4e-1900" collective="false" hidden="false" import="true" targetId="4d2f2276-67a6-4c2c-8b2e-d1649c82c1d4" type="selectionEntry">
               <constraints>
                 <constraint id="c89a-dab8-eaad-e2a5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -5875,7 +5896,7 @@ aplica a los gravíticos, cuyos delicados motores gravitatorios se ven dañados 
                 <cost name="Pts" typeId="puntos" value="35"/>
               </costs>
             </entryLink>
-            <entryLink name="Cañón Láser Acoplado" id="2bb2-d4d9-770b-0aad" collective="false" hidden="false" import="true" targetId="3af6-fb74-ae8f-b888" type="selectionEntry">
+            <entryLink name="Cañón láser acoplado" id="2bb2-d4d9-770b-0aad" collective="false" hidden="false" import="true" targetId="62bf8544-1c87-4575-9f2b-1887a93989d3" type="selectionEntry">
               <constraints>
                 <constraint id="8feb-8721-c7fa-3070" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -5883,7 +5904,7 @@ aplica a los gravíticos, cuyos delicados motores gravitatorios se ven dañados 
                 <cost name="Pts" typeId="puntos" value="35"/>
               </costs>
             </entryLink>
-            <entryLink name="Lanzallamas Pesado Acoplado" id="2e75-0321-317a-3ac6" collective="false" hidden="false" import="true" targetId="ca5b-9e07-ff3b-235f" type="selectionEntry">
+            <entryLink name="Lanzallamas pesado acoplado" id="2e75-0321-317a-3ac6" collective="false" hidden="false" import="true" targetId="7c920bc2-4c08-4d31-bae6-f6962b4e78fe" type="selectionEntry">
               <constraints>
                 <constraint id="b7e1-c401-0747-86b2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -5898,8 +5919,14 @@ aplica a los gravíticos, cuyos delicados motores gravitatorios se ven dañados 
                 <cost name="Pts" typeId="puntos" value="35"/>
               </costs>
               <infoLinks>
-                <infoLink name="Cañón Láser" id="5aca-ed98-3744-2101" hidden="false" targetId="b210-a1f3-d328-5739" type="profile"/>
-                <infoLink name="Rifle de Plasma" id="ee37-fd49-bb67-97ca" hidden="false" targetId="223c-ecb9-2104-7007" type="profile"/>
+                <infoLink name="Cañón Láser" id="eff56362-4373-4fee-948d-49ed39bec1ec" hidden="false" targetId="b210-a1f3-d328-5739" type="profile"/>
+                <infoLink name="Rifle de Plasma" id="b5a61d5c-e41f-42c9-b663-0d659b559956" hidden="false" targetId="223c-ecb9-2104-7007" type="profile">
+                  <modifiers>
+                    <modifier field="name" type="append" value="acoplado"/>
+                    <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Acoplada" id="c1e48ca5-4ac4-43c5-98f4-5e58a3d91a0f" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
@@ -6012,7 +6039,10 @@ aplica a los gravíticos, cuyos delicados motores gravitatorios se ven dañados 
             <constraint id="d73c-4349-7c2b-50fd" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Cañón Láser Acoplado" id="01a2-f7ad-fd68-e429" collective="false" hidden="false" import="true" targetId="3af6-fb74-ae8f-b888" type="selectionEntry">
+            <entryLink name="Cañón láser acoplado" id="01a2-f7ad-fd68-e429" collective="false" hidden="false" import="true" targetId="62bf8544-1c87-4575-9f2b-1887a93989d3" type="selectionEntry">
+              <constraints>
+                <constraint id="b449c334-91cd-404c-a044-23d551f06edc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
               <costs>
                 <cost name="Pts" typeId="puntos" value="45"/>
               </costs>
@@ -6194,13 +6224,13 @@ aplica a los gravíticos, cuyos delicados motores gravitatorios se ven dañados 
             <cost name="Pts" typeId="puntos" value="15"/>
           </costs>
         </entryLink>
-        <entryLink name="Bolter Pesado Acoplado" id="da80-2e64-8210-b7c1" collective="false" hidden="false" import="true" targetId="badb-9789-58cb-53c2" type="selectionEntry">
+        <entryLink name="Bólter pesado acoplado" id="da80-2e64-8210-b7c1" collective="false" hidden="false" import="true" targetId="3eddab81-d82e-4c3c-9f6e-7f5101f752f0" type="selectionEntry">
           <constraints>
             <constraint id="a7e0-96b9-7d6f-2e12" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
             <constraint id="57de-d9c0-43dc-e9e7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
           </constraints>
         </entryLink>
-        <entryLink name="Cañón Láser Acoplado" id="f06a-8b9c-90b9-8d5a" collective="false" hidden="false" import="true" targetId="3af6-fb74-ae8f-b888" type="selectionEntry">
+        <entryLink name="Cañón láser acoplado" id="f06a-8b9c-90b9-8d5a" collective="false" hidden="false" import="true" targetId="62bf8544-1c87-4575-9f2b-1887a93989d3" type="selectionEntry">
           <constraints>
             <constraint id="ea13-8d2d-ac7a-6993" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
           </constraints>
@@ -7973,7 +8003,7 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
             <cost name="Pts" typeId="puntos" value="20"/>
           </costs>
           <entryLinks>
-            <entryLink name="Cañón Automático Acoplado" id="09e7-0bb5-38e9-633b" collective="false" hidden="false" import="true" targetId="9aa1-299c-c1cb-d85b" type="selectionEntry">
+            <entryLink name="Cañón automático acoplado" id="09e7-0bb5-38e9-633b" collective="false" hidden="false" import="true" targetId="3ea3154b-cad6-4322-97e4-9c980a9b1822" type="selectionEntry">
               <constraints>
                 <constraint id="a60f-e9c3-a9e1-60d2-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="2"/>
                 <constraint id="a60f-e9c3-a9e1-60d2-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
@@ -8003,8 +8033,15 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
             <constraint id="7fb2-1b4f-e6bc-9584" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Lanzallamas Pesado Acoplado" id="3c13-7659-ee9e-ef85" collective="false" hidden="false" import="true" targetId="ca5b-9e07-ff3b-235f" type="selectionEntry"/>
-            <entryLink name="Bolter Pesado Acoplado" id="88b7-6cd6-12c0-ddb9" collective="false" hidden="false" import="true" targetId="badb-9789-58cb-53c2" type="selectionEntry">
+            <entryLink name="Lanzallamas pesado acoplado" id="3c13-7659-ee9e-ef85" collective="false" hidden="false" import="true" targetId="7c920bc2-4c08-4d31-bae6-f6962b4e78fe" type="selectionEntry">
+              <constraints>
+                <constraint id="41c7821f-15ea-46b3-bc82-b95b22ef1f50" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Bólter pesado acoplado" id="88b7-6cd6-12c0-ddb9" collective="false" hidden="false" import="true" targetId="3eddab81-d82e-4c3c-9f6e-7f5101f752f0" type="selectionEntry">
+              <constraints>
+                <constraint id="aa8f6ce0-8792-4f33-910e-8dc1964b85f3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
               <costs>
                 <cost name="Pts" typeId="puntos" value="5"/>
               </costs>
@@ -8020,12 +8057,18 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
             </entryLink>
-            <entryLink name="Cañón Láser Acoplado" id="d9be-6dd8-3d32-0fc3" collective="false" hidden="false" import="true" targetId="3af6-fb74-ae8f-b888" type="selectionEntry">
+            <entryLink name="Cañón láser acoplado" id="d9be-6dd8-3d32-0fc3" collective="false" hidden="false" import="true" targetId="62bf8544-1c87-4575-9f2b-1887a93989d3" type="selectionEntry">
+              <constraints>
+                <constraint id="94083fb1-b44b-4b05-bf57-e861af89ac4b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
               <costs>
                 <cost name="Pts" typeId="puntos" value="30"/>
               </costs>
             </entryLink>
-            <entryLink name="Cañón Automático Acoplado" id="d505-e28f-92a3-4e43" collective="false" hidden="false" import="true" targetId="9aa1-299c-c1cb-d85b" type="selectionEntry">
+            <entryLink name="Cañón automático acoplado" id="d505-e28f-92a3-4e43" collective="false" hidden="false" import="true" targetId="3ea3154b-cad6-4322-97e4-9c980a9b1822" type="selectionEntry">
+              <constraints>
+                <constraint id="eb07bade-074e-483e-950c-70850984bd21" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
@@ -8042,7 +8085,10 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
             </entryLink>
-            <entryLink name="Cañón Automático Acoplado" id="d558-96d8-bb60-9eb6" collective="false" hidden="false" import="true" targetId="9aa1-299c-c1cb-d85b" type="selectionEntry">
+            <entryLink name="Cañón automático acoplado" id="d558-96d8-bb60-9eb6" collective="false" hidden="false" import="true" targetId="3ea3154b-cad6-4322-97e4-9c980a9b1822" type="selectionEntry">
+              <constraints>
+                <constraint id="bb247eed-e89a-46cb-9dad-56f415dfd242" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
@@ -8244,7 +8290,7 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
             <cost name="Pts" typeId="puntos" value="20"/>
           </costs>
           <entryLinks>
-            <entryLink name="Cañón Automático Acoplado" id="4166-d578-942e-f748" collective="false" hidden="false" import="true" targetId="9aa1-299c-c1cb-d85b" type="selectionEntry">
+            <entryLink name="Cañón automático acoplado" id="4166-d578-942e-f748" collective="false" hidden="false" import="true" targetId="3ea3154b-cad6-4322-97e4-9c980a9b1822" type="selectionEntry">
               <constraints>
                 <constraint id="af66-fa45-bb67-ef75-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="2"/>
                 <constraint id="af66-fa45-bb67-ef75-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
@@ -8274,13 +8320,23 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
             <constraint id="8afd-e006-5377-5f95" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Cañón Automático Acoplado" id="0234-192a-91d0-be6a" collective="false" hidden="false" import="true" targetId="9aa1-299c-c1cb-d85b" type="selectionEntry">
+            <entryLink name="Cañón automático acoplado" id="0234-192a-91d0-be6a" collective="false" hidden="false" import="true" targetId="3ea3154b-cad6-4322-97e4-9c980a9b1822" type="selectionEntry">
+              <constraints>
+                <constraint id="54aabf50-822e-4262-91e9-21d6894112d0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
             </entryLink>
-            <entryLink name="Lanzallamas Pesado Acoplado" id="16f1-46e2-65f3-ec6b" collective="false" hidden="false" import="true" targetId="ca5b-9e07-ff3b-235f" type="selectionEntry"/>
-            <entryLink name="Bolter Pesado Acoplado" id="01bd-add7-6665-1210" collective="false" hidden="false" import="true" targetId="badb-9789-58cb-53c2" type="selectionEntry">
+            <entryLink name="Lanzallamas pesado acoplado" id="16f1-46e2-65f3-ec6b" collective="false" hidden="false" import="true" targetId="7c920bc2-4c08-4d31-bae6-f6962b4e78fe" type="selectionEntry">
+              <constraints>
+                <constraint id="91d45e98-9a27-407a-b2ff-1271fbed1c3b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Bólter pesado acoplado" id="01bd-add7-6665-1210" collective="false" hidden="false" import="true" targetId="3eddab81-d82e-4c3c-9f6e-7f5101f752f0" type="selectionEntry">
+              <constraints>
+                <constraint id="15e759a1-8983-434a-8d1e-fe1851ab7b8c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
               <costs>
                 <cost name="Pts" typeId="puntos" value="5"/>
               </costs>
@@ -8296,7 +8352,10 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
             </entryLink>
-            <entryLink name="Cañón Láser Acoplado" id="2c5d-0007-b92e-24cb" collective="false" hidden="false" import="true" targetId="3af6-fb74-ae8f-b888" type="selectionEntry">
+            <entryLink name="Cañón láser acoplado" id="2c5d-0007-b92e-24cb" collective="false" hidden="false" import="true" targetId="62bf8544-1c87-4575-9f2b-1887a93989d3" type="selectionEntry">
+              <constraints>
+                <constraint id="aad02832-054f-4698-b6d8-a654f870f1a8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
               <costs>
                 <cost name="Pts" typeId="puntos" value="30"/>
               </costs>
@@ -8308,7 +8367,10 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
             <constraint id="56be-dbe4-87ee-815f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Cañón Automático Acoplado" id="b806-8bcd-168a-7e43" collective="false" hidden="false" import="true" targetId="9aa1-299c-c1cb-d85b" type="selectionEntry">
+            <entryLink name="Cañón automático acoplado" id="b806-8bcd-168a-7e43" collective="false" hidden="false" import="true" targetId="3ea3154b-cad6-4322-97e4-9c980a9b1822" type="selectionEntry">
+              <constraints>
+                <constraint id="ddb4dc91-d998-4c8e-8337-9e8643a3590e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
@@ -8488,7 +8550,7 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
             <cost name="Pts" typeId="puntos" value="20"/>
           </costs>
           <entryLinks>
-            <entryLink name="Cañón Automático Acoplado" id="12be-1a21-3a8d-817d" collective="false" hidden="false" import="true" targetId="9aa1-299c-c1cb-d85b" type="selectionEntry">
+            <entryLink name="Cañón automático acoplado" id="12be-1a21-3a8d-817d" collective="false" hidden="false" import="true" targetId="3ea3154b-cad6-4322-97e4-9c980a9b1822" type="selectionEntry">
               <constraints>
                 <constraint id="ff32-6478-07b1-a902-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="2"/>
                 <constraint id="ff32-6478-07b1-a902-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
@@ -8518,13 +8580,23 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
             <constraint id="af9a-5e49-93ff-4e07" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Cañón Automático Acoplado" id="633c-3def-ff10-17e1" collective="false" hidden="false" import="true" targetId="9aa1-299c-c1cb-d85b" type="selectionEntry">
+            <entryLink name="Cañón automático acoplado" id="633c-3def-ff10-17e1" collective="false" hidden="false" import="true" targetId="3ea3154b-cad6-4322-97e4-9c980a9b1822" type="selectionEntry">
+              <constraints>
+                <constraint id="1a080eb4-f82e-4248-8a5d-5369ae18800e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
             </entryLink>
-            <entryLink name="Lanzallamas Pesado Acoplado" id="b69d-1633-278a-b383" collective="false" hidden="false" import="true" targetId="ca5b-9e07-ff3b-235f" type="selectionEntry"/>
-            <entryLink name="Bolter Pesado Acoplado" id="1036-8904-4e43-bd1c" collective="false" hidden="false" import="true" targetId="badb-9789-58cb-53c2" type="selectionEntry">
+            <entryLink name="Lanzallamas pesado acoplado" id="b69d-1633-278a-b383" collective="false" hidden="false" import="true" targetId="7c920bc2-4c08-4d31-bae6-f6962b4e78fe" type="selectionEntry">
+              <constraints>
+                <constraint id="13b7df94-fb7e-4870-a661-589615ac636d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Bólter pesado acoplado" id="1036-8904-4e43-bd1c" collective="false" hidden="false" import="true" targetId="3eddab81-d82e-4c3c-9f6e-7f5101f752f0" type="selectionEntry">
+              <constraints>
+                <constraint id="37f3f861-6c69-438e-bbaa-bf1a713debd6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
               <costs>
                 <cost name="Pts" typeId="puntos" value="5"/>
               </costs>
@@ -8540,7 +8612,10 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
             </entryLink>
-            <entryLink name="Cañón Láser Acoplado" id="1d0c-0926-885a-83cc" collective="false" hidden="false" import="true" targetId="3af6-fb74-ae8f-b888" type="selectionEntry">
+            <entryLink name="Cañón láser acoplado" id="1d0c-0926-885a-83cc" collective="false" hidden="false" import="true" targetId="62bf8544-1c87-4575-9f2b-1887a93989d3" type="selectionEntry">
+              <constraints>
+                <constraint id="fa98ee18-2e62-44a4-9373-a76a088b704e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
               <costs>
                 <cost name="Pts" typeId="puntos" value="30"/>
               </costs>
@@ -8552,7 +8627,10 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
             <constraint id="8865-792c-7c51-2a63" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Cañón Automático Acoplado" id="73cb-db07-daa2-4b5a" collective="false" hidden="false" import="true" targetId="9aa1-299c-c1cb-d85b" type="selectionEntry">
+            <entryLink name="Cañón automático acoplado" id="73cb-db07-daa2-4b5a" collective="false" hidden="false" import="true" targetId="3ea3154b-cad6-4322-97e4-9c980a9b1822" type="selectionEntry">
+              <constraints>
+                <constraint id="c0ae6ad5-b52c-4dee-81da-04528720603c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
@@ -9153,17 +9231,6 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
         <infoLink name="Bólter Pesado" id="00fd-991f-dc4a-6dd1" hidden="false" targetId="3c0e-4865-97cc-bd9c" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Bolter Pesado Acoplado" id="badb-9789-58cb-53c2" collective="false" hidden="false" import="true" type="upgrade">
-      <constraints>
-        <constraint id="ff08-a593-730b-ae1a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <costs>
-        <cost name="Pts" typeId="puntos" value="0"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Bólter Pesado" id="3b61-6566-bd0f-88bb" hidden="false" targetId="3c0e-4865-97cc-bd9c" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry name="Cañón Automático" id="f70f-455c-7955-e91e" collective="false" hidden="false" import="true" type="upgrade">
       <constraints>
         <constraint id="0bbf-82f5-16a6-7074" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -9173,17 +9240,6 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
       </costs>
       <infoLinks>
         <infoLink name="Cañón Automático" id="4ee0-abec-081e-3e0e" hidden="false" targetId="33e3-aa73-1b0e-2e83" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Cañón Automático Acoplado" id="9aa1-299c-c1cb-d85b" collective="false" hidden="false" import="true" type="upgrade">
-      <constraints>
-        <constraint id="0861-0c6c-6bd8-057c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <costs>
-        <cost name="Pts" typeId="puntos" value="0"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Cañón Automático" id="7f37-8f68-0286-b28f" hidden="false" targetId="33e3-aa73-1b0e-2e83" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Cañón de Asalto" id="b9d8-4545-a27e-b356" collective="false" hidden="false" import="true" type="upgrade">
@@ -9197,17 +9253,6 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
         <infoLink name="Cañón de Asalto" id="e3f5-60f7-5778-e5db" hidden="false" targetId="ca47-3295-c193-8e3b" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Cañón de Asalto Acoplado" id="07fb-bcab-8d04-f652" collective="false" hidden="false" import="true" type="upgrade">
-      <constraints>
-        <constraint id="8a5a-0e08-f131-9f08" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <costs>
-        <cost name="Pts" typeId="puntos" value="0"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Cañón de Asalto" id="5543-62bf-4c45-ed89" hidden="false" targetId="ca47-3295-c193-8e3b" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry name="Cañón Láser" id="9a7e-c553-d032-789c" collective="false" hidden="false" import="true" type="upgrade">
       <constraints>
         <constraint id="e834-fed5-e80b-29b1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -9219,17 +9264,6 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
         <infoLink name="Cañón Láser" id="f521-1650-3b1f-ac7d" hidden="false" targetId="b210-a1f3-d328-5739" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Cañón Láser Acoplado" id="3af6-fb74-ae8f-b888" collective="false" hidden="false" import="true" type="upgrade">
-      <constraints>
-        <constraint id="0a5f-c9f8-bd47-ffe2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <costs>
-        <cost name="Pts" typeId="puntos" value="0"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Cañón Láser" id="da99-86f7-d4fa-d061" hidden="false" targetId="b210-a1f3-d328-5739" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry name="Cañón de Plasma" id="bb10-b315-7583-5584" collective="false" hidden="false" import="true" type="upgrade">
       <constraints>
         <constraint id="a3f8-2428-9b18-6855" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -9239,17 +9273,6 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
       </costs>
       <infoLinks>
         <infoLink name="Cañón de Plasma" id="9809-d2db-7bdf-531d" hidden="false" targetId="ff28-6505-3158-bff5" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Lanzallamas Pesado Acoplado" id="ca5b-9e07-ff3b-235f" collective="false" hidden="false" import="true" type="upgrade">
-      <constraints>
-        <constraint id="1871-4d82-983c-0749" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <costs>
-        <cost name="Pts" typeId="puntos" value="0"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Lanzallamas Pesado" id="b139-79b9-9bfe-d45e" hidden="false" targetId="ea35-d96a-285e-1a63" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Lanzamisiles" id="989a-ecb3-a084-9c39" collective="false" hidden="false" import="true" type="upgrade">
@@ -9402,7 +9425,7 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
             <cost name="Pts" typeId="puntos" value="15"/>
           </costs>
         </entryLink>
-        <entryLink name="Cañón de Asalto Acoplado" id="4ab2-eb6d-0b72-fd1b" collective="false" hidden="false" import="true" targetId="07fb-bcab-8d04-f652" type="selectionEntry">
+        <entryLink name="Cañón de asalto acoplado" id="4ab2-eb6d-0b72-fd1b" collective="false" hidden="false" import="true" targetId="4d2f2276-67a6-4c2c-8b2e-d1649c82c1d4" type="selectionEntry">
           <constraints>
             <constraint id="cefc-c340-ed0c-4e9f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
             <constraint id="38b6-efe2-15c5-25d2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -9481,7 +9504,7 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
             <cost name="Pts" typeId="puntos" value="15"/>
           </costs>
         </entryLink>
-        <entryLink name="Cañón de Asalto Acoplado" id="a6a8-9793-f3e5-9954" collective="false" hidden="false" import="true" targetId="07fb-bcab-8d04-f652" type="selectionEntry">
+        <entryLink name="Cañón de asalto acoplado" id="a6a8-9793-f3e5-9954" collective="false" hidden="false" import="true" targetId="4d2f2276-67a6-4c2c-8b2e-d1649c82c1d4" type="selectionEntry">
           <constraints>
             <constraint id="18aa-0a26-14da-c38e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
             <constraint id="3446-635e-340f-691e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
