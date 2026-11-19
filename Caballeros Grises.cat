@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Caballeros Grises" id="0420-9ba6-2af8-56b7" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="15" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Caballeros Grises" id="0420-9ba6-2af8-56b7" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="16" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Inquisidor" id="82cb-ecac-c397-db01" hidden="false"/>
   </categoryEntries>
@@ -5292,6 +5292,9 @@ Esta habilidad no funciona cuando atacan a vehículos sin Habilidad de Armas.</d
           <costs>
             <cost name="Pts" typeId="puntos" value="75"/>
           </costs>
+          <modifiers>
+            <modifier affects="profiles.Unidad" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" join=" " scope="b2cac708-1c28-4c3e-ba40-958b5d7233c3" type="append" value="Retropropulsada"/>
+          </modifiers>
         </entryLink>
       </entryLinks>
       <infoLinks>
@@ -7839,6 +7842,7 @@ Esta habilidad no funciona cuando atacan a vehículos sin Habilidad de Armas.</d
     <selectionEntry name="Teleportador personal" id="039a9cce-6fbf-45ee-adbe-2a477e48170c" hidden="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink name="Teleportador personal" id="e91c5eef-adf6-4eef-b69a-afaab2d03cdf" hidden="false" targetId="b054f0c7-726e-4713-a731-acc398caeefa" type="profile"/>
+        <infoLink name="Unidad retropropulsada" id="315324e0-e93d-418e-9827-33f4f247ab3a" hidden="false" targetId="d6f4-cfda-75c5-f2f1" type="rule"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Escuadra Interceptora de Caballeros Grises" id="2495b984-9dbc-4a66-a1b6-c07b6a619c9f" collapsible="true" collective="false" hidden="false" import="true" type="unit">
@@ -7941,6 +7945,9 @@ Esta habilidad no funciona cuando atacan a vehículos sin Habilidad de Armas.</d
                 <constraint id="6a9bc13d-0207-4b81-a53f-468034a39529" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                 <constraint id="983a5769-803c-4326-9001-eb1357c2bd54" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
+              <modifiers>
+                <modifier affects="profiles.Unidad" arg="Infantería" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" scope="a38f5ac0-ed4e-4cd4-8a61-f1f522ceb0c1" type="replace" value="Retropropulsada"/>
+              </modifiers>
             </entryLink>
             <entryLink name="Granadas de fragmentación" id="991c6dbd-f8c0-45d6-875b-a52ca79eb80f" collective="false" hidden="false" import="true" targetId="076be029-6121-54c1-9d39-0e6a7f2f4737" type="selectionEntry">
               <constraints>
@@ -8063,6 +8070,9 @@ Esta habilidad no funciona cuando atacan a vehículos sin Habilidad de Armas.</d
                 <constraint id="d9afc58d-88b4-458e-82f8-51c2b132bf61" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                 <constraint id="40f45ddb-7e1c-42f1-881f-d87affd8e661" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
+              <modifiers>
+                <modifier affects="profiles.Unidad" arg="Infantería" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" scope="ce7f7183-86c9-4cca-b002-7517ca6d9ab1" type="replace" value="Retropropulsada"/>
+              </modifiers>
             </entryLink>
             <entryLink name="Granadas de fragmentación" id="3151e3ce-ac42-441c-9e6b-a5b0a4fb4418" collective="false" hidden="false" import="true" targetId="076be029-6121-54c1-9d39-0e6a7f2f4737" type="selectionEntry">
               <constraints>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Marines Espaciales" id="8964-cc67-2c68-196d" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" library="false" revision="15" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Marines Espaciales" id="8964-cc67-2c68-196d" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" library="false" revision="16" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Esto es for fun. Cualquier error o sugerencia serán bienvenidas
 
 En este sistema se agruparán las reglas del Codex de Marines Espaciales utilizado en la 5ed de Warhammer 40k</readme>
@@ -920,6 +920,14 @@ ejército está sujeto a la regla especial doctrina de combate, debes elegir qu�
                         <modifier field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" type="set" value="Motocicleta (Personaje)"/>
                       </modifiers>
                     </modifierGroup>
+                    <modifierGroup>
+                      <conditions>
+                        <condition childId="6e7f1681-31e7-4208-a73d-3d598b3a257e" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="c1d1-f843-3bea-ab6e" shared="true" type="atLeast" value="1"/>
+                      </conditions>
+                      <modifiers>
+                        <modifier arg="Infantería" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" type="replace" value="Retropropulsada"/>
+                      </modifiers>
+                    </modifierGroup>
                   </modifierGroups>
                 </profile>
               </profiles>
@@ -982,6 +990,14 @@ ejército está sujeto a la regla especial doctrina de combate, debes elegir qu�
                       <modifiers>
                         <modifier field="3f9ed75c-36cd-4169-9cef-48391bb55cfd" type="set" value="5"/>
                         <modifier field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" type="set" value="Motocicleta (Personaje)"/>
+                      </modifiers>
+                    </modifierGroup>
+                    <modifierGroup>
+                      <conditions>
+                        <condition childId="6e7f1681-31e7-4208-a73d-3d598b3a257e" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="c1d1-f843-3bea-ab6e" shared="true" type="atLeast" value="1"/>
+                      </conditions>
+                      <modifiers>
+                        <modifier arg="Infantería" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" type="replace" value="Retropropulsada"/>
                       </modifiers>
                     </modifierGroup>
                   </modifierGroups>
@@ -2361,6 +2377,14 @@ ejército está sujeto a la regla especial doctrina de combate, debes elegir qu�
                 <modifier field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" type="set" value="Motocicleta (Personaje)"/>
               </modifiers>
             </modifierGroup>
+            <modifierGroup>
+              <conditions>
+                <condition childId="24bd-e100-8db9-4831" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="475f-181c-69b1-bb38" shared="true" type="atLeast" value="1"/>
+              </conditions>
+              <modifiers>
+                <modifier arg="Infantería" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" type="replace" value="Retropropulsada"/>
+              </modifiers>
+            </modifierGroup>
           </modifierGroups>
           <modifiers>
             <modifier field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" type="set" value="2+">
@@ -2927,6 +2951,15 @@ ejército está sujeto a la regla especial doctrina de combate, debes elegir qu�
         <infoLink name="Escuadras de combate" id="87e3-3994-3fca-ce0b" hidden="false" targetId="22a0-0930-12ab-bd9e" type="rule"/>
         <infoLink name="Tácticas de Combate" id="034a-9021-95ce-a9d8" hidden="false" targetId="8bf6-d84e-9cda-1b19" type="rule"/>
         <infoLink name="Y no conocerán el miedo" id="3423-015b-dfa5-aa7a" hidden="false" targetId="5ce7-70c4-4a99-db0d" type="rule"/>
+        <infoLink name="Unidad retropropulsada" id="cee6286d-b3e3-4aa4-817b-64c5a0458fa1" hidden="false" targetId="d6f4-cfda-75c5-f2f1" type="rule">
+          <modifiers>
+            <modifier field="hidden" type="set" value="true">
+              <conditions>
+                <condition childId="a14f-3162-be27-9575" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="82fa-e625-16ff-5e28" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <selectionEntries>
         <selectionEntry name="Sargento Marine Espacial" id="e267-6086-481b-7e46" collective="false" hidden="false" import="true" type="model">
@@ -3520,6 +3553,16 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
                 <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
                 <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup>
+                  <conditions>
+                    <condition childId="95049c31-9c5a-4e1a-846b-5ea339034d2a" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="3346-e62b-b6de-aca3" shared="true" type="atLeast" value="1"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier arg="Infantería" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" type="replace" value="Retropropulsada"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <selectionEntryGroups>
@@ -3654,6 +3697,16 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
                 <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
                 <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
               </characteristics>
+              <modifierGroups>
+                <modifierGroup>
+                  <conditions>
+                    <condition childId="95049c31-9c5a-4e1a-846b-5ea339034d2a" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="3346-e62b-b6de-aca3" shared="true" type="atLeast" value="1"/>
+                  </conditions>
+                  <modifiers>
+                    <modifier arg="Infantería" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" type="replace" value="Retropropulsada"/>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
             </profile>
           </profiles>
           <selectionEntryGroups>
@@ -6935,7 +6988,7 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
       <profiles>
         <profile name="Capitán sombrío Kayvaan Shrike" id="8085-7384-d5e4-4e41" hidden="false" page="92" publicationId="f176-f140-74d8-da7d" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
           <characteristics>
-            <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería Retropropulsada (Personaje)</characteristic>
+            <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Retropropulsada (Personaje)</characteristic>
             <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">6</characteristic>
             <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">5</characteristic>
             <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
@@ -7315,6 +7368,14 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
                         <modifier field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" type="set" value="Motocicleta (Personaje)"/>
                       </modifiers>
                     </modifierGroup>
+                    <modifierGroup>
+                      <conditions>
+                        <condition childId="5115-9f73-9158-cb84" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="fc25-fade-d954-753b" shared="true" type="atLeast" value="1"/>
+                      </conditions>
+                      <modifiers>
+                        <modifier arg="Infantería" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" type="replace" value="Retropropulsada"/>
+                      </modifiers>
+                    </modifierGroup>
                   </modifierGroups>
                 </profile>
               </profiles>
@@ -7526,6 +7587,14 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
                         <modifier field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" type="set" value="Motocicleta (Personaje)"/>
                       </modifiers>
                     </modifierGroup>
+                    <modifierGroup>
+                      <conditions>
+                        <condition childId="98a9-3009-749f-ad9b" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="fc25-fade-d954-753b" shared="true" type="atLeast" value="1"/>
+                      </conditions>
+                      <modifiers>
+                        <modifier arg="Infantería" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" type="replace" value="Retropropulsada"/>
+                      </modifiers>
+                    </modifierGroup>
                   </modifierGroups>
                 </profile>
               </profiles>
@@ -7730,6 +7799,14 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
               <modifiers>
                 <modifier field="3f9ed75c-36cd-4169-9cef-48391bb55cfd" type="set" value="5"/>
                 <modifier field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" type="set" value="Motocicleta (Personaje)"/>
+              </modifiers>
+            </modifierGroup>
+            <modifierGroup>
+              <conditions>
+                <condition childId="410c-99c6-417e-307b" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="c6aa-a483-2ebf-d164" shared="true" type="atLeast" value="1"/>
+              </conditions>
+              <modifiers>
+                <modifier arg="Infantería" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" type="replace" value="Retropropulsada"/>
               </modifiers>
             </modifierGroup>
           </modifierGroups>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="6e44-2117-7deb-8ff5" name="Necrones" revision="7" battleScribeVersion="2.03" authorName="Diego Muñiz" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com csddmv@gmail.com" authorUrl="csddmv@gmail.com" library="false" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="6e44-2117-7deb-8ff5" name="Necrones" revision="8" battleScribeVersion="2.03" authorName="Diego Muñiz" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com csddmv@gmail.com" authorUrl="csddmv@gmail.com" library="false" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>Unidades del Codex Necronesde 5ª edición compatible con el reglamento de Warhammer 40.000 5ª edición.</readme>
   <profileTypes>
     <profileType id="cbe8-a0a5-b650-b92d" name="Poder C&apos;tan (Disparo)" sortIndex="10">
@@ -508,7 +508,7 @@
       <profiles>
         <profile id="c39a-95e4-60d4-fd43" name="Líder Destructor" publicationId="20db-6e5e-2c14-0348" page="31" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
           <characteristics>
-            <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Unidad retropropulsada (Personaje)</characteristic>
+            <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Retropropulsada (Personaje)</characteristic>
             <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
             <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
             <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">5</characteristic>
@@ -530,6 +530,7 @@
           </modifiers>
         </infoLink>
         <infoLink id="7f94-05ce-aa34-75a2" name="Personaje independiente" hidden="false" targetId="61b4-c5bb-9d85-8506" type="rule"/>
+        <infoLink name="Unidad retropropulsada" id="2bcd2b49-4762-49b8-b40b-3b7d1424f7f3" hidden="false" targetId="d6f4-cfda-75c5-f2f1" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="68da-ede4-3535-9228" name="Arma" hidden="false" collective="false" import="true" defaultSelectionEntryId="eef9-fcf5-5c9d-3242">
@@ -1034,12 +1035,15 @@
       <costs>
         <cost name="Pts" typeId="puntos" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Unidad retropropulsada" id="425cb3a2-abcf-4f90-ab36-c5a8b77f8b64" hidden="false" targetId="d6f4-cfda-75c5-f2f1" type="rule"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="f69d-9e1c-0f37-38c4" name="Pretoriano" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="87d2-711c-5dfd-50ab" name="Pretoriano" publicationId="20db-6e5e-2c14-0348" page="35" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
           <characteristics>
-            <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Unidad retropropulsada</characteristic>
+            <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Retropropulsada</characteristic>
             <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
             <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
             <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">5</characteristic>
@@ -1545,12 +1549,15 @@
       <costs>
         <cost name="Pts" typeId="puntos" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Unidad retropropulsada" id="70951c97-8d49-48b8-bbbb-f97ab0a0bda2" hidden="false" targetId="d6f4-cfda-75c5-f2f1" type="rule"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="7753-ec4a-885a-5912" name="Destructor" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="b71b-ce58-5da1-de0c" name="Destructor" publicationId="20db-6e5e-2c14-0348" page="43" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
           <characteristics>
-            <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Unidad retropropulsada</characteristic>
+            <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Retropropulsada</characteristic>
             <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
             <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
             <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
@@ -1580,7 +1587,7 @@
       <profiles>
         <profile id="f91e-bad0-9713-7fe6" name="Destructor Pesado" publicationId="20db-6e5e-2c14-0348" page="43" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
           <characteristics>
-            <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Unidad retropropulsada</characteristic>
+            <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Retropropulsada</characteristic>
             <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
             <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
             <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
@@ -1618,12 +1625,15 @@
       <costs>
         <cost name="Pts" typeId="puntos" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Unidad retropropulsada" id="e2a5483a-4188-4d92-9f56-ab6f07af6372" hidden="false" targetId="d6f4-cfda-75c5-f2f1" type="rule"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry id="2a81-a47d-4eb0-137b" name="Espectro Canóptico" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="4278-dcdc-a2da-cc23" name="Espectro Canóptico" publicationId="20db-6e5e-2c14-0348" page="44" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
           <characteristics>
-            <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Unidad retropropulsada</characteristic>
+            <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Retropropulsada</characteristic>
             <characteristic name="HA" typeId="5ee4ff0b-b244-4670-9d05-91d10f80c32e">4</characteristic>
             <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
             <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">6</characteristic>
