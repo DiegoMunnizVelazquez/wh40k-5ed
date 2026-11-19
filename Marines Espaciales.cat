@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Marines Espaciales" id="8964-cc67-2c68-196d" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" library="false" revision="12" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Marines Espaciales" id="8964-cc67-2c68-196d" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" library="false" revision="14" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Esto es for fun. Cualquier error o sugerencia serán bienvenidas
 
 En este sistema se agruparán las reglas del Codex de Marines Espaciales utilizado en la 5ed de Warhammer 40k</readme>
@@ -258,19 +258,6 @@ En este sistema se agruparán las reglas del Codex de Marines Espaciales utiliza
         <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Una miniatura equipada con armas digitales puede repetir una única tirada para herir no superada en cada fase de asalto</characteristic>
       </characteristics>
     </profile>
-    <profile name="Capa de Camuflaje" id="d9e3-423a-d9bf-c783" hidden="false" page="100" publicationId="f176-f140-74d8-da7d" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
-      <characteristics>
-        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Otorga la regla Sigilo a la unidad</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Munición Infierno" id="8f76-06dc-a401-29fd" hidden="false" page="100" publicationId="f176-f140-74d8-da7d" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
-      <characteristics>
-        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60cm</characteristic>
-        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">X</characteristic>
-        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
-        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Fuego Rápido, Envenenada (2+)</characteristic>
-      </characteristics>
-    </profile>
     <profile name="Guantaletes de Ultramar" id="248e-1729-77d7-3a52" hidden="false" page="84" publicationId="f176-f140-74d8-da7d" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
       <characteristics>
         <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Se trata de unos puños de combate con un par de bólters integrados con el siguiente perfil.</characteristic>
@@ -459,11 +446,6 @@ se dispersará).</characteristic>
         <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
       </characteristics>
     </profile>
-    <profile name="Baliza Localizadora" id="06f0-ab9a-0f6a-44db" hidden="false" page="67" publicationId="f176-f140-74d8-da7d" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
-      <characteristics>
-        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Si una unidad entra en el campo de batalla mediante un despliegue rápido, y a 15 cm o menos de una miniatura que transporte una baliza localizadora, no se dispersará. Recuerda que la baliza localizadora debe estar ya situada en el tablero al inicio del turno en el que va a utilizarse.</characteristic>
-      </characteristics>
-    </profile>
     <profile name="Sargento Explorador" id="3364-9294-829a-1569" hidden="false" page="67" publicationId="f176-f140-74d8-da7d" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
       <characteristics>
         <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
@@ -532,30 +514,6 @@ se dispersará).</characteristic>
         <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
         <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
         <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Munición Aliento de Dragón" id="afc7-46e2-e81f-0735" hidden="false" page="63" publicationId="f176-f140-74d8-da7d" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
-      <characteristics>
-        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60cm</characteristic>
-        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
-        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
-        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Fuego Rápido, Ignora Cobertura</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Munición Kraken" id="b86b-b800-b8dc-c685" hidden="false" page="100" publicationId="f176-f140-74d8-da7d" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
-      <characteristics>
-        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">75cm</characteristic>
-        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
-        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
-        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Fuego Rápido</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Munición Venganza" id="e368-065f-4f73-c4db" hidden="false" page="100" publicationId="f176-f140-74d8-da7d" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
-      <characteristics>
-        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">45cm</characteristic>
-        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
-        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
-        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Fuego Rápido, Sobrecalentamineto</characteristic>
       </characteristics>
     </profile>
     <profile name="Bendición del Omnissiah" id="fb80-c076-7c33-8a76" hidden="false" page="71" publicationId="f176-f140-74d8-da7d" typeId="c970-b832-a956-1ac8" typeName="Habilidad">
@@ -750,11 +708,6 @@ Si el resultado es 5+, un resultado de arma destruida o de inmovilizado (elige e
     <profile name="Munición Infierno" id="8860-4287-5c54-dcf4" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
       <characteristics>
         <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">La miniatura equipada con la Munición Infierno reemplaza el perfil del Bolter por este.</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Munición especial" id="aad6-ab89-7b59-35c6" hidden="false" page="63" publicationId="f176-f140-74d8-da7d" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
-      <characteristics>
-        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Cada miniatura de la Escuadra de Veteranos de la Guardia esta automáticamente equipada con varios tipos de munición especial. Cuando la Escuadra de Veteranos de la Guardia dispara, el jugador que la controla puede elegir el tipo de munición que usara. La munición especial cambia el perfil del bólter (incluidos los bólteres que forman parte de una combiarma). Todas las miniaturas de la escuadra deben usar el mismo tipo de municion durante una misma fase de disparo.</characteristic>
       </characteristics>
     </profile>
     <profile name="Drakkan Lunar" id="e78a-91fd-eb0b-1422" hidden="false" page="94" publicationId="f176-f140-74d8-da7d" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
@@ -968,13 +921,6 @@ ejército está sujeto a la regla especial doctrina de combate, debes elegir qu�
                       </modifiers>
                     </modifierGroup>
                   </modifierGroups>
-                  <modifiers>
-                    <modifier field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" type="set" value="Retropropulsada (Personaje)">
-                      <conditions>
-                        <condition childId="fcc8-7c88-cafb-5e7c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="c1d1-f843-3bea-ab6e" shared="true" type="equalTo" value="1"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </profile>
               </profiles>
             </selectionEntry>
@@ -1039,13 +985,6 @@ ejército está sujeto a la regla especial doctrina de combate, debes elegir qu�
                       </modifiers>
                     </modifierGroup>
                   </modifierGroups>
-                  <modifiers>
-                    <modifier field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" type="set" value="Retropropulsada (Personaje)">
-                      <conditions>
-                        <condition childId="fcc8-7c88-cafb-5e7c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="c1d1-f843-3bea-ab6e" shared="true" type="equalTo" value="1"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </profile>
               </profiles>
             </selectionEntry>
@@ -2424,11 +2363,6 @@ ejército está sujeto a la regla especial doctrina de combate, debes elegir qu�
             </modifierGroup>
           </modifierGroups>
           <modifiers>
-            <modifier field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" type="set" value="Retropropulsada (Personaje)">
-              <conditions>
-                <condition childId="24bd-e100-8db9-4831" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="475f-181c-69b1-bb38" shared="true" type="equalTo" value="1"/>
-              </conditions>
-            </modifier>
             <modifier field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" type="set" value="2+">
               <conditions>
                 <condition childId="4e93-ea45-2908-2277" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="475f-181c-69b1-bb38" shared="true" type="equalTo" value="1"/>
@@ -3531,19 +3465,6 @@ ejército está sujeto a la regla especial doctrina de combate, debes elegir qu�
             </modifier>
           </modifiers>
         </entryLink>
-      </entryLinks>
-      <infoLinks>
-        <infoLink name="Escuadras de combate" id="c436-42f7-2432-2940" hidden="false" targetId="22a0-0930-12ab-bd9e" type="rule"/>
-        <infoLink name="Tácticas de Combate" id="bb0d-d8f2-639b-22f3" hidden="false" targetId="8bf6-d84e-9cda-1b19" type="rule"/>
-        <infoLink name="Y no conocerán el miedo" id="2747-5ae8-8050-c68c" hidden="false" targetId="5ce7-70c4-4a99-db0d" type="rule"/>
-      </infoLinks>
-      <rules>
-        <rule name="Intervención Heróica" id="125d-5a3a-c46d-d6f2" hidden="false">
-          <description>Los veteranos de vanguardia son famosos por llegar en el momento y lugar donde más se les necesita y donde su aparición supone una diferencia. Si una Escuadra de Veteranos de Vanguardia equipada con retrorreactores entra en la batalla mediante un despliegue rápido, el jugador puede decidir que la escuadra realice una intervención heroica antes de tirar los dados de dispersión. Si declara una intervención heroica, la Escuadra de Veteranos de Vanguardia no podrá disparar (ni tampoco correr) en ese turno, pero
-podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si un personaje independiente se ha unido a la Escuadra de Veteranos de Vanguardia.</description>
-        </rule>
-      </rules>
-      <entryLinks>
         <entryLink name="Retroreactores" id="95049c31-9c5a-4e1a-846b-5ea339034d2a" collective="false" hidden="false" import="true" targetId="5063e534-87cf-438e-8dc7-49b0e9293b5c" type="selectionEntry">
           <constraints>
             <constraint id="ea9d20d0-9e9a-4116-8e9f-11c89a840504" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -3560,6 +3481,17 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
           </modifiers>
         </entryLink>
       </entryLinks>
+      <infoLinks>
+        <infoLink name="Escuadras de combate" id="c436-42f7-2432-2940" hidden="false" targetId="22a0-0930-12ab-bd9e" type="rule"/>
+        <infoLink name="Tácticas de Combate" id="bb0d-d8f2-639b-22f3" hidden="false" targetId="8bf6-d84e-9cda-1b19" type="rule"/>
+        <infoLink name="Y no conocerán el miedo" id="2747-5ae8-8050-c68c" hidden="false" targetId="5ce7-70c4-4a99-db0d" type="rule"/>
+      </infoLinks>
+      <rules>
+        <rule name="Intervención Heróica" id="125d-5a3a-c46d-d6f2" hidden="false">
+          <description>Los veteranos de vanguardia son famosos por llegar en el momento y lugar donde más se les necesita y donde su aparición supone una diferencia. Si una Escuadra de Veteranos de Vanguardia equipada con retrorreactores entra en la batalla mediante un despliegue rápido, el jugador puede decidir que la escuadra realice una intervención heroica antes de tirar los dados de dispersión. Si declara una intervención heroica, la Escuadra de Veteranos de Vanguardia no podrá disparar (ni tampoco correr) en ese turno, pero
+podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si un personaje independiente se ha unido a la Escuadra de Veteranos de Vanguardia.</description>
+        </rule>
+      </rules>
       <selectionEntries>
         <selectionEntry name="Marine Espacial Veterano" id="f92a-4505-f7eb-5560" collective="false" hidden="false" import="true" type="model">
           <constraints>
@@ -3588,13 +3520,6 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
                 <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
                 <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" type="set" value="Retropropulsada">
-                  <conditions>
-                    <condition childId="f01a-216b-c776-b06d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="3346-e62b-b6de-aca3" shared="true" type="equalTo" value="1"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
             </profile>
           </profiles>
           <selectionEntryGroups>
@@ -3677,7 +3602,7 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
           <modifiers>
             <modifier field="ab4b-1944-8e9a-9b6e" type="set" value="1">
               <conditions>
-                <condition childId="f01a-216b-c776-b06d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="3346-e62b-b6de-aca3" shared="true" type="equalTo" value="0"/>
+                <condition childId="95049c31-9c5a-4e1a-846b-5ea339034d2a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="3346-e62b-b6de-aca3" shared="true" type="equalTo" value="0"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3729,13 +3654,6 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
                 <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
                 <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" type="set" value="Retropropulsada">
-                  <conditions>
-                    <condition childId="f01a-216b-c776-b06d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="3346-e62b-b6de-aca3" shared="true" type="equalTo" value="1"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
             </profile>
           </profiles>
           <selectionEntryGroups>
@@ -3856,11 +3774,11 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
         <infoLink name="Escuadras de combate" id="b58f-8564-0334-4369" hidden="false" targetId="22a0-0930-12ab-bd9e" type="rule"/>
         <infoLink name="Tácticas de Combate" id="2425-4120-e413-2631" hidden="false" targetId="8bf6-d84e-9cda-1b19" type="rule"/>
         <infoLink name="Y no conocerán el miedo" id="011a-ebd2-8d10-eabe" hidden="false" targetId="5ce7-70c4-4a99-db0d" type="rule"/>
-        <infoLink name="Munición Infierno" id="6e29-d641-0ec3-0b2d" hidden="false" targetId="8f76-06dc-a401-29fd" type="profile"/>
-        <infoLink name="Munición Aliento de Dragón" id="21f4-393a-29ce-6b06" hidden="false" targetId="afc7-46e2-e81f-0735" type="profile"/>
-        <infoLink name="Munición Kraken" id="4cad-1493-729d-7df1" hidden="false" targetId="b86b-b800-b8dc-c685" type="profile"/>
-        <infoLink name="Munición Venganza" id="fed4-8dfc-d663-5cc4" hidden="false" targetId="e368-065f-4f73-c4db" type="profile"/>
-        <infoLink name="Munición especial" id="90e8-6c5b-7db1-a8e5" hidden="false" targetId="aad6-ab89-7b59-35c6" type="profile"/>
+        <infoLink name="Munición Infierno" id="6e29-d641-0ec3-0b2d" hidden="false" targetId="08987489-e1b4-4922-82d5-46daa5ae228f" type="profile"/>
+        <infoLink name="Munición Aliento de Dragón" id="21f4-393a-29ce-6b06" hidden="false" targetId="dd454f61-25fd-4728-99e7-1fdd8e364e27" type="profile"/>
+        <infoLink name="Munición Kraken" id="4cad-1493-729d-7df1" hidden="false" targetId="8a127fe4-847f-4cef-91c2-8b86936d65d3" type="profile"/>
+        <infoLink name="Munición Venganza" id="fed4-8dfc-d663-5cc4" hidden="false" targetId="cdf1b2b8-c3e8-4a09-b1a3-52280741b742" type="profile"/>
+        <infoLink name="Munición especial" id="90e8-6c5b-7db1-a8e5" hidden="false" targetId="0ad85afb-820b-41d0-a7ca-3bd6eadffb23" type="profile"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry name="Sargento Marine Espacial" id="fb86-d1c7-d1c5-d9e1" collective="false" hidden="false" import="true" type="model">
@@ -4606,7 +4524,7 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
             <cost name="Pts" typeId="puntos" value="0"/>
           </costs>
           <infoLinks>
-            <infoLink name="Capa de Camuflaje" id="0bd1-af05-5c9c-7def" hidden="false" targetId="d9e3-423a-d9bf-c783" type="profile"/>
+            <infoLink name="Capa de camuflaje" id="0bd1-af05-5c9c-7def" hidden="false" targetId="a7c96766-2ba9-4f4a-9970-97133fe17694" type="profile"/>
           </infoLinks>
           <modifiers>
             <modifier field="puntos" type="increment" value="3">
@@ -4951,7 +4869,7 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
                 <cost name="Pts" typeId="puntos" value="25"/>
               </costs>
               <infoLinks>
-                <infoLink name="Baliza Localizadora" id="36cc-5533-abb6-fd09" hidden="false" targetId="06f0-ab9a-0f6a-44db" type="profile"/>
+                <infoLink name="Baliza localizadora" id="36cc-5533-abb6-fd09" hidden="false" targetId="e308635b-7d31-459e-a511-9e17fefd931e" type="profile"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
@@ -4999,24 +4917,10 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
           <costs>
             <cost name="Pts" typeId="puntos" value="10"/>
           </costs>
-          <profiles>
-            <profile name="Minas de racimo" id="4188-b101-3578-4107" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
-              <characteristics>
-                <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Cada Escuadrón de Exploradores Motorizados equipado con minas de racimo puede colocar una trampa explosiva en una zona de terreno antes de iniciarse la partida. Recuerda que un Escuadrón de Exploradores Motorizada que se divida en escuadras de combate se sigue considerando una sola unidad a efectos de las minas de racimo. Al inicio de la partida, después de colocar la escenografia, declara que tus exploradores han colocado trampas explosivas y anota en secreto el lugar donde las has colocado. En cada elemento de escenografía solo puede
-colocarse una trampa explosiva.
-
-Las minas de racimo se detonan automáticamente la primera vez que una unidad (amiga o enemiga) entra en contacto con el terreno con la trampa explosiva. Al detonarse, las minas de racimo causan 2D6 impactos sobre la desafortunada unidad cuando esta haya finalizado su movimiento.</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Minas de racimo" id="e9af-5a46-d6c5-980b" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
-              <characteristics>
-                <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">n/a</characteristic>
-                <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
-                <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">-</characteristic>
-                <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Ignora cobertura</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <infoLinks>
+            <infoLink name="Minas de racimo" id="2d538953-048d-4abb-a940-0421c4e16258" hidden="false" targetId="ea447e11-5220-453b-be1b-8b203293d991" type="profile"/>
+            <infoLink name="Minas de racimo" id="cc15dd40-d082-41e9-be32-4ccf65e406a2" hidden="false" targetId="2e0e744d-c201-4d7d-adf6-1f882adc3a2d" type="profile"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -7412,13 +7316,6 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
                       </modifiers>
                     </modifierGroup>
                   </modifierGroups>
-                  <modifiers>
-                    <modifier field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" type="set" value="Retropropulsada (Personaje)">
-                      <conditions>
-                        <condition childId="5115-9f73-9158-cb84" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="a1d9-ea5c-5919-8ee3" shared="true" type="equalTo" value="1"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </profile>
               </profiles>
               <selectionEntryGroups>
@@ -7630,13 +7527,6 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
                       </modifiers>
                     </modifierGroup>
                   </modifierGroups>
-                  <modifiers>
-                    <modifier field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" type="set" value="Retropropulsada (Personaje)">
-                      <conditions>
-                        <condition childId="98a9-3009-749f-ad9b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="63a0-9f7a-bc0e-d176" shared="true" type="equalTo" value="1"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </profile>
               </profiles>
               <selectionEntryGroups>
@@ -7765,7 +7655,7 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
         <cost name="Pts" typeId="puntos" value="0"/>
       </costs>
       <infoLinks>
-        <infoLink name="Munición Infierno" id="2c2c-0a22-baba-2006" hidden="false" targetId="8f76-06dc-a401-29fd" type="profile"/>
+        <infoLink name="Munición Infierno" id="2c2c-0a22-baba-2006" hidden="false" targetId="08987489-e1b4-4922-82d5-46daa5ae228f" type="profile"/>
         <infoLink name="Munición Infierno" id="47c6-bdfc-db63-e5c3" hidden="false" targetId="8860-4287-5c54-dcf4" type="profile"/>
       </infoLinks>
     </selectionEntry>
@@ -7844,11 +7734,6 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
             </modifierGroup>
           </modifierGroups>
           <modifiers>
-            <modifier field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" type="set" value="Retropropulsada (Personaje)">
-              <conditions>
-                <condition childId="410c-99c6-417e-307b" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="c6aa-a483-2ebf-d164" shared="true" type="equalTo" value="1"/>
-              </conditions>
-            </modifier>
             <modifier field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" type="set" value="2+">
               <conditions>
                 <condition childId="f0c4-7dda-892e-d35c" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="c6aa-a483-2ebf-d164" shared="true" type="equalTo" value="1"/>
@@ -8224,7 +8109,7 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
             <cost name="Pts" typeId="puntos" value="10"/>
           </costs>
           <infoLinks>
-            <infoLink name="Baliza Localizadora" id="1b5d-6c49-c1c8-c5e2" hidden="false" targetId="06f0-ab9a-0f6a-44db" type="profile"/>
+            <infoLink name="Baliza localizadora" id="1b5d-6c49-c1c8-c5e2" hidden="false" targetId="e308635b-7d31-459e-a511-9e17fefd931e" type="profile"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Ángeles Sangrientos" id="0bd2-882e-45d3-4a62" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="12" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Ángeles Sangrientos" id="0bd2-882e-45d3-4a62" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="13" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink name="Astorath el siniestro" id="e67513f3-0100-513d-9c20-4354ac74503c" collective="false" hidden="false" import="true" targetId="58277361-f888-5d25-98ae-d0d18f93a6d3" type="selectionEntry">
       <categoryLinks>
@@ -835,38 +835,6 @@
         <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un Bibliotecario convertido en Epistolario puede utilizar hasta dos poderes psíquicos cada turno.</characteristic>
       </characteristics>
     </profile>
-    <profile name="Munición Aliento de Dragón" id="c61fb17c-5f64-5581-8591-4970c396c487" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
-      <characteristics>
-        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60cm</characteristic>
-        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
-        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
-        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Fuego Rápido, Ignora cobertura* (*No se pueden realizar salvaciones por cobertura contra la munición Aliento de Dragón)</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Munición Venganza" id="bc8bd0a3-1ac1-53e1-9a44-5c17048b8399" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
-      <characteristics>
-        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">45cm</characteristic>
-        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
-        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
-        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Fuego Rápido, Sobrecalentamiento</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Munición Kraken" id="77d5fdf5-e60f-544c-aa8d-8fe04fa15583" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
-      <characteristics>
-        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">75cm</characteristic>
-        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
-        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
-        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Fuego Rápido</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Munición Infierno" id="353539b6-ed98-5988-a227-5209927eb836" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
-      <characteristics>
-        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60cm</characteristic>
-        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">X</characteristic>
-        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
-        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Fuego Rápido, Envenenada (2+)* (*La Munición Infierno siempre hiere con un 2+ a los objetivos que tengan un valor de Resistencia)</characteristic>
-      </characteristics>
-    </profile>
     <profile name="Desintegración" id="3b8b0770-954d-5f6c-8352-954942fb296c" hidden="false" typeId="9c33-b0c8-74bd-e5a7" typeName="Poder Psíquico (Proyectil)">
       <characteristics>
         <characteristic name="Alcance" typeId="5bf6-378a-0cb7-b079">30cm</characteristic>
@@ -958,24 +926,9 @@
         <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Apoyado por la imparable masa de un Dreadnought, un único barrido de un espolón sangriento puede cercenar media docena de enemigos en un momento, o más si el Dreadnought está equipado con un par de ellos. Los espolones sangrientos siguen las mismas reglas que las cuchillas relámpago. Además, si el Dreadnought está equipado con dos espolones sangrientos se aplica la siguiente regla: el Dreadnought efectuará inmediatamente un ataque adicional por cada herida sin salvar causada en combate por un espolón sangriento. Estos ataques adicionales pueden seguir generando más ataques extra, a medida que vayan provocando más heridas sin salvar, o hasta que todos los enemigos hayan caído.</characteristic>
       </characteristics>
     </profile>
-    <profile name="Munición especial" id="a3bf0af2-7cf4-5801-ad5f-a5640561cb00" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
-      <characteristics>
-        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Cada vez que una escuadra de Veteranos de la Guardia dispara, el jugador que la controla debe elegir qué tipo de munición va a usar. La munición especial elegida sustituye el perfil del Bólter (incluyendo los Bólteres que sean parte de una Combiarma) por el perfil que figura a continuación. Todas las miniaturas de la escuadra deberán usar el mismo tipo de munición durante esa fase de disparo.</characteristic>
-      </characteristics>
-    </profile>
     <profile name="El Crozius de sangre" id="31b439dc-c8f8-55d0-97b5-c9630b679f37" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
       <characteristics>
         <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Se dice que fue el arma del primer Gran Capellán de los Ángeles Sangrientos, y fue el propio Astorath el siniestro quien entregó la responsabilidad de su cuidado a Lemartes. El Crozius de sangre es un arma de precisión de energía.</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Baliza localizadora" id="5c27e946-d10e-5dc4-962d-19042a9b35ab" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
-      <characteristics>
-        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Los Exploradores suelen llevar balizas localizadoras, un equipo de señales que contiene una baliza de teleportación, un comunicador de onda ancha y un localizador geo-posicional. Al activarla, la baliza descarga información posicional muy detallada, que permite a los refuerzos actuar con gran precisión. Si una unidad quiere desplegar mediante Despliegue rápido y decide hacerlo a menos de 15 cm de una miniatura con una baliza localizadora, no se dispersará. Ten en cuenta que es necesario que la baliza ya se encuentre en la mesa al principio del turno para poderle dar uso.</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Capa de camuflaje" id="babd7259-e9b4-51ee-8560-c4b99938f261" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
-      <characteristics>
-        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Los Exploradores Marines Espaciales habitualmente llevan capas de camuflaje, una capa tejida con material absorbente de la luz que imita el terreno más próximo. De esta forma los Exploradores son casi imposibles de detectar a larga distancia y se convierten en objetivos difíciles cuando están en algún tipo de cobertura. Una miniatura equipada con capa de camuflaje obtiene la regla especial universal Sigilo.</characteristic>
       </characteristics>
     </profile>
     <profile name="Rhino" id="ab07a91c-c43a-4209-81aa-fb41e2ba25d8" hidden="false" typeId="d12a-b581-e1f4-1193" typeName="Transporte">
@@ -2393,12 +2346,12 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
     </selectionEntry>
     <selectionEntry name="Baliza localizadora" id="36c1df23-30a3-5dd7-8c38-a5b0525830b2" hidden="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink name="Baliza localizadora" id="13cc38b3-a17f-57ea-ba2b-510ada62a71c" hidden="false" targetId="5c27e946-d10e-5dc4-962d-19042a9b35ab" type="profile"/>
+        <infoLink name="Baliza localizadora" id="13cc38b3-a17f-57ea-ba2b-510ada62a71c" hidden="false" targetId="e308635b-7d31-459e-a511-9e17fefd931e" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Capa de camuflaje" id="250ae86b-ca83-5ebb-a9b0-9d0ef897e0e1" hidden="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink name="Capa de camuflaje" id="25cfc6be-9c11-530e-896d-ad4b9cd3681e" hidden="false" targetId="babd7259-e9b4-51ee-8560-c4b99938f261" type="profile"/>
+        <infoLink name="Capa de camuflaje" id="25cfc6be-9c11-530e-896d-ad4b9cd3681e" hidden="false" targetId="a7c96766-2ba9-4f4a-9970-97133fe17694" type="profile"/>
         <infoLink name="Sigilo" id="ad767a1b-99bd-539a-ac59-0def04a05453" hidden="false" targetId="f1ee-e19a-a3c3-6797" type="rule"/>
       </infoLinks>
     </selectionEntry>
@@ -3988,11 +3941,11 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
     </selectionEntry>
     <selectionEntry name="Munición especial" id="6bc95170-99d6-52c8-944e-be25dc6e46bf" hidden="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink name="Munición especial" id="dd329dc5-9f80-5a0e-8ac1-4ba75dac2ae1" hidden="false" targetId="a3bf0af2-7cf4-5801-ad5f-a5640561cb00" type="profile"/>
-        <infoLink name="Munición Aliento de Dragón" id="488149dc-7ab5-5187-9e19-5d87a77679be" hidden="false" targetId="c61fb17c-5f64-5581-8591-4970c396c487" type="profile"/>
-        <infoLink name="Munición Venganza" id="5112ba4a-2a6a-58f8-b93e-cd28e3729bb3" hidden="false" targetId="bc8bd0a3-1ac1-53e1-9a44-5c17048b8399" type="profile"/>
-        <infoLink name="Munición Kraken" id="dfa8815a-4447-50ee-894d-f16180e85fab" hidden="false" targetId="77d5fdf5-e60f-544c-aa8d-8fe04fa15583" type="profile"/>
-        <infoLink name="Munición Infierno" id="cd38cc30-8247-5efd-a889-1543f09958d5" hidden="false" targetId="353539b6-ed98-5988-a227-5209927eb836" type="profile"/>
+        <infoLink name="Munición especial" id="dd329dc5-9f80-5a0e-8ac1-4ba75dac2ae1" hidden="false" targetId="0ad85afb-820b-41d0-a7ca-3bd6eadffb23" type="profile"/>
+        <infoLink name="Munición Aliento de Dragón" id="488149dc-7ab5-5187-9e19-5d87a77679be" hidden="false" targetId="dd454f61-25fd-4728-99e7-1fdd8e364e27" type="profile"/>
+        <infoLink name="Munición Venganza" id="5112ba4a-2a6a-58f8-b93e-cd28e3729bb3" hidden="false" targetId="cdf1b2b8-c3e8-4a09-b1a3-52280741b742" type="profile"/>
+        <infoLink name="Munición Kraken" id="dfa8815a-4447-50ee-894d-f16180e85fab" hidden="false" targetId="8a127fe4-847f-4cef-91c2-8b86936d65d3" type="profile"/>
+        <infoLink name="Munición Infierno" id="cd38cc30-8247-5efd-a889-1543f09958d5" hidden="false" targetId="08987489-e1b4-4922-82d5-46daa5ae228f" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Máscaras mortuorias" id="6524c0ff-2a24-51bf-acf2-5586adcbfbbb" hidden="false" import="true" type="upgrade">
@@ -5717,10 +5670,10 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
         <infoLink name="Combiarma" id="805b1936-406d-5de9-bac8-ad459091a202" hidden="false" targetId="b524-ca47-0c30-ae4f" type="profile"/>
         <infoLink name="Bólter" id="c5459763-dad2-5a07-be5f-67951721b5c9" hidden="false" targetId="90a7-c0e2-3a06-dc70" type="profile"/>
         <infoLink name="Rifle de Fusión" id="caa9249e-497b-53c8-9424-a81237f4d03a" hidden="false" targetId="d70e-78b0-03b3-f2b2" type="profile"/>
-        <infoLink name="Munición Aliento de Dragón" id="4d306f4e-5bf8-5ebb-946b-2100c383eabc" hidden="false" targetId="c61fb17c-5f64-5581-8591-4970c396c487" type="profile"/>
-        <infoLink name="Munición Venganza" id="fb15e421-76ee-524c-a508-8c0ff01e88ff" hidden="false" targetId="bc8bd0a3-1ac1-53e1-9a44-5c17048b8399" type="profile"/>
-        <infoLink name="Munición Kraken" id="e0fabd9c-0f51-5252-ab3f-37d395b5cd09" hidden="false" targetId="77d5fdf5-e60f-544c-aa8d-8fe04fa15583" type="profile"/>
-        <infoLink name="Munición Infierno" id="709a1745-e87f-58ed-afec-ee1f0c928ab0" hidden="false" targetId="353539b6-ed98-5988-a227-5209927eb836" type="profile"/>
+        <infoLink name="Munición Aliento de Dragón" id="4d306f4e-5bf8-5ebb-946b-2100c383eabc" hidden="false" targetId="dd454f61-25fd-4728-99e7-1fdd8e364e27" type="profile"/>
+        <infoLink name="Munición Venganza" id="fb15e421-76ee-524c-a508-8c0ff01e88ff" hidden="false" targetId="cdf1b2b8-c3e8-4a09-b1a3-52280741b742" type="profile"/>
+        <infoLink name="Munición Kraken" id="e0fabd9c-0f51-5252-ab3f-37d395b5cd09" hidden="false" targetId="8a127fe4-847f-4cef-91c2-8b86936d65d3" type="profile"/>
+        <infoLink name="Munición Infierno" id="709a1745-e87f-58ed-afec-ee1f0c928ab0" hidden="false" targetId="08987489-e1b4-4922-82d5-46daa5ae228f" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="La mano del muerto" id="74e0ac7a-be06-5248-a689-71179ca5149f" hidden="false" import="true" type="upgrade">
@@ -6265,25 +6218,10 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Minas de racimo" id="ce9e4f93-375e-4df8-9b56-812d878db4af" collapsible="true" hidden="false" import="true" type="upgrade">
-      <profiles>
-        <profile name="Minas de racimo" id="eaffbccc-a35c-41ed-b033-febc16121805" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
-          <characteristics>
-            <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Cada Escuadrón de Exploradores Motorizados equipado con minas de racimo puede colocar una trampa explosiva en una zona de terreno antes de iniciarse la partida. Recuerda que un Escuadrón de Exploradores Motorizada que se divida en escuadras de combate se sigue considerando una sola unidad a efectos de las minas de racimo. Al inicio de la partida, después de colocar la escenografía, declara que tus exploradores han colocado trampas explosivas y anota en secreto el lugar donde las has colocado. En cada elemento de escenografía solo puede colocarse una trampa explosiva.
-
-Las minas de racimo se detonan automáticamente la primera vez que una unidad (amiga o enemiga) entra en contacto con el terreno con la trampa explosiva. Al detonarse, las minas de racimo causan 2D6 impactos sobre la desafortunada unidad cuando esta haya finalizado su movimiento. Los impactos se consideran disparos y están sujetos al perfil de la entrada de arma.
-
-Si un vehículo detona las minas de racimo, los impactos siempre se resuelven contra el blindaje posterior para representar que la munición ha explotado en su blindaje más débil. Cuando se haya resuelto el efecto de las minas de racimo, se asume que ya se han gastado y no tienen ningún otro efecto.</characteristic>
-          </characteristics>
-        </profile>
-        <profile name="Minas de racimo" id="512f72f1-1815-4bb6-9e43-277cb44d7ff0" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
-          <characteristics>
-            <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">n/a</characteristic>
-            <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
-            <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">-</characteristic>
-            <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Anula las salvaciones por cobertura</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
+      <infoLinks>
+        <infoLink name="Minas de racimo" id="7441588c-ecc6-4b67-af73-d0daf22e9d62" hidden="false" targetId="ea447e11-5220-453b-be1b-8b203293d991" type="profile"/>
+        <infoLink name="Minas de racimo" id="d1ea8e21-79a3-46fb-8d64-524ed32ac801" hidden="false" targetId="2e0e744d-c201-4d7d-adf6-1f882adc3a2d" type="profile"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Escuadra de Veteranos de Vanguardia" id="a955de71-c544-43b6-bb9a-bcd0cb9ea3c9" collapsible="true" hidden="false" import="true" type="unit">
       <costs>
