@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Templarios Negros" id="7757-a04a-5363-3a75" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="40" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Templarios Negros" id="7757-a04a-5363-3a75" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="41" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink name="Capellán Grimaldus" id="874b023e-ec65-4682-b884-fb43a2a26e02" collective="false" hidden="false" import="true" targetId="a8bf41c8-8bfa-4261-a16b-0235953bfe4e" type="selectionEntry">
       <categoryLinks>
@@ -466,11 +466,6 @@
         <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Se trata de granadas artesanas creadas inicialmente por el Marine Artesano Antioch y cuyo poder de destrucción está amplificado por la ira del Emperador. Una vez por partida, la miniatura que porte un orbe sagrado de Antioch puede lanzarlo a una distancia máxima de 30 cm durante su fase de disparo y en vez de disparar un arma. La miniatura debe efectuar una tirada para impactar de la manera habitual. Si impacta, coloca la plantilla de área pequeña sobre una de las miniaturas de la unidad objetivo. Los orbes sagrados de Antioch tienen FP3 y siempre impactan con un resultado de 2+, independientemente de la Resistencia del objetivo. A los vehículos con factor de blindaje les causan un impacto superficial automático incluso aunque el vehículo lo solamente esté parcialmente cubierto por la plantilla. La miniatura que haya lanzado el orbe sagrado de Antioch puede asaltar durante la fase de asalto del mismo turno.</characteristic>
       </characteristics>
     </profile>
-    <profile name="Narthecium" id="28cb214a-dc86-4b58-9270-2e8a3fa739c6" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
-      <characteristics>
-        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Esta herramienta, junto con el reductor, es la que utilizan los apotecarios de los Marines Espaciales para curar a sus camaradas y, en caso de no ser esto posible, para extirparles las glándulas progenoides, la semilla genética de los Marines Espaciales y el futuro del capítulo. El apotecario no puede usar este elemento de equipo si está batiéndose en retirada, trabado en combate cuerpo a cuerpo o acobardado. Puede tratar a cualquier miniatura amiga que no sea un vehículo y que se encuentre en un radio de 15 cm. Una vez por turno, puede usar el narthecium para que un paciente ignore una tirada de salvación no superada (de cualquier tipo). El narthecium no puede usarse para curar a una miniatura que haya sufrido una muerte instantánea o que haya sido herida por un arma de combate cuerpo a cuerpo que anule las tiradas de salvación por armadura.</characteristic>
-      </characteristics>
-    </profile>
     <profile name="Estandarte de compañía" id="51dd1a12-9a69-474e-8484-41ba01f1b146" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
       <characteristics>
         <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">El estandarte de compañía representa el honor de una compañía de Marines Espaciales. Permite a cualquier unidad de Marines Espaciales con al menos una miniatura a 30 cm o menos del estandarte repetir un chequeo de moral o un chequeo de acobardamiento fallados.</characteristic>
@@ -514,11 +509,6 @@
     <profile name="Espada de los Grandes Mariscales" id="5510eef6-e954-4ef6-b708-6366721a50d9" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
       <characteristics>
         <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Se trata de una espada de energía de precisión. En la primera ronda de cada asalto, Helbrecht obtiene +1D3 Ataques (además de los demás bonificadores que tenga).</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Signum" id="d3aeabf4-675b-4380-8d91-9942de07b1a6" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
-      <characteristics>
-        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">El signum es una forma especial de sistema de comunicaciones que permite al tecnomarine tener acceso a una gran cantidad de información sobre el campo de batalla y, a continuación, comunicarla a sus hermanos de batalla. En términos de juego, el signum permite al tecnomarine o a cualquier unidad en la que se encuentre repetir una tirada para impactar fallada durante la fase de disparo.</characteristic>
       </characteristics>
     </profile>
     <profile name="Servoarnés" id="fc6fc6f8-68cc-4012-a9f9-46aec7f1ec91" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
@@ -5797,7 +5787,7 @@
     </selectionEntry>
     <selectionEntry name="Narthecium" id="f7514b2c-82a1-4ac4-bba0-5cef85df0006" collapsible="true" hidden="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink name="Narthecium" id="d5540d6c-5d70-4481-9e82-aeb2f6e6c374" hidden="false" targetId="28cb214a-dc86-4b58-9270-2e8a3fa739c6" type="profile"/>
+        <infoLink name="Narthecium" id="d5540d6c-5d70-4481-9e82-aeb2f6e6c374" hidden="false" targetId="4a7c96b2-9350-4975-bdb0-24fb73936935" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Orbe sagrado de Antioch" id="bf306e7b-bc36-43e6-83af-9cacfa021c36" collapsible="true" hidden="false" import="true" type="upgrade">
@@ -5832,7 +5822,7 @@
     </selectionEntry>
     <selectionEntry name="Signum" id="e2165190-840f-49cc-ba25-92a871319774" collapsible="true" hidden="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink name="Signum" id="88d7e291-6d88-44fe-94c2-de5ab26bb6a2" hidden="false" targetId="d3aeabf4-675b-4380-8d91-9942de07b1a6" type="profile"/>
+        <infoLink name="Signum" id="88d7e291-6d88-44fe-94c2-de5ab26bb6a2" hidden="false" targetId="4885bcb7-7164-4774-852b-533241a08a0c" type="profile"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>

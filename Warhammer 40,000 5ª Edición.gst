@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem name="Warhammer 40,000 5ª Edición " id="8cf6-c83d-3eeb-e95c" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" revision="29" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem name="Warhammer 40,000 5ª Edición " id="8cf6-c83d-3eeb-e95c" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" revision="30" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Esto es for fun. Cualquier error o sugerencia serán bienvenidas
 
 En este sistema se agruparán el sistema de Warhammer 40000 5ª edición, así como todos los los codex que se usarán en este sistema cerrado.
@@ -797,6 +797,21 @@ mientras las tropas que hay en el interior cargan. Una unidad que cargue al comb
     <profile name="Armadura de exterminador" id="8d617ee3-570c-4ba5-a487-143f3637a87b" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
       <characteristics>
         <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Una miniatura equipada con armadura de exterminador dispone de una tirada de salvación por armadura de 2+ y una tirada de salvación invulnerable de 5+. Las miniaturas con armadura de exterminador están sujetas a la regla especial universal Implacables y no pueden realizar persecuciones arrolladoras. Cualquier miniatura equipada con armadura de exterminador puede ser teleportada al campo de batalla: siempre podrá empezar el juego en reserva y llegar mediante las reglas de despliegue rápido, incluso si la misión no lo contempla. Los exterminadores cuentan como dos miniaturas a efectos de capacidad de transporte, y no pueden embarcarse ni en Rhinos ni en Razorbacks.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Signum" id="4885bcb7-7164-4774-852b-533241a08a0c" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Una miniatura puede utilizar un signum en vez de disparar para que una miniatura de su escuadra actúe con HP5 durante el resto de la fase de disparo. Debe declararse que se va a utilizar el signum antes de resolver ninguna tirada para impactar.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Narthecium" id="4a7c96b2-9350-4975-bdb0-24fb73936935" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Mientras el apotecario siga con vida, todas las miniaturas de su escuadra están sujetas a la regla especial universal ¡No hay dolor!</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Escudo de asedio" id="1895f92c-9f26-4a9b-bdc6-1d9c3c289422" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Muchos Vindicators están equipados con una enorme pala excavadora que les permite apartar los escombros y otros detritos del campo de batalla sin riesgo. Un Vindicator con un escudo de asedio supera automáticamente los chequeos por terreno peligroso.</characteristic>
       </characteristics>
     </profile>
     <profile name="Honor del Capítulo" id="933b-eeef-e5f5-7a50" hidden="false" typeId="c970-b832-a956-1ac8" typeName="Habilidad">

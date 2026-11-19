@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Marines Espaciales" id="8964-cc67-2c68-196d" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" library="false" revision="10" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Marines Espaciales" id="8964-cc67-2c68-196d" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" library="false" revision="11" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Esto es for fun. Cualquier error o sugerencia serán bienvenidas
 
 En este sistema se agruparán las reglas del Codex de Marines Espaciales utilizado en la 5ed de Warhammer 40k</readme>
@@ -269,12 +269,6 @@ En este sistema se agruparán las reglas del Codex de Marines Espaciales utiliza
         <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">X</characteristic>
         <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
         <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Fuego Rápido, Envenenada (2+)</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Signum" id="c63b-0def-3619-e6d0" hidden="false" page="101" publicationId="f176-f140-74d8-da7d" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
-      <characteristics>
-        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Una miniatura puede utilizar un signum en vez de disparar para que una miniatura de su escuadra actue con HP5 durante el resto de la fase de disparo. Debe declararse que se
-va a utilizar el signum antes de resolver ninguna tirada para impactar.</characteristic>
       </characteristics>
     </profile>
     <profile name="Guantaletes de Ultramar" id="248e-1729-77d7-3a52" hidden="false" page="84" publicationId="f176-f140-74d8-da7d" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
@@ -1604,13 +1598,9 @@ ejército está sujeto a la regla especial doctrina de combate, debes elegir qu�
           </costs>
           <infoLinks>
             <infoLink name="No Hay Dolor" id="c7c9-2fb3-4c6c-d982" hidden="false" targetId="fe28-c924-099d-aa4e" type="rule"/>
+            <infoLink name="Narthecium" id="5b0975de-0fc3-4f48-b937-99da9c4d8381" hidden="false" targetId="4a7c96b2-9350-4975-bdb0-24fb73936935" type="profile"/>
           </infoLinks>
           <profiles>
-            <profile name="Narthecium" id="a93b-cdd5-294e-4d8a" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
-              <characteristics>
-                <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Mientras el apotecario siga con vida, todas las miniaturas de su escuadra están sujetas a la regla especial universal ¡No hay dolor!</characteristic>
-              </characteristics>
-            </profile>
             <profile name="Apotecario" id="46c1-0006-98ac-d16f" hidden="false" page="55" publicationId="f176-f140-74d8-da7d" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
               <characteristics>
                 <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
@@ -3324,7 +3314,7 @@ ejército está sujeto a la regla especial doctrina de combate, debes elegir qu�
             <infoLink name="Granadas de asalto" id="8dbb-0a97-14a2-ad5c" hidden="false" targetId="6fa5-b37d-1b93-9529" type="profile"/>
             <infoLink name="Granadas perforantes" id="5811-4d33-2c42-0b8a" hidden="false" targetId="88ef-f347-6da1-b41f" type="profile"/>
             <infoLink name="Granadas Perforantes y de Fragmentación" id="d1db-1023-55be-8305" hidden="false" targetId="e9fd-053f-940d-6f58" type="profile"/>
-            <infoLink name="Signum" id="a4b1-9818-4c9f-27ab" hidden="false" targetId="c63b-0def-3619-e6d0" type="profile"/>
+            <infoLink name="Signum" id="a4b1-9818-4c9f-27ab" hidden="false" targetId="4885bcb7-7164-4774-852b-533241a08a0c" type="profile"/>
           </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Equipo" id="5f63-91a3-1151-b3b6" collective="false" hidden="false" import="true">
@@ -6156,13 +6146,9 @@ aplica a los gravíticos, cuyos delicados motores gravitatorios se ven dañados 
           <costs>
             <cost name="Pts" typeId="puntos" value="10"/>
           </costs>
-          <profiles>
-            <profile name="Escudo de Asedio" id="35c3-1de0-93fa-c026" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
-              <characteristics>
-                <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un Vindicator con escudo Escudo de Asedio supera automaticamente los chequeos por terreno peligroso.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <infoLinks>
+            <infoLink name="Escudo de asedio" id="a8286b1c-0687-4766-8527-c22bbff973bc" hidden="false" targetId="1895f92c-9f26-4a9b-bdc6-1d9c3c289422" type="profile"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
