@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Marines Espaciales" id="8964-cc67-2c68-196d" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" library="false" revision="14" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Marines Espaciales" id="8964-cc67-2c68-196d" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" library="false" revision="15" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Esto es for fun. Cualquier error o sugerencia serán bienvenidas
 
 En este sistema se agruparán las reglas del Codex de Marines Espaciales utilizado en la 5ed de Warhammer 40k</readme>
@@ -3594,15 +3594,15 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
         </selectionEntry>
         <selectionEntry name="Transporte Asignado" id="4b5c-1fa2-d19e-d45e" collective="false" hidden="false" import="true" type="upgrade">
           <constraints>
-            <constraint id="ab4b-1944-8e9a-9b6e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="0"/>
+            <constraint id="ab4b-1944-8e9a-9b6e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <costs>
             <cost name="Pts" typeId="puntos" value="0"/>
           </costs>
           <modifiers>
-            <modifier field="ab4b-1944-8e9a-9b6e" type="set" value="1">
+            <modifier field="hidden" type="set" value="true">
               <conditions>
-                <condition childId="95049c31-9c5a-4e1a-846b-5ea339034d2a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="3346-e62b-b6de-aca3" shared="true" type="equalTo" value="0"/>
+                <condition childId="95049c31-9c5a-4e1a-846b-5ea339034d2a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="3346-e62b-b6de-aca3" shared="true" type="atLeast" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
