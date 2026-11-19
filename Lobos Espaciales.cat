@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Lobos Espaciales" id="de8b-5a14-0e15-e5d9" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="15" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Lobos Espaciales" id="de8b-5a14-0e15-e5d9" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="18" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Saga del Matabestias" id="fef6905f-c2f1-4a8d-b98c-d7462c932abb" hidden="false"/>
     <categoryEntry name="Saga de Majestad" id="70d9fb2b-ea58-469d-ae4b-eecb10ad3642" hidden="false"/>
@@ -704,7 +704,7 @@
     </profile>
     <profile name="Armadura de exterminador" id="5d177fc9-4962-4ab5-b51b-49476e377962" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
       <characteristics>
-        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Una miniatura equipada con armadura de exterminador dispone de una tirada de salvación por armadura de 2+ y una tirada de salvación invulnerable de 5+. Puede aplicar la regla especial universal implacables, pero no puede realizar persecuciones arrolladoras. Los exterminadores cuentan como dos miniaturas a efectos de capacidad de transporte y no pueden embarcarse en Rhinos o Razorbacks.</characteristic>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Una miniatura equipada con armadura de exterminador dispone de una tirada de salvación por armadura de 2+ y una tirada de salvación invulnerable de 5+. Las miniaturas con armadura de exterminador están sujetas a la regla especial universal Implacables y no pueden realizar persecuciones arrolladoras. Los exterminadores cuentan como dos miniaturas a efectos de capacidad de transporte, y no pueden embarcarse ni en Rhinos ni en Razorbacks.</characteristic>
       </characteristics>
     </profile>
     <profile name="Armadura rúnica de exterminador" id="f2f82063-6c1f-4484-aedb-48806db58d56" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
@@ -2829,7 +2829,15 @@
                 <cost name="Pts" typeId="puntos" value="18"/>
               </costs>
               <infoLinks>
-                <infoLink name="Guardia del Lobo" id="11d6a57e-913b-4d57-aee4-c266c32eef18" hidden="false" targetId="43248105-6f63-49f3-b7d0-d1339d714e4d" type="profile"/>
+                <infoLink name="Guardia del Lobo" id="11d6a57e-913b-4d57-aee4-c266c32eef18" hidden="false" targetId="43248105-6f63-49f3-b7d0-d1339d714e4d" type="profile">
+                  <modifiers>
+                    <modifier field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" type="set" value="2+">
+                      <conditions>
+                        <condition childId="2172-0422-abdb-793d" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="4277aa99-1778-4ce0-8c6b-d276e51b415c" shared="true" type="atLeast" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Armadura" id="1c93510a-9a85-47e3-912c-c51eff90f1e0" collapsible="true" collective="false" defaultSelectionEntryId="a627ef9b-f30b-4813-bfdf-b9f9d7ad2935" hidden="false" import="true">
@@ -3260,7 +3268,20 @@
       <infoLinks>
         <infoLink name="Los líderes de la manada" id="be8511d5-b8d8-4794-98f0-07aa46775d47" hidden="false" targetId="7d8259cd-44d4-49fd-a043-ccab893227e3" type="rule"/>
         <infoLink name="Jefe de batalla de la Guardia del Lobo" id="1573e444-4eec-4136-9f58-7905cc45711c" hidden="false" targetId="87ae4c50-2875-41e1-a266-75d9b09bf5f0" type="rule"/>
-        <infoLink name="Jefe de batalla" id="e0810dd2-4d27-46e2-a19b-6ded8ef54962" hidden="false" targetId="de83e471-6f77-486f-a525-2ea262cef005" type="profile"/>
+        <infoLink name="Jefe de batalla" id="e0810dd2-4d27-46e2-a19b-6ded8ef54962" hidden="false" targetId="de83e471-6f77-486f-a525-2ea262cef005" type="profile">
+          <modifiers>
+            <modifier field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" type="set" value="2+">
+              <conditions>
+                <condition childId="8978aca7-e506-4c9f-8a83-a0e272112caf" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="4ba87243-0baa-4ebc-b77e-14453c20aa04" shared="true" type="atLeast" value="1"/>
+              </conditions>
+            </modifier>
+                    <modifier field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" type="set" value="2+">
+              <conditions>
+                <condition childId="b7c2a1fb-5d95-4e7b-9210-6f4487aa9886" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="4ba87243-0baa-4ebc-b77e-14453c20aa04" shared="true" type="atLeast" value="1"/>
+              </conditions>
+            </modifier>
+  </modifiers>
+        </infoLink>
         <infoLink name="Y no conocerán el miedo" id="72dce32b-9dd5-4b17-b9cf-1accb6c41643" hidden="false" targetId="5ce7-70c4-4a99-db0d" type="rule"/>
         <infoLink name="Visión Nocturna / Sentidos Agudos" id="944300c9-8516-4c19-b521-b2100e5538b0" hidden="false" targetId="ea4b-af50-a8b0-62b7" type="rule"/>
         <infoLink name="Contraataque" id="bd0ddc08-6cb5-43d1-89b1-39d0db999aff" hidden="false" targetId="3e32-1b73-9eb0-f59e" type="rule"/>
@@ -4305,7 +4326,15 @@
         <cost name="Pts" typeId="puntos" value="20"/>
       </costs>
       <infoLinks>
-        <infoLink name="Lobo Solitario" id="8e85e174-51a0-45f1-abb7-0e14762c89ef" hidden="false" targetId="9da17644-b82a-4228-a377-9546d74a801d" type="profile"/>
+        <infoLink name="Lobo Solitario" id="8e85e174-51a0-45f1-abb7-0e14762c89ef" hidden="false" targetId="9da17644-b82a-4228-a377-9546d74a801d" type="profile">
+          <modifiers>
+            <modifier field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" type="set" value="2+">
+              <conditions>
+                <condition childId="4dcab91b-dcd0-42ac-95da-899b2982312c" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="3eeff1c6-c23f-40e5-a463-3b4317dafd51" shared="true" type="atLeast" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Visión Nocturna / Sentidos Agudos" id="981fd8e6-f55c-40d6-b4ca-caa4357e89ac" hidden="false" targetId="ea4b-af50-a8b0-62b7" type="rule"/>
         <infoLink name="Contraataque" id="4dc8a77a-3a30-4531-8414-3b30a2c844d0" hidden="false" targetId="3e32-1b73-9eb0-f59e" type="rule"/>
         <infoLink name="Coraje" id="3edf3b7c-0746-4c20-99e3-46c2afd18be7" hidden="false" targetId="b23b-fb5c-4c8c-5ae4" type="rule"/>
@@ -5525,7 +5554,20 @@
       </entryLinks>
       <infoLinks>
         <infoLink name="Los líderes de la manada" id="318a9909-e119-49f1-8f12-837198c4d0cb" hidden="false" targetId="7d8259cd-44d4-49fd-a043-ccab893227e3" type="rule"/>
-        <infoLink name="Sacerdote Lobo" id="f3dc1fcd-6c07-4c6a-adf6-a86046dec1d6" hidden="false" targetId="bed1660f-b9de-40e3-bf65-b93751ede920" type="profile"/>
+        <infoLink name="Sacerdote Lobo" id="f3dc1fcd-6c07-4c6a-adf6-a86046dec1d6" hidden="false" targetId="bed1660f-b9de-40e3-bf65-b93751ede920" type="profile">
+          <modifiers>
+            <modifier field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" type="set" value="2+">
+              <conditions>
+                <condition childId="4c3c06bc-59a3-4bcd-85c5-e6db8b6c1c2a" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="2e6a6d93-4bf5-4be1-89e5-da3c1df8d1f3" shared="true" type="atLeast" value="1"/>
+              </conditions>
+            </modifier>
+                    <modifier field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" type="set" value="2+">
+              <conditions>
+                <condition childId="3aa4c972-d0f8-4aa4-8b68-cdb5793621de" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="2e6a6d93-4bf5-4be1-89e5-da3c1df8d1f3" shared="true" type="atLeast" value="1"/>
+              </conditions>
+            </modifier>
+  </modifiers>
+        </infoLink>
         <infoLink name="Visión Nocturna / Sentidos Agudos" id="8dd8a91a-2d1e-42a2-b3bf-62465a0239c9" hidden="false" targetId="ea4b-af50-a8b0-62b7" type="rule"/>
         <infoLink name="Contraataque" id="77115a62-61ed-4484-9794-7ea5db950d69" hidden="false" targetId="3e32-1b73-9eb0-f59e" type="rule"/>
         <infoLink name="Coraje" id="cff6c99c-8459-4d28-9977-ed335bd06b0a" hidden="false" targetId="b23b-fb5c-4c8c-5ae4" type="rule"/>
@@ -6173,7 +6215,20 @@
       </entryLinks>
       <infoLinks>
         <infoLink name="Los líderes de la manada" id="2f672eda-6278-4e3d-aa2a-2b46accc5c06" hidden="false" targetId="7d8259cd-44d4-49fd-a043-ccab893227e3" type="rule"/>
-        <infoLink name="Sacerdote rúnico" id="e60fb950-7822-4ee1-b7f9-6f5f239a98e4" hidden="false" targetId="f244132c-68e9-4aa4-ba45-3ab08cb4184c" type="profile"/>
+        <infoLink name="Sacerdote rúnico" id="e60fb950-7822-4ee1-b7f9-6f5f239a98e4" hidden="false" targetId="f244132c-68e9-4aa4-ba45-3ab08cb4184c" type="profile">
+          <modifiers>
+            <modifier field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" type="set" value="2+">
+              <conditions>
+                <condition childId="47e69221-05ea-4004-b70f-1ec22f01594a" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="49e9b914-d353-47d1-8651-2a9d7b1a64bd" shared="true" type="atLeast" value="1"/>
+              </conditions>
+            </modifier>
+                    <modifier field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" type="set" value="2+">
+              <conditions>
+                <condition childId="4549fa5b-23ec-4de9-b908-3916ceef54bc" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="49e9b914-d353-47d1-8651-2a9d7b1a64bd" shared="true" type="atLeast" value="1"/>
+              </conditions>
+            </modifier>
+  </modifiers>
+        </infoLink>
         <infoLink name="Visión Nocturna / Sentidos Agudos" id="5d4662a7-12d0-4217-b2cc-f9b444707497" hidden="false" targetId="ea4b-af50-a8b0-62b7" type="rule"/>
         <infoLink name="Y no conocerán el miedo" id="db40d97c-19fb-450e-8034-547368123133" hidden="false" targetId="5ce7-70c4-4a99-db0d" type="rule"/>
         <infoLink name="Contraataque" id="43edaacb-2631-4a65-9f8c-c8ef0654d120" hidden="false" targetId="3e32-1b73-9eb0-f59e" type="rule"/>
@@ -6546,7 +6601,20 @@
       </costs>
       <infoLinks>
         <infoLink name="Los líderes de la manada" id="f45e3077-bf81-4ef1-acb2-932ac97c2adb" hidden="false" targetId="7d8259cd-44d4-49fd-a043-ccab893227e3" type="rule"/>
-        <infoLink name="Señor Lobo" id="f6213ccd-6dc9-48ff-ade7-e9408e6a5423" hidden="false" targetId="c43c7810-870e-49be-bcc6-84610bdc0882" type="profile"/>
+        <infoLink name="Señor Lobo" id="f6213ccd-6dc9-48ff-ade7-e9408e6a5423" hidden="false" targetId="c43c7810-870e-49be-bcc6-84610bdc0882" type="profile">
+          <modifiers>
+            <modifier field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" type="set" value="2+">
+              <conditions>
+                <condition childId="3e4237d3-33ce-47f5-b94b-689696a72349" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="e18ef137-ece0-4958-b713-32129c30cd11" shared="true" type="atLeast" value="1"/>
+              </conditions>
+            </modifier>
+                    <modifier field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" type="set" value="2+">
+              <conditions>
+                <condition childId="1a6470b2-4a53-4c4b-821a-c7c081979692" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="e18ef137-ece0-4958-b713-32129c30cd11" shared="true" type="atLeast" value="1"/>
+              </conditions>
+            </modifier>
+  </modifiers>
+        </infoLink>
         <infoLink name="Y no conocerán el miedo" id="09e2b437-7421-44bc-81ce-95ca3dbc990b" hidden="false" targetId="5ce7-70c4-4a99-db0d" type="rule"/>
         <infoLink name="Visión Nocturna / Sentidos Agudos" id="546e3501-b2c5-4da3-8f98-685055f84e4b" hidden="false" targetId="ea4b-af50-a8b0-62b7" type="rule"/>
         <infoLink name="Contraataque" id="50ec6ec4-b7a5-418c-82ae-aa4cf3bcc480" hidden="false" targetId="3e32-1b73-9eb0-f59e" type="rule"/>

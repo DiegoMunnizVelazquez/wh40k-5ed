@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem name="Warhammer 40,000 5ª Edición " id="8cf6-c83d-3eeb-e95c" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" revision="28" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem name="Warhammer 40,000 5ª Edición " id="8cf6-c83d-3eeb-e95c" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" revision="29" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Esto es for fun. Cualquier error o sugerencia serán bienvenidas
 
 En este sistema se agruparán el sistema de Warhammer 40000 5ª edición, así como todos los los codex que se usarán en este sistema cerrado.
@@ -792,6 +792,11 @@ mientras las tropas que hay en el interior cargan. Una unidad que cargue al comb
     <profile name="Retrorreactores" id="ba22-cd8e-0d95-8e72" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
       <characteristics>
         <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Las miniaturas equipadas con retrorreactores se consideran unidades retropropulsadas, tal y como se describen en el reglamento de Warhammer 40,000. Además, pueden saltar desde cañoneras Thunderhawk en vuelo rasante, utilizando sus retrorreactores para descender suavemente hasta el campo de batalla. Para representar esto, estas tropas pueden mantenerse en reserva y entrar en el campo de batalla utilizando las reglas de despliegue rapido (consulta la seccion Reglas Especiales de Misión en el reglamento de Warhammer 40,000).</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Armadura de exterminador" id="8d617ee3-570c-4ba5-a487-143f3637a87b" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Una miniatura equipada con armadura de exterminador dispone de una tirada de salvación por armadura de 2+ y una tirada de salvación invulnerable de 5+. Las miniaturas con armadura de exterminador están sujetas a la regla especial universal Implacables y no pueden realizar persecuciones arrolladoras. Cualquier miniatura equipada con armadura de exterminador puede ser teleportada al campo de batalla: siempre podrá empezar el juego en reserva y llegar mediante las reglas de despliegue rápido, incluso si la misión no lo contempla. Los exterminadores cuentan como dos miniaturas a efectos de capacidad de transporte, y no pueden embarcarse ni en Rhinos ni en Razorbacks.</characteristic>
       </characteristics>
     </profile>
     <profile name="Honor del Capítulo" id="933b-eeef-e5f5-7a50" hidden="false" typeId="c970-b832-a956-1ac8" typeName="Habilidad">

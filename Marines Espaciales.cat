@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Marines Espaciales" id="8964-cc67-2c68-196d" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" library="false" revision="9" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Marines Espaciales" id="8964-cc67-2c68-196d" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" library="false" revision="10" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Esto es for fun. Cualquier error o sugerencia serán bienvenidas
 
 En este sistema se agruparán las reglas del Codex de Marines Espaciales utilizado en la 5ed de Warhammer 40k</readme>
@@ -587,15 +587,6 @@ Si el resultado es 5+, un resultado de arma destruida o de inmovilizado (elige e
         <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Vehículo (Bípode)</characteristic>
       </characteristics>
     </profile>
-    <profile name="Armadura de Exterminador" id="43e6-007c-951b-dd36" hidden="false" publicationId="f176-f140-74d8-da7d" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
-      <characteristics>
-        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Una miniatura equipada con Armadura de Exterminador dispone de una tirada de salvación por armadura de 2+ y una tirada de salvación invulnerable de 5+.
-
-Cualquier miniatura equipada con Armadura de Exterminador puede ser teleportada al campo de batalla. Siempre puede empezar el juego en reserva y llegar siguiendo las reglas de despliegue rápido, incluso si la misión no lo contempla.
-
-Los exterminadores cuentan como dos miniaturas a efectos de capacidad de transporte, y no pueden embarcarse en Rhinos o Razorbacks.</characteristic>
-      </characteristics>
-    </profile>
     <profile name="Escudo de Combate" id="0416-94da-2f3d-218c" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
       <characteristics>
         <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Proporciona al portador una tirada de Salvación Invulnerable de 6+</characteristic>
@@ -1001,7 +992,7 @@ ejército está sujeto a la regla especial doctrina de combate, debes elegir qu�
                 <cost name="Pts" typeId="puntos" value="40"/>
               </costs>
               <infoLinks>
-                <infoLink name="Armadura de Exterminador" id="672f-91d8-57a7-55ee" hidden="false" targetId="43e6-007c-951b-dd36" type="profile"/>
+                <infoLink name="Armadura de exterminador" id="672f-91d8-57a7-55ee" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
               </infoLinks>
               <profiles>
                 <profile name="Señor del Capítulo" id="c255-e8ab-cb09-bcf5" hidden="false" page="52" publicationId="f176-f140-74d8-da7d" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
@@ -4259,7 +4250,7 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
           </entryLinks>
           <infoLinks>
             <infoLink name="Sargento Exterminador" id="db05-707f-4a23-57f4" hidden="false" targetId="8933-5bbd-4fd9-2f86" type="profile"/>
-            <infoLink name="Armadura de Exterminador" id="bc4e-5189-f167-e27a" hidden="false" targetId="43e6-007c-951b-dd36" type="profile"/>
+            <infoLink name="Armadura de exterminador" id="bc4e-5189-f167-e27a" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry name="Espada de Energía" id="343d-7501-5d85-90f5" collective="false" hidden="false" import="true" type="upgrade">
@@ -4335,7 +4326,7 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
               </entryLinks>
               <infoLinks>
                 <infoLink name="Exterminador" id="bf93-de3e-8170-74e0" hidden="false" targetId="2b71-fffa-adc1-fa05" type="profile"/>
-                <infoLink name="Armadura de Exterminador" id="ac9c-d2ec-389a-f7d5" hidden="false" targetId="43e6-007c-951b-dd36" type="profile"/>
+                <infoLink name="Armadura de exterminador" id="ac9c-d2ec-389a-f7d5" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
               </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Puño" id="e496-a7cb-1c26-fdb8" collective="false" defaultSelectionEntryId="f6e7-8794-5b2a-dd7d" hidden="false" import="true">
@@ -4380,7 +4371,7 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
               </costs>
               <infoLinks>
                 <infoLink name="Exterminador" id="000e-e0f3-4d63-b24a" hidden="false" targetId="2b71-fffa-adc1-fa05" type="profile"/>
-                <infoLink name="Armadura de Exterminador" id="140a-d067-9fb2-f6a8" hidden="false" targetId="43e6-007c-951b-dd36" type="profile"/>
+                <infoLink name="Armadura de exterminador" id="140a-d067-9fb2-f6a8" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
               </infoLinks>
               <modifiers>
                 <modifier field="55d7-3ab5-5b56-9acc" type="increment" value="1">
@@ -6320,7 +6311,7 @@ aplica a los gravíticos, cuyos delicados motores gravitatorios se ven dañados 
               </costs>
               <infoLinks>
                 <infoLink name="Armadura de Antilochus" id="745b-0427-d5e0-d258" hidden="false" targetId="6dc3-bb97-fb46-ab2e" type="profile"/>
-                <infoLink name="Armadura de Exterminador" id="592a-318a-8e02-fc9d" hidden="false" targetId="43e6-007c-951b-dd36" type="profile"/>
+                <infoLink name="Armadura de exterminador" id="592a-318a-8e02-fc9d" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
                 <infoLink name="Baliza de Teleportación" id="510a-3093-790f-9dad" hidden="false" targetId="d14e-d59a-7b95-bcb0" type="profile"/>
               </infoLinks>
               <profiles>
@@ -8660,7 +8651,7 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
           </costs>
           <infoLinks>
             <infoLink name="Sargento Exterminador" id="a368-b24e-0166-01e0" hidden="false" targetId="8933-5bbd-4fd9-2f86" type="profile"/>
-            <infoLink name="Armadura de Exterminador" id="aab1-70a8-689c-c854" hidden="false" targetId="43e6-007c-951b-dd36" type="profile"/>
+            <infoLink name="Armadura de exterminador" id="aab1-70a8-689c-c854" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
           </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Arma de Combate" id="382e-a535-8325-30ea" collective="false" defaultSelectionEntryId="9fea-7f1e-f51b-1193" hidden="false" import="true">
@@ -8747,7 +8738,7 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
               </costs>
               <infoLinks>
                 <infoLink name="Exterminador" id="2a6f-77aa-7b77-a519" hidden="false" targetId="2b71-fffa-adc1-fa05" type="profile"/>
-                <infoLink name="Armadura de Exterminador" id="8919-1302-134b-6b04" hidden="false" targetId="43e6-007c-951b-dd36" type="profile"/>
+                <infoLink name="Armadura de exterminador" id="8919-1302-134b-6b04" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
               </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Arma de Combate" id="6f13-52d1-d7a5-cd9f" collective="false" defaultSelectionEntryId="d2ef-f4b2-829a-71b1" hidden="false" import="true">
@@ -9009,7 +9000,7 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
         <cost name="Pts" typeId="puntos" value="0"/>
       </costs>
       <infoLinks>
-        <infoLink name="Armadura de Exterminador" id="535c-d4f6-db5e-3439" hidden="false" targetId="43e6-007c-951b-dd36" type="profile"/>
+        <infoLink name="Armadura de exterminador" id="535c-d4f6-db5e-3439" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Bolter" id="8bf1-7c3d-e540-0f33" collective="false" hidden="false" import="true" type="upgrade">

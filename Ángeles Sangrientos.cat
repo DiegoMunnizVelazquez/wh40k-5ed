@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Ángeles Sangrientos" id="0bd2-882e-45d3-4a62" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="9" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Ángeles Sangrientos" id="0bd2-882e-45d3-4a62" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="11" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink name="Astorath el siniestro" id="e67513f3-0100-513d-9c20-4354ac74503c" collective="false" hidden="false" import="true" targetId="58277361-f888-5d25-98ae-d0d18f93a6d3" type="selectionEntry">
       <categoryLinks>
@@ -778,11 +778,6 @@
         <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
         <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2(3)</characteristic>
         <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Vehículo (Bípode)</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Armadura de exterminador" id="b6fec50e-b19b-589c-92fc-e37156f85b93" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
-      <characteristics>
-        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Una miniatura con armadura de exterminador dispone de una tirada de salvación por armadura de 2+, y una tirada de salvación invulnerable de 5+. Gracias al poderoso exoesqueleto y las fuentes de alimentación incorporadas en la armadura, las miniaturas con armadura de exterminador están sujetas a la regla especial universal Implacables. Por otra parte, es tan aparatoso que no permite que los Exterminadores puedan realizar Persecuciones arrolladoras. Cualquier miniatura equipada con armadura de exterminador puede ser teleportada al campo de batalla: siempre podrá empezar el juego en Reserva y llegar mediante las reglas de Despliegue rápido, incluso si la misión no lo contempla. Los Exterminadores cuentan como dos miniaturas a efectos de capacidad de transporte, y no pueden embarcarse ni en Rhinos ni en Razorbacks.</characteristic>
       </characteristics>
     </profile>
     <profile name="El Hacha Mortalis" id="92f908ea-86c4-5958-a733-7240d9cea6e7" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
@@ -2431,7 +2426,15 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
         </entryLink>
       </entryLinks>
       <infoLinks>
-        <infoLink name="Capellán" id="f5f7b9fa-33c7-5672-b668-6c66f65d2f66" hidden="false" targetId="2c6aabe8-92ad-4aaa-8c8f-2492eb2822f9" type="profile"/>
+        <infoLink name="Capellán" id="f5f7b9fa-33c7-5672-b668-6c66f65d2f66" hidden="false" targetId="2c6aabe8-92ad-4aaa-8c8f-2492eb2822f9" type="profile">
+          <modifiers>
+            <modifier field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" type="set" value="2+">
+              <conditions>
+                <condition childId="013353fe-7a88-53cc-8455-1ac6fbb29cd7" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="46defe0d-e37b-58c7-b01b-b4b80ea3a991" shared="true" type="atLeast" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Honor del Capítulo" id="af002235-b37a-5c2c-afbe-c9347cf45ae4" hidden="false" targetId="933b-eeef-e5f5-7a50" type="profile"/>
         <infoLink name="Personaje independiente" id="2d056346-7873-59a1-8726-eeefee3b309e" hidden="false" targetId="61b4-c5bb-9d85-8506" type="rule"/>
         <infoLink name="Liturgias de sangre" id="ea020f10-418e-5574-b004-d2f1f35f189e" hidden="false" targetId="147e0f9c-2cbd-5394-8962-112caf840343" type="rule"/>
@@ -2587,7 +2590,7 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
                 <cost name="Pts" typeId="puntos" value="30"/>
               </costs>
               <infoLinks>
-                <infoLink name="Armadura de exterminador" id="a1b8f47d-65a1-599a-b530-f60a61136c94" hidden="false" targetId="b6fec50e-b19b-589c-92fc-e37156f85b93" type="profile"/>
+                <infoLink name="Armadura de exterminador" id="a1b8f47d-65a1-599a-b530-f60a61136c94" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
                 <infoLink name="Implacables" id="9870971a-88a9-5759-baf4-62f41c615803" hidden="false" targetId="470c-bf6a-caae-15c9" type="rule"/>
               </infoLinks>
               <selectionEntryGroups>
@@ -3701,7 +3704,15 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
             </entryLink>
           </entryLinks>
           <infoLinks>
-            <infoLink name="Sacerdote Sanguinario" id="75ddeeef-3d52-5bb4-a5d4-2023478983b4" hidden="false" targetId="5bd34096-044f-4617-8c72-58e7d0cc6923" type="profile"/>
+            <infoLink name="Sacerdote Sanguinario" id="75ddeeef-3d52-5bb4-a5d4-2023478983b4" hidden="false" targetId="5bd34096-044f-4617-8c72-58e7d0cc6923" type="profile">
+              <modifiers>
+                <modifier field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" type="set" value="2+">
+                  <conditions>
+                    <condition childId="7e55cc97-5ba2-5ac0-bce9-02bc7822678c" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="298f6985-b644-5409-9853-1d74974ec13f" shared="true" type="atLeast" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
             <infoLink name="Y no conocerán el miedo" id="d08182d8-1836-5376-ad11-bb979adb31ed" hidden="false" targetId="5ce7-70c4-4a99-db0d" type="rule"/>
             <infoLink name="Personaje independiente" id="050b8e94-b618-54c5-9cd5-c295ddcf5543" hidden="false" targetId="61b4-c5bb-9d85-8506" type="rule"/>
           </infoLinks>
@@ -3900,7 +3911,7 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
                     </entryLink>
                   </entryLinks>
                   <infoLinks>
-                    <infoLink name="Armadura de exterminador" id="82be9417-bcdf-5cdd-ab0c-9aa6cdbe5450" hidden="false" targetId="b6fec50e-b19b-589c-92fc-e37156f85b93" type="profile"/>
+                    <infoLink name="Armadura de exterminador" id="82be9417-bcdf-5cdd-ab0c-9aa6cdbe5450" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
                     <infoLink name="Implacables" id="24eeeef8-5444-5321-9f9a-e97f588662c8" hidden="false" targetId="470c-bf6a-caae-15c9" type="rule"/>
                   </infoLinks>
                 </selectionEntry>
@@ -3966,7 +3977,7 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
     </selectionEntry>
     <selectionEntry name="Armadura de exterminador" id="cdbd9e91-29d5-5f8c-9701-cadda7cb2a13" hidden="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink name="Armadura de exterminador" id="f987b5f0-ed91-53c2-934c-d72a21b9c920" hidden="false" targetId="b6fec50e-b19b-589c-92fc-e37156f85b93" type="profile"/>
+        <infoLink name="Armadura de exterminador" id="f987b5f0-ed91-53c2-934c-d72a21b9c920" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
         <infoLink name="Implacables" id="983dc989-317d-5908-8bb3-e92aa5d6b3e6" hidden="false" targetId="470c-bf6a-caae-15c9" type="rule"/>
       </infoLinks>
     </selectionEntry>
@@ -4421,7 +4432,15 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
         </entryLink>
       </entryLinks>
       <infoLinks>
-        <infoLink name="Capitán" id="f45e282f-c7ee-5613-a2ac-ac10e85a4463" hidden="false" targetId="c9291641-550e-4afe-99b4-f49399279dc5" type="profile"/>
+        <infoLink name="Capitán" id="f45e282f-c7ee-5613-a2ac-ac10e85a4463" hidden="false" targetId="c9291641-550e-4afe-99b4-f49399279dc5" type="profile">
+          <modifiers>
+            <modifier field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" type="set" value="2+">
+              <conditions>
+                <condition childId="3ee5c0af-00fe-5b2b-a2c7-cabfed3de3b6" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="823878cb-d502-56b3-b494-30169fd4e561" shared="true" type="atLeast" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Y no conocerán el miedo" id="f6d2c519-d5b9-5af7-b59b-6be1d4c1fbb9" hidden="false" targetId="5ce7-70c4-4a99-db0d" type="rule"/>
         <infoLink name="Personaje independiente" id="d4c329ff-f2cc-5c53-8ae5-713d963722df" hidden="false" targetId="61b4-c5bb-9d85-8506" type="rule"/>
       </infoLinks>
@@ -4613,7 +4632,7 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
                 <cost name="Pts" typeId="puntos" value="40"/>
               </costs>
               <infoLinks>
-                <infoLink name="Armadura de exterminador" id="ba40f797-0333-5575-a439-1064d6a0597e" hidden="false" targetId="b6fec50e-b19b-589c-92fc-e37156f85b93" type="profile"/>
+                <infoLink name="Armadura de exterminador" id="ba40f797-0333-5575-a439-1064d6a0597e" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
                 <infoLink name="Implacables" id="e989d338-fe59-5dec-8819-a1b082c091d7" hidden="false" targetId="470c-bf6a-caae-15c9" type="rule"/>
               </infoLinks>
               <selectionEntryGroups>
@@ -4718,7 +4737,15 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
         </entryLink>
       </entryLinks>
       <infoLinks>
-        <infoLink name="Bibliotecario" id="3cd33269-1ee9-5a62-baa7-16b4db0e3f3c" hidden="false" targetId="e1a5ffc7-87b6-443b-8d24-9d6a519754e0" type="profile"/>
+        <infoLink name="Bibliotecario" id="3cd33269-1ee9-5a62-baa7-16b4db0e3f3c" hidden="false" targetId="e1a5ffc7-87b6-443b-8d24-9d6a519754e0" type="profile">
+          <modifiers>
+            <modifier field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" type="set" value="2+">
+              <conditions>
+                <condition childId="cdeded13-4d1d-5af3-a321-46b81fad5a05" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="8861009b-6020-5b40-9e80-f6861b7ef317" shared="true" type="atLeast" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Y no conocerán el miedo" id="2305fd46-4a8f-5364-a462-cf215c9d2438" hidden="false" targetId="5ce7-70c4-4a99-db0d" type="rule"/>
         <infoLink name="Personaje independiente" id="56d057cf-b8ce-5e39-adcc-55a9cb562ebb" hidden="false" targetId="61b4-c5bb-9d85-8506" type="rule"/>
         <infoLink name="Psíquico" id="391f1542-1edc-5acd-a655-ae6b3f741ffc" hidden="false" targetId="72c2-fd50-9880-c83c" type="rule"/>
@@ -4859,7 +4886,7 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
                 <cost name="Pts" typeId="puntos" value="25"/>
               </costs>
               <infoLinks>
-                <infoLink name="Armadura de exterminador" id="e13a5121-5eaf-5137-b0d2-cc0ebc76e6fc" hidden="false" targetId="b6fec50e-b19b-589c-92fc-e37156f85b93" type="profile"/>
+                <infoLink name="Armadura de exterminador" id="e13a5121-5eaf-5137-b0d2-cc0ebc76e6fc" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
                 <infoLink name="Implacables" id="24b3b878-f610-5b2f-a170-a89e06dfa347" hidden="false" targetId="470c-bf6a-caae-15c9" type="rule"/>
               </infoLinks>
               <selectionEntryGroups>
@@ -4979,7 +5006,15 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
         </entryLink>
       </entryLinks>
       <infoLinks>
-        <infoLink name="Reclusiarca" id="d0b8b762-3466-5991-998a-1ad4ad8101f7" hidden="false" targetId="10d4b77c-1a50-4c6a-8f66-8fe1dbf6ccb0" type="profile"/>
+        <infoLink name="Reclusiarca" id="d0b8b762-3466-5991-998a-1ad4ad8101f7" hidden="false" targetId="10d4b77c-1a50-4c6a-8f66-8fe1dbf6ccb0" type="profile">
+          <modifiers>
+            <modifier field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" type="set" value="2+">
+              <conditions>
+                <condition childId="dc46304d-9121-5f6f-964c-369f9239140a" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="d2270e41-4162-5ba6-954f-9c52c92310a5" shared="true" type="atLeast" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </infoLink>
         <infoLink name="Honor del Capítulo" id="28d1dc29-a4b6-5685-8109-b00f80fd7cb6" hidden="false" targetId="933b-eeef-e5f5-7a50" type="profile"/>
         <infoLink name="Personaje independiente" id="9df7ad12-58dc-53ec-9639-8d9f4facffd5" hidden="false" targetId="61b4-c5bb-9d85-8506" type="rule"/>
         <infoLink name="Liturgias de sangre" id="2829e51a-7ee4-5b84-9c17-ec240fdd0c52" hidden="false" targetId="147e0f9c-2cbd-5394-8962-112caf840343" type="rule"/>
@@ -5135,7 +5170,7 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
                 <cost name="Pts" typeId="puntos" value="30"/>
               </costs>
               <infoLinks>
-                <infoLink name="Armadura de exterminador" id="46c3331f-97b1-5df6-8a78-f79750a232b7" hidden="false" targetId="b6fec50e-b19b-589c-92fc-e37156f85b93" type="profile"/>
+                <infoLink name="Armadura de exterminador" id="46c3331f-97b1-5df6-8a78-f79750a232b7" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
                 <infoLink name="Implacables" id="13adb40f-ad93-54f1-a209-62e9d5e6d46d" hidden="false" targetId="470c-bf6a-caae-15c9" type="rule"/>
               </infoLinks>
               <selectionEntryGroups>
