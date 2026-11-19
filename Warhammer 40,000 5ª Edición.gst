@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem name="Warhammer 40,000 5ª Edición " id="8cf6-c83d-3eeb-e95c" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" revision="21" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem name="Warhammer 40,000 5ª Edición " id="8cf6-c83d-3eeb-e95c" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" revision="32" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Esto es for fun. Cualquier error o sugerencia serán bienvenidas
 
 En este sistema se agruparán el sistema de Warhammer 40000 5ª edición, así como todos los los codex que se usarán en este sistema cerrado.
@@ -205,12 +205,12 @@ Prueba</readme>
     <profile name="Arma Psíquica" id="2434-afee-c960-b04e" hidden="false" page="50" publicationId="1595-b68b-b80b-025d" typeId="cdf6-05fb-71d5-1982" typeName="Arma de combate">
       <characteristics>
         <characteristic name="Descripción" typeId="11b5-56ae-f93d-b524">Las Armas Psíquicas se consideran armas de energía.
-Adicionalmente, tras realizar las tiradas para impactar, herir y salvaciones invulnerables de la manera habitual, el psíquico deberá realizar un chequeo psíquico para poder utilizar el poder del arma contra un objetivo que haya sufrido al menos una herida de la misma. Deben aplicarse las reglas habituales de los poderes psíquicos, respetando el límite de poderes que el portador puede manifestar a lo largo de su turno. Si el psíquico supera el chequeo, la miniatura enemiga sufrirá una muerte instantanea independientenente de su atributo de Resistencia. Este poder no tiene efecto en miniaturas que son inmunes a la muerte instantanea, Vehículos o cualquier miniatura sin atributo de Heridas.</characteristic>
+Adicionalmente, tras realizar las tiradas para impactar, herir y salvaciones invulnerables de la manera habitual, el psíquico deberá realizar un chequeo psíquico para poder utilizar el poder del arma contra un objetivo que haya sufrido al menos una herida de la misma. Deben aplicarse las reglas habituales de los poderes psíquicos, respetando el límite de poderes que el portador puede manifestar a lo largo de su turno. Si el psíquico supera el chequeo, la miniatura enemiga sufrirá una muerte instantánea independientemente de su atributo de Resistencia. Este poder no tiene efecto en miniaturas que son inmunes a la muerte instantánea, Vehículos o cualquier miniatura sin atributo de Heridas.</characteristic>
       </characteristics>
     </profile>
     <profile name="Reflector" id="2ce5-817f-85b3-3115" hidden="false" page="103" publicationId="f176-f140-74d8-da7d" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
       <characteristics>
-        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Los reflectores pueden utilizarse cuando se aplican las reglas de combate nocturno. Si un vehículo dispone de reflector, debera seguir aplicando las reglas de combate nocturno al elegir su objetivo; pero, una vez adquirido un objetivo, lo iluminara con el reflector de forma que, durante el resto de la fase de disparo, cualquier otra unidad que dispare a la unidad iluminada no deberá aplicar la regla de combate nocturno. Sin embargo, el vehiculo que utiliza el reflector podrá ser designado como objetivo en el siguiente turno del enemigo como si las reglas de combate nocturno no estuvieran en efecto, ya que el enemigo puede ver la luz del reflector.</characteristic>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Los reflectores pueden utilizarse cuando se aplican las reglas de combate nocturno. Si un vehículo dispone de reflector, deberá seguir aplicando las reglas de combate nocturno al elegir su objetivo; pero, una vez adquirido un objetivo, lo iluminará con el reflector de forma que, durante el resto de la fase de disparo, cualquier otra unidad que dispare a la unidad iluminada no deberá aplicar la regla de combate nocturno. Sin embargo, el vehículo que utiliza el reflector podrá ser designado como objetivo en el siguiente turno del enemigo como si las reglas de combate nocturno no estuvieran en efecto, ya que el enemigo puede ver la luz del reflector.</characteristic>
       </characteristics>
     </profile>
     <profile name="Granadas perforantes" id="88ef-f347-6da1-b41f" hidden="false" page="36, 63" publicationId="1595-b68b-b80b-025d" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
@@ -419,7 +419,7 @@ Si un bípode está armado con dos o más armas de combate cuerpo a cuerpo, obti
     </profile>
     <profile name="Escudo de Combate" id="c317-b66f-1fdf-8662" hidden="false" page="54" publicationId="822e-763d-4a6a-b7fc" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
       <characteristics>
-        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Proporciona al portador una tirada de Salvación Invulnerable de 5+</characteristic>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Proporciona al portador una tirada de Salvación Invulnerable de 6+</characteristic>
       </characteristics>
     </profile>
     <profile name="Espada Sierra" id="2b7f-19b0-c335-23bc" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
@@ -794,6 +794,108 @@ mientras las tropas que hay en el interior cargan. Una unidad que cargue al comb
         <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Las miniaturas equipadas con retrorreactores se consideran unidades retropropulsadas, tal y como se describen en el reglamento de Warhammer 40,000. Además, pueden saltar desde cañoneras Thunderhawk en vuelo rasante, utilizando sus retrorreactores para descender suavemente hasta el campo de batalla. Para representar esto, estas tropas pueden mantenerse en reserva y entrar en el campo de batalla utilizando las reglas de despliegue rapido (consulta la seccion Reglas Especiales de Misión en el reglamento de Warhammer 40,000).</characteristic>
       </characteristics>
     </profile>
+    <profile name="Armadura de exterminador" id="8d617ee3-570c-4ba5-a487-143f3637a87b" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Una miniatura equipada con armadura de exterminador dispone de una tirada de salvación por armadura de 2+ y una tirada de salvación invulnerable de 5+. Las miniaturas con armadura de exterminador están sujetas a la regla especial universal Implacables y no pueden realizar persecuciones arrolladoras. Cualquier miniatura equipada con armadura de exterminador puede ser teleportada al campo de batalla: siempre podrá empezar el juego en reserva y llegar mediante las reglas de despliegue rápido, incluso si la misión no lo contempla. Los exterminadores cuentan como dos miniaturas a efectos de capacidad de transporte, y no pueden embarcarse ni en Rhinos ni en Razorbacks.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Signum" id="4885bcb7-7164-4774-852b-533241a08a0c" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Una miniatura puede utilizar un signum en vez de disparar para que una miniatura de su escuadra actúe con HP5 durante el resto de la fase de disparo. Debe declararse que se va a utilizar el signum antes de resolver ninguna tirada para impactar.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Narthecium" id="4a7c96b2-9350-4975-bdb0-24fb73936935" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Mientras el apotecario siga con vida, todas las miniaturas de su escuadra están sujetas a la regla especial universal ¡No hay dolor!</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Escudo de asedio" id="1895f92c-9f26-4a9b-bdc6-1d9c3c289422" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Muchos Vindicators están equipados con una enorme pala excavadora que les permite apartar los escombros y otros detritos del campo de batalla sin riesgo. Un Vindicator con un escudo de asedio supera automáticamente los chequeos por terreno peligroso.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Multiláser" id="3ba4cb8c-335f-49de-9cce-b11fbf880aca" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">90cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">6</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">6</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 3</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Munición Kraken" id="8a127fe4-847f-4cef-91c2-8b86936d65d3" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">75cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Fuego Rápido</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Munición Infierno" id="08987489-e1b4-4922-82d5-46daa5ae228f" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">X</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Fuego Rápido, Envenenada (2+)</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Munición Aliento de Dragón" id="dd454f61-25fd-4728-99e7-1fdd8e364e27" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Fuego Rápido, Ignora cobertura</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Munición Venganza" id="cdf1b2b8-c3e8-4a09-b1a3-52280741b742" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">45cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Fuego Rápido, Sobrecalentamiento</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Minas de racimo" id="2e0e744d-c201-4d7d-adf6-1f882adc3a2d" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">n/a</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">-</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Ignora cobertura</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Minas de racimo" id="ea447e11-5220-453b-be1b-8b203293d991" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Cada Escuadrón de Exploradores Motorizados equipado con minas de racimo puede colocar una trampa explosiva en una zona de terreno antes de iniciarse la partida. Recuerda que un Escuadrón de Exploradores Motorizados que se divida en escuadras de combate se sigue considerando una sola unidad a efectos de las minas de racimo. Al inicio de la partida, después de colocar la escenografía, declara que tus exploradores han colocado trampas explosivas y anota en secreto el lugar donde las has colocado. En cada elemento de escenografía solo puede colocarse una trampa explosiva.
+
+Las minas de racimo se detonan automáticamente la primera vez que una unidad (amiga o enemiga) entra en contacto con el terreno con la trampa explosiva. Al detonarse, las minas de racimo causan 2D6 impactos sobre la desafortunada unidad cuando esta haya finalizado su movimiento. Los impactos se consideran disparos y están sujetos al perfil de la entrada de arma.
+
+Si un vehículo detona las minas de racimo, los impactos siempre se resuelven contra el blindaje posterior para representar que la munición ha explotado en su blindaje más débil. Cuando se haya resuelto el efecto de las minas de racimo, se asume que ya se han gastado y no tienen ningún otro efecto.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Armadura caparazón" id="6857776c-e811-4733-945d-7ab19bc885fb" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Las miniaturas equipadas con armadura caparazón tienen una salvación por armadura de 4+.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Armadura antifrag" id="c29ede85-83c7-41bc-a928-cff9befd4352" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Las miniaturas equipadas con armadura antifrag tienen una salvación por armadura de 5+.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Capa de camuflaje" id="a7c96766-2ba9-4f4a-9970-97133fe17694" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Una miniatura equipada con capa de camuflaje obtiene la regla especial universal Sigilo.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Baliza localizadora" id="e308635b-7d31-459e-a511-9e17fefd931e" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Si una unidad entra en el campo de batalla mediante un despliegue rápido a 15 cm o menos de una miniatura equipada con una baliza localizadora, no se dispersará. La baliza localizadora debe estar ya situada sobre el tablero al inicio del turno en el que vaya a utilizarse.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Munición especial" id="0ad85afb-820b-41d0-a7ca-3bd6eadffb23" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Cada vez que una escuadra de Veteranos de la Guardia dispara, el jugador que la controla elige el tipo de munición que va a usar. La munición especial elegida sustituye el perfil del bólter (incluidos los bólteres que formen parte de una combiarma). Todas las miniaturas de la escuadra deben usar el mismo tipo de munición durante la misma fase de disparo.</characteristic>
+      </characteristics>
+    </profile>
     <profile name="Honor del Capítulo" id="933b-eeef-e5f5-7a50" hidden="false" typeId="c970-b832-a956-1ac8" typeName="Habilidad">
       <characteristics>
         <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Un Capellan personifica el honor del capitulo. El Capellán y todos los miembros de la escuadra a la que se ha unido están sujetos a Coraje.</characteristic>
@@ -822,6 +924,19 @@ Por tanto, un Land Raider que se haya movido a velocidad de combate puede dispar
       </characteristics>
     </profile>
 
+    <profile name="Bólter huracán" id="cd4ba0b5-c5ae-4255-8838-b8900536e592" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+      <characteristics>
+        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Cada bólter huracán consta de tres bólteres acoplados que disparan como una sola arma.</characteristic>
+      </characteristics>
+    </profile>
+    <profile name="Bólter huracán" id="291942da-fb48-4f7f-9e32-fd94377bd25d" hidden="false" page="35" publicationId="822e-763d-4a6a-b7fc" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
+      <characteristics>
+        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60cm</characteristic>
+        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
+        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Fuego Rápido 3</characteristic>
+      </characteristics>
+    </profile>
   </sharedProfiles>
   <sharedRules>
     <rule name="Fuego Rápido" id="e15d-1437-cfb2-b8dd" hidden="false" page="28" publicationId="1595-b68b-b80b-025d">
@@ -1283,6 +1398,7 @@ Si decides dividir una unidad en escuadras de combate, a partir de ese momento c
   <sharedSelectionEntries>
     <selectionEntry name="Misil cazador asesino" id="f4a3-48a3-bdaf-c717" hidden="false" import="true" type="upgrade">
       <infoLinks>
+        <infoLink name="Misil Cazador Asesino" id="b3163f07-28fa-41ca-848e-dd9a7afcc704" hidden="false" targetId="30f6-7094-77e3-82d8" type="profile" />
         <infoLink name="Misil Cazador Asesino" id="3649-a4c3-f338-143c" hidden="false" targetId="fffa-5f18-59af-8106" type="profile"/>
       </infoLinks>
     </selectionEntry>
@@ -1304,6 +1420,400 @@ Si decides dividir una unidad en escuadras de combate, a partir de ese momento c
     <selectionEntry name="Pala excavadora" id="f2a9-ff54-43f1-b5a8" hidden="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink name="Pala Excavadora" id="cd63-d6d7-6ed2-0262" hidden="false" targetId="cc87-4ebb-33bb-a377" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Bólter" id="f0fd9c11-59b1-4221-98e1-8fa04c6fa7c3" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Bólter" id="2042ca2e-7066-4cae-8f05-b6354b34de29" hidden="false" targetId="90a7-c0e2-3a06-dc70" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Bólter de asalto" id="9f573c4c-5f06-4ba3-8a0a-f6b878b030ae" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Bólter de Asalto" id="5f4efbb3-b150-492d-871b-7cb48fa703be" hidden="false" targetId="d495-caf7-3c41-4620" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Bólter pesado" id="d55a546e-3987-4c75-a694-2ccfc6fd07d7" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Bólter Pesado" id="44128129-fc5d-44a2-8a8f-ed5cc2d72a31" hidden="false" targetId="3c0e-4865-97cc-bd9c" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Cañón de asalto" id="ef55e8a1-ad27-4237-80cf-f1b5981143d5" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Cañón de Asalto" id="4f866238-f810-4835-a741-0cd6fe0d1ffd" hidden="false" targetId="ca47-3295-c193-8e3b" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Cañón de fusión" id="43d9a11c-1223-44b2-a6f7-4b7000e4cf51" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Cañón de Fusión" id="5aa767b7-1480-4fcc-ab7b-24f2513306d2" hidden="false" targetId="8f30-c05c-e72e-4baf" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Cañón de plasma" id="354c4149-cd20-4586-94c0-30c13d871748" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Cañón de Plasma" id="66e2b4cd-32f3-4af9-b55a-8ed7e0c98901" hidden="false" targetId="ff28-6505-3158-bff5" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Lanzallamas" id="cb5aca7a-6d91-47ed-a4b0-f64e5181a055" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Lanzallamas" id="335f38e1-22b2-4b0f-9f5b-62f3c4744f1a" hidden="false" targetId="c6ed-e1e6-bd68-1891" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Lanzallamas pesado" id="e0a12207-1391-4439-8a3b-8f40cba76bca" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Lanzallamas Pesado" id="c96bd70d-94d1-4866-943e-13eff22ab04f" hidden="false" targetId="ea35-d96a-285e-1a63" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Pistola bólter" id="9dd14127-5e61-4f0d-820e-4d1d7930a698" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Pistola Bólter" id="0aa89a38-f033-4fa5-a72b-ebf1b0c62fa0" hidden="false" targetId="42da-250f-adf8-65a7" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Pistola de plasma" id="2cc5001f-9d56-4308-9ba2-91f8f643aa24" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Pistola de Plasma" id="72159076-e664-4a3a-b9ff-396e5e0fcf71" hidden="false" targetId="3bbd-3f62-f9b0-4805" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Rifle de fusión" id="aa179f74-a0da-49f3-a9dc-793e9f55f882" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Rifle de Fusión" id="736abac3-b36b-4970-8253-1cfa0c0541ae" hidden="false" targetId="d70e-78b0-03b3-f2b2" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Rifle de plasma" id="f1c1512a-a144-4953-a743-4a5d151bf7d0" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Rifle de Plasma" id="54a51b14-85f2-49e6-a39d-973b8136cd00" hidden="false" targetId="223c-ecb9-2104-7007" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Servoarmadura" id="6a70e102-5d29-4a7c-ab6b-076336596015" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Servoarmadura" id="a93e93e5-7a3d-4d39-893b-f24b8c629336" hidden="false" targetId="35b6-b813-1033-e16a" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Puño de combate" id="4bd5789a-a2aa-4f7e-b8ec-c895bdc12cae" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Puño de Combate" id="601c7f6f-0364-4db3-9ef5-0ddade0d9ebd" hidden="false" targetId="dfa9-ab46-df3f-727f" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Martillo de trueno" id="7ecafd73-1a77-4f91-9800-4e8696ebddda" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Martillo de Trueno" id="2cb3f25d-ca9b-46d5-8a19-e358d2d6ad43" hidden="false" targetId="562f-8ac0-91b5-c835" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Escudo de tormenta" id="23585150-9804-4a7e-b60b-29994f48bde6" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Escudo de Tormenta" id="8ba9bae9-3a4b-497b-8435-38e0776ec588" hidden="false" targetId="d95f-e2d7-fdfe-87d9" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Bombas de fusión" id="1df535b4-9762-4052-99f5-19e0b1d5a183" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Bomba de Fusión" id="bc7edf86-ac5c-4724-837e-2df14629eb21" hidden="false" targetId="178c-4e2d-91ce-bc1b" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Servobrazo" id="4e1fa5a5-54f1-4dec-8bdb-64f97b5632a8" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Servobrazo" id="eccfbf46-cbc8-47e9-9035-b62554798a94" hidden="false" targetId="8d68-53db-c7e0-0678" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Lanzamisiles" id="d9aa1b5c-4d70-40f0-85b9-468c42a96a09" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Lanzamisiles Fragmentación" id="8a599e94-fe75-4298-8f00-c1ac0f36c35b" hidden="false" targetId="e474b109-dc6e-4a0d-928c-1e8c5b08acbf" type="profile"/>
+        <infoLink name="Lanzamisiles Perforante" id="2fbbf9a1-5d02-47c8-a863-f9eee87462b0" hidden="false" targetId="ddc7ae3e-7035-4486-9b06-07cb064c8097" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Cañón automático" id="c78544f7-6fc9-4147-b2f9-4a1e3a283f59" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Cañón Automático" id="bdc86539-b5bd-4467-ab5a-c06c0e9a1f91" hidden="false" targetId="33e3-aa73-1b0e-2e83" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Cañón láser" id="547088bb-3771-4e08-a094-795742a45b36" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Cañón Láser" id="213d3a1c-0638-43fd-a026-1c7e459b052a" hidden="false" targetId="b210-a1f3-d328-5739" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Cañón tormenta infernal" id="30cb4465-d5b6-4ca8-8de5-1a22186b7fc2" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Cañón tormenta infernal" id="633bfd3f-b333-40c9-8a4f-8213ae226d60" hidden="false" targetId="e0e4f9ff-55b9-42e5-8e47-15d13a470e9e" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Arma de combate cuerpo a cuerpo" id="883cc55e-3355-4d80-bf46-24ae0117730b" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Arma de combate cuerpo a cuerpo" id="cb19b114-7605-45b9-ad26-35577faa1f48" hidden="false" targetId="232a-872d-f770-2ce7" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Arma de energía" id="0ba61da8-e509-4e6b-a89d-8e7199a2ed64" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Arma de energía" id="acbae295-c03a-4142-bcc8-ee2b1b8b87c6" hidden="false" targetId="8e64-1c75-85f5-7ac0" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Puño sierra" id="fb337f4e-e126-4f89-85e5-2356ee9d75cf" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Puño Sierra" id="175b2d23-e746-49ee-8488-a346baee427c" hidden="false" targetId="e84b-c9b9-c6f8-1a0c" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Crozius Arcanum" id="49c4c797-e27b-49ed-8547-4dc18e5f72f9" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Crozius Arcanum" id="8b43121c-93d1-4c03-b21c-e1dc6fd5c289" hidden="false" targetId="e9d2-05f5-51d6-8c9f" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Descargadores de metralla" id="7f1dee53-ff45-4661-b2e5-fde8539417db" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Descargadores de Metralla" id="ca473194-3787-4ca8-a9fd-413ecf6a0655" hidden="false" targetId="51e2-2c9b-ae69-5354" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Baliza de teleportación" id="65283f18-fb26-5438-8017-883d05ebde79" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Baliza de Teleportación" id="a4d50ba8-9207-518a-92ce-2d827dd266c7" hidden="false" targetId="d14e-d59a-7b95-bcb0" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Armadura artesanal" id="b0784a79-4b6e-5157-9afe-f513ce5c81e7" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Armadura Artesanal" id="380beff4-79e8-541a-b5b9-71c841c15d81" hidden="false" targetId="c527-cfdf-ce43-76b7" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Aura de hierro" id="8339dd80-d37d-5fcc-8979-5b3f2db4da24" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Aura de Hierro" id="f71cde7f-f82d-5e16-98d9-6e68db65f8d6" hidden="false" targetId="348b-da15-cc84-c027" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Granadas de fragmentación" id="076be029-6121-54c1-9d39-0e6a7f2f4737" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Granadas de asalto" id="ad43da8a-70d2-5c8f-987d-7f71d285c7c2" hidden="false" targetId="6fa5-b37d-1b93-9529" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Granadas perforantes" id="4c32bfc8-30a7-5fff-be3d-c6035661ccea" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Granadas perforantes" id="42dbc25a-7d4c-5399-879b-9f35fdbfa285" hidden="false" targetId="88ef-f347-6da1-b41f" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Demolisher" id="f97386c1-82e7-4e0a-b78b-8ff81383e688" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Demolisher" id="b31ce1d0-8752-42be-8618-d49e04cfd212" hidden="false" targetId="649d4083-2853-461d-8097-66d819ede5f1" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Lanzamisiles viento de muerte" id="b5dd807f-6bae-4ea5-9af7-f8b3d35dc9e2" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Lanzamisiles Viento de Muerte" id="c332996f-b82d-4454-8017-f6036a012081" hidden="false" targetId="6c0e6eb1-bfbb-405d-b32a-23bb10d183a8" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Rifle de francotirador" id="c8afa109-a760-4591-8266-692c5cbcd497" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Rifle de Francotirador" id="c3cf727c-6b8d-45b6-a937-e84fd94abad2" hidden="false" targetId="4626-d95e-5597-ec83" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Armadura de explorador" id="e5b896b0-09f0-474f-b7d8-ec00c86e47cf" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Armadura de Explorador" id="90f863e8-1de8-4494-90bc-d5b9af47f315" hidden="false" targetId="2ced-08ca-3825-72e2" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Bólter huracán" id="c15fb49a-42eb-4b9d-aada-77d5ce2e22c8" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Bólter huracán" id="86878a38-09d1-439c-afc3-f509719113d4" hidden="false" targetId="cd4ba0b5-c5ae-4255-8838-b8900536e592" type="profile"/>
+        <infoLink name="Bólter huracán" id="5c9e61df-57d4-4c56-8441-18f1ff8ac793" hidden="false" targetId="291942da-fb48-4f7f-9e32-fd94377bd25d" type="profile"/>
+        <infoLink name="Acoplada" id="98aa560b-980b-4fdb-803b-b823da1e7487" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
+      </infoLinks>
+      <modifiers>
+        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry name="Escudo de combate" id="fe5ffd55-c539-5074-8e67-cac6c3b1d38d" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Escudo de combate" id="17816e1b-5865-550c-a27a-e16bcfcfe219" hidden="false" targetId="c317-b66f-1fdf-8662" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Espada sierra" id="160f9149-5ca1-556d-a844-0f6f1b5ab9ce" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Espada Sierra" id="cefa05c9-62ef-5c6a-a05c-237cda890a6e" hidden="false" targetId="2b7f-19b0-c335-23bc" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Espada de energía" id="cf3b96e8-75ca-5023-be48-1ec62c281a2a" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Arma de energía" id="b9bd9cdf-a0c5-5906-b236-919c0df444e9" hidden="false" targetId="8e64-1c75-85f5-7ac0" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Capucha psíquica" id="cc4158e1-a9c4-5708-bb91-2ba6fb49e10e" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Capucha Psíquica" id="69fc8d79-7f79-5df7-8331-78abd0dce190" hidden="false" targetId="170f-9ff2-a535-74e4" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Rosarius" id="1edb9f5b-d4d4-5e30-9eee-d25d7cea2243" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Rosarius" id="7322a532-556c-5887-a39d-cbf5a2f87c8e" hidden="false" targetId="c6fa-de9f-e072-202e" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Escopeta" id="aeb2daf2-6d97-4d5f-8c1a-3f216a37d075" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Escopeta" id="8edf02d1-98fe-460f-b91d-1b7f2bff4221" hidden="false" targetId="0e75-5d1d-46fb-e09a" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Lanzamisiles (Fragmentación)" id="5d186ff7-76ab-47a1-869e-8fd3e34e03c3" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Lanzamisiles Fragmentación" id="01335b12-29ad-4402-9774-5a2d37b07dee" hidden="false" targetId="e474b109-dc6e-4a0d-928c-1e8c5b08acbf" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Lanzamisiles (Perforante)" id="9b0c4cae-1a7f-4f77-8b90-3bc7a54900a9" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Lanzamisiles Perforante" id="be0399ca-600b-4065-b0ab-1d0409bb80bb" hidden="false" targetId="ddc7ae3e-7035-4486-9b06-07cb064c8097" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Cañón láser acoplado" id="62bf8544-1c87-4575-9f2b-1887a93989d3" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Cañón Láser" id="2fc67115-4110-491b-848e-4f88da529cbf" hidden="false" targetId="b210-a1f3-d328-5739" type="profile"/>
+        <infoLink name="Acoplada" id="3dd723b7-5b24-451b-931e-c5def238c7d7" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
+      </infoLinks>
+      <modifiers>
+        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry name="Bólter pesado acoplado" id="3eddab81-d82e-4c3c-9f6e-7f5101f752f0" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Bólter Pesado" id="3f0bb90d-50c7-4eff-9872-da43b6aced07" hidden="false" targetId="3c0e-4865-97cc-bd9c" type="profile"/>
+        <infoLink name="Acoplada" id="9a848273-d66c-44a0-b19c-689ef4519be7" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
+      </infoLinks>
+      <modifiers>
+        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry name="Cañón de asalto acoplado" id="4d2f2276-67a6-4c2c-8b2e-d1649c82c1d4" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Cañón de Asalto" id="b357a852-7093-45d8-b14d-fcaab40256fc" hidden="false" targetId="ca47-3295-c193-8e3b" type="profile"/>
+        <infoLink name="Acoplada" id="06b4b278-0c91-4317-9471-f52714e800f5" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
+      </infoLinks>
+      <modifiers>
+        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry name="Lanzallamas pesado acoplado" id="7c920bc2-4c08-4d31-bae6-f6962b4e78fe" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Lanzallamas Pesado" id="e4e643d3-ca76-49c6-99c1-8d030c26125f" hidden="false" targetId="ea35-d96a-285e-1a63" type="profile"/>
+        <infoLink name="Acoplada" id="a6ed8661-3da6-4599-92b1-32823064b763" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
+      </infoLinks>
+      <modifiers>
+        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry name="Cañón automático acoplado" id="3ea3154b-cad6-4322-97e4-9c980a9b1822" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Cañón Automático" id="41f78910-2a2b-42d6-bf7d-ad4b64abf733" hidden="false" targetId="33e3-aa73-1b0e-2e83" type="profile"/>
+        <infoLink name="Acoplada" id="d3a9b005-e7a4-44f9-bd75-8461adc14a14" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
+      </infoLinks>
+      <modifiers>
+        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry name="Bólter de asalto acoplado" id="1b738fae-f941-4e2d-92e1-fabefdcc9942" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Bólter de Asalto" id="72f06852-50f7-440f-9e38-7268a20c8c4b" hidden="false" targetId="d495-caf7-3c41-4620" type="profile"/>
+        <infoLink name="Acoplada" id="9dd0b556-552b-4336-b3ee-86c7aa72ba62" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
+      </infoLinks>
+      <modifiers>
+        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry name="Rifle de fusión acoplado" id="40961eda-9b90-46c8-ba70-923fcd050d47" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Rifle de Fusión" id="fc1254e7-ea69-4eaf-9b2d-da59991965e6" hidden="false" targetId="d70e-78b0-03b3-f2b2" type="profile"/>
+        <infoLink name="Acoplada" id="a922a1fb-d77c-432a-8b40-73d9e84f57e4" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
+      </infoLinks>
+      <modifiers>
+        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry name="Lanzallamas acoplado" id="6926e6f6-a7bb-4ce0-8022-722fc02d606b" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Lanzallamas" id="ffea41c1-b695-41b8-b226-aa2f9697d1bf" hidden="false" targetId="c6ed-e1e6-bd68-1891" type="profile"/>
+        <infoLink name="Acoplada" id="29be8d82-5625-4a3f-8a6e-369c16e3481b" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
+      </infoLinks>
+      <modifiers>
+        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry name="Pistola láser acoplada" id="3efbda22-0718-4f92-b16f-633874aa75ec" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Pistola láser" id="964af1f3-a73b-4e8f-bf63-de7a1b9652a8" hidden="false" targetId="0954e541-f56e-4616-97f1-e4c786d6632d" type="profile"/>
+        <infoLink name="Acoplada" id="ca48f4a9-1cc3-4631-ab05-84610792b667" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
+      </infoLinks>
+      <modifiers>
+        <modifier affects="profiles.Arma" field="name" type="append" value="acoplada"/>
+        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry name="Cañón láser y rifle de plasma acoplado" id="7ff7e554-a5c3-461d-921b-77fbd33c4e4f" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Cañón Láser" id="4fc9ab70-140a-4aed-97bc-95665c0e142c" hidden="false" targetId="b210-a1f3-d328-5739" type="profile"/>
+        <infoLink name="Rifle de Plasma" id="bde98fa2-3998-486f-8836-84281b6d1ea0" hidden="false" targetId="223c-ecb9-2104-7007" type="profile">
+          <modifiers>
+            <modifier field="name" type="append" value="acoplado"/>
+            <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Acoplada" id="a340e47e-6421-49a4-ac72-a2ed6beeeb75" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Cañón de fusión acoplado" id="f791d483-a224-4b9a-819a-3aa3d17457da" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Cañón de Fusión" id="ad85a754-4716-478d-b616-92e82a587fc3" hidden="false" targetId="8f30-c05c-e72e-4baf" type="profile"/>
+        <infoLink name="Acoplada" id="78987853-9ca8-4a86-ae0a-ae5a30f7fd3b" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
+      </infoLinks>
+      <modifiers>
+        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry name="Cañón de plasma acoplado" id="b276e600-8167-47e2-a67c-6572bf9a71a6" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Cañón de Plasma" id="2a0b81bd-aede-4b1e-aa36-fe509b9a9f96" hidden="false" targetId="ff28-6505-3158-bff5" type="profile"/>
+        <infoLink name="Acoplada" id="5faaa898-4464-424d-9847-a4ad155b95c7" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
+      </infoLinks>
+      <modifiers>
+        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry name="Rifle de plasma acoplado" id="b3809282-529f-4e28-b0d5-8517a25e1cba" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Rifle de Plasma" id="7b507f96-d27b-463d-aab0-7d3fc6cce9ae" hidden="false" targetId="223c-ecb9-2104-7007" type="profile"/>
+        <infoLink name="Acoplada" id="8755d38a-08ff-4592-af17-c9ff25875b61" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
+      </infoLinks>
+      <modifiers>
+        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry name="Bólter acoplado" id="992335bc-8bd0-4119-8cf0-914f43913224" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Bólter" id="5d7cea3d-4805-4e2c-bc49-24fbb63d8fe8" hidden="false" targetId="90a7-c0e2-3a06-dc70" type="profile"/>
+        <infoLink name="Acoplada" id="e112a771-b824-4cc4-8d89-a334e1ce2287" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
+      </infoLinks>
+      <modifiers>
+        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+      </modifiers>
+    </selectionEntry>
+    <selectionEntry name="Lanzamisiles Tifón" id="ca646e87-0f2f-4b69-ace0-4ab09e540470" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Lanzamisiles Tifón" id="704812d5-320e-44d9-b753-0abba57065ea" hidden="false" targetId="bc19-11c8-8784-5816" type="profile"/>
+        <infoLink name="Lanzamisiles Tifón Fragmentación" id="b6003b26-8493-4186-82ad-533bd56844d7" hidden="false" targetId="5f02b02a-5475-4d5d-ab74-7619ec62da7a" type="profile"/>
+        <infoLink name="Lanzamisiles Tifón Perforante" id="17aae9a4-81d8-43a2-963c-37617b25e7f6" hidden="false" targetId="a2160dfb-ec4e-43ae-b6dd-1b746b63aff7" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Lanzamisiles Ciclón" id="60e971c6-812f-40be-b523-d9ab7fd9f5c5" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Lanzamisiles Ciclón" id="d66eed76-fccb-44d1-9e60-d9cb2b63447a" hidden="false" targetId="754b-816e-74aa-4aab" type="profile"/>
+        <infoLink name="Lanzamisiles Ciclón Fragmentación" id="ee51fa9b-8b63-42ea-b59f-2e6d46d42f74" hidden="false" targetId="43017582-0dc3-431b-9b50-5d62539d22f0" type="profile"/>
+        <infoLink name="Lanzamisiles Ciclón Perforante" id="46d1bf31-6649-4577-8a15-1a273bee33d0" hidden="false" targetId="563332a8-20d0-4c81-85d3-611c8cc23c5c" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Retrorreactor" id="5063e534-87cf-438e-8dc7-49b0e9293b5c" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Retrorreactores" id="31786456-ce9c-494c-abf7-4907cb0fb9ee" hidden="false" targetId="ba22-cd8e-0d95-8e72" type="profile"/>
+        <infoLink name="Unidad retropropulsada" id="032e71f4-eee1-412c-b30a-9c76133a153a" hidden="false" targetId="d6f4-cfda-75c5-f2f1" type="rule"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>

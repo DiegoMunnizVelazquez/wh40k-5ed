@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Angeles Oscuros" id="125b-6623-f648-fc9a" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" library="false" revision="10" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Angeles Oscuros" id="125b-6623-f648-fc9a" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" library="false" revision="17" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Terminado</comment>
   <readme>Esto es for fun. Cualquier error o sugerencia serán bienvenidas
 
@@ -361,7 +361,9 @@ En este sistema se agruparán las reglas del Codex de Angeles Oscuros utilizado 
 
 Por cada Servidor con un servobrazo en la unidad +1
 
-Si el resultado es 6+, un resultado de arma destruida o de inmovilizado (elige el propio jugador) será reparado. Si un resultado de arma destruida consigue repararse mediante este método, el arma podrá dispararse en la siguiente fase de disparo. El Tecnomarine no podrá reparar si está ¡Cuerpo a tierra! o en ¡Retirada!</characteristic>
+Si el Tecnomarine tiene un servoarnés +1
+
+Si el resultado es 5+, un resultado de arma destruida o de inmovilizado (elige el propio jugador) será reparado. Si un resultado de arma destruida consigue repararse mediante este método, el arma podrá dispararse en la siguiente fase de disparo. El Tecnomarine no podrá reparar si está ¡Cuerpo a tierra! o en ¡Retirada!</characteristic>
       </characteristics>
     </profile>
     <profile name="Dreadnought" id="196e-b41a-0c94-8c21" hidden="false" page="30" publicationId="822e-763d-4a6a-b7fc" typeId="3dadd2ff-33f1-41dd-85c7-bee5a7dfa413" typeName="Bípode">
@@ -375,23 +377,6 @@ Si el resultado es 6+, un resultado de arma destruida o de inmovilizado (elige e
         <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
         <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
         <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Vehículo (Bípode)</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Armadura de Exterminador" id="43e6-007c-951b-dd36" hidden="false" page="53" publicationId="822e-763d-4a6a-b7fc" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
-      <characteristics>
-        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Una miniatura equipada con Armadura de Exterminador dispone de una tirada de salvación por armadura de 2+ y una tirada de salvación invulnerable de 5+.
-
-Cualquier miniatura equipada con Armadura de Exterminador puede ser teleportada al campo de batalla. Siempre puede empezar el juego en reserva y llegar siguiendo las reglas de despliegue rápido, incluso si la misión no lo contempla.
-
-Las miniaturas con armadura de exterminador no pueden embarcar en Rhino o Razorback y cuentan como 2 miniaturas</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Bolter Huracán" id="11ca-250d-5f39-edcb" hidden="false" page="35" publicationId="822e-763d-4a6a-b7fc" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
-      <characteristics>
-        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60cm</characteristic>
-        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
-        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
-        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Fuego Rápido 3, Acoplada</characteristic>
       </characteristics>
     </profile>
     <profile name="Cápsula de Desembarco" id="62db-42db-1469-bad4" hidden="false" page="35" publicationId="822e-763d-4a6a-b7fc" typeId="d12a-b581-e1f4-1193" typeName="Transporte">
@@ -551,7 +536,7 @@ Los personajes independientes con armadura de exterminador también pueden despl
             <cost name="Pts" typeId="puntos" value="5"/>
           </costs>
         </entryLink>
-        <entryLink name="Retroreactores" id="a3d3-1c1d-c768-042f" hidden="false" import="true" sortIndex="2" targetId="3f17-3e88-f7da-960b" type="selectionEntry">
+        <entryLink name="Retroreactores" id="a3d3-1c1d-c768-042f" hidden="false" import="true" sortIndex="2" targetId="5063e534-87cf-438e-8dc7-49b0e9293b5c" type="selectionEntry">
           <costs>
             <cost name="Pts" typeId="puntos" value="20"/>
           </costs>
@@ -988,6 +973,11 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                 <condition childId="2356-61a2-0b62-650a" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="475f-181c-69b1-bb38" shared="true" type="equalTo" value="1"/>
               </conditions>
             </modifier>
+            <modifier field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" type="set" value="2+">
+              <conditions>
+                <condition childId="f46b-fe53-a7b8-93ae" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="475f-181c-69b1-bb38" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
           </modifiers>
         </profile>
       </profiles>
@@ -1054,7 +1044,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                         <cost name="Pts" typeId="puntos" value="30"/>
                       </costs>
                     </entryLink>
-                    <entryLink name="Retroreactores" id="2356-61a2-0b62-650a" collective="false" hidden="false" import="true" sortIndex="1" targetId="3f17-3e88-f7da-960b" type="selectionEntry">
+                    <entryLink name="Retroreactores" id="2356-61a2-0b62-650a" collective="false" hidden="false" import="true" sortIndex="1" targetId="5063e534-87cf-438e-8dc7-49b0e9293b5c" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="puntos" value="20"/>
                       </costs>
@@ -1434,7 +1424,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
         <cost name="Pts" typeId="puntos" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink name="Retroreactores" id="6f6b-240b-7ab7-0b20" defaultAmount="1" hidden="false" import="true" sortIndex="3" targetId="3f17-3e88-f7da-960b" type="selectionEntry"/>
+        <entryLink name="Retroreactores" id="6f6b-240b-7ab7-0b20" defaultAmount="1" hidden="false" import="true" sortIndex="3" targetId="5063e534-87cf-438e-8dc7-49b0e9293b5c" type="selectionEntry"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Escuadras de combate" id="87e3-3994-3fca-ce0b" hidden="false" targetId="22a0-0930-12ab-bd9e" type="rule"/>
@@ -2393,7 +2383,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
               </entryLinks>
               <infoLinks>
                 <infoLink name="Exterminador" id="bf93-de3e-8170-74e0" hidden="false" targetId="2b71-fffa-adc1-fa05" type="profile"/>
-                <infoLink name="Armadura de Exterminador" id="8efc-26cf-1a16-e6f9" hidden="false" targetId="43e6-007c-951b-dd36" type="profile"/>
+                <infoLink name="Armadura de exterminador" id="8efc-26cf-1a16-e6f9" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
               </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Puño" id="e496-a7cb-1c26-fdb8" collective="false" defaultSelectionEntryId="38f8-a6e4-d40c-c5f1" hidden="false" import="true">
@@ -2418,7 +2408,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
               </constraints>
               <infoLinks>
                 <infoLink name="Exterminador" id="000e-e0f3-4d63-b24a" hidden="false" targetId="2b71-fffa-adc1-fa05" type="profile"/>
-                <infoLink name="Armadura de Exterminador" id="3cfc-d335-55ed-8269" hidden="false" targetId="43e6-007c-951b-dd36" type="profile"/>
+                <infoLink name="Armadura de exterminador" id="3cfc-d335-55ed-8269" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
               </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Arma" id="b7a3-7e98-047c-482f" collective="false" defaultSelectionEntryId="10d1-b86b-b5e6-5e0f" hidden="false" import="true">
@@ -2432,7 +2422,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                         <cost name="Pts" typeId="puntos" value="5"/>
                       </costs>
                     </entryLink>
-                    <entryLink name="Lanzamisiles Ciclón" id="7d53-078a-eda4-8838" collective="false" hidden="false" import="true" targetId="6902-fdec-18ba-5326" type="selectionEntry">
+                    <entryLink name="Lanzamisiles Ciclón" id="7d53-078a-eda4-8838" collective="false" hidden="false" import="true" targetId="60e971c6-812f-40be-b523-d9ab7fd9f5c5" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="puntos" value="20"/>
                       </costs>
@@ -2471,7 +2461,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
             <selectionEntry name="Exterminador de Asalto" id="93c1-ce2b-0b10-824f" collective="false" hidden="false" import="true" type="model">
               <infoLinks>
                 <infoLink name="Exterminador" id="c4b3-6c58-e6ed-743b" hidden="false" targetId="2b71-fffa-adc1-fa05" type="profile"/>
-                <infoLink name="Armadura de Exterminador" id="2913-aafa-17aa-1390" hidden="false" targetId="43e6-007c-951b-dd36" type="profile"/>
+                <infoLink name="Armadura de exterminador" id="2913-aafa-17aa-1390" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
               </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Arma de Combate" id="caa0-9a05-84e1-b749" collective="false" defaultSelectionEntryId="dea0-69a2-b954-bcb7" hidden="false" import="true">
@@ -2542,7 +2532,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
               </entryLinks>
               <infoLinks>
                 <infoLink name="Exterminador" id="b387-b220-835d-b775" hidden="false" targetId="2b71-fffa-adc1-fa05" type="profile"/>
-                <infoLink name="Armadura de Exterminador" id="e65d-c876-fc44-9964" hidden="false" targetId="43e6-007c-951b-dd36" type="profile"/>
+                <infoLink name="Armadura de exterminador" id="e65d-c876-fc44-9964" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
               </infoLinks>
               <modifiers>
                 <modifier field="hidden" type="set" value="false">
@@ -2573,7 +2563,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
               </entryLinks>
               <infoLinks>
                 <infoLink name="Sargento Exterminador" id="9196-578b-e3eb-4360" hidden="false" targetId="8933-5bbd-4fd9-2f86" type="profile"/>
-                <infoLink name="Armadura de Exterminador" id="ccc2-2b57-5bf2-2be5" hidden="false" targetId="43e6-007c-951b-dd36" type="profile"/>
+                <infoLink name="Armadura de exterminador" id="ccc2-2b57-5bf2-2be5" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
               </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Arma de Combate" id="130d-4724-e210-23ca" collective="false" defaultSelectionEntryId="9536-aaa1-cd62-6e65" hidden="false" import="true">
@@ -2598,7 +2588,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
               </constraints>
               <infoLinks>
                 <infoLink name="Sargento Exterminador" id="6a21-979e-12b3-6b1d" hidden="false" targetId="8933-5bbd-4fd9-2f86" type="profile"/>
-                <infoLink name="Armadura de Exterminador" id="f480-39c4-92b9-f601" hidden="false" targetId="43e6-007c-951b-dd36" type="profile"/>
+                <infoLink name="Armadura de exterminador" id="f480-39c4-92b9-f601" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
               </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Arma de Combate" id="845f-7ed3-916b-20d3" collective="false" defaultSelectionEntryId="7a65-6f72-095a-d6da" hidden="false" import="true">
@@ -2718,11 +2708,18 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
             <constraint id="94ab-35d0-d976-40fc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Cañón Automático Acoplado" id="7766-9899-c57a-bc9b" collective="false" hidden="false" import="true" sortIndex="4" targetId="9aa1-299c-c1cb-d85b" type="selectionEntry"/>
+            <entryLink name="Cañón automático acoplado" id="7766-9899-c57a-bc9b" collective="false" hidden="false" import="true" sortIndex="4" targetId="3ea3154b-cad6-4322-97e4-9c980a9b1822" type="selectionEntry">
+              <constraints>
+                <constraint id="dd511964-f13b-4119-89ae-f6d6efcac6d6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
             <entryLink name="Cañón de Fusión" id="3f16-0f87-6f23-9dba" collective="false" hidden="false" import="true" sortIndex="2" targetId="fee3-62f1-28c9-c4d1" type="selectionEntry"/>
             <entryLink name="Cañón de Plasma" id="c9cd-d30d-62b6-d02e" collective="false" hidden="false" import="true" sortIndex="3" targetId="bb10-b315-7583-5584" type="selectionEntry"/>
             <entryLink name="Cañón de Asalto" id="d899-62b3-72d5-9d59" collective="false" hidden="false" import="true" sortIndex="1" targetId="b9d8-4545-a27e-b356" type="selectionEntry"/>
-            <entryLink name="Cañón Láser Acoplado" id="5550-f52f-d646-3682" collective="false" hidden="false" import="true" targetId="3af6-fb74-ae8f-b888" type="selectionEntry">
+            <entryLink name="Cañón láser acoplado" id="5550-f52f-d646-3682" collective="false" hidden="false" import="true" targetId="62bf8544-1c87-4575-9f2b-1887a93989d3" type="selectionEntry">
+              <constraints>
+                <constraint id="55ca038c-1d06-47b3-8a9b-678f3b737688" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
               <costs>
                 <cost name="Pts" typeId="puntos" value="20"/>
               </costs>
@@ -3147,7 +3144,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
             <constraint id="329a-1dd5-8681-f1a7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Lanzamisiles Tifón" id="092f-2a33-2011-b9a9" collective="false" hidden="false" import="true" targetId="a81e-c6c9-2583-3ca1" type="selectionEntry">
+            <entryLink name="Lanzamisiles Tifón" id="092f-2a33-2011-b9a9" collective="false" hidden="false" import="true" targetId="ca646e87-0f2f-4b69-ace0-4ab09e540470" type="selectionEntry">
               <constraints>
                 <constraint id="001f-10df-9f5a-ad5c" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="7c4e-3e52-fe5f-9b1a" shared="true" type="max" value="1"/>
               </constraints>
@@ -3286,8 +3283,15 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
             <constraint id="fe0e-1955-9d29-669e-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Bolter Pesado Acoplado" id="17d1-2cb9-ff89-7c0e" collective="false" hidden="false" import="true" targetId="badb-9789-58cb-53c2" type="selectionEntry"/>
-            <entryLink name="Cañón Láser Acoplado" id="2bb2-d4d9-770b-0aad" collective="false" hidden="false" import="true" targetId="3af6-fb74-ae8f-b888" type="selectionEntry">
+            <entryLink name="Bólter pesado acoplado" id="17d1-2cb9-ff89-7c0e" collective="false" hidden="false" import="true" targetId="3eddab81-d82e-4c3c-9f6e-7f5101f752f0" type="selectionEntry">
+              <constraints>
+                <constraint id="13f3b27a-88fd-4604-b60b-a2de4528a232" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Cañón láser acoplado" id="2bb2-d4d9-770b-0aad" collective="false" hidden="false" import="true" targetId="62bf8544-1c87-4575-9f2b-1887a93989d3" type="selectionEntry">
+              <constraints>
+                <constraint id="53995455-8f13-496d-bcba-4cb0ba4c8347" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
               <costs>
                 <cost name="Pts" typeId="puntos" value="30"/>
               </costs>
@@ -3399,7 +3403,10 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
             <constraint id="1749-fa9c-6c9c-6c28-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Cañón Láser Acoplado" id="01a2-f7ad-fd68-e429" collective="false" hidden="false" import="true" targetId="3af6-fb74-ae8f-b888" type="selectionEntry">
+            <entryLink name="Cañón láser acoplado" id="01a2-f7ad-fd68-e429" collective="false" hidden="false" import="true" targetId="62bf8544-1c87-4575-9f2b-1887a93989d3" type="selectionEntry">
+              <constraints>
+                <constraint id="1b9c4ebc-a6a0-4853-9a14-57e21a0df38e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
               <costs>
                 <cost name="Pts" typeId="puntos" value="35"/>
               </costs>
@@ -3549,13 +3556,13 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
             <cost name="Pts" typeId="puntos" value="15"/>
           </costs>
         </entryLink>
-        <entryLink name="Bolter Pesado Acoplado" id="da80-2e64-8210-b7c1" collective="false" hidden="false" import="true" sortIndex="2" targetId="badb-9789-58cb-53c2" type="selectionEntry">
+        <entryLink name="Bólter pesado acoplado" id="da80-2e64-8210-b7c1" collective="false" hidden="false" import="true" sortIndex="2" targetId="3eddab81-d82e-4c3c-9f6e-7f5101f752f0" type="selectionEntry">
           <constraints>
             <constraint id="ba93-94b4-72b4-9096-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="ba93-94b4-72b4-9096-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
         </entryLink>
-        <entryLink name="Cañón Láser Acoplado" id="f06a-8b9c-90b9-8d5a" collective="false" hidden="false" import="true" sortIndex="1" targetId="3af6-fb74-ae8f-b888" type="selectionEntry">
+        <entryLink name="Cañón láser acoplado" id="f06a-8b9c-90b9-8d5a" collective="false" hidden="false" import="true" sortIndex="1" targetId="62bf8544-1c87-4575-9f2b-1887a93989d3" type="selectionEntry">
           <constraints>
             <constraint id="22fa-cf0b-1e69-5dbb-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="2"/>
             <constraint id="22fa-cf0b-1e69-5dbb-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
@@ -3835,7 +3842,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                         <cost name="Pts" typeId="puntos" value="30"/>
                       </costs>
                     </entryLink>
-                    <entryLink name="Retroreactores" id="410c-99c6-417e-307b" collective="false" hidden="false" import="true" targetId="3f17-3e88-f7da-960b" type="selectionEntry">
+                    <entryLink name="Retroreactores" id="410c-99c6-417e-307b" collective="false" hidden="false" import="true" targetId="5063e534-87cf-438e-8dc7-49b0e9293b5c" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="puntos" value="20"/>
                       </costs>
@@ -4126,7 +4133,7 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
         <cost name="Pts" typeId="puntos" value="0"/>
       </costs>
       <infoLinks>
-        <infoLink name="Armadura de Exterminador" id="535c-d4f6-db5e-3439" hidden="false" targetId="43e6-007c-951b-dd36" type="profile"/>
+        <infoLink name="Armadura de exterminador" id="535c-d4f6-db5e-3439" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Bolter" id="8bf1-7c3d-e540-0f33" collective="false" hidden="false" import="true" type="upgrade">
@@ -4185,14 +4192,6 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
         <infoLink name="Motocicleta Marines Espaciales" id="819b-ddc0-50b5-28a4" hidden="false" targetId="5042-8639-f05a-298b" type="profile"/>
         <infoLink name="Bólter" id="321b-f3b0-d3f7-3263" hidden="false" targetId="90a7-c0e2-3a06-dc70" type="profile"/>
         <infoLink name="Baliza de Teleportación" id="2e65-c178-071b-2de7" hidden="false" targetId="d14e-d59a-7b95-bcb0" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Retroreactores" id="3f17-3e88-f7da-960b" collective="false" hidden="false" import="true" type="upgrade">
-      <constraints>
-        <constraint id="8e77-33fb-cb8d-21cd" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <infoLinks>
-        <infoLink name="Retrorreactores" id="726a-fdab-a517-c80b" hidden="false" targetId="ba22-cd8e-0d95-8e72" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Arma Psíquica" id="be4e-94f2-2d2f-cb4f" collective="false" hidden="false" import="true" type="upgrade">
@@ -4290,22 +4289,6 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
         <infoLink name="Bólter Pesado" id="00fd-991f-dc4a-6dd1" hidden="false" targetId="3c0e-4865-97cc-bd9c" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Bolter Pesado Acoplado" id="badb-9789-58cb-53c2" collective="false" hidden="false" import="true" type="upgrade">
-      <constraints>
-        <constraint id="ff08-a593-730b-ae1a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <costs>
-        <cost name="Pts" typeId="puntos" value="0"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Bólter Pesado" id="3b61-6566-bd0f-88bb" hidden="false" targetId="3c0e-4865-97cc-bd9c" type="profile">
-          <modifiers>
-            <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" type="append" value=", Acoplada"/>
-            <modifier field="name" join=" " type="append" value="Acoplado"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry name="Cañón Automático" id="f70f-455c-7955-e91e" collective="false" hidden="false" import="true" type="upgrade">
       <constraints>
         <constraint id="0bbf-82f5-16a6-7074" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -4315,22 +4298,6 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
       </costs>
       <infoLinks>
         <infoLink name="Cañón Automático" id="4ee0-abec-081e-3e0e" hidden="false" targetId="33e3-aa73-1b0e-2e83" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Cañón Automático Acoplado" id="9aa1-299c-c1cb-d85b" collective="false" hidden="false" import="true" type="upgrade">
-      <constraints>
-        <constraint id="0861-0c6c-6bd8-057c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <costs>
-        <cost name="Pts" typeId="puntos" value="0"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Cañón Automático" id="7f37-8f68-0286-b28f" hidden="false" targetId="33e3-aa73-1b0e-2e83" type="profile">
-          <modifiers>
-            <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
-            <modifier field="name" join=" " type="append" value="Acoplado"/>
-          </modifiers>
-        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Cañón de Asalto" id="b9d8-4545-a27e-b356" collective="false" hidden="false" import="true" type="upgrade">
@@ -4344,22 +4311,6 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
         <infoLink name="Cañón de Asalto" id="e3f5-60f7-5778-e5db" hidden="false" targetId="ca47-3295-c193-8e3b" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Cañón de Asalto Acoplado" id="07fb-bcab-8d04-f652" collective="false" hidden="false" import="true" type="upgrade">
-      <constraints>
-        <constraint id="8a5a-0e08-f131-9f08" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <costs>
-        <cost name="Pts" typeId="puntos" value="0"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Cañón de Asalto" id="5543-62bf-4c45-ed89" hidden="false" targetId="ca47-3295-c193-8e3b" type="profile">
-          <modifiers>
-            <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" type="append" value=", Acoplada"/>
-            <modifier field="name" join=" " type="append" value="Acoplado"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry name="Cañón Láser" id="9a7e-c553-d032-789c" collective="false" hidden="false" import="true" type="upgrade">
       <constraints>
         <constraint id="e834-fed5-e80b-29b1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -4371,22 +4322,6 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
         <infoLink name="Cañón Láser" id="f521-1650-3b1f-ac7d" hidden="false" targetId="b210-a1f3-d328-5739" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Cañón Láser Acoplado" id="3af6-fb74-ae8f-b888" collective="false" hidden="false" import="true" type="upgrade">
-      <constraints>
-        <constraint id="0a5f-c9f8-bd47-ffe2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <costs>
-        <cost name="Pts" typeId="puntos" value="0"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Cañón Láser" id="d31e-b95b-a4d4-ecfd" hidden="false" targetId="b210-a1f3-d328-5739" type="profile">
-          <modifiers>
-            <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
-            <modifier field="name" join=" " type="append" value="Acoplado"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry name="Cañón de Plasma" id="bb10-b315-7583-5584" collective="false" hidden="false" import="true" type="upgrade">
       <constraints>
         <constraint id="a3f8-2428-9b18-6855" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -4396,22 +4331,6 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
       </costs>
       <infoLinks>
         <infoLink name="Cañón de Plasma" id="9809-d2db-7bdf-531d" hidden="false" targetId="ff28-6505-3158-bff5" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Lanzallamas Pesado Acoplado" id="ca5b-9e07-ff3b-235f" collective="false" hidden="false" import="true" type="upgrade">
-      <constraints>
-        <constraint id="1871-4d82-983c-0749" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <costs>
-        <cost name="Pts" typeId="puntos" value="0"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Lanzallamas Pesado" id="b139-79b9-9bfe-d45e" hidden="false" targetId="ea35-d96a-285e-1a63" type="profile">
-          <modifiers>
-            <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
-            <modifier field="name" join=" " type="append" value="Acoplado"/>
-          </modifiers>
-        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Lanzamisiles" id="989a-ecb3-a084-9c39" collective="false" hidden="false" import="true" type="upgrade">
@@ -4470,17 +4389,6 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
         <infoLink name="Blindaje Adicional" id="af44-6c18-ed5d-2f7d" hidden="false" targetId="cf47-2dba-970c-bb92" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Bolter Huracán" id="5328-fb02-5e9d-2e62" collective="false" hidden="false" import="true" type="upgrade">
-      <constraints>
-        <constraint id="b236-0e3c-6cf0-cb49" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <costs>
-        <cost name="Pts" typeId="puntos" value="0"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Bolter Huracán" id="fa7d-a852-7d04-9cf5" hidden="false" targetId="11ca-250d-5f39-edcb" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry name="Misil Cazador Asesino" id="109e-11bc-a0a8-ddc5" collective="false" hidden="false" import="true" type="upgrade">
       <costs>
         <cost name="Pts" typeId="puntos" value="0"/>
@@ -4515,19 +4423,6 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
           </constraints>
         </entryLink>
       </entryLinks>
-    </selectionEntry>
-    <selectionEntry name="Lanzamisiles Tifón" id="a81e-c6c9-2583-3ca1" collective="false" hidden="false" import="true" type="upgrade">
-      <constraints>
-        <constraint id="caec-25c7-84ab-bccb" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <costs>
-        <cost name="Pts" typeId="puntos" value="0"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Lanzamisiles Tifón Fragmentación" id="5a0c-9a79-5e55-c689" hidden="false" targetId="5f02b02a-5475-4d5d-ab74-7619ec62da7a" type="profile"/>
-        <infoLink name="Lanzamisiles Tifón Perforante" id="eae0-dcd6-06bb-e59c" hidden="false" targetId="a2160dfb-ec4e-43ae-b6dd-1b746b63aff7" type="profile"/>
-        <infoLink name="Lanzamisiles Tifón" id="a96e-94a8-dde5-8dc3" hidden="false" targetId="bc19-11c8-8784-5816" type="profile"/>
-      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Land Raider Cruzado" id="567a-97a0-be59-c18f" collective="false" hidden="false" import="true" page="82" publicationId="f176-f140-74d8-da7d" type="unit">
       <costs>
@@ -4564,13 +4459,13 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
             <cost name="Pts" typeId="puntos" value="15"/>
           </costs>
         </entryLink>
-        <entryLink name="Cañón de Asalto Acoplado" id="4ab2-eb6d-0b72-fd1b" collective="false" hidden="false" import="true" sortIndex="2" targetId="07fb-bcab-8d04-f652" type="selectionEntry">
+        <entryLink name="Cañón de asalto acoplado" id="4ab2-eb6d-0b72-fd1b" collective="false" hidden="false" import="true" sortIndex="2" targetId="4d2f2276-67a6-4c2c-8b2e-d1649c82c1d4" type="selectionEntry">
           <constraints>
             <constraint id="15c6-1c85-0aab-25e8-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="15c6-1c85-0aab-25e8-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
         </entryLink>
-        <entryLink name="Bolter Huracán" id="a912-0cfa-4992-3633" collective="false" hidden="false" import="true" sortIndex="1" targetId="5328-fb02-5e9d-2e62" type="selectionEntry">
+        <entryLink name="Bolter Huracán" id="a912-0cfa-4992-3633" collective="false" hidden="false" import="true" sortIndex="1" targetId="c15fb49a-42eb-4b9d-aada-77d5ce2e22c8" type="selectionEntry">
           <constraints>
             <constraint id="7b6d-b0c3-db4b-0898-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="2"/>
             <constraint id="7b6d-b0c3-db4b-0898-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
@@ -4624,7 +4519,7 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
         <infoLink name="Personaje independiente" id="f4b1-c38d-4769-fc26" hidden="false" targetId="61b4-c5bb-9d85-8506" type="rule"/>
         <infoLink name="Ritos de batalla" id="8e60-de97-6a7d-bf03" hidden="false" targetId="740d-d36a-f603-7ee7" type="rule"/>
         <infoLink name="Coraje" id="fc2a-cb11-56ee-9685" hidden="false" targetId="b23b-fb5c-4c8c-5ae4" type="rule"/>
-        <infoLink name="Armadura de Exterminador" id="3260-9e3c-b6ed-cba4" hidden="false" targetId="43e6-007c-951b-dd36" type="profile"/>
+        <infoLink name="Armadura de exterminador" id="3260-9e3c-b6ed-cba4" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
       </infoLinks>
       <profiles>
         <profile name="Belial, Señor del Ala de Muerte" id="deb6-081e-8b2b-ecc9" hidden="false" page="42" publicationId="822e-763d-4a6a-b7fc" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
@@ -4757,12 +4652,12 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
                 <cost name="Pts" typeId="puntos" value="0"/>
               </costs>
               <entryLinks>
-                <entryLink name="Bolter Pesado Acoplado" id="8d27-0994-4d74-ce74" collective="false" hidden="false" import="true" targetId="badb-9789-58cb-53c2" type="selectionEntry">
+                <entryLink name="Bólter pesado acoplado" id="8d27-0994-4d74-ce74" collective="false" hidden="false" import="true" targetId="3eddab81-d82e-4c3c-9f6e-7f5101f752f0" type="selectionEntry">
                   <constraints>
                     <constraint id="1e3d-3ca2-b29a-175f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                   </constraints>
                 </entryLink>
-                <entryLink name="Cañón de Asalto Acoplado" id="71f1-2d75-0245-5cb7" collective="false" hidden="false" import="true" targetId="07fb-bcab-8d04-f652" type="selectionEntry">
+                <entryLink name="Cañón de asalto acoplado" id="71f1-2d75-0245-5cb7" collective="false" hidden="false" import="true" targetId="4d2f2276-67a6-4c2c-8b2e-d1649c82c1d4" type="selectionEntry">
                   <constraints>
                     <constraint id="8b26-5e6e-8600-938d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                   </constraints>
@@ -4797,7 +4692,7 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
                     <constraint id="ccdb-f8cf-040f-a95b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                 </entryLink>
-                <entryLink name="Bolter de Asalto Acoplado" id="8497-2969-1ea0-86fd" collective="false" hidden="false" import="true" targetId="f7e7-63f8-5ff9-0261" type="selectionEntry">
+                <entryLink name="Bólter de asalto acoplado" id="8497-2969-1ea0-86fd" collective="false" hidden="false" import="true" targetId="1b738fae-f941-4e2d-92e1-fabefdcc9942" type="selectionEntry">
                   <constraints>
                     <constraint id="a2d6-1196-785a-4c3c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                     <constraint id="de81-0266-7fb6-30f1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -4862,22 +4757,6 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-    </selectionEntry>
-    <selectionEntry name="Bolter de Asalto Acoplado" id="f7e7-63f8-5ff9-0261" collective="false" hidden="false" import="true" type="upgrade">
-      <constraints>
-        <constraint id="2ca6-6124-8265-461d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <costs>
-        <cost name="Pts" typeId="puntos" value="0"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Bólter de Asalto" id="416b-457e-efb1-e542" hidden="false" targetId="d495-caf7-3c41-4620" type="profile">
-          <modifiers>
-            <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" type="append" value=", Acoplada"/>
-            <modifier field="name" join=" " type="append" value="Acoplado"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Ezequiel, Gran Maestre Bibliotecario" id="dc77-03b8-e78d-9cf7" collective="false" hidden="false" import="true" page="40" publicationId="822e-763d-4a6a-b7fc" type="unit">
       <constraints>
@@ -4998,19 +4877,6 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
         <infoLink name="Lanzallamas" id="651a-37f2-fcc8-dc76" hidden="false" targetId="c6ed-e1e6-bd68-1891" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Lanzamisiles Ciclón" id="6902-fdec-18ba-5326" collective="false" hidden="false" import="true" type="upgrade">
-      <constraints>
-        <constraint id="ed3b-ea97-9329-e112" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <costs>
-        <cost name="Pts" typeId="puntos" value="0"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Lanzamisiles Ciclón Fragmentación" id="d18c-c1dd-f376-a770" hidden="false" targetId="43017582-0dc3-431b-9b50-5d62539d22f0" type="profile"/>
-        <infoLink name="Lanzamisiles Ciclón Perforante" id="c09d-9fbc-3d1b-4844" hidden="false" targetId="563332a8-20d0-4c81-85d3-611c8cc23c5c" type="profile"/>
-        <infoLink name="Lanzamisiles Ciclón" id="b404-1a40-393d-c469" hidden="false" targetId="754b-816e-74aa-4aab" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry name="Escuadra del Ala de Muerte (Linea)" id="b3e5-efb0-8550-0725" collective="false" hidden="false" import="true" page="28" publicationId="822e-763d-4a6a-b7fc" type="unit">
       <costs>
         <cost name="Pts" typeId="puntos" value="215"/>
@@ -5058,7 +4924,7 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
               </entryLinks>
               <infoLinks>
                 <infoLink name="Exterminador" id="012b-42a7-d618-8f55" hidden="false" targetId="2b71-fffa-adc1-fa05" type="profile"/>
-                <infoLink name="Armadura de Exterminador" id="66f2-3fc7-8ad1-6ebc" hidden="false" targetId="43e6-007c-951b-dd36" type="profile"/>
+                <infoLink name="Armadura de exterminador" id="66f2-3fc7-8ad1-6ebc" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
               </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Puño" id="b4e8-05ed-9ba7-9bca" collective="false" defaultSelectionEntryId="fc52-0905-368b-6e3d" hidden="false" import="true">
@@ -5083,7 +4949,7 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
               </constraints>
               <infoLinks>
                 <infoLink name="Exterminador" id="8597-7028-9ea3-c070" hidden="false" targetId="2b71-fffa-adc1-fa05" type="profile"/>
-                <infoLink name="Armadura de Exterminador" id="a5d2-1714-0ac8-87f0" hidden="false" targetId="43e6-007c-951b-dd36" type="profile"/>
+                <infoLink name="Armadura de exterminador" id="a5d2-1714-0ac8-87f0" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
               </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Arma" id="c146-7db6-99da-1f93" collective="false" defaultSelectionEntryId="4e60-feb1-4963-cda4" hidden="false" import="true">
@@ -5097,7 +4963,7 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
                         <cost name="Pts" typeId="puntos" value="5"/>
                       </costs>
                     </entryLink>
-                    <entryLink name="Lanzamisiles Ciclón" id="a312-d01c-3c4d-fe9e" collective="false" hidden="false" import="true" targetId="6902-fdec-18ba-5326" type="selectionEntry">
+                    <entryLink name="Lanzamisiles Ciclón" id="a312-d01c-3c4d-fe9e" collective="false" hidden="false" import="true" targetId="60e971c6-812f-40be-b523-d9ab7fd9f5c5" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="puntos" value="20"/>
                       </costs>
@@ -5136,7 +5002,7 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
             <selectionEntry name="Exterminador de Asalto" id="14cc-ba38-c668-8bfc" collective="false" hidden="false" import="true" type="model">
               <infoLinks>
                 <infoLink name="Exterminador" id="65fb-9d68-6a31-e85e" hidden="false" targetId="2b71-fffa-adc1-fa05" type="profile"/>
-                <infoLink name="Armadura de Exterminador" id="e18a-1130-10a7-fd4a" hidden="false" targetId="43e6-007c-951b-dd36" type="profile"/>
+                <infoLink name="Armadura de exterminador" id="e18a-1130-10a7-fd4a" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
               </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Arma de Combate" id="d012-4ec8-9efa-f2a0" collective="false" hidden="false" import="true">
@@ -5207,7 +5073,7 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
               </entryLinks>
               <infoLinks>
                 <infoLink name="Exterminador" id="bf4d-6a76-94c0-3cfd" hidden="false" targetId="2b71-fffa-adc1-fa05" type="profile"/>
-                <infoLink name="Armadura de Exterminador" id="135a-a3c5-ffaf-5dfb" hidden="false" targetId="43e6-007c-951b-dd36" type="profile"/>
+                <infoLink name="Armadura de exterminador" id="135a-a3c5-ffaf-5dfb" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
               </infoLinks>
               <modifiers>
                 <modifier field="hidden" type="set" value="false">
@@ -5238,7 +5104,7 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
               </entryLinks>
               <infoLinks>
                 <infoLink name="Sargento Exterminador" id="b32a-be52-30e8-4f58" hidden="false" targetId="8933-5bbd-4fd9-2f86" type="profile"/>
-                <infoLink name="Armadura de Exterminador" id="43c7-85d2-76f3-4483" hidden="false" targetId="43e6-007c-951b-dd36" type="profile"/>
+                <infoLink name="Armadura de exterminador" id="43c7-85d2-76f3-4483" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
               </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Arma de Combate" id="73c9-eded-fe1e-6901" collective="false" defaultSelectionEntryId="35e7-bd9c-3943-8de7" hidden="false" import="true">
@@ -5263,7 +5129,7 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
               </constraints>
               <infoLinks>
                 <infoLink name="Sargento Exterminador" id="c754-5bf8-7665-e950" hidden="false" targetId="8933-5bbd-4fd9-2f86" type="profile"/>
-                <infoLink name="Armadura de Exterminador" id="e129-53f3-aff0-c413" hidden="false" targetId="43e6-007c-951b-dd36" type="profile"/>
+                <infoLink name="Armadura de exterminador" id="e129-53f3-aff0-c413" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
               </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Arma de Combate" id="8a9d-91f3-683e-1de6" collective="false" defaultSelectionEntryId="aed6-a284-79ef-676e" hidden="false" import="true">
@@ -5363,7 +5229,7 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
               </entryLinks>
               <infoLinks>
                 <infoLink name="Exterminador" id="152a-2fd4-59c4-e625" hidden="false" targetId="2b71-fffa-adc1-fa05" type="profile"/>
-                <infoLink name="Armadura de Exterminador" id="758e-6b07-3fbe-bb7e" hidden="false" targetId="43e6-007c-951b-dd36" type="profile"/>
+                <infoLink name="Armadura de exterminador" id="758e-6b07-3fbe-bb7e" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
               </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Puño" id="3156-d1ee-9dfe-1a44" collective="false" defaultSelectionEntryId="d3c5-95d2-6caa-7d44" hidden="false" import="true">
@@ -5388,7 +5254,7 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
               </constraints>
               <infoLinks>
                 <infoLink name="Exterminador" id="4ff7-6f82-ac70-2237" hidden="false" targetId="2b71-fffa-adc1-fa05" type="profile"/>
-                <infoLink name="Armadura de Exterminador" id="7777-4fe8-39c5-b04c" hidden="false" targetId="43e6-007c-951b-dd36" type="profile"/>
+                <infoLink name="Armadura de exterminador" id="7777-4fe8-39c5-b04c" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
               </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Arma" id="a84e-7fad-22a1-2baf" collective="false" defaultSelectionEntryId="21e9-b128-301b-455b" hidden="false" import="true">
@@ -5402,7 +5268,7 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
                         <cost name="Pts" typeId="puntos" value="5"/>
                       </costs>
                     </entryLink>
-                    <entryLink name="Lanzamisiles Ciclón" id="1806-a0a3-33bb-ae63" collective="false" hidden="false" import="true" targetId="6902-fdec-18ba-5326" type="selectionEntry">
+                    <entryLink name="Lanzamisiles Ciclón" id="1806-a0a3-33bb-ae63" collective="false" hidden="false" import="true" targetId="60e971c6-812f-40be-b523-d9ab7fd9f5c5" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="puntos" value="20"/>
                       </costs>
@@ -5441,7 +5307,7 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
             <selectionEntry name="Exterminador de Asalto" id="7af8-f035-603d-bf65" collective="false" hidden="false" import="true" type="model">
               <infoLinks>
                 <infoLink name="Exterminador" id="e0d3-b038-a8cd-7ee3" hidden="false" targetId="2b71-fffa-adc1-fa05" type="profile"/>
-                <infoLink name="Armadura de Exterminador" id="7601-1bc2-2ec0-94a5" hidden="false" targetId="43e6-007c-951b-dd36" type="profile"/>
+                <infoLink name="Armadura de exterminador" id="7601-1bc2-2ec0-94a5" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
               </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Arma de Combate" id="4fee-3d40-6513-4a69" collective="false" defaultSelectionEntryId="0eb8-a0f9-1679-b393" hidden="false" import="true">
@@ -5512,7 +5378,7 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
               </entryLinks>
               <infoLinks>
                 <infoLink name="Exterminador" id="2601-b111-b5ea-8906" hidden="false" targetId="2b71-fffa-adc1-fa05" type="profile"/>
-                <infoLink name="Armadura de Exterminador" id="ca11-5f0c-0e58-1b43" hidden="false" targetId="43e6-007c-951b-dd36" type="profile"/>
+                <infoLink name="Armadura de exterminador" id="ca11-5f0c-0e58-1b43" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
               </infoLinks>
               <modifiers>
                 <modifier field="hidden" type="set" value="false">
@@ -5543,7 +5409,7 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
               </entryLinks>
               <infoLinks>
                 <infoLink name="Sargento Exterminador" id="8723-10c0-dae5-ea7d" hidden="false" targetId="8933-5bbd-4fd9-2f86" type="profile"/>
-                <infoLink name="Armadura de Exterminador" id="88a8-01fe-3957-d698" hidden="false" targetId="43e6-007c-951b-dd36" type="profile"/>
+                <infoLink name="Armadura de exterminador" id="88a8-01fe-3957-d698" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
               </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Arma de Combate" id="62e7-ea20-fef0-fb73" collective="false" defaultSelectionEntryId="72ef-b91d-6bac-050b" hidden="false" import="true">
@@ -5568,7 +5434,7 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
               </constraints>
               <infoLinks>
                 <infoLink name="Sargento Exterminador" id="c42c-0f22-06a6-56cb" hidden="false" targetId="8933-5bbd-4fd9-2f86" type="profile"/>
-                <infoLink name="Armadura de Exterminador" id="712f-3c0f-b094-5271" hidden="false" targetId="43e6-007c-951b-dd36" type="profile"/>
+                <infoLink name="Armadura de exterminador" id="712f-3c0f-b094-5271" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
               </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Arma de Combate" id="66b4-eee3-b31a-272c" collective="false" defaultSelectionEntryId="0a67-a595-9529-73de" hidden="false" import="true">
@@ -6028,13 +5894,13 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
       <costs>
         <cost name="Pts" typeId="puntos" value="0"/>
       </costs>
+      <infoLinks>
+        <infoLink name="Narthecium" id="0d558e8e-e622-4e90-8eca-e37e343202bd" hidden="false" targetId="4a7c96b2-9350-4975-bdb0-24fb73936935" type="profile"/>
+      </infoLinks>
       <profiles>
-        <profile name="Narthecium / Reductor" id="c9a5-2654-817b-795f" hidden="false" page="25" publicationId="822e-763d-4a6a-b7fc" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+        <profile name="Reductor" id="441aeaf2-72c8-49f2-984a-999682bad958" hidden="false" page="25" publicationId="822e-763d-4a6a-b7fc" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
           <characteristics>
-            <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">El apotecario no puede usar estos elementos de equipo si está batiéndose en retirada, trabado en combate cuerpo a cuerpo o acobardado. Una vez por turno de jugador, puede usar el narthecium para que cualquier miniatura amiga en un radio de 15 cm ignore una tirada de salvación no superada (de cualquier tipo). El narthecium no puede usarse contra ataques que causan muerte instantánea o contra ataques de combate cuerpo a cuerpo que ignoran las tiradas de salvación por armadura.
-
-Un apotecario puede usar el reductor durante la fase de disparo enemiga para recuperar la semilla genética de las miniaturas susceptibles de ser tratadas con el narthecium que hayan muerto en un radio de 15 cm de él. Estas bajas se ignoran al determinar si la unidad tiene que efectuar un chequeo de moral por haber sufrido un 25% de bajas por disparos. Por ejemplo, una unidad que sufra cuatro bajas de nueve, dos de las cuales se encuentran en un radio de 15 cm del apotecario,
-no tendrá que efectuar un chequeo de moral (dos bajas de nueve es menos del 25%).</characteristic>
+            <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un apotecario puede usar el reductor durante la fase de disparo enemiga para recuperar la semilla genética de las miniaturas susceptibles de ser tratadas con el narthecium que hayan muerto en un radio de 15 cm de él. Estas bajas se ignoran al determinar si la unidad tiene que efectuar un chequeo de moral por haber sufrido un 25% de bajas por disparos. Por ejemplo, una unidad que sufra cuatro bajas de nueve, dos de las cuales se encuentran en un radio de 15 cm del apotecario, no tendrá que efectuar un chequeo de moral (dos bajas de nueve es menos del 25%).</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -6551,7 +6417,7 @@ no tendrá que efectuar un chequeo de moral (dos bajas de nueve es menos del 25%
                 <cost name="Pts" typeId="puntos" value="30"/>
               </costs>
             </entryLink>
-            <entryLink name="Retroreactores" id="b7bb-b631-71fa-ddb3" collective="false" hidden="false" import="true" sortIndex="1" targetId="3f17-3e88-f7da-960b" type="selectionEntry">
+            <entryLink name="Retroreactores" id="b7bb-b631-71fa-ddb3" collective="false" hidden="false" import="true" sortIndex="1" targetId="5063e534-87cf-438e-8dc7-49b0e9293b5c" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="20"/>
               </costs>

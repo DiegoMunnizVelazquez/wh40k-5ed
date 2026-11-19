@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="03cf-272b-fe2f-5ba6" name="Eldars" revision="4" battleScribeVersion="2.03" authorName="Diego Muñiz" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com csddmv@gmail.com" authorUrl="csddmv@gmail.com" library="false" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
+<catalogue id="03cf-272b-fe2f-5ba6" name="Eldars" revision="6" battleScribeVersion="2.03" authorName="Diego Muñiz" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com csddmv@gmail.com" authorUrl="csddmv@gmail.com" library="false" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema" type="catalogue">
   <readme>Unidades del Codex Eldar de 4ª edición compatible con el reglamento de Warhammer 40.000 5ª edición.</readme>
   <entryLinks>
     <entryLink id="d5f6-2a01-eeaa-c62c" name="Autarca" hidden="false" collective="false" import="true" targetId="4516-1291-677a-59f7" type="selectionEntry">
@@ -195,9 +195,11 @@
                 <infoLink name="Motocicleta a reacción" id="f3a8-4c14-42c9-c95a" hidden="false" targetId="94ab-9866-67e9-12a3" type="profile"/>
                 <infoLink name="Catapulta shuriken" id="e515-3100-9e2a-0394" hidden="false" targetId="22ea-cb9a-07c6-f873" type="profile">
                   <modifiers>
-                    <modifier type="set" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Asalto 2, Acoplada"/>
+                    <modifier field="name" type="append" value="acoplado"/>
+                    <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
                   </modifiers>
                 </infoLink>
+                <infoLink name="Acoplada" id="e62d0d3c-7ef7-459d-8c87-beaf74123d2a" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="30"/>
@@ -400,9 +402,11 @@
                 <infoLink name="Motocicleta a reacción" id="afde-46ae-4f43-7e47" hidden="false" targetId="94ab-9866-67e9-12a3" type="profile"/>
                 <infoLink name="Catapulta shuriken" id="3421-a1a6-acce-ba3e" hidden="false" targetId="22ea-cb9a-07c6-f873" type="profile">
                   <modifiers>
-                    <modifier type="set" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value="Asalto 2, Acoplada"/>
+                    <modifier field="name" type="append" value="acoplado"/>
+                    <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
                   </modifiers>
                 </infoLink>
+                <infoLink name="Acoplada" id="4496eb1b-8d92-4ce6-bf5c-dd321c0bbfbc" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="30"/>
@@ -1283,18 +1287,29 @@
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="acdb-c2fc-f085-f93f" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="e7af-78a2-1eee-4570" name="Catapulta Shuriken acoplada" hidden="false" targetId="6619-262f-5342-85cf" type="profile"/>
+                <infoLink id="e7af-78a2-1eee-4570" name="Catapulta shuriken" hidden="false" targetId="22ea-cb9a-07c6-f873" type="profile"/>
+                <infoLink name="Acoplada" id="44d7c0e9-6abf-4cf4-9efb-8ffac531344e" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="0"/>
               </costs>
+              <modifiers>
+                <modifier affects="profiles.Arma" field="name" type="append" value="acoplada"/>
+                <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+              </modifiers>
             </selectionEntry>
             <selectionEntry id="7931-1e3b-7115-e9d8" name="Cañón Shuriken" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c421-be4d-deb8-6204" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="8b8f-fd81-ebdb-5dcc" name="Cañón Shuriken acoplado" hidden="false" targetId="42c4-f6b7-6c40-8063" type="profile"/>
+                <infoLink id="8b8f-fd81-ebdb-5dcc" name="Cañón Shuriken" hidden="false" targetId="887f-cee7-1a60-310e" type="profile">
+                  <modifiers>
+                    <modifier field="name" type="append" value="acoplado"/>
+                    <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Acoplada" id="238bfcb7-8165-47ff-bbae-3e8374a865a6" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
@@ -1312,22 +1327,32 @@
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87db-c5b8-6a87-9cc7" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="3eb1-5726-9395-dd62" name="Cañón Shuriken acoplado" hidden="false" targetId="42c4-f6b7-6c40-8063" type="profile"/>
+                <infoLink id="3eb1-5726-9395-dd62" name="Cañón Shuriken" hidden="false" targetId="887f-cee7-1a60-310e" type="profile"/>
+                <infoLink name="Acoplada" id="914c52ca-a374-4c5d-94f4-cdef0b232eda" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
+              <modifiers>
+                <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+                <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+              </modifiers>
             </selectionEntry>
             <selectionEntry id="8926-f398-85b6-2edc" name="Láseres Multitubo acoplados" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b35-0773-ed6e-f79b" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="52ff-3d6d-dfea-32db" name="Láser Multitubo acoplado" hidden="false" targetId="50f3-0626-f9e5-b890" type="profile"/>
+                <infoLink id="52ff-3d6d-dfea-32db" name="Láser Multitubo" hidden="false" targetId="27c2-d981-cc05-d981" type="profile"/>
+                <infoLink name="Acoplada" id="678bfdcf-9791-48c5-9371-897ccb4674b9" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="25"/>
               </costs>
+              <modifiers>
+                <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+                <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+              </modifiers>
             </selectionEntry>
             <selectionEntry id="4bfc-6f67-ba7b-786f" name="Lanzamisiles eldar acoplados" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -1336,14 +1361,17 @@
               <infoLinks>
                 <infoLink name="Lanzamisiles Perforante" id="1386-defd-6f2a-1128" hidden="false" targetId="ddc7ae3e-7035-4486-9b06-07cb064c8097" type="profile">
                   <modifiers>
-                    <modifier type="append" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value=", Acoplada"/>
+                    <modifier field="name" type="append" value="acoplado"/>
+                    <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
                   </modifiers>
                 </infoLink>
                 <infoLink name="Lanzamisiles (plasma)" id="5b0c-c1ab-45e8-341b" hidden="false" targetId="37e5-cdb2-4668-fa33" type="profile">
                   <modifiers>
-                    <modifier type="append" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value=", Acoplada"/>
+                    <modifier field="name" type="append" value="acoplado"/>
+                    <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
                   </modifiers>
                 </infoLink>
+                <infoLink name="Acoplada" id="12e52f00-58ca-4c57-9baf-d654fd85bb64" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="30"/>
@@ -1354,22 +1382,32 @@
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f734-8a5d-e75d-f8e6" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="6867-2706-fa49-7228" name="Lanza Brillante acoplada" hidden="false" targetId="6235-4f90-940c-6f64" type="profile"/>
+                <infoLink id="6867-2706-fa49-7228" name="Lanza Brillante" hidden="false" targetId="3c04-37be-1003-f738" type="profile"/>
+                <infoLink name="Acoplada" id="c5bd070c-ed89-4d0f-b0b8-bd850f0e8279" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="45"/>
               </costs>
+              <modifiers>
+                <modifier affects="profiles.Arma" field="name" type="append" value="acoplada"/>
+                <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+              </modifiers>
             </selectionEntry>
             <selectionEntry id="ff73-3cde-2ae6-4c64" name="Cañones Estelares acoplados" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2182-af12-bc5b-a1e9" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="3652-93aa-4b71-323f" name="Cañón Estelar acoplado" hidden="false" targetId="bdec-b7ef-75d6-e284" type="profile"/>
+                <infoLink id="3652-93aa-4b71-323f" name="Cañón Estelar" hidden="false" targetId="a793-ee92-2168-fa9c" type="profile"/>
+                <infoLink name="Acoplada" id="fc20f12d-18f2-4fa7-ab13-cd5b26f90f18" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="35"/>
               </costs>
+              <modifiers>
+                <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+                <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+              </modifiers>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -3041,7 +3079,13 @@
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink id="9621-9573-10e2-b26e" name="Catapulta Shuriken acoplada" hidden="false" targetId="6619-262f-5342-85cf" type="profile"/>
+                <infoLink id="9621-9573-10e2-b26e" name="Catapulta shuriken" hidden="false" targetId="22ea-cb9a-07c6-f873" type="profile">
+                  <modifiers>
+                    <modifier field="name" type="append" value="acoplada"/>
+                    <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Acoplada" id="3ec9992f-f070-4eb7-98be-d81a032a9d11" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="22"/>
@@ -3151,11 +3195,16 @@
                     <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b859-f7e9-9348-817c" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="4959-6f8c-42a3-d628" name="Catapulta Shuriken acoplada" hidden="false" targetId="6619-262f-5342-85cf" type="profile"/>
+                    <infoLink id="4959-6f8c-42a3-d628" name="Catapulta shuriken" hidden="false" targetId="22ea-cb9a-07c6-f873" type="profile"/>
+                    <infoLink name="Acoplada" id="af95407d-47d9-4400-b4e1-91c3bef3c5a9" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="Pts" typeId="puntos" value="0"/>
                   </costs>
+                  <modifiers>
+                    <modifier affects="profiles.Arma" field="name" type="append" value="acoplada"/>
+                    <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+                  </modifiers>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -3272,9 +3321,15 @@
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink id="0b83-dfe5-ac21-d580" name="Catapulta Shuriken acoplada" hidden="false" targetId="6619-262f-5342-85cf" type="profile"/>
+                <infoLink id="0b83-dfe5-ac21-d580" name="Catapulta shuriken" hidden="false" targetId="22ea-cb9a-07c6-f873" type="profile">
+                  <modifiers>
+                    <modifier field="name" type="append" value="acoplada"/>
+                    <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+                  </modifiers>
+                </infoLink>
                 <infoLink name="Lanza láser (Distancia)" id="fd6a-5f3f-3783-760a" hidden="false" targetId="d5ff-ca35-7026-8c74" type="profile"/>
                 <infoLink name="Lanza Láser" id="d76b-8af0-4f7a-c329" hidden="false" targetId="f54c-3a31-e13c-a7bf" type="profile"/>
+                <infoLink name="Acoplada" id="6b85d04e-9045-44f2-a62d-1c169daed58d" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="Pts" typeId="puntos" value="35"/>
@@ -3322,11 +3377,16 @@
                         <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6087-63b1-a2f7-9e4e" type="max"/>
                       </constraints>
                       <infoLinks>
-                        <infoLink id="e882-857f-8f9a-701f" name="Catapulta Shuriken acoplada" hidden="false" targetId="6619-262f-5342-85cf" type="profile"/>
+                        <infoLink id="e882-857f-8f9a-701f" name="Catapulta shuriken" hidden="false" targetId="22ea-cb9a-07c6-f873" type="profile"/>
+                        <infoLink name="Acoplada" id="3fbde2ce-e71c-47f3-a310-a3bc1d3acc9b" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
                       </infoLinks>
                       <costs>
                         <cost name="Pts" typeId="puntos" value="0"/>
                       </costs>
+                      <modifiers>
+                        <modifier affects="profiles.Arma" field="name" type="append" value="acoplada"/>
+                        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+                      </modifiers>
                     </selectionEntry>
                     <selectionEntry id="a285-617c-6074-67ee" name="Cañón Shuriken" hidden="false" collective="false" import="true" type="upgrade">
                       <constraints>
@@ -3794,7 +3854,21 @@
               <infoLinks>
                 <infoLink id="6d34-8ad9-5ad6-457b" name="Cañón Estelar" hidden="false" targetId="a793-ee92-2168-fa9c" type="profile">
                   <modifiers>
-                    <modifier type="append" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value=", Acoplada">
+                    <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada">
+                      <conditions>
+                        <condition field="selections" scope="e793-87ba-853b-4dff" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="971f-7939-d89c-d6bb" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" type="append" value="acoplado">
+                      <conditions>
+                        <condition field="selections" scope="e793-87ba-853b-4dff" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="971f-7939-d89c-d6bb" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Acoplada" id="5cc6b245-3d21-47c3-a6be-665d594d6327" hidden="true" targetId="a06f-e29d-bcf4-ed75" type="rule">
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="false">
                       <conditions>
                         <condition field="selections" scope="e793-87ba-853b-4dff" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="971f-7939-d89c-d6bb" type="equalTo"/>
                       </conditions>
@@ -3813,7 +3887,21 @@
               <infoLinks>
                 <infoLink id="9916-df4e-efa9-d5ae" name="Cañón Shuriken" hidden="false" targetId="887f-cee7-1a60-310e" type="profile">
                   <modifiers>
-                    <modifier type="append" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value=", Acoplada">
+                    <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada">
+                      <conditions>
+                        <condition field="selections" scope="e793-87ba-853b-4dff" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="25de-eb65-5219-fbe7" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" type="append" value="acoplado">
+                      <conditions>
+                        <condition field="selections" scope="e793-87ba-853b-4dff" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="25de-eb65-5219-fbe7" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Acoplada" id="09a872f7-bbde-4fe1-87e4-9c420dfb4a38" hidden="true" targetId="a06f-e29d-bcf4-ed75" type="rule">
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="false">
                       <conditions>
                         <condition field="selections" scope="e793-87ba-853b-4dff" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="25de-eb65-5219-fbe7" type="equalTo"/>
                       </conditions>
@@ -3832,7 +3920,12 @@
               <infoLinks>
                 <infoLink id="8201-a0f5-f236-2129" name="Lanzamisiles Perforante" hidden="false" targetId="ddc7ae3e-7035-4486-9b06-07cb064c8097" type="profile">
                   <modifiers>
-                    <modifier type="append" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value=", Acoplada">
+                    <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada">
+                      <conditions>
+                        <condition field="selections" scope="e793-87ba-853b-4dff" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aa78-c06f-1554-fa6a" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" type="append" value="acoplado">
                       <conditions>
                         <condition field="selections" scope="e793-87ba-853b-4dff" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aa78-c06f-1554-fa6a" type="equalTo"/>
                       </conditions>
@@ -3841,7 +3934,21 @@
                 </infoLink>
                 <infoLink id="6b82-bada-7ac5-0ef4" name="Lanzamisiles (plasma)" hidden="false" targetId="37e5-cdb2-4668-fa33" type="profile">
                   <modifiers>
-                    <modifier type="append" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value=", Acoplada">
+                    <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada">
+                      <conditions>
+                        <condition field="selections" scope="e793-87ba-853b-4dff" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aa78-c06f-1554-fa6a" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" type="append" value="acoplado">
+                      <conditions>
+                        <condition field="selections" scope="e793-87ba-853b-4dff" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aa78-c06f-1554-fa6a" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Acoplada" id="bd33cd26-ef19-4e16-bd9d-621f8d0ca527" hidden="true" targetId="a06f-e29d-bcf4-ed75" type="rule">
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="false">
                       <conditions>
                         <condition field="selections" scope="e793-87ba-853b-4dff" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="aa78-c06f-1554-fa6a" type="equalTo"/>
                       </conditions>
@@ -3860,7 +3967,21 @@
               <infoLinks>
                 <infoLink id="1bbe-4205-00f9-bbab" name="Lanza Brillante" hidden="false" targetId="3c04-37be-1003-f738" type="profile">
                   <modifiers>
-                    <modifier type="append" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value=", Acoplada">
+                    <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada">
+                      <conditions>
+                        <condition field="selections" scope="e793-87ba-853b-4dff" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f46e-7d71-1e9a-09c6" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" type="append" value="acoplado">
+                      <conditions>
+                        <condition field="selections" scope="e793-87ba-853b-4dff" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f46e-7d71-1e9a-09c6" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Acoplada" id="2f7b3cc5-ef87-4ad4-9556-d473545823e0" hidden="true" targetId="a06f-e29d-bcf4-ed75" type="rule">
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="false">
                       <conditions>
                         <condition field="selections" scope="e793-87ba-853b-4dff" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f46e-7d71-1e9a-09c6" type="equalTo"/>
                       </conditions>
@@ -3879,7 +4000,21 @@
               <infoLinks>
                 <infoLink id="a05d-02af-5124-d2b1" name="Láser Multitubo" hidden="false" targetId="27c2-d981-cc05-d981" type="profile">
                   <modifiers>
-                    <modifier type="append" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" value=", Acoplada">
+                    <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada">
+                      <conditions>
+                        <condition field="selections" scope="e793-87ba-853b-4dff" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f3cc-b08c-3820-bd07" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier field="name" type="append" value="acoplado">
+                      <conditions>
+                        <condition field="selections" scope="e793-87ba-853b-4dff" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f3cc-b08c-3820-bd07" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Acoplada" id="bfd5070a-c722-49b4-b72e-ae43288e6562" hidden="true" targetId="a06f-e29d-bcf4-ed75" type="rule">
+                  <modifiers>
+                    <modifier field="hidden" type="set" value="false">
                       <conditions>
                         <condition field="selections" scope="e793-87ba-853b-4dff" value="2" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f3cc-b08c-3820-bd07" type="equalTo"/>
                       </conditions>
@@ -4060,8 +4195,13 @@
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21ff-02c3-9ef3-3885" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="10fc-c8d0-73a4-2a2c" name="Catapulta Shuriken acoplada" hidden="false" targetId="6619-262f-5342-85cf" type="profile"/>
+                <infoLink id="10fc-c8d0-73a4-2a2c" name="Catapulta shuriken" hidden="false" targetId="22ea-cb9a-07c6-f873" type="profile"/>
+                <infoLink name="Acoplada" id="b4dba5e1-1ab2-4709-aa51-26381b66e9d7" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
               </infoLinks>
+              <modifiers>
+                <modifier affects="profiles.Arma" field="name" type="append" value="acoplada"/>
+                <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+              </modifiers>
             </selectionEntry>
             <selectionEntry id="5ea3-464f-d4e8-1cbe" name="Cañón Shuriken" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -4221,8 +4361,13 @@
                 <constraint field="selections" scope="parent" value="1" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3f2-c9fb-27a1-3f77" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="d104-f1d8-e7be-edd6" name="Catapulta Shuriken acoplada" hidden="false" targetId="6619-262f-5342-85cf" type="profile"/>
+                <infoLink id="d104-f1d8-e7be-edd6" name="Catapulta shuriken" hidden="false" targetId="22ea-cb9a-07c6-f873" type="profile"/>
+                <infoLink name="Acoplada" id="23619293-2b58-43f2-b572-0fd183290a33" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
               </infoLinks>
+              <modifiers>
+                <modifier affects="profiles.Arma" field="name" type="append" value="acoplada"/>
+                <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+              </modifiers>
             </selectionEntry>
             <selectionEntry id="7a83-c1eb-13cc-b548" name="Cañón Shuriken" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -4646,36 +4791,12 @@
         <characteristic name="Puntos de disparo" typeId="85c0-7904-8bac-a359">0</characteristic>
       </characteristics>
     </profile>
-    <profile id="6619-262f-5342-85cf" name="Catapulta Shuriken acoplada" publicationId="a951-e6d2-e0d6-b951" page="22" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
-      <characteristics>
-        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">30cm</characteristic>
-        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
-        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
-        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 2, Acoplada</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="42c4-f6b7-6c40-8063" name="Cañón Shuriken acoplado" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
-      <characteristics>
-        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60cm</characteristic>
-        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">6</characteristic>
-        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
-        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 3, Acoplado</characteristic>
-      </characteristics>
-    </profile>
     <profile id="887f-cee7-1a60-310e" name="Cañón Shuriken" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
       <characteristics>
         <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60cm</characteristic>
         <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">6</characteristic>
         <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
         <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Asalto 3</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="bdec-b7ef-75d6-e284" name="Cañón Estelar acoplado" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
-      <characteristics>
-        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">90cm</characteristic>
-        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">6</characteristic>
-        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">2</characteristic>
-        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 2, Acoplada</characteristic>
       </characteristics>
     </profile>
     <profile id="a793-ee92-2168-fa9c" name="Cañón Estelar" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
@@ -4702,28 +4823,12 @@
         <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 1, Lanza</characteristic>
       </characteristics>
     </profile>
-    <profile id="6235-4f90-940c-6f64" name="Lanza Brillante acoplada" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
-      <characteristics>
-        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">90cm</characteristic>
-        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">8</characteristic>
-        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">2</characteristic>
-        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 1, Lanza, Acoplada</characteristic>
-      </characteristics>
-    </profile>
     <profile id="27c2-d981-cc05-d981" name="Láser Multitubo" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
       <characteristics>
         <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">90cm</characteristic>
         <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">6</characteristic>
         <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">6</characteristic>
         <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 4</characteristic>
-      </characteristics>
-    </profile>
-    <profile id="50f3-0626-f9e5-b890" name="Láser Multitubo acoplado" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
-      <characteristics>
-        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">90cm</characteristic>
-        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">6</characteristic>
-        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">6</characteristic>
-        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 4, Acoplada</characteristic>
       </characteristics>
     </profile>
     <profile id="6b12-c15f-bd99-530b" name="Motores Estelares" publicationId="a951-e6d2-e0d6-b951" page="44" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
@@ -4984,7 +5089,7 @@
         <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">150cm</characteristic>
         <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">5</characteristic>
         <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
-        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 1, Área grande</characteristic>
+        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Pesada 1, Área Grande</characteristic>
       </characteristics>
     </profile>
     <profile id="1e8d-597b-bc88-a237" name="Cañón Prisma" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">

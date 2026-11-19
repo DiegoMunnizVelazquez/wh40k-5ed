@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Marines Espaciales" id="8964-cc67-2c68-196d" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" library="false" revision="5" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Marines Espaciales" id="8964-cc67-2c68-196d" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" library="false" revision="15" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Esto es for fun. Cualquier error o sugerencia serán bienvenidas
 
 En este sistema se agruparán las reglas del Codex de Marines Espaciales utilizado en la 5ed de Warhammer 40k</readme>
@@ -258,25 +258,6 @@ En este sistema se agruparán las reglas del Codex de Marines Espaciales utiliza
         <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Una miniatura equipada con armas digitales puede repetir una única tirada para herir no superada en cada fase de asalto</characteristic>
       </characteristics>
     </profile>
-    <profile name="Capa de Camuflaje" id="d9e3-423a-d9bf-c783" hidden="false" page="100" publicationId="f176-f140-74d8-da7d" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
-      <characteristics>
-        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Otorga la regla Sigilo a la unidad</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Munición Infierno" id="8f76-06dc-a401-29fd" hidden="false" page="100" publicationId="f176-f140-74d8-da7d" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
-      <characteristics>
-        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60cm</characteristic>
-        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">X</characteristic>
-        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
-        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Fuego Rápido, Envenenada (2+)</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Signum" id="c63b-0def-3619-e6d0" hidden="false" page="101" publicationId="f176-f140-74d8-da7d" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
-      <characteristics>
-        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Una miniatura puede utilizar un signum en vez de disparar para que una miniatura de su escuadra actue con HP5 durante el resto de la fase de disparo. Debe declararse que se
-va a utilizar el signum antes de resolver ninguna tirada para impactar.</characteristic>
-      </characteristics>
-    </profile>
     <profile name="Guantaletes de Ultramar" id="248e-1729-77d7-3a52" hidden="false" page="84" publicationId="f176-f140-74d8-da7d" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
       <characteristics>
         <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Se trata de unos puños de combate con un par de bólters integrados con el siguiente perfil.</characteristic>
@@ -465,11 +446,6 @@ se dispersará).</characteristic>
         <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
       </characteristics>
     </profile>
-    <profile name="Baliza Localizadora" id="06f0-ab9a-0f6a-44db" hidden="false" page="67" publicationId="f176-f140-74d8-da7d" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
-      <characteristics>
-        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Si una unidad entra en el campo de batalla mediante un despliegue rápido, y a 15 cm o menos de una miniatura que transporte una baliza localizadora, no se dispersará. Recuerda que la baliza localizadora debe estar ya situada en el tablero al inicio del turno en el que va a utilizarse.</characteristic>
-      </characteristics>
-    </profile>
     <profile name="Sargento Explorador" id="3364-9294-829a-1569" hidden="false" page="67" publicationId="f176-f140-74d8-da7d" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
       <characteristics>
         <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
@@ -540,30 +516,6 @@ se dispersará).</characteristic>
         <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
       </characteristics>
     </profile>
-    <profile name="Munición Aliento de Dragón" id="afc7-46e2-e81f-0735" hidden="false" page="63" publicationId="f176-f140-74d8-da7d" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
-      <characteristics>
-        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">60cm</characteristic>
-        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
-        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">5</characteristic>
-        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Fuego Rápido, Ignora Cobertura</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Munición Kraken" id="b86b-b800-b8dc-c685" hidden="false" page="100" publicationId="f176-f140-74d8-da7d" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
-      <characteristics>
-        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">75cm</characteristic>
-        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
-        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">4</characteristic>
-        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Fuego Rápido</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Munición Venganza" id="e368-065f-4f73-c4db" hidden="false" page="100" publicationId="f176-f140-74d8-da7d" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
-      <characteristics>
-        <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">45cm</characteristic>
-        <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
-        <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">3</characteristic>
-        <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Fuego Rápido, Sobrecalentamineto</characteristic>
-      </characteristics>
-    </profile>
     <profile name="Bendición del Omnissiah" id="fb80-c076-7c33-8a76" hidden="false" page="71" publicationId="f176-f140-74d8-da7d" typeId="c970-b832-a956-1ac8" typeName="Habilidad">
       <characteristics>
         <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Si durante la fase de disparo un Tecnomarine está en contacto peana con peana con un vehiculo dañado, puede intentar repararlo en lugar de disparar. Tira 1D6 y suma los modificadores siguientes:
@@ -585,20 +537,6 @@ Si el resultado es 5+, un resultado de arma destruida o de inmovilizado (elige e
         <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
         <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
         <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Vehículo (Bípode)</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Armadura de Exterminador" id="43e6-007c-951b-dd36" hidden="false" publicationId="f176-f140-74d8-da7d" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
-      <characteristics>
-        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Una miniatura equipada con Armadura de Exterminador dispone de una tirada de salvación por armadura de 2+ y una tirada de salvación invulnerable de 5+.
-
-Cualquier miniatura equipada con Armadura de Exterminador puede ser teleportada al campo de batalla. Siempre puede empezar el juego en reserva y llegar siguiendo las reglas de despliegue rápido, incluso si la misión no lo contempla.
-
-Los exterminadores cuentan como dos miniaturas a efectos de capacidad de transporte, y no pueden embarcarse en Rhinos o Razorbacks.</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Bolter Huracán" id="11ca-250d-5f39-edcb" hidden="false" publicationId="f176-f140-74d8-da7d" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
-      <characteristics>
-        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Cada Bolter Huracan consta de tres bolteres acoplados que disparan como una sola arma.</characteristic>
       </characteristics>
     </profile>
     <profile name="Escudo de Combate" id="0416-94da-2f3d-218c" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
@@ -770,11 +708,6 @@ Los exterminadores cuentan como dos miniaturas a efectos de capacidad de transpo
     <profile name="Munición Infierno" id="8860-4287-5c54-dcf4" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
       <characteristics>
         <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">La miniatura equipada con la Munición Infierno reemplaza el perfil del Bolter por este.</characteristic>
-      </characteristics>
-    </profile>
-    <profile name="Munición especial" id="aad6-ab89-7b59-35c6" hidden="false" page="63" publicationId="f176-f140-74d8-da7d" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
-      <characteristics>
-        <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Cada miniatura de la Escuadra de Veteranos de la Guardia esta automáticamente equipada con varios tipos de munición especial. Cuando la Escuadra de Veteranos de la Guardia dispara, el jugador que la controla puede elegir el tipo de munición que usara. La munición especial cambia el perfil del bólter (incluidos los bólteres que forman parte de una combiarma). Todas las miniaturas de la escuadra deben usar el mismo tipo de municion durante una misma fase de disparo.</characteristic>
       </characteristics>
     </profile>
     <profile name="Drakkan Lunar" id="e78a-91fd-eb0b-1422" hidden="false" page="94" publicationId="f176-f140-74d8-da7d" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
@@ -988,13 +921,6 @@ ejército está sujeto a la regla especial doctrina de combate, debes elegir qu�
                       </modifiers>
                     </modifierGroup>
                   </modifierGroups>
-                  <modifiers>
-                    <modifier field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" type="set" value="Retropropulsada (Personaje)">
-                      <conditions>
-                        <condition childId="fcc8-7c88-cafb-5e7c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="c1d1-f843-3bea-ab6e" shared="true" type="equalTo" value="1"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </profile>
               </profiles>
             </selectionEntry>
@@ -1006,7 +932,7 @@ ejército está sujeto a la regla especial doctrina de combate, debes elegir qu�
                 <cost name="Pts" typeId="puntos" value="40"/>
               </costs>
               <infoLinks>
-                <infoLink name="Armadura de Exterminador" id="672f-91d8-57a7-55ee" hidden="false" targetId="43e6-007c-951b-dd36" type="profile"/>
+                <infoLink name="Armadura de exterminador" id="672f-91d8-57a7-55ee" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
               </infoLinks>
               <profiles>
                 <profile name="Señor del Capítulo" id="c255-e8ab-cb09-bcf5" hidden="false" page="52" publicationId="f176-f140-74d8-da7d" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
@@ -1059,13 +985,6 @@ ejército está sujeto a la regla especial doctrina de combate, debes elegir qu�
                       </modifiers>
                     </modifierGroup>
                   </modifierGroups>
-                  <modifiers>
-                    <modifier field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" type="set" value="Retropropulsada (Personaje)">
-                      <conditions>
-                        <condition childId="fcc8-7c88-cafb-5e7c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="c1d1-f843-3bea-ab6e" shared="true" type="equalTo" value="1"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </profile>
               </profiles>
             </selectionEntry>
@@ -1300,18 +1219,17 @@ ejército está sujeto a la regla especial doctrina de combate, debes elegir qu�
               </conditions>
             </modifier>
           </modifiers>
-          <selectionEntries>
-            <selectionEntry name="Retroreactores" id="fcc8-7c88-cafb-5e7c" collective="false" hidden="false" import="true" type="upgrade">
+          <entryLinks>
+            <entryLink name="Retroreactores" id="6e7f1681-31e7-4208-a73d-3d598b3a257e" collective="false" hidden="false" import="true" targetId="5063e534-87cf-438e-8dc7-49b0e9293b5c" type="selectionEntry">
               <constraints>
-                <constraint id="ffeb-73da-8b98-fb5c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                <constraint id="8bf146c3-8baa-48d2-9ee5-f64ecf701bf1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
               <costs>
                 <cost name="Pts" typeId="puntos" value="25"/>
               </costs>
-              <infoLinks>
-                <infoLink name="Retrorreactores" id="9b27-6779-9cd3-446d" hidden="false" targetId="ba22-cd8e-0d95-8e72" type="profile"/>
-              </infoLinks>
-            </selectionEntry>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
             <selectionEntry name="Motocicleta Marines Espaciales" id="85ff-1938-8fe1-b16b" collective="false" hidden="false" import="true" type="upgrade">
               <constraints>
                 <constraint id="9fb2-1d4a-fdc9-dd2b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -1619,13 +1537,9 @@ ejército está sujeto a la regla especial doctrina de combate, debes elegir qu�
           </costs>
           <infoLinks>
             <infoLink name="No Hay Dolor" id="c7c9-2fb3-4c6c-d982" hidden="false" targetId="fe28-c924-099d-aa4e" type="rule"/>
+            <infoLink name="Narthecium" id="5b0975de-0fc3-4f48-b937-99da9c4d8381" hidden="false" targetId="4a7c96b2-9350-4975-bdb0-24fb73936935" type="profile"/>
           </infoLinks>
           <profiles>
-            <profile name="Narthecium" id="a93b-cdd5-294e-4d8a" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
-              <characteristics>
-                <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Mientras el apotecario siga con vida, todas las miniaturas de su escuadra están sujetas a la regla especial universal ¡No hay dolor!</characteristic>
-              </characteristics>
-            </profile>
             <profile name="Apotecario" id="46c1-0006-98ac-d16f" hidden="false" page="55" publicationId="f176-f140-74d8-da7d" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
               <characteristics>
                 <characteristic name="Tipo" typeId="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5">Infantería</characteristic>
@@ -2449,11 +2363,6 @@ ejército está sujeto a la regla especial doctrina de combate, debes elegir qu�
             </modifierGroup>
           </modifierGroups>
           <modifiers>
-            <modifier field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" type="set" value="Retropropulsada (Personaje)">
-              <conditions>
-                <condition childId="24bd-e100-8db9-4831" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="475f-181c-69b1-bb38" shared="true" type="equalTo" value="1"/>
-              </conditions>
-            </modifier>
             <modifier field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" type="set" value="2+">
               <conditions>
                 <condition childId="4e93-ea45-2908-2277" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="475f-181c-69b1-bb38" shared="true" type="equalTo" value="1"/>
@@ -2544,7 +2453,11 @@ ejército está sujeto a la regla especial doctrina de combate, debes elegir qu�
                   </constraints>
                   <entryLinks>
                     <entryLink name="Motocicleta Marines Espaciales" id="a330-c931-3468-1960" collective="false" hidden="false" import="true" targetId="8292-d319-84f5-7f19" type="selectionEntry"/>
-                    <entryLink name="Retroreactores" id="24bd-e100-8db9-4831" collective="false" hidden="false" import="true" targetId="3f17-3e88-f7da-960b" type="selectionEntry"/>
+                    <entryLink name="Retroreactores" id="24bd-e100-8db9-4831" collective="false" hidden="false" import="true" targetId="5063e534-87cf-438e-8dc7-49b0e9293b5c" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="25"/>
+                      </costs>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -3335,7 +3248,7 @@ ejército está sujeto a la regla especial doctrina de combate, debes elegir qu�
             <infoLink name="Granadas de asalto" id="8dbb-0a97-14a2-ad5c" hidden="false" targetId="6fa5-b37d-1b93-9529" type="profile"/>
             <infoLink name="Granadas perforantes" id="5811-4d33-2c42-0b8a" hidden="false" targetId="88ef-f347-6da1-b41f" type="profile"/>
             <infoLink name="Granadas Perforantes y de Fragmentación" id="d1db-1023-55be-8305" hidden="false" targetId="e9fd-053f-940d-6f58" type="profile"/>
-            <infoLink name="Signum" id="a4b1-9818-4c9f-27ab" hidden="false" targetId="c63b-0def-3619-e6d0" type="profile"/>
+            <infoLink name="Signum" id="a4b1-9818-4c9f-27ab" hidden="false" targetId="4885bcb7-7164-4774-852b-533241a08a0c" type="profile"/>
           </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Equipo" id="5f63-91a3-1151-b3b6" collective="false" hidden="false" import="true">
@@ -3552,6 +3465,21 @@ ejército está sujeto a la regla especial doctrina de combate, debes elegir qu�
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink name="Retroreactores" id="95049c31-9c5a-4e1a-846b-5ea339034d2a" collective="false" hidden="false" import="true" targetId="5063e534-87cf-438e-8dc7-49b0e9293b5c" type="selectionEntry">
+          <constraints>
+            <constraint id="ea9d20d0-9e9a-4116-8e9f-11c89a840504" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="0"/>
+          </costs>
+          <modifiers>
+            <modifier field="puntos" type="increment" value="10">
+              <repeats>
+                <repeat childId="model" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" repeats="1" roundUp="false" scope="parent" shared="true" value="1"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <infoLinks>
         <infoLink name="Escuadras de combate" id="c436-42f7-2432-2940" hidden="false" targetId="22a0-0930-12ab-bd9e" type="rule"/>
@@ -3592,13 +3520,6 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
                 <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
                 <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" type="set" value="Retropropulsada">
-                  <conditions>
-                    <condition childId="f01a-216b-c776-b06d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="3346-e62b-b6de-aca3" shared="true" type="equalTo" value="1"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
             </profile>
           </profiles>
           <selectionEntryGroups>
@@ -3673,15 +3594,15 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
         </selectionEntry>
         <selectionEntry name="Transporte Asignado" id="4b5c-1fa2-d19e-d45e" collective="false" hidden="false" import="true" type="upgrade">
           <constraints>
-            <constraint id="ab4b-1944-8e9a-9b6e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="0"/>
+            <constraint id="ab4b-1944-8e9a-9b6e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <costs>
             <cost name="Pts" typeId="puntos" value="0"/>
           </costs>
           <modifiers>
-            <modifier field="ab4b-1944-8e9a-9b6e" type="set" value="1">
+            <modifier field="hidden" type="set" value="true">
               <conditions>
-                <condition childId="f01a-216b-c776-b06d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="3346-e62b-b6de-aca3" shared="true" type="equalTo" value="0"/>
+                <condition childId="95049c31-9c5a-4e1a-846b-5ea339034d2a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="3346-e62b-b6de-aca3" shared="true" type="atLeast" value="1"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -3733,13 +3654,6 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
                 <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
                 <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
               </characteristics>
-              <modifiers>
-                <modifier field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" type="set" value="Retropropulsada">
-                  <conditions>
-                    <condition childId="f01a-216b-c776-b06d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="3346-e62b-b6de-aca3" shared="true" type="equalTo" value="1"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
             </profile>
           </profiles>
           <selectionEntryGroups>
@@ -3850,21 +3764,6 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
-        <selectionEntry name="Retroreactores" id="f01a-216b-c776-b06d" collective="false" hidden="false" import="true" type="upgrade">
-          <constraints>
-            <constraint id="411d-fc92-22d5-2e52" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="Pts" typeId="puntos" value="0"/>
-          </costs>
-          <modifiers>
-            <modifier field="puntos" type="increment" value="10">
-              <repeats>
-                <repeat childId="model" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" repeats="1" roundUp="false" scope="parent" shared="true" value="1"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
       </selectionEntries>
     </selectionEntry>
     <selectionEntry name="Escuadra de Veteranos de la Guardia" id="11e1-69c3-bfd9-fce3" collective="false" hidden="false" import="true" page="63" publicationId="f176-f140-74d8-da7d" type="unit">
@@ -3875,11 +3774,11 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
         <infoLink name="Escuadras de combate" id="b58f-8564-0334-4369" hidden="false" targetId="22a0-0930-12ab-bd9e" type="rule"/>
         <infoLink name="Tácticas de Combate" id="2425-4120-e413-2631" hidden="false" targetId="8bf6-d84e-9cda-1b19" type="rule"/>
         <infoLink name="Y no conocerán el miedo" id="011a-ebd2-8d10-eabe" hidden="false" targetId="5ce7-70c4-4a99-db0d" type="rule"/>
-        <infoLink name="Munición Infierno" id="6e29-d641-0ec3-0b2d" hidden="false" targetId="8f76-06dc-a401-29fd" type="profile"/>
-        <infoLink name="Munición Aliento de Dragón" id="21f4-393a-29ce-6b06" hidden="false" targetId="afc7-46e2-e81f-0735" type="profile"/>
-        <infoLink name="Munición Kraken" id="4cad-1493-729d-7df1" hidden="false" targetId="b86b-b800-b8dc-c685" type="profile"/>
-        <infoLink name="Munición Venganza" id="fed4-8dfc-d663-5cc4" hidden="false" targetId="e368-065f-4f73-c4db" type="profile"/>
-        <infoLink name="Munición especial" id="90e8-6c5b-7db1-a8e5" hidden="false" targetId="aad6-ab89-7b59-35c6" type="profile"/>
+        <infoLink name="Munición Infierno" id="6e29-d641-0ec3-0b2d" hidden="false" targetId="08987489-e1b4-4922-82d5-46daa5ae228f" type="profile"/>
+        <infoLink name="Munición Aliento de Dragón" id="21f4-393a-29ce-6b06" hidden="false" targetId="dd454f61-25fd-4728-99e7-1fdd8e364e27" type="profile"/>
+        <infoLink name="Munición Kraken" id="4cad-1493-729d-7df1" hidden="false" targetId="8a127fe4-847f-4cef-91c2-8b86936d65d3" type="profile"/>
+        <infoLink name="Munición Venganza" id="fed4-8dfc-d663-5cc4" hidden="false" targetId="cdf1b2b8-c3e8-4a09-b1a3-52280741b742" type="profile"/>
+        <infoLink name="Munición especial" id="90e8-6c5b-7db1-a8e5" hidden="false" targetId="0ad85afb-820b-41d0-a7ca-3bd6eadffb23" type="profile"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry name="Sargento Marine Espacial" id="fb86-d1c7-d1c5-d9e1" collective="false" hidden="false" import="true" type="model">
@@ -4259,7 +4158,7 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
           </entryLinks>
           <infoLinks>
             <infoLink name="Sargento Exterminador" id="db05-707f-4a23-57f4" hidden="false" targetId="8933-5bbd-4fd9-2f86" type="profile"/>
-            <infoLink name="Armadura de Exterminador" id="bc4e-5189-f167-e27a" hidden="false" targetId="43e6-007c-951b-dd36" type="profile"/>
+            <infoLink name="Armadura de exterminador" id="bc4e-5189-f167-e27a" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
           </infoLinks>
           <selectionEntries>
             <selectionEntry name="Espada de Energía" id="343d-7501-5d85-90f5" collective="false" hidden="false" import="true" type="upgrade">
@@ -4335,7 +4234,7 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
               </entryLinks>
               <infoLinks>
                 <infoLink name="Exterminador" id="bf93-de3e-8170-74e0" hidden="false" targetId="2b71-fffa-adc1-fa05" type="profile"/>
-                <infoLink name="Armadura de Exterminador" id="ac9c-d2ec-389a-f7d5" hidden="false" targetId="43e6-007c-951b-dd36" type="profile"/>
+                <infoLink name="Armadura de exterminador" id="ac9c-d2ec-389a-f7d5" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
               </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Puño" id="e496-a7cb-1c26-fdb8" collective="false" defaultSelectionEntryId="f6e7-8794-5b2a-dd7d" hidden="false" import="true">
@@ -4380,7 +4279,7 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
               </costs>
               <infoLinks>
                 <infoLink name="Exterminador" id="000e-e0f3-4d63-b24a" hidden="false" targetId="2b71-fffa-adc1-fa05" type="profile"/>
-                <infoLink name="Armadura de Exterminador" id="140a-d067-9fb2-f6a8" hidden="false" targetId="43e6-007c-951b-dd36" type="profile"/>
+                <infoLink name="Armadura de exterminador" id="140a-d067-9fb2-f6a8" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
               </infoLinks>
               <modifiers>
                 <modifier field="55d7-3ab5-5b56-9acc" type="increment" value="1">
@@ -4404,7 +4303,7 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
                         <cost name="Pts" typeId="puntos" value="5"/>
                       </costs>
                     </entryLink>
-                    <entryLink name="Lanzamisiles Ciclón" id="7d53-078a-eda4-8838" collective="false" hidden="false" import="true" targetId="b489-ef23-275b-8e33" type="selectionEntry">
+                    <entryLink name="Lanzamisiles Ciclón" id="7d53-078a-eda4-8838" collective="false" hidden="false" import="true" targetId="60e971c6-812f-40be-b523-d9ab7fd9f5c5" type="selectionEntry">
                       <constraints>
                         <constraint id="6257-8155-8c68-1ba1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -4497,7 +4396,7 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
             <cost name="Pts" typeId="puntos" value="20"/>
           </costs>
           <entryLinks>
-            <entryLink name="Cañón Automático Acoplado" id="0ec2-b1c4-912b-f0e7" collective="false" hidden="false" import="true" targetId="9aa1-299c-c1cb-d85b" type="selectionEntry">
+            <entryLink name="Cañón automático acoplado" id="0ec2-b1c4-912b-f0e7" collective="false" hidden="false" import="true" targetId="3ea3154b-cad6-4322-97e4-9c980a9b1822" type="selectionEntry">
               <constraints>
                 <constraint id="179b-7912-37e3-7e6c-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="2"/>
                 <constraint id="179b-7912-37e3-7e6c-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
@@ -4527,7 +4426,10 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
             <constraint id="e185-ba77-17f3-44af" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Cañón Automático Acoplado" id="86c7-33ec-a81b-4afa" collective="false" hidden="false" import="true" targetId="9aa1-299c-c1cb-d85b" type="selectionEntry">
+            <entryLink name="Cañón automático acoplado" id="86c7-33ec-a81b-4afa" collective="false" hidden="false" import="true" targetId="3ea3154b-cad6-4322-97e4-9c980a9b1822" type="selectionEntry">
+              <constraints>
+                <constraint id="5bedb280-db27-4ec6-aa7f-d2d92146ac56" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
@@ -4557,13 +4459,23 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
             <constraint id="94ab-35d0-d976-40fc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Cañón Automático Acoplado" id="7766-9899-c57a-bc9b" collective="false" hidden="false" import="true" targetId="9aa1-299c-c1cb-d85b" type="selectionEntry">
+            <entryLink name="Cañón automático acoplado" id="7766-9899-c57a-bc9b" collective="false" hidden="false" import="true" targetId="3ea3154b-cad6-4322-97e4-9c980a9b1822" type="selectionEntry">
+              <constraints>
+                <constraint id="eb22d192-bfb1-41c7-bd87-4eb5a184095b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
             </entryLink>
-            <entryLink name="Lanzallamas Pesado Acoplado" id="8bb9-69a0-7400-cfcf" collective="false" hidden="false" import="true" targetId="ca5b-9e07-ff3b-235f" type="selectionEntry"/>
-            <entryLink name="Bolter Pesado Acoplado" id="88b7-948a-1347-7cc8" collective="false" hidden="false" import="true" targetId="badb-9789-58cb-53c2" type="selectionEntry">
+            <entryLink name="Lanzallamas pesado acoplado" id="8bb9-69a0-7400-cfcf" collective="false" hidden="false" import="true" targetId="7c920bc2-4c08-4d31-bae6-f6962b4e78fe" type="selectionEntry">
+              <constraints>
+                <constraint id="813cef07-8943-4188-bfb9-866d3f412689" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Bólter pesado acoplado" id="88b7-948a-1347-7cc8" collective="false" hidden="false" import="true" targetId="3eddab81-d82e-4c3c-9f6e-7f5101f752f0" type="selectionEntry">
+              <constraints>
+                <constraint id="136792e9-03d0-48c7-9e19-dd93ae6f9fd1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
               <costs>
                 <cost name="Pts" typeId="puntos" value="5"/>
               </costs>
@@ -4579,7 +4491,10 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
             </entryLink>
-            <entryLink name="Cañón Láser Acoplado" id="5550-f52f-d646-3682" collective="false" hidden="false" import="true" targetId="3af6-fb74-ae8f-b888" type="selectionEntry">
+            <entryLink name="Cañón láser acoplado" id="5550-f52f-d646-3682" collective="false" hidden="false" import="true" targetId="62bf8544-1c87-4575-9f2b-1887a93989d3" type="selectionEntry">
+              <constraints>
+                <constraint id="49630002-507e-419b-a6d6-d6d373b45e1f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
               <costs>
                 <cost name="Pts" typeId="puntos" value="30"/>
               </costs>
@@ -4609,7 +4524,7 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
             <cost name="Pts" typeId="puntos" value="0"/>
           </costs>
           <infoLinks>
-            <infoLink name="Capa de Camuflaje" id="0bd1-af05-5c9c-7def" hidden="false" targetId="d9e3-423a-d9bf-c783" type="profile"/>
+            <infoLink name="Capa de camuflaje" id="0bd1-af05-5c9c-7def" hidden="false" targetId="a7c96766-2ba9-4f4a-9970-97133fe17694" type="profile"/>
           </infoLinks>
           <modifiers>
             <modifier field="puntos" type="increment" value="3">
@@ -4907,7 +4822,12 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
                   <infoLinks>
                     <infoLink name="Motocicleta Marines Espaciales" id="9458-7c99-b305-6a7c" hidden="false" targetId="5042-8639-f05a-298b" type="profile"/>
                     <infoLink name="Bólter" id="4858-ad33-481a-c6cd" hidden="false" targetId="90a7-c0e2-3a06-dc70" type="profile"/>
+                    <infoLink name="Acoplada" id="0fc9a69e-3b8f-445e-a7c6-0a38f1bbf52e" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
                   </infoLinks>
+                  <modifiers>
+                    <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+                    <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+                  </modifiers>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -4949,7 +4869,7 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
                 <cost name="Pts" typeId="puntos" value="25"/>
               </costs>
               <infoLinks>
-                <infoLink name="Baliza Localizadora" id="36cc-5533-abb6-fd09" hidden="false" targetId="06f0-ab9a-0f6a-44db" type="profile"/>
+                <infoLink name="Baliza localizadora" id="36cc-5533-abb6-fd09" hidden="false" targetId="e308635b-7d31-459e-a511-9e17fefd931e" type="profile"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
@@ -4997,24 +4917,10 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
           <costs>
             <cost name="Pts" typeId="puntos" value="10"/>
           </costs>
-          <profiles>
-            <profile name="Minas de racimo" id="4188-b101-3578-4107" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
-              <characteristics>
-                <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Cada Escuadrón de Exploradores Motorizados equipado con minas de racimo puede colocar una trampa explosiva en una zona de terreno antes de iniciarse la partida. Recuerda que un Escuadrón de Exploradores Motorizada que se divida en escuadras de combate se sigue considerando una sola unidad a efectos de las minas de racimo. Al inicio de la partida, después de colocar la escenografia, declara que tus exploradores han colocado trampas explosivas y anota en secreto el lugar donde las has colocado. En cada elemento de escenografía solo puede
-colocarse una trampa explosiva.
-
-Las minas de racimo se detonan automáticamente la primera vez que una unidad (amiga o enemiga) entra en contacto con el terreno con la trampa explosiva. Al detonarse, las minas de racimo causan 2D6 impactos sobre la desafortunada unidad cuando esta haya finalizado su movimiento.</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Minas de racimo" id="e9af-5a46-d6c5-980b" hidden="false" typeId="d5f97c0b-9fc9-478d-aa34-a7c414d3ea48" typeName="Arma">
-              <characteristics>
-                <characteristic name="Alcance" typeId="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464">n/a</characteristic>
-                <characteristic name="F" typeId="a6383362-5aa8-4ff0-b1d0-00e059fc9d45">4</characteristic>
-                <characteristic name="FP" typeId="6abee736-f8d3-498e-97ac-a5c68445609f">-</characteristic>
-                <characteristic name="Tipo" typeId="077c342f-d7b9-45c6-b8af-88e97cafd3a2">Ignora cobertura</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <infoLinks>
+            <infoLink name="Minas de racimo" id="2d538953-048d-4abb-a940-0421c4e16258" hidden="false" targetId="ea447e11-5220-453b-be1b-8b203293d991" type="profile"/>
+            <infoLink name="Minas de racimo" id="cc15dd40-d082-41e9-be32-4ccf65e406a2" hidden="false" targetId="2e0e744d-c201-4d7d-adf6-1f882adc3a2d" type="profile"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -5651,7 +5557,7 @@ aplica a los gravíticos, cuyos delicados motores gravitatorios se ven dañados 
             <constraint id="329a-1dd5-8681-f1a7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Lanzamisiles Tifón" id="092f-2a33-2011-b9a9" collective="false" hidden="false" import="true" targetId="a81e-c6c9-2583-3ca1" type="selectionEntry">
+            <entryLink name="Lanzamisiles Tifón" id="092f-2a33-2011-b9a9" collective="false" hidden="false" import="true" targetId="ca646e87-0f2f-4b69-ace0-4ab09e540470" type="selectionEntry">
               <constraints>
                 <constraint id="001f-10df-9f5a-ad5c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -5881,12 +5787,12 @@ aplica a los gravíticos, cuyos delicados motores gravitatorios se ven dañados 
             <constraint id="0f37-9fd9-8c56-1d87" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Bolter Pesado Acoplado" id="17d1-2cb9-ff89-7c0e" collective="false" hidden="false" import="true" targetId="badb-9789-58cb-53c2" type="selectionEntry">
+            <entryLink name="Bólter pesado acoplado" id="17d1-2cb9-ff89-7c0e" collective="false" hidden="false" import="true" targetId="3eddab81-d82e-4c3c-9f6e-7f5101f752f0" type="selectionEntry">
               <constraints>
                 <constraint id="159c-4e21-4096-6cdd" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
-            <entryLink name="Cañón de Asalto Acoplado" id="d311-4500-da4e-1900" collective="false" hidden="false" import="true" targetId="07fb-bcab-8d04-f652" type="selectionEntry">
+            <entryLink name="Cañón de asalto acoplado" id="d311-4500-da4e-1900" collective="false" hidden="false" import="true" targetId="4d2f2276-67a6-4c2c-8b2e-d1649c82c1d4" type="selectionEntry">
               <constraints>
                 <constraint id="c89a-dab8-eaad-e2a5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -5894,7 +5800,7 @@ aplica a los gravíticos, cuyos delicados motores gravitatorios se ven dañados 
                 <cost name="Pts" typeId="puntos" value="35"/>
               </costs>
             </entryLink>
-            <entryLink name="Cañón Láser Acoplado" id="2bb2-d4d9-770b-0aad" collective="false" hidden="false" import="true" targetId="3af6-fb74-ae8f-b888" type="selectionEntry">
+            <entryLink name="Cañón láser acoplado" id="2bb2-d4d9-770b-0aad" collective="false" hidden="false" import="true" targetId="62bf8544-1c87-4575-9f2b-1887a93989d3" type="selectionEntry">
               <constraints>
                 <constraint id="8feb-8721-c7fa-3070" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -5902,7 +5808,7 @@ aplica a los gravíticos, cuyos delicados motores gravitatorios se ven dañados 
                 <cost name="Pts" typeId="puntos" value="35"/>
               </costs>
             </entryLink>
-            <entryLink name="Lanzallamas Pesado Acoplado" id="2e75-0321-317a-3ac6" collective="false" hidden="false" import="true" targetId="ca5b-9e07-ff3b-235f" type="selectionEntry">
+            <entryLink name="Lanzallamas pesado acoplado" id="2e75-0321-317a-3ac6" collective="false" hidden="false" import="true" targetId="7c920bc2-4c08-4d31-bae6-f6962b4e78fe" type="selectionEntry">
               <constraints>
                 <constraint id="b7e1-c401-0747-86b2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -5917,8 +5823,14 @@ aplica a los gravíticos, cuyos delicados motores gravitatorios se ven dañados 
                 <cost name="Pts" typeId="puntos" value="35"/>
               </costs>
               <infoLinks>
-                <infoLink name="Cañón Láser" id="5aca-ed98-3744-2101" hidden="false" targetId="b210-a1f3-d328-5739" type="profile"/>
-                <infoLink name="Rifle de Plasma" id="ee37-fd49-bb67-97ca" hidden="false" targetId="223c-ecb9-2104-7007" type="profile"/>
+                <infoLink name="Cañón Láser" id="eff56362-4373-4fee-948d-49ed39bec1ec" hidden="false" targetId="b210-a1f3-d328-5739" type="profile"/>
+                <infoLink name="Rifle de Plasma" id="b5a61d5c-e41f-42c9-b663-0d659b559956" hidden="false" targetId="223c-ecb9-2104-7007" type="profile">
+                  <modifiers>
+                    <modifier field="name" type="append" value="acoplado"/>
+                    <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Acoplada" id="c1e48ca5-4ac4-43c5-98f4-5e58a3d91a0f" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
               </infoLinks>
             </selectionEntry>
           </selectionEntries>
@@ -6031,7 +5943,10 @@ aplica a los gravíticos, cuyos delicados motores gravitatorios se ven dañados 
             <constraint id="d73c-4349-7c2b-50fd" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Cañón Láser Acoplado" id="01a2-f7ad-fd68-e429" collective="false" hidden="false" import="true" targetId="3af6-fb74-ae8f-b888" type="selectionEntry">
+            <entryLink name="Cañón láser acoplado" id="01a2-f7ad-fd68-e429" collective="false" hidden="false" import="true" targetId="62bf8544-1c87-4575-9f2b-1887a93989d3" type="selectionEntry">
+              <constraints>
+                <constraint id="b449c334-91cd-404c-a044-23d551f06edc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
               <costs>
                 <cost name="Pts" typeId="puntos" value="45"/>
               </costs>
@@ -6165,13 +6080,9 @@ aplica a los gravíticos, cuyos delicados motores gravitatorios se ven dañados 
           <costs>
             <cost name="Pts" typeId="puntos" value="10"/>
           </costs>
-          <profiles>
-            <profile name="Escudo de Asedio" id="35c3-1de0-93fa-c026" hidden="false" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
-              <characteristics>
-                <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Un Vindicator con escudo Escudo de Asedio supera automaticamente los chequeos por terreno peligroso.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <infoLinks>
+            <infoLink name="Escudo de asedio" id="a8286b1c-0687-4766-8527-c22bbff973bc" hidden="false" targetId="1895f92c-9f26-4a9b-bdc6-1d9c3c289422" type="profile"/>
+          </infoLinks>
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
@@ -6217,13 +6128,13 @@ aplica a los gravíticos, cuyos delicados motores gravitatorios se ven dañados 
             <cost name="Pts" typeId="puntos" value="15"/>
           </costs>
         </entryLink>
-        <entryLink name="Bolter Pesado Acoplado" id="da80-2e64-8210-b7c1" collective="false" hidden="false" import="true" targetId="badb-9789-58cb-53c2" type="selectionEntry">
+        <entryLink name="Bólter pesado acoplado" id="da80-2e64-8210-b7c1" collective="false" hidden="false" import="true" targetId="3eddab81-d82e-4c3c-9f6e-7f5101f752f0" type="selectionEntry">
           <constraints>
             <constraint id="a7e0-96b9-7d6f-2e12" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
             <constraint id="57de-d9c0-43dc-e9e7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
           </constraints>
         </entryLink>
-        <entryLink name="Cañón Láser Acoplado" id="f06a-8b9c-90b9-8d5a" collective="false" hidden="false" import="true" targetId="3af6-fb74-ae8f-b888" type="selectionEntry">
+        <entryLink name="Cañón láser acoplado" id="f06a-8b9c-90b9-8d5a" collective="false" hidden="false" import="true" targetId="62bf8544-1c87-4575-9f2b-1887a93989d3" type="selectionEntry">
           <constraints>
             <constraint id="ea13-8d2d-ac7a-6993" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
           </constraints>
@@ -6320,7 +6231,7 @@ aplica a los gravíticos, cuyos delicados motores gravitatorios se ven dañados 
               </costs>
               <infoLinks>
                 <infoLink name="Armadura de Antilochus" id="745b-0427-d5e0-d258" hidden="false" targetId="6dc3-bb97-fb46-ab2e" type="profile"/>
-                <infoLink name="Armadura de Exterminador" id="592a-318a-8e02-fc9d" hidden="false" targetId="43e6-007c-951b-dd36" type="profile"/>
+                <infoLink name="Armadura de exterminador" id="592a-318a-8e02-fc9d" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
                 <infoLink name="Baliza de Teleportación" id="510a-3093-790f-9dad" hidden="false" targetId="d14e-d59a-7b95-bcb0" type="profile"/>
               </infoLinks>
               <profiles>
@@ -7016,6 +6927,7 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
         <infoLink name="Granadas perforantes" id="cf74-8771-4c73-882f" hidden="false" targetId="88ef-f347-6da1-b41f" type="profile"/>
         <infoLink name="Granadas Perforantes y de Fragmentación" id="4e5e-8fbe-4e0a-c421" hidden="false" targetId="e9fd-053f-940d-6f58" type="profile"/>
         <infoLink name="Retrorreactores" id="d822-b1b0-5073-221a" hidden="false" targetId="ba22-cd8e-0d95-8e72" type="profile"/>
+        <infoLink name="Unidad retropropulsada" id="6312b2d1-3a38-484c-9c9d-07336d70c831" hidden="false" targetId="d6f4-cfda-75c5-f2f1" type="rule"/>
         <infoLink name="Aura de Hierro" id="943c-7d9a-92f6-88be" hidden="false" targetId="348b-da15-cc84-c027" type="profile"/>
         <infoLink name="Infiltración" id="e8fb-a7fb-d492-e735" hidden="false" targetId="3310-5f06-776a-5b35" type="rule"/>
         <infoLink name="Ve, pero permanece invisible" id="7031-d59e-6a8a-01f1" hidden="false" targetId="a138-27b4-66b6-dd70" type="profile"/>
@@ -7404,13 +7316,6 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
                       </modifiers>
                     </modifierGroup>
                   </modifierGroups>
-                  <modifiers>
-                    <modifier field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" type="set" value="Retropropulsada (Personaje)">
-                      <conditions>
-                        <condition childId="5115-9f73-9158-cb84" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="a1d9-ea5c-5919-8ee3" shared="true" type="equalTo" value="1"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </profile>
               </profiles>
               <selectionEntryGroups>
@@ -7480,7 +7385,11 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
                   </constraints>
                   <entryLinks>
                     <entryLink name="Motocicleta Marines Espaciales" id="68dd-bf36-a5b7-b966" collective="false" hidden="false" import="true" targetId="8292-d319-84f5-7f19" type="selectionEntry"/>
-                    <entryLink name="Retroreactores" id="5115-9f73-9158-cb84" collective="false" hidden="false" import="true" targetId="3f17-3e88-f7da-960b" type="selectionEntry"/>
+                    <entryLink name="Retroreactores" id="5115-9f73-9158-cb84" collective="false" hidden="false" import="true" targetId="5063e534-87cf-438e-8dc7-49b0e9293b5c" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="25"/>
+                      </costs>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -7618,13 +7527,6 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
                       </modifiers>
                     </modifierGroup>
                   </modifierGroups>
-                  <modifiers>
-                    <modifier field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" type="set" value="Retropropulsada (Personaje)">
-                      <conditions>
-                        <condition childId="98a9-3009-749f-ad9b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="63a0-9f7a-bc0e-d176" shared="true" type="equalTo" value="1"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </profile>
               </profiles>
               <selectionEntryGroups>
@@ -7694,7 +7596,11 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
                   </constraints>
                   <entryLinks>
                     <entryLink name="Motocicleta Marines Espaciales" id="53e8-b972-6c44-2547" collective="false" hidden="false" import="true" targetId="8292-d319-84f5-7f19" type="selectionEntry"/>
-                    <entryLink name="Retroreactores" id="98a9-3009-749f-ad9b" collective="false" hidden="false" import="true" targetId="3f17-3e88-f7da-960b" type="selectionEntry"/>
+                    <entryLink name="Retroreactores" id="98a9-3009-749f-ad9b" collective="false" hidden="false" import="true" targetId="5063e534-87cf-438e-8dc7-49b0e9293b5c" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="25"/>
+                      </costs>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -7749,7 +7655,7 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
         <cost name="Pts" typeId="puntos" value="0"/>
       </costs>
       <infoLinks>
-        <infoLink name="Munición Infierno" id="2c2c-0a22-baba-2006" hidden="false" targetId="8f76-06dc-a401-29fd" type="profile"/>
+        <infoLink name="Munición Infierno" id="2c2c-0a22-baba-2006" hidden="false" targetId="08987489-e1b4-4922-82d5-46daa5ae228f" type="profile"/>
         <infoLink name="Munición Infierno" id="47c6-bdfc-db63-e5c3" hidden="false" targetId="8860-4287-5c54-dcf4" type="profile"/>
       </infoLinks>
     </selectionEntry>
@@ -7828,11 +7734,6 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
             </modifierGroup>
           </modifierGroups>
           <modifiers>
-            <modifier field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" type="set" value="Retropropulsada (Personaje)">
-              <conditions>
-                <condition childId="410c-99c6-417e-307b" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="c6aa-a483-2ebf-d164" shared="true" type="equalTo" value="1"/>
-              </conditions>
-            </modifier>
             <modifier field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" type="set" value="2+">
               <conditions>
                 <condition childId="f0c4-7dda-892e-d35c" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="c6aa-a483-2ebf-d164" shared="true" type="equalTo" value="1"/>
@@ -7901,7 +7802,11 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
                   </constraints>
                   <entryLinks>
                     <entryLink name="Motocicleta Marines Espaciales" id="3801-48be-c0fb-73aa" collective="false" hidden="false" import="true" targetId="8292-d319-84f5-7f19" type="selectionEntry"/>
-                    <entryLink name="Retroreactores" id="410c-99c6-417e-307b" collective="false" hidden="false" import="true" targetId="3f17-3e88-f7da-960b" type="selectionEntry"/>
+                    <entryLink name="Retroreactores" id="410c-99c6-417e-307b" collective="false" hidden="false" import="true" targetId="5063e534-87cf-438e-8dc7-49b0e9293b5c" type="selectionEntry">
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="25"/>
+                      </costs>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -7983,7 +7888,7 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
             <cost name="Pts" typeId="puntos" value="20"/>
           </costs>
           <entryLinks>
-            <entryLink name="Cañón Automático Acoplado" id="09e7-0bb5-38e9-633b" collective="false" hidden="false" import="true" targetId="9aa1-299c-c1cb-d85b" type="selectionEntry">
+            <entryLink name="Cañón automático acoplado" id="09e7-0bb5-38e9-633b" collective="false" hidden="false" import="true" targetId="3ea3154b-cad6-4322-97e4-9c980a9b1822" type="selectionEntry">
               <constraints>
                 <constraint id="a60f-e9c3-a9e1-60d2-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="2"/>
                 <constraint id="a60f-e9c3-a9e1-60d2-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
@@ -8013,8 +7918,15 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
             <constraint id="7fb2-1b4f-e6bc-9584" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Lanzallamas Pesado Acoplado" id="3c13-7659-ee9e-ef85" collective="false" hidden="false" import="true" targetId="ca5b-9e07-ff3b-235f" type="selectionEntry"/>
-            <entryLink name="Bolter Pesado Acoplado" id="88b7-6cd6-12c0-ddb9" collective="false" hidden="false" import="true" targetId="badb-9789-58cb-53c2" type="selectionEntry">
+            <entryLink name="Lanzallamas pesado acoplado" id="3c13-7659-ee9e-ef85" collective="false" hidden="false" import="true" targetId="7c920bc2-4c08-4d31-bae6-f6962b4e78fe" type="selectionEntry">
+              <constraints>
+                <constraint id="41c7821f-15ea-46b3-bc82-b95b22ef1f50" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Bólter pesado acoplado" id="88b7-6cd6-12c0-ddb9" collective="false" hidden="false" import="true" targetId="3eddab81-d82e-4c3c-9f6e-7f5101f752f0" type="selectionEntry">
+              <constraints>
+                <constraint id="aa8f6ce0-8792-4f33-910e-8dc1964b85f3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
               <costs>
                 <cost name="Pts" typeId="puntos" value="5"/>
               </costs>
@@ -8030,12 +7942,18 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
             </entryLink>
-            <entryLink name="Cañón Láser Acoplado" id="d9be-6dd8-3d32-0fc3" collective="false" hidden="false" import="true" targetId="3af6-fb74-ae8f-b888" type="selectionEntry">
+            <entryLink name="Cañón láser acoplado" id="d9be-6dd8-3d32-0fc3" collective="false" hidden="false" import="true" targetId="62bf8544-1c87-4575-9f2b-1887a93989d3" type="selectionEntry">
+              <constraints>
+                <constraint id="94083fb1-b44b-4b05-bf57-e861af89ac4b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
               <costs>
                 <cost name="Pts" typeId="puntos" value="30"/>
               </costs>
             </entryLink>
-            <entryLink name="Cañón Automático Acoplado" id="d505-e28f-92a3-4e43" collective="false" hidden="false" import="true" targetId="9aa1-299c-c1cb-d85b" type="selectionEntry">
+            <entryLink name="Cañón automático acoplado" id="d505-e28f-92a3-4e43" collective="false" hidden="false" import="true" targetId="3ea3154b-cad6-4322-97e4-9c980a9b1822" type="selectionEntry">
+              <constraints>
+                <constraint id="eb07bade-074e-483e-950c-70850984bd21" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
@@ -8052,7 +7970,10 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
             </entryLink>
-            <entryLink name="Cañón Automático Acoplado" id="d558-96d8-bb60-9eb6" collective="false" hidden="false" import="true" targetId="9aa1-299c-c1cb-d85b" type="selectionEntry">
+            <entryLink name="Cañón automático acoplado" id="d558-96d8-bb60-9eb6" collective="false" hidden="false" import="true" targetId="3ea3154b-cad6-4322-97e4-9c980a9b1822" type="selectionEntry">
+              <constraints>
+                <constraint id="bb247eed-e89a-46cb-9dad-56f415dfd242" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
@@ -8132,7 +8053,7 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
             <constraint id="476b-ceb4-6fab-7271" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Bolter Huracán" id="456f-ed38-c5a7-6001" collective="false" hidden="false" import="true" targetId="5328-fb02-5e9d-2e62" type="selectionEntry"/>
+            <entryLink name="Bolter Huracán" id="456f-ed38-c5a7-6001" collective="false" hidden="false" import="true" targetId="c15fb49a-42eb-4b9d-aada-77d5ce2e22c8" type="selectionEntry"/>
           </entryLinks>
           <selectionEntries>
             <selectionEntry name="Arma de combate cuerpo a cuerpo para Dreadnoughts" id="a5e8-7aec-069b-8b0e" collective="false" hidden="false" import="true" type="upgrade">
@@ -8188,7 +8109,7 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
             <cost name="Pts" typeId="puntos" value="10"/>
           </costs>
           <infoLinks>
-            <infoLink name="Baliza Localizadora" id="1b5d-6c49-c1c8-c5e2" hidden="false" targetId="06f0-ab9a-0f6a-44db" type="profile"/>
+            <infoLink name="Baliza localizadora" id="1b5d-6c49-c1c8-c5e2" hidden="false" targetId="e308635b-7d31-459e-a511-9e17fefd931e" type="profile"/>
           </infoLinks>
         </selectionEntry>
       </selectionEntries>
@@ -8254,7 +8175,7 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
             <cost name="Pts" typeId="puntos" value="20"/>
           </costs>
           <entryLinks>
-            <entryLink name="Cañón Automático Acoplado" id="4166-d578-942e-f748" collective="false" hidden="false" import="true" targetId="9aa1-299c-c1cb-d85b" type="selectionEntry">
+            <entryLink name="Cañón automático acoplado" id="4166-d578-942e-f748" collective="false" hidden="false" import="true" targetId="3ea3154b-cad6-4322-97e4-9c980a9b1822" type="selectionEntry">
               <constraints>
                 <constraint id="af66-fa45-bb67-ef75-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="2"/>
                 <constraint id="af66-fa45-bb67-ef75-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
@@ -8284,13 +8205,23 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
             <constraint id="8afd-e006-5377-5f95" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Cañón Automático Acoplado" id="0234-192a-91d0-be6a" collective="false" hidden="false" import="true" targetId="9aa1-299c-c1cb-d85b" type="selectionEntry">
+            <entryLink name="Cañón automático acoplado" id="0234-192a-91d0-be6a" collective="false" hidden="false" import="true" targetId="3ea3154b-cad6-4322-97e4-9c980a9b1822" type="selectionEntry">
+              <constraints>
+                <constraint id="54aabf50-822e-4262-91e9-21d6894112d0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
             </entryLink>
-            <entryLink name="Lanzallamas Pesado Acoplado" id="16f1-46e2-65f3-ec6b" collective="false" hidden="false" import="true" targetId="ca5b-9e07-ff3b-235f" type="selectionEntry"/>
-            <entryLink name="Bolter Pesado Acoplado" id="01bd-add7-6665-1210" collective="false" hidden="false" import="true" targetId="badb-9789-58cb-53c2" type="selectionEntry">
+            <entryLink name="Lanzallamas pesado acoplado" id="16f1-46e2-65f3-ec6b" collective="false" hidden="false" import="true" targetId="7c920bc2-4c08-4d31-bae6-f6962b4e78fe" type="selectionEntry">
+              <constraints>
+                <constraint id="91d45e98-9a27-407a-b2ff-1271fbed1c3b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Bólter pesado acoplado" id="01bd-add7-6665-1210" collective="false" hidden="false" import="true" targetId="3eddab81-d82e-4c3c-9f6e-7f5101f752f0" type="selectionEntry">
+              <constraints>
+                <constraint id="15e759a1-8983-434a-8d1e-fe1851ab7b8c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
               <costs>
                 <cost name="Pts" typeId="puntos" value="5"/>
               </costs>
@@ -8306,7 +8237,10 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
             </entryLink>
-            <entryLink name="Cañón Láser Acoplado" id="2c5d-0007-b92e-24cb" collective="false" hidden="false" import="true" targetId="3af6-fb74-ae8f-b888" type="selectionEntry">
+            <entryLink name="Cañón láser acoplado" id="2c5d-0007-b92e-24cb" collective="false" hidden="false" import="true" targetId="62bf8544-1c87-4575-9f2b-1887a93989d3" type="selectionEntry">
+              <constraints>
+                <constraint id="aad02832-054f-4698-b6d8-a654f870f1a8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
               <costs>
                 <cost name="Pts" typeId="puntos" value="30"/>
               </costs>
@@ -8318,7 +8252,10 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
             <constraint id="56be-dbe4-87ee-815f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Cañón Automático Acoplado" id="b806-8bcd-168a-7e43" collective="false" hidden="false" import="true" targetId="9aa1-299c-c1cb-d85b" type="selectionEntry">
+            <entryLink name="Cañón automático acoplado" id="b806-8bcd-168a-7e43" collective="false" hidden="false" import="true" targetId="3ea3154b-cad6-4322-97e4-9c980a9b1822" type="selectionEntry">
+              <constraints>
+                <constraint id="ddb4dc91-d998-4c8e-8337-9e8643a3590e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
@@ -8410,7 +8347,7 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
             <constraint id="a104-1964-ea11-3099" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Bolter Huracán" id="e1e9-79b3-5273-6f76" collective="false" hidden="false" import="true" targetId="5328-fb02-5e9d-2e62" type="selectionEntry"/>
+            <entryLink name="Bolter Huracán" id="e1e9-79b3-5273-6f76" collective="false" hidden="false" import="true" targetId="c15fb49a-42eb-4b9d-aada-77d5ce2e22c8" type="selectionEntry"/>
           </entryLinks>
           <selectionEntries>
             <selectionEntry name="Arma de combate cuerpo a cuerpo para Dreadnoughts" id="3e42-7b6c-4111-0f7a" collective="false" hidden="false" import="true" type="upgrade">
@@ -8498,7 +8435,7 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
             <cost name="Pts" typeId="puntos" value="20"/>
           </costs>
           <entryLinks>
-            <entryLink name="Cañón Automático Acoplado" id="12be-1a21-3a8d-817d" collective="false" hidden="false" import="true" targetId="9aa1-299c-c1cb-d85b" type="selectionEntry">
+            <entryLink name="Cañón automático acoplado" id="12be-1a21-3a8d-817d" collective="false" hidden="false" import="true" targetId="3ea3154b-cad6-4322-97e4-9c980a9b1822" type="selectionEntry">
               <constraints>
                 <constraint id="ff32-6478-07b1-a902-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="2"/>
                 <constraint id="ff32-6478-07b1-a902-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
@@ -8528,13 +8465,23 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
             <constraint id="af9a-5e49-93ff-4e07" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Cañón Automático Acoplado" id="633c-3def-ff10-17e1" collective="false" hidden="false" import="true" targetId="9aa1-299c-c1cb-d85b" type="selectionEntry">
+            <entryLink name="Cañón automático acoplado" id="633c-3def-ff10-17e1" collective="false" hidden="false" import="true" targetId="3ea3154b-cad6-4322-97e4-9c980a9b1822" type="selectionEntry">
+              <constraints>
+                <constraint id="1a080eb4-f82e-4248-8a5d-5369ae18800e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
             </entryLink>
-            <entryLink name="Lanzallamas Pesado Acoplado" id="b69d-1633-278a-b383" collective="false" hidden="false" import="true" targetId="ca5b-9e07-ff3b-235f" type="selectionEntry"/>
-            <entryLink name="Bolter Pesado Acoplado" id="1036-8904-4e43-bd1c" collective="false" hidden="false" import="true" targetId="badb-9789-58cb-53c2" type="selectionEntry">
+            <entryLink name="Lanzallamas pesado acoplado" id="b69d-1633-278a-b383" collective="false" hidden="false" import="true" targetId="7c920bc2-4c08-4d31-bae6-f6962b4e78fe" type="selectionEntry">
+              <constraints>
+                <constraint id="13b7df94-fb7e-4870-a661-589615ac636d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Bólter pesado acoplado" id="1036-8904-4e43-bd1c" collective="false" hidden="false" import="true" targetId="3eddab81-d82e-4c3c-9f6e-7f5101f752f0" type="selectionEntry">
+              <constraints>
+                <constraint id="37f3f861-6c69-438e-bbaa-bf1a713debd6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
               <costs>
                 <cost name="Pts" typeId="puntos" value="5"/>
               </costs>
@@ -8550,7 +8497,10 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
             </entryLink>
-            <entryLink name="Cañón Láser Acoplado" id="1d0c-0926-885a-83cc" collective="false" hidden="false" import="true" targetId="3af6-fb74-ae8f-b888" type="selectionEntry">
+            <entryLink name="Cañón láser acoplado" id="1d0c-0926-885a-83cc" collective="false" hidden="false" import="true" targetId="62bf8544-1c87-4575-9f2b-1887a93989d3" type="selectionEntry">
+              <constraints>
+                <constraint id="fa98ee18-2e62-44a4-9373-a76a088b704e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
               <costs>
                 <cost name="Pts" typeId="puntos" value="30"/>
               </costs>
@@ -8562,7 +8512,10 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
             <constraint id="8865-792c-7c51-2a63" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Cañón Automático Acoplado" id="73cb-db07-daa2-4b5a" collective="false" hidden="false" import="true" targetId="9aa1-299c-c1cb-d85b" type="selectionEntry">
+            <entryLink name="Cañón automático acoplado" id="73cb-db07-daa2-4b5a" collective="false" hidden="false" import="true" targetId="3ea3154b-cad6-4322-97e4-9c980a9b1822" type="selectionEntry">
+              <constraints>
+                <constraint id="c0ae6ad5-b52c-4dee-81da-04528720603c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
@@ -8647,7 +8600,7 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
           </costs>
           <infoLinks>
             <infoLink name="Sargento Exterminador" id="a368-b24e-0166-01e0" hidden="false" targetId="8933-5bbd-4fd9-2f86" type="profile"/>
-            <infoLink name="Armadura de Exterminador" id="aab1-70a8-689c-c854" hidden="false" targetId="43e6-007c-951b-dd36" type="profile"/>
+            <infoLink name="Armadura de exterminador" id="aab1-70a8-689c-c854" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
           </infoLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Arma de Combate" id="382e-a535-8325-30ea" collective="false" defaultSelectionEntryId="9fea-7f1e-f51b-1193" hidden="false" import="true">
@@ -8734,7 +8687,7 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
               </costs>
               <infoLinks>
                 <infoLink name="Exterminador" id="2a6f-77aa-7b77-a519" hidden="false" targetId="2b71-fffa-adc1-fa05" type="profile"/>
-                <infoLink name="Armadura de Exterminador" id="8919-1302-134b-6b04" hidden="false" targetId="43e6-007c-951b-dd36" type="profile"/>
+                <infoLink name="Armadura de exterminador" id="8919-1302-134b-6b04" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
               </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup name="Arma de Combate" id="6f13-52d1-d7a5-cd9f" collective="false" defaultSelectionEntryId="d2ef-f4b2-829a-71b1" hidden="false" import="true">
@@ -8996,7 +8949,7 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
         <cost name="Pts" typeId="puntos" value="0"/>
       </costs>
       <infoLinks>
-        <infoLink name="Armadura de Exterminador" id="535c-d4f6-db5e-3439" hidden="false" targetId="43e6-007c-951b-dd36" type="profile"/>
+        <infoLink name="Armadura de exterminador" id="535c-d4f6-db5e-3439" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Bolter" id="8bf1-7c3d-e540-0f33" collective="false" hidden="false" import="true" type="upgrade">
@@ -9054,17 +9007,6 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
       <infoLinks>
         <infoLink name="Motocicleta Marines Espaciales" id="819b-ddc0-50b5-28a4" hidden="false" targetId="5042-8639-f05a-298b" type="profile"/>
         <infoLink name="Bólter" id="0b8c-08b7-77f4-686c" hidden="false" targetId="90a7-c0e2-3a06-dc70" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Retroreactores" id="3f17-3e88-f7da-960b" collective="false" hidden="false" import="true" type="upgrade">
-      <constraints>
-        <constraint id="8e77-33fb-cb8d-21cd" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <costs>
-        <cost name="Pts" typeId="puntos" value="25"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Retrorreactores" id="726a-fdab-a517-c80b" hidden="false" targetId="ba22-cd8e-0d95-8e72" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Arma Psíquica" id="be4e-94f2-2d2f-cb4f" collective="false" hidden="false" import="true" type="upgrade">
@@ -9174,17 +9116,6 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
         <infoLink name="Bólter Pesado" id="00fd-991f-dc4a-6dd1" hidden="false" targetId="3c0e-4865-97cc-bd9c" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Bolter Pesado Acoplado" id="badb-9789-58cb-53c2" collective="false" hidden="false" import="true" type="upgrade">
-      <constraints>
-        <constraint id="ff08-a593-730b-ae1a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <costs>
-        <cost name="Pts" typeId="puntos" value="0"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Bólter Pesado" id="3b61-6566-bd0f-88bb" hidden="false" targetId="3c0e-4865-97cc-bd9c" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry name="Cañón Automático" id="f70f-455c-7955-e91e" collective="false" hidden="false" import="true" type="upgrade">
       <constraints>
         <constraint id="0bbf-82f5-16a6-7074" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -9194,17 +9125,6 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
       </costs>
       <infoLinks>
         <infoLink name="Cañón Automático" id="4ee0-abec-081e-3e0e" hidden="false" targetId="33e3-aa73-1b0e-2e83" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Cañón Automático Acoplado" id="9aa1-299c-c1cb-d85b" collective="false" hidden="false" import="true" type="upgrade">
-      <constraints>
-        <constraint id="0861-0c6c-6bd8-057c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <costs>
-        <cost name="Pts" typeId="puntos" value="0"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Cañón Automático" id="7f37-8f68-0286-b28f" hidden="false" targetId="33e3-aa73-1b0e-2e83" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Cañón de Asalto" id="b9d8-4545-a27e-b356" collective="false" hidden="false" import="true" type="upgrade">
@@ -9218,17 +9138,6 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
         <infoLink name="Cañón de Asalto" id="e3f5-60f7-5778-e5db" hidden="false" targetId="ca47-3295-c193-8e3b" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Cañón de Asalto Acoplado" id="07fb-bcab-8d04-f652" collective="false" hidden="false" import="true" type="upgrade">
-      <constraints>
-        <constraint id="8a5a-0e08-f131-9f08" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <costs>
-        <cost name="Pts" typeId="puntos" value="0"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Cañón de Asalto" id="5543-62bf-4c45-ed89" hidden="false" targetId="ca47-3295-c193-8e3b" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry name="Cañón Láser" id="9a7e-c553-d032-789c" collective="false" hidden="false" import="true" type="upgrade">
       <constraints>
         <constraint id="e834-fed5-e80b-29b1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -9240,17 +9149,6 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
         <infoLink name="Cañón Láser" id="f521-1650-3b1f-ac7d" hidden="false" targetId="b210-a1f3-d328-5739" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Cañón Láser Acoplado" id="3af6-fb74-ae8f-b888" collective="false" hidden="false" import="true" type="upgrade">
-      <constraints>
-        <constraint id="0a5f-c9f8-bd47-ffe2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <costs>
-        <cost name="Pts" typeId="puntos" value="0"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Cañón Láser" id="da99-86f7-d4fa-d061" hidden="false" targetId="b210-a1f3-d328-5739" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry name="Cañón de Plasma" id="bb10-b315-7583-5584" collective="false" hidden="false" import="true" type="upgrade">
       <constraints>
         <constraint id="a3f8-2428-9b18-6855" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -9260,17 +9158,6 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
       </costs>
       <infoLinks>
         <infoLink name="Cañón de Plasma" id="9809-d2db-7bdf-531d" hidden="false" targetId="ff28-6505-3158-bff5" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Lanzallamas Pesado Acoplado" id="ca5b-9e07-ff3b-235f" collective="false" hidden="false" import="true" type="upgrade">
-      <constraints>
-        <constraint id="1871-4d82-983c-0749" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <costs>
-        <cost name="Pts" typeId="puntos" value="0"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Lanzallamas Pesado" id="b139-79b9-9bfe-d45e" hidden="false" targetId="ea35-d96a-285e-1a63" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Lanzamisiles" id="989a-ecb3-a084-9c39" collective="false" hidden="false" import="true" type="upgrade">
@@ -9329,18 +9216,6 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
         <infoLink name="Blindaje Adicional" id="af44-6c18-ed5d-2f7d" hidden="false" targetId="cf47-2dba-970c-bb92" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Bolter Huracán" id="5328-fb02-5e9d-2e62" collective="false" hidden="false" import="true" type="upgrade">
-      <constraints>
-        <constraint id="b236-0e3c-6cf0-cb49" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <costs>
-        <cost name="Pts" typeId="puntos" value="0"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Bólter" id="fa7d-a852-7d04-9cf5" hidden="false" targetId="90a7-c0e2-3a06-dc70" type="profile"/>
-        <infoLink name="Bolter Huracán" id="7b57-2259-0e4b-33ae" hidden="false" targetId="11ca-250d-5f39-edcb" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry name="Misil Cazador Asesino" id="109e-11bc-a0a8-ddc5" collective="false" hidden="false" import="true" type="upgrade">
       <costs>
         <cost name="Pts" typeId="puntos" value="0"/>
@@ -9375,19 +9250,6 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
           </constraints>
         </entryLink>
       </entryLinks>
-    </selectionEntry>
-    <selectionEntry name="Lanzamisiles Tifón" id="a81e-c6c9-2583-3ca1" collective="false" hidden="false" import="true" type="upgrade">
-      <constraints>
-        <constraint id="caec-25c7-84ab-bccb" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <costs>
-        <cost name="Pts" typeId="puntos" value="0"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Lanzamisiles Tifón Fragmentación" id="5a0c-9a79-5e55-c689" hidden="false" targetId="5f02b02a-5475-4d5d-ab74-7619ec62da7a" type="profile"/>
-        <infoLink name="Lanzamisiles Tifón Perforante" id="097a-d9c9-aef7-1ab6" hidden="false" targetId="a2160dfb-ec4e-43ae-b6dd-1b746b63aff7" type="profile"/>
-        <infoLink name="Lanzamisiles Tifón" id="3dd4-a5fd-e7cc-21e6" hidden="false" targetId="bc19-11c8-8784-5816" type="profile"/>
-      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Escuadrón de Motocicletas de Ataque" id="9209-288b-9ba9-8366" collective="false" hidden="false" import="true" page="68" publicationId="f176-f140-74d8-da7d" type="unit">
       <costs>
@@ -9448,13 +9310,13 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
             <cost name="Pts" typeId="puntos" value="15"/>
           </costs>
         </entryLink>
-        <entryLink name="Cañón de Asalto Acoplado" id="4ab2-eb6d-0b72-fd1b" collective="false" hidden="false" import="true" targetId="07fb-bcab-8d04-f652" type="selectionEntry">
+        <entryLink name="Cañón de asalto acoplado" id="4ab2-eb6d-0b72-fd1b" collective="false" hidden="false" import="true" targetId="4d2f2276-67a6-4c2c-8b2e-d1649c82c1d4" type="selectionEntry">
           <constraints>
             <constraint id="cefc-c340-ed0c-4e9f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
             <constraint id="38b6-efe2-15c5-25d2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
           </constraints>
         </entryLink>
-        <entryLink name="Bolter Huracán" id="a912-0cfa-4992-3633" collective="false" hidden="false" import="true" targetId="5328-fb02-5e9d-2e62" type="selectionEntry">
+        <entryLink name="Bolter Huracán" id="a912-0cfa-4992-3633" collective="false" hidden="false" import="true" targetId="c15fb49a-42eb-4b9d-aada-77d5ce2e22c8" type="selectionEntry">
           <constraints>
             <constraint id="0463-d4ad-107d-fb46" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
           </constraints>
@@ -9527,7 +9389,7 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
             <cost name="Pts" typeId="puntos" value="15"/>
           </costs>
         </entryLink>
-        <entryLink name="Cañón de Asalto Acoplado" id="a6a8-9793-f3e5-9954" collective="false" hidden="false" import="true" targetId="07fb-bcab-8d04-f652" type="selectionEntry">
+        <entryLink name="Cañón de asalto acoplado" id="a6a8-9793-f3e5-9954" collective="false" hidden="false" import="true" targetId="4d2f2276-67a6-4c2c-8b2e-d1649c82c1d4" type="selectionEntry">
           <constraints>
             <constraint id="18aa-0a26-14da-c38e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
             <constraint id="3446-635e-340f-691e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -9595,16 +9457,6 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
       </constraints>
       <infoLinks>
         <infoLink name="Lanzallamas" id="899e-d055-5a47-a430" hidden="false" targetId="c6ed-e1e6-bd68-1891" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Lanzamisiles Ciclón" id="b489-ef23-275b-8e33" hidden="false" import="true" type="upgrade">
-      <constraints>
-        <constraint id="b0ff-3218-2945-df3a" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <infoLinks>
-        <infoLink name="Lanzamisiles Ciclón" id="0876-c5c9-3528-4265" hidden="false" targetId="754b-816e-74aa-4aab" type="profile"/>
-        <infoLink name="Lanzamisiles Ciclón Fragmentación" id="911d-280f-20a0-7d70" hidden="false" targetId="43017582-0dc3-431b-9b50-5d62539d22f0" type="profile"/>
-        <infoLink name="Lanzamisiles Ciclón Perforante" id="13c7-2c94-2498-2ea4" hidden="false" targetId="563332a8-20d0-4c81-85d3-611c8cc23c5c" type="profile"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
