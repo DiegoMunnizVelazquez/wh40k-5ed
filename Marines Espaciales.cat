@@ -1526,7 +1526,7 @@ ejército está sujeto a la regla especial doctrina de combate, debes elegir qu�
         <cost name="Pts" typeId="puntos" value="115"/>
       </costs>
       <entryLinks>
-        <entryLink name="Transporte Asignado" id="7810-cc38-7772-57ec" collective="false" hidden="false" import="true" targetId="4950-e110-16a8-4097" type="selectionEntryGroup"/>
+        <entryLink name="Transporte Asignado" id="7810-cc38-7772-57ec" collective="false" hidden="false" import="true" sortIndex="5" targetId="4950-e110-16a8-4097" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Granadas de asalto" id="146e-cf5c-75dc-7276" hidden="false" targetId="6fa5-b37d-1b93-9529" type="profile"/>
@@ -1543,7 +1543,7 @@ ejército está sujeto a la regla especial doctrina de combate, debes elegir qu�
         </modifier>
       </modifiers>
       <selectionEntries>
-        <selectionEntry name="Apotecario" id="162d-3f7a-2fef-94c0" collective="false" hidden="false" import="true" type="model">
+        <selectionEntry name="Apotecario" id="162d-3f7a-2fef-94c0" collective="false" hidden="false" import="true" sortIndex="1" type="model">
           <constraints>
             <constraint id="b8e0-81e1-0459-0036" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
             <constraint id="002d-1641-f6c5-df4d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -1583,7 +1583,7 @@ ejército está sujeto a la regla especial doctrina de combate, debes elegir qu�
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry name="Estandarte de la Compañía" id="74d9-1925-f76e-3f9c" collective="false" hidden="false" import="true" type="upgrade">
+        <selectionEntry name="Estandarte de la Compañía" id="74d9-1925-f76e-3f9c" collective="false" hidden="false" import="true" sortIndex="6" type="upgrade">
           <constraints>
             <constraint id="a8ad-1144-e758-4ed1" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
@@ -1598,7 +1598,7 @@ ejército está sujeto a la regla especial doctrina de combate, debes elegir qu�
             </profile>
           </profiles>
         </selectionEntry>
-        <selectionEntry name="Veterano de Mando" id="6875-8d63-080f-25ce" collective="false" hidden="false" import="true" type="model">
+        <selectionEntry name="Veterano de Mando" id="6875-8d63-080f-25ce" collective="false" hidden="false" import="true" sortIndex="2" type="model">
           <constraints>
             <constraint id="f1e5-e8a0-7cb6-4555" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="3334-83c8-a723-68bb" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -1770,7 +1770,7 @@ ejército está sujeto a la regla especial doctrina de combate, debes elegir qu�
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
-        <selectionEntry name="Motocicletas" id="48ab-f67f-757b-5842" collective="false" hidden="false" import="true" type="upgrade">
+        <selectionEntry name="Motocicletas" id="48ab-f67f-757b-5842" collective="false" hidden="false" import="true" sortIndex="7" type="upgrade">
           <constraints>
             <constraint id="0a36-db79-1f6c-dd9a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
@@ -1778,7 +1778,7 @@ ejército está sujeto a la regla especial doctrina de combate, debes elegir qu�
             <cost name="Pts" typeId="puntos" value="90"/>
           </costs>
         </selectionEntry>
-        <selectionEntry name="Veterano de Mando" id="5936-373f-244c-39a8" collective="false" hidden="false" import="true" type="model">
+        <selectionEntry name="Veterano de Mando" id="5936-373f-244c-39a8" collective="false" hidden="false" import="true" sortIndex="3" type="model">
           <constraints>
             <constraint id="f2c7-8901-33cf-9202" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="4eeb-cb62-e2d8-dd09" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -1950,7 +1950,7 @@ ejército está sujeto a la regla especial doctrina de combate, debes elegir qu�
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
-        <selectionEntry name="Veterano de Mando" id="5b7a-a746-09d9-c9ba" collective="false" hidden="false" import="true" type="model">
+        <selectionEntry name="Veterano de Mando" id="5b7a-a746-09d9-c9ba" collective="false" hidden="false" import="true" sortIndex="4" type="model">
           <constraints>
             <constraint id="2eef-43e7-cc19-b5e3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="f86f-a85a-f2b8-dcf4" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -2124,7 +2124,7 @@ ejército está sujeto a la regla especial doctrina de combate, debes elegir qu�
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Campeón de la Compañía" id="940f-fd05-fac2-f0fc" collective="false" hidden="false" import="true">
+        <selectionEntryGroup name="Campeón de la Compañía" id="940f-fd05-fac2-f0fc" collective="false" hidden="false" import="true" sortIndex="8">
           <constraints>
             <constraint id="50eb-dc4b-a9ca-b8e0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
             <constraint id="8491-c6d9-bf22-b9be" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -3483,7 +3483,7 @@ ejército está sujeto a la regla especial doctrina de combate, debes elegir qu�
         <cost name="Pts" typeId="puntos" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink name="Bombas de Fusión" id="00ea-11c5-a160-51c2" collective="false" hidden="false" import="true" targetId="c050-e9ce-56a9-f904" type="selectionEntry">
+        <entryLink name="Bombas de Fusión" id="00ea-11c5-a160-51c2" collective="false" hidden="false" import="true" sortIndex="3" targetId="c050-e9ce-56a9-f904" type="selectionEntry">
           <constraints>
             <constraint id="c7ec-4e41-3730-9a2e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="0"/>
           </constraints>
@@ -3498,7 +3498,7 @@ ejército está sujeto a la regla especial doctrina de combate, debes elegir qu�
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink name="Retroreactores" id="95049c31-9c5a-4e1a-846b-5ea339034d2a" collective="false" hidden="false" import="true" targetId="5063e534-87cf-438e-8dc7-49b0e9293b5c" type="selectionEntry">
+        <entryLink name="Retroreactores" id="95049c31-9c5a-4e1a-846b-5ea339034d2a" collective="false" hidden="false" import="true" sortIndex="4" targetId="5063e534-87cf-438e-8dc7-49b0e9293b5c" type="selectionEntry">
           <constraints>
             <constraint id="ea9d20d0-9e9a-4116-8e9f-11c89a840504" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
@@ -3526,7 +3526,7 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
         </rule>
       </rules>
       <selectionEntries>
-        <selectionEntry name="Marine Espacial Veterano" id="f92a-4505-f7eb-5560" collective="false" hidden="false" import="true" type="model">
+        <selectionEntry name="Marine Espacial Veterano" id="f92a-4505-f7eb-5560" collective="false" hidden="false" import="true" sortIndex="2" type="model">
           <constraints>
             <constraint id="e92a-b599-9efd-d910" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="4"/>
             <constraint id="3e0c-2b6f-bf4e-386e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="9"/>
@@ -3635,7 +3635,7 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
-        <selectionEntry name="Transporte Asignado" id="4b5c-1fa2-d19e-d45e" collective="false" hidden="false" import="true" type="upgrade">
+        <selectionEntry name="Transporte Asignado" id="4b5c-1fa2-d19e-d45e" collective="false" hidden="false" import="true" sortIndex="5" type="upgrade">
           <constraints>
             <constraint id="ab4b-1944-8e9a-9b6e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
@@ -3670,7 +3670,7 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
-        <selectionEntry name="Sargento Marine Espacial" id="c3f6-ace1-50e4-d344" collective="false" hidden="false" import="true" type="model">
+        <selectionEntry name="Sargento Marine Espacial" id="c3f6-ace1-50e4-d344" collective="false" hidden="false" import="true" sortIndex="1" type="model">
           <constraints>
             <constraint id="f893-3743-45ed-bd56" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="54b0-28e6-e753-7c7d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -4827,7 +4827,7 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
         <infoLink name="Exploradores" id="77d1-e6f7-4f9c-51da" hidden="false" targetId="630b-a220-22d6-31d0" type="rule"/>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry name="Explorador Motorizado" id="63d2-e93d-9b6c-5961" collective="false" hidden="false" import="true" type="model">
+        <selectionEntry name="Explorador Motorizado" id="63d2-e93d-9b6c-5961" collective="false" hidden="false" import="true" sortIndex="2" type="model">
           <constraints>
             <constraint id="8a4f-a8b0-0238-3f81" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="9"/>
             <constraint id="e610-f824-67d7-8d9c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -4886,7 +4886,7 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
-        <selectionEntry name="Sargento Explorador Motorizado" id="5ecd-e981-b989-3182" collective="false" hidden="false" import="true" type="model">
+        <selectionEntry name="Sargento Explorador Motorizado" id="5ecd-e981-b989-3182" collective="false" hidden="false" import="true" sortIndex="1" type="model">
           <constraints>
             <constraint id="1704-e29a-5359-c236" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
             <constraint id="0e9a-f124-cbe1-f027" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -4963,7 +4963,7 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
-        <selectionEntry name="Minas de racimo" id="d685-c577-acde-388e" collective="false" hidden="false" import="true" type="upgrade">
+        <selectionEntry name="Minas de racimo" id="d685-c577-acde-388e" collective="false" hidden="false" import="true" sortIndex="3" type="upgrade">
           <constraints>
             <constraint id="e4e1-7a6f-a33c-3a32" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
@@ -4982,7 +4982,7 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
         <cost name="Pts" typeId="puntos" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink name="Motocicleta de Ataque" id="7577-d8b8-f634-2ec6" collective="false" hidden="false" import="true" targetId="6e28-fdc2-e879-9ead" type="selectionEntry">
+        <entryLink name="Motocicleta de Ataque" id="7577-d8b8-f634-2ec6" collective="false" hidden="false" import="true" sortIndex="3" targetId="6e28-fdc2-e879-9ead" type="selectionEntry">
           <constraints>
             <constraint id="1d41-0cc3-c687-b541" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
@@ -4994,7 +4994,7 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
         <infoLink name="Y no conocerán el miedo" id="bd75-78ca-a595-451c" hidden="false" targetId="5ce7-70c4-4a99-db0d" type="rule"/>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry name="Marine Espacial Motorizado" id="40b7-c0b7-18cb-6500" collective="false" hidden="false" import="true" type="model">
+        <selectionEntry name="Marine Espacial Motorizado" id="40b7-c0b7-18cb-6500" collective="false" hidden="false" import="true" sortIndex="2" type="model">
           <constraints>
             <constraint id="0013-5904-a56d-7939" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="7"/>
             <constraint id="d065-f2df-c34d-66c5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
@@ -5060,7 +5060,7 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
-        <selectionEntry name="Sargento Marine Espacial Motorizado" id="6740-6ef0-ec9b-f6f4" collective="false" hidden="false" import="true" type="model">
+        <selectionEntry name="Sargento Marine Espacial Motorizado" id="6740-6ef0-ec9b-f6f4" collective="false" hidden="false" import="true" sortIndex="1" type="model">
           <constraints>
             <constraint id="a2b1-be3f-1c94-4c34" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
             <constraint id="3d45-f4f8-b737-f83e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -5457,7 +5457,7 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
         <cost name="Pts" typeId="puntos" value="100"/>
       </costs>
       <entryLinks>
-        <entryLink name="Cápsula de Desembarco" id="b6cf-062f-818f-753f" collective="false" hidden="false" import="true" targetId="822d-f006-230d-66db" type="selectionEntry">
+        <entryLink name="Cápsula de Desembarco" id="b6cf-062f-818f-753f" collective="false" hidden="false" import="true" sortIndex="3" targetId="822d-f006-230d-66db" type="selectionEntry">
           <constraints>
             <constraint id="a110-c597-33e6-8ba8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
@@ -5468,7 +5468,7 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
         <infoLink name="Tácticas de Combate" id="1b1c-b232-8285-3200" hidden="false" targetId="8bf6-d84e-9cda-1b19" type="rule"/>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry name="Tecnomarine artillero" id="060e-516a-ce54-b9e8" collective="false" hidden="false" import="true" type="model">
+        <selectionEntry name="Tecnomarine artillero" id="060e-516a-ce54-b9e8" collective="false" hidden="false" import="true" sortIndex="1" type="model">
           <constraints>
             <constraint id="bb90-2b98-a179-7a66" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
             <constraint id="7d5f-9389-cb8c-de6b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -5522,7 +5522,7 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
             </selectionEntry>
           </selectionEntries>
         </selectionEntry>
-        <selectionEntry name="Cañón Tormenta" id="6a65-4fdb-1af2-caa4" collective="false" hidden="false" import="true" type="model">
+        <selectionEntry name="Cañón Tormenta" id="6a65-4fdb-1af2-caa4" collective="false" hidden="false" import="true" sortIndex="2" type="model">
           <constraints>
             <constraint id="27ef-eb9c-c447-b952" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
             <constraint id="1086-6aac-aeda-5fcf" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -7169,7 +7169,7 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
         <cost name="Pts" typeId="puntos" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink name="Motocicleta de Ataque" id="bb6b-e881-c084-550e" collective="false" hidden="false" import="true" targetId="6e28-fdc2-e879-9ead" type="selectionEntry">
+        <entryLink name="Motocicleta de Ataque" id="bb6b-e881-c084-550e" collective="false" hidden="false" import="true" sortIndex="3" targetId="6e28-fdc2-e879-9ead" type="selectionEntry">
           <constraints>
             <constraint id="ddb4-034e-176b-e66c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
@@ -7194,7 +7194,7 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
         </modifier>
       </modifiers>
       <selectionEntries>
-        <selectionEntry name="Marine Espacial Motorizado" id="2f08-136e-9896-7260" collective="false" hidden="false" import="true" type="model">
+        <selectionEntry name="Marine Espacial Motorizado" id="2f08-136e-9896-7260" collective="false" hidden="false" import="true" sortIndex="2" type="model">
           <constraints>
             <constraint id="cee3-2f22-fbb5-6372" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="7"/>
             <constraint id="9cd0-43be-caae-837e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="4"/>
@@ -7211,7 +7211,7 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
             <infoLink name="Marine Espacial Motorizado" id="cb60-5c42-480e-301b" hidden="false" targetId="4e16-a08f-3366-1da7" type="profile"/>
           </infoLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Arma de mano" id="ff26-be15-0305-c9c4" collective="false" defaultSelectionEntryId="151a-7cb2-cb2c-631a" hidden="false" import="true">
+            <selectionEntryGroup name="Arma de mano" id="ff26-be15-0305-c9c4" collective="false" defaultSelectionEntryId="a63a-2c92-f178-f32c" hidden="false" import="true">
               <constraints>
                 <constraint id="9648-ab4c-3bcc-15e9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                 <constraint id="d5f2-0bdf-3924-2340" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -7257,7 +7257,7 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
-        <selectionEntry name="Sargento Marine Espacial Motorizado" id="0a0f-1adf-8d85-7a9c" collective="false" hidden="false" import="true" type="model">
+        <selectionEntry name="Sargento Marine Espacial Motorizado" id="0a0f-1adf-8d85-7a9c" collective="false" hidden="false" import="true" sortIndex="1" type="model">
           <constraints>
             <constraint id="7692-0239-0d80-7f98" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
             <constraint id="98e3-6fa6-ac68-cde0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -7274,7 +7274,7 @@ En ningun caso podra volver a tomar el mando de un tanque.</description>
             <infoLink name="Sargento Marine Espacial Motorizado" id="df09-0727-d644-7e0c" hidden="false" targetId="48ba-128c-5401-21dc" type="profile"/>
           </infoLinks>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Arma del Sargento" id="ffbc-931f-2db0-678b" collective="false" defaultSelectionEntryId="3789-f1d7-4ce7-e73c" hidden="false" import="true">
+            <selectionEntryGroup name="Arma del Sargento" id="ffbc-931f-2db0-678b" collective="false" defaultSelectionEntryId="348e-7b78-2875-557d" hidden="false" import="true">
               <constraints>
                 <constraint id="4479-d5cd-828b-96af" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                 <constraint id="cc19-ccc7-2643-925d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>

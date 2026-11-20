@@ -2546,7 +2546,7 @@ Coloca la plantilla de área grande con el agujero central situado sobre una min
             <cost name="Pts" typeId="puntos" value="15"/>
           </costs>
         </entryLink>
-        <entryLink name="Kanijo graziento" id="28c6-ed9c-9b32-2fe2" hidden="false" import="true" sortIndex="3" targetId="28ac-858a-4b1c-8fbc" type="selectionEntry">
+        <entryLink name="Kanijo graziento" id="28c6-ed9c-9b32-2fe2" hidden="false" import="true" sortIndex="1" targetId="28ac-858a-4b1c-8fbc" type="selectionEntry">
           <constraints>
             <constraint id="9779-db93-f1a7-9b6f" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="3"/>
           </constraints>
@@ -2554,7 +2554,7 @@ Coloca la plantilla de área grande con el agujero central situado sobre una min
             <cost name="Pts" typeId="puntos" value="5"/>
           </costs>
         </entryLink>
-        <entryLink name="Kuerpo zibernétiko de Grotsnik" id="7f2b-d472-369d-b5c4" hidden="false" import="true" targetId="1453-1c56-2c32-8f5e" type="selectionEntry">
+        <entryLink name="Kuerpo zibernétiko de Grotsnik" id="7f2b-d472-369d-b5c4" hidden="false" import="true" sortIndex="8" targetId="1453-1c56-2c32-8f5e" type="selectionEntry">
           <constraints>
             <constraint id="01ac-9350-e192-e63d" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
@@ -2574,7 +2574,7 @@ Coloca la plantilla de área grande con el agujero central situado sobre una min
         </infoLink>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Equipo" id="fb22-a799-479d-29ab" defaultSelectionEntryId="3288-9b52-fad2-a77a" hidden="false" sortIndex="1">
+        <selectionEntryGroup name="Equipo" id="fb22-a799-479d-29ab" defaultSelectionEntryId="3288-9b52-fad2-a77a" hidden="false" sortIndex="3">
           <constraints>
             <constraint id="2892-c9a0-e1dc-6f59-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="2892-c9a0-e1dc-6f59-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
@@ -3950,7 +3950,7 @@ Si obtienes un resultado de 1, ese vehículo debe moverse directamente lo más a
     <selectionEntry name="Gretchins" id="4d34-d61d-7fef-5463" hidden="false" import="true" type="unit">
       <entryLinks>
         <entryLink name="Kuerpo zibernétiko de Grotsnik" id="dead-7283-a8c4-2aec" hidden="false" import="true" sortIndex="3" targetId="1453-1c56-2c32-8f5e" type="selectionEntry"/>
-        <entryLink name="Gretchin" id="1f51-5acc-18f5-f995" hidden="false" import="true" sortIndex="2" targetId="8ac579a7-ca43-49a4-a4ab-c3009ba0b9af" type="selectionEntry">
+        <entryLink name="Gretchin" id="1f51-5acc-18f5-f995" hidden="false" import="true" sortIndex="1" targetId="8ac579a7-ca43-49a4-a4ab-c3009ba0b9af" type="selectionEntry">
           <constraints>
             <constraint id="5ae9-6515-bac8-5619" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="10"/>
             <constraint id="7345-168c-467b-4c73" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="30"/>
@@ -3969,7 +3969,7 @@ Si obtienes un resultado de 1, ese vehículo debe moverse directamente lo más a
             </profile>
           </profiles>
         </entryLink>
-        <entryLink name="Kaporal" id="6eca-a105-c50b-01d4" hidden="false" import="true" sortIndex="1" targetId="c6cc907d-b789-43b3-9715-57b4f483d503" type="selectionEntry">
+        <entryLink name="Kaporal" id="6eca-a105-c50b-01d4" hidden="false" import="true" sortIndex="2" targetId="c6cc907d-b789-43b3-9715-57b4f483d503" type="selectionEntry">
           <constraints>
             <constraint id="a9f8-15a4-637e-ccd9" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="0"/>
           </constraints>
@@ -4440,7 +4440,7 @@ Si obtienes un resultado de 1, ese vehículo debe moverse directamente lo más a
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink name="Kanijo munizionero" id="71ad-d280-905f-3907" hidden="false" import="true" sortIndex="4" targetId="92c5-8053-5037-e0a5" type="selectionEntry">
+        <entryLink name="Kanijo munizionero" id="71ad-d280-905f-3907" hidden="false" import="true" sortIndex="2" targetId="92c5-8053-5037-e0a5" type="selectionEntry">
           <constraints>
             <constraint id="75c9-726f-5838-dbcb" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="3"/>
           </constraints>
@@ -4474,7 +4474,7 @@ Si obtienes un resultado de 1, ese vehículo debe moverse directamente lo más a
         </profile>
       </profiles>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Vazilonez" id="c639-5703-7995-6e97" defaultSelectionEntryId="d7ea-b51e-87ac-9136" hidden="false" sortIndex="3">
+        <selectionEntryGroup name="Vazilonez" id="c639-5703-7995-6e97" defaultSelectionEntryId="d7ea-b51e-87ac-9136" hidden="false" sortIndex="4">
           <constraints>
             <constraint id="9483-a9f8-ea8b-1008" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="10"/>
             <constraint id="8050-b7d0-a79b-9615" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="5"/>
@@ -4499,7 +4499,7 @@ Si obtienes un resultado de 1, ese vehículo debe moverse directamente lo más a
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Accezorioz molonez" id="a9ec-e870-e57a-cc24" hidden="false" sortIndex="2">
+        <selectionEntryGroup name="Accezorioz molonez" id="a9ec-e870-e57a-cc24" hidden="false" sortIndex="3">
           <constraints>
             <constraint id="85e4-43f7-fbed-5ac6" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
@@ -4574,7 +4574,7 @@ Si obtienes un resultado de 1, ese vehículo debe moverse directamente lo más a
         <infoLink name="Gran Kañón" id="751d-5e1f-bbbb-9677" hidden="false" targetId="10cd2dab-a3dc-4309-b15c-af7643b272be" type="profile"/>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry name="Gretching artillero" id="d2c5-e208-43a3-f008" hidden="false" import="true" subType="crew" type="model">
+        <selectionEntry name="Gretching artillero" id="d2c5-e208-43a3-f008" hidden="false" import="true" subType="crew" sortIndex="1" type="model">
           <constraints>
             <constraint id="a3c3-9a3d-a4c9-c003" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="8"/>
             <constraint id="0dbe-f3ef-1729-84eb" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="2"/>

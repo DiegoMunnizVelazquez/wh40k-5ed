@@ -1885,7 +1885,7 @@ Los disparos efectuados con el marcador telemétrico no obtienen los beneficios 
         <infoLink name="Aborígenes" id="5585-190a-932a-764e" hidden="false" type="profile" targetId="bd6a-9e08-fabc-79e1"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Kroots" id="fb7d-a6fa-2b0e-8652" hidden="false" defaultSelectionEntryId="acff-d6e0-74bc-9cf4" sortIndex="2">
+        <selectionEntryGroup name="Kroots" id="fb7d-a6fa-2b0e-8652" hidden="false" defaultSelectionEntryId="acff-d6e0-74bc-9cf4" sortIndex="4">
           <entryLinks>
             <entryLink import="true" name="Kroot" hidden="false" id="acff-d6e0-74bc-9cf4" type="selectionEntry" targetId="a094-8a2f-79e0-7e1e" sortIndex="1">
               <constraints>
@@ -1909,7 +1909,7 @@ Los disparos efectuados con el marcador telemétrico no obtienen los beneficios 
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink import="true" name="Mastín de Guerra Kroot" hidden="false" id="c1f7-4951-df9c-2266" type="selectionEntry" targetId="f619-b7da-5a17-1198">
+        <entryLink import="true" name="Mastín de Guerra Kroot" hidden="false" id="c1f7-4951-df9c-2266" type="selectionEntry" sortIndex="2" targetId="f619-b7da-5a17-1198">
           <constraints>
             <constraint type="max" value="12" field="selections" scope="parent" shared="true" id="98dc-5385-97d4-f5ec" includeChildSelections="false"/>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="642e-3ecc-b6d6-f8ca" includeChildSelections="false"/>
@@ -1918,7 +1918,7 @@ Los disparos efectuados con el marcador telemétrico no obtienen los beneficios 
             <cost name="Pts" typeId="puntos" value="6"/>
           </costs>
         </entryLink>
-        <entryLink import="true" name="Krootox" hidden="false" id="c97f-e48b-e533-26c6" type="selectionEntry" targetId="672c-83fa-5cbb-a045">
+        <entryLink import="true" name="Krootox" hidden="false" id="c97f-e48b-e533-26c6" type="selectionEntry" sortIndex="1" targetId="672c-83fa-5cbb-a045">
           <constraints>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="8346-dcf1-241b-b506" includeChildSelections="false"/>
             <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="29e5-e87b-fc23-0ec7" includeChildSelections="false"/>
@@ -1929,7 +1929,7 @@ Los disparos efectuados con el marcador telemétrico no obtienen los beneficios 
         </entryLink>
       </entryLinks>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Armadura 6+" hidden="true" id="2df8-2e10-368d-9d8d" sortIndex="1">
+        <selectionEntry type="upgrade" import="true" name="Armadura 6+" hidden="true" id="2df8-2e10-368d-9d8d" sortIndex="3">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="baf3-d2b9-6f03-0f36" includeChildSelections="false"/>
           </constraints>
@@ -2281,7 +2281,7 @@ Los disparos efectuados con el marcador telemétrico no obtienen los beneficios 
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Aguijones Alados Véspid" hidden="false" id="0b0b-6527-cbe2-8a8d">
       <entryLinks>
-        <entryLink import="true" name="Véspid" hidden="false" id="bbc1-a540-4263-5007" type="selectionEntry" targetId="9a84-b6b3-a4f9-c254">
+        <entryLink import="true" name="Véspid" hidden="false" id="bbc1-a540-4263-5007" type="selectionEntry" sortIndex="2" targetId="9a84-b6b3-a4f9-c254">
           <costs>
             <cost name="Pts" typeId="puntos" value="16"/>
           </costs>
@@ -2290,7 +2290,7 @@ Los disparos efectuados con el marcador telemétrico no obtienen los beneficios 
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="7db2-87c3-c503-93f2" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Himenóptero" hidden="false" id="e4c9-1bc5-f001-2608" type="selectionEntry" targetId="1dce-0034-de46-861a">
+        <entryLink import="true" name="Himenóptero" hidden="false" id="e4c9-1bc5-f001-2608" type="selectionEntry" sortIndex="1" targetId="1dce-0034-de46-861a">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9a5c-8872-85d6-abc2-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a5c-8872-85d6-abc2-max" includeChildSelections="false"/>
@@ -2537,13 +2537,13 @@ Los disparos efectuados con el marcador telemétrico no obtienen los beneficios 
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Equipo de Drones Francotiradores" hidden="false" id="520d-fbea-a253-50cb" subType="unit-group">
       <entryLinks>
-        <entryLink import="true" name="Drone Francotirador" hidden="false" id="4f8c-ffd7-478b-d0f4" type="selectionEntry" targetId="1766-46e0-edea-d037" collapsible="true" collective="true">
+        <entryLink import="true" name="Drone Francotirador" hidden="false" id="4f8c-ffd7-478b-d0f4" type="selectionEntry" sortIndex="2" targetId="1766-46e0-edea-d037" collapsible="true" collective="true">
           <constraints>
             <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="12b0-86bf-314b-4940-min" includeChildSelections="false"/>
             <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="12b0-86bf-314b-4940-max" includeChildSelections="false"/>
           </constraints>
         </entryLink>
-        <entryLink import="true" name="Observador" hidden="false" id="c504-8a14-0eaa-7eed" type="selectionEntry" targetId="80df-3efb-936c-33fd" collapsible="true">
+        <entryLink import="true" name="Observador" hidden="false" id="c504-8a14-0eaa-7eed" type="selectionEntry" sortIndex="1" targetId="80df-3efb-936c-33fd" collapsible="true">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bb76-967d-81cc-3c63-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb76-967d-81cc-3c63-max" includeChildSelections="false"/>
@@ -2839,7 +2839,7 @@ Los disparos efectuados con el marcador telemétrico no obtienen los beneficios 
         </modifier>
       </modifiers>
       <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Suprema Presencia Inspiradora" hidden="false" id="5298-d052-6330-7e74" sortIndex="3">
+        <selectionEntry type="upgrade" import="true" name="Suprema Presencia Inspiradora" hidden="false" id="5298-d052-6330-7e74" sortIndex="4">
           <profiles>
             <profile name="Suprema Presencia Inspiradora" typeId="c970-b832-a956-1ac8" typeName="Habilidad" hidden="false" id="db62-73b8-fd3e-9aaf" publicationId="21fd-62c1-d9f7-e743" page="42">
               <characteristics>
@@ -2852,7 +2852,7 @@ Los disparos efectuados con el marcador telemétrico no obtienen los beneficios 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2498-2dc3-4b74-da88-max" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Paradoja de la Dualidad" hidden="false" id="d1c5-8a22-4f08-ac97" sortIndex="2">
+        <selectionEntry type="upgrade" import="true" name="Paradoja de la Dualidad" hidden="false" id="d1c5-8a22-4f08-ac97" sortIndex="3">
           <profiles>
             <profile name="Paradoja de la Dualidad" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo" hidden="false" id="508b-cd95-572f-756c" publicationId="21fd-62c1-d9f7-e743" page="42">
               <characteristics>
@@ -2865,7 +2865,7 @@ Los disparos efectuados con el marcador telemétrico no obtienen los beneficios 
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7211-248c-db6a-918c-max" includeChildSelections="false"/>
           </constraints>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Guardias de Honor" hidden="false" id="feea-778a-5502-b595" sortIndex="5">
+        <selectionEntry type="model" import="true" name="Guardias de Honor" hidden="false" id="feea-778a-5502-b595" sortIndex="2">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="7ba4-a88e-ec3e-7de8-min" includeChildSelections="false"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="7ba4-a88e-ec3e-7de8-max" includeChildSelections="false"/>
@@ -2895,7 +2895,7 @@ Los disparos efectuados con el marcador telemétrico no obtienen los beneficios 
             </entryLink>
           </entryLinks>
         </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="El Supremo Precio del Fracaso" hidden="false" id="64bd-5557-cca4-8baf" sortIndex="4">
+        <selectionEntry type="upgrade" import="true" name="El Supremo Precio del Fracaso" hidden="false" id="64bd-5557-cca4-8baf" sortIndex="5">
           <profiles>
             <profile name="El Supremo Precio del Fracaso" typeId="c970-b832-a956-1ac8" typeName="Habilidad" hidden="false" id="e09b-6791-e249-288b" publicationId="21fd-62c1-d9f7-e743" page="42">
               <characteristics>
@@ -3125,7 +3125,7 @@ Armaduras miméticas, Equipos de Rastreadores, Tanques Cabezamartillo, Tanques M
             </entryLink>
           </entryLinks>
         </selectionEntry>
-        <selectionEntry type="model" import="true" name="Drone de Mando" hidden="false" id="d8de-6663-4f53-3f60">
+        <selectionEntry sortIndex="2" type="model" import="true" name="Drone de Mando" hidden="false" id="d8de-6663-4f53-3f60">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f849-4606-90c9-12c1-min" includeChildSelections="false"/>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f849-4606-90c9-12c1-max" includeChildSelections="false"/>
@@ -3154,7 +3154,7 @@ Armaduras miméticas, Equipos de Rastreadores, Tanques Cabezamartillo, Tanques M
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink import="true" name="Drone de Defensa" hidden="false" id="212a-6022-6ba9-a587" type="selectionEntry" targetId="d719-cd5a-4506-9ffe">
+        <entryLink import="true" name="Drone de Defensa" hidden="false" id="212a-6022-6ba9-a587" type="selectionEntry" sortIndex="3" targetId="d719-cd5a-4506-9ffe">
           <constraints>
             <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="b11d-e06b-f094-f165-min" includeChildSelections="false"/>
             <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="b11d-e06b-f094-f165-max" includeChildSelections="false"/>

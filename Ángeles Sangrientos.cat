@@ -1141,7 +1141,7 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
         <cost name="Pts" typeId="puntos" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink name="Transporte Asignado" id="859b9598-f3ac-49e9-8c4a-b13a16721915" collective="false" hidden="false" import="true" targetId="4f64e227-7955-479a-b05f-5b29c0923454" type="selectionEntryGroup"/>
+        <entryLink name="Transporte Asignado" id="859b9598-f3ac-49e9-8c4a-b13a16721915" collective="false" hidden="false" import="true" sortIndex="3" targetId="4f64e227-7955-479a-b05f-5b29c0923454" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Y no conocerán el miedo" id="2b788a68-e936-5703-8b58-0aa0dc311e30" hidden="false" targetId="5ce7-70c4-4a99-db0d" type="rule"/>
@@ -1413,7 +1413,7 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
         <cost name="Pts" typeId="puntos" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink name="Retrorreactor" id="93a1fcc8-5af1-5324-995f-d8c154e3e841" collective="false" hidden="false" import="true" targetId="5063e534-87cf-438e-8dc7-49b0e9293b5c" type="selectionEntry">
+        <entryLink name="Retrorreactor" id="93a1fcc8-5af1-5324-995f-d8c154e3e841" collective="false" hidden="false" import="true" sortIndex="3" targetId="5063e534-87cf-438e-8dc7-49b0e9293b5c" type="selectionEntry">
           <constraints>
             <constraint id="9603de81-d607-5cb0-85e4-a1e69cee4a42" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
@@ -1436,7 +1436,7 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink name="Transporte Asignado" id="03ef5fc7-cfbc-4fb2-af17-36a5dbcd9a24" collective="false" hidden="false" import="true" targetId="4f64e227-7955-479a-b05f-5b29c0923454" type="selectionEntryGroup">
+        <entryLink name="Transporte Asignado" id="03ef5fc7-cfbc-4fb2-af17-36a5dbcd9a24" collective="false" hidden="false" import="true" sortIndex="4" targetId="4f64e227-7955-479a-b05f-5b29c0923454" type="selectionEntryGroup">
           <modifiers>
             <modifier field="hidden" type="set" value="true">
               <conditions>
@@ -2308,7 +2308,7 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Transporte Asignado (sin retrorreactores)" id="22479ba2-8786-4aea-86cc-6a9db22e1ef6" collapsible="true" collective="false" hidden="false" import="true">
+        <selectionEntryGroup name="Transporte Asignado (sin retrorreactores)" id="22479ba2-8786-4aea-86cc-6a9db22e1ef6" collapsible="true" collective="false" hidden="false" import="true" sortIndex="3">
           <constraints>
             <constraint id="0816c9bf-bb05-4631-bc69-51b689b16c3e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
@@ -2942,7 +2942,7 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
         <cost name="Pts" typeId="puntos" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink name="Land Raider asignado" id="5074253b-7aa9-418f-9678-ce150aeaf695" collective="false" hidden="false" import="true" targetId="576a01a9-d645-4d7a-a8ba-d2410db7edac" type="selectionEntryGroup"/>
+        <entryLink name="Land Raider asignado" id="5074253b-7aa9-418f-9678-ce150aeaf695" collective="false" hidden="false" import="true" sortIndex="3" targetId="576a01a9-d645-4d7a-a8ba-d2410db7edac" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Y no conocerán el miedo" id="f5b20e7b-475d-5e78-8635-aa9a5a1cb32e" hidden="false" targetId="5ce7-70c4-4a99-db0d" type="rule"/>
@@ -3092,7 +3092,7 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
         <cost name="Pts" typeId="puntos" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink name="Land Raider asignado" id="5d5c539c-30ab-418e-8ecd-31773ff0c064" collective="false" hidden="false" import="true" targetId="576a01a9-d645-4d7a-a8ba-d2410db7edac" type="selectionEntryGroup"/>
+        <entryLink name="Land Raider asignado" id="5d5c539c-30ab-418e-8ecd-31773ff0c064" collective="false" hidden="false" import="true" sortIndex="3" targetId="576a01a9-d645-4d7a-a8ba-d2410db7edac" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Y no conocerán el miedo" id="b1ee818d-886f-5258-9683-a02c3134918b" hidden="false" targetId="5ce7-70c4-4a99-db0d" type="rule"/>
@@ -3366,7 +3366,7 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
         <cost name="Pts" typeId="puntos" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink name="Transporte Asignado" id="3bd1366f-fff4-4721-ba0b-ca1010c3a282" collective="false" hidden="false" import="true" targetId="4f64e227-7955-479a-b05f-5b29c0923454" type="selectionEntryGroup"/>
+        <entryLink name="Transporte Asignado" id="3bd1366f-fff4-4721-ba0b-ca1010c3a282" collective="false" hidden="false" import="true" sortIndex="3" targetId="4f64e227-7955-479a-b05f-5b29c0923454" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Y no conocerán el miedo" id="fa46a046-ebb5-557a-a89e-c9423462bcb7" hidden="false" targetId="5ce7-70c4-4a99-db0d" type="rule"/>
@@ -5238,7 +5238,7 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
         </modifierGroup>
       </modifierGroups>
       <selectionEntries>
-        <selectionEntry name="Guardia de Honor" id="c035b038-1440-4a42-baef-05c03e606b1a" collapsible="true" hidden="false" import="true" sortIndex="1" type="model">
+        <selectionEntry name="Guardia de Honor" id="c035b038-1440-4a42-baef-05c03e606b1a" collapsible="true" hidden="false" import="true" sortIndex="2" type="model">
           <constraints>
             <constraint id="62e442b7-f9c3-49e9-86c4-1f0a223478ba" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="4"/>
             <constraint id="ce778208-a212-46b7-8c4c-4e42f099e847" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="4"/>
@@ -5497,7 +5497,7 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
-        <selectionEntry name="Novitiate Sanguinario" id="9978427f-fd74-5735-a45d-8d512c32312b" collapsible="true" hidden="false" import="true" sortIndex="2" type="model">
+        <selectionEntry name="Novitiate Sanguinario" id="9978427f-fd74-5735-a45d-8d512c32312b" collapsible="true" hidden="false" import="true" sortIndex="1" type="model">
           <constraints>
             <constraint id="8917cf4e-2055-55f0-b326-86eaca9428c7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="4a4edd0a-bc3f-53bf-b5e1-b90e87ab1ee9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -6281,7 +6281,7 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
         <cost name="Pts" typeId="puntos" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink name="Retrorreactor" id="8b12e8db-8515-4ea8-9f80-2171218d2fe8" collective="false" hidden="false" import="true" targetId="5063e534-87cf-438e-8dc7-49b0e9293b5c" type="selectionEntry">
+        <entryLink name="Retrorreactor" id="8b12e8db-8515-4ea8-9f80-2171218d2fe8" collective="false" hidden="false" import="true" sortIndex="3" targetId="5063e534-87cf-438e-8dc7-49b0e9293b5c" type="selectionEntry">
           <constraints>
             <constraint id="54eee777-2bdd-4b29-8838-922b4bc1c24e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
@@ -6304,7 +6304,7 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink name="Transporte Asignado" id="36197e16-b90c-4f07-b2b0-70161865db42" collective="false" hidden="false" import="true" targetId="4f64e227-7955-479a-b05f-5b29c0923454" type="selectionEntryGroup">
+        <entryLink name="Transporte Asignado" id="36197e16-b90c-4f07-b2b0-70161865db42" collective="false" hidden="false" import="true" sortIndex="4" targetId="4f64e227-7955-479a-b05f-5b29c0923454" type="selectionEntryGroup">
           <modifiers>
             <modifier field="hidden" type="set" value="true">
               <conditions>
@@ -6321,7 +6321,7 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
         <infoLink name="Intervención heroica" id="dae6f690-a923-47b2-928e-649f8c55c4bf" hidden="false" targetId="df54f3c5-247d-4aa2-8376-dfbd89a2437a" type="rule"/>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry name="Sargento Marine Espacial" id="e88878c7-ca71-430a-bbc9-b898fc9e91a2" collapsible="true" hidden="false" import="true" type="model">
+        <selectionEntry name="Sargento Marine Espacial" id="e88878c7-ca71-430a-bbc9-b898fc9e91a2" collapsible="true" hidden="false" import="true" sortIndex="1" type="model">
           <constraints>
             <constraint id="21ac6014-5224-431c-b0ed-3f78abf7bc4d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="f24fc151-4a7a-4984-8b07-4f5ce50d4bef" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -6447,7 +6447,7 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
-        <selectionEntry name="Veterano" id="0c7a25cc-6869-4f9a-9a5b-f7d200944720" collapsible="true" hidden="false" import="true" type="model">
+        <selectionEntry name="Veterano" id="0c7a25cc-6869-4f9a-9a5b-f7d200944720" collapsible="true" hidden="false" import="true" sortIndex="2" type="model">
           <constraints>
             <constraint id="7cf45273-1a0d-4077-9dd2-0c83c61453c0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="4"/>
             <constraint id="c30674a1-8202-4a24-b55e-b01bd7433a71" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="9"/>
@@ -7788,7 +7788,7 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
         <cost name="Pts" typeId="puntos" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink name="Transporte Asignado" id="c3517814-74ba-423c-9e2c-1c96e1116c4f" collective="false" hidden="false" import="true" targetId="4f64e227-7955-479a-b05f-5b29c0923454" type="selectionEntryGroup"/>
+        <entryLink name="Transporte Asignado" id="c3517814-74ba-423c-9e2c-1c96e1116c4f" collective="false" hidden="false" import="true" sortIndex="3" targetId="4f64e227-7955-479a-b05f-5b29c0923454" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Y no conocerán el miedo" id="0ea50f18-c4bb-4950-8eb1-2273259fb99c" hidden="false" targetId="5ce7-70c4-4a99-db0d" type="rule"/>
@@ -7796,7 +7796,7 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
         <infoLink name="Sed de sangre" id="2f9e2c72-cb55-46ff-af75-f1ff3da1c980" hidden="false" targetId="f2cc2911-a4a8-5bbe-a28c-0b5ec9f79522" type="rule"/>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry name="Sargento Marine Espacial" id="e2b816e1-0dc4-43c1-bcd4-4c8221c363db" collapsible="true" hidden="false" import="true" type="model">
+        <selectionEntry name="Sargento Marine Espacial" id="e2b816e1-0dc4-43c1-bcd4-4c8221c363db" collapsible="true" hidden="false" import="true" sortIndex="1" type="model">
           <constraints>
             <constraint id="906380a2-c666-4880-aefc-3e2a4f63fc5c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="96d5b834-8fe4-4b79-93aa-95cc56b9d62e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -7923,7 +7923,7 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
-        <selectionEntry name="Marine Espacial" id="223b8f16-523e-42ad-9276-df70172fa434" collapsible="true" hidden="false" import="true" type="model">
+        <selectionEntry name="Marine Espacial" id="223b8f16-523e-42ad-9276-df70172fa434" collapsible="true" hidden="false" import="true" sortIndex="2" type="model">
           <constraints>
             <constraint id="02886ec7-5060-493c-b817-ec5a1dba3548" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="4"/>
             <constraint id="e9e9687f-a296-4342-9473-6435fd481c72" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="9"/>
