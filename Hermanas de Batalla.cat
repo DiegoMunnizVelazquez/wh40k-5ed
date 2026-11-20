@@ -850,7 +850,7 @@ Si tanto una unidad como un personaje independiente tienen un Acto de Fe que pr
                     <constraint id="8987-eea3-7ec8-fb62" field="selections" includeChildForces="false" includeChildSelections="true" scope="49ff-27e5-9bc4-e4c5" shared="true" type="max" value="1"/>
                   </constraints>
                   <selectionEntries>
-                    <selectionEntry name="Simulacrum Imperialis" id="ee1b-023b-dd8a-4b8c" hidden="false" import="true" type="upgrade">
+                    <selectionEntry name="Simulacrum Imperialis" id="ee1b-023b-dd8a-4b8c" hidden="false" import="true" sortIndex="2" type="upgrade">
                       <constraints>
                         <constraint id="a10c-0e89-5c87-e435" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -861,7 +861,7 @@ Si tanto una unidad como un personaje independiente tienen un Acto de Fe que pr
                         <infoLink name="Simulacrum Imperialis" id="933e-9a48-fd6b-918c" hidden="false" targetId="a9ce-6b06-7a80-6e76" type="profile"/>
                       </infoLinks>
                     </selectionEntry>
-                    <selectionEntry name="Estandarte bendito" id="8dec-b22a-8135-b842" hidden="false" import="true" type="upgrade">
+                    <selectionEntry name="Estandarte bendito" id="8dec-b22a-8135-b842" hidden="false" import="true" sortIndex="1" type="upgrade">
                       <constraints>
                         <constraint id="ef46-4f14-7c77-48d4" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -1794,7 +1794,7 @@ Celestine puede actuar normalmente en el turno en que &quot;resucita&quot;. Cel
             <constraint id="2aa1-157b-5fea-a936" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="3"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Asesino del Culto" id="aaff-7467-dd93-ba7c" hidden="false" import="true" targetId="4e1e7e3a-3edf-4c3e-a3d9-32ba998759ba" type="selectionEntry">
+            <entryLink name="Asesino del Culto" id="aaff-7467-dd93-ba7c" hidden="false" import="true" sortIndex="2" targetId="4e1e7e3a-3edf-4c3e-a3d9-32ba998759ba" type="selectionEntry">
               <constraints>
                 <constraint id="d472-a640-af90-afe3" automatic="true" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="10"/>
               </constraints>
@@ -1802,7 +1802,7 @@ Celestine puede actuar normalmente en el turno en que &quot;resucita&quot;. Cel
                 <cost name="Pts" typeId="puntos" value="15"/>
               </costs>
             </entryLink>
-            <entryLink name="Arcoflagelante" id="a22d-59ba-e1c9-d2ba" hidden="false" import="true" targetId="667ac8b1-017b-4982-8b76-307210d77ad3" type="selectionEntry">
+            <entryLink name="Arcoflagelante" id="a22d-59ba-e1c9-d2ba" hidden="false" import="true" sortIndex="1" targetId="667ac8b1-017b-4982-8b76-307210d77ad3" type="selectionEntry">
               <constraints>
                 <constraint id="413d-22f7-140b-a72f" automatic="true" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="10"/>
               </constraints>
@@ -1810,7 +1810,7 @@ Celestine puede actuar normalmente en el turno en que &quot;resucita&quot;. Cel
                 <cost name="Pts" typeId="puntos" value="15"/>
               </costs>
             </entryLink>
-            <entryLink name="Cruzado" id="a949-a68e-d5a0-6078" hidden="false" import="true" targetId="a01f32ba-4994-4aff-bee0-693d64339e72" type="selectionEntry">
+            <entryLink name="Cruzado" id="a949-a68e-d5a0-6078" hidden="false" import="true" sortIndex="3" targetId="a01f32ba-4994-4aff-bee0-693d64339e72" type="selectionEntry">
               <constraints>
                 <constraint id="0c8d-4d15-0d73-17ed" automatic="true" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="10"/>
               </constraints>
@@ -1938,7 +1938,7 @@ Celestine puede actuar normalmente en el turno en que &quot;resucita&quot;. Cel
             <constraint id="cffc-89f0-0d71-1700" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="4"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Celeste" id="48c7-5df4-c88d-b60b" hidden="false" import="true" targetId="749f09ab-0bef-4374-bed6-68b3d987945d" type="selectionEntry">
+            <entryLink name="Celeste" id="48c7-5df4-c88d-b60b" hidden="false" import="true" sortIndex="1" targetId="749f09ab-0bef-4374-bed6-68b3d987945d" type="selectionEntry">
               <constraints>
                 <constraint id="2d44-775c-c7ca-f503" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="9"/>
                 <constraint id="b398-1660-485d-5e11" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="2"/>
@@ -1957,7 +1957,7 @@ Celestine puede actuar normalmente en el turno en que &quot;resucita&quot;. Cel
             </entryLink>
           </entryLinks>
           <selectionEntries>
-            <selectionEntry name="Celeste con arma especial" id="921f-4aa2-e476-55a0" hidden="false" import="true" type="model">
+            <selectionEntry name="Celeste con arma especial" id="921f-4aa2-e476-55a0" hidden="false" import="true" sortIndex="2" type="model">
               <constraints>
                 <constraint id="1f15-76e9-95e6-058c" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
               </constraints>
@@ -2815,7 +2815,7 @@ Celestine puede actuar normalmente en el turno en que &quot;resucita&quot;. Cel
             <constraint id="a038-f921-275e-ab97" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="4"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Vengadora" id="4160-2bfa-c38d-fb60" hidden="false" import="true" targetId="9a6432e0-b9e7-43d6-b3fc-442bb241bd3e" type="selectionEntry">
+            <entryLink name="Vengadora" id="4160-2bfa-c38d-fb60" hidden="false" import="true" sortIndex="1" targetId="9a6432e0-b9e7-43d6-b3fc-442bb241bd3e" type="selectionEntry">
               <constraints>
                 <constraint id="079a-c3f7-64dd-36f0" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="9"/>
                 <constraint id="4b97-d380-b819-f4a6" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="0"/>
@@ -2834,7 +2834,7 @@ Celestine puede actuar normalmente en el turno en que &quot;resucita&quot;. Cel
             </entryLink>
           </entryLinks>
           <selectionEntries>
-            <selectionEntry name="Vengadora con arma pesada" id="d41a-e9e6-9127-3442" hidden="false" import="true" type="model">
+            <selectionEntry name="Vengadora con arma pesada" id="d41a-e9e6-9127-3442" hidden="false" import="true" sortIndex="2" type="model">
               <constraints>
                 <constraint id="b5e5-16f1-8157-daaa" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="4"/>
               </constraints>
@@ -2932,7 +2932,7 @@ Celestine puede actuar normalmente en el turno en que &quot;resucita&quot;. Cel
         <infoLink name="Combi-armas" id="16be-d857-75f4-4748" hidden="false" targetId="8a9f-a60c-3868-a1a7" type="rule"/>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry name="Combi-lanzallamas" id="ebe7-c352-4548-f67f" hidden="false" import="true" type="upgrade">
+        <selectionEntry name="Combi-lanzallamas" id="ebe7-c352-4548-f67f" hidden="false" import="true" sortIndex="2" type="upgrade">
           <constraints>
             <constraint id="8a93-6300-d60a-0380" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
@@ -2940,7 +2940,7 @@ Celestine puede actuar normalmente en el turno en que &quot;resucita&quot;. Cel
             <infoLink name="Lanzallamas" id="a070-0fbb-3809-2092" hidden="false" targetId="c6ed-e1e6-bd68-1891" type="profile"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry name="Combi-fusión" id="15ca-0afa-031a-2d93" hidden="false" import="true" type="upgrade">
+        <selectionEntry name="Combi-fusión" id="15ca-0afa-031a-2d93" hidden="false" import="true" sortIndex="1" type="upgrade">
           <constraints>
             <constraint id="987a-8fa4-a5a2-44ca" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
@@ -2948,7 +2948,7 @@ Celestine puede actuar normalmente en el turno en que &quot;resucita&quot;. Cel
             <infoLink name="Rifle de Fusión" id="875f-fd2c-45a2-f1df" hidden="false" targetId="d70e-78b0-03b3-f2b2" type="profile"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry name="Combi-plasma" id="d77d-ebd1-e219-1f56" hidden="false" import="true" type="upgrade">
+        <selectionEntry name="Combi-plasma" id="d77d-ebd1-e219-1f56" hidden="false" import="true" sortIndex="3" type="upgrade">
           <constraints>
             <constraint id="5f84-aec0-658f-30f2" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>

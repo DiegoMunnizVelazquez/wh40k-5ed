@@ -1170,12 +1170,12 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                     <constraint id="94b2-35ef-5165-afa1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Pistola de Plasma" id="2584-0fe3-8899-fc09" collective="false" hidden="false" import="true" targetId="c85c-fcc8-62a9-3940" type="selectionEntry">
+                    <entryLink name="Pistola de Plasma" id="2584-0fe3-8899-fc09" collective="false" hidden="false" import="true" sortIndex="2" targetId="c85c-fcc8-62a9-3940" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="puntos" value="15"/>
                       </costs>
                     </entryLink>
-                    <entryLink name="Pistola Bolter" id="62a9-590d-6492-ab8e" collective="false" hidden="false" import="true" targetId="9f67-3f57-ebe8-1dbb" type="selectionEntry"/>
+                    <entryLink name="Pistola Bolter" id="62a9-590d-6492-ab8e" collective="false" hidden="false" import="true" sortIndex="1" targetId="9f67-3f57-ebe8-1dbb" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup name="Arma de combate" id="0a1e-1c06-d47e-503e" collective="false" defaultSelectionEntryId="8f88-5ffe-9e49-4ab6" hidden="false" import="true" sortIndex="3">
@@ -1184,22 +1184,22 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                     <constraint id="3188-d75b-3856-07c2-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Arma de Combate" id="8f88-5ffe-9e49-4ab6" collective="false" hidden="false" import="true" targetId="b081-2b3d-87ce-4fd9" type="selectionEntry">
+                    <entryLink name="Arma de Combate" id="8f88-5ffe-9e49-4ab6" collective="false" hidden="false" import="true" sortIndex="1" targetId="b081-2b3d-87ce-4fd9" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="puntos" value="0"/>
                       </costs>
                     </entryLink>
-                    <entryLink name="Arma de Energía" id="152b-cbc4-494c-0152" collective="false" hidden="false" import="true" targetId="b8c3-697d-5086-0aea" type="selectionEntry">
+                    <entryLink name="Arma de Energía" id="152b-cbc4-494c-0152" collective="false" hidden="false" import="true" sortIndex="2" targetId="b8c3-697d-5086-0aea" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="puntos" value="15"/>
                       </costs>
                     </entryLink>
-                    <entryLink name="Puño de Combate" id="9e15-2cf5-0d26-de00" collective="false" hidden="false" import="true" targetId="536e-9554-070d-161a" type="selectionEntry">
+                    <entryLink name="Puño de Combate" id="9e15-2cf5-0d26-de00" collective="false" hidden="false" import="true" sortIndex="4" targetId="536e-9554-070d-161a" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="puntos" value="25"/>
                       </costs>
                     </entryLink>
-                    <entryLink name="Cuchilla Relámpago" id="7320-3018-f0c7-cb1f" collective="false" hidden="false" import="true" targetId="b653-7261-455e-348c" type="selectionEntry">
+                    <entryLink name="Cuchilla Relámpago" id="7320-3018-f0c7-cb1f" collective="false" hidden="false" import="true" sortIndex="3" targetId="b653-7261-455e-348c" type="selectionEntry">
                       <constraints>
                         <constraint id="32f2-3978-ba65-dcb2" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -1209,7 +1209,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                     </entryLink>
                   </entryLinks>
                   <selectionEntries>
-                    <selectionEntry name="Par de Cuchillas Relámpago" id="a96f-f13f-ef16-2bc0" hidden="false" import="true" type="upgrade">
+                    <selectionEntry name="Par de Cuchillas Relámpago" id="a96f-f13f-ef16-2bc0" hidden="false" import="true" sortIndex="5" type="upgrade">
                       <constraints>
                         <constraint id="1b95-9210-661d-eba8" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -1232,7 +1232,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                         <constraint id="1b28-a242-d530-d57b" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
                       <entryLinks>
-                        <entryLink name="Arma Demonio" id="59fd-7fac-6764-6b9b" hidden="false" import="true" targetId="9405-8653-05ee-3804" type="selectionEntry">
+                        <entryLink name="Arma Demonio" id="59fd-7fac-6764-6b9b" hidden="false" import="true" sortIndex="1" targetId="9405-8653-05ee-3804" type="selectionEntry">
                           <costs>
                             <cost name="Pts" typeId="puntos" value="40"/>
                           </costs>
@@ -1244,7 +1244,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                             </modifier>
                           </modifiers>
                         </entryLink>
-                        <entryLink name="Aulladora de Muerte" id="921a-05e9-fc2c-5e70" hidden="false" import="true" targetId="64a7-daaf-b862-8668" type="selectionEntry">
+                        <entryLink name="Aulladora de Muerte" id="921a-05e9-fc2c-5e70" hidden="false" import="true" sortIndex="2" targetId="64a7-daaf-b862-8668" type="selectionEntry">
                           <costs>
                             <cost name="Pts" typeId="puntos" value="40"/>
                           </costs>
@@ -1256,7 +1256,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                             </modifier>
                           </modifiers>
                         </entryLink>
-                        <entryLink name="Bebedora de Sangre" id="757a-4678-c3d6-806e" hidden="false" import="true" targetId="6350-0348-a37a-874a" type="selectionEntry">
+                        <entryLink name="Bebedora de Sangre" id="757a-4678-c3d6-806e" hidden="false" import="true" sortIndex="3" targetId="6350-0348-a37a-874a" type="selectionEntry">
                           <costs>
                             <cost name="Pts" typeId="puntos" value="40"/>
                           </costs>
@@ -1268,7 +1268,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                             </modifier>
                           </modifiers>
                         </entryLink>
-                        <entryLink name="Extasiadora" id="7ea9-3ce4-ce57-e1f5" hidden="false" import="true" targetId="e1fb-8b17-677f-bcf3" type="selectionEntry">
+                        <entryLink name="Extasiadora" id="7ea9-3ce4-ce57-e1f5" hidden="false" import="true" sortIndex="4" targetId="e1fb-8b17-677f-bcf3" type="selectionEntry">
                           <costs>
                             <cost name="Pts" typeId="puntos" value="40"/>
                           </costs>
@@ -1280,7 +1280,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                             </modifier>
                           </modifiers>
                         </entryLink>
-                        <entryLink name="Siembraplagas" id="0ba8-8bf8-947e-1421" hidden="false" import="true" targetId="664d-0c63-8465-f568" type="selectionEntry">
+                        <entryLink name="Siembraplagas" id="0ba8-8bf8-947e-1421" hidden="false" import="true" sortIndex="5" targetId="664d-0c63-8465-f568" type="selectionEntry">
                           <costs>
                             <cost name="Pts" typeId="puntos" value="40"/>
                           </costs>
@@ -1301,7 +1301,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                     <constraint id="e9d5-4e50-11f6-a4fd" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Bólter acoplado" id="b7c9-1ba7-2971-4ab5" collective="false" hidden="false" import="true" targetId="992335bc-8bd0-4119-8cf0-914f43913224" type="selectionEntry">
+                    <entryLink name="Bólter acoplado" id="b7c9-1ba7-2971-4ab5" collective="false" hidden="false" import="true" sortIndex="1" targetId="992335bc-8bd0-4119-8cf0-914f43913224" type="selectionEntry">
                       <constraints>
                         <constraint id="450988a4-a61f-42c9-a713-04836a9120c6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -1309,7 +1309,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                         <cost name="Pts" typeId="puntos" value="5"/>
                       </costs>
                     </entryLink>
-                    <entryLink name="Combi" id="d13d-b01d-1d85-acf7" collective="false" hidden="false" import="true" targetId="db39-c833-ad11-c09c" type="selectionEntry">
+                    <entryLink name="Combi" id="d13d-b01d-1d85-acf7" collective="false" hidden="false" import="true" sortIndex="2" targetId="db39-c833-ad11-c09c" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="puntos" value="10"/>
                       </costs>
@@ -1318,7 +1318,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
-            <selectionEntry name="Armadura de Exterminador" id="0292-a639-f75e-b26d" collective="false" hidden="false" import="true" type="upgrade">
+            <selectionEntry name="Armadura de Exterminador" id="0292-a639-f75e-b26d" collective="false" hidden="false" import="true" sortIndex="2" type="upgrade">
               <constraints>
                 <constraint id="ec61-811c-3315-6787" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -1336,7 +1336,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                     <constraint id="c824-bfc3-2d88-23f4" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                   </constraints>
                   <selectionEntries>
-                    <selectionEntry name="Arma de combate y Distancia" id="7560-bc90-72cc-9aec" hidden="false" import="true" type="upgrade">
+                    <selectionEntry name="Arma de combate y Distancia" id="7560-bc90-72cc-9aec" hidden="false" import="true" sortIndex="1" type="upgrade">
                       <selectionEntryGroups>
                         <selectionEntryGroup name="Arma a Distancia" id="9c54-a3c3-9f79-883f" defaultSelectionEntryId="6529-e8ec-2a56-f3e9" hidden="false">
                           <constraints>
@@ -1344,12 +1344,12 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                             <constraint id="195b-68de-84c7-89d4-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                           </constraints>
                           <entryLinks>
-                            <entryLink name="Combi" id="cba8-e10a-f454-9222" collective="false" hidden="false" import="true" targetId="db39-c833-ad11-c09c" type="selectionEntry">
+                            <entryLink name="Combi" id="cba8-e10a-f454-9222" collective="false" hidden="false" import="true" sortIndex="2" targetId="db39-c833-ad11-c09c" type="selectionEntry">
                               <costs>
                                 <cost name="Pts" typeId="puntos" value="5"/>
                               </costs>
                             </entryLink>
-                            <entryLink name="Bólter acoplado" id="6529-e8ec-2a56-f3e9" collective="false" hidden="false" import="true" targetId="992335bc-8bd0-4119-8cf0-914f43913224" type="selectionEntry">
+                            <entryLink name="Bólter acoplado" id="6529-e8ec-2a56-f3e9" collective="false" hidden="false" import="true" sortIndex="1" targetId="992335bc-8bd0-4119-8cf0-914f43913224" type="selectionEntry">
                               <constraints>
                                 <constraint id="3e13834e-8a32-4f9d-833f-2aec325f7a6e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                               </constraints>
@@ -1365,13 +1365,13 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                             <constraint id="945d-c7ad-6c8e-baf9-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                           </constraints>
                           <entryLinks>
-                            <entryLink name="Arma de Energía" id="a5b9-f726-b2c1-5785" collective="false" hidden="false" import="true" targetId="b8c3-697d-5086-0aea" type="selectionEntry"/>
-                            <entryLink name="Puño de Combate" id="46fd-4520-6e70-ff98" collective="false" hidden="false" import="true" targetId="536e-9554-070d-161a" type="selectionEntry">
+                            <entryLink name="Arma de Energía" id="a5b9-f726-b2c1-5785" collective="false" hidden="false" import="true" sortIndex="1" targetId="b8c3-697d-5086-0aea" type="selectionEntry"/>
+                            <entryLink name="Puño de Combate" id="46fd-4520-6e70-ff98" collective="false" hidden="false" import="true" sortIndex="3" targetId="536e-9554-070d-161a" type="selectionEntry">
                               <costs>
                                 <cost name="Pts" typeId="puntos" value="10"/>
                               </costs>
                             </entryLink>
-                            <entryLink name="Cuchilla Relámpago" id="cdba-a941-e837-5dd4" collective="false" hidden="false" import="true" targetId="b653-7261-455e-348c" type="selectionEntry">
+                            <entryLink name="Cuchilla Relámpago" id="cdba-a941-e837-5dd4" collective="false" hidden="false" import="true" sortIndex="2" targetId="b653-7261-455e-348c" type="selectionEntry">
                               <constraints>
                                 <constraint id="bb5a-4780-4998-57cf" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                               </constraints>
@@ -1379,7 +1379,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                                 <cost name="Pts" typeId="puntos" value="10"/>
                               </costs>
                             </entryLink>
-                            <entryLink name="Puño Sierra" id="039a-0aec-9aa7-123f" collective="false" hidden="false" import="true" targetId="602b-c26e-637d-02e2" type="selectionEntry">
+                            <entryLink name="Puño Sierra" id="039a-0aec-9aa7-123f" collective="false" hidden="false" import="true" sortIndex="4" targetId="602b-c26e-637d-02e2" type="selectionEntry">
                               <costs>
                                 <cost name="Pts" typeId="puntos" value="15"/>
                               </costs>
@@ -1391,7 +1391,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                                 <constraint id="6679-ca2c-ab01-3505" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                               </constraints>
                               <entryLinks>
-                                <entryLink name="Arma Demonio" id="3c1c-031c-7e11-15c9" hidden="false" import="true" targetId="9405-8653-05ee-3804" type="selectionEntry">
+                                <entryLink name="Arma Demonio" id="3c1c-031c-7e11-15c9" hidden="false" import="true" sortIndex="1" targetId="9405-8653-05ee-3804" type="selectionEntry">
                                   <costs>
                                     <cost name="Pts" typeId="puntos" value="25"/>
                                   </costs>
@@ -1403,7 +1403,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                                     </modifier>
                                   </modifiers>
                                 </entryLink>
-                                <entryLink name="Aulladora de Muerte" id="df7c-8bfb-77e2-10f1" hidden="false" import="true" targetId="64a7-daaf-b862-8668" type="selectionEntry">
+                                <entryLink name="Aulladora de Muerte" id="df7c-8bfb-77e2-10f1" hidden="false" import="true" sortIndex="2" targetId="64a7-daaf-b862-8668" type="selectionEntry">
                                   <costs>
                                     <cost name="Pts" typeId="puntos" value="25"/>
                                   </costs>
@@ -1415,7 +1415,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                                     </modifier>
                                   </modifiers>
                                 </entryLink>
-                                <entryLink name="Bebedora de Sangre" id="1b7d-500c-5066-0b7c" hidden="false" import="true" targetId="6350-0348-a37a-874a" type="selectionEntry">
+                                <entryLink name="Bebedora de Sangre" id="1b7d-500c-5066-0b7c" hidden="false" import="true" sortIndex="3" targetId="6350-0348-a37a-874a" type="selectionEntry">
                                   <costs>
                                     <cost name="Pts" typeId="puntos" value="25"/>
                                   </costs>
@@ -1427,7 +1427,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                                     </modifier>
                                   </modifiers>
                                 </entryLink>
-                                <entryLink name="Extasiadora" id="8095-cb45-e7b7-9ade" hidden="false" import="true" targetId="e1fb-8b17-677f-bcf3" type="selectionEntry">
+                                <entryLink name="Extasiadora" id="8095-cb45-e7b7-9ade" hidden="false" import="true" sortIndex="4" targetId="e1fb-8b17-677f-bcf3" type="selectionEntry">
                                   <costs>
                                     <cost name="Pts" typeId="puntos" value="25"/>
                                   </costs>
@@ -1439,7 +1439,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                                     </modifier>
                                   </modifiers>
                                 </entryLink>
-                                <entryLink name="Siembraplagas" id="849d-3907-36b0-5aba" hidden="false" import="true" targetId="664d-0c63-8465-f568" type="selectionEntry">
+                                <entryLink name="Siembraplagas" id="849d-3907-36b0-5aba" hidden="false" import="true" sortIndex="5" targetId="664d-0c63-8465-f568" type="selectionEntry">
                                   <costs>
                                     <cost name="Pts" typeId="puntos" value="25"/>
                                   </costs>
@@ -1457,7 +1457,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                         </selectionEntryGroup>
                       </selectionEntryGroups>
                     </selectionEntry>
-                    <selectionEntry name="Par de Cuchillas Relámpago" id="e78d-50d2-2a4e-15dc" hidden="false" import="true" type="upgrade">
+                    <selectionEntry name="Par de Cuchillas Relámpago" id="e78d-50d2-2a4e-15dc" hidden="false" import="true" sortIndex="2" type="upgrade">
                       <constraints>
                         <constraint id="ec42-b3c2-214a-7a1c" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -1484,18 +1484,18 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
             <constraint id="3f30-bb0d-906e-26ac" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Motocicleta Marines Espaciales del Caos" id="e7da-4572-1e6f-7fbb" collective="false" hidden="false" import="true" sortIndex="3" targetId="8292-d319-84f5-7f19" type="selectionEntry">
+            <entryLink name="Motocicleta Marines Espaciales del Caos" id="e7da-4572-1e6f-7fbb" collective="false" hidden="false" import="true" sortIndex="4" targetId="8292-d319-84f5-7f19" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="30"/>
               </costs>
             </entryLink>
-            <entryLink name="Retroreactores" id="bbc4-acbc-ef67-8733" collective="false" hidden="false" import="true" sortIndex="1" targetId="3f17-3e88-f7da-960b" type="selectionEntry">
+            <entryLink name="Retroreactores" id="bbc4-acbc-ef67-8733" collective="false" hidden="false" import="true" sortIndex="3" targetId="3f17-3e88-f7da-960b" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="20"/>
               </costs>
             </entryLink>
             <entryLink name="Alas" id="86ec-123a-bae1-3f84" hidden="false" import="true" sortIndex="2" targetId="5c93-4890-cefb-a51c" type="selectionEntry"/>
-            <entryLink name="Montura Demoníaca" id="fdf3-6fe8-1f13-0bd1" hidden="false" import="true" targetId="51b8-ede0-8ece-75d9" type="selectionEntryGroup"/>
+            <entryLink name="Montura Demoníaca" id="fdf3-6fe8-1f13-0bd1" hidden="false" import="true" sortIndex="1" targetId="51b8-ede0-8ece-75d9" type="selectionEntryGroup"/>
           </entryLinks>
           <modifiers>
             <modifier field="hidden" type="set" value="true">
@@ -1737,7 +1737,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
             </modifierGroup>
           </modifierGroups>
           <selectionEntries>
-            <selectionEntry name="Marine Espacial" id="c9b1-6970-e6e0-78e7" collective="false" hidden="false" import="true" type="model">
+            <selectionEntry name="Marine Espacial" id="c9b1-6970-e6e0-78e7" collective="false" hidden="false" import="true" sortIndex="1" type="model">
               <constraints>
                 <constraint id="8c65-78ac-f0c7-547e" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="20"/>
                 <constraint id="0d83-d403-dbe9-0ea0" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="3"/>
@@ -1767,7 +1767,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                 <entryLink name="Servoarmadura" id="6be5-2c54-9160-7459" hidden="false" import="true" targetId="9657-fbb1-b1f9-5516" type="selectionEntry"/>
               </entryLinks>
             </selectionEntry>
-            <selectionEntry name="Marine Espacial con arma Especial" id="a9a2-ddfc-cfd4-b159" collective="false" hidden="false" import="true" type="model">
+            <selectionEntry name="Marine Espacial con arma Especial" id="a9a2-ddfc-cfd4-b159" collective="false" hidden="false" import="true" sortIndex="2" type="model">
               <constraints>
                 <constraint id="6998-add3-82dc-cd55" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -1790,7 +1790,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                     <constraint id="36ca-5344-b010-98fb" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <selectionEntries>
-                    <selectionEntry name="Lanzallamas" id="779f-2eb4-f3b2-ccb8" hidden="false" import="true" type="upgrade">
+                    <selectionEntry name="Lanzallamas" id="779f-2eb4-f3b2-ccb8" hidden="false" import="true" sortIndex="1" type="upgrade">
                       <constraints>
                         <constraint id="b998-e580-4e5d-3024" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -1812,7 +1812,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                         </entryLink>
                       </entryLinks>
                     </selectionEntry>
-                    <selectionEntry name="Rifle de Fusión" id="7beb-533a-6dc7-0bd7" hidden="false" import="true" type="upgrade">
+                    <selectionEntry name="Rifle de Fusión" id="7beb-533a-6dc7-0bd7" hidden="false" import="true" sortIndex="2" type="upgrade">
                       <constraints>
                         <constraint id="463b-d818-4409-0c7e" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -1834,7 +1834,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                         </entryLink>
                       </entryLinks>
                     </selectionEntry>
-                    <selectionEntry name="Pistola de Plasma" id="112e-db35-e999-c9d4" hidden="false" import="true" type="upgrade">
+                    <selectionEntry name="Pistola de Plasma" id="112e-db35-e999-c9d4" hidden="false" import="true" sortIndex="3" type="upgrade">
                       <constraints>
                         <constraint id="e023-1d06-c945-f623" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -1856,7 +1856,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                         </entryLink>
                       </entryLinks>
                     </selectionEntry>
-                    <selectionEntry name="Rifle de Plasma" id="4340-7377-d651-2932" hidden="false" import="true" type="upgrade">
+                    <selectionEntry name="Rifle de Plasma" id="4340-7377-d651-2932" hidden="false" import="true" sortIndex="4" type="upgrade">
                       <constraints>
                         <constraint id="3110-2977-b1c1-4b22" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -1882,7 +1882,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
-            <selectionEntry name="Marine Espacial con arma Pesada" id="097a-081a-18cc-b278" collective="false" hidden="true" import="true" type="model">
+            <selectionEntry name="Marine Espacial con arma Pesada" id="097a-081a-18cc-b278" collective="false" hidden="true" import="true" sortIndex="3" type="model">
               <constraints>
                 <constraint id="ce5d-5f79-7954-c77a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -1918,7 +1918,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                     <constraint id="2e93-5309-24c7-27c3-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Bolter Pesado" id="7dfe-dac1-fabb-3602" collective="false" hidden="false" import="true" sortIndex="2" targetId="7cb6-cdd7-9238-71a0" type="selectionEntry">
+                    <entryLink name="Bolter Pesado" id="7dfe-dac1-fabb-3602" collective="false" hidden="false" import="true" sortIndex="3" targetId="7cb6-cdd7-9238-71a0" type="selectionEntry">
                       <constraints>
                         <constraint id="5ccc-d7d1-511a-6593" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -1926,7 +1926,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                         <cost name="Pts" typeId="puntos" value="10"/>
                       </costs>
                     </entryLink>
-                    <entryLink name="Cañón Láser" id="08e5-dc12-96ab-7069" collective="false" hidden="false" import="true" sortIndex="3" targetId="9a7e-c553-d032-789c" type="selectionEntry">
+                    <entryLink name="Cañón Láser" id="08e5-dc12-96ab-7069" collective="false" hidden="false" import="true" sortIndex="6" targetId="9a7e-c553-d032-789c" type="selectionEntry">
                       <constraints>
                         <constraint id="db53-ca84-629d-6a2d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -1934,7 +1934,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                         <cost name="Pts" typeId="puntos" value="20"/>
                       </costs>
                     </entryLink>
-                    <entryLink name="Lanzallamas" id="96f1-525f-1b9b-505c" collective="false" hidden="false" import="true" targetId="aa81-6795-671e-32e7" type="selectionEntry">
+                    <entryLink name="Lanzallamas" id="96f1-525f-1b9b-505c" collective="false" hidden="false" import="true" sortIndex="2" targetId="aa81-6795-671e-32e7" type="selectionEntry">
                       <constraints>
                         <constraint id="13a6-f9cb-15fc-921b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -1950,12 +1950,12 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                         <cost name="Pts" typeId="puntos" value="10"/>
                       </costs>
                     </entryLink>
-                    <entryLink name="Rifle de Plasma" id="c9cf-8c0f-88c4-a7ea" hidden="false" import="true" sortIndex="4" targetId="81a6-dc08-e9a0-29b8" type="selectionEntry">
+                    <entryLink name="Rifle de Plasma" id="c9cf-8c0f-88c4-a7ea" hidden="false" import="true" sortIndex="5" targetId="81a6-dc08-e9a0-29b8" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="puntos" value="15"/>
                       </costs>
                     </entryLink>
-                    <entryLink name="Rifle de Fusión" id="75bf-6b31-b460-7172" hidden="false" import="true" sortIndex="5" targetId="532d-8841-1b61-1a96" type="selectionEntry">
+                    <entryLink name="Rifle de Fusión" id="75bf-6b31-b460-7172" hidden="false" import="true" sortIndex="4" targetId="532d-8841-1b61-1a96" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="puntos" value="10"/>
                       </costs>
@@ -1971,27 +1971,27 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
             <constraint id="2a80-36e2-8105-8285" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Reliquia de Gloria del Caos" id="1335-1ade-5892-2c2e" hidden="false" import="true" targetId="fff4-dd1a-f36f-cf6d" type="selectionEntry">
+            <entryLink name="Reliquia de Gloria del Caos" id="1335-1ade-5892-2c2e" hidden="false" import="true" sortIndex="1" targetId="fff4-dd1a-f36f-cf6d" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
             </entryLink>
-            <entryLink name="Reliquia de Khorne" id="6bb2-97b2-1549-39f8" hidden="false" import="true" targetId="d3f1-3e3e-94c3-315d" type="selectionEntry">
+            <entryLink name="Reliquia de Khorne" id="6bb2-97b2-1549-39f8" hidden="false" import="true" sortIndex="3" targetId="d3f1-3e3e-94c3-315d" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="30"/>
               </costs>
             </entryLink>
-            <entryLink name="Reliquia de Nurgle" id="5914-1d34-5826-f63b" hidden="false" import="true" targetId="181c-890a-482b-cd88" type="selectionEntry">
+            <entryLink name="Reliquia de Nurgle" id="5914-1d34-5826-f63b" hidden="false" import="true" sortIndex="5" targetId="181c-890a-482b-cd88" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="50"/>
               </costs>
             </entryLink>
-            <entryLink name="Reliquia de Slaanesh" id="81ea-da96-c552-0808" hidden="false" import="true" targetId="0550-51ea-fa84-6c65" type="selectionEntry">
+            <entryLink name="Reliquia de Slaanesh" id="81ea-da96-c552-0808" hidden="false" import="true" sortIndex="2" targetId="0550-51ea-fa84-6c65" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="20"/>
               </costs>
             </entryLink>
-            <entryLink name="Reliquia de Tzeentch" id="82bf-c867-1f22-1410" hidden="false" import="true" targetId="3e46-29a9-66f2-622e" type="selectionEntry">
+            <entryLink name="Reliquia de Tzeentch" id="82bf-c867-1f22-1410" hidden="false" import="true" sortIndex="4" targetId="3e46-29a9-66f2-622e" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="40"/>
               </costs>
@@ -2171,7 +2171,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                 </entryLink>
               </entryLinks>
             </selectionEntry>
-            <selectionEntry name="Elegido con Arma de Especialista Ligera" id="36f2-dc4c-c707-38ef" collective="false" hidden="false" import="true" type="model">
+            <selectionEntry name="Elegido con Arma de Especialista Ligera" id="36f2-dc4c-c707-38ef" collective="false" hidden="false" import="true" sortIndex="2" type="model">
               <constraints>
                 <constraint id="ad52-6805-5a22-2f19" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="4"/>
               </constraints>
@@ -2185,7 +2185,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                     <constraint id="7452-3d12-5ee3-61ab" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <selectionEntries>
-                    <selectionEntry name="Pistola de Plasma" id="eec8-91f1-7114-1b64" hidden="false" import="true" type="upgrade">
+                    <selectionEntry name="Pistola de Plasma" id="eec8-91f1-7114-1b64" hidden="false" import="true" sortIndex="1" type="upgrade">
                       <constraints>
                         <constraint id="36dd-8a81-d1b8-5e6e" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -2213,7 +2213,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                         </entryLink>
                       </entryLinks>
                     </selectionEntry>
-                    <selectionEntry name="Arma de Combate" id="1ab2-e9d0-ef9f-c416" hidden="false" import="true" type="upgrade">
+                    <selectionEntry name="Arma de Combate" id="1ab2-e9d0-ef9f-c416" hidden="false" import="true" sortIndex="3" type="upgrade">
                       <constraints>
                         <constraint id="5991-b233-be99-8e22" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -2238,12 +2238,12 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                             <constraint id="8695-573c-b44f-0626" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
                           </constraints>
                           <entryLinks>
-                            <entryLink name="Arma de Energía" id="2d3f-4efe-da22-3f2e" hidden="false" import="true" targetId="b8c3-697d-5086-0aea" type="selectionEntry">
+                            <entryLink name="Arma de Energía" id="2d3f-4efe-da22-3f2e" hidden="false" import="true" sortIndex="1" targetId="b8c3-697d-5086-0aea" type="selectionEntry">
                               <costs>
                                 <cost name="Pts" typeId="puntos" value="15"/>
                               </costs>
                             </entryLink>
-                            <entryLink name="Cuchilla Relámpago" id="985c-646f-4dd6-2149" hidden="false" import="true" targetId="b653-7261-455e-348c" type="selectionEntry">
+                            <entryLink name="Cuchilla Relámpago" id="985c-646f-4dd6-2149" hidden="false" import="true" sortIndex="2" targetId="b653-7261-455e-348c" type="selectionEntry">
                               <constraints>
                                 <constraint id="c017-72bd-5bf1-737f" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                               </constraints>
@@ -2251,7 +2251,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                                 <cost name="Pts" typeId="puntos" value="25"/>
                               </costs>
                             </entryLink>
-                            <entryLink name="Puño de Combate" id="b2b4-ac9d-8cfd-c652" hidden="false" import="true" targetId="536e-9554-070d-161a" type="selectionEntry">
+                            <entryLink name="Puño de Combate" id="b2b4-ac9d-8cfd-c652" hidden="false" import="true" sortIndex="3" targetId="536e-9554-070d-161a" type="selectionEntry">
                               <costs>
                                 <cost name="Pts" typeId="puntos" value="25"/>
                               </costs>
@@ -2260,7 +2260,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                         </selectionEntryGroup>
                       </selectionEntryGroups>
                     </selectionEntry>
-                    <selectionEntry name="Par de Cuchillas Relámpago" id="084e-3815-d1bd-3e41" hidden="false" import="true" type="upgrade">
+                    <selectionEntry name="Par de Cuchillas Relámpago" id="084e-3815-d1bd-3e41" hidden="false" import="true" sortIndex="4" type="upgrade">
                       <constraints>
                         <constraint id="b490-86d2-d4e8-7f20" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -2282,7 +2282,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                         </entryLink>
                       </entryLinks>
                     </selectionEntry>
-                    <selectionEntry name="Arma a Distancia" id="047e-f2bd-1390-e10a" hidden="false" import="true" type="upgrade">
+                    <selectionEntry name="Arma a Distancia" id="047e-f2bd-1390-e10a" hidden="false" import="true" sortIndex="2" type="upgrade">
                       <constraints>
                         <constraint id="0c82-36b4-766e-4f83" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -2312,17 +2312,17 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                                 <cost name="Pts" typeId="puntos" value="5"/>
                               </costs>
                             </entryLink>
-                            <entryLink name="Rifle de Fusión" id="ae4a-1c0e-cfa5-5412" hidden="false" import="true" sortIndex="2" targetId="532d-8841-1b61-1a96" type="selectionEntry">
+                            <entryLink name="Rifle de Fusión" id="ae4a-1c0e-cfa5-5412" hidden="false" import="true" sortIndex="4" targetId="532d-8841-1b61-1a96" type="selectionEntry">
                               <costs>
                                 <cost name="Pts" typeId="puntos" value="10"/>
                               </costs>
                             </entryLink>
-                            <entryLink name="Rifle de Plasma" id="54ed-2c73-b74d-0f10" hidden="false" import="true" sortIndex="3" targetId="81a6-dc08-e9a0-29b8" type="selectionEntry">
+                            <entryLink name="Rifle de Plasma" id="54ed-2c73-b74d-0f10" hidden="false" import="true" sortIndex="5" targetId="81a6-dc08-e9a0-29b8" type="selectionEntry">
                               <costs>
                                 <cost name="Pts" typeId="puntos" value="15"/>
                               </costs>
                             </entryLink>
-                            <entryLink name="Bólter acoplado" id="2c5b-359c-6297-fd27" hidden="false" import="true" targetId="992335bc-8bd0-4119-8cf0-914f43913224" type="selectionEntry">
+                            <entryLink name="Bólter acoplado" id="2c5b-359c-6297-fd27" hidden="false" import="true" sortIndex="2" targetId="992335bc-8bd0-4119-8cf0-914f43913224" type="selectionEntry">
                               <constraints>
                                 <constraint id="94265810-702e-45dc-a22b-794df17e0a84" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                               </constraints>
@@ -2330,7 +2330,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                                 <cost name="Pts" typeId="puntos" value="5"/>
                               </costs>
                             </entryLink>
-                            <entryLink name="Combi" id="2413-5511-1b74-cbab" hidden="false" import="true" targetId="db39-c833-ad11-c09c" type="selectionEntry"/>
+                            <entryLink name="Combi" id="2413-5511-1b74-cbab" hidden="false" import="true" sortIndex="3" targetId="db39-c833-ad11-c09c" type="selectionEntry"/>
                           </entryLinks>
                         </selectionEntryGroup>
                       </selectionEntryGroups>
@@ -2339,7 +2339,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
-            <selectionEntry name="Elegido con Arma de Especialista Pesada" id="f660-854e-67e4-bd28" collective="false" hidden="false" import="true" type="model">
+            <selectionEntry name="Elegido con Arma de Especialista Pesada" id="f660-854e-67e4-bd28" collective="false" hidden="false" import="true" sortIndex="3" type="model">
               <constraints>
                 <constraint id="d4ef-94b9-e546-cae2" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -2413,27 +2413,27 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
             <constraint id="8b0d-b1c5-195d-82f5" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Reliquia de Gloria del Caos" id="ea95-52f4-d144-5d76" hidden="false" import="true" targetId="fff4-dd1a-f36f-cf6d" type="selectionEntry">
+            <entryLink name="Reliquia de Gloria del Caos" id="ea95-52f4-d144-5d76" hidden="false" import="true" sortIndex="1" targetId="fff4-dd1a-f36f-cf6d" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
             </entryLink>
-            <entryLink name="Reliquia de Khorne" id="ec42-896d-506a-8889" hidden="false" import="true" targetId="d3f1-3e3e-94c3-315d" type="selectionEntry">
+            <entryLink name="Reliquia de Khorne" id="ec42-896d-506a-8889" hidden="false" import="true" sortIndex="3" targetId="d3f1-3e3e-94c3-315d" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="30"/>
               </costs>
             </entryLink>
-            <entryLink name="Reliquia de Nurgle" id="6230-d8be-8cb2-cc77" hidden="false" import="true" targetId="181c-890a-482b-cd88" type="selectionEntry">
+            <entryLink name="Reliquia de Nurgle" id="6230-d8be-8cb2-cc77" hidden="false" import="true" sortIndex="5" targetId="181c-890a-482b-cd88" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="50"/>
               </costs>
             </entryLink>
-            <entryLink name="Reliquia de Slaanesh" id="e45c-b35e-a268-3e74" hidden="false" import="true" targetId="0550-51ea-fa84-6c65" type="selectionEntry">
+            <entryLink name="Reliquia de Slaanesh" id="e45c-b35e-a268-3e74" hidden="false" import="true" sortIndex="2" targetId="0550-51ea-fa84-6c65" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="20"/>
               </costs>
             </entryLink>
-            <entryLink name="Reliquia de Tzeentch" id="1b01-2bbe-6a09-ab1d" hidden="false" import="true" targetId="3e46-29a9-66f2-622e" type="selectionEntry">
+            <entryLink name="Reliquia de Tzeentch" id="1b01-2bbe-6a09-ab1d" hidden="false" import="true" sortIndex="4" targetId="3e46-29a9-66f2-622e" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="40"/>
               </costs>
@@ -2503,7 +2503,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
             <constraint id="3713-0f90-6aa7-a74e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="10"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry name="Exterminador" id="2207-b50a-91b4-2b34" collective="false" hidden="false" import="true" type="model">
+            <selectionEntry name="Exterminador" id="2207-b50a-91b4-2b34" collective="false" hidden="false" import="true" sortIndex="1" type="model">
               <costs>
                 <cost name="Pts" typeId="puntos" value="30"/>
               </costs>
@@ -2535,7 +2535,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                     <constraint id="3342-37c7-75d7-bf51-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <selectionEntries>
-                    <selectionEntry name="Par de Cuchillas Relámpago" id="97ec-df74-79ac-47a5" hidden="false" import="true" sortIndex="2" type="upgrade">
+                    <selectionEntry name="Par de Cuchillas Relámpago" id="97ec-df74-79ac-47a5" hidden="false" import="true" sortIndex="3" type="upgrade">
                       <constraints>
                         <constraint id="5e04-387b-b0de-f8ba" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -2562,12 +2562,12 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                             <constraint id="13de-6888-8d01-8c94" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
                           </constraints>
                           <entryLinks>
-                            <entryLink name="Bólter acoplado" id="8adb-064a-e8e3-7a90" hidden="false" import="true" targetId="992335bc-8bd0-4119-8cf0-914f43913224" type="selectionEntry">
+                            <entryLink name="Bólter acoplado" id="8adb-064a-e8e3-7a90" hidden="false" import="true" sortIndex="1" targetId="992335bc-8bd0-4119-8cf0-914f43913224" type="selectionEntry">
                               <constraints>
                                 <constraint id="3290f1ed-94e1-4e8b-b2b8-bc6ce0229349" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                               </constraints>
                             </entryLink>
-                            <entryLink name="Combi" id="950b-d50b-37c5-8968" hidden="false" import="true" targetId="db39-c833-ad11-c09c" type="selectionEntry">
+                            <entryLink name="Combi" id="950b-d50b-37c5-8968" hidden="false" import="true" sortIndex="2" targetId="db39-c833-ad11-c09c" type="selectionEntry">
                               <costs>
                                 <cost name="Pts" typeId="puntos" value="5"/>
                               </costs>
@@ -2580,8 +2580,8 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                             <constraint id="6eff-4606-f1cd-0f64" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
                           </constraints>
                           <entryLinks>
-                            <entryLink name="Arma de Energía" id="530b-a7b8-81fb-2fc4" hidden="false" import="true" targetId="b8c3-697d-5086-0aea" type="selectionEntry"/>
-                            <entryLink name="Cuchilla Relámpago" id="7878-63c1-1f98-62ec" hidden="false" import="true" targetId="b653-7261-455e-348c" type="selectionEntry">
+                            <entryLink name="Arma de Energía" id="530b-a7b8-81fb-2fc4" hidden="false" import="true" sortIndex="1" targetId="b8c3-697d-5086-0aea" type="selectionEntry"/>
+                            <entryLink name="Cuchilla Relámpago" id="7878-63c1-1f98-62ec" hidden="false" import="true" sortIndex="2" targetId="b653-7261-455e-348c" type="selectionEntry">
                               <constraints>
                                 <constraint id="8e10-66e5-2ead-1652" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                               </constraints>
@@ -2589,12 +2589,12 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                                 <cost name="Pts" typeId="puntos" value="10"/>
                               </costs>
                             </entryLink>
-                            <entryLink name="Puño de Combate" id="9bb1-b8cf-3548-93d3" hidden="false" import="true" targetId="536e-9554-070d-161a" type="selectionEntry">
+                            <entryLink name="Puño de Combate" id="9bb1-b8cf-3548-93d3" hidden="false" import="true" sortIndex="3" targetId="536e-9554-070d-161a" type="selectionEntry">
                               <costs>
                                 <cost name="Pts" typeId="puntos" value="10"/>
                               </costs>
                             </entryLink>
-                            <entryLink name="Puño Sierra" id="e30d-a78a-8bdc-17ad" hidden="false" import="true" targetId="602b-c26e-637d-02e2" type="selectionEntry">
+                            <entryLink name="Puño Sierra" id="e30d-a78a-8bdc-17ad" hidden="false" import="true" sortIndex="4" targetId="602b-c26e-637d-02e2" type="selectionEntry">
                               <costs>
                                 <cost name="Pts" typeId="puntos" value="15"/>
                               </costs>
@@ -2603,7 +2603,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                         </selectionEntryGroup>
                       </selectionEntryGroups>
                     </selectionEntry>
-                    <selectionEntry name="Arma Pesada" id="ad75-a4b9-93ba-19d5" hidden="false" import="true" type="upgrade">
+                    <selectionEntry name="Arma Pesada" id="ad75-a4b9-93ba-19d5" hidden="false" import="true" sortIndex="2" type="upgrade">
                       <constraints>
                         <constraint id="32f5-6d5c-ecff-0d33" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                         <constraint id="898e-da66-07e3-5381" field="selections" includeChildSelections="true" scope="2e4e-3782-c943-7b56" shared="true" type="max" value="1"/>
@@ -2630,7 +2630,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                             <constraint id="7a27-6c2b-2dd7-d216" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
                           </constraints>
                           <entryLinks>
-                            <entryLink name="Cañón Segador" id="8fbb-c9ae-5229-5a1b" hidden="false" import="true" targetId="444e-2fc4-b841-d208" type="selectionEntry">
+                            <entryLink name="Cañón Segador" id="8fbb-c9ae-5229-5a1b" hidden="false" import="true" sortIndex="2" targetId="444e-2fc4-b841-d208" type="selectionEntry">
                               <costs>
                                 <cost name="Pts" typeId="puntos" value="25"/>
                               </costs>
@@ -2648,7 +2648,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
-            <selectionEntry name="Paladines Exterminadores" id="60ea-febe-155c-2597" collective="false" hidden="false" import="true" type="upgrade">
+            <selectionEntry name="Paladines Exterminadores" id="60ea-febe-155c-2597" collective="false" hidden="false" import="true" sortIndex="2" type="upgrade">
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
@@ -2680,7 +2680,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                     <constraint id="66e8-8a9e-8ac2-86c1" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <selectionEntries>
-                    <selectionEntry name="Par de Cuchillas Relámpago" id="8a82-d4e0-e4cc-09b0" hidden="false" import="true" sortIndex="2" type="upgrade">
+                    <selectionEntry name="Par de Cuchillas Relámpago" id="8a82-d4e0-e4cc-09b0" hidden="false" import="true" sortIndex="3" type="upgrade">
                       <constraints>
                         <constraint id="a843-8ee2-4e96-ecbe" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -2707,12 +2707,12 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                             <constraint id="bf8b-c12d-c026-152c" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
                           </constraints>
                           <entryLinks>
-                            <entryLink name="Bólter acoplado" id="8f59-056d-4b09-dd34" hidden="false" import="true" targetId="992335bc-8bd0-4119-8cf0-914f43913224" type="selectionEntry">
+                            <entryLink name="Bólter acoplado" id="8f59-056d-4b09-dd34" hidden="false" import="true" sortIndex="1" targetId="992335bc-8bd0-4119-8cf0-914f43913224" type="selectionEntry">
                               <constraints>
                                 <constraint id="216afcf1-a060-4f72-9988-10ea9ecdf740" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                               </constraints>
                             </entryLink>
-                            <entryLink name="Combi" id="da7b-6ec5-24a0-995a" hidden="false" import="true" targetId="db39-c833-ad11-c09c" type="selectionEntry">
+                            <entryLink name="Combi" id="da7b-6ec5-24a0-995a" hidden="false" import="true" sortIndex="2" targetId="db39-c833-ad11-c09c" type="selectionEntry">
                               <costs>
                                 <cost name="Pts" typeId="puntos" value="5"/>
                               </costs>
@@ -2725,8 +2725,8 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                             <constraint id="cdef-8086-cb83-4564" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
                           </constraints>
                           <entryLinks>
-                            <entryLink name="Arma de Energía" id="d590-6aca-d6e4-e116" hidden="false" import="true" targetId="b8c3-697d-5086-0aea" type="selectionEntry"/>
-                            <entryLink name="Cuchilla Relámpago" id="34da-f54c-a459-f8b4" hidden="false" import="true" targetId="b653-7261-455e-348c" type="selectionEntry">
+                            <entryLink name="Arma de Energía" id="d590-6aca-d6e4-e116" hidden="false" import="true" sortIndex="1" targetId="b8c3-697d-5086-0aea" type="selectionEntry"/>
+                            <entryLink name="Cuchilla Relámpago" id="34da-f54c-a459-f8b4" hidden="false" import="true" sortIndex="2" targetId="b653-7261-455e-348c" type="selectionEntry">
                               <constraints>
                                 <constraint id="44e0-a0ed-b929-15ee" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                               </constraints>
@@ -2734,12 +2734,12 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                                 <cost name="Pts" typeId="puntos" value="10"/>
                               </costs>
                             </entryLink>
-                            <entryLink name="Puño de Combate" id="8953-a36e-2f6c-0883" hidden="false" import="true" targetId="536e-9554-070d-161a" type="selectionEntry">
+                            <entryLink name="Puño de Combate" id="8953-a36e-2f6c-0883" hidden="false" import="true" sortIndex="3" targetId="536e-9554-070d-161a" type="selectionEntry">
                               <costs>
                                 <cost name="Pts" typeId="puntos" value="10"/>
                               </costs>
                             </entryLink>
-                            <entryLink name="Puño Sierra" id="01d7-f219-9e07-2103" hidden="false" import="true" targetId="602b-c26e-637d-02e2" type="selectionEntry">
+                            <entryLink name="Puño Sierra" id="01d7-f219-9e07-2103" hidden="false" import="true" sortIndex="4" targetId="602b-c26e-637d-02e2" type="selectionEntry">
                               <costs>
                                 <cost name="Pts" typeId="puntos" value="15"/>
                               </costs>
@@ -2748,7 +2748,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                         </selectionEntryGroup>
                       </selectionEntryGroups>
                     </selectionEntry>
-                    <selectionEntry name="Arma Pesada" id="d483-ac40-0bed-3df5" hidden="false" import="true" type="upgrade">
+                    <selectionEntry name="Arma Pesada" id="d483-ac40-0bed-3df5" hidden="false" import="true" sortIndex="2" type="upgrade">
                       <constraints>
                         <constraint id="073a-afd4-67d7-0589" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                         <constraint id="f92f-d8d4-efa5-312e" field="selections" includeChildSelections="true" scope="2e4e-3782-c943-7b56" shared="true" type="max" value="1"/>
@@ -2775,7 +2775,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                             <constraint id="84da-e456-5e69-1cc2" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
                           </constraints>
                           <entryLinks>
-                            <entryLink name="Cañón Segador" id="1c91-32d8-5997-b692" hidden="false" import="true" targetId="444e-2fc4-b841-d208" type="selectionEntry">
+                            <entryLink name="Cañón Segador" id="1c91-32d8-5997-b692" hidden="false" import="true" sortIndex="2" targetId="444e-2fc4-b841-d208" type="selectionEntry">
                               <costs>
                                 <cost name="Pts" typeId="puntos" value="25"/>
                               </costs>
@@ -2800,27 +2800,27 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
             <constraint id="dd94-f30f-a0fd-83f8" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Reliquia de Gloria del Caos" id="6a57-e47e-39f5-28ad" hidden="false" import="true" targetId="fff4-dd1a-f36f-cf6d" type="selectionEntry">
+            <entryLink name="Reliquia de Gloria del Caos" id="6a57-e47e-39f5-28ad" hidden="false" import="true" sortIndex="1" targetId="fff4-dd1a-f36f-cf6d" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
             </entryLink>
-            <entryLink name="Reliquia de Khorne" id="dcf5-37da-ea87-3fff" hidden="false" import="true" targetId="d3f1-3e3e-94c3-315d" type="selectionEntry">
+            <entryLink name="Reliquia de Khorne" id="dcf5-37da-ea87-3fff" hidden="false" import="true" sortIndex="3" targetId="d3f1-3e3e-94c3-315d" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="30"/>
               </costs>
             </entryLink>
-            <entryLink name="Reliquia de Nurgle" id="b6aa-e1e5-57b6-c218" hidden="false" import="true" targetId="181c-890a-482b-cd88" type="selectionEntry">
+            <entryLink name="Reliquia de Nurgle" id="b6aa-e1e5-57b6-c218" hidden="false" import="true" sortIndex="5" targetId="181c-890a-482b-cd88" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="40"/>
               </costs>
             </entryLink>
-            <entryLink name="Reliquia de Slaanesh" id="3188-84b1-2a14-f7d7" hidden="false" import="true" targetId="0550-51ea-fa84-6c65" type="selectionEntry">
+            <entryLink name="Reliquia de Slaanesh" id="3188-84b1-2a14-f7d7" hidden="false" import="true" sortIndex="2" targetId="0550-51ea-fa84-6c65" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="15"/>
               </costs>
             </entryLink>
-            <entryLink name="Reliquia de Tzeentch" id="98a3-65b2-b7d5-2866" hidden="false" import="true" targetId="3e46-29a9-66f2-622e" type="selectionEntry">
+            <entryLink name="Reliquia de Tzeentch" id="98a3-65b2-b7d5-2866" hidden="false" import="true" sortIndex="4" targetId="3e46-29a9-66f2-622e" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="35"/>
               </costs>
@@ -2889,10 +2889,10 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
             <constraint id="e185-ba77-17f3-44af" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Lanzamisiles" id="9d60-ee00-ed13-b712" collective="false" hidden="false" import="true" targetId="989a-ecb3-a084-9c39" type="selectionEntry"/>
+            <entryLink name="Lanzamisiles" id="9d60-ee00-ed13-b712" collective="false" hidden="false" import="true" sortIndex="2" targetId="989a-ecb3-a084-9c39" type="selectionEntry"/>
           </entryLinks>
           <selectionEntries>
-            <selectionEntry name="Arma de combate cuerpo a cuerpo para Dreadnoughts" id="f805-00d4-01d4-ae19" collective="false" hidden="false" import="true" type="upgrade">
+            <selectionEntry name="Arma de combate cuerpo a cuerpo para Dreadnoughts" id="f805-00d4-01d4-ae19" collective="false" hidden="false" import="true" sortIndex="1" type="upgrade">
               <constraints>
                 <constraint id="efc7-302c-471f-ba27" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -2911,7 +2911,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
             <constraint id="94ab-35d0-d976-40fc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Cañón automático acoplado" id="7766-9899-c57a-bc9b" collective="false" hidden="false" import="true" sortIndex="4" targetId="3ea3154b-cad6-4322-97e4-9c980a9b1822" type="selectionEntry">
+            <entryLink name="Cañón automático acoplado" id="7766-9899-c57a-bc9b" collective="false" hidden="false" import="true" sortIndex="5" targetId="3ea3154b-cad6-4322-97e4-9c980a9b1822" type="selectionEntry">
               <constraints>
                 <constraint id="70d622be-007b-4201-afc3-b640888d7c96" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -2919,12 +2919,12 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                 <cost name="Pts" typeId="puntos" value="20"/>
               </costs>
             </entryLink>
-            <entryLink name="Cañón de Fusión" id="3f16-0f87-6f23-9dba" collective="false" hidden="false" import="true" sortIndex="2" targetId="fee3-62f1-28c9-c4d1" type="selectionEntry">
+            <entryLink name="Cañón de Fusión" id="3f16-0f87-6f23-9dba" collective="false" hidden="false" import="true" sortIndex="3" targetId="fee3-62f1-28c9-c4d1" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
             </entryLink>
-            <entryLink name="Cañón de Plasma" id="c9cd-d30d-62b6-d02e" collective="false" hidden="false" import="true" sortIndex="3" targetId="bb10-b315-7583-5584" type="selectionEntry">
+            <entryLink name="Cañón de Plasma" id="c9cd-d30d-62b6-d02e" collective="false" hidden="false" import="true" sortIndex="4" targetId="bb10-b315-7583-5584" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="15"/>
               </costs>
@@ -2937,7 +2937,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                 <cost name="Pts" typeId="puntos" value="15"/>
               </costs>
             </entryLink>
-            <entryLink name="Cañón láser acoplado" id="5550-f52f-d646-3682" collective="false" hidden="false" import="true" targetId="62bf8544-1c87-4575-9f2b-1887a93989d3" type="selectionEntry">
+            <entryLink name="Cañón láser acoplado" id="5550-f52f-d646-3682" collective="false" hidden="false" import="true" sortIndex="6" targetId="62bf8544-1c87-4575-9f2b-1887a93989d3" type="selectionEntry">
               <constraints>
                 <constraint id="5b2bc2de-509d-4188-b54b-3deba009f50f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -2947,7 +2947,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
             </entryLink>
           </entryLinks>
           <selectionEntries>
-            <selectionEntry name="Arma de combate cuerpo a cuerpo para Dreadnoughts" id="4f4d-29e4-ffc4-4276" collective="false" hidden="false" import="true" type="upgrade">
+            <selectionEntry name="Arma de combate cuerpo a cuerpo para Dreadnoughts" id="4f4d-29e4-ffc4-4276" collective="false" hidden="false" import="true" sortIndex="2" type="upgrade">
               <constraints>
                 <constraint id="af94-5ec2-2ee7-2e6e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -3015,7 +3015,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
             <constraint id="6fdf-f54c-6ae4-492d" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Bólter acoplado" id="dc76-fc19-7b37-00da" collective="false" hidden="false" import="true" targetId="992335bc-8bd0-4119-8cf0-914f43913224" type="selectionEntry">
+            <entryLink name="Bólter acoplado" id="dc76-fc19-7b37-00da" collective="false" hidden="false" import="true" sortIndex="1" targetId="992335bc-8bd0-4119-8cf0-914f43913224" type="selectionEntry">
               <constraints>
                 <constraint id="31a22ecc-d685-40f7-afdb-72c534cc2477" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -3023,8 +3023,8 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                 <cost name="Pts" typeId="puntos" value="5"/>
               </costs>
             </entryLink>
-            <entryLink name="Combi" id="b559-165f-b3c2-3341" hidden="false" import="true" targetId="db39-c833-ad11-c09c" type="selectionEntry"/>
-            <entryLink name="Lanzamisiles Aniquilador" id="4737-db1d-8b76-9102" hidden="false" import="true" targetId="a038-6dda-c840-3a7f" type="selectionEntry">
+            <entryLink name="Combi" id="b559-165f-b3c2-3341" hidden="false" import="true" sortIndex="2" targetId="db39-c833-ad11-c09c" type="selectionEntry"/>
+            <entryLink name="Lanzamisiles Aniquilador" id="4737-db1d-8b76-9102" hidden="false" import="true" sortIndex="3" targetId="a038-6dda-c840-3a7f" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="15"/>
               </costs>
@@ -3083,7 +3083,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                 <constraint id="4abe-86d9-40ed-c02c-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry name="Bolters Pesados" id="e7e4-eb8c-4021-89e7" collective="false" hidden="false" import="true" type="upgrade">
+                <selectionEntry name="Bolters Pesados" id="e7e4-eb8c-4021-89e7" collective="false" hidden="false" import="true" sortIndex="1" type="upgrade">
                   <costs>
                     <cost name="Pts" typeId="puntos" value="30"/>
                   </costs>
@@ -3099,7 +3099,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                     </entryLink>
                   </entryLinks>
                 </selectionEntry>
-                <selectionEntry name="Cañones láser" id="bc1b-49aa-d52f-a4ab" collective="false" hidden="false" import="true" type="upgrade">
+                <selectionEntry name="Cañones láser" id="bc1b-49aa-d52f-a4ab" collective="false" hidden="false" import="true" sortIndex="2" type="upgrade">
                   <costs>
                     <cost name="Pts" typeId="puntos" value="60"/>
                   </costs>
@@ -3127,7 +3127,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
             <constraint id="1749-fa9c-6c9c-6c28-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Cañón láser acoplado" id="01a2-f7ad-fd68-e429" collective="false" hidden="false" import="true" targetId="62bf8544-1c87-4575-9f2b-1887a93989d3" type="selectionEntry">
+            <entryLink name="Cañón láser acoplado" id="01a2-f7ad-fd68-e429" collective="false" hidden="false" import="true" sortIndex="2" targetId="62bf8544-1c87-4575-9f2b-1887a93989d3" type="selectionEntry">
               <constraints>
                 <constraint id="6959613f-cbb1-4650-ad91-0505dea343e7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -3135,7 +3135,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                 <cost name="Pts" typeId="puntos" value="35"/>
               </costs>
             </entryLink>
-            <entryLink name="Cañón Automático" id="1e67-fcc5-0fba-f559" collective="false" hidden="false" import="true" targetId="f70f-455c-7955-e91e" type="selectionEntry"/>
+            <entryLink name="Cañón Automático" id="1e67-fcc5-0fba-f559" collective="false" hidden="false" import="true" sortIndex="1" targetId="f70f-455c-7955-e91e" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Arma Exterior" id="d364-6388-eb98-e201" hidden="false" sortIndex="3">
@@ -3143,7 +3143,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
             <constraint id="8068-030f-a2c7-ff55" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Bólter acoplado" id="0955-8bcb-174b-40dc" collective="false" hidden="false" import="true" targetId="992335bc-8bd0-4119-8cf0-914f43913224" type="selectionEntry">
+            <entryLink name="Bólter acoplado" id="0955-8bcb-174b-40dc" collective="false" hidden="false" import="true" sortIndex="1" targetId="992335bc-8bd0-4119-8cf0-914f43913224" type="selectionEntry">
               <constraints>
                 <constraint id="8c1c96ab-4671-4ef3-a7f5-115f569c152e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -3151,12 +3151,12 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                 <cost name="Pts" typeId="puntos" value="5"/>
               </costs>
             </entryLink>
-            <entryLink name="Combi" id="1609-726a-8e5d-37af" collective="false" hidden="false" import="true" targetId="db39-c833-ad11-c09c" type="selectionEntry">
+            <entryLink name="Combi" id="1609-726a-8e5d-37af" collective="false" hidden="false" import="true" sortIndex="2" targetId="db39-c833-ad11-c09c" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
             </entryLink>
-            <entryLink name="Lanzamisiles Aniquilador" id="86fa-426d-114a-f045" collective="false" hidden="false" import="true" targetId="a038-6dda-c840-3a7f" type="selectionEntry">
+            <entryLink name="Lanzamisiles Aniquilador" id="86fa-426d-114a-f045" collective="false" hidden="false" import="true" sortIndex="3" targetId="a038-6dda-c840-3a7f" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="15"/>
               </costs>
@@ -3218,7 +3218,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
             <constraint id="e8ea-1464-6a42-6ce0" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Bólter acoplado" id="5520-bc66-e0b0-2e42" collective="false" hidden="false" import="true" targetId="992335bc-8bd0-4119-8cf0-914f43913224" type="selectionEntry">
+            <entryLink name="Bólter acoplado" id="5520-bc66-e0b0-2e42" collective="false" hidden="false" import="true" sortIndex="1" targetId="992335bc-8bd0-4119-8cf0-914f43913224" type="selectionEntry">
               <constraints>
                 <constraint id="eac122e0-d30f-4434-957a-2a2a7c89c1ef" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -3226,12 +3226,12 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                 <cost name="Pts" typeId="puntos" value="5"/>
               </costs>
             </entryLink>
-            <entryLink name="Combi" id="700d-17f7-6640-2b97" collective="false" hidden="false" import="true" targetId="db39-c833-ad11-c09c" type="selectionEntry">
+            <entryLink name="Combi" id="700d-17f7-6640-2b97" collective="false" hidden="false" import="true" sortIndex="2" targetId="db39-c833-ad11-c09c" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
             </entryLink>
-            <entryLink name="Lanzamisiles Aniquilador" id="f942-63c5-5963-5875" collective="false" hidden="false" import="true" targetId="a038-6dda-c840-3a7f" type="selectionEntry">
+            <entryLink name="Lanzamisiles Aniquilador" id="f942-63c5-5963-5875" collective="false" hidden="false" import="true" sortIndex="3" targetId="a038-6dda-c840-3a7f" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="15"/>
               </costs>
@@ -3296,7 +3296,7 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
             <constraint id="3c44-b260-9890-e673" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Bólter acoplado" id="0af6-f377-6ff0-cd2a" collective="false" hidden="false" import="true" targetId="992335bc-8bd0-4119-8cf0-914f43913224" type="selectionEntry">
+            <entryLink name="Bólter acoplado" id="0af6-f377-6ff0-cd2a" collective="false" hidden="false" import="true" sortIndex="1" targetId="992335bc-8bd0-4119-8cf0-914f43913224" type="selectionEntry">
               <constraints>
                 <constraint id="44492ee8-ebbc-4a9b-9609-65500f1435a6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -3304,12 +3304,12 @@ El propietario de un Arma demonio genérica obtiene +1 de Fuerza</characteristic
                 <cost name="Pts" typeId="puntos" value="5"/>
               </costs>
             </entryLink>
-            <entryLink name="Combi" id="d000-56f6-2ee6-bbad" collective="false" hidden="false" import="true" targetId="db39-c833-ad11-c09c" type="selectionEntry">
+            <entryLink name="Combi" id="d000-56f6-2ee6-bbad" collective="false" hidden="false" import="true" sortIndex="2" targetId="db39-c833-ad11-c09c" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
             </entryLink>
-            <entryLink name="Lanzamisiles Aniquilador" id="54a7-9eb0-3afd-319e" collective="false" hidden="false" import="true" targetId="a038-6dda-c840-3a7f" type="selectionEntry">
+            <entryLink name="Lanzamisiles Aniquilador" id="54a7-9eb0-3afd-319e" collective="false" hidden="false" import="true" sortIndex="3" targetId="a038-6dda-c840-3a7f" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="15"/>
               </costs>
@@ -4538,18 +4538,18 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
             <constraint id="95df-c982-64b0-4136" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Motocicleta Marines Espaciales del Caos" id="c5b4-8b72-d56d-628e" collective="false" hidden="false" import="true" sortIndex="3" targetId="8292-d319-84f5-7f19" type="selectionEntry">
+            <entryLink name="Motocicleta Marines Espaciales del Caos" id="c5b4-8b72-d56d-628e" collective="false" hidden="false" import="true" sortIndex="4" targetId="8292-d319-84f5-7f19" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="30"/>
               </costs>
             </entryLink>
-            <entryLink name="Retroreactores" id="d51c-6df9-e557-f9fd" collective="false" hidden="false" import="true" sortIndex="1" targetId="3f17-3e88-f7da-960b" type="selectionEntry">
+            <entryLink name="Retroreactores" id="d51c-6df9-e557-f9fd" collective="false" hidden="false" import="true" sortIndex="3" targetId="3f17-3e88-f7da-960b" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="20"/>
               </costs>
             </entryLink>
             <entryLink name="Alas" id="4994-f7ac-943e-6041" hidden="false" import="true" sortIndex="2" targetId="5c93-4890-cefb-a51c" type="selectionEntry"/>
-            <entryLink name="Montura Demoníaca" id="7c5e-5502-67b3-12e8" hidden="false" import="true" targetId="51b8-ede0-8ece-75d9" type="selectionEntryGroup"/>
+            <entryLink name="Montura Demoníaca" id="7c5e-5502-67b3-12e8" hidden="false" import="true" sortIndex="1" targetId="51b8-ede0-8ece-75d9" type="selectionEntryGroup"/>
           </entryLinks>
           <modifiers>
             <modifier field="hidden" type="set" value="true">
@@ -4595,17 +4595,17 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
                     <constraint id="7cbd-6341-8571-5c9c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Pistola de Plasma" id="7d98-7bfb-480a-6c74" collective="false" hidden="false" import="true" targetId="c85c-fcc8-62a9-3940" type="selectionEntry">
+                    <entryLink name="Pistola de Plasma" id="7d98-7bfb-480a-6c74" collective="false" hidden="false" import="true" sortIndex="2" targetId="c85c-fcc8-62a9-3940" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="puntos" value="15"/>
                       </costs>
                     </entryLink>
-                    <entryLink name="Pistola Bolter" id="56e4-3802-0f30-3b28" collective="false" hidden="false" import="true" targetId="9f67-3f57-ebe8-1dbb" type="selectionEntry"/>
+                    <entryLink name="Pistola Bolter" id="56e4-3802-0f30-3b28" collective="false" hidden="false" import="true" sortIndex="1" targetId="9f67-3f57-ebe8-1dbb" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
-            <selectionEntry name="Armadura de Exterminador" id="6898-8158-cb15-59e6" collective="false" hidden="false" import="true" type="upgrade">
+            <selectionEntry name="Armadura de Exterminador" id="6898-8158-cb15-59e6" collective="false" hidden="false" import="true" sortIndex="2" type="upgrade">
               <constraints>
                 <constraint id="06bd-de44-1630-54f1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -4622,12 +4622,12 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
                     <constraint id="3621-fab9-8700-478e-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Combi" id="d294-c2c9-7b45-58bb" collective="false" hidden="false" import="true" targetId="db39-c833-ad11-c09c" type="selectionEntry">
+                    <entryLink name="Combi" id="d294-c2c9-7b45-58bb" collective="false" hidden="false" import="true" sortIndex="2" targetId="db39-c833-ad11-c09c" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="puntos" value="5"/>
                       </costs>
                     </entryLink>
-                    <entryLink name="Bólter acoplado" id="7a6d-2e44-f927-ccba" collective="false" hidden="false" import="true" targetId="992335bc-8bd0-4119-8cf0-914f43913224" type="selectionEntry">
+                    <entryLink name="Bólter acoplado" id="7a6d-2e44-f927-ccba" collective="false" hidden="false" import="true" sortIndex="1" targetId="992335bc-8bd0-4119-8cf0-914f43913224" type="selectionEntry">
                       <constraints>
                         <constraint id="2323c819-05db-4ba3-baa3-0c3e9d4db898" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -4858,27 +4858,27 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
             <constraint id="7ef0-fff4-e2b2-74ed" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Reliquia de Gloria del Caos" id="eb60-7862-7921-5c7c" hidden="false" import="true" targetId="fff4-dd1a-f36f-cf6d" type="selectionEntry">
+            <entryLink name="Reliquia de Gloria del Caos" id="eb60-7862-7921-5c7c" hidden="false" import="true" sortIndex="1" targetId="fff4-dd1a-f36f-cf6d" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="5"/>
               </costs>
             </entryLink>
-            <entryLink name="Reliquia de Khorne" id="0737-3310-6083-3f96" hidden="false" import="true" targetId="d3f1-3e3e-94c3-315d" type="selectionEntry">
+            <entryLink name="Reliquia de Khorne" id="0737-3310-6083-3f96" hidden="false" import="true" sortIndex="3" targetId="d3f1-3e3e-94c3-315d" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="30"/>
               </costs>
             </entryLink>
-            <entryLink name="Reliquia de Nurgle" id="215a-75bd-395e-c8eb" hidden="false" import="true" targetId="181c-890a-482b-cd88" type="selectionEntry">
+            <entryLink name="Reliquia de Nurgle" id="215a-75bd-395e-c8eb" hidden="false" import="true" sortIndex="5" targetId="181c-890a-482b-cd88" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="50"/>
               </costs>
             </entryLink>
-            <entryLink name="Reliquia de Slaanesh" id="2d47-c2e0-a112-309d" hidden="false" import="true" targetId="0550-51ea-fa84-6c65" type="selectionEntry">
+            <entryLink name="Reliquia de Slaanesh" id="2d47-c2e0-a112-309d" hidden="false" import="true" sortIndex="2" targetId="0550-51ea-fa84-6c65" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="20"/>
               </costs>
             </entryLink>
-            <entryLink name="Reliquia de Tzeentch" id="6c7e-06aa-f4a6-6626" hidden="false" import="true" targetId="3e46-29a9-66f2-622e" type="selectionEntry">
+            <entryLink name="Reliquia de Tzeentch" id="6c7e-06aa-f4a6-6626" hidden="false" import="true" sortIndex="4" targetId="3e46-29a9-66f2-622e" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="40"/>
               </costs>
@@ -5067,7 +5067,7 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
             </modifierGroup>
           </modifierGroups>
           <selectionEntries>
-            <selectionEntry name="Marine de Plaga" id="8ec5-0ec8-05a1-c063" collective="false" hidden="false" import="true" type="model">
+            <selectionEntry name="Marine de Plaga" id="8ec5-0ec8-05a1-c063" collective="false" hidden="false" import="true" sortIndex="1" type="model">
               <constraints>
                 <constraint id="6833-a67a-666d-9a93" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="2"/>
                 <constraint id="1646-7a46-c04b-9de9" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="20"/>
@@ -5097,7 +5097,7 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
                 <entryLink name="Servoarmadura" id="0aef-823a-687c-f524" hidden="false" import="true" targetId="9657-fbb1-b1f9-5516" type="selectionEntry"/>
               </entryLinks>
             </selectionEntry>
-            <selectionEntry name="Marine de Plaga con Arma Especial" id="02e6-b21c-357d-4135" collective="false" hidden="false" import="true" type="model">
+            <selectionEntry name="Marine de Plaga con Arma Especial" id="02e6-b21c-357d-4135" collective="false" hidden="false" import="true" sortIndex="2" type="model">
               <constraints>
                 <constraint id="2ee5-13d8-420f-4391" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
               </constraints>
@@ -5120,7 +5120,7 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
                     <constraint id="1b0e-5f41-6525-7526" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <selectionEntries>
-                    <selectionEntry name="Lanzallamas" id="0bd9-e988-7d0a-3ba7" hidden="false" import="true" type="upgrade">
+                    <selectionEntry name="Lanzallamas" id="0bd9-e988-7d0a-3ba7" hidden="false" import="true" sortIndex="1" type="upgrade">
                       <constraints>
                         <constraint id="506a-fe37-0045-614e" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -5142,7 +5142,7 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
                         </entryLink>
                       </entryLinks>
                     </selectionEntry>
-                    <selectionEntry name="Rifle de Fusión" id="7197-2bb5-eb1d-4d3d" hidden="false" import="true" type="upgrade">
+                    <selectionEntry name="Rifle de Fusión" id="7197-2bb5-eb1d-4d3d" hidden="false" import="true" sortIndex="2" type="upgrade">
                       <constraints>
                         <constraint id="8961-13b1-dda1-e299" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -5164,7 +5164,7 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
                         </entryLink>
                       </entryLinks>
                     </selectionEntry>
-                    <selectionEntry name="Pistola de Plasma" id="2373-4129-9bc3-6b1e" hidden="false" import="true" type="upgrade">
+                    <selectionEntry name="Pistola de Plasma" id="2373-4129-9bc3-6b1e" hidden="false" import="true" sortIndex="3" type="upgrade">
                       <constraints>
                         <constraint id="21a6-ae08-8f8e-6f0c" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -5186,7 +5186,7 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
                         </entryLink>
                       </entryLinks>
                     </selectionEntry>
-                    <selectionEntry name="Rifle de Plasma" id="ed20-c7d4-f261-d0cc" hidden="false" import="true" type="upgrade">
+                    <selectionEntry name="Rifle de Plasma" id="ed20-c7d4-f261-d0cc" hidden="false" import="true" sortIndex="4" type="upgrade">
                       <constraints>
                         <constraint id="cca1-82fe-4106-30d2" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -5341,7 +5341,7 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
             </modifierGroup>
           </modifierGroups>
           <selectionEntries>
-            <selectionEntry name="Marine Ruidoso" id="e254-ad1a-cec9-9f1a" collective="false" hidden="false" import="true" type="model">
+            <selectionEntry name="Marine Ruidoso" id="e254-ad1a-cec9-9f1a" collective="false" hidden="false" import="true" sortIndex="1" type="model">
               <constraints>
                 <constraint id="6833-a67a-666d-9a93" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="3"/>
                 <constraint id="1646-7a46-c04b-9de9" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="20"/>
@@ -5371,10 +5371,10 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
                     <constraint id="7dcd-f9d8-8de1-dd53" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Bolter" id="354e-43fb-3e44-5ff2" collective="false" hidden="false" import="true" targetId="8bf1-7c3d-e540-0f33" type="selectionEntry"/>
+                    <entryLink name="Bolter" id="354e-43fb-3e44-5ff2" collective="false" hidden="false" import="true" sortIndex="1" targetId="8bf1-7c3d-e540-0f33" type="selectionEntry"/>
                   </entryLinks>
                   <selectionEntries>
-                    <selectionEntry name="Destructor Sónico" id="2e76-7a12-8941-cccf" hidden="false" import="true" type="upgrade">
+                    <selectionEntry name="Destructor Sónico" id="2e76-7a12-8941-cccf" hidden="false" import="true" sortIndex="2" type="upgrade">
                       <constraints>
                         <constraint id="1c03-f30e-6fdc-b2ca" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -5389,7 +5389,7 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
-            <selectionEntry name="Marine Ruidoso con Amplificador" id="eb76-d6de-bdfd-3ca4" collective="false" hidden="false" import="true" type="model">
+            <selectionEntry name="Marine Ruidoso con Amplificador" id="eb76-d6de-bdfd-3ca4" collective="false" hidden="false" import="true" sortIndex="2" type="model">
               <constraints>
                 <constraint id="018b-5414-ee84-ef3b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -5557,7 +5557,7 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
             </modifierGroup>
           </modifierGroups>
           <selectionEntries>
-            <selectionEntry name="Bersérker" id="b238-e575-8aa7-4bfe" collective="false" hidden="false" import="true" type="model">
+            <selectionEntry name="Bersérker" id="b238-e575-8aa7-4bfe" collective="false" hidden="false" import="true" sortIndex="1" type="model">
               <constraints>
                 <constraint id="85d2-df34-661c-5343" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="2"/>
                 <constraint id="a77d-0081-5e8f-b619" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="20"/>
@@ -5581,7 +5581,7 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
                 <entryLink name="Servoarmadura" id="ff15-34cc-2751-f68e" hidden="false" import="true" sortIndex="1" targetId="9657-fbb1-b1f9-5516" type="selectionEntry"/>
               </entryLinks>
             </selectionEntry>
-            <selectionEntry name="Bersérker con Pistola de Plasma" id="be31-222d-96f1-1e54" collective="false" hidden="false" import="true" type="model">
+            <selectionEntry name="Bersérker con Pistola de Plasma" id="be31-222d-96f1-1e54" collective="false" hidden="false" import="true" sortIndex="2" type="model">
               <constraints>
                 <constraint id="fe43-c958-bdae-fa11" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
               </constraints>
@@ -5899,7 +5899,7 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
             </modifierGroup>
           </modifierGroups>
           <selectionEntries>
-            <selectionEntry name="Motorista del Caos" id="c54f-10e6-176f-8ddd" collective="false" hidden="false" import="true" type="model">
+            <selectionEntry name="Motorista del Caos" id="c54f-10e6-176f-8ddd" collective="false" hidden="false" import="true" sortIndex="1" type="model">
               <constraints>
                 <constraint id="ec08-db91-f2e1-0aab" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="0"/>
                 <constraint id="2931-072f-60cf-8dae" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="10"/>
@@ -5923,7 +5923,7 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
                 </entryLink>
               </entryLinks>
             </selectionEntry>
-            <selectionEntry name="Motorista del Caos con Arma Especial" id="b5df-c43c-0f72-0d42" collective="false" hidden="false" import="true" type="model">
+            <selectionEntry name="Motorista del Caos con Arma Especial" id="b5df-c43c-0f72-0d42" collective="false" hidden="false" import="true" sortIndex="2" type="model">
               <constraints>
                 <constraint id="c238-f2c8-efeb-587f" field="selections" includeChildSelections="true" scope="parent" shared="true" type="max" value="2"/>
               </constraints>
@@ -5972,27 +5972,27 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
             <constraint id="d7a4-417a-0d28-e8d5" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Reliquia de Gloria del Caos" id="e38b-1e21-dd45-6f16" hidden="false" import="true" targetId="fff4-dd1a-f36f-cf6d" type="selectionEntry">
+            <entryLink name="Reliquia de Gloria del Caos" id="e38b-1e21-dd45-6f16" hidden="false" import="true" sortIndex="1" targetId="fff4-dd1a-f36f-cf6d" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
             </entryLink>
-            <entryLink name="Reliquia de Khorne" id="cc73-a888-0878-7532" hidden="false" import="true" targetId="d3f1-3e3e-94c3-315d" type="selectionEntry">
+            <entryLink name="Reliquia de Khorne" id="cc73-a888-0878-7532" hidden="false" import="true" sortIndex="3" targetId="d3f1-3e3e-94c3-315d" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="30"/>
               </costs>
             </entryLink>
-            <entryLink name="Reliquia de Nurgle" id="865a-7947-51e7-6845" hidden="false" import="true" targetId="181c-890a-482b-cd88" type="selectionEntry">
+            <entryLink name="Reliquia de Nurgle" id="865a-7947-51e7-6845" hidden="false" import="true" sortIndex="5" targetId="181c-890a-482b-cd88" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="50"/>
               </costs>
             </entryLink>
-            <entryLink name="Reliquia de Slaanesh" id="8bcf-dc1f-c5fa-1e0d" hidden="false" import="true" targetId="0550-51ea-fa84-6c65" type="selectionEntry">
+            <entryLink name="Reliquia de Slaanesh" id="8bcf-dc1f-c5fa-1e0d" hidden="false" import="true" sortIndex="2" targetId="0550-51ea-fa84-6c65" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="20"/>
               </costs>
             </entryLink>
-            <entryLink name="Reliquia de Tzeentch" id="a412-42ef-1892-7413" hidden="false" import="true" targetId="3e46-29a9-66f2-622e" type="selectionEntry">
+            <entryLink name="Reliquia de Tzeentch" id="a412-42ef-1892-7413" hidden="false" import="true" sortIndex="4" targetId="3e46-29a9-66f2-622e" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="40"/>
               </costs>
@@ -6212,7 +6212,7 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
             </modifierGroup>
           </modifierGroups>
           <selectionEntries>
-            <selectionEntry name="Rapax" id="95b7-3049-55b4-ee89" collective="false" hidden="false" import="true" type="model">
+            <selectionEntry name="Rapax" id="95b7-3049-55b4-ee89" collective="false" hidden="false" import="true" sortIndex="1" type="model">
               <constraints>
                 <constraint id="e11d-7a1e-c9ba-e94f" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="2"/>
                 <constraint id="7b38-8db1-00ec-7217" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="20"/>
@@ -6236,7 +6236,7 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
                 <entryLink name="Servoarmadura" id="808b-f8ad-c345-9034" hidden="false" import="true" sortIndex="1" targetId="9657-fbb1-b1f9-5516" type="selectionEntry"/>
               </entryLinks>
             </selectionEntry>
-            <selectionEntry name="Rapax con arma Especial" id="8f12-8900-f71a-2fb7" collective="false" hidden="false" import="true" type="model">
+            <selectionEntry name="Rapax con arma Especial" id="8f12-8900-f71a-2fb7" collective="false" hidden="false" import="true" sortIndex="2" type="model">
               <constraints>
                 <constraint id="0cae-5f9c-acb7-9ad4" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
               </constraints>
@@ -6264,7 +6264,7 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
                         <cost name="Pts" typeId="puntos" value="5"/>
                       </costs>
                     </entryLink>
-                    <entryLink name="Rifle de Plasma" id="9378-f0b7-23d8-4c5c" collective="false" hidden="false" import="true" sortIndex="3" targetId="81a6-dc08-e9a0-29b8" type="selectionEntry">
+                    <entryLink name="Rifle de Plasma" id="9378-f0b7-23d8-4c5c" collective="false" hidden="false" import="true" sortIndex="4" targetId="81a6-dc08-e9a0-29b8" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="puntos" value="15"/>
                       </costs>
@@ -6274,7 +6274,7 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
                         <cost name="Pts" typeId="puntos" value="10"/>
                       </costs>
                     </entryLink>
-                    <entryLink name="Pistola de Plasma" id="5038-af5b-7755-de31" hidden="false" import="true" targetId="c85c-fcc8-62a9-3940" type="selectionEntry">
+                    <entryLink name="Pistola de Plasma" id="5038-af5b-7755-de31" hidden="false" import="true" sortIndex="3" targetId="c85c-fcc8-62a9-3940" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="puntos" value="15"/>
                       </costs>
@@ -6290,27 +6290,27 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
             <constraint id="f1e9-5e0e-d31c-4c5c" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Reliquia de Gloria del Caos" id="c5a8-a4ae-50f1-4b57" hidden="false" import="true" targetId="fff4-dd1a-f36f-cf6d" type="selectionEntry">
+            <entryLink name="Reliquia de Gloria del Caos" id="c5a8-a4ae-50f1-4b57" hidden="false" import="true" sortIndex="1" targetId="fff4-dd1a-f36f-cf6d" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
             </entryLink>
-            <entryLink name="Reliquia de Khorne" id="cb12-c235-489c-4f54" hidden="false" import="true" targetId="d3f1-3e3e-94c3-315d" type="selectionEntry">
+            <entryLink name="Reliquia de Khorne" id="cb12-c235-489c-4f54" hidden="false" import="true" sortIndex="3" targetId="d3f1-3e3e-94c3-315d" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="30"/>
               </costs>
             </entryLink>
-            <entryLink name="Reliquia de Nurgle" id="4682-e711-ecbd-ea29" hidden="false" import="true" targetId="181c-890a-482b-cd88" type="selectionEntry">
+            <entryLink name="Reliquia de Nurgle" id="4682-e711-ecbd-ea29" hidden="false" import="true" sortIndex="5" targetId="181c-890a-482b-cd88" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="50"/>
               </costs>
             </entryLink>
-            <entryLink name="Reliquia de Slaanesh" id="489e-fe13-6d4f-18f8" hidden="false" import="true" targetId="0550-51ea-fa84-6c65" type="selectionEntry">
+            <entryLink name="Reliquia de Slaanesh" id="489e-fe13-6d4f-18f8" hidden="false" import="true" sortIndex="2" targetId="0550-51ea-fa84-6c65" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="20"/>
               </costs>
             </entryLink>
-            <entryLink name="Reliquia de Tzeentch" id="7ed2-541e-41ac-6672" hidden="false" import="true" targetId="3e46-29a9-66f2-622e" type="selectionEntry">
+            <entryLink name="Reliquia de Tzeentch" id="7ed2-541e-41ac-6672" hidden="false" import="true" sortIndex="4" targetId="3e46-29a9-66f2-622e" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="40"/>
               </costs>
@@ -6564,7 +6564,7 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
             </modifierGroup>
           </modifierGroups>
           <selectionEntries>
-            <selectionEntry name="Marine Espacial" id="1b03-32f6-82d7-e74a" collective="false" hidden="false" import="true" type="model">
+            <selectionEntry name="Marine Espacial" id="1b03-32f6-82d7-e74a" collective="false" hidden="false" import="true" sortIndex="1" type="model">
               <constraints>
                 <constraint id="b6ed-1e3b-e6f5-fb29" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="0"/>
                 <constraint id="cb21-7544-e085-c2e4" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="20"/>
@@ -6594,7 +6594,7 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
                 <entryLink name="Servoarmadura" id="bef3-4bdb-f8b9-35d9" hidden="false" import="true" sortIndex="1" targetId="9657-fbb1-b1f9-5516" type="selectionEntry"/>
               </entryLinks>
             </selectionEntry>
-            <selectionEntry name="Marine Espacial con arma Especial" id="38a7-2db0-eaf2-af86" collective="false" hidden="false" import="true" type="model">
+            <selectionEntry name="Marine Espacial con arma Especial" id="38a7-2db0-eaf2-af86" collective="false" hidden="false" import="true" sortIndex="2" type="model">
               <constraints>
                 <constraint id="011d-5608-f5ac-c654" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="4"/>
               </constraints>
@@ -6725,27 +6725,27 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
             <constraint id="0d94-370d-b418-08f4" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Reliquia de Gloria del Caos" id="e09a-6d60-28e5-3d7d" hidden="false" import="true" targetId="fff4-dd1a-f36f-cf6d" type="selectionEntry">
+            <entryLink name="Reliquia de Gloria del Caos" id="e09a-6d60-28e5-3d7d" hidden="false" import="true" sortIndex="1" targetId="fff4-dd1a-f36f-cf6d" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
             </entryLink>
-            <entryLink name="Reliquia de Khorne" id="31a6-05c7-1ea0-d7da" hidden="false" import="true" targetId="d3f1-3e3e-94c3-315d" type="selectionEntry">
+            <entryLink name="Reliquia de Khorne" id="31a6-05c7-1ea0-d7da" hidden="false" import="true" sortIndex="3" targetId="d3f1-3e3e-94c3-315d" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="30"/>
               </costs>
             </entryLink>
-            <entryLink name="Reliquia de Nurgle" id="3ec2-a5bd-5c15-4063" hidden="false" import="true" targetId="181c-890a-482b-cd88" type="selectionEntry">
+            <entryLink name="Reliquia de Nurgle" id="3ec2-a5bd-5c15-4063" hidden="false" import="true" sortIndex="5" targetId="181c-890a-482b-cd88" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="50"/>
               </costs>
             </entryLink>
-            <entryLink name="Reliquia de Slaanesh" id="93d6-d01f-f51b-f1bd" hidden="false" import="true" targetId="0550-51ea-fa84-6c65" type="selectionEntry">
+            <entryLink name="Reliquia de Slaanesh" id="93d6-d01f-f51b-f1bd" hidden="false" import="true" sortIndex="2" targetId="0550-51ea-fa84-6c65" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="20"/>
               </costs>
             </entryLink>
-            <entryLink name="Reliquia de Tzeentch" id="78d2-4f4e-f677-fea7" hidden="false" import="true" targetId="3e46-29a9-66f2-622e" type="selectionEntry">
+            <entryLink name="Reliquia de Tzeentch" id="78d2-4f4e-f677-fea7" hidden="false" import="true" sortIndex="4" targetId="3e46-29a9-66f2-622e" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="40"/>
               </costs>
@@ -6903,14 +6903,14 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
                 <constraint id="03c64d36-ab4f-4d3c-9a7c-73754c5b7ce8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
-            <entryLink name="Lanzamisiles Aniquilador" id="f5e5-6bca-8640-54b6" collective="false" hidden="false" import="true" targetId="a038-6dda-c840-3a7f" type="selectionEntry">
+            <entryLink name="Lanzamisiles Aniquilador" id="f5e5-6bca-8640-54b6" collective="false" hidden="false" import="true" sortIndex="3" targetId="a038-6dda-c840-3a7f" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="5"/>
               </costs>
             </entryLink>
           </entryLinks>
           <selectionEntries>
-            <selectionEntry name="Brazo de Combate" id="45c1-f204-7d26-e0dd" hidden="false" import="true" type="upgrade">
+            <selectionEntry name="Brazo de Combate" id="45c1-f204-7d26-e0dd" hidden="false" import="true" sortIndex="2" type="upgrade">
               <constraints>
                 <constraint id="66a3-13d9-5de8-9312" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -6927,12 +6927,12 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
           </constraints>
           <entryLinks>
             <entryLink name="Cañón Segador" id="86e4-bfc2-309f-a4b1" collective="false" hidden="false" import="true" sortIndex="1" targetId="444e-2fc4-b841-d208" type="selectionEntry"/>
-            <entryLink name="Bólter pesado acoplado" id="d6d0-8e3f-676c-f3e8" collective="false" hidden="false" import="true" targetId="3eddab81-d82e-4c3c-9f6e-7f5101f752f0" type="selectionEntry">
+            <entryLink name="Bólter pesado acoplado" id="d6d0-8e3f-676c-f3e8" collective="false" hidden="false" import="true" sortIndex="2" targetId="3eddab81-d82e-4c3c-9f6e-7f5101f752f0" type="selectionEntry">
               <constraints>
                 <constraint id="ee1a6bba-a934-4f14-bf44-9f72a7f0b711" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
-            <entryLink name="Cañón láser acoplado" id="8364-dbe5-454a-449e" collective="false" hidden="false" import="true" targetId="62bf8544-1c87-4575-9f2b-1887a93989d3" type="selectionEntry">
+            <entryLink name="Cañón láser acoplado" id="8364-dbe5-454a-449e" collective="false" hidden="false" import="true" sortIndex="4" targetId="62bf8544-1c87-4575-9f2b-1887a93989d3" type="selectionEntry">
               <constraints>
                 <constraint id="c74210b8-17b7-44b2-85b1-cf18a8f9aa5a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -6942,7 +6942,7 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
             </entryLink>
           </entryLinks>
           <selectionEntries>
-            <selectionEntry name="Brazo de Combate" id="f590-1fbe-b1bf-f166" hidden="false" import="true" type="upgrade">
+            <selectionEntry name="Brazo de Combate" id="f590-1fbe-b1bf-f166" hidden="false" import="true" sortIndex="3" type="upgrade">
               <constraints>
                 <constraint id="00e8-1d97-7921-31d5" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -7007,12 +7007,12 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
         <constraint id="47db-c752-799c-b1f6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
       </constraints>
       <entryLinks>
-        <entryLink name="Bólter acoplado" id="867a-ab63-36f8-42b9" collective="false" hidden="false" import="true" targetId="992335bc-8bd0-4119-8cf0-914f43913224" type="selectionEntry">
+        <entryLink name="Bólter acoplado" id="867a-ab63-36f8-42b9" collective="false" hidden="false" import="true" sortIndex="1" targetId="992335bc-8bd0-4119-8cf0-914f43913224" type="selectionEntry">
           <constraints>
             <constraint id="f596d9c0-898e-417b-9d4c-09674b9e74e0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
         </entryLink>
-        <entryLink name="Lanzallamas Pesado" id="8556-3e9c-9b4d-534d" collective="false" hidden="false" import="true" targetId="93f5-39db-b8d6-e634" type="selectionEntry">
+        <entryLink name="Lanzallamas Pesado" id="8556-3e9c-9b4d-534d" collective="false" hidden="false" import="true" sortIndex="2" targetId="93f5-39db-b8d6-e634" type="selectionEntry">
           <constraints>
             <constraint id="8ca9-015a-a5c0-5ac1" field="selections" includeChildSelections="true" scope="2792-bd2b-f5b5-fb9c" shared="true" type="max" value="1"/>
           </constraints>
@@ -7031,9 +7031,9 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
         <constraint id="0baf-8bfd-7807-f29d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
       </constraints>
       <entryLinks>
-        <entryLink name="Combiplasma" id="bbdb-70d9-7ac9-6ca4" collective="false" hidden="false" import="true" targetId="4f22-ab20-9410-d4bf" type="selectionEntry"/>
-        <entryLink name="Combilanzallamas" id="3780-ce20-65ea-22f7" collective="false" hidden="false" import="true" targetId="fb89-c4aa-05d9-1ae2" type="selectionEntry"/>
-        <entryLink name="Combifusión" id="756c-6e59-bfa8-6ef0" collective="false" hidden="false" import="true" targetId="c42e-27b4-3a35-cc4d" type="selectionEntry"/>
+        <entryLink name="Combiplasma" id="bbdb-70d9-7ac9-6ca4" collective="false" hidden="false" import="true" sortIndex="3" targetId="4f22-ab20-9410-d4bf" type="selectionEntry"/>
+        <entryLink name="Combilanzallamas" id="3780-ce20-65ea-22f7" collective="false" hidden="false" import="true" sortIndex="2" targetId="fb89-c4aa-05d9-1ae2" type="selectionEntry"/>
+        <entryLink name="Combifusión" id="756c-6e59-bfa8-6ef0" collective="false" hidden="false" import="true" sortIndex="1" targetId="c42e-27b4-3a35-cc4d" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Marca" id="5cc8-1f6b-bc78-8eef" hidden="false">
@@ -7041,7 +7041,7 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
         <constraint id="98ca-29ca-b938-5f8d" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
       </constraints>
       <entryLinks>
-        <entryLink name="Marca de Khorne" id="5384-6ebe-98da-7d0a" hidden="false" import="true" targetId="8877-a24b-dfdf-f14b" type="selectionEntry">
+        <entryLink name="Marca de Khorne" id="5384-6ebe-98da-7d0a" hidden="false" import="true" sortIndex="2" targetId="8877-a24b-dfdf-f14b" type="selectionEntry">
           <modifiers>
             <modifier field="hidden" type="set" value="true">
               <conditions>
@@ -7050,8 +7050,8 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink name="Marca de Nurgle" id="c514-9ce4-1f1a-299d" hidden="false" import="true" targetId="747e-3135-0aa5-9ca0" type="selectionEntry"/>
-        <entryLink name="Marca de Slaanesh" id="21ac-793b-6733-8a20" hidden="false" import="true" targetId="c127-42e6-794b-d2d0" type="selectionEntry"/>
+        <entryLink name="Marca de Nurgle" id="c514-9ce4-1f1a-299d" hidden="false" import="true" sortIndex="3" targetId="747e-3135-0aa5-9ca0" type="selectionEntry"/>
+        <entryLink name="Marca de Slaanesh" id="21ac-793b-6733-8a20" hidden="false" import="true" sortIndex="1" targetId="c127-42e6-794b-d2d0" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Poderes Psíquicos" id="4ea1-63aa-fdc0-3120" hidden="false">
@@ -7066,7 +7066,7 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
         </modifier>
       </modifiers>
       <selectionEntries>
-        <selectionEntry name="Distorsión Temporal" id="7cb5-e075-3e5a-7bf3" hidden="false" import="true" type="upgrade">
+        <selectionEntry name="Distorsión Temporal" id="7cb5-e075-3e5a-7bf3" hidden="false" import="true" sortIndex="4" type="upgrade">
           <constraints>
             <constraint id="85d8-a56b-2ca4-04e9" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
@@ -7077,7 +7077,7 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
             <infoLink name="Distorsión Temporal" id="ed3b-597b-17f1-d9bd" hidden="false" targetId="faef-8a27-3911-217e" type="profile"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry name="Latigazo de Sumisión (solo Slaanesh)" id="0dad-75c5-f0ce-8b66" hidden="false" import="true" type="upgrade">
+        <selectionEntry name="Latigazo de Sumisión (solo Slaanesh)" id="0dad-75c5-f0ce-8b66" hidden="false" import="true" sortIndex="3" type="upgrade">
           <constraints>
             <constraint id="c101-2f04-4cd7-9a72" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
@@ -7095,7 +7095,7 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry name="Putrefacción de Nurgle (solo Nurgle)" id="84df-13e1-0869-2637" hidden="false" import="true" type="upgrade">
+        <selectionEntry name="Putrefacción de Nurgle (solo Nurgle)" id="84df-13e1-0869-2637" hidden="false" import="true" sortIndex="2" type="upgrade">
           <constraints>
             <constraint id="006d-7e9c-9495-728e" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
@@ -7113,7 +7113,7 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry name="Regalo del Caos" id="4bb5-7131-647d-d2a3" hidden="false" import="true" type="upgrade">
+        <selectionEntry name="Regalo del Caos" id="4bb5-7131-647d-d2a3" hidden="false" import="true" sortIndex="6" type="upgrade">
           <constraints>
             <constraint id="42a1-8fb5-13a4-2437" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
@@ -7124,7 +7124,7 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
             <infoLink name="Regalo del Caos" id="2e77-6200-7020-c7c9" hidden="false" targetId="ae58-59d6-5450-eda9" type="profile"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry name="Viento del Caos" id="c440-e5b9-feb2-218f" hidden="false" import="true" type="upgrade">
+        <selectionEntry name="Viento del Caos" id="c440-e5b9-feb2-218f" hidden="false" import="true" sortIndex="7" type="upgrade">
           <constraints>
             <constraint id="29b5-9b3d-e217-b4a9" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
@@ -7135,7 +7135,7 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
             <infoLink name="Viento del Caos" id="f810-a582-de15-0121" hidden="false" targetId="3c21-76a2-2a4b-b5e2" type="profile"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry name="Rayo de la Condenación" id="0202-3d18-2bcb-a854" hidden="false" import="true" type="upgrade">
+        <selectionEntry name="Rayo de la Condenación" id="0202-3d18-2bcb-a854" hidden="false" import="true" sortIndex="1" type="upgrade">
           <constraints>
             <constraint id="c9f1-4db9-ac7a-ceff" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
@@ -7146,7 +7146,7 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
             <infoLink name="Rayo de la Condenación" id="c6a8-180e-79cb-29be" hidden="false" targetId="5857-720e-3846-0179" type="profile"/>
           </infoLinks>
         </selectionEntry>
-        <selectionEntry name="Rayo de la Transformación (solo Tzeentch)" id="12db-b11b-dcf5-7921" hidden="false" import="true" type="upgrade">
+        <selectionEntry name="Rayo de la Transformación (solo Tzeentch)" id="12db-b11b-dcf5-7921" hidden="false" import="true" sortIndex="5" type="upgrade">
           <constraints>
             <constraint id="cf87-eb98-7092-e1bf" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
@@ -7176,7 +7176,7 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
         <constraint id="86b4-8c93-0e27-b28c" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry name="Montura de Slaanesh" id="a419-b81a-fab9-cdee" hidden="false" import="true" type="upgrade">
+        <selectionEntry name="Montura de Slaanesh" id="a419-b81a-fab9-cdee" hidden="false" import="true" sortIndex="3" type="upgrade">
           <constraints>
             <constraint id="1977-bec0-153d-ac4d" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
@@ -7194,7 +7194,7 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry name="Palanquín de Nurgle" id="4097-8a53-4d4a-25ab" hidden="false" import="true" type="upgrade">
+        <selectionEntry name="Palanquín de Nurgle" id="4097-8a53-4d4a-25ab" hidden="false" import="true" sortIndex="4" type="upgrade">
           <constraints>
             <constraint id="9187-944d-d6fd-7839" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
@@ -7212,7 +7212,7 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry name="Disco de Tzeentch" id="908e-e6ae-f01d-e498" hidden="false" import="true" type="upgrade">
+        <selectionEntry name="Disco de Tzeentch" id="908e-e6ae-f01d-e498" hidden="false" import="true" sortIndex="1" type="upgrade">
           <constraints>
             <constraint id="651c-43c5-503f-0ee2" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
@@ -7231,7 +7231,7 @@ este en contacto peana con peana con la de Lucius (hasta un mínimo de 1).</char
             </modifier>
           </modifiers>
         </selectionEntry>
-        <selectionEntry name="Juggernaut de Khorne" id="976a-b494-ef46-3ffb" hidden="false" import="true" type="upgrade">
+        <selectionEntry name="Juggernaut de Khorne" id="976a-b494-ef46-3ffb" hidden="false" import="true" sortIndex="2" type="upgrade">
           <constraints>
             <constraint id="7359-903f-77b1-0897" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>

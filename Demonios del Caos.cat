@@ -881,7 +881,7 @@ Cuando un resultado de armamento destruido destruye las fauces del caos, se dest
       <selectionEntryGroups>
         <selectionEntryGroup name="Fauces del caos" id="20c4-7be1-3800-709f" hidden="false" sortIndex="1">
           <selectionEntries>
-            <selectionEntry name="Vómito" id="d61e-efd0-5158-c43a" hidden="false" import="true" type="upgrade">
+            <selectionEntry name="Vómito" id="d61e-efd0-5158-c43a" hidden="false" import="true" sortIndex="1" type="upgrade">
               <constraints>
                 <constraint id="f2f3-c9d1-3164-01de-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
                 <constraint id="f2f3-c9d1-3164-01de-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
@@ -897,7 +897,7 @@ Cuando un resultado de armamento destruido destruye las fauces del caos, se dest
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry name="Lengua" id="3082-f854-e356-779f" hidden="false" import="true" type="upgrade">
+            <selectionEntry name="Lengua" id="3082-f854-e356-779f" hidden="false" import="true" sortIndex="3" type="upgrade">
               <constraints>
                 <constraint id="4265-e0cd-7d7d-d0f8" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -915,7 +915,7 @@ Cuando un resultado de armamento destruido destruye las fauces del caos, se dest
                 </profile>
               </profiles>
             </selectionEntry>
-            <selectionEntry name="Flema" id="de81-9bc6-4fe2-7a8c" hidden="false" import="true" type="upgrade">
+            <selectionEntry name="Flema" id="de81-9bc6-4fe2-7a8c" hidden="false" import="true" sortIndex="2" type="upgrade">
               <constraints>
                 <constraint id="3f84-5fb2-52c3-443e" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -1950,7 +1950,7 @@ Bajas - Efecto
             <constraint id="5884-1661-37ed-6670" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry name="Khorne" id="0c2a-7705-6674-4395" hidden="false" import="true" type="upgrade">
+            <selectionEntry name="Khorne" id="0c2a-7705-6674-4395" hidden="false" import="true" sortIndex="2" type="upgrade">
               <constraints>
                 <constraint id="3872-5d6d-98e4-2dff" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -1963,7 +1963,7 @@ Bajas - Efecto
               <selectionEntryGroups>
                 <selectionEntryGroup name="Bendiciones de Khorne" id="a563-045d-8f36-3480" hidden="false">
                   <entryLinks>
-                    <entryLink name="Bendición del dios de la sangre" id="291b-766f-86dc-dd2c" hidden="false" import="true" targetId="e2eb-88f7-acaa-b48a" type="selectionEntry">
+                    <entryLink name="Bendición del dios de la sangre" id="291b-766f-86dc-dd2c" hidden="false" import="true" sortIndex="1" targetId="e2eb-88f7-acaa-b48a" type="selectionEntry">
                       <constraints>
                         <constraint id="de12-bfcd-d209-6547" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -1971,7 +1971,7 @@ Bajas - Efecto
                         <cost name="Pts" typeId="puntos" value="10"/>
                       </costs>
                     </entryLink>
-                    <entryLink name="Proyectil letal" id="b7e1-661f-a20c-15fa" hidden="false" import="true" targetId="8ab9-a0cc-79c3-0f48" type="selectionEntry">
+                    <entryLink name="Proyectil letal" id="b7e1-661f-a20c-15fa" hidden="false" import="true" sortIndex="2" targetId="8ab9-a0cc-79c3-0f48" type="selectionEntry">
                       <constraints>
                         <constraint id="5e4e-2513-a06c-84eb" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -1983,7 +1983,7 @@ Bajas - Efecto
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
-            <selectionEntry name="Slaanesh" id="78dd-6ee1-ab6b-6c15" hidden="false" import="true" type="upgrade">
+            <selectionEntry name="Slaanesh" id="78dd-6ee1-ab6b-6c15" hidden="false" import="true" sortIndex="1" type="upgrade">
               <constraints>
                 <constraint id="952d-04f7-660f-72ea" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -1996,7 +1996,7 @@ Bajas - Efecto
               <selectionEntryGroups>
                 <selectionEntryGroup name="Bendiciones de Slaanesh" id="f33d-6f74-2434-1967" hidden="false">
                   <entryLinks>
-                    <entryLink name="Almizcle soporífero" id="4385-1195-10b9-685e" hidden="false" import="true" targetId="09e7-0906-565c-5440" type="selectionEntry">
+                    <entryLink name="Almizcle soporífero" id="4385-1195-10b9-685e" hidden="false" import="true" sortIndex="3" targetId="09e7-0906-565c-5440" type="selectionEntry">
                       <constraints>
                         <constraint id="66dd-5ee6-716a-e2aa" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -2004,7 +2004,7 @@ Bajas - Efecto
                         <cost name="Pts" typeId="puntos" value="20"/>
                       </costs>
                     </entryLink>
-                    <entryLink name="Mirada hipnótica" id="4753-c2a3-8edf-4fd2" hidden="false" import="true" targetId="644e-8196-62b8-e778" type="selectionEntry">
+                    <entryLink name="Mirada hipnótica" id="4753-c2a3-8edf-4fd2" hidden="false" import="true" sortIndex="2" targetId="644e-8196-62b8-e778" type="selectionEntry">
                       <constraints>
                         <constraint id="11f2-332b-81dd-5064" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -2012,7 +2012,7 @@ Bajas - Efecto
                         <cost name="Pts" typeId="puntos" value="10"/>
                       </costs>
                     </entryLink>
-                    <entryLink name="Aura de sometimiento" id="a897-5005-b15c-eb88" hidden="false" import="true" targetId="672d-4d71-5750-0221" type="selectionEntry">
+                    <entryLink name="Aura de sometimiento" id="a897-5005-b15c-eb88" hidden="false" import="true" sortIndex="1" targetId="672d-4d71-5750-0221" type="selectionEntry">
                       <constraints>
                         <constraint id="9780-a131-9b57-102f" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -2020,7 +2020,7 @@ Bajas - Efecto
                         <cost name="Pts" typeId="puntos" value="5"/>
                       </costs>
                     </entryLink>
-                    <entryLink name="Pavana de Slaanesh" id="3d84-3f9c-d200-5544" hidden="false" import="true" targetId="b550-ae88-f905-5ff0" type="selectionEntry">
+                    <entryLink name="Pavana de Slaanesh" id="3d84-3f9c-d200-5544" hidden="false" import="true" sortIndex="4" targetId="b550-ae88-f905-5ff0" type="selectionEntry">
                       <constraints>
                         <constraint id="23dc-80b7-3b76-6be3" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -2032,7 +2032,7 @@ Bajas - Efecto
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
-            <selectionEntry name="Nurgle" id="9544-78ad-38fd-d730" hidden="false" import="true" type="upgrade">
+            <selectionEntry name="Nurgle" id="9544-78ad-38fd-d730" hidden="false" import="true" sortIndex="4" type="upgrade">
               <constraints>
                 <constraint id="73e9-8b39-a289-5e48" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -2045,7 +2045,7 @@ Bajas - Efecto
               <selectionEntryGroups>
                 <selectionEntryGroup name="Bendiciones de Nurgle" id="88b8-8f74-fecd-1f0a" hidden="false">
                   <entryLinks>
-                    <entryLink name="Nube de moscas" id="44f0-9dc6-505c-d502" hidden="false" import="true" targetId="2906-e593-8147-d1be" type="selectionEntry">
+                    <entryLink name="Nube de moscas" id="44f0-9dc6-505c-d502" hidden="false" import="true" sortIndex="1" targetId="2906-e593-8147-d1be" type="selectionEntry">
                       <constraints>
                         <constraint id="cb4f-eee7-fd43-aa77" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -2053,7 +2053,7 @@ Bajas - Efecto
                         <cost name="Pts" typeId="puntos" value="5"/>
                       </costs>
                     </entryLink>
-                    <entryLink name="Toque nocivo" id="abf3-5c6f-6342-41f3" hidden="false" import="true" targetId="70b2-ccb3-4af1-076e" type="selectionEntry">
+                    <entryLink name="Toque nocivo" id="abf3-5c6f-6342-41f3" hidden="false" import="true" sortIndex="2" targetId="70b2-ccb3-4af1-076e" type="selectionEntry">
                       <constraints>
                         <constraint id="5232-5312-2982-e9dc" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -2061,7 +2061,7 @@ Bajas - Efecto
                         <cost name="Pts" typeId="puntos" value="10"/>
                       </costs>
                     </entryLink>
-                    <entryLink name="Aura de descomposición" id="d710-3475-4cc6-8ca5" hidden="false" import="true" targetId="c29f-0757-1697-1267" type="selectionEntry">
+                    <entryLink name="Aura de descomposición" id="d710-3475-4cc6-8ca5" hidden="false" import="true" sortIndex="3" targetId="c29f-0757-1697-1267" type="selectionEntry">
                       <constraints>
                         <constraint id="b933-a1a3-e386-6a41" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -2073,7 +2073,7 @@ Bajas - Efecto
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
-            <selectionEntry name="Tzeentch" id="fe12-6dc0-a5e0-dbb7" hidden="false" import="true" type="upgrade">
+            <selectionEntry name="Tzeentch" id="fe12-6dc0-a5e0-dbb7" hidden="false" import="true" sortIndex="3" type="upgrade">
               <constraints>
                 <constraint id="2968-5800-ce02-988a" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -2086,7 +2086,7 @@ Bajas - Efecto
               <selectionEntryGroups>
                 <selectionEntryGroup name="Bendiciones de Tzeentch" id="fd11-253c-1004-5c5a" hidden="false">
                   <entryLinks>
-                    <entryLink name="Maestro hechicero" id="6adf-2fd4-9e17-d68b" hidden="false" import="true" targetId="90af-9414-5650-9992" type="selectionEntry">
+                    <entryLink name="Maestro hechicero" id="6adf-2fd4-9e17-d68b" hidden="false" import="true" sortIndex="2" targetId="90af-9414-5650-9992" type="selectionEntry">
                       <constraints>
                         <constraint id="80d2-0feb-bce5-69db" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -2094,7 +2094,7 @@ Bajas - Efecto
                         <cost name="Pts" typeId="puntos" value="10"/>
                       </costs>
                     </entryLink>
-                    <entryLink name="Rayo de Tzeentch" id="ec78-339a-74ad-5874" hidden="false" import="true" targetId="d260-0ae8-6483-f9aa" type="selectionEntry">
+                    <entryLink name="Rayo de Tzeentch" id="ec78-339a-74ad-5874" hidden="false" import="true" sortIndex="3" targetId="d260-0ae8-6483-f9aa" type="selectionEntry">
                       <constraints>
                         <constraint id="cf0b-5120-7036-1cc4" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -2102,7 +2102,7 @@ Bajas - Efecto
                         <cost name="Pts" typeId="puntos" value="35"/>
                       </costs>
                     </entryLink>
-                    <entryLink name="Devoraalmas" id="c64b-dbc0-3636-a6cb" hidden="false" import="true" targetId="4fbc-f4e7-998b-6144" type="selectionEntry">
+                    <entryLink name="Devoraalmas" id="c64b-dbc0-3636-a6cb" hidden="false" import="true" sortIndex="1" targetId="4fbc-f4e7-998b-6144" type="selectionEntry">
                       <constraints>
                         <constraint id="8f19-b632-b509-3c9c" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -2118,7 +2118,7 @@ Bajas - Efecto
         </selectionEntryGroup>
         <selectionEntryGroup name="Regalos genéricos" id="c444-ab4f-b287-d114" hidden="false">
           <entryLinks>
-            <entryLink name="Vuelo demoníaco" id="36af-2e6a-620b-386a" hidden="false" import="true" targetId="6738-f1f3-b112-68f9" type="selectionEntry">
+            <entryLink name="Vuelo demoníaco" id="36af-2e6a-620b-386a" hidden="false" import="true" sortIndex="4" targetId="6738-f1f3-b112-68f9" type="selectionEntry">
               <constraints>
                 <constraint id="afb6-eb49-2f7d-3a04" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -2129,7 +2129,7 @@ Bajas - Efecto
                 <modifier affects="profiles.Unidad" arg="Infantería" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" scope="041fb278-8684-49b7-8d8d-26e26fcc802d" type="replace" value="Retropropulsada"/>
               </modifiers>
             </entryLink>
-            <entryLink name="Piel de hierro" id="29c3-e8d0-2247-11d8" hidden="false" import="true" targetId="304a-6d02-d208-6aff" type="selectionEntry">
+            <entryLink name="Piel de hierro" id="29c3-e8d0-2247-11d8" hidden="false" import="true" sortIndex="3" targetId="304a-6d02-d208-6aff" type="selectionEntry">
               <constraints>
                 <constraint id="2823-cbef-e8c2-8b05" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -2137,7 +2137,7 @@ Bajas - Efecto
                 <cost name="Pts" typeId="puntos" value="30"/>
               </costs>
             </entryLink>
-            <entryLink name="Instrumento del caos" id="c33c-82a1-803e-5a7b" hidden="false" import="true" targetId="8ae5-7a70-17e4-5f63" type="selectionEntry">
+            <entryLink name="Instrumento del caos" id="c33c-82a1-803e-5a7b" hidden="false" import="true" sortIndex="1" targetId="8ae5-7a70-17e4-5f63" type="selectionEntry">
               <constraints>
                 <constraint id="b193-a911-b834-2931" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -2145,7 +2145,7 @@ Bajas - Efecto
                 <cost name="Pts" typeId="puntos" value="5"/>
               </costs>
             </entryLink>
-            <entryLink name="Fuerza impía" id="1c51-a225-971b-05a1" hidden="false" import="true" targetId="ef19-09f8-c6fa-368e" type="selectionEntry">
+            <entryLink name="Fuerza impía" id="1c51-a225-971b-05a1" hidden="false" import="true" sortIndex="2" targetId="ef19-09f8-c6fa-368e" type="selectionEntry">
               <constraints>
                 <constraint id="2a52-eb10-07fb-0056" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -2160,7 +2160,7 @@ Bajas - Efecto
             <constraint id="14e3-9c0c-faa6-842b" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Aliento del caos" id="2481-2384-03de-7d37" hidden="false" import="true" targetId="9ebf-92e4-1085-ebe3" type="selectionEntry">
+            <entryLink name="Aliento del caos" id="2481-2384-03de-7d37" hidden="false" import="true" sortIndex="2" targetId="9ebf-92e4-1085-ebe3" type="selectionEntry">
               <constraints>
                 <constraint id="38de-eefb-4909-9ca6" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -2171,7 +2171,7 @@ Bajas - Efecto
                 <modifier field="38de-eefb-4909-9ca6" type="increment" value="0"/>
               </modifiers>
             </entryLink>
-            <entryLink name="Bendición de la mutación" id="1649-9ee0-5e09-2177" hidden="false" import="true" targetId="2ed1-dbf5-9633-97bb" type="selectionEntry">
+            <entryLink name="Bendición de la mutación" id="1649-9ee0-5e09-2177" hidden="false" import="true" sortIndex="3" targetId="2ed1-dbf5-9633-97bb" type="selectionEntry">
               <constraints>
                 <constraint id="df66-528b-890b-a4d2" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -2179,7 +2179,7 @@ Bajas - Efecto
                 <cost name="Pts" typeId="puntos" value="30"/>
               </costs>
             </entryLink>
-            <entryLink name="Mirada demoníaca" id="d323-8317-7df2-f48b" hidden="false" import="true" targetId="ca0c-efd8-d2f4-022d" type="selectionEntry">
+            <entryLink name="Mirada demoníaca" id="d323-8317-7df2-f48b" hidden="false" import="true" sortIndex="1" targetId="ca0c-efd8-d2f4-022d" type="selectionEntry">
               <constraints>
                 <constraint id="2edf-3130-1a00-1750" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -2545,7 +2545,7 @@ Bajas - Efecto
                 <constraint id="28cb-f21a-67b4-fea3" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
               <entryLinks>
-                <entryLink name="Furia de Khorne" id="c093-3c71-a603-da9c" collapsible="true" hidden="false" import="true" targetId="f606-5645-34f2-1538" type="selectionEntry">
+                <entryLink name="Furia de Khorne" id="c093-3c71-a603-da9c" collapsible="true" hidden="false" import="true" sortIndex="2" targetId="f606-5645-34f2-1538" type="selectionEntry">
                   <constraints>
                     <constraint id="5d1b-70ed-8a41-76b4" field="selections" includeChildForces="false" includeChildSelections="true" scope="b7df-9b58-e4c9-2eba" shared="true" type="max" value="1"/>
                   </constraints>
@@ -2553,7 +2553,7 @@ Bajas - Efecto
                     <cost name="Pts" typeId="puntos" value="10"/>
                   </costs>
                 </entryLink>
-                <entryLink name="Icono del caos" id="e737-e48b-a899-f97f" collapsible="true" hidden="false" import="true" targetId="b147-9820-fd1c-16bb" type="selectionEntry">
+                <entryLink name="Icono del caos" id="e737-e48b-a899-f97f" collapsible="true" hidden="false" import="true" sortIndex="3" targetId="b147-9820-fd1c-16bb" type="selectionEntry">
                   <constraints>
                     <constraint id="daec-ccea-17ad-ed64" field="selections" includeChildForces="false" includeChildSelections="true" scope="b7df-9b58-e4c9-2eba" shared="true" type="max" value="1"/>
                   </constraints>
@@ -2561,7 +2561,7 @@ Bajas - Efecto
                     <cost name="Pts" typeId="puntos" value="25"/>
                   </costs>
                 </entryLink>
-                <entryLink name="Instrumento del caos" id="5465-9298-a013-74b7" collapsible="true" hidden="false" import="true" targetId="8ae5-7a70-17e4-5f63" type="selectionEntry">
+                <entryLink name="Instrumento del caos" id="5465-9298-a013-74b7" collapsible="true" hidden="false" import="true" sortIndex="1" targetId="8ae5-7a70-17e4-5f63" type="selectionEntry">
                   <constraints>
                     <constraint id="6ac4-ce7e-a98a-dc46" field="selections" includeChildForces="false" includeChildSelections="true" scope="b7df-9b58-e4c9-2eba" shared="true" type="max" value="1"/>
                   </constraints>
@@ -2636,7 +2636,7 @@ Bajas - Efecto
                 <constraint id="188a-f349-d7f7-a95c" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
               <entryLinks>
-                <entryLink name="Furia de Khorne" id="3b51-1685-2470-a65e" collapsible="true" hidden="false" import="true" targetId="f606-5645-34f2-1538" type="selectionEntry">
+                <entryLink name="Furia de Khorne" id="3b51-1685-2470-a65e" collapsible="true" hidden="false" import="true" sortIndex="2" targetId="f606-5645-34f2-1538" type="selectionEntry">
                   <constraints>
                     <constraint id="b8c2-5396-5c94-3a95" field="selections" includeChildForces="false" includeChildSelections="true" scope="b485-733d-8307-52d1" shared="true" type="max" value="1"/>
                   </constraints>
@@ -2644,7 +2644,7 @@ Bajas - Efecto
                     <cost name="Pts" typeId="puntos" value="10"/>
                   </costs>
                 </entryLink>
-                <entryLink name="Icono del caos" id="85cd-c62a-0650-2521" collapsible="true" hidden="false" import="true" targetId="b147-9820-fd1c-16bb" type="selectionEntry">
+                <entryLink name="Icono del caos" id="85cd-c62a-0650-2521" collapsible="true" hidden="false" import="true" sortIndex="3" targetId="b147-9820-fd1c-16bb" type="selectionEntry">
                   <constraints>
                     <constraint id="2543-d1dc-0c97-d3fc" field="selections" includeChildForces="false" includeChildSelections="true" scope="b485-733d-8307-52d1" shared="true" type="max" value="1"/>
                   </constraints>
@@ -2652,7 +2652,7 @@ Bajas - Efecto
                     <cost name="Pts" typeId="puntos" value="25"/>
                   </costs>
                 </entryLink>
-                <entryLink name="Instrumento del caos" id="7188-92d8-dd84-cf0a" collapsible="true" hidden="false" import="true" targetId="8ae5-7a70-17e4-5f63" type="selectionEntry">
+                <entryLink name="Instrumento del caos" id="7188-92d8-dd84-cf0a" collapsible="true" hidden="false" import="true" sortIndex="1" targetId="8ae5-7a70-17e4-5f63" type="selectionEntry">
                   <constraints>
                     <constraint id="bb6a-9dba-f738-f11d" field="selections" includeChildForces="false" includeChildSelections="true" scope="b485-733d-8307-52d1" shared="true" type="max" value="1"/>
                   </constraints>
@@ -2691,7 +2691,7 @@ Bajas - Efecto
                 <constraint id="5e5d-23cd-99f4-beb3" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
               <entryLinks>
-                <entryLink name="Mirada hipnótica" id="bf4c-5cd5-6a3c-4303" collapsible="true" hidden="false" import="true" targetId="644e-8196-62b8-e778" type="selectionEntry">
+                <entryLink name="Mirada hipnótica" id="bf4c-5cd5-6a3c-4303" collapsible="true" hidden="false" import="true" sortIndex="2" targetId="644e-8196-62b8-e778" type="selectionEntry">
                   <constraints>
                     <constraint id="f069-dc18-7bf1-a210" field="selections" includeChildForces="false" includeChildSelections="true" scope="07de-e1ef-bf19-d01f" shared="true" type="max" value="1"/>
                   </constraints>
@@ -2699,7 +2699,7 @@ Bajas - Efecto
                     <cost name="Pts" typeId="puntos" value="5"/>
                   </costs>
                 </entryLink>
-                <entryLink name="Icono del caos" id="dd16-3ff5-61e4-50f4" collapsible="true" hidden="false" import="true" targetId="b147-9820-fd1c-16bb" type="selectionEntry">
+                <entryLink name="Icono del caos" id="dd16-3ff5-61e4-50f4" collapsible="true" hidden="false" import="true" sortIndex="3" targetId="b147-9820-fd1c-16bb" type="selectionEntry">
                   <constraints>
                     <constraint id="7d2a-0503-0389-fcea" field="selections" includeChildForces="false" includeChildSelections="true" scope="07de-e1ef-bf19-d01f" shared="true" type="max" value="1"/>
                   </constraints>
@@ -2707,7 +2707,7 @@ Bajas - Efecto
                     <cost name="Pts" typeId="puntos" value="25"/>
                   </costs>
                 </entryLink>
-                <entryLink name="Instrumento del caos" id="bf5a-20f9-a824-7906" collapsible="true" hidden="false" import="true" targetId="8ae5-7a70-17e4-5f63" type="selectionEntry">
+                <entryLink name="Instrumento del caos" id="bf5a-20f9-a824-7906" collapsible="true" hidden="false" import="true" sortIndex="1" targetId="8ae5-7a70-17e4-5f63" type="selectionEntry">
                   <constraints>
                     <constraint id="6377-83fe-53ab-50fb" field="selections" includeChildForces="false" includeChildSelections="true" scope="07de-e1ef-bf19-d01f" shared="true" type="max" value="1"/>
                   </constraints>
@@ -2759,7 +2759,7 @@ Bajas - Efecto
                 <constraint id="5857-b913-4c96-199b" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
               <entryLinks>
-                <entryLink name="Toque nocivo" id="e0a7-541d-8852-e4df" collapsible="true" hidden="false" import="true" targetId="70b2-ccb3-4af1-076e" type="selectionEntry">
+                <entryLink name="Toque nocivo" id="e0a7-541d-8852-e4df" collapsible="true" hidden="false" import="true" sortIndex="2" targetId="70b2-ccb3-4af1-076e" type="selectionEntry">
                   <constraints>
                     <constraint id="a97d-6a42-49a4-fbf6" field="selections" includeChildForces="false" includeChildSelections="true" scope="1df1-e953-c011-06d8" shared="true" type="max" value="1"/>
                   </constraints>
@@ -2767,7 +2767,7 @@ Bajas - Efecto
                     <cost name="Pts" typeId="puntos" value="10"/>
                   </costs>
                 </entryLink>
-                <entryLink name="Icono del caos" id="1740-19aa-8df0-be31" collapsible="true" hidden="false" import="true" targetId="b147-9820-fd1c-16bb" type="selectionEntry">
+                <entryLink name="Icono del caos" id="1740-19aa-8df0-be31" collapsible="true" hidden="false" import="true" sortIndex="3" targetId="b147-9820-fd1c-16bb" type="selectionEntry">
                   <constraints>
                     <constraint id="83ac-27d4-f516-508c" field="selections" includeChildForces="false" includeChildSelections="true" scope="1df1-e953-c011-06d8" shared="true" type="max" value="1"/>
                   </constraints>
@@ -2775,7 +2775,7 @@ Bajas - Efecto
                     <cost name="Pts" typeId="puntos" value="25"/>
                   </costs>
                 </entryLink>
-                <entryLink name="Instrumento del caos" id="b23f-c7e5-727c-edd1" collapsible="true" hidden="false" import="true" targetId="8ae5-7a70-17e4-5f63" type="selectionEntry">
+                <entryLink name="Instrumento del caos" id="b23f-c7e5-727c-edd1" collapsible="true" hidden="false" import="true" sortIndex="1" targetId="8ae5-7a70-17e4-5f63" type="selectionEntry">
                   <constraints>
                     <constraint id="191a-a53c-cb19-77b6" field="selections" includeChildForces="false" includeChildSelections="true" scope="1df1-e953-c011-06d8" shared="true" type="max" value="1"/>
                   </constraints>
@@ -2820,7 +2820,7 @@ Bajas - Efecto
             <constraint id="b142-7bca-f785-bd99" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="20"/>
           </constraints>
           <entryLinks>
-            <entryLink name="El Cambiante" id="9f8f-8179-1222-624f" collapsible="true" hidden="false" import="true" targetId="8c2b2452-bd7a-4e0c-b87c-98d795aafc26" type="selectionEntry">
+            <entryLink name="El Cambiante" id="9f8f-8179-1222-624f" collapsible="true" hidden="false" import="true" sortIndex="2" targetId="8c2b2452-bd7a-4e0c-b87c-98d795aafc26" type="selectionEntry">
               <constraints>
                 <constraint id="264f-efdc-f958-2b13" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="max" value="1"/>
               </constraints>
@@ -2828,7 +2828,7 @@ Bajas - Efecto
                 <cost name="Pts" typeId="puntos" value="22"/>
               </costs>
             </entryLink>
-            <entryLink name="Horror Rosa de Tzeentch" id="0536-a126-4671-9794" defaultAmount="5" hidden="false" import="true" targetId="07ca580e-e405-459e-8357-3eafab6e290f" type="selectionEntry">
+            <entryLink name="Horror Rosa de Tzeentch" id="0536-a126-4671-9794" defaultAmount="5" hidden="false" import="true" sortIndex="1" targetId="07ca580e-e405-459e-8357-3eafab6e290f" type="selectionEntry">
               <constraints>
                 <constraint id="e086-e31a-26eb-4432" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="4"/>
                 <constraint id="ebc0-f1b1-219b-c48c" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="20"/>
@@ -2902,7 +2902,7 @@ Bajas - Efecto
             <constraint id="aa32-02d8-c097-d103" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="20"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Mastín de Khorne" id="0055-6632-8877-bfc7" defaultAmount="5" hidden="false" import="true" targetId="314298aa-d640-4c10-8abc-bd63d690c7b8" type="selectionEntry">
+            <entryLink name="Mastín de Khorne" id="0055-6632-8877-bfc7" defaultAmount="5" hidden="false" import="true" sortIndex="1" targetId="314298aa-d640-4c10-8abc-bd63d690c7b8" type="selectionEntry">
               <constraints>
                 <constraint id="28f5-0514-ae24-7d10" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="4"/>
                 <constraint id="8ec2-aca1-5af2-c4e8" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="20"/>
@@ -2921,7 +2921,7 @@ Bajas - Efecto
                 </entryLink>
               </entryLinks>
             </entryLink>
-            <entryLink name="Karanak" id="875f-c1d3-92ad-3b2a" hidden="false" import="true" targetId="389cfe20-39e2-47db-bcdf-10640319f237" type="selectionEntry">
+            <entryLink name="Karanak" id="875f-c1d3-92ad-3b2a" hidden="false" import="true" sortIndex="2" targetId="389cfe20-39e2-47db-bcdf-10640319f237" type="selectionEntry">
               <constraints>
                 <constraint id="b087-7e66-2922-0a27" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="1"/>
               </constraints>
@@ -2949,7 +2949,7 @@ Bajas - Efecto
                 <constraint id="033e-aa56-ed0e-4e00" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
               <entryLinks>
-                <entryLink name="Mirada hipnótica" id="948b-9a6c-05ad-f660" collapsible="true" hidden="false" import="true" targetId="644e-8196-62b8-e778" type="selectionEntry">
+                <entryLink name="Mirada hipnótica" id="948b-9a6c-05ad-f660" collapsible="true" hidden="false" import="true" sortIndex="2" targetId="644e-8196-62b8-e778" type="selectionEntry">
                   <constraints>
                     <constraint id="bd74-5d5b-4f71-acb8" field="selections" includeChildForces="false" includeChildSelections="true" scope="eb25-c382-f077-35b4" shared="true" type="max" value="1"/>
                   </constraints>
@@ -2957,7 +2957,7 @@ Bajas - Efecto
                     <cost name="Pts" typeId="puntos" value="5"/>
                   </costs>
                 </entryLink>
-                <entryLink name="Icono del caos" id="847b-0e00-1e18-3413" collapsible="true" hidden="false" import="true" targetId="b147-9820-fd1c-16bb" type="selectionEntry">
+                <entryLink name="Icono del caos" id="847b-0e00-1e18-3413" collapsible="true" hidden="false" import="true" sortIndex="3" targetId="b147-9820-fd1c-16bb" type="selectionEntry">
                   <constraints>
                     <constraint id="588d-0c77-bc4e-d419" field="selections" includeChildForces="false" includeChildSelections="true" scope="eb25-c382-f077-35b4" shared="true" type="max" value="1"/>
                   </constraints>
@@ -2965,7 +2965,7 @@ Bajas - Efecto
                     <cost name="Pts" typeId="puntos" value="25"/>
                   </costs>
                 </entryLink>
-                <entryLink name="Instrumento del caos" id="787f-133e-3302-c471" collapsible="true" hidden="false" import="true" targetId="8ae5-7a70-17e4-5f63" type="selectionEntry">
+                <entryLink name="Instrumento del caos" id="787f-133e-3302-c471" collapsible="true" hidden="false" import="true" sortIndex="1" targetId="8ae5-7a70-17e4-5f63" type="selectionEntry">
                   <constraints>
                     <constraint id="33ed-7f5b-59a5-89e1" field="selections" includeChildForces="false" includeChildSelections="true" scope="eb25-c382-f077-35b4" shared="true" type="max" value="1"/>
                   </constraints>

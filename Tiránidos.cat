@@ -1264,7 +1264,7 @@ Si después de determinar la posición de la primera plantilla de la barrera de 
         </selectionEntryGroup>
         <selectionEntryGroup name="Puede tener uno de los siguientes" id="c94c-a8fe-70a8-5431" hidden="false" sortIndex="5" collapsible="true">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Enjambre pectoral con larvas electrificadas" hidden="false" id="2970-0c7e-6e0f-7e0a" sortIndex="1">
+            <selectionEntry type="upgrade" import="true" name="Enjambre pectoral con larvas electrificadas" hidden="false" id="2970-0c7e-6e0f-7e0a" sortIndex="3">
               <costs>
                 <cost name="Pts" typeId="puntos" value="25"/>
               </costs>
@@ -1275,7 +1275,7 @@ Si después de determinar la posición de la primera plantilla de la barrera de 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db9b-3471-64eb-7203"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Enjambre pectoral con gusanos secantes" hidden="false" id="22a6-1df7-6cff-4b6b" sortIndex="3">
+            <selectionEntry type="upgrade" import="true" name="Enjambre pectoral con gusanos secantes" hidden="false" id="22a6-1df7-6cff-4b6b" sortIndex="2">
               <costs>
                 <cost name="Pts" typeId="puntos" value="25"/>
               </costs>
@@ -1286,7 +1286,7 @@ Si después de determinar la posición de la primera plantilla de la barrera de 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0539-a880-4797-63b4"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Enjambre pectoral con cucarachas espinadas" hidden="false" id="c06b-1bc7-a5ce-815a" sortIndex="2">
+            <selectionEntry type="upgrade" import="true" name="Enjambre pectoral con cucarachas espinadas" hidden="false" id="c06b-1bc7-a5ce-815a" sortIndex="1">
               <costs>
                 <cost name="Pts" typeId="puntos" value="25"/>
               </costs>
@@ -1303,7 +1303,7 @@ Si después de determinar la posición de la primera plantilla de la barrera de 
             <constraint type="max" value="1" field="selections" scope="self" shared="true" id="5a16-e13a-007e-3d83"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Alas" hidden="false" id="412e-21d7-a0ef-7c64" type="selectionEntry" targetId="0883-4735-8df1-aacc">
+            <entryLink import="true" name="Alas" hidden="false" id="412e-21d7-a0ef-7c64" type="selectionEntry" sortIndex="5" targetId="0883-4735-8df1-aacc">
               <costs>
                 <cost name="Pts" typeId="puntos" value="60"/>
               </costs>
@@ -1323,7 +1323,7 @@ Si después de determinar la posición de la primera plantilla de la barrera de 
         </selectionEntryGroup>
         <selectionEntryGroup name="Un Tirano de enjambre tiene dos de los siguientes poderes" id="9cfe-6ce9-0855-b7d0" hidden="false" sortIndex="1">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="El horror" hidden="false" id="36f2-e302-ad58-bdb8">
+            <selectionEntry sortIndex="3" type="upgrade" import="true" name="El horror" hidden="false" id="36f2-e302-ad58-bdb8">
               <infoLinks>
                 <infoLink name="El horror" id="2d13-62a5-7826-92ef" hidden="false" type="profile" targetId="685e-61c3-0b20-b391"/>
               </infoLinks>
@@ -1331,7 +1331,7 @@ Si después de determinar la posición de la primera plantilla de la barrera de 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="eac7-a71d-a62a-e492"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Absorbe-esencias" hidden="false" id="5d66-66e4-d3b8-da45">
+            <selectionEntry sortIndex="1" type="upgrade" import="true" name="Absorbe-esencias" hidden="false" id="5d66-66e4-d3b8-da45">
               <infoLinks>
                 <infoLink name="Absorbe-esencias" id="0644-79b9-a736-2bb0" hidden="false" type="profile" targetId="ab18-7b80-6557-e58d"/>
               </infoLinks>
@@ -1339,7 +1339,7 @@ Si después de determinar la posición de la primera plantilla de la barrera de 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f90c-0b31-5a4e-8387"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Paroxismo" hidden="false" id="9f06-6946-c22c-fcf2">
+            <selectionEntry sortIndex="4" type="upgrade" import="true" name="Paroxismo" hidden="false" id="9f06-6946-c22c-fcf2">
               <infoLinks>
                 <infoLink name="Paroxismo" id="e374-51e5-aa2b-72b1" hidden="false" type="profile" targetId="0656-6afb-a3c2-134e"/>
               </infoLinks>
@@ -1347,7 +1347,7 @@ Si después de determinar la posición de la primera plantilla de la barrera de 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8f2e-9df9-8cea-f9d9"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Aullido psíquico" hidden="false" id="2dc2-72e5-1e98-6949">
+            <selectionEntry sortIndex="2" type="upgrade" import="true" name="Aullido psíquico" hidden="false" id="2dc2-72e5-1e98-6949">
               <infoLinks>
                 <infoLink name="Aullido psíquico" id="2fbe-4635-d3be-8928" hidden="false" type="profile" targetId="274d-9bf1-8ed2-a660"/>
               </infoLinks>
@@ -1449,12 +1449,12 @@ repetirse.</characteristic>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="52bd-6b74-e479-d393" includeChildSelections="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Andanada de espinas" hidden="false" id="bd39-e0c3-62bb-95f9" type="selectionEntry" targetId="a0de-fc38-26df-e647">
+            <entryLink import="true" name="Andanada de espinas" hidden="false" id="bd39-e0c3-62bb-95f9" type="selectionEntry" sortIndex="1" targetId="a0de-fc38-26df-e647">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a1f9-f473-b644-7676" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Racimo de espinas" hidden="false" id="431a-e073-f052-12b7" type="selectionEntry" targetId="b3ef-84b2-2104-3a05">
+            <entryLink import="true" name="Racimo de espinas" hidden="false" id="431a-e073-f052-12b7" type="selectionEntry" sortIndex="2" targetId="b3ef-84b2-2104-3a05">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="884c-323e-7107-0a78" includeChildSelections="false"/>
               </constraints>
@@ -1466,7 +1466,7 @@ repetirse.</characteristic>
             <constraint type="max" value="1" field="selections" scope="self" shared="true" id="5c7b-2b43-814d-4973-max"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Garras afiladas" hidden="false" id="4013-a84f-c96c-1d32" type="selectionEntry" targetId="e1a2-031d-c0dc-486a">
+            <entryLink import="true" name="Garras afiladas" hidden="false" id="4013-a84f-c96c-1d32" type="selectionEntry" sortIndex="1" targetId="e1a2-031d-c0dc-486a">
               <costs>
                 <cost name="Pts" typeId="puntos" value="5"/>
               </costs>
@@ -1474,7 +1474,7 @@ repetirse.</characteristic>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d66-4cae-dca8-212f" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Garras trituradoras" hidden="false" id="9e24-e2ee-220e-6c73" type="selectionEntry" targetId="2a47-b8fd-7cd6-6863">
+            <entryLink import="true" name="Garras trituradoras" hidden="false" id="9e24-e2ee-220e-6c73" type="selectionEntry" sortIndex="2" targetId="2a47-b8fd-7cd6-6863">
               <costs>
                 <cost name="Pts" typeId="puntos" value="25"/>
               </costs>
@@ -1486,7 +1486,7 @@ repetirse.</characteristic>
         </selectionEntryGroup>
         <selectionEntryGroup name="Puede tener cualquiera de los siguientes poderes psíquicos" id="468a-f8bf-f8af-dd9d" hidden="false" collapsible="true" sortIndex="4">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Catalizador" hidden="false" id="db63-8a04-2615-5df7">
+            <selectionEntry sortIndex="2" type="upgrade" import="true" name="Catalizador" hidden="false" id="db63-8a04-2615-5df7">
               <costs>
                 <cost name="Pts" typeId="puntos" value="15"/>
               </costs>
@@ -1498,7 +1498,7 @@ repetirse.</characteristic>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ab18-c5ba-386c-fa41"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Avalancha" hidden="false" id="0ff1-53d0-6300-333a">
+            <selectionEntry sortIndex="1" type="upgrade" import="true" name="Avalancha" hidden="false" id="0ff1-53d0-6300-333a">
               <costs>
                 <cost name="Pts" typeId="puntos" value="15"/>
               </costs>
@@ -1647,7 +1647,7 @@ En cuanto muere un Tervigón, todas las progenies de Termagantes (engendradas o
         </selectionEntryGroup>
         <selectionEntryGroup name="Puede tener uno de los siguientes biomorfos" id="8188-12ef-2e19-6e52" hidden="false" collapsible="true">
           <entryLinks>
-            <entryLink import="true" name="Glándula de adrenalina" hidden="false" id="00b1-7bb4-7e6b-a66d" type="selectionEntry" targetId="fac7-2223-7ace-0ece">
+            <entryLink import="true" name="Glándula de adrenalina" hidden="false" id="00b1-7bb4-7e6b-a66d" type="selectionEntry" sortIndex="1" targetId="fac7-2223-7ace-0ece">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1fcb-4980-4ed0-a0c0" includeChildSelections="false"/>
               </constraints>
@@ -1655,7 +1655,7 @@ En cuanto muere un Tervigón, todas las progenies de Termagantes (engendradas o
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Glándulas de toxinas" hidden="false" id="901e-ff49-66d1-fd94" type="selectionEntry" targetId="39d6-dfa6-5ea6-e2d8">
+            <entryLink import="true" name="Glándulas de toxinas" hidden="false" id="901e-ff49-66d1-fd94" type="selectionEntry" sortIndex="2" targetId="39d6-dfa6-5ea6-e2d8">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0465-18ae-3954-dfd0" includeChildSelections="false"/>
               </constraints>
@@ -1663,7 +1663,7 @@ En cuanto muere un Tervigón, todas las progenies de Termagantes (engendradas o
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Regeneración" hidden="false" id="cfa6-9703-9725-3bfb" type="selectionEntry" targetId="3a31-b0f5-3d5b-37f0">
+            <entryLink import="true" name="Regeneración" hidden="false" id="cfa6-9703-9725-3bfb" type="selectionEntry" sortIndex="3" targetId="3a31-b0f5-3d5b-37f0">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6d70-c7df-3ed4-8935" includeChildSelections="false"/>
               </constraints>
@@ -2149,7 +2149,7 @@ Los Genestealers de Ymgarl reciben un +1 a su valor de Resistencia.</characteris
       <selectionEntryGroups>
         <selectionEntryGroup name="Progenie" id="bcc1-8870-961f-7726" hidden="false" defaultSelectionEntryId="1ece-5ef0-4057-e424" sortIndex="1">
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Guerrero tiránido" hidden="false" id="1ece-5ef0-4057-e424" defaultAmount="3">
+            <selectionEntry sortIndex="1" type="model" import="true" name="Guerrero tiránido" hidden="false" id="1ece-5ef0-4057-e424" defaultAmount="3">
               <costs>
                 <cost name="Pts" typeId="puntos" value="30"/>
               </costs>
@@ -2161,7 +2161,7 @@ Los Genestealers de Ymgarl reciben un +1 a su valor de Resistencia.</characteris
                 <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="5f80-6701-954c-24c6" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Guerrero tiránido con arma pesada" hidden="false" id="0387-649d-6433-3283">
+            <selectionEntry sortIndex="2" type="model" import="true" name="Guerrero tiránido con arma pesada" hidden="false" id="0387-649d-6433-3283">
               <costs>
                 <cost name="Pts" typeId="puntos" value="30"/>
               </costs>
@@ -2175,7 +2175,7 @@ Los Genestealers de Ymgarl reciben un +1 a su valor de Resistencia.</characteris
                     <constraint type="max" value="1" field="selections" scope="self" shared="true" id="1ba1-0193-3727-2d84-max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink import="true" name="Cañón venenoso" hidden="false" id="84a3-c823-5745-f444" type="selectionEntry" targetId="9d04-abbe-c90a-8f23">
+                    <entryLink import="true" name="Cañón venenoso" hidden="false" id="84a3-c823-5745-f444" type="selectionEntry" sortIndex="2" targetId="9d04-abbe-c90a-8f23">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db20-f7fe-9335-bc00" includeChildSelections="false"/>
                       </constraints>
@@ -2186,7 +2186,7 @@ Los Genestealers de Ymgarl reciben un +1 a su valor de Resistencia.</characteris
                         <modifier type="append" value="con cañón venenoso" field="name" scope="0387-649d-6433-3283" affects="profiles.Unidad"/>
                       </modifiers>
                     </entryLink>
-                    <entryLink import="true" name="Cañón enredadera" hidden="false" id="d54d-4846-c0fa-05fd" type="selectionEntry" targetId="1889-8931-a893-b44a">
+                    <entryLink import="true" name="Cañón enredadera" hidden="false" id="d54d-4846-c0fa-05fd" type="selectionEntry" sortIndex="1" targetId="1889-8931-a893-b44a">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bdf6-3424-08d6-11af" includeChildSelections="false"/>
                       </constraints>
@@ -2372,7 +2372,7 @@ Los Genestealers de Ymgarl reciben un +1 a su valor de Resistencia.</characteris
         </selectionEntryGroup>
         <selectionEntryGroup name="Glándulas" id="a8d5-4a05-7d2b-1072" hidden="false" collapsible="true" sortIndex="4">
           <entryLinks>
-            <entryLink import="true" name="Glándula de adrenalina" hidden="false" id="6257-5129-3cee-a58c" type="selectionEntry" targetId="fac7-2223-7ace-0ece">
+            <entryLink import="true" name="Glándula de adrenalina" hidden="false" id="6257-5129-3cee-a58c" type="selectionEntry" sortIndex="1" targetId="fac7-2223-7ace-0ece">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="3812-a079-3f3b-ca08" includeChildSelections="false" automatic="true"/>
               </constraints>
@@ -2387,7 +2387,7 @@ Los Genestealers de Ymgarl reciben un +1 a su valor de Resistencia.</characteris
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="Glándulas de toxinas" hidden="false" id="4d72-ff76-0ff2-fed6" type="selectionEntry" targetId="39d6-dfa6-5ea6-e2d8">
+            <entryLink import="true" name="Glándulas de toxinas" hidden="false" id="4d72-ff76-0ff2-fed6" type="selectionEntry" sortIndex="2" targetId="39d6-dfa6-5ea6-e2d8">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="9a6b-8ada-4109-8884" includeChildSelections="false" automatic="true"/>
               </constraints>
@@ -2685,7 +2685,7 @@ Los Genestealers de Ymgarl reciben un +1 a su valor de Resistencia.</characteris
         </selectionEntryGroup>
         <selectionEntryGroup name="Glándulas" id="38dd-e7a6-08e8-9d13" hidden="false" collapsible="true" sortIndex="3">
           <entryLinks>
-            <entryLink import="true" name="Glándula de adrenalina" hidden="false" id="663c-6f04-dab4-f240" type="selectionEntry" targetId="fac7-2223-7ace-0ece">
+            <entryLink import="true" name="Glándula de adrenalina" hidden="false" id="663c-6f04-dab4-f240" type="selectionEntry" sortIndex="1" targetId="fac7-2223-7ace-0ece">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="4a0f-2f96-d4d4-d382" includeChildSelections="false" automatic="true"/>
               </constraints>
@@ -2697,7 +2697,7 @@ Los Genestealers de Ymgarl reciben un +1 a su valor de Resistencia.</characteris
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="Glándulas de toxinas" hidden="false" id="372b-cb2f-4713-edb6" type="selectionEntry" targetId="39d6-dfa6-5ea6-e2d8">
+            <entryLink import="true" name="Glándulas de toxinas" hidden="false" id="372b-cb2f-4713-edb6" type="selectionEntry" sortIndex="2" targetId="39d6-dfa6-5ea6-e2d8">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="f57c-c647-556c-6c89" includeChildSelections="false" automatic="true"/>
               </constraints>
@@ -2743,7 +2743,7 @@ Los Genestealers de Ymgarl reciben un +1 a su valor de Resistencia.</characteris
         </selectionEntryGroup>
         <selectionEntryGroup name="Glándulas" id="8d55-f8cb-f405-7b9b" hidden="false" collapsible="true" sortIndex="3">
           <entryLinks>
-            <entryLink import="true" name="Glándula de adrenalina" hidden="false" id="7726-fa5b-10c6-4edd" type="selectionEntry" targetId="fac7-2223-7ace-0ece">
+            <entryLink import="true" name="Glándula de adrenalina" hidden="false" id="7726-fa5b-10c6-4edd" type="selectionEntry" sortIndex="1" targetId="fac7-2223-7ace-0ece">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="2558-8f8c-6b4a-74be" includeChildSelections="false" automatic="true"/>
               </constraints>
@@ -2758,7 +2758,7 @@ Los Genestealers de Ymgarl reciben un +1 a su valor de Resistencia.</characteris
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink import="true" name="Glándulas de toxinas" hidden="false" id="906b-b654-f57a-6e56" type="selectionEntry" targetId="39d6-dfa6-5ea6-e2d8">
+            <entryLink import="true" name="Glándulas de toxinas" hidden="false" id="906b-b654-f57a-6e56" type="selectionEntry" sortIndex="2" targetId="39d6-dfa6-5ea6-e2d8">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="9f74-6e24-6cc8-0bef" includeChildSelections="false" automatic="true"/>
               </constraints>
@@ -2921,7 +2921,7 @@ Los Genestealers de Ymgarl reciben un +1 a su valor de Resistencia.</characteris
       <selectionEntryGroups>
         <selectionEntryGroup name="Progenie" id="52d2-b096-1c63-60d2" hidden="false" defaultSelectionEntryId="a4fd-ed1b-cd1b-84b0" sortIndex="1">
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Élitro tiránido" hidden="false" id="a4fd-ed1b-cd1b-84b0" defaultAmount="3">
+            <selectionEntry sortIndex="1" type="model" import="true" name="Élitro tiránido" hidden="false" id="a4fd-ed1b-cd1b-84b0" defaultAmount="3">
               <costs>
                 <cost name="Pts" typeId="puntos" value="35"/>
               </costs>
@@ -2933,7 +2933,7 @@ Los Genestealers de Ymgarl reciben un +1 a su valor de Resistencia.</characteris
                 <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="38a1-6a1a-a1a5-ed01" includeChildSelections="false"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Élitro tiránido con arma pesada" hidden="false" id="9b9c-2f74-4989-adfb">
+            <selectionEntry sortIndex="2" type="model" import="true" name="Élitro tiránido con arma pesada" hidden="false" id="9b9c-2f74-4989-adfb">
               <costs>
                 <cost name="Pts" typeId="puntos" value="35"/>
               </costs>
@@ -2947,7 +2947,7 @@ Los Genestealers de Ymgarl reciben un +1 a su valor de Resistencia.</characteris
                     <constraint type="max" value="1" field="selections" scope="self" shared="true" id="a1f3-8c85-28d4-f163"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink import="true" name="Cañón venenoso" hidden="false" id="0ef0-6f36-b8d4-900f" type="selectionEntry" targetId="9d04-abbe-c90a-8f23">
+                    <entryLink import="true" name="Cañón venenoso" hidden="false" id="0ef0-6f36-b8d4-900f" type="selectionEntry" sortIndex="2" targetId="9d04-abbe-c90a-8f23">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c5f2-2969-ed60-89f2" includeChildSelections="false"/>
                       </constraints>
@@ -2958,7 +2958,7 @@ Los Genestealers de Ymgarl reciben un +1 a su valor de Resistencia.</characteris
                         <modifier type="append" value="con cañón venenoso" field="name" scope="0387-649d-6433-3283" affects="profiles.Unidad"/>
                       </modifiers>
                     </entryLink>
-                    <entryLink import="true" name="Cañón enredadera" hidden="false" id="f123-1c31-93a9-f1f0" type="selectionEntry" targetId="1889-8931-a893-b44a">
+                    <entryLink import="true" name="Cañón enredadera" hidden="false" id="f123-1c31-93a9-f1f0" type="selectionEntry" sortIndex="1" targetId="1889-8931-a893-b44a">
                       <constraints>
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="617e-dfad-9ed4-a6b7" includeChildSelections="false"/>
                       </constraints>
@@ -3132,7 +3132,7 @@ Los Genestealers de Ymgarl reciben un +1 a su valor de Resistencia.</characteris
         </selectionEntryGroup>
         <selectionEntryGroup name="Glándulas" id="dfb6-abb8-e124-d6f0" hidden="false" collapsible="true" sortIndex="4">
           <entryLinks>
-            <entryLink import="true" name="Glándula de adrenalina" hidden="false" id="72fc-95fe-bcb0-78f4" type="selectionEntry" targetId="fac7-2223-7ace-0ece">
+            <entryLink import="true" name="Glándula de adrenalina" hidden="false" id="72fc-95fe-bcb0-78f4" type="selectionEntry" sortIndex="1" targetId="fac7-2223-7ace-0ece">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="5606-24cd-8f06-1500" includeChildSelections="false" automatic="true"/>
               </constraints>
@@ -3147,7 +3147,7 @@ Los Genestealers de Ymgarl reciben un +1 a su valor de Resistencia.</characteris
                 <cost name="Pts" typeId="puntos" value="5"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Glándulas de toxinas" hidden="false" id="a54d-ed54-af8c-ac8d" type="selectionEntry" targetId="39d6-dfa6-5ea6-e2d8">
+            <entryLink import="true" name="Glándulas de toxinas" hidden="false" id="a54d-ed54-af8c-ac8d" type="selectionEntry" sortIndex="2" targetId="39d6-dfa6-5ea6-e2d8">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b1c8-bdb8-63e0-dc07" includeChildSelections="false" automatic="true"/>
               </constraints>
@@ -3332,7 +3332,7 @@ Los Genestealers de Ymgarl reciben un +1 a su valor de Resistencia.</characteris
       <selectionEntryGroups>
         <selectionEntryGroup name="Biomorfos adicionales" id="1e41-a7a5-02f7-8699" hidden="false" collapsible="true">
           <entryLinks>
-            <entryLink import="true" name="Glándula de adrenalina" hidden="false" id="383c-6669-018c-2961" type="selectionEntry" targetId="fac7-2223-7ace-0ece">
+            <entryLink import="true" name="Glándula de adrenalina" hidden="false" id="383c-6669-018c-2961" type="selectionEntry" sortIndex="1" targetId="fac7-2223-7ace-0ece">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="cf59-c41d-f59d-2974" includeChildSelections="false" automatic="true"/>
               </constraints>
@@ -3347,7 +3347,7 @@ Los Genestealers de Ymgarl reciben un +1 a su valor de Resistencia.</characteris
                 <cost name="Pts" typeId="puntos" value="4"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Lanzadardos" hidden="false" id="940c-80a9-1406-90e7" type="selectionEntry" targetId="768b-607e-37c2-052c">
+            <entryLink import="true" name="Lanzadardos" hidden="false" id="940c-80a9-1406-90e7" type="selectionEntry" sortIndex="3" targetId="768b-607e-37c2-052c">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d27a-f279-b89c-ad5a" includeChildSelections="false" automatic="true"/>
               </constraints>
@@ -3362,7 +3362,7 @@ Los Genestealers de Ymgarl reciben un +1 a su valor de Resistencia.</characteris
                 <cost name="Pts" typeId="puntos" value="5"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Glándulas de toxinas" hidden="false" id="7048-d949-8d95-2392" type="selectionEntry" targetId="39d6-dfa6-5ea6-e2d8">
+            <entryLink import="true" name="Glándulas de toxinas" hidden="false" id="7048-d949-8d95-2392" type="selectionEntry" sortIndex="2" targetId="39d6-dfa6-5ea6-e2d8">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="b44b-4185-a52e-3def" includeChildSelections="false" automatic="true"/>
               </constraints>
@@ -3414,7 +3414,7 @@ Los Genestealers de Ymgarl reciben un +1 a su valor de Resistencia.</characteris
       <selectionEntryGroups>
         <selectionEntryGroup name="Glándulas" id="dc81-e813-e616-5ecf" hidden="false" collapsible="true">
           <entryLinks>
-            <entryLink import="true" name="Glándula de adrenalina" hidden="false" id="f31d-6165-447f-0c76" type="selectionEntry" targetId="fac7-2223-7ace-0ece">
+            <entryLink import="true" name="Glándula de adrenalina" hidden="false" id="f31d-6165-447f-0c76" type="selectionEntry" sortIndex="1" targetId="fac7-2223-7ace-0ece">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="c6be-0916-2b0a-33e6" includeChildSelections="false" automatic="true"/>
               </constraints>
@@ -3429,7 +3429,7 @@ Los Genestealers de Ymgarl reciben un +1 a su valor de Resistencia.</characteris
                 <cost name="Pts" typeId="puntos" value="1"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Glándulas de toxinas" hidden="false" id="292a-248f-b89d-b218" type="selectionEntry" targetId="39d6-dfa6-5ea6-e2d8">
+            <entryLink import="true" name="Glándulas de toxinas" hidden="false" id="292a-248f-b89d-b218" type="selectionEntry" sortIndex="2" targetId="39d6-dfa6-5ea6-e2d8">
               <constraints>
                 <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="d2c9-7e12-5e20-1bf9" includeChildSelections="false" automatic="true"/>
               </constraints>
@@ -3510,7 +3510,7 @@ Los Genestealers de Ymgarl reciben un +1 a su valor de Resistencia.</characteris
         </selectionEntryGroup>
         <selectionEntryGroup name="Biomorfos adicionales" id="cb1a-f5e7-f62a-9949" hidden="false" collapsible="true" sortIndex="3">
           <entryLinks>
-            <entryLink import="true" name="Glándula de adrenalina" hidden="false" id="87f5-e94a-1592-e159" type="selectionEntry" targetId="fac7-2223-7ace-0ece">
+            <entryLink import="true" name="Glándula de adrenalina" hidden="false" id="87f5-e94a-1592-e159" type="selectionEntry" sortIndex="1" targetId="fac7-2223-7ace-0ece">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0377-9354-4875-c1ac" includeChildSelections="false"/>
               </constraints>
@@ -3518,7 +3518,7 @@ Los Genestealers de Ymgarl reciben un +1 a su valor de Resistencia.</characteris
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Glándulas de toxinas" hidden="false" id="8c30-78bf-1df1-7952" type="selectionEntry" targetId="39d6-dfa6-5ea6-e2d8">
+            <entryLink import="true" name="Glándulas de toxinas" hidden="false" id="8c30-78bf-1df1-7952" type="selectionEntry" sortIndex="2" targetId="39d6-dfa6-5ea6-e2d8">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ee7a-cade-346f-2188" includeChildSelections="false"/>
               </constraints>
@@ -3526,7 +3526,7 @@ Los Genestealers de Ymgarl reciben un +1 a su valor de Resistencia.</characteris
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Regeneración" hidden="false" id="3998-d608-d5bc-e65a" type="selectionEntry" targetId="3a31-b0f5-3d5b-37f0">
+            <entryLink import="true" name="Regeneración" hidden="false" id="3998-d608-d5bc-e65a" type="selectionEntry" sortIndex="3" targetId="3a31-b0f5-3d5b-37f0">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6569-04ca-b787-2b52" includeChildSelections="false"/>
               </constraints>
@@ -3671,7 +3671,7 @@ Racimo quedará destruido al completo, como se describe en el resultado de 1-2 
                 <constraint type="max" value="1" field="selections" scope="self" shared="true" id="35ba-8cff-2854-4d6d" childId="any"/>
               </constraints>
               <entryLinks>
-                <entryLink import="true" name="Cañón venenoso pesado" hidden="false" id="d21b-e31f-47e5-a97c" type="selectionEntry" targetId="035d-b1dd-1c09-6035">
+                <entryLink import="true" name="Cañón venenoso pesado" hidden="false" id="d21b-e31f-47e5-a97c" type="selectionEntry" sortIndex="2" targetId="035d-b1dd-1c09-6035">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="81fd-54f0-3dc4-2e82" includeChildSelections="false"/>
                   </constraints>
@@ -3683,7 +3683,7 @@ Racimo quedará destruido al completo, como se describe en el resultado de 1-2 
                     </modifier>
                   </modifiers>
                 </entryLink>
-                <entryLink import="true" name="Cañón estrangulador" hidden="false" id="bf0e-337d-ebd1-51ae" type="selectionEntry" targetId="9323-3dfe-d837-5bf3">
+                <entryLink import="true" name="Cañón estrangulador" hidden="false" id="bf0e-337d-ebd1-51ae" type="selectionEntry" sortIndex="1" targetId="9323-3dfe-d837-5bf3">
                   <constraints>
                     <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fbf0-16e4-6c90-a213" includeChildSelections="false"/>
                   </constraints>
@@ -3834,7 +3834,7 @@ Racimo quedará destruido al completo, como se describe en el resultado de 1-2 
       <selectionEntryGroups>
         <selectionEntryGroup name="Variante" id="663f-32ca-3af0-e0ab" hidden="false" defaultSelectionEntryId="bf1c-a237-4f26-84b1" sortIndex="1">
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Trigón" hidden="false" id="bf1c-a237-4f26-84b1">
+            <selectionEntry sortIndex="1" type="model" import="true" name="Trigón" hidden="false" id="bf1c-a237-4f26-84b1">
               <costs>
                 <cost name="Pts" typeId="puntos" value="200"/>
               </costs>
@@ -3848,7 +3848,7 @@ Racimo quedará destruido al completo, como se describe en el resultado de 1-2 
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5283-b2b7-08fb-f285"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Trigón Prime" hidden="false" id="dca3-c410-acdf-da93">
+            <selectionEntry sortIndex="2" type="model" import="true" name="Trigón Prime" hidden="false" id="dca3-c410-acdf-da93">
               <costs>
                 <cost name="Pts" typeId="puntos" value="240"/>
               </costs>
@@ -3871,7 +3871,7 @@ Racimo quedará destruido al completo, como se describe en el resultado de 1-2 
         </selectionEntryGroup>
         <selectionEntryGroup name="Biomorfos" id="53e9-788d-af9b-c45c" hidden="false">
           <entryLinks>
-            <entryLink import="true" name="Glándula de adrenalina" hidden="false" id="e7d8-ca74-5022-8c70" type="selectionEntry" targetId="fac7-2223-7ace-0ece">
+            <entryLink import="true" name="Glándula de adrenalina" hidden="false" id="e7d8-ca74-5022-8c70" type="selectionEntry" sortIndex="1" targetId="fac7-2223-7ace-0ece">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="de86-710a-4e68-931a" includeChildSelections="false" automatic="true"/>
               </constraints>
@@ -3879,7 +3879,7 @@ Racimo quedará destruido al completo, como se describe en el resultado de 1-2 
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Glándulas de toxinas" hidden="false" id="0588-b22e-a89c-a92c" type="selectionEntry" targetId="39d6-dfa6-5ea6-e2d8">
+            <entryLink import="true" name="Glándulas de toxinas" hidden="false" id="0588-b22e-a89c-a92c" type="selectionEntry" sortIndex="2" targetId="39d6-dfa6-5ea6-e2d8">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a11f-631a-b735-f493" includeChildSelections="false" automatic="true"/>
               </constraints>
@@ -3887,7 +3887,7 @@ Racimo quedará destruido al completo, como se describe en el resultado de 1-2 
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Regeneración" hidden="false" id="0018-d9e9-d70b-b299" type="selectionEntry" targetId="3a31-b0f5-3d5b-37f0">
+            <entryLink import="true" name="Regeneración" hidden="false" id="0018-d9e9-d70b-b299" type="selectionEntry" sortIndex="3" targetId="3a31-b0f5-3d5b-37f0">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="83d8-eda7-21f7-a1ae" includeChildSelections="false" automatic="true"/>
               </constraints>
@@ -3939,7 +3939,7 @@ Después de que emerja el Trigón (o Trigón Prime), marca la posición debajo d
       <selectionEntryGroups>
         <selectionEntryGroup name="Biomorfos" id="e1d2-b9aa-7f81-7f4b" hidden="false">
           <entryLinks>
-            <entryLink import="true" name="Glándula de adrenalina" hidden="false" id="ebb3-95cf-ce61-6269" type="selectionEntry" targetId="fac7-2223-7ace-0ece">
+            <entryLink import="true" name="Glándula de adrenalina" hidden="false" id="ebb3-95cf-ce61-6269" type="selectionEntry" sortIndex="1" targetId="fac7-2223-7ace-0ece">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="dc4d-4954-a470-745e" includeChildSelections="false" automatic="true"/>
               </constraints>
@@ -3947,7 +3947,7 @@ Después de que emerja el Trigón (o Trigón Prime), marca la posición debajo d
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Glándulas de toxinas" hidden="false" id="a8ba-ca0f-bf79-b421" type="selectionEntry" targetId="39d6-dfa6-5ea6-e2d8">
+            <entryLink import="true" name="Glándulas de toxinas" hidden="false" id="a8ba-ca0f-bf79-b421" type="selectionEntry" sortIndex="2" targetId="39d6-dfa6-5ea6-e2d8">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="db04-54f6-1d43-8260" includeChildSelections="false" automatic="true"/>
               </constraints>
@@ -3955,7 +3955,7 @@ Después de que emerja el Trigón (o Trigón Prime), marca la posición debajo d
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Regeneración" hidden="false" id="8b8d-fb43-3ca7-ea59" type="selectionEntry" targetId="3a31-b0f5-3d5b-37f0">
+            <entryLink import="true" name="Regeneración" hidden="false" id="8b8d-fb43-3ca7-ea59" type="selectionEntry" sortIndex="3" targetId="3a31-b0f5-3d5b-37f0">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="adf5-c67e-791a-fac4" includeChildSelections="false" automatic="true"/>
               </constraints>
@@ -4040,12 +4040,12 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d44b-d283-6f1c-ee81" includeChildSelections="false" automatic="true"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Andanada de espinas" hidden="false" id="ba9e-b2e0-0bf8-081b" type="selectionEntry" targetId="a0de-fc38-26df-e647">
+            <entryLink import="true" name="Andanada de espinas" hidden="false" id="ba9e-b2e0-0bf8-081b" type="selectionEntry" sortIndex="1" targetId="a0de-fc38-26df-e647">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8967-3797-73ff-50ed" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Racimo de espinas" hidden="false" id="4275-1aa6-4f7c-bc15" type="selectionEntry" targetId="b3ef-84b2-2104-3a05">
+            <entryLink import="true" name="Racimo de espinas" hidden="false" id="4275-1aa6-4f7c-bc15" type="selectionEntry" sortIndex="2" targetId="b3ef-84b2-2104-3a05">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d598-4bfa-828e-38cc" includeChildSelections="false"/>
               </constraints>
@@ -4054,7 +4054,7 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
         </selectionEntryGroup>
         <selectionEntryGroup name="Biomorfos" id="c7dd-74b5-b450-c8c5" hidden="false" collapsible="true" sortIndex="4">
           <entryLinks>
-            <entryLink import="true" name="Glándula de adrenalina" hidden="false" id="3acc-0cf4-db98-4bfa" type="selectionEntry" targetId="fac7-2223-7ace-0ece">
+            <entryLink import="true" name="Glándula de adrenalina" hidden="false" id="3acc-0cf4-db98-4bfa" type="selectionEntry" sortIndex="1" targetId="fac7-2223-7ace-0ece">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ddc2-6804-c24d-5a87" includeChildSelections="false" automatic="true"/>
               </constraints>
@@ -4062,7 +4062,7 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Glándulas de toxinas" hidden="false" id="b053-79d0-9d5a-4875" type="selectionEntry" targetId="39d6-dfa6-5ea6-e2d8">
+            <entryLink import="true" name="Glándulas de toxinas" hidden="false" id="b053-79d0-9d5a-4875" type="selectionEntry" sortIndex="2" targetId="39d6-dfa6-5ea6-e2d8">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e98a-a865-89b0-e467" includeChildSelections="false" automatic="true"/>
               </constraints>
@@ -4070,7 +4070,7 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
             </entryLink>
-            <entryLink import="true" name="Regeneración" hidden="false" id="f0c5-4a41-6d81-2661" type="selectionEntry" targetId="3a31-b0f5-3d5b-37f0">
+            <entryLink import="true" name="Regeneración" hidden="false" id="f0c5-4a41-6d81-2661" type="selectionEntry" sortIndex="3" targetId="3a31-b0f5-3d5b-37f0">
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d4f-be12-8f28-e504" includeChildSelections="false" automatic="true"/>
               </constraints>
@@ -4148,7 +4148,7 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
       <selectionEntryGroups>
         <selectionEntryGroup name="A Norn Emmisary has one of the following powers" id="4029-c0af-3b1e-091e" hidden="false">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="The Horror" hidden="false" id="8992-2bf4-fa12-047e">
+            <selectionEntry sortIndex="4" type="upgrade" import="true" name="The Horror" hidden="false" id="8992-2bf4-fa12-047e">
               <infoLinks>
                 <infoLink name="El horror" id="a147-66d9-4440-10c6" hidden="false" type="profile" targetId="685e-61c3-0b20-b391"/>
               </infoLinks>
@@ -4156,7 +4156,7 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6959-b4de-f357-5917"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Leech Essence" hidden="false" id="a7e0-9caf-3699-ac0e">
+            <selectionEntry sortIndex="1" type="upgrade" import="true" name="Leech Essence" hidden="false" id="a7e0-9caf-3699-ac0e">
               <infoLinks>
                 <infoLink name="Absorbe-esencias" id="7b45-c7a2-90f4-3d4f" hidden="false" type="profile" targetId="ab18-7b80-6557-e58d"/>
               </infoLinks>
@@ -4164,7 +4164,7 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9490-38a6-42f7-1e9e"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Paroxysm" hidden="false" id="e57e-a32d-9874-064e">
+            <selectionEntry sortIndex="2" type="upgrade" import="true" name="Paroxysm" hidden="false" id="e57e-a32d-9874-064e">
               <infoLinks>
                 <infoLink name="Paroxismo" id="f0f9-4675-46d1-4cb5" hidden="false" type="profile" targetId="0656-6afb-a3c2-134e"/>
               </infoLinks>
@@ -4172,7 +4172,7 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="38b8-49a6-46e2-f12f"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Psychic Scream" hidden="false" id="1d77-c250-6fc8-293b">
+            <selectionEntry sortIndex="3" type="upgrade" import="true" name="Psychic Scream" hidden="false" id="1d77-c250-6fc8-293b">
               <infoLinks>
                 <infoLink name="Aullido psíquico" id="4f83-4572-d9b8-83e8" hidden="false" type="profile" targetId="274d-9bf1-8ed2-a660"/>
               </infoLinks>
@@ -4245,7 +4245,7 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
               <selectionEntryGroups>
                 <selectionEntryGroup name="The entire brood may take" id="3c51-8ce1-650d-d812" hidden="false">
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Adrenal Glands" hidden="false" id="7e2e-5bf4-701b-8f31">
+                    <selectionEntry sortIndex="1" type="upgrade" import="true" name="Adrenal Glands" hidden="false" id="7e2e-5bf4-701b-8f31">
                       <costs>
                         <cost name="Pts" typeId="puntos" value="1"/>
                       </costs>
@@ -4256,7 +4256,7 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4475-4b11-32a1-899c"/>
                       </constraints>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Toxin Sacs" hidden="false" id="2b2e-8c6c-82fd-5f7f">
+                    <selectionEntry sortIndex="2" type="upgrade" import="true" name="Toxin Sacs" hidden="false" id="2b2e-8c6c-82fd-5f7f">
                       <costs>
                         <cost name="Pts" typeId="puntos" value="1"/>
                       </costs>
@@ -4355,7 +4355,7 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
       <selectionEntryGroups>
         <selectionEntryGroup name="Brood" id="9523-98d6-0a56-6d5f" hidden="false">
           <selectionEntries>
-            <selectionEntry type="model" import="true" name="Neurogaunt" hidden="false" id="a45b-6e97-51d6-0d85">
+            <selectionEntry sortIndex="1" type="model" import="true" name="Neurogaunt" hidden="false" id="a45b-6e97-51d6-0d85">
               <costs>
                 <cost name="Pts" typeId="puntos" value="4"/>
               </costs>
@@ -4383,7 +4383,7 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
                 <infoLink name="Acechar" id="8259-dfe2-c732-41cb" hidden="false" type="profile" targetId="b0d0-ba0f-5b54-513e"/>
               </infoLinks>
             </selectionEntry>
-            <selectionEntry type="model" import="true" name="Neurogaunt Nodebeast" hidden="false" id="0bf0-9301-4d39-08ae">
+            <selectionEntry sortIndex="2" type="model" import="true" name="Neurogaunt Nodebeast" hidden="false" id="0bf0-9301-4d39-08ae">
               <costs>
                 <cost name="Pts" typeId="puntos" value="5"/>
               </costs>
@@ -4474,7 +4474,7 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
       <selectionEntryGroups>
         <selectionEntryGroup name="Take any of the following abilities" id="1f19-9ddd-8ba1-609d" hidden="false">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Hive Commander" hidden="false" id="7ca0-a3ed-310f-4283">
+            <selectionEntry sortIndex="1" type="upgrade" import="true" name="Hive Commander" hidden="false" id="7ca0-a3ed-310f-4283">
               <costs>
                 <cost name="Pts" typeId="puntos" value="25"/>
               </costs>
@@ -4489,7 +4489,7 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c38e-78fc-554a-8067"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Indescribable Horror" hidden="false" id="99ba-3b33-d7c0-c15c">
+            <selectionEntry sortIndex="2" type="upgrade" import="true" name="Indescribable Horror" hidden="false" id="99ba-3b33-d7c0-c15c">
               <costs>
                 <cost name="Pts" typeId="puntos" value="25"/>
               </costs>
@@ -4504,7 +4504,7 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0a60-a91d-3c11-7d82"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Old Adversary" hidden="false" id="d5b9-1eaa-8471-6a38">
+            <selectionEntry sortIndex="3" type="upgrade" import="true" name="Old Adversary" hidden="false" id="d5b9-1eaa-8471-6a38">
               <costs>
                 <cost name="Pts" typeId="puntos" value="25"/>
               </costs>
@@ -4523,7 +4523,7 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
         </selectionEntryGroup>
         <selectionEntryGroup name="Take any of the following" id="dc40-d7b1-d72b-2060" hidden="false">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Toxin Sacs" hidden="false" id="2d3b-49af-f614-d425">
+            <selectionEntry sortIndex="1" type="upgrade" import="true" name="Toxin Sacs" hidden="false" id="2d3b-49af-f614-d425">
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
@@ -4534,7 +4534,7 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b9c-76b2-04d2-7b4e"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Acid Blood" hidden="false" id="c2a6-9e59-7539-5939">
+            <selectionEntry sortIndex="2" type="upgrade" import="true" name="Acid Blood" hidden="false" id="c2a6-9e59-7539-5939">
               <costs>
                 <cost name="Pts" typeId="puntos" value="15"/>
               </costs>
@@ -4545,7 +4545,7 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="491f-fe92-3d5c-1476"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Regeneration" hidden="false" id="e42f-53f4-b9a4-8224">
+            <selectionEntry sortIndex="3" type="upgrade" import="true" name="Regeneration" hidden="false" id="e42f-53f4-b9a4-8224">
               <costs>
                 <cost name="Pts" typeId="puntos" value="20"/>
               </costs>
@@ -4560,7 +4560,7 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
         </selectionEntryGroup>
         <selectionEntryGroup name="A Neurotyrant has any two of the following powers" id="720f-b98e-715d-a4fe" hidden="false">
           <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="The Horror" hidden="false" id="2968-38ec-acc2-5e40">
+            <selectionEntry sortIndex="4" type="upgrade" import="true" name="The Horror" hidden="false" id="2968-38ec-acc2-5e40">
               <infoLinks>
                 <infoLink name="El horror" id="99a1-0ec9-8a7a-21e5" hidden="false" type="profile" targetId="685e-61c3-0b20-b391"/>
               </infoLinks>
@@ -4568,7 +4568,7 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e9ad-ac3c-e71a-e91a"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Leech Essence" hidden="false" id="6362-13c6-8fea-5b95">
+            <selectionEntry sortIndex="1" type="upgrade" import="true" name="Leech Essence" hidden="false" id="6362-13c6-8fea-5b95">
               <infoLinks>
                 <infoLink name="Absorbe-esencias" id="61ba-2e53-c72f-538f" hidden="false" type="profile" targetId="ab18-7b80-6557-e58d"/>
               </infoLinks>
@@ -4576,7 +4576,7 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="49e0-e20c-17ed-60fa"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Paroxysm" hidden="false" id="a663-9eec-bfb4-d600">
+            <selectionEntry sortIndex="2" type="upgrade" import="true" name="Paroxysm" hidden="false" id="a663-9eec-bfb4-d600">
               <infoLinks>
                 <infoLink name="Paroxismo" id="7b7f-0e9c-dfb2-3858" hidden="false" type="profile" targetId="0656-6afb-a3c2-134e"/>
               </infoLinks>
@@ -4584,7 +4584,7 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45bb-b0c5-6fed-353f"/>
               </constraints>
             </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Psychic Scream" hidden="false" id="4fd2-07a5-60de-9962">
+            <selectionEntry sortIndex="3" type="upgrade" import="true" name="Psychic Scream" hidden="false" id="4fd2-07a5-60de-9962">
               <infoLinks>
                 <infoLink name="Aullido psíquico" id="6e0a-dad5-6063-a9d1" hidden="false" type="profile" targetId="274d-9bf1-8ed2-a660"/>
               </infoLinks>
@@ -4625,7 +4625,7 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
               <selectionEntryGroups>
                 <selectionEntryGroup name="Loadout" id="2f84-8f97-8bdc-ebc0" hidden="false" defaultSelectionEntryId="7772-f58f-a2d5-7154">
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Scything Talons" hidden="false" id="4e8d-c7c9-97e9-223e">
+                    <selectionEntry sortIndex="1" type="upgrade" import="true" name="Scything Talons" hidden="false" id="4e8d-c7c9-97e9-223e">
                       <infoLinks>
                         <infoLink name="Garras afiladas" id="fe33-72b5-a374-8558" hidden="false" type="profile" targetId="4142-8bec-e73c-f7b7"/>
                       </infoLinks>
@@ -4633,7 +4633,7 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bd7d-06d6-a52c-330b"/>
                       </constraints>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Lash Whip" hidden="false" id="4d95-a24d-fcdf-6750">
+                    <selectionEntry sortIndex="2" type="upgrade" import="true" name="Lash Whip" hidden="false" id="4d95-a24d-fcdf-6750">
                       <costs>
                         <cost name="Pts" typeId="puntos" value="5"/>
                       </costs>
@@ -4644,7 +4644,7 @@ bajo la plantilla, desplaza la unidad la distancia mínima necesaria para aparta
                         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2e13-47b3-f3de-f1ab"/>
                       </constraints>
                     </selectionEntry>
-                    <selectionEntry type="upgrade" import="true" name="Bonesword" hidden="false" id="81c6-98b6-6c03-18ec">
+                    <selectionEntry sortIndex="3" type="upgrade" import="true" name="Bonesword" hidden="false" id="81c6-98b6-6c03-18ec">
                       <costs>
                         <cost name="Pts" typeId="puntos" value="15"/>
                       </costs>
