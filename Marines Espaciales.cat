@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Marines Espaciales" id="8964-cc67-2c68-196d" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" library="false" revision="34" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Marines Espaciales" id="8964-cc67-2c68-196d" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" library="false" revision="35" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Esto es for fun. Cualquier error o sugerencia serán bienvenidas
 
 En este sistema se agruparán las reglas del Codex de Marines Espaciales utilizado en la 5ed de Warhammer 40k</readme>
@@ -802,25 +802,6 @@ ejército está sujeto a la regla especial doctrina de combate, debes elegir qu�
         <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
         <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
       </characteristics>
-      <modifierGroups>
-        <modifierGroup>
-          <conditions>
-            <condition childId="68dd-bf36-a5b7-b966" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="a1d9-ea5c-5919-8ee3" shared="true" type="equalTo" value="1"/>
-          </conditions>
-          <modifiers>
-            <modifier field="3f9ed75c-36cd-4169-9cef-48391bb55cfd" type="set" value="4(5)"/>
-            <modifier field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" type="set" value="Motocicleta (Personaje)"/>
-          </modifiers>
-        </modifierGroup>
-        <modifierGroup>
-          <conditions>
-            <condition childId="5115-9f73-9158-cb84" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="fc25-fade-d954-753b" shared="true" type="atLeast" value="1"/>
-          </conditions>
-          <modifiers>
-            <modifier arg="Infantería" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" type="replace" value="Retropropulsada"/>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
     </profile>
     <profile name="Señor del Capítulo" id="fd46-f1cd-6d8b-a236" hidden="false" page="52" publicationId="f176-f140-74d8-da7d" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
       <characteristics>
@@ -835,25 +816,6 @@ ejército está sujeto a la regla especial doctrina de combate, debes elegir qu�
         <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
         <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
       </characteristics>
-      <modifierGroups>
-        <modifierGroup>
-          <conditions>
-            <condition childId="85ff-1938-8fe1-b16b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="c1d1-f843-3bea-ab6e" shared="true" type="equalTo" value="1"/>
-          </conditions>
-          <modifiers>
-            <modifier field="3f9ed75c-36cd-4169-9cef-48391bb55cfd" type="set" value="4(5)"/>
-            <modifier field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" type="set" value="Motocicleta (Personaje)"/>
-          </modifiers>
-        </modifierGroup>
-        <modifierGroup>
-          <conditions>
-            <condition childId="6e7f1681-31e7-4208-a73d-3d598b3a257e" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="c1d1-f843-3bea-ab6e" shared="true" type="atLeast" value="1"/>
-          </conditions>
-          <modifiers>
-            <modifier arg="Infantería" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" type="replace" value="Retropropulsada"/>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
     </profile>
     <profile name="Bibliotecario" id="9471-392a-9c01-8487" hidden="false" page="56" publicationId="f176-f140-74d8-da7d" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
       <characteristics>
@@ -868,32 +830,6 @@ ejército está sujeto a la regla especial doctrina de combate, debes elegir qu�
         <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
         <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
       </characteristics>
-      <modifierGroups>
-        <modifierGroup>
-          <conditions>
-            <condition childId="a330-c931-3468-1960" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="475f-181c-69b1-bb38" shared="true" type="equalTo" value="1"/>
-          </conditions>
-          <modifiers>
-            <modifier field="3f9ed75c-36cd-4169-9cef-48391bb55cfd" type="set" value="4(5)"/>
-            <modifier field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" type="set" value="Motocicleta (Personaje)"/>
-          </modifiers>
-        </modifierGroup>
-        <modifierGroup>
-          <conditions>
-            <condition childId="24bd-e100-8db9-4831" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="475f-181c-69b1-bb38" shared="true" type="atLeast" value="1"/>
-          </conditions>
-          <modifiers>
-            <modifier arg="Infantería" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" type="replace" value="Retropropulsada"/>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
-      <modifiers>
-        <modifier field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" type="set" value="2+">
-          <conditions>
-            <condition childId="4e93-ea45-2908-2277" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="475f-181c-69b1-bb38" shared="true" type="equalTo" value="1"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </profile>
     <profile name="Capellán" id="cab1-1b78-62c9-ff2a" hidden="false" page="58" publicationId="f176-f140-74d8-da7d" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
       <characteristics>
@@ -908,32 +844,6 @@ ejército está sujeto a la regla especial doctrina de combate, debes elegir qu�
         <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">10</characteristic>
         <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
       </characteristics>
-      <modifierGroups>
-        <modifierGroup>
-          <conditions>
-            <condition childId="3801-48be-c0fb-73aa" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="c6aa-a483-2ebf-d164" shared="true" type="equalTo" value="1"/>
-          </conditions>
-          <modifiers>
-            <modifier field="3f9ed75c-36cd-4169-9cef-48391bb55cfd" type="set" value="4(5)"/>
-            <modifier field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" type="set" value="Motocicleta (Personaje)"/>
-          </modifiers>
-        </modifierGroup>
-        <modifierGroup>
-          <conditions>
-            <condition childId="410c-99c6-417e-307b" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="c6aa-a483-2ebf-d164" shared="true" type="atLeast" value="1"/>
-          </conditions>
-          <modifiers>
-            <modifier arg="Infantería" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" type="replace" value="Retropropulsada"/>
-          </modifiers>
-        </modifierGroup>
-      </modifierGroups>
-      <modifiers>
-        <modifier field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" type="set" value="2+">
-          <conditions>
-            <condition childId="f0c4-7dda-892e-d35c" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="c6aa-a483-2ebf-d164" shared="true" type="equalTo" value="1"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </profile>
     <profile name="Campeón de la Compañía" id="eacd-05e2-f369-227e" hidden="false" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
       <characteristics>
@@ -962,13 +872,6 @@ ejército está sujeto a la regla especial doctrina de combate, debes elegir qu�
         <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
         <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
       </characteristics>
-      <modifiers>
-        <modifier field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" type="set" value="Infantería">
-          <conditions>
-            <condition childId="a14f-3162-be27-9575" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="82fa-e625-16ff-5e28" shared="true" type="equalTo" value="1"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </profile>
     <profile name="Marine Espacial" id="3f79-9664-7f6a-4622" hidden="false" page="59" publicationId="f176-f140-74d8-da7d" typeId="2d6001b0-980e-46d2-bcc2-a9fc60109afd" typeName="Unidad">
       <characteristics>
@@ -983,13 +886,6 @@ ejército está sujeto a la regla especial doctrina de combate, debes elegir qu�
         <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">8</characteristic>
         <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
       </characteristics>
-      <modifiers>
-        <modifier field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" type="set" value="Infantería">
-          <conditions>
-            <condition childId="a14f-3162-be27-9575" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="82fa-e625-16ff-5e28" shared="true" type="equalTo" value="1"/>
-          </conditions>
-        </modifier>
-      </modifiers>
     </profile>
   </sharedProfiles>
   <sharedRules>
@@ -4674,17 +4570,6 @@ Si el tanque sufre un resultado de destruido o de explota, tira 1D6. Si obtienes
             <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">8</characteristic>
             <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">2+</characteristic>
           </characteristics>
-          <modifierGroups>
-            <modifierGroup>
-              <conditions>
-                <condition childId="2488-b9a4-1ec6-3ef0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="2781-a37b-c583-9446" shared="true" type="equalTo" value="1"/>
-              </conditions>
-              <modifiers>
-                <modifier field="3f9ed75c-36cd-4169-9cef-48391bb55cfd" type="set" value="4(5)"/>
-                <modifier field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" type="set" value="Motocicleta (Personaje)"/>
-              </modifiers>
-            </modifierGroup>
-          </modifierGroups>
         </profile>
       </profiles>
       <selectionEntryGroups>
