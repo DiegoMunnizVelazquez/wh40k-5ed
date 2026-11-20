@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Marines Espaciales" id="8964-cc67-2c68-196d" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" library="false" revision="17" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Marines Espaciales" id="8964-cc67-2c68-196d" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" library="false" revision="18" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Esto es for fun. Cualquier error o sugerencia serán bienvenidas
 
 En este sistema se agruparán las reglas del Codex de Marines Espaciales utilizado en la 5ed de Warhammer 40k</readme>
@@ -1492,13 +1492,31 @@ ejército está sujeto a la regla especial doctrina de combate, debes elegir qu�
             <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">3+</characteristic>
           </characteristics>
         </profile>
-        <profile name="Infernus" id="cd1d-0689-039b-21ef" hidden="false" page="87" publicationId="f176-f140-74d8-da7d" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
-          <characteristics>
-            <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Se trata de un combibólter-lanzallamas de precisión, construido y modificado por el propio Cassius. Recuerda que el bolter se carga con munición infierno y, por tanto,
-    e a cualquier miniatura con un resultado de 2+.</characteristic>
-          </characteristics>
-        </profile>
       </profiles>
+      <selectionEntries>
+        <selectionEntry name="Infernus" id="1f60ae79-e5c0-4bda-9873-8d38ddf8105e" collapsible="true" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="ddc72122-b660-49b0-a785-82f36305c969" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="1f4b7005-2e35-402c-bfb4-5408041e0499" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="0"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Lanzallamas" id="7e224187-6fca-43d8-9fa3-b40ac7310696" hidden="false" targetId="c6ed-e1e6-bd68-1891" type="profile"/>
+            <infoLink name="Bólter" id="0d571cdd-b439-4694-858a-e119e4c42b8e" hidden="false" targetId="90a7-c0e2-3a06-dc70" type="profile"/>
+            <infoLink name="Combiarma" id="ee1ad977-196b-47c1-9c82-b453ec24d40e" hidden="false" targetId="b524-ca47-0c30-ae4f" type="profile"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Infernus" id="cd1d-0689-039b-21ef" hidden="false" page="87" publicationId="f176-f140-74d8-da7d" typeId="72c5eafc-75bf-4ed9-b425-78009f1efe82" typeName="Equipo">
+              <characteristics>
+                <characteristic name="Descripción" typeId="21befb24-fc85-4f52-a745-64b2e48f8228">Se trata de un combibólter-lanzallamas de precisión, construido y modificado por el propio Cassius. Recuerda que el bolter se carga con munición infierno y, por tanto,
+            cualquier miniatura con un resultado de 2+.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
     </selectionEntry>
     <selectionEntry name="Capellán Marine Espacial" id="c6aa-a483-2ebf-d164" collective="false" hidden="false" import="true" page="58" publicationId="f176-f140-74d8-da7d" type="model">
       <costs>
@@ -6496,7 +6514,7 @@ aplica a los gravíticos, cuyos delicados motores gravitatorios se ven dañados 
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Campeón de la Compañía" id="940f-fd05-fac2-f0fc" collective="false" hidden="false" import="true" sortIndex="8">
+        <selectionEntryGroup name="Campeón de la Compañía" id="940f-fd05-fac2-f0fc" collective="false" defaultSelectionEntryId="1b64-7c1a-9cf6-7498" hidden="false" import="true" sortIndex="8">
           <constraints>
             <constraint id="50eb-dc4b-a9ca-b8e0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
             <constraint id="8491-c6d9-bf22-b9be" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -10026,7 +10044,12 @@ podrá asaltar (si está lo bastante cerca). Esta habilidad no puede usarse si u
       <infoLinks>
         <infoLink name="Motocicleta Marines Espaciales" id="819b-ddc0-50b5-28a4" hidden="false" targetId="5042-8639-f05a-298b" type="profile"/>
         <infoLink name="Bólter" id="0b8c-08b7-77f4-686c" hidden="false" targetId="90a7-c0e2-3a06-dc70" type="profile"/>
+        <infoLink name="Acoplada" id="15346824-cfcc-4949-8289-8d39dad00944" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
       </infoLinks>
+      <modifiers>
+        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+      </modifiers>
     </selectionEntry>
     <selectionEntry name="Munición Infierno" id="fdbe-5264-a6c6-746a" collective="false" hidden="false" import="true" type="upgrade">
       <constraints>
