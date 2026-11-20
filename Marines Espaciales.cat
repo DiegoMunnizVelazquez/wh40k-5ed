@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Marines Espaciales" id="8964-cc67-2c68-196d" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" library="false" revision="23" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Marines Espaciales" id="8964-cc67-2c68-196d" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" library="false" revision="24" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Esto es for fun. Cualquier error o sugerencia serán bienvenidas
 
 En este sistema se agruparán las reglas del Codex de Marines Espaciales utilizado en la 5ed de Warhammer 40k</readme>
@@ -6280,7 +6280,13 @@ aplica a los gravíticos, cuyos delicados motores gravitatorios se ven dañados 
         <cost name="Pts" typeId="puntos" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink name="Transporte Asignado" id="64da0ab0-1fc5-4b83-a64a-661d8129870f" collective="false" hidden="false" import="true" sortIndex="3" targetId="4950-e110-16a8-4097" type="selectionEntryGroup"/>
+        <entryLink name="Munición especial" id="c784998d-7167-488e-b91f-6e6921d668a7" collective="false" hidden="false" import="true" sortIndex="3" targetId="b4f4fcaa-7048-40f6-8eda-926521ec2ea8" type="selectionEntry">
+          <constraints>
+            <constraint id="56a28629-b9fc-4792-b9f8-5490704e5bb0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="f0778fb9-0699-449f-b220-1c29c7575dd6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+        </entryLink>
+        <entryLink name="Transporte Asignado" id="64da0ab0-1fc5-4b83-a64a-661d8129870f" collective="false" hidden="false" import="true" sortIndex="4" targetId="4950-e110-16a8-4097" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Escuadras de combate" id="b58f-8564-0334-4369" hidden="false" targetId="22a0-0930-12ab-bd9e" type="rule"/>
@@ -6313,12 +6319,6 @@ aplica a los gravíticos, cuyos delicados motores gravitatorios se ven dañados 
               <constraints>
                 <constraint id="803bf75b-4796-40e9-84c3-0db95067dfd8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                 <constraint id="acbfcb42-4b30-4c8e-be8f-90ce3a74d745" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-              </constraints>
-            </entryLink>
-            <entryLink name="Munición especial" id="7e040081-afe5-4e05-aef5-064f5e15e010" collective="false" hidden="false" import="true" targetId="b4f4fcaa-7048-40f6-8eda-926521ec2ea8" type="selectionEntry">
-              <constraints>
-                <constraint id="d0c518f1-160a-4ed1-bd2c-8d2be211043e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                <constraint id="b9259b52-5d6d-4e6c-bb7e-867130c97522" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
             <entryLink name="Bombas de fusión" id="ec2287c0-f670-4f8e-897f-32d91874e476" collective="false" hidden="false" import="true" targetId="1df535b4-9762-4052-99f5-19e0b1d5a183" type="selectionEntry">
@@ -6451,12 +6451,6 @@ aplica a los gravíticos, cuyos delicados motores gravitatorios se ven dañados 
               <constraints>
                 <constraint id="f4f7d3e5-cf6c-4669-88c7-675cead56f1a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                 <constraint id="a338ce45-75c0-44fa-a9bb-9a6a8752ea86" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-              </constraints>
-            </entryLink>
-            <entryLink name="Munición especial" id="2a7a93ee-52cb-4d35-9044-2b5289e64cbd" collective="false" hidden="false" import="true" targetId="b4f4fcaa-7048-40f6-8eda-926521ec2ea8" type="selectionEntry">
-              <constraints>
-                <constraint id="8907250e-d3c0-4f62-8ba6-c63ab7aa363c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                <constraint id="3253cfa1-8dc3-451b-9c7e-768770c7c7d3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
             <entryLink name="Pistola bólter" id="d9aef2b2-d4ce-4ac7-9bb4-efb1d57c1413" collective="false" hidden="false" import="true" targetId="9dd14127-5e61-4f0d-820e-4d1d7930a698" type="selectionEntry">
