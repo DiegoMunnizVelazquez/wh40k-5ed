@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem name="Warhammer 40,000 5ª Edición " id="8cf6-c83d-3eeb-e95c" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" revision="32" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem name="Warhammer 40,000 5ª Edición " id="8cf6-c83d-3eeb-e95c" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" revision="33" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Esto es for fun. Cualquier error o sugerencia serán bienvenidas
 
 En este sistema se agruparán el sistema de Warhammer 40000 5ª edición, así como todos los los codex que se usarán en este sistema cerrado.
@@ -1815,6 +1815,18 @@ Si decides dividir una unidad en escuadras de combate, a partir de ese momento c
         <infoLink name="Retrorreactores" id="31786456-ce9c-494c-abf7-4907cb0fb9ee" hidden="false" targetId="ba22-cd8e-0d95-8e72" type="profile"/>
         <infoLink name="Unidad retropropulsada" id="032e71f4-eee1-412c-b30a-9c76133a153a" hidden="false" targetId="d6f4-cfda-75c5-f2f1" type="rule"/>
       </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Motocicleta de los Marines Espaciales" id="2e6f0a5c-9d70-4a01-a2bd-af600824c87d" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Motocicleta Marines Espaciales" id="817a531b-2018-4271-ab98-ecd9a78afee2" hidden="false" targetId="5042-8639-f05a-298b" type="profile"/>
+        <infoLink name="Motocicletas" id="31309dbf-3e07-45a1-bfea-ba761b193767" hidden="false" targetId="b722-581c-bc45-7f56" type="rule"/>
+        <infoLink name="Bólter" id="a81040d0-842d-4442-a814-84dee8fe1ffe" hidden="false" targetId="90a7-c0e2-3a06-dc70" type="profile"/>
+        <infoLink name="Acoplada" id="9cebc642-09ca-4efc-b495-50913c9bd851" hidden="false" targetId="a06f-e29d-bcf4-ed75" type="rule"/>
+      </infoLinks>
+      <modifiers>
+        <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
+        <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
+      </modifiers>
     </selectionEntry>
   </sharedSelectionEntries>
 </gameSystem>
