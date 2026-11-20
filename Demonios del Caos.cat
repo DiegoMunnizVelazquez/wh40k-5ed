@@ -975,6 +975,535 @@ Cuando un resultado de armamento destruido destruye las fauces del caos, se dest
         <infoLink name="Desangrador de Khorne" id="4279e3f7-8a98-47aa-83f4-a95a8aa138e8" hidden="false" targetId="c3c6b245-5b3a-4085-9710-ebed240eb487" type="profile"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry name="Diablilla de Slaanesh" id="824b0ffd-9c73-4d2c-b844-d892589dd8f1" hidden="false" import="true" type="model">
+      <infoLinks>
+        <infoLink name="Diablilla de Slaanesh" id="4a1803e6-3361-4196-90e6-09e9d8a99638" hidden="false" targetId="7d574f03-d6b7-42b1-ae08-35111372be97" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Diablo de Slaanesh" id="f960fa04-d231-4fac-8dc9-78f0934203de" hidden="false" import="true" type="model">
+      <infoLinks>
+        <infoLink name="Diablo de Slaanesh" id="5eca73ce-5480-4c3a-abe8-0e25f88b3fc9" hidden="false" targetId="be27df86-d494-4f33-a599-1709c8383319" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="El Cambiante" id="8c2b2452-bd7a-4e0c-b87c-98d795aafc26" hidden="false" import="true" type="model">
+      <entryLinks>
+        <entryLink name="Fuego disforme" id="8018-a0a2-0139-0f1b" hidden="false" import="true" targetId="e2f9-87aa-7dfc-5ccf" type="selectionEntry">
+          <constraints>
+            <constraint id="e830-08b5-59e3-688c-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="e830-08b5-59e3-688c-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="El Cambiante" id="2bba39f2-fb7f-4757-b047-fdc2c68cb828" hidden="false" targetId="ebbb3520-b91a-4b56-9ed0-5ecff06a1608" type="profile"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Glamour de Tzeentch" id="dfa3-505e-779e-a91d" hidden="false" typeId="c970-b832-a956-1ac8" typeName="Habilidad">
+          <characteristics>
+            <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Este poder puede ser utilizado en la fase de disparo del enemigo. Elige una unidad enemiga visible para El Cambiante y que vaya a disparar. Si la unidad se encuentra a 60cm o menos de El Cambiante, se verá afectada por este espejismo.
+
+
+La unidad puede decidir no disparar y simplemente quedarse confundida durante la fase de disparo, sin moverse. Si decide disparar, tratando de romper el efecto del glamour, deberá efectuar un chequeo de liderazgo (los vehículos también se pueden ver afectados, pero se considera que tienen L10). Si lo superan, la unidad evitara los efectos del glamour y podrá disparar normalmente. Si no lo supera, la unidad deberá disparar inmediatamente todas sus armas (no puede reservarse ninguna) contra una unidad amiga elegida por El Cambiante entre los enemigos que éste pueda ver. Si El Cambiante no puede ver una segunda unidad enemiga, la unidad que falló el chequeo simplemente se quedara confusa, como se ha descrito anteriormente.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Furia del Caos" id="78175857-3a67-481e-af43-de41fabbcbc7" hidden="false" import="true" type="model">
+      <infoLinks>
+        <infoLink name="Furia del Caos" id="95c3eefb-5f49-4d7b-8b62-cdd8f77fcfbb" hidden="false" targetId="70e1e26e-af68-4007-97c0-062506c77b4c" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Horror Rosa de Tzeentch" id="07ca580e-e405-459e-8357-3eafab6e290f" hidden="false" import="true" type="model">
+      <infoLinks>
+        <infoLink name="Horrores Rosas de Tzeentch" id="d027c885-e85c-4ead-a27c-32e4d2bc86e8" hidden="false" targetId="081c461d-6fd4-4f42-886e-e160e5c80da2" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Incinerador de Tzeentch" id="89bc6075-84de-45c3-8465-50811e824fe3" hidden="false" import="true" type="model">
+      <infoLinks>
+        <infoLink name="Incinerador de Tzeentch" id="4dd2dcaa-841c-4a3d-9611-f0c87b912231" hidden="false" targetId="e9d1a60c-1362-4113-bc23-4978b7047221" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Karanak" id="389cfe20-39e2-47db-bcdf-10640319f237" hidden="false" import="true" type="model">
+      <entryLinks>
+        <entryLink name="Furia de Khorne" id="1eeb-a2a3-382a-e387" hidden="false" import="true" targetId="f606-5645-34f2-1538" type="selectionEntry">
+          <constraints>
+            <constraint id="8b5b-bfaf-98b4-8000-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="8b5b-bfaf-98b4-8000-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+        </entryLink>
+        <entryLink name="Instrumento del caos" id="a661-0c83-72e2-68ef" hidden="false" import="true" targetId="8ae5-7a70-17e4-5f63" type="selectionEntry">
+          <constraints>
+            <constraint id="ab86-3c49-c07f-650b-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="ab86-3c49-c07f-650b-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+        </entryLink>
+        <entryLink name="Bendición del dios de la sangre" id="7731-eb8b-5864-5f13" hidden="false" import="true" targetId="e2eb-88f7-acaa-b48a" type="selectionEntry">
+          <constraints>
+            <constraint id="d43c-2a28-3376-3aa1-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="d43c-2a28-3376-3aa1-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Karanak" id="180ab872-c518-4f05-b1db-8d3025f5312d" hidden="false" targetId="ec887512-15da-4625-9c19-5c8ccb9ad2ba" type="profile"/>
+        <infoLink name="Moverse a Través de Cobertura" id="4eac-e52d-bd88-7263" hidden="false" targetId="6cf1-d139-8b14-6083" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Presa del Dios de la Sangre" id="a79c-d402-8f1f-dcba" hidden="false" typeId="c970-b832-a956-1ac8" typeName="Habilidad">
+          <characteristics>
+            <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Mientras Karanak siga con vida, toda la unidad se beneficia de la regla moverse a través de cobertura.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Mastín de Khorne" id="314298aa-d640-4c10-8abc-bd63d690c7b8" hidden="false" import="true" type="model">
+      <infoLinks>
+        <infoLink name="Mastín de Khorne" id="a481811b-2631-4bdc-8d43-e7e64ea2cb44" hidden="false" targetId="a647fc2c-3c18-4d7f-916f-4b7475e213c7" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Portador de Plaga de Nurgle" id="56ac252f-d9b7-434f-a283-7d8ff3c1c9c7" hidden="false" import="true" type="model">
+      <infoLinks>
+        <infoLink name="Portador de Plaga de Nurgle" id="387abce4-2a2c-4e6d-99f4-a541d55053c3" hidden="false" targetId="f5e5b2a5-fcc4-4fe6-9c74-c7934fe70a1a" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Príncipe Demonio" id="041fb278-8684-49b7-8d8d-26e26fcc802d" hidden="false" import="true" type="model">
+      <costs>
+        <cost name="Pts" typeId="puntos" value="80"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Príncipe Demonio" id="633a300b-260b-45d1-a55a-545e2ea5716a" hidden="false" targetId="60b1ad08-5304-4980-9b20-74a1b886d95b" type="profile"/>
+      </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Marca" id="e15d-bcf3-bc46-6f6f" hidden="false">
+          <constraints>
+            <constraint id="5884-1661-37ed-6670" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry name="Khorne" id="0c2a-7705-6674-4395" hidden="false" import="true" sortIndex="2" type="upgrade">
+              <constraints>
+                <constraint id="3872-5d6d-98e4-2dff" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="15"/>
+              </costs>
+              <modifiers>
+                <modifier affects="profiles.Unidad" field="5dff3e7c-e024-4030-a71d-03195ec06ea7" scope="parent" type="increment" value="1"/>
+              </modifiers>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Bendiciones de Khorne" id="a563-045d-8f36-3480" hidden="false">
+                  <entryLinks>
+                    <entryLink name="Bendición del dios de la sangre" id="291b-766f-86dc-dd2c" hidden="false" import="true" sortIndex="1" targetId="e2eb-88f7-acaa-b48a" type="selectionEntry">
+                      <constraints>
+                        <constraint id="de12-bfcd-d209-6547" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink name="Proyectil letal" id="b7e1-661f-a20c-15fa" hidden="false" import="true" sortIndex="2" targetId="8ab9-a0cc-79c3-0f48" type="selectionEntry">
+                      <constraints>
+                        <constraint id="5e4e-2513-a06c-84eb" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="20"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry name="Slaanesh" id="78dd-6ee1-ab6b-6c15" hidden="false" import="true" sortIndex="1" type="upgrade">
+              <constraints>
+                <constraint id="952d-04f7-660f-72ea" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="10"/>
+              </costs>
+              <modifiers>
+                <modifier affects="profiles.Unidad" field="a558b3ef-04d0-440e-a312-bac3255bf592" scope="parent" type="increment" value="1"/>
+              </modifiers>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Bendiciones de Slaanesh" id="f33d-6f74-2434-1967" hidden="false">
+                  <entryLinks>
+                    <entryLink name="Almizcle soporífero" id="4385-1195-10b9-685e" hidden="false" import="true" sortIndex="3" targetId="09e7-0906-565c-5440" type="selectionEntry">
+                      <constraints>
+                        <constraint id="66dd-5ee6-716a-e2aa" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="20"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink name="Mirada hipnótica" id="4753-c2a3-8edf-4fd2" hidden="false" import="true" sortIndex="2" targetId="644e-8196-62b8-e778" type="selectionEntry">
+                      <constraints>
+                        <constraint id="11f2-332b-81dd-5064" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink name="Aura de sometimiento" id="a897-5005-b15c-eb88" hidden="false" import="true" sortIndex="1" targetId="672d-4d71-5750-0221" type="selectionEntry">
+                      <constraints>
+                        <constraint id="9780-a131-9b57-102f" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink name="Pavana de Slaanesh" id="3d84-3f9c-d200-5544" hidden="false" import="true" sortIndex="4" targetId="b550-ae88-f905-5ff0" type="selectionEntry">
+                      <constraints>
+                        <constraint id="23dc-80b7-3b76-6be3" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="30"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry name="Nurgle" id="9544-78ad-38fd-d730" hidden="false" import="true" sortIndex="4" type="upgrade">
+              <constraints>
+                <constraint id="73e9-8b39-a289-5e48" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="30"/>
+              </costs>
+              <modifiers>
+                <modifier affects="profiles.Unidad" field="3f9ed75c-36cd-4169-9cef-48391bb55cfd" scope="parent" type="increment" value="1"/>
+              </modifiers>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Bendiciones de Nurgle" id="88b8-8f74-fecd-1f0a" hidden="false">
+                  <entryLinks>
+                    <entryLink name="Nube de moscas" id="44f0-9dc6-505c-d502" hidden="false" import="true" sortIndex="1" targetId="2906-e593-8147-d1be" type="selectionEntry">
+                      <constraints>
+                        <constraint id="cb4f-eee7-fd43-aa77" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink name="Toque nocivo" id="abf3-5c6f-6342-41f3" hidden="false" import="true" sortIndex="2" targetId="70b2-ccb3-4af1-076e" type="selectionEntry">
+                      <constraints>
+                        <constraint id="5232-5312-2982-e9dc" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink name="Aura de descomposición" id="d710-3475-4cc6-8ca5" hidden="false" import="true" sortIndex="3" targetId="c29f-0757-1697-1267" type="selectionEntry">
+                      <constraints>
+                        <constraint id="b933-a1a3-e386-6a41" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="20"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+            <selectionEntry name="Tzeentch" id="fe12-6dc0-a5e0-dbb7" hidden="false" import="true" sortIndex="3" type="upgrade">
+              <constraints>
+                <constraint id="2968-5800-ce02-988a" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="25"/>
+              </costs>
+              <modifiers>
+                <modifier affects="profiles.Unidad" field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" scope="parent" type="set" value="4+"/>
+              </modifiers>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Bendiciones de Tzeentch" id="fd11-253c-1004-5c5a" hidden="false">
+                  <entryLinks>
+                    <entryLink name="Maestro hechicero" id="6adf-2fd4-9e17-d68b" hidden="false" import="true" sortIndex="2" targetId="90af-9414-5650-9992" type="selectionEntry">
+                      <constraints>
+                        <constraint id="80d2-0feb-bce5-69db" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink name="Rayo de Tzeentch" id="ec78-339a-74ad-5874" hidden="false" import="true" sortIndex="3" targetId="d260-0ae8-6483-f9aa" type="selectionEntry">
+                      <constraints>
+                        <constraint id="cf0b-5120-7036-1cc4" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="35"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink name="Devoraalmas" id="c64b-dbc0-3636-a6cb" hidden="false" import="true" sortIndex="1" targetId="4fbc-f4e7-998b-6144" type="selectionEntry">
+                      <constraints>
+                        <constraint id="8f19-b632-b509-3c9c" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="10"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Regalos genéricos" id="c444-ab4f-b287-d114" hidden="false">
+          <entryLinks>
+            <entryLink name="Vuelo demoníaco" id="36af-2e6a-620b-386a" hidden="false" import="true" sortIndex="4" targetId="6738-f1f3-b112-68f9" type="selectionEntry">
+              <constraints>
+                <constraint id="afb6-eb49-2f7d-3a04" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="60"/>
+              </costs>
+              <modifiers>
+                <modifier affects="profiles.Unidad" arg="Infantería" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" scope="041fb278-8684-49b7-8d8d-26e26fcc802d" type="replace" value="Retropropulsada"/>
+              </modifiers>
+            </entryLink>
+            <entryLink name="Piel de hierro" id="29c3-e8d0-2247-11d8" hidden="false" import="true" sortIndex="3" targetId="304a-6d02-d208-6aff" type="selectionEntry">
+              <constraints>
+                <constraint id="2823-cbef-e8c2-8b05" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="30"/>
+              </costs>
+            </entryLink>
+            <entryLink name="Instrumento del caos" id="c33c-82a1-803e-5a7b" hidden="false" import="true" sortIndex="1" targetId="8ae5-7a70-17e4-5f63" type="selectionEntry">
+              <constraints>
+                <constraint id="b193-a911-b834-2931" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="5"/>
+              </costs>
+            </entryLink>
+            <entryLink name="Fuerza impía" id="1c51-a225-971b-05a1" hidden="false" import="true" sortIndex="2" targetId="ef19-09f8-c6fa-368e" type="selectionEntry">
+              <constraints>
+                <constraint id="2a52-eb10-07fb-0056" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="20"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Regalos sin la marca de Khorne" id="283d-d060-ea3f-2158" hidden="false">
+          <constraints>
+            <constraint id="14e3-9c0c-faa6-842b" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <entryLinks>
+            <entryLink name="Aliento del caos" id="2481-2384-03de-7d37" hidden="false" import="true" sortIndex="2" targetId="9ebf-92e4-1085-ebe3" type="selectionEntry">
+              <constraints>
+                <constraint id="38de-eefb-4909-9ca6" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="30"/>
+              </costs>
+              <modifiers>
+                <modifier field="38de-eefb-4909-9ca6" type="increment" value="0"/>
+              </modifiers>
+            </entryLink>
+            <entryLink name="Bendición de la mutación" id="1649-9ee0-5e09-2177" hidden="false" import="true" sortIndex="3" targetId="2ed1-dbf5-9633-97bb" type="selectionEntry">
+              <constraints>
+                <constraint id="df66-528b-890b-a4d2" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="30"/>
+              </costs>
+            </entryLink>
+            <entryLink name="Mirada demoníaca" id="d323-8317-7df2-f48b" hidden="false" import="true" sortIndex="1" targetId="ca0c-efd8-d2f4-022d" type="selectionEntry">
+              <constraints>
+                <constraint id="2edf-3130-1a00-1750" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="20"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <modifiers>
+            <modifier field="hidden" type="set" value="true">
+              <conditions>
+                <condition childId="0c2a-7705-6674-4395" childName="Khorne" field="selections" scope="041fb278-8684-49b7-8d8d-26e26fcc802d" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+            <modifier field="14e3-9c0c-faa6-842b" type="increment" value="1">
+              <conditions>
+                <condition childId="fe12-6dc0-a5e0-dbb7" childName="Tzeentch" field="selections" scope="041fb278-8684-49b7-8d8d-26e26fcc802d" shared="true" type="equalTo" value="1"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry name="Rastreaalmas de Slaanesh" id="9c3ad571-8eb8-4dda-90ac-602a0a6c532d" hidden="false" import="true" type="model">
+      <infoLinks>
+        <infoLink name="Rastreaalmas de Slaanesh" id="2fd0549f-1028-4d88-b231-b58c940c4f74" hidden="false" targetId="7613a129-497b-486d-965a-490b59c24e26" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Aplastadores de Khorne" id="b7df-9b58-e4c9-2eba" hidden="false" import="true" type="unit">
+      <entryLinks>
+        <entryLink name="Aplastador de Khorne" id="1d8a-636a-b7d0-e3c2" collective="true" hidden="false" import="true" sortIndex="1" targetId="22ff20f2-3923-4260-81a0-2b79837d8d4f" type="selectionEntry">
+          <constraints>
+            <constraint id="0d2d-c70b-4334-5c10" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="c7ac-4b60-3d6e-c9ad" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="8"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="40"/>
+          </costs>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Regalos demoniacos" id="6fde-5654-7425-89bf" hidden="false">
+              <constraints>
+                <constraint id="28cb-f21a-67b4-fea3" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <entryLinks>
+                <entryLink name="Furia de Khorne" id="c093-3c71-a603-da9c" collapsible="true" hidden="false" import="true" sortIndex="2" targetId="f606-5645-34f2-1538" type="selectionEntry">
+                  <constraints>
+                    <constraint id="5d1b-70ed-8a41-76b4" field="selections" includeChildForces="false" includeChildSelections="true" scope="b7df-9b58-e4c9-2eba" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="puntos" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink name="Icono del caos" id="e737-e48b-a899-f97f" collapsible="true" hidden="false" import="true" sortIndex="3" targetId="b147-9820-fd1c-16bb" type="selectionEntry">
+                  <constraints>
+                    <constraint id="daec-ccea-17ad-ed64" field="selections" includeChildForces="false" includeChildSelections="true" scope="b7df-9b58-e4c9-2eba" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="puntos" value="25"/>
+                  </costs>
+                </entryLink>
+                <entryLink name="Instrumento del caos" id="5465-9298-a013-74b7" collapsible="true" hidden="false" import="true" sortIndex="1" targetId="8ae5-7a70-17e4-5f63" type="selectionEntry">
+                  <constraints>
+                    <constraint id="6ac4-ce7e-a98a-dc46" field="selections" includeChildForces="false" includeChildSelections="true" scope="b7df-9b58-e4c9-2eba" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="puntos" value="5"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </entryLink>
+        <entryLink name="Piel de hierro" id="4ddb-a23c-7954-d3f6" hidden="false" import="true" sortIndex="3" targetId="304a-6d02-d208-6aff" type="selectionEntry">
+          <constraints>
+            <constraint id="a516-2b2a-9ac2-a163-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="a516-2b2a-9ac2-a163-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+        </entryLink>
+        <entryLink name="Espada infernal" id="9513-018f-f60d-0d9a" hidden="false" import="true" sortIndex="2" targetId="02b7-f0e2-1b8d-1196" type="selectionEntry">
+          <constraints>
+            <constraint id="5996-e7cf-08ae-2ba6-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="5996-e7cf-08ae-2ba6-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry name="Aulladores de Tzeentch" id="c0d8-3569-391d-5b48" hidden="false" import="true" type="unit">
+      <entryLinks>
+        <entryLink name="Aullador de Tzeentch" id="164c-68fa-8891-0326" defaultAmount="5" hidden="false" import="true" targetId="091dd97a-e5c7-4d40-8f8c-953e28ed0276" type="selectionEntry">
+          <constraints>
+            <constraint id="9161-bbc2-24da-2616" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="3"/>
+            <constraint id="a64a-ab0a-becc-008b" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="12"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="16"/>
+          </costs>
+          <entryLinks>
+            <entryLink name="Fuerza impía" id="478f-bd13-db73-8a31" collapsible="true" hidden="false" import="true" targetId="ef19-09f8-c6fa-368e" type="selectionEntry">
+              <constraints>
+                <constraint id="891c-cbd9-90e7-a3dc" field="selections" includeChildForces="false" includeChildSelections="true" scope="c0d8-3569-391d-5b48" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="5"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Motocicletas a reacción" id="53d8-c011-2996-f541" hidden="false" targetId="6fea-20ca-60b6-f234" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Bestias de Nurgle" id="93fd-b582-8eed-30f0" hidden="false" import="true" type="unit">
+      <entryLinks>
+        <entryLink name="Bestia de Nurgle" id="7f79-4ffc-3e24-cba0" hidden="false" import="true" targetId="deae26a5-fef3-422e-9a6d-308cd628e3d7" type="selectionEntry">
+          <constraints>
+            <constraint id="33fa-4e65-41a2-0bd6" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="5441-820f-634f-e8da" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="7"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="35"/>
+          </costs>
+          <entryLinks>
+            <entryLink name="Toque nocivo" id="4e24-2df7-f93c-9ef6" collapsible="true" hidden="false" import="true" targetId="70b2-ccb3-4af1-076e" type="selectionEntry">
+              <constraints>
+                <constraint id="d76b-410a-06fe-47c9" field="selections" includeChildForces="false" includeChildSelections="true" scope="93fd-b582-8eed-30f0" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="No Hay Dolor" id="d7aa-d55b-9993-ea97" hidden="false" targetId="fe28-c924-099d-aa4e" type="rule"/>
+        <infoLink name="Avance Sistemático" id="4932-14be-f19a-6acd" hidden="false" targetId="bb8e-642b-6fbc-bb61" type="rule"/>
+        <infoLink name="Envenenada" id="497c-dd5d-ef99-ce81" hidden="false" targetId="48c8-bb35-6595-03d1" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Desangradores de Khorne" id="b485-733d-8307-52d1" hidden="false" import="true" type="unit">
+      <entryLinks>
+        <entryLink name="Desangrador de Khorne" id="af4e-54cf-122f-d042" hidden="false" import="true" sortIndex="1" targetId="f60d9c4c-b98d-4d59-b118-1ada259e12bf" type="selectionEntry">
+          <constraints>
+            <constraint id="456b-43a7-c1d4-7b30" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="5"/>
+            <constraint id="3ce8-c76f-9778-3a09" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="20"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="16"/>
+          </costs>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Regalos demoniacos" id="7448-5e19-02be-751e" hidden="false">
+              <constraints>
+                <constraint id="188a-f349-d7f7-a95c" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <entryLinks>
+                <entryLink name="Furia de Khorne" id="3b51-1685-2470-a65e" collapsible="true" hidden="false" import="true" sortIndex="2" targetId="f606-5645-34f2-1538" type="selectionEntry">
+                  <constraints>
+                    <constraint id="b8c2-5396-5c94-3a95" field="selections" includeChildForces="false" includeChildSelections="true" scope="b485-733d-8307-52d1" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="puntos" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink name="Icono del caos" id="85cd-c62a-0650-2521" collapsible="true" hidden="false" import="true" sortIndex="3" targetId="b147-9820-fd1c-16bb" type="selectionEntry">
+                  <constraints>
+                    <constraint id="2543-d1dc-0c97-d3fc" field="selections" includeChildForces="false" includeChildSelections="true" scope="b485-733d-8307-52d1" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="puntos" value="25"/>
+                  </costs>
+                </entryLink>
+                <entryLink name="Instrumento del caos" id="7188-92d8-dd84-cf0a" collapsible="true" hidden="false" import="true" sortIndex="1" targetId="8ae5-7a70-17e4-5f63" type="selectionEntry">
+                  <constraints>
+                    <constraint id="bb6a-9dba-f738-f11d" field="selections" includeChildForces="false" includeChildSelections="true" scope="b485-733d-8307-52d1" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="puntos" value="5"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </entryLink>
+        <entryLink name="Espada infernal" id="cdec-2410-3c68-d802" hidden="false" import="true" sortIndex="2" targetId="02b7-f0e2-1b8d-1196" type="selectionEntry">
+          <constraints>
+            <constraint id="9caf-9cab-919e-bc2a-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="9caf-9cab-919e-bc2a-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Asalto Rabioso" id="1261-45a2-82ad-412e" hidden="false" targetId="33b4-1a73-92db-e562" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
     <selectionEntry name="Despojacráneos" id="0b2654a6-2437-45cc-93d8-babc6c93562a" hidden="false" import="true" type="unit">
       <constraints>
         <constraint id="a23b-4117-3c47-03c3" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="1"/>
@@ -1105,38 +1634,104 @@ Cuando un resultado de armamento destruido destruye las fauces del caos, se dest
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry name="Diablilla de Slaanesh" id="824b0ffd-9c73-4d2c-b844-d892589dd8f1" hidden="false" import="true" type="model">
-      <infoLinks>
-        <infoLink name="Diablilla de Slaanesh" id="4a1803e6-3361-4196-90e6-09e9d8a99638" hidden="false" targetId="7d574f03-d6b7-42b1-ae08-35111372be97" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Diablo de Slaanesh" id="f960fa04-d231-4fac-8dc9-78f0934203de" hidden="false" import="true" type="model">
-      <infoLinks>
-        <infoLink name="Diablo de Slaanesh" id="5eca73ce-5480-4c3a-abe8-0e25f88b3fc9" hidden="false" targetId="be27df86-d494-4f33-a599-1709c8383319" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="El Cambiante" id="8c2b2452-bd7a-4e0c-b87c-98d795aafc26" hidden="false" import="true" type="model">
+    <selectionEntry name="Diablillas de Slaanesh" id="07de-e1ef-bf19-d01f" hidden="false" import="true" type="unit">
       <entryLinks>
-        <entryLink name="Fuego disforme" id="8018-a0a2-0139-0f1b" hidden="false" import="true" targetId="e2f9-87aa-7dfc-5ccf" type="selectionEntry">
+        <entryLink name="Diablilla de Slaanesh" id="2f73-1d35-49b9-e4d6" hidden="false" import="true" sortIndex="1" targetId="824b0ffd-9c73-4d2c-b844-d892589dd8f1" type="selectionEntry">
           <constraints>
-            <constraint id="e830-08b5-59e3-688c-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
-            <constraint id="e830-08b5-59e3-688c-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+            <constraint id="21ff-8efc-94d4-5b8e" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="5"/>
+            <constraint id="2a00-7e74-741c-e461" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="20"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="14"/>
+          </costs>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Regalos demoniacos" id="0714-d18f-d893-0213" hidden="false">
+              <constraints>
+                <constraint id="5e5d-23cd-99f4-beb3" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <entryLinks>
+                <entryLink name="Mirada hipnótica" id="bf4c-5cd5-6a3c-4303" collapsible="true" hidden="false" import="true" sortIndex="2" targetId="644e-8196-62b8-e778" type="selectionEntry">
+                  <constraints>
+                    <constraint id="f069-dc18-7bf1-a210" field="selections" includeChildForces="false" includeChildSelections="true" scope="07de-e1ef-bf19-d01f" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="puntos" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink name="Icono del caos" id="dd16-3ff5-61e4-50f4" collapsible="true" hidden="false" import="true" sortIndex="3" targetId="b147-9820-fd1c-16bb" type="selectionEntry">
+                  <constraints>
+                    <constraint id="7d2a-0503-0389-fcea" field="selections" includeChildForces="false" includeChildSelections="true" scope="07de-e1ef-bf19-d01f" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="puntos" value="25"/>
+                  </costs>
+                </entryLink>
+                <entryLink name="Instrumento del caos" id="bf5a-20f9-a824-7906" collapsible="true" hidden="false" import="true" sortIndex="1" targetId="8ae5-7a70-17e4-5f63" type="selectionEntry">
+                  <constraints>
+                    <constraint id="6377-83fe-53ab-50fb" field="selections" includeChildForces="false" includeChildSelections="true" scope="07de-e1ef-bf19-d01f" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="puntos" value="5"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </entryLink>
+        <entryLink name="Garras aceradas" id="2ea7-af64-7f0b-dc30" hidden="false" import="true" sortIndex="2" targetId="450c-77d4-9cb7-ae88" type="selectionEntry">
+          <constraints>
+            <constraint id="0da1-90d4-4a7c-2d18-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="0da1-90d4-4a7c-2d18-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+        </entryLink>
+        <entryLink name="Aura de sometimiento" id="88ef-757a-8476-dd6f" hidden="false" import="true" sortIndex="3" targetId="672d-4d71-5750-0221" type="selectionEntry">
+          <constraints>
+            <constraint id="22dd-9b6c-d1e0-e077-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="22dd-9b6c-d1e0-e077-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
         </entryLink>
       </entryLinks>
       <infoLinks>
-        <infoLink name="El Cambiante" id="2bba39f2-fb7f-4757-b047-fdc2c68cb828" hidden="false" targetId="ebbb3520-b91a-4b56-9ed0-5ecff06a1608" type="profile"/>
+        <infoLink name="Veloces" id="51bc-5f56-e770-bcb8" hidden="false" targetId="d110-fc1c-250c-54d4" type="rule"/>
       </infoLinks>
-      <profiles>
-        <profile name="Glamour de Tzeentch" id="dfa3-505e-779e-a91d" hidden="false" typeId="c970-b832-a956-1ac8" typeName="Habilidad">
-          <characteristics>
-            <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Este poder puede ser utilizado en la fase de disparo del enemigo. Elige una unidad enemiga visible para El Cambiante y que vaya a disparar. Si la unidad se encuentra a 60cm o menos de El Cambiante, se verá afectada por este espejismo.
-
-
-La unidad puede decidir no disparar y simplemente quedarse confundida durante la fase de disparo, sin moverse. Si decide disparar, tratando de romper el efecto del glamour, deberá efectuar un chequeo de liderazgo (los vehículos también se pueden ver afectados, pero se considera que tienen L10). Si lo superan, la unidad evitara los efectos del glamour y podrá disparar normalmente. Si no lo supera, la unidad deberá disparar inmediatamente todas sus armas (no puede reservarse ninguna) contra una unidad amiga elegida por El Cambiante entre los enemigos que éste pueda ver. Si El Cambiante no puede ver una segunda unidad enemiga, la unidad que falló el chequeo simplemente se quedara confusa, como se ha descrito anteriormente.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Diablos de Slaanesh" id="a60e-f058-406b-d376" hidden="false" import="true" type="unit">
+      <entryLinks>
+        <entryLink name="Diablo de Slaanesh" id="2f80-5ab9-b457-25f1" hidden="false" import="true" sortIndex="1" targetId="f960fa04-d231-4fac-8dc9-78f0934203de" type="selectionEntry">
+          <constraints>
+            <constraint id="c580-5439-122f-b77b" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="0dab-8bca-7180-a6ed" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="6"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="30"/>
+          </costs>
+          <entryLinks>
+            <entryLink name="Fuerza impía" id="80d9-3088-bac2-aa41" collapsible="true" hidden="false" import="true" targetId="ef19-09f8-c6fa-368e" type="selectionEntry">
+              <constraints>
+                <constraint id="79ea-712d-6d49-e5dd" field="selections" includeChildForces="false" includeChildSelections="true" scope="f25a-f0fe-755d-5622" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </entryLink>
+        <entryLink name="Almizcle soporífero" id="0b79-b4bd-9ff2-852d" hidden="false" import="true" sortIndex="2" targetId="09e7-0906-565c-5440" type="selectionEntry">
+          <constraints>
+            <constraint id="ecf3-c863-651e-e00f-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="ecf3-c863-651e-e00f-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+        </entryLink>
+        <entryLink name="Garras aceradas" id="517e-6989-fbab-7658" hidden="false" import="true" sortIndex="3" targetId="450c-77d4-9cb7-ae88" type="selectionEntry">
+          <constraints>
+            <constraint id="8220-fd89-f4ee-58cd-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="8220-fd89-f4ee-58cd-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Bestias y Caballería" id="80ff-a719-be15-4f71" hidden="false" targetId="1c05-d1e6-a25a-918b" type="rule"/>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Epidemius" id="2ebb7363-c995-4c41-bb3f-5461026c5397" hidden="false" import="true" type="unit">
       <constraints>
@@ -1213,9 +1808,20 @@ Bajas - Efecto
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry name="Furia del Caos" id="78175857-3a67-481e-af43-de41fabbcbc7" hidden="false" import="true" type="model">
+    <selectionEntry name="Furias del Caos" id="831c-708c-18fb-77a1" hidden="false" import="true" type="unit">
+      <entryLinks>
+        <entryLink name="Furia del Caos" id="49b5-6914-f40f-5cc8" hidden="false" import="true" targetId="78175857-3a67-481e-af43-de41fabbcbc7" type="selectionEntry">
+          <constraints>
+            <constraint id="721d-fef9-738e-ce1a" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="5"/>
+            <constraint id="275f-ed51-5581-f674" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="20"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="15"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
       <infoLinks>
-        <infoLink name="Furia del Caos" id="95c3eefb-5f49-4d7b-8b62-cdd8f77fcfbb" hidden="false" targetId="70e1e26e-af68-4007-97c0-062506c77b4c" type="profile"/>
+        <infoLink name="Unidad retropropulsada" id="6e51760d-5666-472a-868f-122e8cfec5d0" hidden="false" targetId="d6f4-cfda-75c5-f2f1" type="rule"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Gran Inmundicia" id="f9154dd9-8f38-486b-ad56-e13edc554e67" hidden="false" import="true" type="unit">
@@ -1808,48 +2414,121 @@ Bajas - Efecto
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
-    <selectionEntry name="Horror Rosa de Tzeentch" id="07ca580e-e405-459e-8357-3eafab6e290f" hidden="false" import="true" type="model">
-      <infoLinks>
-        <infoLink name="Horrores Rosas de Tzeentch" id="d027c885-e85c-4ead-a27c-32e4d2bc86e8" hidden="false" targetId="081c461d-6fd4-4f42-886e-e160e5c80da2" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Incinerador de Tzeentch" id="89bc6075-84de-45c3-8465-50811e824fe3" hidden="false" import="true" type="model">
-      <infoLinks>
-        <infoLink name="Incinerador de Tzeentch" id="4dd2dcaa-841c-4a3d-9611-f0c87b912231" hidden="false" targetId="e9d1a60c-1362-4113-bc23-4978b7047221" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Karanak" id="389cfe20-39e2-47db-bcdf-10640319f237" hidden="false" import="true" type="model">
+    <selectionEntry name="Horrores Rosas de Tzeentch" id="2e8e-23a8-ed4a-ef06" hidden="false" import="true" type="unit">
       <entryLinks>
-        <entryLink name="Furia de Khorne" id="1eeb-a2a3-382a-e387" hidden="false" import="true" targetId="f606-5645-34f2-1538" type="selectionEntry">
+        <entryLink name="Fuego disforme" id="83aa-841d-a4d8-8d35" hidden="false" import="true" sortIndex="2" targetId="e2f9-87aa-7dfc-5ccf" type="selectionEntry">
           <constraints>
-            <constraint id="8b5b-bfaf-98b4-8000-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
-            <constraint id="8b5b-bfaf-98b4-8000-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+            <constraint id="10fe-7c93-d615-5c5f-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="10fe-7c93-d615-5c5f-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
         </entryLink>
-        <entryLink name="Instrumento del caos" id="a661-0c83-72e2-68ef" hidden="false" import="true" targetId="8ae5-7a70-17e4-5f63" type="selectionEntry">
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Horrores" id="d90d-afe4-28e2-9de9" hidden="false">
           <constraints>
-            <constraint id="ab86-3c49-c07f-650b-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
-            <constraint id="ab86-3c49-c07f-650b-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+            <constraint id="66cc-390f-9136-1f8b" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="5"/>
+            <constraint id="b142-7bca-f785-bd99" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="20"/>
+          </constraints>
+          <entryLinks>
+            <entryLink name="El Cambiante" id="9f8f-8179-1222-624f" collapsible="true" hidden="false" import="true" sortIndex="2" targetId="8c2b2452-bd7a-4e0c-b87c-98d795aafc26" type="selectionEntry">
+              <constraints>
+                <constraint id="264f-efdc-f958-2b13" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="22"/>
+              </costs>
+            </entryLink>
+            <entryLink name="Horror Rosa de Tzeentch" id="0536-a126-4671-9794" defaultAmount="5" hidden="false" import="true" sortIndex="1" targetId="07ca580e-e405-459e-8357-3eafab6e290f" type="selectionEntry">
+              <constraints>
+                <constraint id="e086-e31a-26eb-4432" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="4"/>
+                <constraint id="ebc0-f1b1-219b-c48c" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="20"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="17"/>
+              </costs>
+              <entryLinks>
+                <entryLink name="Fuego disforme" id="e9ef-a969-5f9f-bd6a" hidden="false" import="true" targetId="e2f9-87aa-7dfc-5ccf" type="selectionEntry">
+                  <constraints>
+                    <constraint id="aa1e-444d-06d6-a34d-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="aa1e-444d-06d6-a34d-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Regalos demoniacos" id="972c-2d18-f0fe-33f4" hidden="false">
+                  <constraints>
+                    <constraint id="e136-056e-0268-e104" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink name="Rayo de Tzeentch" id="bfa6-8ad5-cf77-ae3a" collapsible="true" hidden="false" import="true" sortIndex="3" targetId="d260-0ae8-6483-f9aa" type="selectionEntry">
+                      <constraints>
+                        <constraint id="0bbc-8f71-53bf-10df" field="selections" includeChildForces="false" includeChildSelections="true" scope="2e8e-23a8-ed4a-ef06" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink name="Icono del caos" id="4f26-6856-6cbf-d12e" collapsible="true" hidden="false" import="true" sortIndex="4" targetId="b147-9820-fd1c-16bb" type="selectionEntry">
+                      <constraints>
+                        <constraint id="90c3-2319-2519-05cd" field="selections" includeChildForces="false" includeChildSelections="true" scope="2e8e-23a8-ed4a-ef06" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="25"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink name="Instrumento del caos" id="bdff-68e0-c96d-c50e" collapsible="true" hidden="false" import="true" sortIndex="2" targetId="8ae5-7a70-17e4-5f63" type="selectionEntry">
+                      <constraints>
+                        <constraint id="9072-41d1-c582-19ae" field="selections" includeChildForces="false" includeChildSelections="true" scope="2e8e-23a8-ed4a-ef06" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="5"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry name="Incineradores de Tzeentch" id="3a63-8695-fd9e-1296" hidden="false" import="true" type="unit">
+      <entryLinks>
+        <entryLink name="Incinerador de Tzeentch" id="59b2-19d3-b69f-c62c" hidden="false" import="true" sortIndex="1" targetId="89bc6075-84de-45c3-8465-50811e824fe3" type="selectionEntry">
+          <constraints>
+            <constraint id="cdbf-1e9a-9640-b4d2" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="3"/>
+            <constraint id="9ebd-e2dd-ae5a-4811" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="12"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="35"/>
+          </costs>
+          <entryLinks>
+            <entryLink name="Rayo de Tzeentch" id="6fb2-c674-a638-361b" collapsible="true" hidden="false" import="true" targetId="d260-0ae8-6483-f9aa" type="selectionEntry">
+              <constraints>
+                <constraint id="4759-685d-2866-3cee" field="selections" includeChildForces="false" includeChildSelections="true" scope="3a63-8695-fd9e-1296" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="30"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </entryLink>
+        <entryLink name="Aliento del caos" id="8a9a-2293-36ab-db27" hidden="false" import="true" sortIndex="2" targetId="9ebf-92e4-1085-ebe3" type="selectionEntry">
+          <constraints>
+            <constraint id="a60f-8949-dbd5-4b47-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="a60f-8949-dbd5-4b47-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
         </entryLink>
-        <entryLink name="Bendición del dios de la sangre" id="7731-eb8b-5864-5f13" hidden="false" import="true" targetId="e2eb-88f7-acaa-b48a" type="selectionEntry">
+        <entryLink name="Fuego disforme" id="f8e9-d1de-eeae-5cdf" hidden="false" import="true" sortIndex="3" targetId="e2f9-87aa-7dfc-5ccf" type="selectionEntry">
           <constraints>
-            <constraint id="d43c-2a28-3376-3aa1-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
-            <constraint id="d43c-2a28-3376-3aa1-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+            <constraint id="461c-6e4d-466c-90cc-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="461c-6e4d-466c-90cc-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
         </entryLink>
       </entryLinks>
       <infoLinks>
-        <infoLink name="Karanak" id="180ab872-c518-4f05-b1db-8d3025f5312d" hidden="false" targetId="ec887512-15da-4625-9c19-5c8ccb9ad2ba" type="profile"/>
-        <infoLink name="Moverse a Través de Cobertura" id="4eac-e52d-bd88-7263" hidden="false" targetId="6cf1-d139-8b14-6083" type="rule"/>
+        <infoLink name="Unidad retropropulsada" id="dbc1-4726-2363-f7f1" hidden="false" targetId="d6f4-cfda-75c5-f2f1" type="rule"/>
       </infoLinks>
-      <profiles>
-        <profile name="Presa del Dios de la Sangre" id="a79c-d402-8f1f-dcba" hidden="false" typeId="c970-b832-a956-1ac8" typeName="Habilidad">
-          <characteristics>
-            <characteristic name="Descripción" typeId="917b-713d-7c3d-7a9e">Mientras Karanak siga con vida, toda la unidad se beneficia de la regla moverse a través de cobertura.</characteristic>
-          </characteristics>
-        </profile>
-      </profiles>
     </selectionEntry>
     <selectionEntry name="Ku&apos;gath" id="5736d87b-d5a4-4d71-a2af-98f4cc3a0dc6" hidden="false" import="true" type="unit">
       <constraints>
@@ -1908,10 +2587,56 @@ Bajas - Efecto
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry name="Mastín de Khorne" id="314298aa-d640-4c10-8abc-bd63d690c7b8" hidden="false" import="true" type="model">
+    <selectionEntry name="Mastines de Khorne" id="6715-901c-a6a2-74b2" hidden="false" import="true" type="unit">
+      <entryLinks>
+        <entryLink name="Bendición del dios de la sangre" id="c750-1809-befb-2e8c" hidden="false" import="true" targetId="e2eb-88f7-acaa-b48a" type="selectionEntry">
+          <constraints>
+            <constraint id="7b86-6fa6-0d4e-ff0b-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="7b86-6fa6-0d4e-ff0b-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <infoLinks>
-        <infoLink name="Mastín de Khorne" id="a481811b-2631-4bdc-8d43-e7e64ea2cb44" hidden="false" targetId="a647fc2c-3c18-4d7f-916f-4b7475e213c7" type="profile"/>
+        <infoLink name="Asalto Rabioso" id="226a-1702-b61e-5501" hidden="false" targetId="33b4-1a73-92db-e562" type="rule"/>
+        <infoLink name="Bestias y Caballería" id="c18c-eb19-c419-cab1" hidden="false" targetId="1c05-d1e6-a25a-918b" type="rule"/>
       </infoLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Mastines" id="6c58-0f1a-f9ed-a5f4" hidden="false">
+          <constraints>
+            <constraint id="66f1-c7f4-157c-2162" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="5"/>
+            <constraint id="aa32-02d8-c097-d103" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="20"/>
+          </constraints>
+          <entryLinks>
+            <entryLink name="Mastín de Khorne" id="0055-6632-8877-bfc7" defaultAmount="5" hidden="false" import="true" sortIndex="1" targetId="314298aa-d640-4c10-8abc-bd63d690c7b8" type="selectionEntry">
+              <constraints>
+                <constraint id="28f5-0514-ae24-7d10" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="4"/>
+                <constraint id="8ec2-aca1-5af2-c4e8" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="20"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="15"/>
+              </costs>
+              <entryLinks>
+                <entryLink name="Furia de Khorne" id="9cc6-741f-f988-d5f6" hidden="false" import="true" targetId="f606-5645-34f2-1538" type="selectionEntry">
+                  <constraints>
+                    <constraint id="b5c3-e833-fef0-bb04" field="selections" includeChildSelections="true" scope="6715-901c-a6a2-74b2" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="puntos" value="10"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </entryLink>
+            <entryLink name="Karanak" id="875f-c1d3-92ad-3b2a" hidden="false" import="true" sortIndex="2" targetId="389cfe20-39e2-47db-bcdf-10640319f237" type="selectionEntry">
+              <constraints>
+                <constraint id="b087-7e66-2922-0a27" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="50"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry name="Nurgletes" id="a5d35e2f-5fb0-4b69-aded-fd5106a03ce5" hidden="false" import="true" type="unit">
       <infoLinks>
@@ -1932,280 +2657,121 @@ Bajas - Efecto
         </selectionEntry>
       </selectionEntries>
     </selectionEntry>
-    <selectionEntry name="Portador de Plaga de Nurgle" id="56ac252f-d9b7-434f-a283-7d8ff3c1c9c7" hidden="false" import="true" type="model">
+    <selectionEntry name="Portadores de plaga de Nurgle" id="1df1-e953-c011-06d8" hidden="false" import="true" type="unit">
+      <entryLinks>
+        <entryLink name="Portador de Plaga de Nurgle" id="2d50-15a1-74e0-ad08" hidden="false" import="true" sortIndex="1" targetId="56ac252f-d9b7-434f-a283-7d8ff3c1c9c7" type="selectionEntry">
+          <constraints>
+            <constraint id="f8fb-7256-0d44-7089" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="5"/>
+            <constraint id="2e42-6e33-1627-3f0a" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="20"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="15"/>
+          </costs>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Regalos demoniacos" id="132a-08f6-ef2d-3966" hidden="false">
+              <constraints>
+                <constraint id="5857-b913-4c96-199b" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <entryLinks>
+                <entryLink name="Toque nocivo" id="e0a7-541d-8852-e4df" collapsible="true" hidden="false" import="true" sortIndex="2" targetId="70b2-ccb3-4af1-076e" type="selectionEntry">
+                  <constraints>
+                    <constraint id="a97d-6a42-49a4-fbf6" field="selections" includeChildForces="false" includeChildSelections="true" scope="1df1-e953-c011-06d8" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="puntos" value="10"/>
+                  </costs>
+                </entryLink>
+                <entryLink name="Icono del caos" id="1740-19aa-8df0-be31" collapsible="true" hidden="false" import="true" sortIndex="3" targetId="b147-9820-fd1c-16bb" type="selectionEntry">
+                  <constraints>
+                    <constraint id="83ac-27d4-f516-508c" field="selections" includeChildForces="false" includeChildSelections="true" scope="1df1-e953-c011-06d8" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="puntos" value="25"/>
+                  </costs>
+                </entryLink>
+                <entryLink name="Instrumento del caos" id="b23f-c7e5-727c-edd1" collapsible="true" hidden="false" import="true" sortIndex="1" targetId="8ae5-7a70-17e4-5f63" type="selectionEntry">
+                  <constraints>
+                    <constraint id="191a-a53c-cb19-77b6" field="selections" includeChildForces="false" includeChildSelections="true" scope="1df1-e953-c011-06d8" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="puntos" value="5"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </entryLink>
+        <entryLink name="Espada de plaga" id="4791-1748-20e2-c4ae" hidden="false" import="true" sortIndex="2" targetId="84b0-e4bd-dfb6-b4f4" type="selectionEntry">
+          <constraints>
+            <constraint id="74cd-8b5d-aca3-d158-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="74cd-8b5d-aca3-d158-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <infoLinks>
-        <infoLink name="Portador de Plaga de Nurgle" id="387abce4-2a2c-4e6d-99f4-a541d55053c3" hidden="false" targetId="f5e5b2a5-fcc4-4fe6-9c74-c7934fe70a1a" type="profile"/>
+        <infoLink name="No Hay Dolor" id="36fb-73e3-2214-976f" hidden="false" targetId="fe28-c924-099d-aa4e" type="rule"/>
+        <infoLink name="Avance Sistemático" id="62b7-f898-1cab-fdf6" hidden="false" targetId="bb8e-642b-6fbc-bb61" type="rule"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Príncipe Demonio" id="041fb278-8684-49b7-8d8d-26e26fcc802d" hidden="false" import="true" type="model">
-      <costs>
-        <cost name="Pts" typeId="puntos" value="80"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Príncipe Demonio" id="633a300b-260b-45d1-a55a-545e2ea5716a" hidden="false" targetId="60b1ad08-5304-4980-9b20-74a1b886d95b" type="profile"/>
-      </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Marca" id="e15d-bcf3-bc46-6f6f" hidden="false">
+    <selectionEntry name="Rastreaalmas de Slaanesh" id="eb25-c382-f077-35b4" hidden="false" import="true" type="unit">
+      <entryLinks>
+        <entryLink name="Rastreaalmas de Slaanesh" id="1183-8314-7b68-d6a9" hidden="false" import="true" sortIndex="1" targetId="9c3ad571-8eb8-4dda-90ac-602a0a6c532d" type="selectionEntry">
           <constraints>
-            <constraint id="5884-1661-37ed-6670" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+            <constraint id="411e-3e1e-961b-49cc" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="5"/>
+            <constraint id="45f8-e34c-b38d-44a1" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="20"/>
           </constraints>
-          <selectionEntries>
-            <selectionEntry name="Khorne" id="0c2a-7705-6674-4395" hidden="false" import="true" sortIndex="2" type="upgrade">
+          <costs>
+            <cost name="Pts" typeId="puntos" value="17"/>
+          </costs>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Regalos demoniacos" id="51ba-b03e-1f14-c0f6" hidden="false">
               <constraints>
-                <constraint id="3872-5d6d-98e4-2dff" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                <constraint id="033e-aa56-ed0e-4e00" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
-              <costs>
-                <cost name="Pts" typeId="puntos" value="15"/>
-              </costs>
-              <modifiers>
-                <modifier affects="profiles.Unidad" field="5dff3e7c-e024-4030-a71d-03195ec06ea7" scope="parent" type="increment" value="1"/>
-              </modifiers>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Bendiciones de Khorne" id="a563-045d-8f36-3480" hidden="false">
-                  <entryLinks>
-                    <entryLink name="Bendición del dios de la sangre" id="291b-766f-86dc-dd2c" hidden="false" import="true" sortIndex="1" targetId="e2eb-88f7-acaa-b48a" type="selectionEntry">
-                      <constraints>
-                        <constraint id="de12-bfcd-d209-6547" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="puntos" value="10"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink name="Proyectil letal" id="b7e1-661f-a20c-15fa" hidden="false" import="true" sortIndex="2" targetId="8ab9-a0cc-79c3-0f48" type="selectionEntry">
-                      <constraints>
-                        <constraint id="5e4e-2513-a06c-84eb" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="puntos" value="20"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-            </selectionEntry>
-            <selectionEntry name="Slaanesh" id="78dd-6ee1-ab6b-6c15" hidden="false" import="true" sortIndex="1" type="upgrade">
-              <constraints>
-                <constraint id="952d-04f7-660f-72ea" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="puntos" value="10"/>
-              </costs>
-              <modifiers>
-                <modifier affects="profiles.Unidad" field="a558b3ef-04d0-440e-a312-bac3255bf592" scope="parent" type="increment" value="1"/>
-              </modifiers>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Bendiciones de Slaanesh" id="f33d-6f74-2434-1967" hidden="false">
-                  <entryLinks>
-                    <entryLink name="Almizcle soporífero" id="4385-1195-10b9-685e" hidden="false" import="true" sortIndex="3" targetId="09e7-0906-565c-5440" type="selectionEntry">
-                      <constraints>
-                        <constraint id="66dd-5ee6-716a-e2aa" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="puntos" value="20"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink name="Mirada hipnótica" id="4753-c2a3-8edf-4fd2" hidden="false" import="true" sortIndex="2" targetId="644e-8196-62b8-e778" type="selectionEntry">
-                      <constraints>
-                        <constraint id="11f2-332b-81dd-5064" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="puntos" value="10"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink name="Aura de sometimiento" id="a897-5005-b15c-eb88" hidden="false" import="true" sortIndex="1" targetId="672d-4d71-5750-0221" type="selectionEntry">
-                      <constraints>
-                        <constraint id="9780-a131-9b57-102f" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="puntos" value="5"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink name="Pavana de Slaanesh" id="3d84-3f9c-d200-5544" hidden="false" import="true" sortIndex="4" targetId="b550-ae88-f905-5ff0" type="selectionEntry">
-                      <constraints>
-                        <constraint id="23dc-80b7-3b76-6be3" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="puntos" value="30"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-            </selectionEntry>
-            <selectionEntry name="Nurgle" id="9544-78ad-38fd-d730" hidden="false" import="true" sortIndex="4" type="upgrade">
-              <constraints>
-                <constraint id="73e9-8b39-a289-5e48" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="puntos" value="30"/>
-              </costs>
-              <modifiers>
-                <modifier affects="profiles.Unidad" field="3f9ed75c-36cd-4169-9cef-48391bb55cfd" scope="parent" type="increment" value="1"/>
-              </modifiers>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Bendiciones de Nurgle" id="88b8-8f74-fecd-1f0a" hidden="false">
-                  <entryLinks>
-                    <entryLink name="Nube de moscas" id="44f0-9dc6-505c-d502" hidden="false" import="true" sortIndex="1" targetId="2906-e593-8147-d1be" type="selectionEntry">
-                      <constraints>
-                        <constraint id="cb4f-eee7-fd43-aa77" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="puntos" value="5"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink name="Toque nocivo" id="abf3-5c6f-6342-41f3" hidden="false" import="true" sortIndex="2" targetId="70b2-ccb3-4af1-076e" type="selectionEntry">
-                      <constraints>
-                        <constraint id="5232-5312-2982-e9dc" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="puntos" value="10"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink name="Aura de descomposición" id="d710-3475-4cc6-8ca5" hidden="false" import="true" sortIndex="3" targetId="c29f-0757-1697-1267" type="selectionEntry">
-                      <constraints>
-                        <constraint id="b933-a1a3-e386-6a41" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="puntos" value="20"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-            </selectionEntry>
-            <selectionEntry name="Tzeentch" id="fe12-6dc0-a5e0-dbb7" hidden="false" import="true" sortIndex="3" type="upgrade">
-              <constraints>
-                <constraint id="2968-5800-ce02-988a" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="puntos" value="25"/>
-              </costs>
-              <modifiers>
-                <modifier affects="profiles.Unidad" field="b215fe72-dbce-4ad6-89ec-c4bb3962c39d" scope="parent" type="set" value="4+"/>
-              </modifiers>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Bendiciones de Tzeentch" id="fd11-253c-1004-5c5a" hidden="false">
-                  <entryLinks>
-                    <entryLink name="Maestro hechicero" id="6adf-2fd4-9e17-d68b" hidden="false" import="true" sortIndex="2" targetId="90af-9414-5650-9992" type="selectionEntry">
-                      <constraints>
-                        <constraint id="80d2-0feb-bce5-69db" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="puntos" value="10"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink name="Rayo de Tzeentch" id="ec78-339a-74ad-5874" hidden="false" import="true" sortIndex="3" targetId="d260-0ae8-6483-f9aa" type="selectionEntry">
-                      <constraints>
-                        <constraint id="cf0b-5120-7036-1cc4" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="puntos" value="35"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink name="Devoraalmas" id="c64b-dbc0-3636-a6cb" hidden="false" import="true" sortIndex="1" targetId="4fbc-f4e7-998b-6144" type="selectionEntry">
-                      <constraints>
-                        <constraint id="8f19-b632-b509-3c9c" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="puntos" value="10"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Regalos genéricos" id="c444-ab4f-b287-d114" hidden="false">
-          <entryLinks>
-            <entryLink name="Vuelo demoníaco" id="36af-2e6a-620b-386a" hidden="false" import="true" sortIndex="4" targetId="6738-f1f3-b112-68f9" type="selectionEntry">
-              <constraints>
-                <constraint id="afb6-eb49-2f7d-3a04" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="puntos" value="60"/>
-              </costs>
-              <modifiers>
-                <modifier affects="profiles.Unidad" arg="Infantería" field="c2b4b061-a0fd-499d-8a3d-6ee52587cbd5" scope="041fb278-8684-49b7-8d8d-26e26fcc802d" type="replace" value="Retropropulsada"/>
-              </modifiers>
-            </entryLink>
-            <entryLink name="Piel de hierro" id="29c3-e8d0-2247-11d8" hidden="false" import="true" sortIndex="3" targetId="304a-6d02-d208-6aff" type="selectionEntry">
-              <constraints>
-                <constraint id="2823-cbef-e8c2-8b05" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="puntos" value="30"/>
-              </costs>
-            </entryLink>
-            <entryLink name="Instrumento del caos" id="c33c-82a1-803e-5a7b" hidden="false" import="true" sortIndex="1" targetId="8ae5-7a70-17e4-5f63" type="selectionEntry">
-              <constraints>
-                <constraint id="b193-a911-b834-2931" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="puntos" value="5"/>
-              </costs>
-            </entryLink>
-            <entryLink name="Fuerza impía" id="1c51-a225-971b-05a1" hidden="false" import="true" sortIndex="2" targetId="ef19-09f8-c6fa-368e" type="selectionEntry">
-              <constraints>
-                <constraint id="2a52-eb10-07fb-0056" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="puntos" value="20"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Regalos sin la marca de Khorne" id="283d-d060-ea3f-2158" hidden="false">
+              <entryLinks>
+                <entryLink name="Mirada hipnótica" id="948b-9a6c-05ad-f660" collapsible="true" hidden="false" import="true" sortIndex="2" targetId="644e-8196-62b8-e778" type="selectionEntry">
+                  <constraints>
+                    <constraint id="bd74-5d5b-4f71-acb8" field="selections" includeChildForces="false" includeChildSelections="true" scope="eb25-c382-f077-35b4" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="puntos" value="5"/>
+                  </costs>
+                </entryLink>
+                <entryLink name="Icono del caos" id="847b-0e00-1e18-3413" collapsible="true" hidden="false" import="true" sortIndex="3" targetId="b147-9820-fd1c-16bb" type="selectionEntry">
+                  <constraints>
+                    <constraint id="588d-0c77-bc4e-d419" field="selections" includeChildForces="false" includeChildSelections="true" scope="eb25-c382-f077-35b4" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="puntos" value="25"/>
+                  </costs>
+                </entryLink>
+                <entryLink name="Instrumento del caos" id="787f-133e-3302-c471" collapsible="true" hidden="false" import="true" sortIndex="1" targetId="8ae5-7a70-17e4-5f63" type="selectionEntry">
+                  <constraints>
+                    <constraint id="33ed-7f5b-59a5-89e1" field="selections" includeChildForces="false" includeChildSelections="true" scope="eb25-c382-f077-35b4" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Pts" typeId="puntos" value="5"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </entryLink>
+        <entryLink name="Garras aceradas" id="5af7-fc1e-703f-766f" hidden="false" import="true" sortIndex="2" targetId="450c-77d4-9cb7-ae88" type="selectionEntry">
           <constraints>
-            <constraint id="14e3-9c0c-faa6-842b" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+            <constraint id="5ad4-5765-83a3-038a-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="5ad4-5765-83a3-038a-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
-          <entryLinks>
-            <entryLink name="Aliento del caos" id="2481-2384-03de-7d37" hidden="false" import="true" sortIndex="2" targetId="9ebf-92e4-1085-ebe3" type="selectionEntry">
-              <constraints>
-                <constraint id="38de-eefb-4909-9ca6" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="puntos" value="30"/>
-              </costs>
-              <modifiers>
-                <modifier field="38de-eefb-4909-9ca6" type="increment" value="0"/>
-              </modifiers>
-            </entryLink>
-            <entryLink name="Bendición de la mutación" id="1649-9ee0-5e09-2177" hidden="false" import="true" sortIndex="3" targetId="2ed1-dbf5-9633-97bb" type="selectionEntry">
-              <constraints>
-                <constraint id="df66-528b-890b-a4d2" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="puntos" value="30"/>
-              </costs>
-            </entryLink>
-            <entryLink name="Mirada demoníaca" id="d323-8317-7df2-f48b" hidden="false" import="true" sortIndex="1" targetId="ca0c-efd8-d2f4-022d" type="selectionEntry">
-              <constraints>
-                <constraint id="2edf-3130-1a00-1750" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="puntos" value="20"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-          <modifiers>
-            <modifier field="hidden" type="set" value="true">
-              <conditions>
-                <condition childId="0c2a-7705-6674-4395" childName="Khorne" field="selections" scope="041fb278-8684-49b7-8d8d-26e26fcc802d" shared="true" type="equalTo" value="1"/>
-              </conditions>
-            </modifier>
-            <modifier field="14e3-9c0c-faa6-842b" type="increment" value="1">
-              <conditions>
-                <condition childId="fe12-6dc0-a5e0-dbb7" childName="Tzeentch" field="selections" scope="041fb278-8684-49b7-8d8d-26e26fcc802d" shared="true" type="equalTo" value="1"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-    </selectionEntry>
-    <selectionEntry name="Rastreaalmas de Slaanesh" id="9c3ad571-8eb8-4dda-90ac-602a0a6c532d" hidden="false" import="true" type="model">
+        </entryLink>
+        <entryLink name="Aura de sometimiento" id="4ad5-aa61-0bec-4e6f" hidden="false" import="true" sortIndex="3" targetId="672d-4d71-5750-0221" type="selectionEntry">
+          <constraints>
+            <constraint id="6ee1-4025-c69d-fa3f-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="6ee1-4025-c69d-fa3f-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <infoLinks>
-        <infoLink name="Rastreaalmas de Slaanesh" id="2fd0549f-1028-4d88-b231-b58c940c4f74" hidden="false" targetId="7613a129-497b-486d-965a-490b59c24e26" type="profile"/>
+        <infoLink name="Bestias y Caballería" id="74e6-795a-5cb9-6b2a" hidden="false" targetId="1c05-d1e6-a25a-918b" type="rule"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Señor de la Transformación" id="7e627e17-0d24-43de-b76b-71ab10f1a2f1" hidden="false" import="true" type="unit">
@@ -2327,9 +2893,10 @@ Bajas - Efecto
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry name="Mirada hipnótica" id="644e-8196-62b8-e778" hidden="false" import="true" type="upgrade">
+    <selectionEntry name="Aliento del caos" id="9ebf-92e4-1085-ebe3" hidden="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink name="Mirada hipnótica" id="a3c4-d679-485c-6025" hidden="false" targetId="e7f4-96b5-1439-e0c1" type="profile"/>
+        <infoLink name="Aliento del caos" id="b40a-fad4-a026-bc22" hidden="false" targetId="0542-8762-5b9e-ae21" type="profile"/>
+        <infoLink name="Plantilla" id="63fe-a68a-cfac-574e" hidden="false" targetId="d094-3fd7-bd10-443d" type="rule"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Almizcle soporífero" id="09e7-0906-565c-5440" hidden="false" import="true" type="upgrade">
@@ -2338,78 +2905,16 @@ Bajas - Efecto
         <infoLink name="Almizcle soporífero" id="778b-bd52-5924-0da0" hidden="false" targetId="7a1b-25ba-e4f0-55f7" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Pavana de Slaanesh" id="b550-ae88-f905-5ff0" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Pavana de Slaanesh" id="f44e-2d89-0b21-3af0" hidden="false" targetId="7a6d-d7a8-c056-eb63" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Mirada demoníaca" id="ca0c-efd8-d2f4-022d" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Mirada demoníaca" id="2833-fe9c-2465-52b9" hidden="false" targetId="9156-2b07-9730-9523" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Fuerza impía" id="ef19-09f8-c6fa-368e" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Fuerza impía" id="859b-40b6-6201-ee53" hidden="false" targetId="27d8-06b8-1b10-3560" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Icono del caos" id="b147-9820-fd1c-16bb" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Icono del caos" id="57cc-0691-6e13-fa1f" hidden="false" targetId="49fe-4272-08b6-d15b" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Instrumento del caos" id="8ae5-7a70-17e4-5f63" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Instrumento del caos" id="2632-bdd3-93bf-dd95" hidden="false" targetId="3810-cee1-4061-f154" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Aliento del caos" id="9ebf-92e4-1085-ebe3" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Aliento del caos" id="b40a-fad4-a026-bc22" hidden="false" targetId="0542-8762-5b9e-ae21" type="profile"/>
-        <infoLink name="Plantilla" id="63fe-a68a-cfac-574e" hidden="false" targetId="d094-3fd7-bd10-443d" type="rule"/>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry name="Aura de descomposición" id="c29f-0757-1697-1267" hidden="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink name="Aura de descomposición" id="b237-4dbe-4a13-9ed4" hidden="false" targetId="2c24-1097-db08-868a" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Nube de moscas" id="2906-e593-8147-d1be" hidden="false" import="true" type="upgrade">
+    <selectionEntry name="Aura de sometimiento" id="672d-4d71-5750-0221" hidden="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink name="Granadas de asalto" id="7c4b-67b3-38a3-a10b" hidden="false" targetId="b1c6-9a9a-fc08-321d" type="rule"/>
-        <infoLink name="Granadas defensivas" id="fc01-96f9-0b9f-dbf7" hidden="false" targetId="e4b4-fbcb-fe82-edaf" type="rule"/>
-        <infoLink name="Nube de moscas" id="cbae-ccb9-551a-fe2f" hidden="false" targetId="f175-a04f-6d3a-0b83" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Piel de hierro" id="304a-6d02-d208-6aff" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Piel de hierro" id="d08c-7f73-839c-a076" hidden="false" targetId="452e-9d86-fda4-f26e" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Vuelo demoníaco" id="6738-f1f3-b112-68f9" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Vuelo demoníaco" id="e8fe-d98b-1afc-07ac" hidden="false" targetId="1a46-30eb-e948-919b" type="profile"/>
-        <infoLink name="Unidad retropropulsada" id="6092-95e8-eaee-aea2" hidden="false" targetId="d6f4-cfda-75c5-f2f1" type="rule"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Proyectil letal" id="8ab9-a0cc-79c3-0f48" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Proyectil letal" id="f34b-6d7c-c1a4-b987" hidden="false" targetId="39fb-192a-6117-2f1f" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Bendición del dios de la sangre" id="e2eb-88f7-acaa-b48a" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Bendición del dios de la sangre" id="9248-401a-9a6e-a4ec" hidden="false" targetId="f000-5ae7-bd36-1907" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Somos legión" id="2082-8938-9ee3-a1f5" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Somos legión" id="b61c-f781-a4d1-cff1" hidden="false" targetId="1bb3-568f-eeaf-2253" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Maestro hechicero" id="90af-9414-5650-9992" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Maestro hechicero" id="fddd-e440-665d-b2c8" hidden="false" targetId="3fda-29ec-2e43-a788" type="profile"/>
+        <infoLink name="Granadas de asalto" id="5a66-2749-8998-6bab" hidden="false" targetId="b1c6-9a9a-fc08-321d" type="rule"/>
+        <infoLink name="Granadas defensivas" id="49f4-d716-8456-244b" hidden="false" targetId="e4b4-fbcb-fe82-edaf" type="rule"/>
+        <infoLink name="Aura de sometimiento" id="c899-730d-39dd-b182" hidden="false" targetId="6535-d8f7-a46d-2110" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Bendición de la mutación" id="2ed1-dbf5-9633-97bb" hidden="false" import="true" type="upgrade">
@@ -2422,15 +2927,9 @@ Bajas - Efecto
         <infoLink name="Carente de inteligencia" id="e715-c6bf-9d4f-9f40" hidden="false" targetId="3cd4-d86e-64ad-df60" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Furia de Khorne" id="f606-5645-34f2-1538" hidden="false" import="true" type="upgrade">
+    <selectionEntry name="Bendición del dios de la sangre" id="e2eb-88f7-acaa-b48a" hidden="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink name="Acerada" id="8822-e9fd-620f-a323" hidden="false" targetId="7097-6879-0d11-787d" type="rule"/>
-        <infoLink name="Furia de Khorne" id="f4ff-e256-86eb-1185" hidden="false" targetId="3edb-c34b-f94e-160a" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Rayo de Tzeentch" id="d260-0ae8-6483-f9aa" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Rayo de tzeentch" id="dda8-f2f3-bf60-799c" hidden="false" targetId="e466-4cfb-1164-4305" type="profile"/>
+        <infoLink name="Bendición del dios de la sangre" id="9248-401a-9a6e-a4ec" hidden="false" targetId="f000-5ae7-bd36-1907" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Devoraalmas" id="4fbc-f4e7-998b-6144" hidden="false" import="true" type="upgrade">
@@ -2438,90 +2937,14 @@ Bajas - Efecto
         <infoLink name="Devoraalmas" id="e6ee-24b5-71f3-de81" hidden="false" targetId="2ddb-6a87-ffe6-b4a5" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Toque nocivo" id="70b2-ccb3-4af1-076e" hidden="false" import="true" type="upgrade">
+    <selectionEntry name="Espada de plaga" id="84b0-e4bd-dfb6-b4f4" hidden="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink name="Toque nocivo" id="7434-9d94-48fc-6f54" hidden="false" targetId="c869-4a4f-fa14-b3f4" type="profile"/>
+        <infoLink name="Espada de plaga" id="2449-ec58-4c2b-d050" hidden="false" targetId="988a-2b66-51d6-9ec6" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Diablos de Slaanesh" id="a60e-f058-406b-d376" hidden="false" import="true" type="unit">
-      <entryLinks>
-        <entryLink name="Diablo de Slaanesh" id="2f80-5ab9-b457-25f1" hidden="false" import="true" sortIndex="1" targetId="f960fa04-d231-4fac-8dc9-78f0934203de" type="selectionEntry">
-          <constraints>
-            <constraint id="c580-5439-122f-b77b" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
-            <constraint id="0dab-8bca-7180-a6ed" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="6"/>
-          </constraints>
-          <costs>
-            <cost name="Pts" typeId="puntos" value="30"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Fuerza impía" id="80d9-3088-bac2-aa41" collapsible="true" hidden="false" import="true" targetId="ef19-09f8-c6fa-368e" type="selectionEntry">
-              <constraints>
-                <constraint id="79ea-712d-6d49-e5dd" field="selections" includeChildForces="false" includeChildSelections="true" scope="f25a-f0fe-755d-5622" shared="true" type="max" value="1"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="puntos" value="10"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </entryLink>
-        <entryLink name="Almizcle soporífero" id="0b79-b4bd-9ff2-852d" hidden="false" import="true" sortIndex="2" targetId="09e7-0906-565c-5440" type="selectionEntry">
-          <constraints>
-            <constraint id="ecf3-c863-651e-e00f-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
-            <constraint id="ecf3-c863-651e-e00f-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-        </entryLink>
-        <entryLink name="Garras aceradas" id="517e-6989-fbab-7658" hidden="false" import="true" sortIndex="3" targetId="450c-77d4-9cb7-ae88" type="selectionEntry">
-          <constraints>
-            <constraint id="8220-fd89-f4ee-58cd-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
-            <constraint id="8220-fd89-f4ee-58cd-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
+    <selectionEntry name="Espada infernal" id="02b7-f0e2-1b8d-1196" hidden="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink name="Bestias y Caballería" id="80ff-a719-be15-4f71" hidden="false" targetId="1c05-d1e6-a25a-918b" type="rule"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Garras aceradas" id="450c-77d4-9cb7-ae88" hidden="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink name="Garras aceradas" id="2005-4b9d-5fc6-7dab" hidden="false" targetId="d433-4cb7-a046-4967" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Incineradores de Tzeentch" id="3a63-8695-fd9e-1296" hidden="false" import="true" type="unit">
-      <entryLinks>
-        <entryLink name="Incinerador de Tzeentch" id="59b2-19d3-b69f-c62c" hidden="false" import="true" sortIndex="1" targetId="89bc6075-84de-45c3-8465-50811e824fe3" type="selectionEntry">
-          <constraints>
-            <constraint id="cdbf-1e9a-9640-b4d2" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="3"/>
-            <constraint id="9ebd-e2dd-ae5a-4811" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="12"/>
-          </constraints>
-          <costs>
-            <cost name="Pts" typeId="puntos" value="35"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Rayo de Tzeentch" id="6fb2-c674-a638-361b" collapsible="true" hidden="false" import="true" targetId="d260-0ae8-6483-f9aa" type="selectionEntry">
-              <constraints>
-                <constraint id="4759-685d-2866-3cee" field="selections" includeChildForces="false" includeChildSelections="true" scope="3a63-8695-fd9e-1296" shared="true" type="max" value="1"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="puntos" value="30"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </entryLink>
-        <entryLink name="Aliento del caos" id="8a9a-2293-36ab-db27" hidden="false" import="true" sortIndex="2" targetId="9ebf-92e4-1085-ebe3" type="selectionEntry">
-          <constraints>
-            <constraint id="a60f-8949-dbd5-4b47-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
-            <constraint id="a60f-8949-dbd5-4b47-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-        </entryLink>
-        <entryLink name="Fuego disforme" id="f8e9-d1de-eeae-5cdf" hidden="false" import="true" sortIndex="3" targetId="e2f9-87aa-7dfc-5ccf" type="selectionEntry">
-          <constraints>
-            <constraint id="461c-6e4d-466c-90cc-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
-            <constraint id="461c-6e4d-466c-90cc-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <infoLinks>
-        <infoLink name="Unidad retropropulsada" id="dbc1-4726-2363-f7f1" hidden="false" targetId="d6f4-cfda-75c5-f2f1" type="rule"/>
+        <infoLink name="Espada infernal" id="e180-6a2e-7a53-e102" hidden="false" targetId="2bbc-19fe-4fba-e58e" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Fuego disforme" id="e2f9-87aa-7dfc-5ccf" hidden="false" import="true" type="upgrade">
@@ -2529,511 +2952,88 @@ Bajas - Efecto
         <infoLink name="Fuego disforme" id="a46e-4487-3dfd-1db1" hidden="false" targetId="e7f7-0378-f939-c396" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Aplastadores de Khorne" id="b7df-9b58-e4c9-2eba" hidden="false" import="true" type="unit">
-      <entryLinks>
-        <entryLink name="Aplastador de Khorne" id="1d8a-636a-b7d0-e3c2" collective="true" hidden="false" import="true" sortIndex="1" targetId="22ff20f2-3923-4260-81a0-2b79837d8d4f" type="selectionEntry">
-          <constraints>
-            <constraint id="0d2d-c70b-4334-5c10" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
-            <constraint id="c7ac-4b60-3d6e-c9ad" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="8"/>
-          </constraints>
-          <costs>
-            <cost name="Pts" typeId="puntos" value="40"/>
-          </costs>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Regalos demoniacos" id="6fde-5654-7425-89bf" hidden="false">
-              <constraints>
-                <constraint id="28cb-f21a-67b4-fea3" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-              </constraints>
-              <entryLinks>
-                <entryLink name="Furia de Khorne" id="c093-3c71-a603-da9c" collapsible="true" hidden="false" import="true" sortIndex="2" targetId="f606-5645-34f2-1538" type="selectionEntry">
-                  <constraints>
-                    <constraint id="5d1b-70ed-8a41-76b4" field="selections" includeChildForces="false" includeChildSelections="true" scope="b7df-9b58-e4c9-2eba" shared="true" type="max" value="1"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="puntos" value="10"/>
-                  </costs>
-                </entryLink>
-                <entryLink name="Icono del caos" id="e737-e48b-a899-f97f" collapsible="true" hidden="false" import="true" sortIndex="3" targetId="b147-9820-fd1c-16bb" type="selectionEntry">
-                  <constraints>
-                    <constraint id="daec-ccea-17ad-ed64" field="selections" includeChildForces="false" includeChildSelections="true" scope="b7df-9b58-e4c9-2eba" shared="true" type="max" value="1"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="puntos" value="25"/>
-                  </costs>
-                </entryLink>
-                <entryLink name="Instrumento del caos" id="5465-9298-a013-74b7" collapsible="true" hidden="false" import="true" sortIndex="1" targetId="8ae5-7a70-17e4-5f63" type="selectionEntry">
-                  <constraints>
-                    <constraint id="6ac4-ce7e-a98a-dc46" field="selections" includeChildForces="false" includeChildSelections="true" scope="b7df-9b58-e4c9-2eba" shared="true" type="max" value="1"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="puntos" value="5"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-        </entryLink>
-        <entryLink name="Piel de hierro" id="4ddb-a23c-7954-d3f6" hidden="false" import="true" sortIndex="3" targetId="304a-6d02-d208-6aff" type="selectionEntry">
-          <constraints>
-            <constraint id="a516-2b2a-9ac2-a163-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
-            <constraint id="a516-2b2a-9ac2-a163-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-        </entryLink>
-        <entryLink name="Espada infernal" id="9513-018f-f60d-0d9a" hidden="false" import="true" sortIndex="2" targetId="02b7-f0e2-1b8d-1196" type="selectionEntry">
-          <constraints>
-            <constraint id="5996-e7cf-08ae-2ba6-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
-            <constraint id="5996-e7cf-08ae-2ba6-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-    </selectionEntry>
-    <selectionEntry name="Espada infernal" id="02b7-f0e2-1b8d-1196" hidden="false" import="true" type="upgrade">
+    <selectionEntry name="Fuerza impía" id="ef19-09f8-c6fa-368e" hidden="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink name="Espada infernal" id="e180-6a2e-7a53-e102" hidden="false" targetId="2bbc-19fe-4fba-e58e" type="profile"/>
+        <infoLink name="Fuerza impía" id="859b-40b6-6201-ee53" hidden="false" targetId="27d8-06b8-1b10-3560" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Bestias de Nurgle" id="93fd-b582-8eed-30f0" hidden="false" import="true" type="unit">
-      <entryLinks>
-        <entryLink name="Bestia de Nurgle" id="7f79-4ffc-3e24-cba0" hidden="false" import="true" targetId="deae26a5-fef3-422e-9a6d-308cd628e3d7" type="selectionEntry">
-          <constraints>
-            <constraint id="33fa-4e65-41a2-0bd6" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
-            <constraint id="5441-820f-634f-e8da" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="7"/>
-          </constraints>
-          <costs>
-            <cost name="Pts" typeId="puntos" value="35"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Toque nocivo" id="4e24-2df7-f93c-9ef6" collapsible="true" hidden="false" import="true" targetId="70b2-ccb3-4af1-076e" type="selectionEntry">
-              <constraints>
-                <constraint id="d76b-410a-06fe-47c9" field="selections" includeChildForces="false" includeChildSelections="true" scope="93fd-b582-8eed-30f0" shared="true" type="max" value="1"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="puntos" value="10"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </entryLink>
-      </entryLinks>
+    <selectionEntry name="Furia de Khorne" id="f606-5645-34f2-1538" hidden="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink name="No Hay Dolor" id="d7aa-d55b-9993-ea97" hidden="false" targetId="fe28-c924-099d-aa4e" type="rule"/>
-        <infoLink name="Avance Sistemático" id="4932-14be-f19a-6acd" hidden="false" targetId="bb8e-642b-6fbc-bb61" type="rule"/>
-        <infoLink name="Envenenada" id="497c-dd5d-ef99-ce81" hidden="false" targetId="48c8-bb35-6595-03d1" type="rule"/>
+        <infoLink name="Acerada" id="8822-e9fd-620f-a323" hidden="false" targetId="7097-6879-0d11-787d" type="rule"/>
+        <infoLink name="Furia de Khorne" id="f4ff-e256-86eb-1185" hidden="false" targetId="3edb-c34b-f94e-160a" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Desangradores de Khorne" id="b485-733d-8307-52d1" hidden="false" import="true" type="unit">
-      <entryLinks>
-        <entryLink name="Desangrador de Khorne" id="af4e-54cf-122f-d042" hidden="false" import="true" sortIndex="1" targetId="f60d9c4c-b98d-4d59-b118-1ada259e12bf" type="selectionEntry">
-          <constraints>
-            <constraint id="456b-43a7-c1d4-7b30" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="5"/>
-            <constraint id="3ce8-c76f-9778-3a09" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="20"/>
-          </constraints>
-          <costs>
-            <cost name="Pts" typeId="puntos" value="16"/>
-          </costs>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Regalos demoniacos" id="7448-5e19-02be-751e" hidden="false">
-              <constraints>
-                <constraint id="188a-f349-d7f7-a95c" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-              </constraints>
-              <entryLinks>
-                <entryLink name="Furia de Khorne" id="3b51-1685-2470-a65e" collapsible="true" hidden="false" import="true" sortIndex="2" targetId="f606-5645-34f2-1538" type="selectionEntry">
-                  <constraints>
-                    <constraint id="b8c2-5396-5c94-3a95" field="selections" includeChildForces="false" includeChildSelections="true" scope="b485-733d-8307-52d1" shared="true" type="max" value="1"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="puntos" value="10"/>
-                  </costs>
-                </entryLink>
-                <entryLink name="Icono del caos" id="85cd-c62a-0650-2521" collapsible="true" hidden="false" import="true" sortIndex="3" targetId="b147-9820-fd1c-16bb" type="selectionEntry">
-                  <constraints>
-                    <constraint id="2543-d1dc-0c97-d3fc" field="selections" includeChildForces="false" includeChildSelections="true" scope="b485-733d-8307-52d1" shared="true" type="max" value="1"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="puntos" value="25"/>
-                  </costs>
-                </entryLink>
-                <entryLink name="Instrumento del caos" id="7188-92d8-dd84-cf0a" collapsible="true" hidden="false" import="true" sortIndex="1" targetId="8ae5-7a70-17e4-5f63" type="selectionEntry">
-                  <constraints>
-                    <constraint id="bb6a-9dba-f738-f11d" field="selections" includeChildForces="false" includeChildSelections="true" scope="b485-733d-8307-52d1" shared="true" type="max" value="1"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="puntos" value="5"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-        </entryLink>
-        <entryLink name="Espada infernal" id="cdec-2410-3c68-d802" hidden="false" import="true" sortIndex="2" targetId="02b7-f0e2-1b8d-1196" type="selectionEntry">
-          <constraints>
-            <constraint id="9caf-9cab-919e-bc2a-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
-            <constraint id="9caf-9cab-919e-bc2a-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
+    <selectionEntry name="Garras aceradas" id="450c-77d4-9cb7-ae88" hidden="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink name="Asalto Rabioso" id="1261-45a2-82ad-412e" hidden="false" targetId="33b4-1a73-92db-e562" type="rule"/>
+        <infoLink name="Garras aceradas" id="2005-4b9d-5fc6-7dab" hidden="false" targetId="d433-4cb7-a046-4967" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Diablillas de Slaanesh" id="07de-e1ef-bf19-d01f" hidden="false" import="true" type="unit">
-      <entryLinks>
-        <entryLink name="Diablilla de Slaanesh" id="2f73-1d35-49b9-e4d6" hidden="false" import="true" sortIndex="1" targetId="824b0ffd-9c73-4d2c-b844-d892589dd8f1" type="selectionEntry">
-          <constraints>
-            <constraint id="21ff-8efc-94d4-5b8e" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="5"/>
-            <constraint id="2a00-7e74-741c-e461" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="20"/>
-          </constraints>
-          <costs>
-            <cost name="Pts" typeId="puntos" value="14"/>
-          </costs>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Regalos demoniacos" id="0714-d18f-d893-0213" hidden="false">
-              <constraints>
-                <constraint id="5e5d-23cd-99f4-beb3" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-              </constraints>
-              <entryLinks>
-                <entryLink name="Mirada hipnótica" id="bf4c-5cd5-6a3c-4303" collapsible="true" hidden="false" import="true" sortIndex="2" targetId="644e-8196-62b8-e778" type="selectionEntry">
-                  <constraints>
-                    <constraint id="f069-dc18-7bf1-a210" field="selections" includeChildForces="false" includeChildSelections="true" scope="07de-e1ef-bf19-d01f" shared="true" type="max" value="1"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="puntos" value="5"/>
-                  </costs>
-                </entryLink>
-                <entryLink name="Icono del caos" id="dd16-3ff5-61e4-50f4" collapsible="true" hidden="false" import="true" sortIndex="3" targetId="b147-9820-fd1c-16bb" type="selectionEntry">
-                  <constraints>
-                    <constraint id="7d2a-0503-0389-fcea" field="selections" includeChildForces="false" includeChildSelections="true" scope="07de-e1ef-bf19-d01f" shared="true" type="max" value="1"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="puntos" value="25"/>
-                  </costs>
-                </entryLink>
-                <entryLink name="Instrumento del caos" id="bf5a-20f9-a824-7906" collapsible="true" hidden="false" import="true" sortIndex="1" targetId="8ae5-7a70-17e4-5f63" type="selectionEntry">
-                  <constraints>
-                    <constraint id="6377-83fe-53ab-50fb" field="selections" includeChildForces="false" includeChildSelections="true" scope="07de-e1ef-bf19-d01f" shared="true" type="max" value="1"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="puntos" value="5"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-        </entryLink>
-        <entryLink name="Garras aceradas" id="2ea7-af64-7f0b-dc30" hidden="false" import="true" sortIndex="2" targetId="450c-77d4-9cb7-ae88" type="selectionEntry">
-          <constraints>
-            <constraint id="0da1-90d4-4a7c-2d18-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
-            <constraint id="0da1-90d4-4a7c-2d18-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-        </entryLink>
-        <entryLink name="Aura de sometimiento" id="88ef-757a-8476-dd6f" hidden="false" import="true" sortIndex="3" targetId="672d-4d71-5750-0221" type="selectionEntry">
-          <constraints>
-            <constraint id="22dd-9b6c-d1e0-e077-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
-            <constraint id="22dd-9b6c-d1e0-e077-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
+    <selectionEntry name="Icono del caos" id="b147-9820-fd1c-16bb" hidden="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink name="Veloces" id="51bc-5f56-e770-bcb8" hidden="false" targetId="d110-fc1c-250c-54d4" type="rule"/>
+        <infoLink name="Icono del caos" id="57cc-0691-6e13-fa1f" hidden="false" targetId="49fe-4272-08b6-d15b" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Aura de sometimiento" id="672d-4d71-5750-0221" hidden="false" import="true" type="upgrade">
+    <selectionEntry name="Instrumento del caos" id="8ae5-7a70-17e4-5f63" hidden="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink name="Granadas de asalto" id="5a66-2749-8998-6bab" hidden="false" targetId="b1c6-9a9a-fc08-321d" type="rule"/>
-        <infoLink name="Granadas defensivas" id="49f4-d716-8456-244b" hidden="false" targetId="e4b4-fbcb-fe82-edaf" type="rule"/>
-        <infoLink name="Aura de sometimiento" id="c899-730d-39dd-b182" hidden="false" targetId="6535-d8f7-a46d-2110" type="profile"/>
+        <infoLink name="Instrumento del caos" id="2632-bdd3-93bf-dd95" hidden="false" targetId="3810-cee1-4061-f154" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Portadores de plaga de Nurgle" id="1df1-e953-c011-06d8" hidden="false" import="true" type="unit">
-      <entryLinks>
-        <entryLink name="Portador de Plaga de Nurgle" id="2d50-15a1-74e0-ad08" hidden="false" import="true" sortIndex="1" targetId="56ac252f-d9b7-434f-a283-7d8ff3c1c9c7" type="selectionEntry">
-          <constraints>
-            <constraint id="f8fb-7256-0d44-7089" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="5"/>
-            <constraint id="2e42-6e33-1627-3f0a" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="20"/>
-          </constraints>
-          <costs>
-            <cost name="Pts" typeId="puntos" value="15"/>
-          </costs>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Regalos demoniacos" id="132a-08f6-ef2d-3966" hidden="false">
-              <constraints>
-                <constraint id="5857-b913-4c96-199b" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-              </constraints>
-              <entryLinks>
-                <entryLink name="Toque nocivo" id="e0a7-541d-8852-e4df" collapsible="true" hidden="false" import="true" sortIndex="2" targetId="70b2-ccb3-4af1-076e" type="selectionEntry">
-                  <constraints>
-                    <constraint id="a97d-6a42-49a4-fbf6" field="selections" includeChildForces="false" includeChildSelections="true" scope="1df1-e953-c011-06d8" shared="true" type="max" value="1"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="puntos" value="10"/>
-                  </costs>
-                </entryLink>
-                <entryLink name="Icono del caos" id="1740-19aa-8df0-be31" collapsible="true" hidden="false" import="true" sortIndex="3" targetId="b147-9820-fd1c-16bb" type="selectionEntry">
-                  <constraints>
-                    <constraint id="83ac-27d4-f516-508c" field="selections" includeChildForces="false" includeChildSelections="true" scope="1df1-e953-c011-06d8" shared="true" type="max" value="1"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="puntos" value="25"/>
-                  </costs>
-                </entryLink>
-                <entryLink name="Instrumento del caos" id="b23f-c7e5-727c-edd1" collapsible="true" hidden="false" import="true" sortIndex="1" targetId="8ae5-7a70-17e4-5f63" type="selectionEntry">
-                  <constraints>
-                    <constraint id="191a-a53c-cb19-77b6" field="selections" includeChildForces="false" includeChildSelections="true" scope="1df1-e953-c011-06d8" shared="true" type="max" value="1"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="puntos" value="5"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-        </entryLink>
-        <entryLink name="Espada de plaga" id="4791-1748-20e2-c4ae" hidden="false" import="true" sortIndex="2" targetId="84b0-e4bd-dfb6-b4f4" type="selectionEntry">
-          <constraints>
-            <constraint id="74cd-8b5d-aca3-d158-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
-            <constraint id="74cd-8b5d-aca3-d158-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
+    <selectionEntry name="Maestro hechicero" id="90af-9414-5650-9992" hidden="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink name="No Hay Dolor" id="36fb-73e3-2214-976f" hidden="false" targetId="fe28-c924-099d-aa4e" type="rule"/>
-        <infoLink name="Avance Sistemático" id="62b7-f898-1cab-fdf6" hidden="false" targetId="bb8e-642b-6fbc-bb61" type="rule"/>
+        <infoLink name="Maestro hechicero" id="fddd-e440-665d-b2c8" hidden="false" targetId="3fda-29ec-2e43-a788" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Espada de plaga" id="84b0-e4bd-dfb6-b4f4" hidden="false" import="true" type="upgrade">
+    <selectionEntry name="Mirada demoníaca" id="ca0c-efd8-d2f4-022d" hidden="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink name="Espada de plaga" id="2449-ec58-4c2b-d050" hidden="false" targetId="988a-2b66-51d6-9ec6" type="profile"/>
+        <infoLink name="Mirada demoníaca" id="2833-fe9c-2465-52b9" hidden="false" targetId="9156-2b07-9730-9523" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Horrores Rosas de Tzeentch" id="2e8e-23a8-ed4a-ef06" hidden="false" import="true" type="unit">
-      <entryLinks>
-        <entryLink name="Fuego disforme" id="83aa-841d-a4d8-8d35" hidden="false" import="true" sortIndex="2" targetId="e2f9-87aa-7dfc-5ccf" type="selectionEntry">
-          <constraints>
-            <constraint id="10fe-7c93-d615-5c5f-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
-            <constraint id="10fe-7c93-d615-5c5f-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Horrores" id="d90d-afe4-28e2-9de9" hidden="false">
-          <constraints>
-            <constraint id="66cc-390f-9136-1f8b" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="5"/>
-            <constraint id="b142-7bca-f785-bd99" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="20"/>
-          </constraints>
-          <entryLinks>
-            <entryLink name="El Cambiante" id="9f8f-8179-1222-624f" collapsible="true" hidden="false" import="true" sortIndex="2" targetId="8c2b2452-bd7a-4e0c-b87c-98d795aafc26" type="selectionEntry">
-              <constraints>
-                <constraint id="264f-efdc-f958-2b13" field="selections" includeChildForces="true" includeChildSelections="true" scope="roster" shared="true" type="max" value="1"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="puntos" value="22"/>
-              </costs>
-            </entryLink>
-            <entryLink name="Horror Rosa de Tzeentch" id="0536-a126-4671-9794" defaultAmount="5" hidden="false" import="true" sortIndex="1" targetId="07ca580e-e405-459e-8357-3eafab6e290f" type="selectionEntry">
-              <constraints>
-                <constraint id="e086-e31a-26eb-4432" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="4"/>
-                <constraint id="ebc0-f1b1-219b-c48c" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="20"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="puntos" value="17"/>
-              </costs>
-              <entryLinks>
-                <entryLink name="Fuego disforme" id="e9ef-a969-5f9f-bd6a" hidden="false" import="true" targetId="e2f9-87aa-7dfc-5ccf" type="selectionEntry">
-                  <constraints>
-                    <constraint id="aa1e-444d-06d6-a34d-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
-                    <constraint id="aa1e-444d-06d6-a34d-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Regalos demoniacos" id="972c-2d18-f0fe-33f4" hidden="false">
-                  <constraints>
-                    <constraint id="e136-056e-0268-e104" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink name="Rayo de Tzeentch" id="bfa6-8ad5-cf77-ae3a" collapsible="true" hidden="false" import="true" sortIndex="3" targetId="d260-0ae8-6483-f9aa" type="selectionEntry">
-                      <constraints>
-                        <constraint id="0bbc-8f71-53bf-10df" field="selections" includeChildForces="false" includeChildSelections="true" scope="2e8e-23a8-ed4a-ef06" shared="true" type="max" value="1"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="puntos" value="10"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink name="Icono del caos" id="4f26-6856-6cbf-d12e" collapsible="true" hidden="false" import="true" sortIndex="4" targetId="b147-9820-fd1c-16bb" type="selectionEntry">
-                      <constraints>
-                        <constraint id="90c3-2319-2519-05cd" field="selections" includeChildForces="false" includeChildSelections="true" scope="2e8e-23a8-ed4a-ef06" shared="true" type="max" value="1"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="puntos" value="25"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink name="Instrumento del caos" id="bdff-68e0-c96d-c50e" collapsible="true" hidden="false" import="true" sortIndex="2" targetId="8ae5-7a70-17e4-5f63" type="selectionEntry">
-                      <constraints>
-                        <constraint id="9072-41d1-c582-19ae" field="selections" includeChildForces="false" includeChildSelections="true" scope="2e8e-23a8-ed4a-ef06" shared="true" type="max" value="1"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="puntos" value="5"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-    </selectionEntry>
-    <selectionEntry name="Mastines de Khorne" id="6715-901c-a6a2-74b2" hidden="false" import="true" type="unit">
-      <entryLinks>
-        <entryLink name="Bendición del dios de la sangre" id="c750-1809-befb-2e8c" hidden="false" import="true" targetId="e2eb-88f7-acaa-b48a" type="selectionEntry">
-          <constraints>
-            <constraint id="7b86-6fa6-0d4e-ff0b-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
-            <constraint id="7b86-6fa6-0d4e-ff0b-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
+    <selectionEntry name="Mirada hipnótica" id="644e-8196-62b8-e778" hidden="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink name="Asalto Rabioso" id="226a-1702-b61e-5501" hidden="false" targetId="33b4-1a73-92db-e562" type="rule"/>
-        <infoLink name="Bestias y Caballería" id="c18c-eb19-c419-cab1" hidden="false" targetId="1c05-d1e6-a25a-918b" type="rule"/>
-      </infoLinks>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Mastines" id="6c58-0f1a-f9ed-a5f4" hidden="false">
-          <constraints>
-            <constraint id="66f1-c7f4-157c-2162" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="5"/>
-            <constraint id="aa32-02d8-c097-d103" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="20"/>
-          </constraints>
-          <entryLinks>
-            <entryLink name="Mastín de Khorne" id="0055-6632-8877-bfc7" defaultAmount="5" hidden="false" import="true" sortIndex="1" targetId="314298aa-d640-4c10-8abc-bd63d690c7b8" type="selectionEntry">
-              <constraints>
-                <constraint id="28f5-0514-ae24-7d10" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="4"/>
-                <constraint id="8ec2-aca1-5af2-c4e8" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="20"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="puntos" value="15"/>
-              </costs>
-              <entryLinks>
-                <entryLink name="Furia de Khorne" id="9cc6-741f-f988-d5f6" hidden="false" import="true" targetId="f606-5645-34f2-1538" type="selectionEntry">
-                  <constraints>
-                    <constraint id="b5c3-e833-fef0-bb04" field="selections" includeChildSelections="true" scope="6715-901c-a6a2-74b2" shared="true" type="max" value="1"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="puntos" value="10"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </entryLink>
-            <entryLink name="Karanak" id="875f-c1d3-92ad-3b2a" hidden="false" import="true" sortIndex="2" targetId="389cfe20-39e2-47db-bcdf-10640319f237" type="selectionEntry">
-              <constraints>
-                <constraint id="b087-7e66-2922-0a27" field="selections" includeChildSelections="true" scope="roster" shared="true" type="max" value="1"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="puntos" value="50"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-    </selectionEntry>
-    <selectionEntry name="Rastreaalmas de Slaanesh" id="eb25-c382-f077-35b4" hidden="false" import="true" type="unit">
-      <entryLinks>
-        <entryLink name="Rastreaalmas de Slaanesh" id="1183-8314-7b68-d6a9" hidden="false" import="true" sortIndex="1" targetId="9c3ad571-8eb8-4dda-90ac-602a0a6c532d" type="selectionEntry">
-          <constraints>
-            <constraint id="411e-3e1e-961b-49cc" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="5"/>
-            <constraint id="45f8-e34c-b38d-44a1" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="20"/>
-          </constraints>
-          <costs>
-            <cost name="Pts" typeId="puntos" value="17"/>
-          </costs>
-          <selectionEntryGroups>
-            <selectionEntryGroup name="Regalos demoniacos" id="51ba-b03e-1f14-c0f6" hidden="false">
-              <constraints>
-                <constraint id="033e-aa56-ed0e-4e00" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-              </constraints>
-              <entryLinks>
-                <entryLink name="Mirada hipnótica" id="948b-9a6c-05ad-f660" collapsible="true" hidden="false" import="true" sortIndex="2" targetId="644e-8196-62b8-e778" type="selectionEntry">
-                  <constraints>
-                    <constraint id="bd74-5d5b-4f71-acb8" field="selections" includeChildForces="false" includeChildSelections="true" scope="eb25-c382-f077-35b4" shared="true" type="max" value="1"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="puntos" value="5"/>
-                  </costs>
-                </entryLink>
-                <entryLink name="Icono del caos" id="847b-0e00-1e18-3413" collapsible="true" hidden="false" import="true" sortIndex="3" targetId="b147-9820-fd1c-16bb" type="selectionEntry">
-                  <constraints>
-                    <constraint id="588d-0c77-bc4e-d419" field="selections" includeChildForces="false" includeChildSelections="true" scope="eb25-c382-f077-35b4" shared="true" type="max" value="1"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="puntos" value="25"/>
-                  </costs>
-                </entryLink>
-                <entryLink name="Instrumento del caos" id="787f-133e-3302-c471" collapsible="true" hidden="false" import="true" sortIndex="1" targetId="8ae5-7a70-17e4-5f63" type="selectionEntry">
-                  <constraints>
-                    <constraint id="33ed-7f5b-59a5-89e1" field="selections" includeChildForces="false" includeChildSelections="true" scope="eb25-c382-f077-35b4" shared="true" type="max" value="1"/>
-                  </constraints>
-                  <costs>
-                    <cost name="Pts" typeId="puntos" value="5"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
-        </entryLink>
-        <entryLink name="Garras aceradas" id="5af7-fc1e-703f-766f" hidden="false" import="true" sortIndex="2" targetId="450c-77d4-9cb7-ae88" type="selectionEntry">
-          <constraints>
-            <constraint id="5ad4-5765-83a3-038a-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
-            <constraint id="5ad4-5765-83a3-038a-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-        </entryLink>
-        <entryLink name="Aura de sometimiento" id="4ad5-aa61-0bec-4e6f" hidden="false" import="true" sortIndex="3" targetId="672d-4d71-5750-0221" type="selectionEntry">
-          <constraints>
-            <constraint id="6ee1-4025-c69d-fa3f-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
-            <constraint id="6ee1-4025-c69d-fa3f-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-        </entryLink>
-      </entryLinks>
-      <infoLinks>
-        <infoLink name="Bestias y Caballería" id="74e6-795a-5cb9-6b2a" hidden="false" targetId="1c05-d1e6-a25a-918b" type="rule"/>
+        <infoLink name="Mirada hipnótica" id="a3c4-d679-485c-6025" hidden="false" targetId="e7f4-96b5-1439-e0c1" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Aulladores de Tzeentch" id="c0d8-3569-391d-5b48" hidden="false" import="true" type="unit">
-      <entryLinks>
-        <entryLink name="Aullador de Tzeentch" id="164c-68fa-8891-0326" defaultAmount="5" hidden="false" import="true" targetId="091dd97a-e5c7-4d40-8f8c-953e28ed0276" type="selectionEntry">
-          <constraints>
-            <constraint id="9161-bbc2-24da-2616" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="3"/>
-            <constraint id="a64a-ab0a-becc-008b" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="12"/>
-          </constraints>
-          <costs>
-            <cost name="Pts" typeId="puntos" value="16"/>
-          </costs>
-          <entryLinks>
-            <entryLink name="Fuerza impía" id="478f-bd13-db73-8a31" collapsible="true" hidden="false" import="true" targetId="ef19-09f8-c6fa-368e" type="selectionEntry">
-              <constraints>
-                <constraint id="891c-cbd9-90e7-a3dc" field="selections" includeChildForces="false" includeChildSelections="true" scope="c0d8-3569-391d-5b48" shared="true" type="max" value="1"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="puntos" value="5"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </entryLink>
-      </entryLinks>
+    <selectionEntry name="Nube de moscas" id="2906-e593-8147-d1be" hidden="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink name="Motocicletas a reacción" id="53d8-c011-2996-f541" hidden="false" targetId="6fea-20ca-60b6-f234" type="rule"/>
+        <infoLink name="Granadas de asalto" id="7c4b-67b3-38a3-a10b" hidden="false" targetId="b1c6-9a9a-fc08-321d" type="rule"/>
+        <infoLink name="Granadas defensivas" id="fc01-96f9-0b9f-dbf7" hidden="false" targetId="e4b4-fbcb-fe82-edaf" type="rule"/>
+        <infoLink name="Nube de moscas" id="cbae-ccb9-551a-fe2f" hidden="false" targetId="f175-a04f-6d3a-0b83" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Furias del Caos" id="831c-708c-18fb-77a1" hidden="false" import="true" type="unit">
-      <entryLinks>
-        <entryLink name="Furia del Caos" id="49b5-6914-f40f-5cc8" hidden="false" import="true" targetId="78175857-3a67-481e-af43-de41fabbcbc7" type="selectionEntry">
-          <constraints>
-            <constraint id="721d-fef9-738e-ce1a" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="5"/>
-            <constraint id="275f-ed51-5581-f674" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="20"/>
-          </constraints>
-          <costs>
-            <cost name="Pts" typeId="puntos" value="15"/>
-          </costs>
-        </entryLink>
-      </entryLinks>
+    <selectionEntry name="Pavana de Slaanesh" id="b550-ae88-f905-5ff0" hidden="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink name="Unidad retropropulsada" id="6e51760d-5666-472a-868f-122e8cfec5d0" hidden="false" targetId="d6f4-cfda-75c5-f2f1" type="rule"/>
+        <infoLink name="Pavana de Slaanesh" id="f44e-2d89-0b21-3af0" hidden="false" targetId="7a6d-d7a8-c056-eb63" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Piel de hierro" id="304a-6d02-d208-6aff" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Piel de hierro" id="d08c-7f73-839c-a076" hidden="false" targetId="452e-9d86-fda4-f26e" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Proyectil letal" id="8ab9-a0cc-79c3-0f48" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Proyectil letal" id="f34b-6d7c-c1a4-b987" hidden="false" targetId="39fb-192a-6117-2f1f" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Rayo de Tzeentch" id="d260-0ae8-6483-f9aa" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Rayo de tzeentch" id="dda8-f2f3-bf60-799c" hidden="false" targetId="e466-4cfb-1164-4305" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Somos legión" id="2082-8938-9ee3-a1f5" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Somos legión" id="b61c-f781-a4d1-cff1" hidden="false" targetId="1bb3-568f-eeaf-2253" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Toque nocivo" id="70b2-ccb3-4af1-076e" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Toque nocivo" id="7434-9d94-48fc-6f54" hidden="false" targetId="c869-4a4f-fa14-b3f4" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Vuelo demoníaco" id="6738-f1f3-b112-68f9" hidden="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink name="Vuelo demoníaco" id="e8fe-d98b-1afc-07ac" hidden="false" targetId="1a46-30eb-e948-919b" type="profile"/>
+        <infoLink name="Unidad retropropulsada" id="6092-95e8-eaee-aea2" hidden="false" targetId="d6f4-cfda-75c5-f2f1" type="rule"/>
       </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
