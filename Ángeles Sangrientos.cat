@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Ángeles Sangrientos" id="0bd2-882e-45d3-4a62" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="14" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Ángeles Sangrientos" id="0bd2-882e-45d3-4a62" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="15" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink name="Astorath el siniestro" id="e67513f3-0100-513d-9c20-4354ac74503c" collective="false" hidden="false" import="true" targetId="58277361-f888-5d25-98ae-d0d18f93a6d3" type="selectionEntry">
       <categoryLinks>
@@ -4480,7 +4480,13 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
         <cost name="Pts" typeId="puntos" value="0"/>
       </costs>
       <entryLinks>
-        <entryLink name="Transporte Asignado" id="3bd1366f-fff4-4721-ba0b-ca1010c3a282" collective="false" hidden="false" import="true" sortIndex="3" targetId="4f64e227-7955-479a-b05f-5b29c0923454" type="selectionEntryGroup"/>
+        <entryLink name="Munición especial" id="31ac3fb2-b30b-417e-afe6-479b2f2330e1" collective="false" hidden="false" import="true" sortIndex="3" targetId="6bc95170-99d6-52c8-944e-be25dc6e46bf" type="selectionEntry">
+          <constraints>
+            <constraint id="836677eb-971e-4867-bb75-9d6d6e9525b8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="9bb786ce-f5af-4c2b-a6e5-7f71e441de20" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+        </entryLink>
+        <entryLink name="Transporte Asignado" id="3bd1366f-fff4-4721-ba0b-ca1010c3a282" collective="false" hidden="false" import="true" sortIndex="4" targetId="4f64e227-7955-479a-b05f-5b29c0923454" type="selectionEntryGroup"/>
       </entryLinks>
       <infoLinks>
         <infoLink name="Y no conocerán el miedo" id="fa46a046-ebb5-557a-a89e-c9423462bcb7" hidden="false" targetId="5ce7-70c4-4a99-db0d" type="rule"/>
@@ -4513,12 +4519,6 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
               <constraints>
                 <constraint id="e7543996-54bc-5b8d-8d22-f9add75c8fab" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                 <constraint id="623d13b9-7565-522f-b25b-a0fdbddf629d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-              </constraints>
-            </entryLink>
-            <entryLink name="Munición especial" id="389c649b-45df-56da-a5f6-4b464038ed72" collective="false" hidden="false" import="true" targetId="6bc95170-99d6-52c8-944e-be25dc6e46bf" type="selectionEntry">
-              <constraints>
-                <constraint id="05c24f97-b309-5a7d-9346-d49e621bde48" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                <constraint id="25fbb2b6-3f04-5f21-8482-e077d872f7bf" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
             <entryLink name="Bombas de fusión" id="a4dec6ec-17d6-5247-a809-67b7e4095cec" collective="false" hidden="false" import="true" targetId="1df535b4-9762-4052-99f5-19e0b1d5a183" type="selectionEntry">
@@ -4654,12 +4654,6 @@ El objetivo no cambiará su encaramiento y se detendrá si llega a estar a 3cm d
               <constraints>
                 <constraint id="ff960905-02d8-5374-9648-d19d8dbc0f97" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                 <constraint id="d9fd7c3d-9b9d-55d6-8e85-6aae3f9af6d6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-              </constraints>
-            </entryLink>
-            <entryLink name="Munición especial" id="46104348-bab1-5db7-8337-64a21c529e66" collective="false" hidden="false" import="true" targetId="6bc95170-99d6-52c8-944e-be25dc6e46bf" type="selectionEntry">
-              <constraints>
-                <constraint id="bd610f15-1557-5dab-b2e0-7577a49663b2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                <constraint id="ff78d008-5090-5152-bb3a-2b571df6da3b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
             </entryLink>
           </entryLinks>
