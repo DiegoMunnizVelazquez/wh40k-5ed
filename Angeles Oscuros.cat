@@ -682,6 +682,13 @@ Los personajes independientes con armadura de exterminador también pueden despl
             <constraint id="e2d2-cca9-cc4e-95a8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
             <constraint id="4cfd-2bcc-2a5c-e993" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
           </constraints>
+          <entryLinks>
+            <entryLink name="Par de cuchillas relámpago" id="004d4db6-2875-4d41-9e3a-d49bd0f7274a" collective="false" hidden="false" import="true" sortIndex="3" targetId="273cbaad-1393-47a8-b8e5-637e92778486" type="selectionEntry">
+              <constraints>
+                <constraint id="382e6523-26df-4b9b-8d6f-cb14d6f24b8e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
           <selectionEntries>
             <selectionEntry name="Espada y Bolter de Asalto" id="7bba-51c6-a135-25d5" collective="false" hidden="false" import="true" sortIndex="1" type="upgrade">
               <constraints>
@@ -720,7 +727,7 @@ Los personajes independientes con armadura de exterminador también pueden despl
                 </selectionEntry>
               </selectionEntries>
             </selectionEntry>
-            <selectionEntry name="Martillo y Escudo" id="e5d6-028d-d943-69e0" collective="false" hidden="false" import="true" sortIndex="3" type="upgrade">
+            <selectionEntry name="Martillo y Escudo" id="e5d6-028d-d943-69e0" collective="false" hidden="false" import="true" sortIndex="2" type="upgrade">
               <constraints>
                 <constraint id="4be5-3e50-3d4a-f2ba" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
@@ -736,26 +743,6 @@ Los personajes independientes con armadura de exterminador también pueden despl
                 <entryLink name="Escudo de Tormenta" id="7820-8aaa-6884-e6dd" collective="false" hidden="false" import="true" targetId="b809-4f58-c37f-459f" type="selectionEntry">
                   <constraints>
                     <constraint id="373d-6006-9543-f505" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntry>
-            <selectionEntry name="Cuchillas Relampago" id="a917-2118-a81c-ecde" collective="false" hidden="false" import="true" sortIndex="2" type="upgrade">
-              <constraints>
-                <constraint id="ac14-1bbc-4c12-bfa1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="puntos" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink name="Cuchilla Relámpago" id="9a8d-3700-5fe3-62eb" collective="false" hidden="false" import="true" targetId="b653-7261-455e-348c" type="selectionEntry">
-                  <constraints>
-                    <constraint id="da75-5746-4569-317a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                  </constraints>
-                </entryLink>
-                <entryLink name="Cuchilla Relámpago" id="9c63-422e-34ad-8abf" collective="false" hidden="false" import="true" targetId="b653-7261-455e-348c" type="selectionEntry">
-                  <constraints>
-                    <constraint id="f2df-8d22-6b2f-d758" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -1907,25 +1894,15 @@ Los personajes independientes con armadura de exterminador también pueden despl
                 <cost name="Pts" typeId="puntos" value="30"/>
               </costs>
             </entryLink>
-          </entryLinks>
-          <selectionEntries>
-            <selectionEntry name="Par de cuchillas relámpago" id="f3e63042-54b2-4fa2-a24b-a2cc342f3b6d" collapsible="true" hidden="false" import="true" sortIndex="6" type="upgrade">
+            <entryLink name="Par de cuchillas relámpago" id="94cd3d35-cf0b-403b-9f38-76158412bb92" collective="false" hidden="false" import="true" sortIndex="6" targetId="273cbaad-1393-47a8-b8e5-637e92778486" type="selectionEntry">
               <constraints>
-                <constraint id="b019ba84-8178-452f-9649-8af58b256707" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                <constraint id="f9ade06b-6ac2-477c-adf4-b064938cfda4" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
               <costs>
                 <cost name="Pts" typeId="puntos" value="30"/>
               </costs>
-              <entryLinks>
-                <entryLink name="Cuchilla relámpago" id="cb7f5ed8-6200-4e40-ad58-e2595ddb4b5e" collective="false" hidden="false" import="true" targetId="b653-7261-455e-348c" type="selectionEntry">
-                  <constraints>
-                    <constraint id="dc0a7553-6f79-4f28-beb4-9c09201e728c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
-                    <constraint id="1a8d3db3-d8eb-4a9b-8c5e-4ad606dfc749" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntry>
-          </selectionEntries>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup name="Arma adicional" id="89bc16ff-185a-4f1f-b010-3d7e36fb4a03" collapsible="true" collective="false" hidden="false" import="true" sortIndex="7">
           <constraints>
@@ -3537,28 +3514,18 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                         <cost name="Pts" typeId="puntos" value="15"/>
                       </costs>
                     </entryLink>
-                  </entryLinks>
-                  <selectionEntries>
-                    <selectionEntry name="Par de Cuchillas Relámpago" id="a408-da10-e033-28ac" hidden="false" import="true" sortIndex="10" type="upgrade">
+                    <entryLink name="Par de cuchillas relámpago" id="9f3fdd14-b326-48bb-9c76-1f51594bc4c4" collective="false" hidden="false" import="true" sortIndex="10" targetId="273cbaad-1393-47a8-b8e5-637e92778486" type="selectionEntry">
                       <categoryLinks>
                         <categoryLink name="Arma Limitada" id="fc94-4000-e67a-69c9" hidden="false" primary="false" targetId="354e-8430-56e8-0d17"/>
                       </categoryLinks>
                       <constraints>
-                        <constraint id="b3c2-1c84-27fc-3c55" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+                        <constraint id="51659641-7326-43c4-aa2c-5d2df66f554d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
                       <costs>
                         <cost name="Pts" typeId="puntos" value="30"/>
                       </costs>
-                      <entryLinks>
-                        <entryLink name="Cuchilla Relámpago" id="6627-25e8-6cec-e5b0" hidden="false" import="true" targetId="b653-7261-455e-348c" type="selectionEntry">
-                          <constraints>
-                            <constraint id="0d57-6568-5078-4ff3-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="2"/>
-                            <constraint id="0d57-6568-5078-4ff3-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="2"/>
-                          </constraints>
-                        </entryLink>
-                      </entryLinks>
-                    </selectionEntry>
-                  </selectionEntries>
+                    </entryLink>
+                  </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
@@ -3595,7 +3562,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                     <constraint id="4157dbf3-99a4-4f7c-ac9e-42cabb33a425" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Par de cuchillas relámpago" id="a8a40848-d3ac-4427-a6a9-312d69775292" collective="false" hidden="false" import="true" sortIndex="3" targetId="b653-7261-455e-348c" type="selectionEntry">
+                    <entryLink name="Par de cuchillas relámpago" id="a8a40848-d3ac-4427-a6a9-312d69775292" collective="false" hidden="false" import="true" sortIndex="3" targetId="273cbaad-1393-47a8-b8e5-637e92778486" type="selectionEntry">
                       <constraints>
                         <constraint id="2277c7c9-db30-41e0-aa1b-51bc80322fd2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -3800,7 +3767,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                     <constraint id="a07dece5-57e8-4761-a8c9-d4e7104aac0c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Par de cuchillas relámpago" id="edcf4ab8-5a1b-4536-90e7-67faf5f80e0a" collective="false" hidden="false" import="true" sortIndex="3" targetId="b653-7261-455e-348c" type="selectionEntry">
+                    <entryLink name="Par de cuchillas relámpago" id="edcf4ab8-5a1b-4536-90e7-67faf5f80e0a" collective="false" hidden="false" import="true" sortIndex="3" targetId="273cbaad-1393-47a8-b8e5-637e92778486" type="selectionEntry">
                       <constraints>
                         <constraint id="bebee68f-6083-4bc2-a2d7-0fb1ed7fb386" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -3910,7 +3877,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                     <constraint id="81e75fd8-0945-4da9-9fdf-18bc08f431f5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Par de cuchillas relámpago" id="00fcf333-4c13-4dd6-af23-c420228eff84" collective="false" hidden="false" import="true" sortIndex="3" targetId="b653-7261-455e-348c" type="selectionEntry">
+                    <entryLink name="Par de cuchillas relámpago" id="00fcf333-4c13-4dd6-af23-c420228eff84" collective="false" hidden="false" import="true" sortIndex="3" targetId="273cbaad-1393-47a8-b8e5-637e92778486" type="selectionEntry">
                       <constraints>
                         <constraint id="03c5502e-4b96-4e83-af02-965abd0a4bd6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -4115,7 +4082,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                     <constraint id="f4c7710b-6c65-44bd-b934-ba52d86c3170" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Par de cuchillas relámpago" id="28b07b1f-2c1f-4e52-9dd0-d6cb8662657f" collective="false" hidden="false" import="true" sortIndex="3" targetId="b653-7261-455e-348c" type="selectionEntry">
+                    <entryLink name="Par de cuchillas relámpago" id="28b07b1f-2c1f-4e52-9dd0-d6cb8662657f" collective="false" hidden="false" import="true" sortIndex="3" targetId="273cbaad-1393-47a8-b8e5-637e92778486" type="selectionEntry">
                       <constraints>
                         <constraint id="12138cc0-e702-4ccd-baeb-0f2200acc8b0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -4225,7 +4192,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                     <constraint id="41c93033-5dda-4836-92a6-7953e678873e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Par de cuchillas relámpago" id="5b3932f8-bf1c-485e-947e-0073ea7401bd" collective="false" hidden="false" import="true" sortIndex="3" targetId="b653-7261-455e-348c" type="selectionEntry">
+                    <entryLink name="Par de cuchillas relámpago" id="5b3932f8-bf1c-485e-947e-0073ea7401bd" collective="false" hidden="false" import="true" sortIndex="3" targetId="273cbaad-1393-47a8-b8e5-637e92778486" type="selectionEntry">
                       <constraints>
                         <constraint id="3bba1507-b4b8-4e5e-8403-b7c08486c453" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -4430,7 +4397,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                     <constraint id="28151984-89b9-47f2-a286-5d64e67876cc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Par de cuchillas relámpago" id="02d9edd5-a5fd-4349-89ca-f0c4f2bf93b6" collective="false" hidden="false" import="true" sortIndex="3" targetId="b653-7261-455e-348c" type="selectionEntry">
+                    <entryLink name="Par de cuchillas relámpago" id="02d9edd5-a5fd-4349-89ca-f0c4f2bf93b6" collective="false" hidden="false" import="true" sortIndex="3" targetId="273cbaad-1393-47a8-b8e5-637e92778486" type="selectionEntry">
                       <constraints>
                         <constraint id="cb316ef2-10d2-4455-ab34-2f3165e4963b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
@@ -6610,6 +6577,14 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
       </costs>
       <infoLinks>
         <infoLink name="Pala Excavadora" id="a3c3-3043-c103-9bf1" hidden="false" targetId="cc87-4ebb-33bb-a377" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Par de cuchillas relámpago" id="273cbaad-1393-47a8-b8e5-637e92778486" collective="false" hidden="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Pts" typeId="puntos" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Cuchillas Relámpago" id="99b22a0c-41b6-41b8-ae45-260d88c39a41" hidden="false" targetId="729e-f6e7-1eea-7223" type="profile"/>
       </infoLinks>
     </selectionEntry>
     <selectionEntry name="Pistola Bolter" id="9f67-3f57-ebe8-1dbb" collective="false" hidden="false" import="true" type="upgrade">
