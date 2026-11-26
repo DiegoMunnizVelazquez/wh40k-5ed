@@ -2740,7 +2740,7 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
                 <infoLink name="Pistola Bólter" id="69e0-353e-51c2-3d0c" hidden="false" targetId="42da-250f-adf8-65a7" type="profile"/>
               </infoLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Arma Principal" id="a30a-55a7-88e9-7d34" collective="false" defaultSelectionEntryId="a236-a1b9-555e-688e" hidden="false" import="true">
+                <selectionEntryGroup name="Arma Principal" id="a30a-55a7-88e9-7d34" collective="false" defaultSelectionEntryId="a236-a1b9-555e-688e" hidden="false" import="true" sortIndex="1">
                   <comment>Equipo con servo/artesanal</comment>
                   <constraints>
                     <constraint id="e173-609a-67e2-77f8-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
@@ -2794,7 +2794,7 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
                 <infoLink name="Pistola Bólter" id="7b72-d4fd-79bc-d018" hidden="false" targetId="42da-250f-adf8-65a7" type="profile"/>
               </infoLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Arma" id="db3c-5886-22fd-43ac" collective="false" defaultSelectionEntryId="382f-27fe-0159-e5ca" hidden="false" import="true">
+                <selectionEntryGroup name="Arma" id="db3c-5886-22fd-43ac" collective="false" defaultSelectionEntryId="382f-27fe-0159-e5ca" hidden="false" import="true" sortIndex="1">
                   <constraints>
                     <constraint id="8186-5366-a18b-0480-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
                     <constraint id="8186-5366-a18b-0480-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
@@ -2837,7 +2837,7 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
                 <cost name="Pts" typeId="puntos" value="28"/>
               </costs>
               <entryLinks>
-                <entryLink name="Bombas de Fusión" id="bfbf-2120-e9d0-38d1" collective="false" hidden="false" import="true" targetId="c050-e9ce-56a9-f904" type="selectionEntry">
+                <entryLink name="Bombas de Fusión" id="bfbf-2120-e9d0-38d1" collective="false" hidden="false" import="true" sortIndex="3" targetId="c050-e9ce-56a9-f904" type="selectionEntry">
                   <constraints>
                     <constraint id="ebde-a3f1-be15-7636" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
@@ -2853,7 +2853,7 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
                 <infoLink name="Granadas Perforantes y de Fragmentación" id="04ee-472e-f237-f12a" hidden="false" targetId="e9fd-053f-940d-6f58" type="profile"/>
               </infoLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Arma Principal" id="1986-bbe7-857d-05fd" collective="false" defaultSelectionEntryId="4e78-0aa6-bf43-0536" hidden="false" import="true">
+                <selectionEntryGroup name="Arma Principal" id="1986-bbe7-857d-05fd" collective="false" defaultSelectionEntryId="4e78-0aa6-bf43-0536" hidden="false" import="true" sortIndex="1">
                   <constraints>
                     <constraint id="e2e5-1379-58d0-13df-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
                     <constraint id="e2e5-1379-58d0-13df-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
@@ -2905,7 +2905,7 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
                     </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="Pistola" id="ad50-266e-0daf-fa9a" collective="false" defaultSelectionEntryId="d2d2-25d7-6611-b3a1" hidden="false" import="true">
+                <selectionEntryGroup name="Pistola" id="ad50-266e-0daf-fa9a" collective="false" defaultSelectionEntryId="d2d2-25d7-6611-b3a1" hidden="false" import="true" sortIndex="2">
                   <constraints>
                     <constraint id="4e98-0c71-f90e-278c-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
                     <constraint id="4e98-0c71-f90e-278c-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
@@ -3189,7 +3189,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
     </selectionEntry>
     <selectionEntry name="Escuadra de Veteranos de la Compañía" id="11e1-69c3-bfd9-fce3" collective="false" hidden="false" import="true" page="63" publicationId="f176-f140-74d8-da7d" type="unit">
       <entryLinks>
-        <entryLink name="Bombas de Fusión" id="a623-df8a-ebec-b2c7" collective="false" hidden="false" import="true" targetId="c050-e9ce-56a9-f904" type="selectionEntry">
+        <entryLink name="Bombas de Fusión" id="a623-df8a-ebec-b2c7" collective="false" hidden="false" import="true" sortIndex="3" targetId="c050-e9ce-56a9-f904" type="selectionEntry">
           <constraints>
             <constraint id="eea8-a3bd-6322-15f2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="0"/>
           </constraints>
@@ -3210,7 +3210,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
         <infoLink name="Y no conocerán el miedo" id="011a-ebd2-8d10-eabe" hidden="false" targetId="5ce7-70c4-4a99-db0d" type="rule"/>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry name="Transporte Asignado" id="9113-fdb8-92d3-7221" collective="false" hidden="false" import="true" type="upgrade">
+        <selectionEntry name="Transporte Asignado" id="9113-fdb8-92d3-7221" collective="false" hidden="false" import="true" sortIndex="4" type="upgrade">
           <constraints>
             <constraint id="f53e-43ef-0702-4f35" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
@@ -3245,7 +3245,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Escudo" id="3156-e140-79af-29c3" defaultSelectionEntryId="3669-715e-b3b3-e0be" hidden="false">
+        <selectionEntryGroup name="Escudo" id="3156-e140-79af-29c3" defaultSelectionEntryId="3669-715e-b3b3-e0be" hidden="false" sortIndex="2">
           <entryLinks>
             <entryLink name="Escudo de Combate" id="3669-715e-b3b3-e0be" hidden="false" import="true" sortIndex="1" targetId="4c20-f278-6868-e5c4" type="selectionEntry">
               <constraints>
@@ -3281,7 +3281,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Veteranos" id="dfc7-0141-13c7-40e1" defaultSelectionEntryId="ce3a-6d50-b1e8-d2fa" hidden="false">
+        <selectionEntryGroup name="Veteranos" id="dfc7-0141-13c7-40e1" defaultSelectionEntryId="ce3a-6d50-b1e8-d2fa" hidden="false" sortIndex="1">
           <constraints>
             <constraint id="7afe-9779-d2cf-be5a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="5"/>
             <constraint id="e2a2-364c-03aa-e956" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="10"/>
@@ -3301,7 +3301,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                 <cost name="Pts" typeId="puntos" value="20"/>
               </costs>
               <entryLinks>
-                <entryLink name="Pistola Bolter" id="3b4a-68ed-c3da-63a5" collective="false" hidden="false" import="true" targetId="9f67-3f57-ebe8-1dbb" type="selectionEntry">
+                <entryLink name="Pistola Bolter" id="3b4a-68ed-c3da-63a5" collective="false" hidden="false" import="true" sortIndex="1" targetId="9f67-3f57-ebe8-1dbb" type="selectionEntry">
                   <constraints>
                     <constraint id="e768-e497-d967-4b0c-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
                     <constraint id="e768-e497-d967-4b0c-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
@@ -3309,7 +3309,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                 </entryLink>
               </entryLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Arma" id="2feb-ae48-9322-7c0a" defaultSelectionEntryId="a3fc-df72-170d-6151" hidden="false">
+                <selectionEntryGroup name="Arma" id="2feb-ae48-9322-7c0a" defaultSelectionEntryId="a3fc-df72-170d-6151" hidden="false" sortIndex="2">
                   <constraints>
                     <constraint id="12ca-6426-deb0-5c44-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
                     <constraint id="12ca-6426-deb0-5c44-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
@@ -3333,7 +3333,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                 <cost name="Pts" typeId="puntos" value="20"/>
               </costs>
               <entryLinks>
-                <entryLink name="Pistola Bolter" id="d9e2-ae40-01cf-7331" collective="false" hidden="false" import="true" targetId="9f67-3f57-ebe8-1dbb" type="selectionEntry">
+                <entryLink name="Pistola Bolter" id="d9e2-ae40-01cf-7331" collective="false" hidden="false" import="true" sortIndex="1" targetId="9f67-3f57-ebe8-1dbb" type="selectionEntry">
                   <constraints>
                     <constraint id="3a8f-45cd-bafa-c03a-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
                     <constraint id="3a8f-45cd-bafa-c03a-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
@@ -3341,7 +3341,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                 </entryLink>
               </entryLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Arma" id="6e0e-3ad0-c891-56c9" defaultSelectionEntryId="e6d9-15d6-1ce8-1cf4" hidden="false">
+                <selectionEntryGroup name="Arma" id="6e0e-3ad0-c891-56c9" defaultSelectionEntryId="e6d9-15d6-1ce8-1cf4" hidden="false" sortIndex="2">
                   <constraints>
                     <constraint id="a81b-9654-a6c2-e657-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
                     <constraint id="a81b-9654-a6c2-e657-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
@@ -3374,7 +3374,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                 <cost name="Pts" typeId="puntos" value="20"/>
               </costs>
               <entryLinks>
-                <entryLink name="Pistola Bolter" id="e05e-1b54-7009-cf2a" collective="false" hidden="false" import="true" targetId="9f67-3f57-ebe8-1dbb" type="selectionEntry">
+                <entryLink name="Pistola Bolter" id="e05e-1b54-7009-cf2a" collective="false" hidden="false" import="true" sortIndex="1" targetId="9f67-3f57-ebe8-1dbb" type="selectionEntry">
                   <constraints>
                     <constraint id="194b-9b28-dc86-2af9-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
                     <constraint id="194b-9b28-dc86-2af9-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
@@ -3382,7 +3382,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                 </entryLink>
               </entryLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Arma" id="439b-e6c3-7304-a70c" defaultSelectionEntryId="caee-cb38-b75b-13a7" hidden="false">
+                <selectionEntryGroup name="Arma" id="439b-e6c3-7304-a70c" defaultSelectionEntryId="caee-cb38-b75b-13a7" hidden="false" sortIndex="2">
                   <constraints>
                     <constraint id="28ad-73b1-a350-1b91-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
                     <constraint id="28ad-73b1-a350-1b91-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
@@ -3425,7 +3425,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                 <cost name="Pts" typeId="puntos" value="20"/>
               </costs>
               <entryLinks>
-                <entryLink name="Pistola Bolter" id="607f-3864-6899-4db9" collective="false" hidden="false" import="true" targetId="9f67-3f57-ebe8-1dbb" type="selectionEntry">
+                <entryLink name="Pistola Bolter" id="607f-3864-6899-4db9" collective="false" hidden="false" import="true" sortIndex="1" targetId="9f67-3f57-ebe8-1dbb" type="selectionEntry">
                   <constraints>
                     <constraint id="6df8-fa9f-a9df-88fc-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
                     <constraint id="6df8-fa9f-a9df-88fc-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
@@ -3433,7 +3433,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                 </entryLink>
               </entryLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Arma" id="9217-301f-ae33-ec8d" defaultSelectionEntryId="3b95-d01b-2962-5c40" hidden="false">
+                <selectionEntryGroup name="Arma" id="9217-301f-ae33-ec8d" defaultSelectionEntryId="3b95-d01b-2962-5c40" hidden="false" sortIndex="2">
                   <constraints>
                     <constraint id="31ac-cd38-fa0b-b9e3-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
                     <constraint id="31ac-cd38-fa0b-b9e3-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
