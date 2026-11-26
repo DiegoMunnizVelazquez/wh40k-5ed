@@ -3575,25 +3575,6 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
         <infoLink name="Asalto del Ala de Muerte" id="062c-1fd2-1985-c0b7" hidden="false" targetId="c3d0-c5be-dd49-ddd4" type="rule"/>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry name="Estandarte del Ala de Muerte" id="435d-2017-618b-d4a3" collective="false" hidden="true" import="true" type="upgrade">
-          <constraints>
-            <constraint id="13ce-c162-7afb-f401" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="max" value="1"/>
-            <constraint id="9234-d15e-1f47-9112" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="Pts" typeId="puntos" value="25"/>
-          </costs>
-          <modifiers>
-            <modifier field="hidden" type="set" value="false">
-              <conditions>
-                <condition childId="345c-4626-cf9d-30e3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="roster" shared="true" type="atLeast" value="1"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <infoLinks>
-            <infoLink name="Estandarte del Ala de Muerte" id="7894-8908-b646-a9af" hidden="false" targetId="2576-9e5e-9711-2d18" type="profile"/>
-          </infoLinks>
-        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Exterminadores" id="2e4e-3782-c943-7b56" collective="false" defaultSelectionEntryId="2207-b50a-91b4-2b34" hidden="false" import="true">
@@ -3604,7 +3585,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
           <selectionEntries>
             <selectionEntry name="Exterminador" id="2207-b50a-91b4-2b34" collective="false" hidden="false" import="true" sortIndex="1" type="model">
               <entryLinks>
-                <entryLink name="Bolter de Asalto" id="544a-f0a4-2ed2-7e15" collective="false" hidden="false" import="true" targetId="a5d0-4056-ad38-66dc" type="selectionEntry">
+                <entryLink name="Bolter de Asalto" id="544a-f0a4-2ed2-7e15" collective="false" hidden="false" import="true" sortIndex="1" targetId="a5d0-4056-ad38-66dc" type="selectionEntry">
                   <constraints>
                     <constraint id="4fbf-28aa-cbea-acf5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                   </constraints>
@@ -3615,7 +3596,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                 <infoLink name="Armadura de exterminador" id="8efc-26cf-1a16-e6f9" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
               </infoLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Puño" id="e496-a7cb-1c26-fdb8" collective="false" defaultSelectionEntryId="38f8-a6e4-d40c-c5f1" hidden="false" import="true">
+                <selectionEntryGroup name="Puño" id="e496-a7cb-1c26-fdb8" collective="false" defaultSelectionEntryId="38f8-a6e4-d40c-c5f1" hidden="false" import="true" sortIndex="2">
                   <constraints>
                     <constraint id="060e-efdf-6762-dcf0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                     <constraint id="21e8-a6cd-4d60-5700" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -3628,6 +3609,55 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                       </costs>
                     </entryLink>
                   </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Apotecario o portaestandarte" id="f27d1ce0-999b-41cd-8ba1-af97de7594f5" collapsible="true" collective="false" hidden="false" import="true" sortIndex="3">
+                  <constraints>
+                    <constraint id="05006c2e-fbd8-42b0-a24c-83388ff4c0e4" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="0"/>
+                    <constraint id="5dc75089-5e19-433d-9ff7-6450d477a43d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry name="Estandarte del Ala de Muerte" id="55e3866b-ddea-4206-87d8-3ae7b41c7674" collective="false" hidden="true" import="true" sortIndex="1" type="upgrade">
+                      <constraints>
+                        <constraint id="c347eb11-9cc5-46c3-912b-6cbc837077ab" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="25"/>
+                      </costs>
+                      <infoLinks>
+                        <infoLink name="Estandarte del Ala de Muerte" id="d492a6dc-9f76-49ef-ae65-6fd601dd2cfe" hidden="false" targetId="2576-9e5e-9711-2d18" type="profile"/>
+                      </infoLinks>
+                      <modifiers>
+                        <modifier field="hidden" type="set" value="false">
+                          <conditions>
+                            <condition childId="345c-4626-cf9d-30e3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="roster" shared="true" type="atLeast" value="1"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </selectionEntry>
+                    <selectionEntry name="Apotecario" id="70770359-f1c9-4fbf-bf70-8ccead4f95aa" collective="false" hidden="true" import="true" sortIndex="2" type="upgrade">
+                      <constraints>
+                        <constraint id="589b6e1b-8402-40f5-bb5d-03c2e061f5eb" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="30"/>
+                      </costs>
+                      <entryLinks>
+                        <entryLink name="Narthecium / Reductor" id="11604dbf-0cb1-428f-a3ef-83ef0770afc2" collective="false" hidden="false" import="true" targetId="b628-528c-ffdf-c0c6" type="selectionEntry">
+                          <constraints>
+                            <constraint id="2bae1884-821b-4bb8-bdf0-c291ae7d379f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="5edad61c-99fe-45ff-b356-be42c99d5671" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <modifiers>
+                        <modifier field="hidden" type="set" value="false">
+                          <conditions>
+                            <condition childId="345c-4626-cf9d-30e3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="roster" shared="true" type="atLeast" value="1"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </selectionEntry>
+                  </selectionEntries>
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
@@ -3739,38 +3769,6 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
-            <selectionEntry name="Exterminador Apotecario" id="62b1-c5ab-f8d8-0286" collective="false" hidden="true" import="true" sortIndex="4" type="model">
-              <constraints>
-                <constraint id="7b93-3925-bf68-79eb" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="max" value="1"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="puntos" value="30"/>
-              </costs>
-              <entryLinks>
-                <entryLink name="Bolter de Asalto" id="790c-5ed9-e982-b593" collective="false" hidden="false" import="true" targetId="a5d0-4056-ad38-66dc" type="selectionEntry">
-                  <constraints>
-                    <constraint id="6bdb-3cb1-dc32-a000" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                  </constraints>
-                </entryLink>
-                <entryLink name="Puño de Combate" id="1f15-fee2-8cb7-68db" collective="false" hidden="false" import="true" targetId="536e-9554-070d-161a" type="selectionEntry">
-                  <constraints>
-                    <constraint id="0ab7-092c-4598-8801" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                  </constraints>
-                </entryLink>
-                <entryLink name="Narthecium / Reductor" id="dceb-ca66-edab-f981" hidden="false" import="true" targetId="b628-528c-ffdf-c0c6" type="selectionEntry"/>
-              </entryLinks>
-              <infoLinks>
-                <infoLink name="Exterminador" id="b387-b220-835d-b775" hidden="false" targetId="2b71-fffa-adc1-fa05" type="profile"/>
-                <infoLink name="Armadura de exterminador" id="e65d-c876-fc44-9964" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
-              </infoLinks>
-              <modifiers>
-                <modifier field="hidden" type="set" value="false">
-                  <conditions>
-                    <condition childId="345c-4626-cf9d-30e3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="roster" shared="true" type="atLeast" value="1"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup name="Sargento Exterminador" id="5ec7-990d-b890-3259" collective="false" defaultSelectionEntryId="4174-135d-fee0-07e7" hidden="false" import="true">
@@ -3879,25 +3877,6 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
         <infoLink name="Asalto del Ala de Muerte" id="8f95-19ac-8caa-c09b" hidden="false" targetId="c3d0-c5be-dd49-ddd4" type="rule"/>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry name="Estandarte del Ala de Muerte" id="d29a-3a7d-51b6-0450" collective="false" hidden="true" import="true" type="upgrade">
-          <constraints>
-            <constraint id="9c43-8ef3-9856-6ae2" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="max" value="1"/>
-            <constraint id="5928-df27-b0d5-1367" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="Pts" typeId="puntos" value="25"/>
-          </costs>
-          <modifiers>
-            <modifier field="hidden" type="set" value="false">
-              <conditions>
-                <condition childId="345c-4626-cf9d-30e3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="roster" shared="true" type="atLeast" value="1"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <infoLinks>
-            <infoLink name="Estandarte del Ala de Muerte" id="ed96-0801-6691-075e" hidden="false" targetId="2576-9e5e-9711-2d18" type="profile"/>
-          </infoLinks>
-        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Exterminadores" id="2cb2-d5a5-61aa-19b8" collective="false" defaultSelectionEntryId="e3da-296a-1100-5ee0" hidden="false" import="true">
@@ -3908,7 +3887,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
           <selectionEntries>
             <selectionEntry name="Exterminador" id="e3da-296a-1100-5ee0" collective="false" hidden="false" import="true" sortIndex="1" type="model">
               <entryLinks>
-                <entryLink name="Bolter de Asalto" id="927a-48b9-94bc-6ae8" collective="false" hidden="false" import="true" targetId="a5d0-4056-ad38-66dc" type="selectionEntry">
+                <entryLink name="Bolter de Asalto" id="927a-48b9-94bc-6ae8" collective="false" hidden="false" import="true" sortIndex="1" targetId="a5d0-4056-ad38-66dc" type="selectionEntry">
                   <constraints>
                     <constraint id="af35-12d9-699d-cf1c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                   </constraints>
@@ -3919,7 +3898,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                 <infoLink name="Armadura de exterminador" id="758e-6b07-3fbe-bb7e" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
               </infoLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Puño" id="3156-d1ee-9dfe-1a44" collective="false" defaultSelectionEntryId="d3c5-95d2-6caa-7d44" hidden="false" import="true">
+                <selectionEntryGroup name="Puño" id="3156-d1ee-9dfe-1a44" collective="false" defaultSelectionEntryId="d3c5-95d2-6caa-7d44" hidden="false" import="true" sortIndex="2">
                   <constraints>
                     <constraint id="1667-e887-5857-5a34" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                     <constraint id="a620-3daf-f0cf-c208" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -3932,6 +3911,55 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                       </costs>
                     </entryLink>
                   </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Apotecario o portaestandarte" id="7788faae-be10-4283-968a-aa2d84cfdeed" collapsible="true" collective="false" hidden="false" import="true" sortIndex="3">
+                  <constraints>
+                    <constraint id="0186d550-721c-4a10-8167-ddb913227dcf" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="0"/>
+                    <constraint id="acda90b6-baee-494c-a1bc-4047b8a84679" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry name="Estandarte del Ala de Muerte" id="fab48334-fd32-4fb7-a900-72a6e9011ea2" collective="false" hidden="true" import="true" sortIndex="1" type="upgrade">
+                      <constraints>
+                        <constraint id="40a6ae50-73fe-4350-9ff0-a154b0bdde8b" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="25"/>
+                      </costs>
+                      <infoLinks>
+                        <infoLink name="Estandarte del Ala de Muerte" id="d613964c-f69c-4e0e-928e-cb7176cafa6c" hidden="false" targetId="2576-9e5e-9711-2d18" type="profile"/>
+                      </infoLinks>
+                      <modifiers>
+                        <modifier field="hidden" type="set" value="false">
+                          <conditions>
+                            <condition childId="345c-4626-cf9d-30e3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="roster" shared="true" type="atLeast" value="1"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </selectionEntry>
+                    <selectionEntry name="Apotecario" id="62083150-a0d5-479e-8de6-55e9f96dbe25" collective="false" hidden="true" import="true" sortIndex="2" type="upgrade">
+                      <constraints>
+                        <constraint id="cd6956cd-8f2c-4912-a9f4-250280766e5d" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="30"/>
+                      </costs>
+                      <entryLinks>
+                        <entryLink name="Narthecium / Reductor" id="03bf05e9-e6ac-4d29-8416-9a6d4c7d5b88" collective="false" hidden="false" import="true" targetId="b628-528c-ffdf-c0c6" type="selectionEntry">
+                          <constraints>
+                            <constraint id="795816d2-6c51-4847-a525-b42e3f5aef77" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="aa428d0d-bdf5-4183-a647-e8fdb9cc3c09" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <modifiers>
+                        <modifier field="hidden" type="set" value="false">
+                          <conditions>
+                            <condition childId="345c-4626-cf9d-30e3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="roster" shared="true" type="atLeast" value="1"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </selectionEntry>
+                  </selectionEntries>
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
@@ -4043,38 +4071,6 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
-            <selectionEntry name="Exterminador Apotecario" id="a044-765f-33a8-8dfa" collective="false" hidden="true" import="true" sortIndex="4" type="model">
-              <constraints>
-                <constraint id="4872-f5c4-f476-27d2" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="max" value="1"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="puntos" value="30"/>
-              </costs>
-              <entryLinks>
-                <entryLink name="Bolter de Asalto" id="408f-8232-a41c-5075" collective="false" hidden="false" import="true" targetId="a5d0-4056-ad38-66dc" type="selectionEntry">
-                  <constraints>
-                    <constraint id="a960-3d1d-848f-81fa" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                  </constraints>
-                </entryLink>
-                <entryLink name="Puño de Combate" id="8cef-0d75-f589-674a" collective="false" hidden="false" import="true" targetId="536e-9554-070d-161a" type="selectionEntry">
-                  <constraints>
-                    <constraint id="d772-bc52-3937-1fe2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                  </constraints>
-                </entryLink>
-                <entryLink name="Narthecium / Reductor" id="821e-2ceb-8ec4-115c" hidden="false" import="true" targetId="b628-528c-ffdf-c0c6" type="selectionEntry"/>
-              </entryLinks>
-              <infoLinks>
-                <infoLink name="Exterminador" id="2601-b111-b5ea-8906" hidden="false" targetId="2b71-fffa-adc1-fa05" type="profile"/>
-                <infoLink name="Armadura de exterminador" id="ca11-5f0c-0e58-1b43" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
-              </infoLinks>
-              <modifiers>
-                <modifier field="hidden" type="set" value="false">
-                  <conditions>
-                    <condition childId="345c-4626-cf9d-30e3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="roster" shared="true" type="atLeast" value="1"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup name="Sargento Exterminador" id="7f48-4626-363b-d9d4" collective="false" defaultSelectionEntryId="80de-7c89-1310-688b" hidden="false" import="true">
@@ -4183,25 +4179,6 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
         <infoLink name="Asalto del Ala de Muerte" id="8b25-1da6-198c-2942" hidden="false" targetId="c3d0-c5be-dd49-ddd4" type="rule"/>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry name="Estandarte del Ala de Muerte" id="862d-00c8-b902-bb3a" collective="false" hidden="true" import="true" type="upgrade">
-          <constraints>
-            <constraint id="f4fc-75f1-afa9-313e" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="max" value="1"/>
-            <constraint id="b268-5c76-e5c3-f6c6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="Pts" typeId="puntos" value="25"/>
-          </costs>
-          <modifiers>
-            <modifier field="hidden" type="set" value="false">
-              <conditions>
-                <condition childId="345c-4626-cf9d-30e3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="roster" shared="true" type="atLeast" value="1"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <infoLinks>
-            <infoLink name="Estandarte del Ala de Muerte" id="9017-76b5-c32b-aab0" hidden="false" targetId="2576-9e5e-9711-2d18" type="profile"/>
-          </infoLinks>
-        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup name="Exterminadores" id="de50-1051-8b80-315d" collective="false" defaultSelectionEntryId="f199-763a-7bb5-3a4d" hidden="false" import="true">
@@ -4212,7 +4189,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
           <selectionEntries>
             <selectionEntry name="Exterminador" id="f199-763a-7bb5-3a4d" collective="false" hidden="false" import="true" sortIndex="1" type="model">
               <entryLinks>
-                <entryLink name="Bolter de Asalto" id="8041-5a44-b85e-831d" collective="false" hidden="false" import="true" targetId="a5d0-4056-ad38-66dc" type="selectionEntry">
+                <entryLink name="Bolter de Asalto" id="8041-5a44-b85e-831d" collective="false" hidden="false" import="true" sortIndex="1" targetId="a5d0-4056-ad38-66dc" type="selectionEntry">
                   <constraints>
                     <constraint id="cc51-d9b0-4da0-96a5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                   </constraints>
@@ -4223,7 +4200,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                 <infoLink name="Armadura de exterminador" id="66f2-3fc7-8ad1-6ebc" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
               </infoLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Puño" id="b4e8-05ed-9ba7-9bca" collective="false" defaultSelectionEntryId="fc52-0905-368b-6e3d" hidden="false" import="true">
+                <selectionEntryGroup name="Puño" id="b4e8-05ed-9ba7-9bca" collective="false" defaultSelectionEntryId="fc52-0905-368b-6e3d" hidden="false" import="true" sortIndex="2">
                   <constraints>
                     <constraint id="f85f-ceea-e397-2950" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                     <constraint id="62b6-82c5-6266-cecb" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -4236,6 +4213,55 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                       </costs>
                     </entryLink>
                   </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Apotecario o portaestandarte" id="b059b81d-2d66-44a6-8d6f-3e96394f5117" collapsible="true" collective="false" hidden="false" import="true" sortIndex="3">
+                  <constraints>
+                    <constraint id="54900383-d173-41bd-813b-a534c5a28e5a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="0"/>
+                    <constraint id="3844f5c9-9b03-4bdb-a6ca-064f3ec9e541" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry name="Estandarte del Ala de Muerte" id="b1a38500-387a-4af0-8c77-d8e05cb6ba8e" collective="false" hidden="true" import="true" sortIndex="1" type="upgrade">
+                      <constraints>
+                        <constraint id="36f1fcf2-7090-4b70-a581-eb90c063bac9" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="25"/>
+                      </costs>
+                      <infoLinks>
+                        <infoLink name="Estandarte del Ala de Muerte" id="cc4297d7-7e47-447e-85e9-fa032694ac47" hidden="false" targetId="2576-9e5e-9711-2d18" type="profile"/>
+                      </infoLinks>
+                      <modifiers>
+                        <modifier field="hidden" type="set" value="false">
+                          <conditions>
+                            <condition childId="345c-4626-cf9d-30e3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="roster" shared="true" type="atLeast" value="1"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </selectionEntry>
+                    <selectionEntry name="Apotecario" id="eb7ca8b7-0c48-4301-b9f5-61a394468ce0" collective="false" hidden="true" import="true" sortIndex="2" type="upgrade">
+                      <constraints>
+                        <constraint id="cd04847a-5702-42b4-a26b-8edb75c0996b" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="30"/>
+                      </costs>
+                      <entryLinks>
+                        <entryLink name="Narthecium / Reductor" id="0bb0de3a-253f-4f2b-8e06-5eced797b50e" collective="false" hidden="false" import="true" targetId="b628-528c-ffdf-c0c6" type="selectionEntry">
+                          <constraints>
+                            <constraint id="3674e54a-f8b9-4295-a930-e909c727707e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="71e5b893-b167-4a3d-81b1-de5c9a14a815" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                      <modifiers>
+                        <modifier field="hidden" type="set" value="false">
+                          <conditions>
+                            <condition childId="345c-4626-cf9d-30e3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="roster" shared="true" type="atLeast" value="1"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </selectionEntry>
+                  </selectionEntries>
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
@@ -4346,38 +4372,6 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                   </selectionEntries>
                 </selectionEntryGroup>
               </selectionEntryGroups>
-            </selectionEntry>
-            <selectionEntry name="Exterminador Apotecario" id="61d7-f20b-04e3-2d99" collective="false" hidden="true" import="true" sortIndex="4" type="model">
-              <constraints>
-                <constraint id="eb84-7a03-507f-6fd2" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="max" value="1"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="puntos" value="30"/>
-              </costs>
-              <entryLinks>
-                <entryLink name="Bolter de Asalto" id="78b9-e6f3-eafd-3ef8" collective="false" hidden="false" import="true" targetId="a5d0-4056-ad38-66dc" type="selectionEntry">
-                  <constraints>
-                    <constraint id="de3e-dcbd-b5ed-5e3c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                  </constraints>
-                </entryLink>
-                <entryLink name="Puño de Combate" id="6e9d-0c55-7da8-99f2" collective="false" hidden="false" import="true" targetId="536e-9554-070d-161a" type="selectionEntry">
-                  <constraints>
-                    <constraint id="7f44-b36a-8cb2-90bf" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                  </constraints>
-                </entryLink>
-                <entryLink name="Narthecium / Reductor" id="d596-f97c-feaf-cfe1" hidden="false" import="true" targetId="b628-528c-ffdf-c0c6" type="selectionEntry"/>
-              </entryLinks>
-              <infoLinks>
-                <infoLink name="Exterminador" id="bf4d-6a76-94c0-3cfd" hidden="false" targetId="2b71-fffa-adc1-fa05" type="profile"/>
-                <infoLink name="Armadura de exterminador" id="135a-a3c5-ffaf-5dfb" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
-              </infoLinks>
-              <modifiers>
-                <modifier field="hidden" type="set" value="false">
-                  <conditions>
-                    <condition childId="345c-4626-cf9d-30e3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="roster" shared="true" type="atLeast" value="1"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
