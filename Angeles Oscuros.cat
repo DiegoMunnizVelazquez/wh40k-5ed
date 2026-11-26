@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Angeles Oscuros" id="125b-6623-f648-fc9a" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" library="false" revision="20" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Angeles Oscuros" id="125b-6623-f648-fc9a" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" library="false" revision="21" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Terminado</comment>
   <readme>Esto es for fun. Cualquier error o sugerencia serán bienvenidas
 
@@ -1409,12 +1409,12 @@ Los personajes independientes con armadura de exterminador también pueden despl
         <cost name="Pts" typeId="puntos" value="125"/>
       </costs>
       <entryLinks>
-        <entryLink name="Cápsula de Desembarco" id="6394-2ba7-b3e9-9ce3" collective="false" hidden="false" import="true" targetId="822d-f006-230d-66db" type="selectionEntry">
+        <entryLink name="Cápsula de Desembarco" id="6394-2ba7-b3e9-9ce3" collective="false" hidden="false" import="true" sortIndex="7" targetId="822d-f006-230d-66db" type="selectionEntry">
           <constraints>
             <constraint id="42e5-8419-6fd5-d6b5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
         </entryLink>
-        <entryLink name="Blindaje Adicional" id="2abd-709d-ff18-b63b" collective="false" hidden="false" import="true" targetId="fe74-4d35-6665-4d95" type="selectionEntry">
+        <entryLink name="Blindaje Adicional" id="2abd-709d-ff18-b63b" collective="false" hidden="false" import="true" sortIndex="5" targetId="fe74-4d35-6665-4d95" type="selectionEntry">
           <costs>
             <cost name="Pts" typeId="puntos" value="15"/>
           </costs>
@@ -1436,7 +1436,7 @@ Los personajes independientes con armadura de exterminador también pueden despl
         <infoLink name="Dreadnought" id="5a5b-074b-f36e-29e4" hidden="false" targetId="196e-b41a-0c94-8c21" type="profile"/>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry name="Venerable" id="1862-368b-94b2-c86d" hidden="false" import="true" sortIndex="1" type="upgrade">
+        <selectionEntry name="Venerable" id="1862-368b-94b2-c86d" hidden="false" import="true" sortIndex="6" type="upgrade">
           <constraints>
             <constraint id="31f1-c5ec-54b2-9e22" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
@@ -1449,56 +1449,60 @@ Los personajes independientes con armadura de exterminador también pueden despl
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Brazo Izquierdo" id="16e4-cb9d-ba34-a907" collective="false" defaultSelectionEntryId="f805-00d4-01d4-ae19" hidden="false" import="true">
+        <selectionEntryGroup name="Brazo Izquierdo" id="16e4-cb9d-ba34-a907" collective="false" defaultSelectionEntryId="3026c8a9-ed10-4657-8868-1a1a359e00b0" hidden="false" import="true" sortIndex="2">
           <constraints>
-            <constraint id="5317-644c-3652-81b5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-            <constraint id="e185-ba77-17f3-44af" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+            <constraint id="2484b87b-a318-46af-87b6-0be8e22e8818" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="b957fc27-f4ad-4ef9-9c17-64b2fe891bcb" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
           <entryLinks>
-            <entryLink name="Lanzamisiles" id="9d60-ee00-ed13-b712" collective="false" hidden="false" import="true" sortIndex="2" targetId="989a-ecb3-a084-9c39" type="selectionEntry">
+            <entryLink name="Lanzamisiles" id="9d60-ee00-ed13-b712" collective="false" hidden="false" import="true" sortIndex="3" targetId="989a-ecb3-a084-9c39" type="selectionEntry">
               <costs>
                 <cost name="Pts" typeId="puntos" value="10"/>
               </costs>
             </entryLink>
           </entryLinks>
           <selectionEntries>
-            <selectionEntry name="Arma de combate cuerpo a cuerpo para Dreadnoughts" id="f805-00d4-01d4-ae19" collective="false" hidden="false" import="true" sortIndex="1" type="upgrade">
+            <selectionEntry name="Arma de combate cuerpo a cuerpo (con bólter de asalto)" id="3026c8a9-ed10-4657-8868-1a1a359e00b0" collective="false" hidden="false" import="true" sortIndex="1" type="upgrade">
               <constraints>
-                <constraint id="efc7-302c-471f-ba27" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                <constraint id="a68ee924-8f9a-47ec-9a53-6be4ec63a4b2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
               <costs>
                 <cost name="Pts" typeId="puntos" value="0"/>
               </costs>
               <entryLinks>
-                <entryLink name="Arma de combate cuerpo a cuerpo para Dreadnoughts" id="c6d8-2718-f5a2-a54a" collective="false" hidden="false" import="true" targetId="b2f0-9d2d-bb96-effa" type="selectionEntryGroup"/>
-              </entryLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Arma incorporada" id="b860b5d1-d0c4-425a-987f-1f798be3e3d7" collapsible="true" collective="false" defaultSelectionEntryId="e8fe9803-4bf8-4b8a-b32c-3c1d70b083af" hidden="false" import="true" sortIndex="1">
+                <entryLink name="Bólter de asalto" id="7e82033b-517b-409f-8096-ca7e4baedfe0" collective="false" hidden="false" import="true" targetId="9f573c4c-5f06-4ba3-8a0a-f6b878b030ae" type="selectionEntry">
                   <constraints>
-                    <constraint id="a3d1b9c0-2f3c-4832-983b-6535e116fef7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                    <constraint id="e7a81d88-aef5-43f5-ae68-1ea9d2ed53ed" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                    <constraint id="bc5d6218-26d6-41b9-9f1c-d0e8b0779f0b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="16ddccbc-6c40-4de5-afde-b86cbe356160" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
-                  <entryLinks>
-                    <entryLink name="Bólter de asalto" id="e8fe9803-4bf8-4b8a-b32c-3c1d70b083af" collective="false" defaultAmount="1" hidden="false" import="true" sortIndex="1" targetId="9f573c4c-5f06-4ba3-8a0a-f6b878b030ae" type="selectionEntry">
-                      <constraints>
-                        <constraint id="bc35bc70-7517-4677-8da4-57190489e2e8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink name="Lanzallamas pesado" id="40f7ce6a-5f47-4ee7-9c25-fce850fca41c" collective="false" hidden="false" import="true" sortIndex="2" targetId="e0a12207-1391-4439-8a3b-8f40cba76bca" type="selectionEntry">
-                      <constraints>
-                        <constraint id="6323a8fe-79d2-4626-8027-5d0c47745a9a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="puntos" value="5"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
+                </entryLink>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Arma de combate cuerpo a cuerpo para Dreadnoughts" id="daa60718-8eae-4e69-b493-f88c7b679609" hidden="false" targetId="dbc6-a593-44fa-6777" type="profile"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry name="Arma de combate cuerpo a cuerpo (con lanzallamas pesado)" id="05619ad1-825a-4b6c-8ed1-b60906f0eb9a" collective="false" hidden="false" import="true" sortIndex="2" type="upgrade">
+              <constraints>
+                <constraint id="4856a79a-d556-4926-95fc-bca13c404c81" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="5"/>
+              </costs>
+              <entryLinks>
+                <entryLink name="Lanzallamas pesado" id="250e866e-1e41-443d-9f33-a04c34fd70bc" collective="false" hidden="false" import="true" targetId="e0a12207-1391-4439-8a3b-8f40cba76bca" type="selectionEntry">
+                  <constraints>
+                    <constraint id="d33abd3a-0cbd-4b2e-8c7e-c39e1d7940a7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="e0ba1117-9400-4672-8bdb-33bdb07ec277" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <infoLinks>
+                <infoLink name="Arma de combate cuerpo a cuerpo para Dreadnoughts" id="5dbfec3f-f46a-4244-b145-6625075cddf6" hidden="false" targetId="dbc6-a593-44fa-6777" type="profile"/>
+              </infoLinks>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup name="Brazo Derecho" id="5224-2fc1-4db9-e089" collective="false" defaultSelectionEntryId="d899-62b3-72d5-9d59" hidden="false" import="true">
+        <selectionEntryGroup name="Brazo Derecho" id="5224-2fc1-4db9-e089" collective="false" defaultSelectionEntryId="d899-62b3-72d5-9d59" hidden="false" import="true" sortIndex="1">
           <constraints>
             <constraint id="c923-65e9-5e7d-25e0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
             <constraint id="94ab-35d0-d976-40fc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -6710,20 +6714,6 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
           <constraints>
             <constraint id="d2b0-c827-db84-6591" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
-        </entryLink>
-      </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup name="Arma de combate cuerpo a cuerpo para Dreadnoughts" id="b2f0-9d2d-bb96-effa" collective="false" defaultSelectionEntryId="867a-ab63-36f8-42b9" hidden="false" import="true">
-      <constraints>
-        <constraint id="59c8-2cba-2d9a-d00c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-        <constraint id="47db-c752-799c-b1f6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <entryLinks>
-        <entryLink name="Bolter de Asalto" id="867a-ab63-36f8-42b9" collective="false" hidden="false" import="true" sortIndex="1" targetId="a5d0-4056-ad38-66dc" type="selectionEntry"/>
-        <entryLink name="Lanzallamas Pesado" id="8556-3e9c-9b4d-534d" collective="false" hidden="false" import="true" sortIndex="2" targetId="93f5-39db-b8d6-e634" type="selectionEntry">
-          <costs>
-            <cost name="Pts" typeId="puntos" value="5"/>
-          </costs>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
