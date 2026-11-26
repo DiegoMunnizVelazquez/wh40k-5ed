@@ -3584,33 +3584,93 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
           </constraints>
           <selectionEntries>
             <selectionEntry name="Exterminador" id="2207-b50a-91b4-2b34" collective="false" hidden="false" import="true" sortIndex="1" type="model">
-              <entryLinks>
-                <entryLink name="Bolter de Asalto" id="544a-f0a4-2ed2-7e15" collective="false" hidden="false" import="true" sortIndex="1" targetId="a5d0-4056-ad38-66dc" type="selectionEntry">
-                  <constraints>
-                    <constraint id="4fbf-28aa-cbea-acf5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
               <infoLinks>
                 <infoLink name="Exterminador" id="bf93-de3e-8170-74e0" hidden="false" targetId="2b71-fffa-adc1-fa05" type="profile"/>
                 <infoLink name="Armadura de exterminador" id="8efc-26cf-1a16-e6f9" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
               </infoLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Puño" id="e496-a7cb-1c26-fdb8" collective="false" defaultSelectionEntryId="38f8-a6e4-d40c-c5f1" hidden="false" import="true" sortIndex="2">
+                <selectionEntryGroup name="Armas" id="2ca23303-ea80-4478-8ffd-fbaef86d692e" collapsible="true" collective="false" defaultSelectionEntryId="80951d4b-a743-4476-8778-e28e42618f7b" hidden="false" import="true" sortIndex="1">
                   <constraints>
-                    <constraint id="060e-efdf-6762-dcf0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                    <constraint id="21e8-a6cd-4d60-5700" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="3c07fe09-dbfe-4a57-b235-938a3e9a12f0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="4157dbf3-99a4-4f7c-ac9e-42cabb33a425" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Puño de Combate" id="38f8-a6e4-d40c-c5f1" collective="false" hidden="false" import="true" sortIndex="1" targetId="536e-9554-070d-161a" type="selectionEntry"/>
-                    <entryLink name="Puño Sierra" id="027c-5068-3916-3098" collective="false" hidden="false" import="true" sortIndex="2" targetId="602b-c26e-637d-02e2" type="selectionEntry">
+                    <entryLink name="Par de cuchillas relámpago" id="a8a40848-d3ac-4427-a6a9-312d69775292" collective="false" hidden="false" import="true" sortIndex="3" targetId="b653-7261-455e-348c" type="selectionEntry">
+                      <constraints>
+                        <constraint id="2277c7c9-db30-41e0-aa1b-51bc80322fd2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <selectionEntries>
+                    <selectionEntry name="Bólter de asalto y puño de combate" id="80951d4b-a743-4476-8778-e28e42618f7b" collective="false" hidden="false" import="true" sortIndex="1" type="upgrade">
+                      <constraints>
+                        <constraint id="90401840-eda9-40bf-902b-6c952ba2e779" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="0"/>
+                      </costs>
+                      <entryLinks>
+                        <entryLink name="Bólter de asalto" id="9f803ecf-5a8b-44f8-ade7-9ab09ff3791a" collective="false" hidden="false" import="true" targetId="9f573c4c-5f06-4ba3-8a0a-f6b878b030ae" type="selectionEntry">
+                          <constraints>
+                            <constraint id="c3380ff0-f2b4-428d-bd5f-d344facf287e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="e9f5b350-cf86-4e2f-831e-aa148549305d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Puño de combate" id="0db122ce-86fd-40ed-897e-de2a98765002" collective="false" hidden="false" import="true" targetId="4bd5789a-a2aa-4f7e-b8ec-c895bdc12cae" type="selectionEntry">
+                          <constraints>
+                            <constraint id="548faffb-6dca-4e24-9e02-93f523eebbfe" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="9bb6926a-06f9-4fc1-aab7-4e8f273b05b1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntry>
+                    <selectionEntry name="Martillo de trueno y escudo de tormenta" id="3e63f18e-1a00-4062-bf34-4a30bc959c17" collective="false" hidden="false" import="true" sortIndex="2" type="upgrade">
+                      <constraints>
+                        <constraint id="927cdc9e-23fa-4dfb-a7bd-144351a6c9a8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="0"/>
+                      </costs>
+                      <entryLinks>
+                        <entryLink name="Martillo de trueno" id="97ac2a65-a4db-4a28-a7c7-01943a0e1e07" collective="false" hidden="false" import="true" targetId="7ecafd73-1a77-4f91-9800-4e8696ebddda" type="selectionEntry">
+                          <constraints>
+                            <constraint id="3e95c572-8c9e-43c6-8c80-d4d14c313baf" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="03ab4b24-9d0b-493b-971a-aca6e7dc2a36" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Escudo de tormenta" id="c94ebf31-c212-4612-8bad-b47d146189cd" collective="false" hidden="false" import="true" targetId="23585150-9804-4a7e-b60b-29994f48bde6" type="selectionEntry">
+                          <constraints>
+                            <constraint id="7817da2c-69b7-47f4-b985-89a8b19bd39c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="d83b8a64-5758-4367-a3d4-78bc9c8bf4a7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntry>
+                    <selectionEntry name="Bólter de asalto y puño sierra" id="e87ae6c9-9fed-4532-be33-62ef72b4979e" collective="false" hidden="false" import="true" sortIndex="4" type="upgrade">
+                      <constraints>
+                        <constraint id="9bd8743b-a8a8-48d8-86ae-1c381f642502" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
                       <costs>
                         <cost name="Pts" typeId="puntos" value="5"/>
                       </costs>
-                    </entryLink>
-                  </entryLinks>
+                      <entryLinks>
+                        <entryLink name="Bólter de asalto" id="657198ac-143d-4a01-9817-0b282a0b86ee" collective="false" hidden="false" import="true" targetId="9f573c4c-5f06-4ba3-8a0a-f6b878b030ae" type="selectionEntry">
+                          <constraints>
+                            <constraint id="452b9735-0909-40ab-9bed-e2e5d8bbe8bb" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="7901b905-e895-4034-8799-c8f86b9e1778" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Puño sierra" id="2a61f47d-89ec-4627-b3fa-637f522e03d5" collective="false" hidden="false" import="true" targetId="fb337f4e-e126-4f89-85e5-2356ee9d75cf" type="selectionEntry">
+                          <constraints>
+                            <constraint id="9720fc83-ccb1-4a0d-9ddd-62e22da201a1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="e3437153-b4e4-4f1d-9178-5ebf052695fe" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntry>
+                  </selectionEntries>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="Apotecario o portaestandarte" id="f27d1ce0-999b-41cd-8ba1-af97de7594f5" collapsible="true" collective="false" hidden="false" import="true" sortIndex="3">
+                <selectionEntryGroup name="Apotecario o portaestandarte" id="f27d1ce0-999b-41cd-8ba1-af97de7594f5" collapsible="true" collective="false" hidden="false" import="true" sortIndex="2">
                   <constraints>
                     <constraint id="05006c2e-fbd8-42b0-a24c-83388ff4c0e4" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="0"/>
                     <constraint id="5dc75089-5e19-433d-9ff7-6450d477a43d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -3717,58 +3777,6 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
-            <selectionEntry name="Exterminador de Asalto" id="93c1-ce2b-0b10-824f" collective="false" hidden="false" import="true" sortIndex="3" type="model">
-              <infoLinks>
-                <infoLink name="Exterminador" id="c4b3-6c58-e6ed-743b" hidden="false" targetId="2b71-fffa-adc1-fa05" type="profile"/>
-                <infoLink name="Armadura de exterminador" id="2913-aafa-17aa-1390" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
-              </infoLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Arma de Combate" id="caa0-9a05-84e1-b749" collective="false" defaultSelectionEntryId="dea0-69a2-b954-bcb7" hidden="false" import="true">
-                  <constraints>
-                    <constraint id="f753-df9e-5004-a20b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                    <constraint id="33e4-fd22-5222-2649" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry name="Cuchillas Relámpago" id="dea0-69a2-b954-bcb7" collective="false" hidden="false" import="true" sortIndex="1" type="upgrade">
-                      <constraints>
-                        <constraint id="30cb-774f-255a-b6dc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="puntos" value="0"/>
-                      </costs>
-                      <entryLinks>
-                        <entryLink name="Cuchilla Relámpago" id="9dce-73b5-c106-6e4f" collective="false" hidden="false" import="true" targetId="b653-7261-455e-348c" type="selectionEntry">
-                          <constraints>
-                            <constraint id="949c-50a4-9954-7dc9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
-                            <constraint id="88fc-772c-c7f7-cf2e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
-                          </constraints>
-                        </entryLink>
-                      </entryLinks>
-                    </selectionEntry>
-                    <selectionEntry name="Martillo Trueno y Escudo Tormenta" id="d87e-6c23-6b8d-7837" collective="false" hidden="false" import="true" sortIndex="2" type="upgrade">
-                      <constraints>
-                        <constraint id="72f3-c3f5-a16a-7619" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="puntos" value="0"/>
-                      </costs>
-                      <entryLinks>
-                        <entryLink name="Martillo de Trueno" id="5291-962c-d4a7-51d5" collective="false" hidden="false" import="true" targetId="f7c5-632c-7c49-4735" type="selectionEntry">
-                          <constraints>
-                            <constraint id="6014-8946-d59e-5c3d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                          </constraints>
-                        </entryLink>
-                        <entryLink name="Escudo de Tormenta" id="7e52-9265-1cf6-d8f7" collective="false" hidden="false" import="true" targetId="b809-4f58-c37f-459f" type="selectionEntry">
-                          <constraints>
-                            <constraint id="0d39-1dd5-1e6f-8347" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                          </constraints>
-                        </entryLink>
-                      </entryLinks>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup name="Sargento Exterminador" id="5ec7-990d-b890-3259" collective="false" defaultSelectionEntryId="4174-135d-fee0-07e7" hidden="false" import="true">
@@ -3781,81 +3789,86 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
               <constraints>
                 <constraint id="2a1d-4a83-b15a-894e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
-              <entryLinks>
-                <entryLink name="Bolter de Asalto" id="9432-b2b3-db65-d18f" collective="false" hidden="false" import="true" targetId="a5d0-4056-ad38-66dc" type="selectionEntry">
-                  <constraints>
-                    <constraint id="a5f2-9f83-995f-5128" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
               <infoLinks>
                 <infoLink name="Sargento Exterminador" id="9196-578b-e3eb-4360" hidden="false" targetId="8933-5bbd-4fd9-2f86" type="profile"/>
                 <infoLink name="Armadura de exterminador" id="ccc2-2b57-5bf2-2be5" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
               </infoLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Arma de Combate" id="130d-4724-e210-23ca" collective="false" defaultSelectionEntryId="9536-aaa1-cd62-6e65" hidden="false" import="true">
+                <selectionEntryGroup name="Armas" id="cfdd9673-e982-4c1f-9dcf-3cb5f373f516" collapsible="true" collective="false" defaultSelectionEntryId="8b19e9f6-917e-49c2-a9e9-ab1d1ad757ac" hidden="false" import="true" sortIndex="1">
                   <constraints>
-                    <constraint id="4e78-6b28-c63c-d6da" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                    <constraint id="7193-bb98-df55-fadd" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="025f7a3b-181c-461b-94d5-e4216099e37a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="a07dece5-57e8-4761-a8c9-d4e7104aac0c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Arma de energía" id="9536-aaa1-cd62-6e65" collective="false" hidden="false" import="true" sortIndex="1" targetId="b8c3-697d-5086-0aea" type="selectionEntry"/>
-                    <entryLink name="Puño Sierra" id="d0c1-02a6-ee71-abf8" collective="false" hidden="false" import="true" sortIndex="2" targetId="602b-c26e-637d-02e2" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="puntos" value="5"/>
-                      </costs>
+                    <entryLink name="Par de cuchillas relámpago" id="edcf4ab8-5a1b-4536-90e7-67faf5f80e0a" collective="false" hidden="false" import="true" sortIndex="3" targetId="b653-7261-455e-348c" type="selectionEntry">
+                      <constraints>
+                        <constraint id="bebee68f-6083-4bc2-a2d7-0fb1ed7fb386" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
                     </entryLink>
                   </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-            </selectionEntry>
-            <selectionEntry name="Sargento Exterminador de Asalto" id="462a-904c-0c57-df51" collective="false" hidden="false" import="true" sortIndex="2" type="model">
-              <constraints>
-                <constraint id="0345-3e0d-7b75-1220" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Sargento Exterminador" id="6a21-979e-12b3-6b1d" hidden="false" targetId="8933-5bbd-4fd9-2f86" type="profile"/>
-                <infoLink name="Armadura de exterminador" id="f480-39c4-92b9-f601" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
-              </infoLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Arma de Combate" id="845f-7ed3-916b-20d3" collective="false" defaultSelectionEntryId="7a65-6f72-095a-d6da" hidden="false" import="true">
-                  <constraints>
-                    <constraint id="e416-be8d-e24b-d162" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                    <constraint id="4eba-3446-eacf-e86a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                  </constraints>
                   <selectionEntries>
-                    <selectionEntry name="Cuchillas Relámpago" id="7a65-6f72-095a-d6da" collective="false" hidden="false" import="true" sortIndex="1" type="upgrade">
+                    <selectionEntry name="Bólter de asalto y espada de energía" id="8b19e9f6-917e-49c2-a9e9-ab1d1ad757ac" collective="false" hidden="false" import="true" sortIndex="1" type="upgrade">
                       <constraints>
-                        <constraint id="f5da-e08f-82e8-f704" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                        <constraint id="942b5c79-d9d5-4b1a-827b-d161bddb206d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
                       <costs>
                         <cost name="Pts" typeId="puntos" value="0"/>
                       </costs>
                       <entryLinks>
-                        <entryLink name="Cuchilla Relámpago" id="36e8-d633-7088-03d6" collective="false" hidden="false" import="true" targetId="b653-7261-455e-348c" type="selectionEntry">
+                        <entryLink name="Bólter de asalto" id="39cd8b9e-ac3a-485d-8304-3741a7c55bd1" collective="false" hidden="false" import="true" targetId="9f573c4c-5f06-4ba3-8a0a-f6b878b030ae" type="selectionEntry">
                           <constraints>
-                            <constraint id="666f-7c31-3b6c-1070" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
-                            <constraint id="51af-7355-da66-3491" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
+                            <constraint id="6b1f891e-f516-47db-9ba5-7af221bbfc6c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="fc616dfc-0757-47f4-90b4-c84e270dfd0b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Arma de energía" id="01f3350d-d7df-40aa-958e-acbecd5b7270" collective="false" hidden="false" import="true" targetId="0ba61da8-e509-4e6b-a89d-8e7199a2ed64" type="selectionEntry">
+                          <constraints>
+                            <constraint id="065a99db-fa1c-4e29-bce1-7b70ed644ff1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="ffd24339-48d4-4358-b771-4f7496267924" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                           </constraints>
                         </entryLink>
                       </entryLinks>
                     </selectionEntry>
-                    <selectionEntry name="Martillo Trueno y Escudo Tormenta" id="cf3a-0808-1f10-6be1" collective="false" hidden="false" import="true" sortIndex="2" type="upgrade">
+                    <selectionEntry name="Martillo de trueno y escudo de tormenta" id="bcae7bc2-0823-4481-8bfb-60ca8fc7e79d" collective="false" hidden="false" import="true" sortIndex="2" type="upgrade">
                       <constraints>
-                        <constraint id="74da-8990-8130-69b4" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                        <constraint id="48506486-5822-4734-94e8-3fc5a0984dd1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
                       <costs>
                         <cost name="Pts" typeId="puntos" value="0"/>
                       </costs>
                       <entryLinks>
-                        <entryLink name="Martillo de Trueno" id="92fb-edd0-eb97-a13d" collective="false" hidden="false" import="true" targetId="f7c5-632c-7c49-4735" type="selectionEntry">
+                        <entryLink name="Martillo de trueno" id="2865e728-2250-49b5-879b-c827d94dcf26" collective="false" hidden="false" import="true" targetId="7ecafd73-1a77-4f91-9800-4e8696ebddda" type="selectionEntry">
                           <constraints>
-                            <constraint id="ad91-cac0-49c5-9761" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="ccd0a1ca-2f7b-460f-b95f-d6381c2cf17a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="2204bdd5-7046-4248-ae84-fbc9aaf584c3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                           </constraints>
                         </entryLink>
-                        <entryLink name="Escudo de Tormenta" id="17fe-c757-a6df-140f" collective="false" hidden="false" import="true" targetId="b809-4f58-c37f-459f" type="selectionEntry">
+                        <entryLink name="Escudo de tormenta" id="3bfbe382-1f42-48ee-b8e9-8512aab968fe" collective="false" hidden="false" import="true" targetId="23585150-9804-4a7e-b60b-29994f48bde6" type="selectionEntry">
                           <constraints>
-                            <constraint id="b257-1bf4-ec51-fa99" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="9edbcfbd-a1fa-44e2-abf9-11a0e015e60a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="c498c09b-c3f7-4a6c-88e7-6bc12085e902" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntry>
+                    <selectionEntry name="Bólter de asalto y puño sierra" id="0b6c9a7b-ed0b-4884-a126-965398dc37ca" collective="false" hidden="false" import="true" sortIndex="4" type="upgrade">
+                      <constraints>
+                        <constraint id="34f91cbf-8a4f-4dd5-95c4-d9318cc5ff54" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="5"/>
+                      </costs>
+                      <entryLinks>
+                        <entryLink name="Bólter de asalto" id="b2ccadcc-f067-4315-ade6-04b8b7595aff" collective="false" hidden="false" import="true" targetId="9f573c4c-5f06-4ba3-8a0a-f6b878b030ae" type="selectionEntry">
+                          <constraints>
+                            <constraint id="b9789875-663e-4c27-9a31-0dfd15cc105d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="270d6102-1bf0-4297-aa00-b7a2c5a576e3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Puño sierra" id="2b81e8a1-1a2e-4c56-bce6-98415fb813a2" collective="false" hidden="false" import="true" targetId="fb337f4e-e126-4f89-85e5-2356ee9d75cf" type="selectionEntry">
+                          <constraints>
+                            <constraint id="a9fef977-6d5f-465f-ba2a-5e7de5da5d09" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="52679fa3-f0f6-4779-81d2-5021d8d61793" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                           </constraints>
                         </entryLink>
                       </entryLinks>
@@ -3886,33 +3899,93 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
           </constraints>
           <selectionEntries>
             <selectionEntry name="Exterminador" id="e3da-296a-1100-5ee0" collective="false" hidden="false" import="true" sortIndex="1" type="model">
-              <entryLinks>
-                <entryLink name="Bolter de Asalto" id="927a-48b9-94bc-6ae8" collective="false" hidden="false" import="true" sortIndex="1" targetId="a5d0-4056-ad38-66dc" type="selectionEntry">
-                  <constraints>
-                    <constraint id="af35-12d9-699d-cf1c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
               <infoLinks>
                 <infoLink name="Exterminador" id="152a-2fd4-59c4-e625" hidden="false" targetId="2b71-fffa-adc1-fa05" type="profile"/>
                 <infoLink name="Armadura de exterminador" id="758e-6b07-3fbe-bb7e" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
               </infoLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Puño" id="3156-d1ee-9dfe-1a44" collective="false" defaultSelectionEntryId="d3c5-95d2-6caa-7d44" hidden="false" import="true" sortIndex="2">
+                <selectionEntryGroup name="Armas" id="386eadb3-e9df-40d2-9196-16cd44d4ab47" collapsible="true" collective="false" defaultSelectionEntryId="c7f4fe3f-8f67-4cc6-b7e8-4c2a0d98216e" hidden="false" import="true" sortIndex="1">
                   <constraints>
-                    <constraint id="1667-e887-5857-5a34" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                    <constraint id="a620-3daf-f0cf-c208" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="f1c304bf-1d5b-4bc9-ad1b-8ebe4c88ab6e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="81e75fd8-0945-4da9-9fdf-18bc08f431f5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Puño de Combate" id="d3c5-95d2-6caa-7d44" collective="false" hidden="false" import="true" sortIndex="1" targetId="536e-9554-070d-161a" type="selectionEntry"/>
-                    <entryLink name="Puño Sierra" id="1247-cbff-6177-23db" collective="false" hidden="false" import="true" sortIndex="2" targetId="602b-c26e-637d-02e2" type="selectionEntry">
+                    <entryLink name="Par de cuchillas relámpago" id="00fcf333-4c13-4dd6-af23-c420228eff84" collective="false" hidden="false" import="true" sortIndex="3" targetId="b653-7261-455e-348c" type="selectionEntry">
+                      <constraints>
+                        <constraint id="03c5502e-4b96-4e83-af02-965abd0a4bd6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <selectionEntries>
+                    <selectionEntry name="Bólter de asalto y puño de combate" id="c7f4fe3f-8f67-4cc6-b7e8-4c2a0d98216e" collective="false" hidden="false" import="true" sortIndex="1" type="upgrade">
+                      <constraints>
+                        <constraint id="769f537b-0c94-4947-8feb-64463362b2c4" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="0"/>
+                      </costs>
+                      <entryLinks>
+                        <entryLink name="Bólter de asalto" id="dd1426cc-ee87-4c82-8824-59111212de8a" collective="false" hidden="false" import="true" targetId="9f573c4c-5f06-4ba3-8a0a-f6b878b030ae" type="selectionEntry">
+                          <constraints>
+                            <constraint id="efe40832-09cd-49d2-8d15-c0a6191869ce" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="6a576c61-ceec-4ad4-960e-49cb84f80874" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Puño de combate" id="7b846eb1-8045-4a46-8ece-f49fee2d21bd" collective="false" hidden="false" import="true" targetId="4bd5789a-a2aa-4f7e-b8ec-c895bdc12cae" type="selectionEntry">
+                          <constraints>
+                            <constraint id="fbf74b17-7ea9-4221-bf49-b1aa9fe81d0a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="f41fdcea-ca20-49e1-bbcc-c2f142f55857" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntry>
+                    <selectionEntry name="Martillo de trueno y escudo de tormenta" id="8a368cd7-d4fb-4a93-836d-8e8294ca68e6" collective="false" hidden="false" import="true" sortIndex="2" type="upgrade">
+                      <constraints>
+                        <constraint id="f9899a1c-b261-41f8-ace2-5186d6d3e6a7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="0"/>
+                      </costs>
+                      <entryLinks>
+                        <entryLink name="Martillo de trueno" id="cd5fdc5b-e71c-4de8-a5bf-edb5e03d5880" collective="false" hidden="false" import="true" targetId="7ecafd73-1a77-4f91-9800-4e8696ebddda" type="selectionEntry">
+                          <constraints>
+                            <constraint id="ad2868d9-8c82-4d58-8922-2efa55a4a0bf" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="805e8d40-9a29-4196-98ac-7826f1636c2f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Escudo de tormenta" id="cf915d9e-5007-414c-a9a2-59dd77ded808" collective="false" hidden="false" import="true" targetId="23585150-9804-4a7e-b60b-29994f48bde6" type="selectionEntry">
+                          <constraints>
+                            <constraint id="4773d777-5437-4eb3-ace7-846066cf4a98" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="301ed16f-57db-4dd4-a161-66cec5d029d2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntry>
+                    <selectionEntry name="Bólter de asalto y puño sierra" id="19eff3ed-c0bf-498d-8588-76fad24b518f" collective="false" hidden="false" import="true" sortIndex="4" type="upgrade">
+                      <constraints>
+                        <constraint id="b7af9946-4fc6-4b19-a16e-706f84618c2c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
                       <costs>
                         <cost name="Pts" typeId="puntos" value="5"/>
                       </costs>
-                    </entryLink>
-                  </entryLinks>
+                      <entryLinks>
+                        <entryLink name="Bólter de asalto" id="ea59c2ce-f931-4aaf-bbce-8d97e8c5aeb5" collective="false" hidden="false" import="true" targetId="9f573c4c-5f06-4ba3-8a0a-f6b878b030ae" type="selectionEntry">
+                          <constraints>
+                            <constraint id="ae14a421-d303-4d5f-bc8f-6a8f2768ee29" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="a5fe9b5c-ebf6-44b5-a95d-254f86b8b8c8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Puño sierra" id="032b807f-d63b-4a8d-b503-3320ec4edcd5" collective="false" hidden="false" import="true" targetId="fb337f4e-e126-4f89-85e5-2356ee9d75cf" type="selectionEntry">
+                          <constraints>
+                            <constraint id="c2a1fb26-a7ec-498b-ad6f-907f8c276245" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="80146666-4a0a-48b9-a74b-1dbd06596ab7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntry>
+                  </selectionEntries>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="Apotecario o portaestandarte" id="7788faae-be10-4283-968a-aa2d84cfdeed" collapsible="true" collective="false" hidden="false" import="true" sortIndex="3">
+                <selectionEntryGroup name="Apotecario o portaestandarte" id="7788faae-be10-4283-968a-aa2d84cfdeed" collapsible="true" collective="false" hidden="false" import="true" sortIndex="2">
                   <constraints>
                     <constraint id="0186d550-721c-4a10-8167-ddb913227dcf" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="0"/>
                     <constraint id="acda90b6-baee-494c-a1bc-4047b8a84679" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -4019,58 +4092,6 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
-            <selectionEntry name="Exterminador de Asalto" id="7af8-f035-603d-bf65" collective="false" hidden="false" import="true" sortIndex="3" type="model">
-              <infoLinks>
-                <infoLink name="Exterminador" id="e0d3-b038-a8cd-7ee3" hidden="false" targetId="2b71-fffa-adc1-fa05" type="profile"/>
-                <infoLink name="Armadura de exterminador" id="7601-1bc2-2ec0-94a5" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
-              </infoLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Arma de Combate" id="4fee-3d40-6513-4a69" collective="false" defaultSelectionEntryId="0eb8-a0f9-1679-b393" hidden="false" import="true">
-                  <constraints>
-                    <constraint id="841d-a665-251a-92de" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                    <constraint id="1fc7-8e94-aa3c-f743" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry name="Cuchillas Relámpago" id="0eb8-a0f9-1679-b393" collective="false" hidden="false" import="true" sortIndex="1" type="upgrade">
-                      <constraints>
-                        <constraint id="6445-5ab1-211f-e709" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="puntos" value="0"/>
-                      </costs>
-                      <entryLinks>
-                        <entryLink name="Cuchilla Relámpago" id="b19c-bc69-ea4f-1038" collective="false" hidden="false" import="true" targetId="b653-7261-455e-348c" type="selectionEntry">
-                          <constraints>
-                            <constraint id="323d-2fe8-554e-2b11" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
-                            <constraint id="4064-77dc-b522-8c69" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
-                          </constraints>
-                        </entryLink>
-                      </entryLinks>
-                    </selectionEntry>
-                    <selectionEntry name="Martillo Trueno y Escudo Tormenta" id="f688-b251-350d-b14a" collective="false" hidden="false" import="true" sortIndex="2" type="upgrade">
-                      <constraints>
-                        <constraint id="e5bf-5b8e-09d4-db27" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="puntos" value="0"/>
-                      </costs>
-                      <entryLinks>
-                        <entryLink name="Martillo de Trueno" id="4f6c-5708-cf9e-2e9c" collective="false" hidden="false" import="true" targetId="f7c5-632c-7c49-4735" type="selectionEntry">
-                          <constraints>
-                            <constraint id="5314-816d-d45f-a5b9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                          </constraints>
-                        </entryLink>
-                        <entryLink name="Escudo de Tormenta" id="3c19-5969-a753-1a3a" collective="false" hidden="false" import="true" targetId="b809-4f58-c37f-459f" type="selectionEntry">
-                          <constraints>
-                            <constraint id="4e41-3f5c-742d-e4d3" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                          </constraints>
-                        </entryLink>
-                      </entryLinks>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup name="Sargento Exterminador" id="7f48-4626-363b-d9d4" collective="false" defaultSelectionEntryId="80de-7c89-1310-688b" hidden="false" import="true">
@@ -4083,81 +4104,86 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
               <constraints>
                 <constraint id="d2c8-7726-f906-21dd" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
-              <entryLinks>
-                <entryLink name="Bolter de Asalto" id="358e-8f1d-0b36-d437" collective="false" hidden="false" import="true" targetId="a5d0-4056-ad38-66dc" type="selectionEntry">
-                  <constraints>
-                    <constraint id="a2aa-de54-ac4c-fa03" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
               <infoLinks>
                 <infoLink name="Sargento Exterminador" id="8723-10c0-dae5-ea7d" hidden="false" targetId="8933-5bbd-4fd9-2f86" type="profile"/>
                 <infoLink name="Armadura de exterminador" id="88a8-01fe-3957-d698" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
               </infoLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Arma de Combate" id="62e7-ea20-fef0-fb73" collective="false" defaultSelectionEntryId="72ef-b91d-6bac-050b" hidden="false" import="true">
+                <selectionEntryGroup name="Armas" id="571e1862-9dd0-419f-a350-3fa73d53d2c1" collapsible="true" collective="false" defaultSelectionEntryId="e3ebc60e-b032-460f-95d8-3b1be3c45d2b" hidden="false" import="true" sortIndex="1">
                   <constraints>
-                    <constraint id="2e2e-c118-ff6b-d08f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                    <constraint id="57f4-2434-30d5-4c24" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="d2781387-9f0e-4086-86bd-567cc15e8102" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="f4c7710b-6c65-44bd-b934-ba52d86c3170" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Arma de energía" id="72ef-b91d-6bac-050b" collective="false" hidden="false" import="true" sortIndex="1" targetId="b8c3-697d-5086-0aea" type="selectionEntry"/>
-                    <entryLink name="Puño Sierra" id="0fd4-e611-912c-2a4f" collective="false" hidden="false" import="true" sortIndex="2" targetId="602b-c26e-637d-02e2" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="puntos" value="5"/>
-                      </costs>
+                    <entryLink name="Par de cuchillas relámpago" id="28b07b1f-2c1f-4e52-9dd0-d6cb8662657f" collective="false" hidden="false" import="true" sortIndex="3" targetId="b653-7261-455e-348c" type="selectionEntry">
+                      <constraints>
+                        <constraint id="12138cc0-e702-4ccd-baeb-0f2200acc8b0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
                     </entryLink>
                   </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-            </selectionEntry>
-            <selectionEntry name="Sargento Exterminador de Asalto" id="0092-6a45-d3b2-f7d7" collective="false" hidden="false" import="true" sortIndex="2" type="model">
-              <constraints>
-                <constraint id="29d3-e28b-55b5-ce60" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Sargento Exterminador" id="c42c-0f22-06a6-56cb" hidden="false" targetId="8933-5bbd-4fd9-2f86" type="profile"/>
-                <infoLink name="Armadura de exterminador" id="712f-3c0f-b094-5271" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
-              </infoLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Arma de Combate" id="66b4-eee3-b31a-272c" collective="false" defaultSelectionEntryId="0a67-a595-9529-73de" hidden="false" import="true">
-                  <constraints>
-                    <constraint id="c709-1bef-f71c-0650" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                    <constraint id="6fe4-04bb-9b00-97e8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                  </constraints>
                   <selectionEntries>
-                    <selectionEntry name="Cuchillas Relámpago" id="0a67-a595-9529-73de" collective="false" hidden="false" import="true" sortIndex="1" type="upgrade">
+                    <selectionEntry name="Bólter de asalto y espada de energía" id="e3ebc60e-b032-460f-95d8-3b1be3c45d2b" collective="false" hidden="false" import="true" sortIndex="1" type="upgrade">
                       <constraints>
-                        <constraint id="8b86-1b68-6723-92d1" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                        <constraint id="310bf3f0-4eea-4169-b04a-a4b61e039822" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
                       <costs>
                         <cost name="Pts" typeId="puntos" value="0"/>
                       </costs>
                       <entryLinks>
-                        <entryLink name="Cuchilla Relámpago" id="a35c-f557-7fa1-dfa1" collective="false" hidden="false" import="true" targetId="b653-7261-455e-348c" type="selectionEntry">
+                        <entryLink name="Bólter de asalto" id="85e37b59-ae95-4461-9780-8d0920a70aef" collective="false" hidden="false" import="true" targetId="9f573c4c-5f06-4ba3-8a0a-f6b878b030ae" type="selectionEntry">
                           <constraints>
-                            <constraint id="a5e8-99fd-7cfa-a788" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
-                            <constraint id="1782-5e78-627b-78f0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
+                            <constraint id="c8e7308f-d9f5-4b2f-924a-166847a1b7cd" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="84142540-f113-49ed-9f31-6aeceb321bee" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Arma de energía" id="48589225-38bd-4298-b84c-d7163eb20e62" collective="false" hidden="false" import="true" targetId="0ba61da8-e509-4e6b-a89d-8e7199a2ed64" type="selectionEntry">
+                          <constraints>
+                            <constraint id="c3f41d0a-732b-448c-891d-ee78e52c2b02" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="18d6488a-c6fd-4bcd-b3d5-a50ddf3bf694" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                           </constraints>
                         </entryLink>
                       </entryLinks>
                     </selectionEntry>
-                    <selectionEntry name="Martillo Trueno y Escudo Tormenta" id="e3b9-3bd6-f901-0263" collective="false" hidden="false" import="true" sortIndex="2" type="upgrade">
+                    <selectionEntry name="Martillo de trueno y escudo de tormenta" id="11f34dbe-c4ef-4fe8-a2cb-33261cef9f47" collective="false" hidden="false" import="true" sortIndex="2" type="upgrade">
                       <constraints>
-                        <constraint id="9f76-0269-f692-7f63" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                        <constraint id="79650bde-3c2a-4cdd-9bf1-82835c5dec92" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
                       <costs>
                         <cost name="Pts" typeId="puntos" value="0"/>
                       </costs>
                       <entryLinks>
-                        <entryLink name="Martillo de Trueno" id="a75f-d536-1ba6-de9e" collective="false" hidden="false" import="true" targetId="f7c5-632c-7c49-4735" type="selectionEntry">
+                        <entryLink name="Martillo de trueno" id="01904673-bc78-459c-8d63-04d9322c3dea" collective="false" hidden="false" import="true" targetId="7ecafd73-1a77-4f91-9800-4e8696ebddda" type="selectionEntry">
                           <constraints>
-                            <constraint id="4de3-e141-0de7-c45a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="5c7ed62b-9fc2-4aef-bed9-dca06c115bc7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="8113ad8b-1918-4c60-aabb-60abcaa2cd88" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                           </constraints>
                         </entryLink>
-                        <entryLink name="Escudo de Tormenta" id="0151-2844-50fb-eade" collective="false" hidden="false" import="true" targetId="b809-4f58-c37f-459f" type="selectionEntry">
+                        <entryLink name="Escudo de tormenta" id="dfd738e9-445e-4046-a2fa-f5d8cac91163" collective="false" hidden="false" import="true" targetId="23585150-9804-4a7e-b60b-29994f48bde6" type="selectionEntry">
                           <constraints>
-                            <constraint id="7e03-c398-b587-ca10" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="ec460ac7-c3af-486c-bdf6-41a60dd7c925" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="d28deea7-d23d-4f00-a9af-31242799edca" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntry>
+                    <selectionEntry name="Bólter de asalto y puño sierra" id="e7a029ad-f918-4828-a948-6fb15f417728" collective="false" hidden="false" import="true" sortIndex="4" type="upgrade">
+                      <constraints>
+                        <constraint id="75f1dff6-b40c-4363-bff4-81c458b8420d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="5"/>
+                      </costs>
+                      <entryLinks>
+                        <entryLink name="Bólter de asalto" id="f89319b8-0595-4df0-b4b9-72d7bb50cb2d" collective="false" hidden="false" import="true" targetId="9f573c4c-5f06-4ba3-8a0a-f6b878b030ae" type="selectionEntry">
+                          <constraints>
+                            <constraint id="bcb34fc3-6591-42f6-8835-ec16d3120781" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="f4e8a9f2-bf05-4baa-8986-9bb00ec36130" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Puño sierra" id="241eb4b5-e440-488d-8cf3-82b7112fe0b0" collective="false" hidden="false" import="true" targetId="fb337f4e-e126-4f89-85e5-2356ee9d75cf" type="selectionEntry">
+                          <constraints>
+                            <constraint id="3103eddd-cbbb-4eae-82bb-dc35c2b6f513" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="ba956d4d-f991-4069-813d-85f70379567e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                           </constraints>
                         </entryLink>
                       </entryLinks>
@@ -4188,33 +4214,93 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
           </constraints>
           <selectionEntries>
             <selectionEntry name="Exterminador" id="f199-763a-7bb5-3a4d" collective="false" hidden="false" import="true" sortIndex="1" type="model">
-              <entryLinks>
-                <entryLink name="Bolter de Asalto" id="8041-5a44-b85e-831d" collective="false" hidden="false" import="true" sortIndex="1" targetId="a5d0-4056-ad38-66dc" type="selectionEntry">
-                  <constraints>
-                    <constraint id="cc51-d9b0-4da0-96a5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
               <infoLinks>
                 <infoLink name="Exterminador" id="012b-42a7-d618-8f55" hidden="false" targetId="2b71-fffa-adc1-fa05" type="profile"/>
                 <infoLink name="Armadura de exterminador" id="66f2-3fc7-8ad1-6ebc" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
               </infoLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Puño" id="b4e8-05ed-9ba7-9bca" collective="false" defaultSelectionEntryId="fc52-0905-368b-6e3d" hidden="false" import="true" sortIndex="2">
+                <selectionEntryGroup name="Armas" id="8605e805-8d56-47a2-94a6-13250b7d9848" collapsible="true" collective="false" defaultSelectionEntryId="7e3445f3-b7e0-4a1b-b6a8-86cc8523ae2f" hidden="false" import="true" sortIndex="1">
                   <constraints>
-                    <constraint id="f85f-ceea-e397-2950" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                    <constraint id="62b6-82c5-6266-cecb" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="c0632c17-be0e-4379-b7b9-b374657ad0bd" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="41c93033-5dda-4836-92a6-7953e678873e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Puño de Combate" id="fc52-0905-368b-6e3d" collective="false" hidden="false" import="true" sortIndex="1" targetId="536e-9554-070d-161a" type="selectionEntry"/>
-                    <entryLink name="Puño Sierra" id="62b0-2992-942a-8fc3" collective="false" hidden="false" import="true" sortIndex="2" targetId="602b-c26e-637d-02e2" type="selectionEntry">
+                    <entryLink name="Par de cuchillas relámpago" id="5b3932f8-bf1c-485e-947e-0073ea7401bd" collective="false" hidden="false" import="true" sortIndex="3" targetId="b653-7261-455e-348c" type="selectionEntry">
+                      <constraints>
+                        <constraint id="3bba1507-b4b8-4e5e-8403-b7c08486c453" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <selectionEntries>
+                    <selectionEntry name="Bólter de asalto y puño de combate" id="7e3445f3-b7e0-4a1b-b6a8-86cc8523ae2f" collective="false" hidden="false" import="true" sortIndex="1" type="upgrade">
+                      <constraints>
+                        <constraint id="6e29cb8c-5844-481c-8777-de5ed124e703" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="0"/>
+                      </costs>
+                      <entryLinks>
+                        <entryLink name="Bólter de asalto" id="aa7bbe01-9ada-47ac-9e81-6310a3c806bd" collective="false" hidden="false" import="true" targetId="9f573c4c-5f06-4ba3-8a0a-f6b878b030ae" type="selectionEntry">
+                          <constraints>
+                            <constraint id="9fcc76da-d444-4de1-aff3-79e3bf0fc955" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="313d6a3b-9060-4353-a7f9-12e1a5dad828" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Puño de combate" id="9f1ddd10-e2be-4922-9944-4c5b3bf687fc" collective="false" hidden="false" import="true" targetId="4bd5789a-a2aa-4f7e-b8ec-c895bdc12cae" type="selectionEntry">
+                          <constraints>
+                            <constraint id="57f077c0-4956-4bbd-9656-58f966a67220" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="17709522-365e-41b5-a628-c9606cd8bd6e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntry>
+                    <selectionEntry name="Martillo de trueno y escudo de tormenta" id="b318ec77-2116-4618-b321-8c5c5ca9b499" collective="false" hidden="false" import="true" sortIndex="2" type="upgrade">
+                      <constraints>
+                        <constraint id="b03a54f0-c5eb-47ec-960e-2c6897f7c24d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="0"/>
+                      </costs>
+                      <entryLinks>
+                        <entryLink name="Martillo de trueno" id="adf8a92d-34de-4846-bd28-3d99f0b230a9" collective="false" hidden="false" import="true" targetId="7ecafd73-1a77-4f91-9800-4e8696ebddda" type="selectionEntry">
+                          <constraints>
+                            <constraint id="b49a19f4-d7f9-4157-89f4-e191587a9646" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="dd79ccf0-2614-416d-9aab-a120c09388c5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Escudo de tormenta" id="135910b3-f4d9-47b6-a176-caecfb13b450" collective="false" hidden="false" import="true" targetId="23585150-9804-4a7e-b60b-29994f48bde6" type="selectionEntry">
+                          <constraints>
+                            <constraint id="c3711904-c2e1-4cc7-b3c4-045c2fe8c3a8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="3360cac7-0198-4dfc-83db-cded6384266c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntry>
+                    <selectionEntry name="Bólter de asalto y puño sierra" id="c7568d06-acba-4445-b6d2-cba9fd771ecd" collective="false" hidden="false" import="true" sortIndex="4" type="upgrade">
+                      <constraints>
+                        <constraint id="2908bd3a-8a27-4b4f-871c-cc6dc68ea544" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
                       <costs>
                         <cost name="Pts" typeId="puntos" value="5"/>
                       </costs>
-                    </entryLink>
-                  </entryLinks>
+                      <entryLinks>
+                        <entryLink name="Bólter de asalto" id="9ad19d49-bab5-46f4-bbbb-b85ec6f29683" collective="false" hidden="false" import="true" targetId="9f573c4c-5f06-4ba3-8a0a-f6b878b030ae" type="selectionEntry">
+                          <constraints>
+                            <constraint id="828a99ef-1213-482c-8706-6a0690075b0b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="0e4d61f8-dfed-4468-ad3a-e37baf45cafe" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Puño sierra" id="fb243e5e-e281-486b-838e-ee38f1702d2a" collective="false" hidden="false" import="true" targetId="fb337f4e-e126-4f89-85e5-2356ee9d75cf" type="selectionEntry">
+                          <constraints>
+                            <constraint id="02f80ae1-f5ca-484a-9d07-1a84c1f40676" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="8f5a9f4b-4dd2-4931-8426-f41b2a211b50" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntry>
+                  </selectionEntries>
                 </selectionEntryGroup>
-                <selectionEntryGroup name="Apotecario o portaestandarte" id="b059b81d-2d66-44a6-8d6f-3e96394f5117" collapsible="true" collective="false" hidden="false" import="true" sortIndex="3">
+                <selectionEntryGroup name="Apotecario o portaestandarte" id="b059b81d-2d66-44a6-8d6f-3e96394f5117" collapsible="true" collective="false" hidden="false" import="true" sortIndex="2">
                   <constraints>
                     <constraint id="54900383-d173-41bd-813b-a534c5a28e5a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="0"/>
                     <constraint id="3844f5c9-9b03-4bdb-a6ca-064f3ec9e541" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -4321,58 +4407,6 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                 </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
-            <selectionEntry name="Exterminador de Asalto" id="14cc-ba38-c668-8bfc" collective="false" hidden="false" import="true" sortIndex="3" type="model">
-              <infoLinks>
-                <infoLink name="Exterminador" id="65fb-9d68-6a31-e85e" hidden="false" targetId="2b71-fffa-adc1-fa05" type="profile"/>
-                <infoLink name="Armadura de exterminador" id="e18a-1130-10a7-fd4a" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
-              </infoLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Arma de Combate" id="d012-4ec8-9efa-f2a0" collective="false" hidden="false" import="true">
-                  <constraints>
-                    <constraint id="3fe7-e69c-0dda-10a6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                    <constraint id="ff47-f593-1739-c55e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                  </constraints>
-                  <selectionEntries>
-                    <selectionEntry name="Cuchillas Relámpago" id="1c76-c566-8a32-fdd0" collective="false" hidden="false" import="true" sortIndex="1" type="upgrade">
-                      <constraints>
-                        <constraint id="1a9e-9ca6-e0e2-333e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="puntos" value="0"/>
-                      </costs>
-                      <entryLinks>
-                        <entryLink name="Cuchilla Relámpago" id="af2b-c704-0f6f-3450" collective="false" hidden="false" import="true" targetId="b653-7261-455e-348c" type="selectionEntry">
-                          <constraints>
-                            <constraint id="bdca-fe07-5047-9e31" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
-                            <constraint id="ea1a-6407-2207-161f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
-                          </constraints>
-                        </entryLink>
-                      </entryLinks>
-                    </selectionEntry>
-                    <selectionEntry name="Martillo Trueno y Escudo Tormenta" id="670f-938b-1089-5cd1" collective="false" hidden="false" import="true" sortIndex="2" type="upgrade">
-                      <constraints>
-                        <constraint id="a10a-0323-b5b3-64fa" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                      </constraints>
-                      <costs>
-                        <cost name="Pts" typeId="puntos" value="0"/>
-                      </costs>
-                      <entryLinks>
-                        <entryLink name="Martillo de Trueno" id="b513-d0e6-5541-c61c" collective="false" hidden="false" import="true" targetId="f7c5-632c-7c49-4735" type="selectionEntry">
-                          <constraints>
-                            <constraint id="9d4c-cbcf-6bae-a20b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                          </constraints>
-                        </entryLink>
-                        <entryLink name="Escudo de Tormenta" id="9563-93e1-b9d3-5f5f" collective="false" hidden="false" import="true" targetId="b809-4f58-c37f-459f" type="selectionEntry">
-                          <constraints>
-                            <constraint id="815b-ef4b-a692-4ac2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                          </constraints>
-                        </entryLink>
-                      </entryLinks>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup name="Sargento Exterminador" id="b04f-f271-687b-0183" collective="false" defaultSelectionEntryId="2e75-f51b-db02-c05e" hidden="false" import="true">
@@ -4385,81 +4419,86 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
               <constraints>
                 <constraint id="463e-9974-0d1f-6a90" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
               </constraints>
-              <entryLinks>
-                <entryLink name="Bolter de Asalto" id="aca0-031c-1efb-f3b5" collective="false" hidden="false" import="true" targetId="a5d0-4056-ad38-66dc" type="selectionEntry">
-                  <constraints>
-                    <constraint id="9775-28e5-1e40-36db" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
               <infoLinks>
                 <infoLink name="Sargento Exterminador" id="b32a-be52-30e8-4f58" hidden="false" targetId="8933-5bbd-4fd9-2f86" type="profile"/>
                 <infoLink name="Armadura de exterminador" id="43c7-85d2-76f3-4483" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
               </infoLinks>
               <selectionEntryGroups>
-                <selectionEntryGroup name="Arma de Combate" id="73c9-eded-fe1e-6901" collective="false" defaultSelectionEntryId="35e7-bd9c-3943-8de7" hidden="false" import="true">
+                <selectionEntryGroup name="Armas" id="95d40191-9ccf-4bd1-94bc-2c75502cee71" collapsible="true" collective="false" defaultSelectionEntryId="f034149c-36ae-4082-890c-ba0eaa272c2a" hidden="false" import="true" sortIndex="1">
                   <constraints>
-                    <constraint id="2c4d-a0ee-201c-321b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                    <constraint id="edb6-d423-b8ec-bbae" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="cdd45355-1cd6-4c49-b8eb-5ff72b17c1aa" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="28151984-89b9-47f2-a286-5d64e67876cc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Arma de energía" id="35e7-bd9c-3943-8de7" collective="false" hidden="false" import="true" sortIndex="1" targetId="b8c3-697d-5086-0aea" type="selectionEntry"/>
-                    <entryLink name="Puño Sierra" id="f90a-da76-3fad-efdf" collective="false" hidden="false" import="true" sortIndex="2" targetId="602b-c26e-637d-02e2" type="selectionEntry">
-                      <costs>
-                        <cost name="Pts" typeId="puntos" value="5"/>
-                      </costs>
+                    <entryLink name="Par de cuchillas relámpago" id="02d9edd5-a5fd-4349-89ca-f0c4f2bf93b6" collective="false" hidden="false" import="true" sortIndex="3" targetId="b653-7261-455e-348c" type="selectionEntry">
+                      <constraints>
+                        <constraint id="cb316ef2-10d2-4455-ab34-2f3165e4963b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
                     </entryLink>
                   </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-            </selectionEntry>
-            <selectionEntry name="Sargento Exterminador de Asalto" id="c415-ad42-a1ec-73fb" collective="false" hidden="false" import="true" sortIndex="2" type="model">
-              <constraints>
-                <constraint id="0cfb-f2db-7fea-e9bc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-              </constraints>
-              <infoLinks>
-                <infoLink name="Sargento Exterminador" id="c754-5bf8-7665-e950" hidden="false" targetId="8933-5bbd-4fd9-2f86" type="profile"/>
-                <infoLink name="Armadura de exterminador" id="e129-53f3-aff0-c413" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
-              </infoLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup name="Arma de Combate" id="8a9d-91f3-683e-1de6" collective="false" defaultSelectionEntryId="aed6-a284-79ef-676e" hidden="false" import="true">
-                  <constraints>
-                    <constraint id="b545-d6fe-d97b-e4a9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                    <constraint id="58cd-a121-8366-4885" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                  </constraints>
                   <selectionEntries>
-                    <selectionEntry name="Cuchillas Relámpago" id="aed6-a284-79ef-676e" collective="false" hidden="false" import="true" sortIndex="1" type="upgrade">
+                    <selectionEntry name="Bólter de asalto y espada de energía" id="f034149c-36ae-4082-890c-ba0eaa272c2a" collective="false" hidden="false" import="true" sortIndex="1" type="upgrade">
                       <constraints>
-                        <constraint id="a4d1-32e4-a42c-84dd" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                        <constraint id="abe37bbf-fe9f-47eb-96af-0d0c0f425d6b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
                       <costs>
                         <cost name="Pts" typeId="puntos" value="0"/>
                       </costs>
                       <entryLinks>
-                        <entryLink name="Cuchilla Relámpago" id="393a-3fd6-7f66-409d" collective="false" hidden="false" import="true" targetId="b653-7261-455e-348c" type="selectionEntry">
+                        <entryLink name="Bólter de asalto" id="d6ae3026-be26-4689-9e8c-c285aec33cbf" collective="false" hidden="false" import="true" targetId="9f573c4c-5f06-4ba3-8a0a-f6b878b030ae" type="selectionEntry">
                           <constraints>
-                            <constraint id="a44b-287a-b065-0e58" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="2"/>
-                            <constraint id="aa90-54b7-98a5-73b6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="2"/>
+                            <constraint id="d5b5b199-7428-408f-8ed6-fb395ef35a88" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="ddf74040-6b5f-49e6-8c52-daeb85dff47e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Arma de energía" id="23d99539-b580-4405-94fb-5aadf910e6b5" collective="false" hidden="false" import="true" targetId="0ba61da8-e509-4e6b-a89d-8e7199a2ed64" type="selectionEntry">
+                          <constraints>
+                            <constraint id="f4c579df-5fbf-4ebc-94dd-258e0502a3f5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="a6c7a7fe-34b7-4b1b-a26f-bb40b22c20d2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                           </constraints>
                         </entryLink>
                       </entryLinks>
                     </selectionEntry>
-                    <selectionEntry name="Martillo Trueno y Escudo Tormenta" id="1a97-c32a-6ea8-e496" collective="false" hidden="false" import="true" sortIndex="2" type="upgrade">
+                    <selectionEntry name="Martillo de trueno y escudo de tormenta" id="ed3371c3-7efc-4e52-a33c-fd8869a42778" collective="false" hidden="false" import="true" sortIndex="2" type="upgrade">
                       <constraints>
-                        <constraint id="b3bf-fb1f-8fe2-892c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                        <constraint id="57f94770-9564-4555-83aa-d877b334e4e5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                       </constraints>
                       <costs>
                         <cost name="Pts" typeId="puntos" value="0"/>
                       </costs>
                       <entryLinks>
-                        <entryLink name="Martillo de Trueno" id="6bb9-c420-6266-5cf4" collective="false" hidden="false" import="true" targetId="f7c5-632c-7c49-4735" type="selectionEntry">
+                        <entryLink name="Martillo de trueno" id="1ceec307-9977-467b-add6-14ca88e06362" collective="false" hidden="false" import="true" targetId="7ecafd73-1a77-4f91-9800-4e8696ebddda" type="selectionEntry">
                           <constraints>
-                            <constraint id="de63-2a7c-025d-0990" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="10cd6fca-6822-46a9-8ba0-44616f52fc66" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="76056336-48d2-4696-ab10-0b7a8b36cdcc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                           </constraints>
                         </entryLink>
-                        <entryLink name="Escudo de Tormenta" id="50fb-d281-a5ce-9a46" collective="false" hidden="false" import="true" targetId="b809-4f58-c37f-459f" type="selectionEntry">
+                        <entryLink name="Escudo de tormenta" id="6858daaa-25e5-4fb2-8aff-dba6c30196ad" collective="false" hidden="false" import="true" targetId="23585150-9804-4a7e-b60b-29994f48bde6" type="selectionEntry">
                           <constraints>
-                            <constraint id="020a-82b0-7edb-adba" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="5d079844-f019-48fb-92f4-9c33f03fe461" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="4aff0e4d-02e5-488f-96a4-81b52b40d3d0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                          </constraints>
+                        </entryLink>
+                      </entryLinks>
+                    </selectionEntry>
+                    <selectionEntry name="Bólter de asalto y puño sierra" id="03b47226-c0a8-49ce-9fc8-18297822c08d" collective="false" hidden="false" import="true" sortIndex="4" type="upgrade">
+                      <constraints>
+                        <constraint id="1d22be4f-cdd9-4789-ab06-0285817b0a45" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="5"/>
+                      </costs>
+                      <entryLinks>
+                        <entryLink name="Bólter de asalto" id="dbd230ce-a6c9-4a59-8d8d-28bfa1a34a53" collective="false" hidden="false" import="true" targetId="9f573c4c-5f06-4ba3-8a0a-f6b878b030ae" type="selectionEntry">
+                          <constraints>
+                            <constraint id="5a977bce-3996-4faf-90b2-523a0c1be949" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="6195a39e-7068-45b5-8d09-c2afb6ff52d9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                          </constraints>
+                        </entryLink>
+                        <entryLink name="Puño sierra" id="625bda80-2038-4c59-aed3-7274a1a1bffa" collective="false" hidden="false" import="true" targetId="fb337f4e-e126-4f89-85e5-2356ee9d75cf" type="selectionEntry">
+                          <constraints>
+                            <constraint id="789f532f-eaad-446d-bdca-845eb0b8b1ea" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                            <constraint id="7f04e7da-2fef-4c2f-bb3c-ac3e1384bc90" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                           </constraints>
                         </entryLink>
                       </entryLinks>
