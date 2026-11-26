@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Angeles Oscuros" id="125b-6623-f648-fc9a" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" library="false" revision="19" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Angeles Oscuros" id="125b-6623-f648-fc9a" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="8" library="false" revision="20" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <comment>Terminado</comment>
   <readme>Esto es for fun. Cualquier error o sugerencia serán bienvenidas
 
@@ -1404,6 +1404,126 @@ Los personajes independientes con armadura de exterminador también pueden despl
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntry>
+    <selectionEntry name="Dreadnought" id="2792-bd2b-f5b5-fb9c" collective="false" hidden="false" import="true" page="65" publicationId="f176-f140-74d8-da7d" type="model">
+      <costs>
+        <cost name="Pts" typeId="puntos" value="125"/>
+      </costs>
+      <entryLinks>
+        <entryLink name="Cápsula de Desembarco" id="6394-2ba7-b3e9-9ce3" collective="false" hidden="false" import="true" targetId="822d-f006-230d-66db" type="selectionEntry">
+          <constraints>
+            <constraint id="42e5-8419-6fd5-d6b5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+        </entryLink>
+        <entryLink name="Blindaje Adicional" id="2abd-709d-ff18-b63b" collective="false" hidden="false" import="true" targetId="fe74-4d35-6665-4d95" type="selectionEntry">
+          <costs>
+            <cost name="Pts" typeId="puntos" value="15"/>
+          </costs>
+        </entryLink>
+        <entryLink name="Descargadores de humo" id="36f8cee0-082e-4501-ac25-962bc437b434" collective="false" hidden="false" import="true" sortIndex="3" targetId="236b-e147-1f64-7edc" type="selectionEntry">
+          <constraints>
+            <constraint id="617442cf-4fed-437b-92a4-a64341602e0f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="622baef9-d882-41ad-a2a1-d35c98684d40" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+        </entryLink>
+        <entryLink name="Reflector" id="f8b6bd1e-918a-43a0-b441-d93c3c52aadb" collective="false" hidden="false" import="true" sortIndex="4" targetId="c1ac-63b0-b525-40b4" type="selectionEntry">
+          <constraints>
+            <constraint id="d608e297-f1de-44bc-9f2a-da736968c71e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="c212d7b6-d67c-4650-b4b5-003b3371b4b9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Dreadnought" id="5a5b-074b-f36e-29e4" hidden="false" targetId="196e-b41a-0c94-8c21" type="profile"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry name="Venerable" id="1862-368b-94b2-c86d" hidden="false" import="true" sortIndex="1" type="upgrade">
+          <constraints>
+            <constraint id="31f1-c5ec-54b2-9e22" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="20"/>
+          </costs>
+          <infoLinks>
+            <infoLink name="Venerable" id="57ca-d4f6-4d1d-1365" hidden="false" targetId="7fc4-8584-09d0-8e96" type="profile"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Brazo Izquierdo" id="16e4-cb9d-ba34-a907" collective="false" defaultSelectionEntryId="f805-00d4-01d4-ae19" hidden="false" import="true">
+          <constraints>
+            <constraint id="5317-644c-3652-81b5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="e185-ba77-17f3-44af" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <entryLinks>
+            <entryLink name="Lanzamisiles" id="9d60-ee00-ed13-b712" collective="false" hidden="false" import="true" sortIndex="2" targetId="989a-ecb3-a084-9c39" type="selectionEntry">
+              <costs>
+                <cost name="Pts" typeId="puntos" value="10"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry name="Arma de combate cuerpo a cuerpo para Dreadnoughts" id="f805-00d4-01d4-ae19" collective="false" hidden="false" import="true" sortIndex="1" type="upgrade">
+              <constraints>
+                <constraint id="efc7-302c-471f-ba27" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="0"/>
+              </costs>
+              <entryLinks>
+                <entryLink name="Arma de combate cuerpo a cuerpo para Dreadnoughts" id="c6d8-2718-f5a2-a54a" collective="false" hidden="false" import="true" targetId="b2f0-9d2d-bb96-effa" type="selectionEntryGroup"/>
+              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Arma incorporada" id="b860b5d1-d0c4-425a-987f-1f798be3e3d7" collapsible="true" collective="false" defaultSelectionEntryId="e8fe9803-4bf8-4b8a-b32c-3c1d70b083af" hidden="false" import="true" sortIndex="1">
+                  <constraints>
+                    <constraint id="a3d1b9c0-2f3c-4832-983b-6535e116fef7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                    <constraint id="e7a81d88-aef5-43f5-ae68-1ea9d2ed53ed" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink name="Bólter de asalto" id="e8fe9803-4bf8-4b8a-b32c-3c1d70b083af" collective="false" defaultAmount="1" hidden="false" import="true" sortIndex="1" targetId="9f573c4c-5f06-4ba3-8a0a-f6b878b030ae" type="selectionEntry">
+                      <constraints>
+                        <constraint id="bc35bc70-7517-4677-8da4-57190489e2e8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink name="Lanzallamas pesado" id="40f7ce6a-5f47-4ee7-9c25-fce850fca41c" collective="false" hidden="false" import="true" sortIndex="2" targetId="e0a12207-1391-4439-8a3b-8f40cba76bca" type="selectionEntry">
+                      <constraints>
+                        <constraint id="6323a8fe-79d2-4626-8027-5d0c47745a9a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="5"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Brazo Derecho" id="5224-2fc1-4db9-e089" collective="false" defaultSelectionEntryId="d899-62b3-72d5-9d59" hidden="false" import="true">
+          <constraints>
+            <constraint id="c923-65e9-5e7d-25e0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="94ab-35d0-d976-40fc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <entryLinks>
+            <entryLink name="Cañón automático acoplado" id="7766-9899-c57a-bc9b" collective="false" hidden="false" import="true" sortIndex="2" targetId="3ea3154b-cad6-4322-97e4-9c980a9b1822" type="selectionEntry">
+              <constraints>
+                <constraint id="dd511964-f13b-4119-89ae-f6d6efcac6d6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+            </entryLink>
+            <entryLink name="Cañón de Fusión" id="3f16-0f87-6f23-9dba" collective="false" hidden="false" import="true" sortIndex="3" targetId="fee3-62f1-28c9-c4d1" type="selectionEntry"/>
+            <entryLink name="Cañón de Plasma" id="c9cd-d30d-62b6-d02e" collective="false" hidden="false" import="true" sortIndex="4" targetId="bb10-b315-7583-5584" type="selectionEntry"/>
+            <entryLink name="Cañón de Asalto" id="d899-62b3-72d5-9d59" collective="false" hidden="false" import="true" sortIndex="1" targetId="b9d8-4545-a27e-b356" type="selectionEntry"/>
+            <entryLink name="Cañón láser acoplado" id="5550-f52f-d646-3682" collective="false" hidden="false" import="true" sortIndex="5" targetId="62bf8544-1c87-4575-9f2b-1887a93989d3" type="selectionEntry">
+              <constraints>
+                <constraint id="55ca038c-1d06-47b3-8a9b-678f3b737688" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="20"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
     <selectionEntry name="Ezekiel, Gran Maestre Bibliotecario" id="dc77-03b8-e78d-9cf7" collective="false" hidden="false" import="true" page="40" publicationId="822e-763d-4a6a-b7fc" type="model">
       <constraints>
         <constraint id="aff3-b288-5dd0-d273" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="roster" shared="true" type="max" value="1"/>
@@ -1911,10 +2031,10 @@ Los personajes independientes con armadura de exterminador también pueden despl
             <characteristic name="HP" typeId="f6f92f00-8bb1-4afa-8ccb-46310b7dd5e5">4</characteristic>
             <characteristic name="F" typeId="da036dbb-32c2-430a-9dd5-aa74e0c4f74b">4</characteristic>
             <characteristic name="R" typeId="3f9ed75c-36cd-4169-9cef-48391bb55cfd">4</characteristic>
-            <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">1</characteristic>
+            <characteristic name="H" typeId="17ee558f-3014-4bd2-afc1-b474d8d2b7a8">2</characteristic>
             <characteristic name="I" typeId="a558b3ef-04d0-440e-a312-bac3255bf592">4</characteristic>
-            <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">1</characteristic>
-            <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">8</characteristic>
+            <characteristic name="A" typeId="5dff3e7c-e024-4030-a71d-03195ec06ea7">2</characteristic>
+            <characteristic name="L" typeId="4a42059d-12cd-4c1f-a4c7-bb569d13eeea">9</characteristic>
             <characteristic name="S" typeId="b215fe72-dbce-4ad6-89ec-c4bb3962c39d">2+</characteristic>
           </characteristics>
         </profile>
@@ -2042,93 +2162,6 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
           <description>En cuanto entren en juego, las cápsulas de desembarco no podrán moverse y se considerarán a todos los efectos un vehículo que ha sufrido un resultado de inmovilizado en la Tabla de Daños en Vehículos (y que no puede ser reparado).</description>
         </rule>
       </rules>
-    </selectionEntry>
-    <selectionEntry name="Dreadnought" id="2792-bd2b-f5b5-fb9c" collective="false" hidden="false" import="true" page="65" publicationId="f176-f140-74d8-da7d" type="unit">
-      <costs>
-        <cost name="Pts" typeId="puntos" value="125"/>
-      </costs>
-      <entryLinks>
-        <entryLink name="Cápsula de Desembarco" id="6394-2ba7-b3e9-9ce3" collective="false" hidden="false" import="true" targetId="822d-f006-230d-66db" type="selectionEntry">
-          <constraints>
-            <constraint id="42e5-8419-6fd5-d6b5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-        </entryLink>
-        <entryLink name="Blindaje Adicional" id="2abd-709d-ff18-b63b" collective="false" hidden="false" import="true" targetId="fe74-4d35-6665-4d95" type="selectionEntry">
-          <costs>
-            <cost name="Pts" typeId="puntos" value="15"/>
-          </costs>
-        </entryLink>
-      </entryLinks>
-      <infoLinks>
-        <infoLink name="Dreadnought" id="5a5b-074b-f36e-29e4" hidden="false" targetId="196e-b41a-0c94-8c21" type="profile"/>
-        <infoLink name="Descargadores de Humo" id="5a2c-5b72-dafc-339e" hidden="false" targetId="59f3-98ac-9e4f-1169" type="profile"/>
-        <infoLink name="Reflector" id="6e98-20e5-ecf3-0eac" hidden="false" targetId="2ce5-817f-85b3-3115" type="profile"/>
-      </infoLinks>
-      <selectionEntries>
-        <selectionEntry name="Venerable" id="1862-368b-94b2-c86d" hidden="false" import="true" sortIndex="1" type="upgrade">
-          <constraints>
-            <constraint id="31f1-c5ec-54b2-9e22" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-          <costs>
-            <cost name="Pts" typeId="puntos" value="20"/>
-          </costs>
-          <infoLinks>
-            <infoLink name="Venerable" id="57ca-d4f6-4d1d-1365" hidden="false" targetId="7fc4-8584-09d0-8e96" type="profile"/>
-          </infoLinks>
-        </selectionEntry>
-      </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Brazo Izquierdo" id="16e4-cb9d-ba34-a907" collective="false" defaultSelectionEntryId="f805-00d4-01d4-ae19" hidden="false" import="true">
-          <constraints>
-            <constraint id="5317-644c-3652-81b5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-            <constraint id="e185-ba77-17f3-44af" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-          <entryLinks>
-            <entryLink name="Lanzamisiles" id="9d60-ee00-ed13-b712" collective="false" hidden="false" import="true" sortIndex="2" targetId="989a-ecb3-a084-9c39" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="puntos" value="10"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-          <selectionEntries>
-            <selectionEntry name="Arma de combate cuerpo a cuerpo para Dreadnoughts" id="f805-00d4-01d4-ae19" collective="false" hidden="false" import="true" sortIndex="1" type="upgrade">
-              <constraints>
-                <constraint id="efc7-302c-471f-ba27" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="puntos" value="0"/>
-              </costs>
-              <entryLinks>
-                <entryLink name="Arma de combate cuerpo a cuerpo para Dreadnoughts" id="c6d8-2718-f5a2-a54a" collective="false" hidden="false" import="true" targetId="b2f0-9d2d-bb96-effa" type="selectionEntryGroup"/>
-              </entryLinks>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Brazo Derecho" id="5224-2fc1-4db9-e089" collective="false" defaultSelectionEntryId="d899-62b3-72d5-9d59" hidden="false" import="true">
-          <constraints>
-            <constraint id="c923-65e9-5e7d-25e0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-            <constraint id="94ab-35d0-d976-40fc" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-          <entryLinks>
-            <entryLink name="Cañón automático acoplado" id="7766-9899-c57a-bc9b" collective="false" hidden="false" import="true" sortIndex="2" targetId="3ea3154b-cad6-4322-97e4-9c980a9b1822" type="selectionEntry">
-              <constraints>
-                <constraint id="dd511964-f13b-4119-89ae-f6d6efcac6d6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-              </constraints>
-            </entryLink>
-            <entryLink name="Cañón de Fusión" id="3f16-0f87-6f23-9dba" collective="false" hidden="false" import="true" sortIndex="3" targetId="fee3-62f1-28c9-c4d1" type="selectionEntry"/>
-            <entryLink name="Cañón de Plasma" id="c9cd-d30d-62b6-d02e" collective="false" hidden="false" import="true" sortIndex="4" targetId="bb10-b315-7583-5584" type="selectionEntry"/>
-            <entryLink name="Cañón de Asalto" id="d899-62b3-72d5-9d59" collective="false" hidden="false" import="true" sortIndex="1" targetId="b9d8-4545-a27e-b356" type="selectionEntry"/>
-            <entryLink name="Cañón láser acoplado" id="5550-f52f-d646-3682" collective="false" hidden="false" import="true" sortIndex="5" targetId="62bf8544-1c87-4575-9f2b-1887a93989d3" type="selectionEntry">
-              <constraints>
-                <constraint id="55ca038c-1d06-47b3-8a9b-678f3b737688" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="puntos" value="20"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
     </selectionEntry>
     <selectionEntry name="Escuadra de Asalto" id="82fa-e625-16ff-5e28" collective="false" hidden="false" import="true" page="60" publicationId="f176-f140-74d8-da7d" type="unit">
       <costs>
@@ -2719,7 +2752,6 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
         <infoLink name="Escuadras de combate" id="ddea-8c3d-cb33-7432" hidden="false" targetId="22a0-0930-12ab-bd9e" type="rule"/>
         <infoLink name="Infiltración" id="c078-2910-db83-05fe" hidden="false" targetId="3310-5f06-776a-5b35" type="rule"/>
         <infoLink name="Moverse a Través de Cobertura" id="c70b-0745-3e2f-aedd" hidden="false" targetId="6cf1-d139-8b14-6083" type="rule"/>
-        <infoLink name="Exploradores" id="c330-9ce7-b879-fb90" hidden="false" targetId="630b-a220-22d6-31d0" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Exploradores" id="724a-98b2-30e7-e688" collective="false" hidden="false" import="true" sortIndex="2">
@@ -3450,7 +3482,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                     <constraint id="31ac-cd38-fa0b-b9e3-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink name="Arma de energía" id="b441-93b6-ffee-836a" collective="false" hidden="false" import="true" sortIndex="3" targetId="b8c3-697d-5086-0aea" type="selectionEntry">
+                    <entryLink name="Arma de energía" id="b441-93b6-ffee-836a" collective="false" hidden="false" import="true" sortIndex="5" targetId="b8c3-697d-5086-0aea" type="selectionEntry">
                       <categoryLinks>
                         <categoryLink name="Arma Limitada" id="8bce-8cd0-6c37-cc20" hidden="false" primary="false" targetId="354e-8430-56e8-0d17"/>
                       </categoryLinks>
@@ -3458,7 +3490,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                         <cost name="Pts" typeId="puntos" value="15"/>
                       </costs>
                     </entryLink>
-                    <entryLink name="Cuchilla Relámpago" id="aa5a-7af9-c466-0895" collective="false" hidden="false" import="true" sortIndex="5" targetId="b653-7261-455e-348c" type="selectionEntry">
+                    <entryLink name="Cuchilla Relámpago" id="aa5a-7af9-c466-0895" collective="false" hidden="false" import="true" sortIndex="7" targetId="b653-7261-455e-348c" type="selectionEntry">
                       <categoryLinks>
                         <categoryLink name="Arma Limitada" id="b35a-164f-4b9a-2e3f" hidden="false" primary="false" targetId="354e-8430-56e8-0d17"/>
                       </categoryLinks>
@@ -3469,7 +3501,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                         <cost name="Pts" typeId="puntos" value="25"/>
                       </costs>
                     </entryLink>
-                    <entryLink name="Puño de Combate" id="a52f-4126-47ca-0af6" collective="false" hidden="false" import="true" sortIndex="6" targetId="536e-9554-070d-161a" type="selectionEntry">
+                    <entryLink name="Puño de Combate" id="a52f-4126-47ca-0af6" collective="false" hidden="false" import="true" sortIndex="8" targetId="536e-9554-070d-161a" type="selectionEntry">
                       <categoryLinks>
                         <categoryLink name="Arma Limitada" id="3084-06ec-0b73-6584" hidden="false" primary="false" targetId="354e-8430-56e8-0d17"/>
                       </categoryLinks>
@@ -3477,7 +3509,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                         <cost name="Pts" typeId="puntos" value="25"/>
                       </costs>
                     </entryLink>
-                    <entryLink name="Martillo de Trueno" id="bbe0-3079-5748-18f1" collective="false" hidden="false" import="true" sortIndex="7" targetId="f7c5-632c-7c49-4735" type="selectionEntry">
+                    <entryLink name="Martillo de Trueno" id="bbe0-3079-5748-18f1" collective="false" hidden="false" import="true" sortIndex="9" targetId="f7c5-632c-7c49-4735" type="selectionEntry">
                       <categoryLinks>
                         <categoryLink name="Arma Limitada" id="18cd-fca3-5fad-6617" hidden="false" primary="false" targetId="354e-8430-56e8-0d17"/>
                       </categoryLinks>
@@ -3493,12 +3525,31 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                         <cost name="Pts" typeId="puntos" value="5"/>
                       </costs>
                     </entryLink>
-                    <entryLink name="Combi" id="12ac-ba60-bfeb-03ae" collective="false" hidden="false" import="true" sortIndex="2" targetId="db39-c833-ad11-c09c" type="selectionEntry">
+                    <entryLink name="Combifusión" id="0b2af430-aa0a-4047-b939-dfda018bb6ed" collective="false" hidden="false" import="true" sortIndex="2" targetId="c42e-27b4-3a35-cc4d" type="selectionEntry">
                       <categoryLinks>
-                        <categoryLink name="Arma Limitada" id="1a79-2527-a79f-37cd" hidden="false" primary="false" targetId="354e-8430-56e8-0d17"/>
+                        <categoryLink name="Arma Limitada" id="365e0063-8cc3-4ffc-bfd9-dd02508f8b4f" hidden="false" primary="false" targetId="354e-8430-56e8-0d17"/>
                       </categoryLinks>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="10"/>
+                      </costs>
                     </entryLink>
-                    <entryLink name="Pistola de Plasma" id="51aa-3b97-4c81-ab49" collective="false" hidden="false" import="true" sortIndex="4" targetId="c85c-fcc8-62a9-3940" type="selectionEntry">
+                    <entryLink name="Combilanzallamas" id="82b4aeff-1b9e-4878-9941-387400c345a1" collective="false" hidden="false" import="true" sortIndex="3" targetId="fb89-c4aa-05d9-1ae2" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="Arma Limitada" id="1eecd39e-33fe-4a5e-9ec3-ac2b3c8839e0" hidden="false" primary="false" targetId="354e-8430-56e8-0d17"/>
+                      </categoryLinks>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink name="Combiplasma" id="f891baae-3701-4d23-8e71-23c26e28f5a0" collective="false" hidden="false" import="true" sortIndex="4" targetId="4f22-ab20-9410-d4bf" type="selectionEntry">
+                      <categoryLinks>
+                        <categoryLink name="Arma Limitada" id="1ee02e99-ab2c-443b-8e73-898894f61373" hidden="false" primary="false" targetId="354e-8430-56e8-0d17"/>
+                      </categoryLinks>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="10"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink name="Pistola de Plasma" id="51aa-3b97-4c81-ab49" collective="false" hidden="false" import="true" sortIndex="6" targetId="c85c-fcc8-62a9-3940" type="selectionEntry">
                       <categoryLinks>
                         <categoryLink name="Arma Limitada" id="9276-8645-caee-399c" hidden="false" primary="false" targetId="354e-8430-56e8-0d17"/>
                       </categoryLinks>
@@ -3508,7 +3559,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                     </entryLink>
                   </entryLinks>
                   <selectionEntries>
-                    <selectionEntry name="Par de Cuchillas Relámpago" id="a408-da10-e033-28ac" hidden="false" import="true" sortIndex="8" type="upgrade">
+                    <selectionEntry name="Par de Cuchillas Relámpago" id="a408-da10-e033-28ac" hidden="false" import="true" sortIndex="10" type="upgrade">
                       <categoryLinks>
                         <categoryLink name="Arma Limitada" id="fc94-4000-e67a-69c9" hidden="false" primary="false" targetId="354e-8430-56e8-0d17"/>
                       </categoryLinks>
@@ -3540,7 +3591,6 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
         <cost name="Pts" typeId="puntos" value="215"/>
       </costs>
       <infoLinks>
-        <infoLink name="Y no conocerán el miedo" id="cf31-7597-1621-cc4f" hidden="false" targetId="5ce7-70c4-4a99-db0d" type="rule"/>
         <infoLink name="Coraje" id="36f2-6f67-633c-4cc8" hidden="false" targetId="b23b-fb5c-4c8c-5ae4" type="rule"/>
         <infoLink name="Asalto del Ala de Muerte" id="062c-1fd2-1985-c0b7" hidden="false" targetId="c3d0-c5be-dd49-ddd4" type="rule"/>
       </infoLinks>
@@ -3845,7 +3895,6 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
         <cost name="Pts" typeId="puntos" value="215"/>
       </costs>
       <infoLinks>
-        <infoLink name="Y no conocerán el miedo" id="a979-4c58-2133-c12f" hidden="false" targetId="5ce7-70c4-4a99-db0d" type="rule"/>
         <infoLink name="Coraje" id="129a-c950-5322-4078" hidden="false" targetId="b23b-fb5c-4c8c-5ae4" type="rule"/>
         <infoLink name="Asalto del Ala de Muerte" id="8f95-19ac-8caa-c09b" hidden="false" targetId="c3d0-c5be-dd49-ddd4" type="rule"/>
       </infoLinks>
@@ -4150,7 +4199,6 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
         <cost name="Pts" typeId="puntos" value="215"/>
       </costs>
       <infoLinks>
-        <infoLink name="Y no conocerán el miedo" id="0192-66e9-d66e-713e" hidden="false" targetId="5ce7-70c4-4a99-db0d" type="rule"/>
         <infoLink name="Coraje" id="d826-5e6b-4250-10e1" hidden="false" targetId="b23b-fb5c-4c8c-5ae4" type="rule"/>
         <infoLink name="Asalto del Ala de Muerte" id="8b25-1da6-198c-2942" hidden="false" targetId="c3d0-c5be-dd49-ddd4" type="rule"/>
       </infoLinks>
@@ -6329,17 +6377,6 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
         <infoLink name="Cañón Láser" id="f521-1650-3b1f-ac7d" hidden="false" targetId="b210-a1f3-d328-5739" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Combi" id="db39-c833-ad11-c09c" collective="false" hidden="false" import="true" type="upgrade">
-      <constraints>
-        <constraint id="e308-fb4c-039e-a313" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <costs>
-        <cost name="Pts" typeId="puntos" value="10"/>
-      </costs>
-      <entryLinks>
-        <entryLink name="Combi" id="7b52-bfdf-3fa4-0499" collective="false" hidden="false" import="true" targetId="105b-8056-1c2d-9509" type="selectionEntryGroup"/>
-      </entryLinks>
-    </selectionEntry>
     <selectionEntry name="Combifusión" id="c42e-27b4-3a35-cc4d" collective="false" hidden="false" import="true" type="upgrade">
       <constraints>
         <constraint id="f36d-b332-8fe2-bd28" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -6706,17 +6743,6 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
       <infoLinks>
         <infoLink name="Martillo Sísmico" id="58c1-a53c-02fd-70f7" hidden="false" targetId="1856-12e8-552e-a86e" type="profile"/>
       </infoLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup name="Combi" id="105b-8056-1c2d-9509" collective="false" defaultSelectionEntryId="756c-6e59-bfa8-6ef0" hidden="false" import="true">
-      <constraints>
-        <constraint id="81aa-03a8-c3c9-673d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-        <constraint id="0baf-8bfd-7807-f29d" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-      </constraints>
-      <entryLinks>
-        <entryLink name="Combiplasma" id="bbdb-70d9-7ac9-6ca4" collective="false" hidden="false" import="true" sortIndex="3" targetId="4f22-ab20-9410-d4bf" type="selectionEntry"/>
-        <entryLink name="Combilanzallamas" id="3780-ce20-65ea-22f7" collective="false" hidden="false" import="true" sortIndex="2" targetId="fb89-c4aa-05d9-1ae2" type="selectionEntry"/>
-        <entryLink name="Combifusión" id="756c-6e59-bfa8-6ef0" collective="false" hidden="false" import="true" sortIndex="1" targetId="c42e-27b4-3a35-cc4d" type="selectionEntry"/>
-      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
 </catalogue>
