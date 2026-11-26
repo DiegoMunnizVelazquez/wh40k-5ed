@@ -3189,7 +3189,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
     </selectionEntry>
     <selectionEntry name="Escuadra de Veteranos de la Compañía" id="11e1-69c3-bfd9-fce3" collective="false" hidden="false" import="true" page="63" publicationId="f176-f140-74d8-da7d" type="unit">
       <entryLinks>
-        <entryLink name="Bombas de Fusión" id="a623-df8a-ebec-b2c7" collective="false" hidden="false" import="true" sortIndex="3" targetId="c050-e9ce-56a9-f904" type="selectionEntry">
+        <entryLink name="Bombas de Fusión" id="a623-df8a-ebec-b2c7" collective="false" hidden="false" import="true" sortIndex="2" targetId="c050-e9ce-56a9-f904" type="selectionEntry">
           <constraints>
             <constraint id="eea8-a3bd-6322-15f2" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="0"/>
           </constraints>
@@ -3210,7 +3210,7 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
         <infoLink name="Y no conocerán el miedo" id="011a-ebd2-8d10-eabe" hidden="false" targetId="5ce7-70c4-4a99-db0d" type="rule"/>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry name="Transporte Asignado" id="9113-fdb8-92d3-7221" collective="false" hidden="false" import="true" sortIndex="4" type="upgrade">
+        <selectionEntry name="Transporte Asignado" id="9113-fdb8-92d3-7221" collective="false" hidden="false" import="true" sortIndex="3" type="upgrade">
           <constraints>
             <constraint id="f53e-43ef-0702-4f35" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
           </constraints>
@@ -3245,42 +3245,6 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Escudo" id="3156-e140-79af-29c3" defaultSelectionEntryId="3669-715e-b3b3-e0be" hidden="false" sortIndex="2">
-          <entryLinks>
-            <entryLink name="Escudo de Combate" id="3669-715e-b3b3-e0be" hidden="false" import="true" sortIndex="1" targetId="4c20-f278-6868-e5c4" type="selectionEntry">
-              <constraints>
-                <constraint id="43ac-b700-da5f-8556" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="0"/>
-              </constraints>
-              <costs>
-                <cost name="Pts" typeId="puntos" value="5"/>
-              </costs>
-              <modifiers>
-                <modifier field="43ac-b700-da5f-8556" type="increment" value="1">
-                  <repeats>
-                    <repeat childId="model" field="selections" repeats="1" roundUp="false" scope="11e1-69c3-bfd9-fce3" shared="true" value="1"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink name="Escudo de Tormenta" id="2838-b3ee-3596-03ea" hidden="false" import="true" sortIndex="2" targetId="b809-4f58-c37f-459f" type="selectionEntry">
-              <costs>
-                <cost name="Pts" typeId="puntos" value="10"/>
-              </costs>
-              <modifierGroups>
-                <modifierGroup type="and">
-                  <modifiers>
-                    <modifier field="19a8-0cdb-52af-7b43" type="set" value="0"/>
-                    <modifier field="19a8-0cdb-52af-7b43" type="increment" value="1">
-                      <repeats>
-                        <repeat childId="model" field="selections" repeats="1" roundUp="false" scope="11e1-69c3-bfd9-fce3" shared="true" value="1"/>
-                      </repeats>
-                    </modifier>
-                  </modifiers>
-                </modifierGroup>
-              </modifierGroups>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
         <selectionEntryGroup name="Veteranos" id="dfc7-0141-13c7-40e1" defaultSelectionEntryId="ce3a-6d50-b1e8-d2fa" hidden="false" sortIndex="1">
           <constraints>
             <constraint id="7afe-9779-d2cf-be5a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="5"/>
@@ -3323,6 +3287,30 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                     <entryLink name="Espada Sierra" id="c486-b13d-4443-0e57" hidden="false" import="true" sortIndex="2" targetId="09db-4f5a-ff2d-9f73" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
+                <selectionEntryGroup name="Escudo" id="af045eb9-f3fd-46f5-8da9-b5c7e2af3e9a" collapsible="true" collective="false" hidden="false" import="true" sortIndex="3">
+                  <constraints>
+                    <constraint id="7fa48e36-5ae3-4860-962e-fa137595ee9f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="0"/>
+                    <constraint id="95dc353b-5ff8-43df-b3ed-6676558c9556" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink name="Escudo de combate" id="ad36309f-8e12-4928-a9f4-c6a7887c2191" collective="false" hidden="false" import="true" sortIndex="1" targetId="fe5ffd55-c539-5074-8e67-cac6c3b1d38d" type="selectionEntry">
+                      <constraints>
+                        <constraint id="dcc91ca8-e942-4e9d-8e1d-613aa1568174" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink name="Escudo de tormenta" id="87595b5a-3199-4e60-9508-b301f60792f2" collective="false" hidden="false" import="true" sortIndex="2" targetId="23585150-9804-4a7e-b60b-29994f48bde6" type="selectionEntry">
+                      <constraints>
+                        <constraint id="b71a1644-dc28-4811-9f20-e8e279559b96" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="10"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
               </selectionEntryGroups>
             </selectionEntry>
             <selectionEntry name="Veterano con Arma de Especialista Ligera" id="9069-ddc5-59fe-ff59" collective="false" hidden="false" import="true" sortIndex="2" type="model">
@@ -3360,6 +3348,30 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                     <entryLink name="Rifle de Plasma" id="b571-f1c7-b379-17df" hidden="false" import="true" sortIndex="3" targetId="81a6-dc08-e9a0-29b8" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="puntos" value="15"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Escudo" id="cb15cdb3-f87f-40cd-b9c8-0322f1334096" collapsible="true" collective="false" hidden="false" import="true" sortIndex="3">
+                  <constraints>
+                    <constraint id="027a8a83-fe7e-4308-a84b-c2d07a020eb0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="0"/>
+                    <constraint id="4dbf8446-65df-4ccd-b745-de7b4299972e" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink name="Escudo de combate" id="dfc57696-ea2e-42ea-91d4-0ccc0205664c" collective="false" hidden="false" import="true" sortIndex="1" targetId="fe5ffd55-c539-5074-8e67-cac6c3b1d38d" type="selectionEntry">
+                      <constraints>
+                        <constraint id="48c2cc07-19b0-4b07-a38b-c5313bc00be8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink name="Escudo de tormenta" id="769dafbf-0a14-4004-bb56-53838e48c62f" collective="false" hidden="false" import="true" sortIndex="2" targetId="23585150-9804-4a7e-b60b-29994f48bde6" type="selectionEntry">
+                      <constraints>
+                        <constraint id="efb994fc-d4f1-4ce0-ab63-2788fa7ce0ba" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="10"/>
                       </costs>
                     </entryLink>
                   </entryLinks>
@@ -3411,6 +3423,30 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                     <entryLink name="Cañón Láser" id="3094-6b7b-5059-8547" hidden="false" import="true" sortIndex="5" targetId="9a7e-c553-d032-789c" type="selectionEntry">
                       <costs>
                         <cost name="Pts" typeId="puntos" value="20"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Escudo" id="92fe9815-0e4e-4cbe-9c46-cfe0eb4640df" collapsible="true" collective="false" hidden="false" import="true" sortIndex="3">
+                  <constraints>
+                    <constraint id="0de3da6b-23fa-45d1-8b81-1bed76f852bf" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="0"/>
+                    <constraint id="1180071f-18c8-4cb2-8eb3-b9a90b699a21" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink name="Escudo de combate" id="632881f4-5052-4945-a74c-06335a582c4b" collective="false" hidden="false" import="true" sortIndex="1" targetId="fe5ffd55-c539-5074-8e67-cac6c3b1d38d" type="selectionEntry">
+                      <constraints>
+                        <constraint id="96ba715d-d10b-46a4-98f5-33ec751641ae" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink name="Escudo de tormenta" id="6b124202-c20a-46a6-9136-27c699dd7de7" collective="false" hidden="false" import="true" sortIndex="2" targetId="23585150-9804-4a7e-b60b-29994f48bde6" type="selectionEntry">
+                      <constraints>
+                        <constraint id="01ce9e08-e6a2-4c41-90a0-6eb64fc3c2b8" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="10"/>
                       </costs>
                     </entryLink>
                   </entryLinks>
@@ -3523,6 +3559,30 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                       </constraints>
                       <costs>
                         <cost name="Pts" typeId="puntos" value="30"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="Escudo" id="1decb91b-5451-4aea-aef6-4392a734bb96" collapsible="true" collective="false" hidden="false" import="true" sortIndex="3">
+                  <constraints>
+                    <constraint id="df483302-bb38-4d8f-87a4-05b52b40be56" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="0"/>
+                    <constraint id="7221eb5b-9928-4b68-9f2d-306803beaac5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink name="Escudo de combate" id="251c6454-a573-4ef1-8dad-15154fafd03a" collective="false" hidden="false" import="true" sortIndex="1" targetId="fe5ffd55-c539-5074-8e67-cac6c3b1d38d" type="selectionEntry">
+                      <constraints>
+                        <constraint id="b9ab4d8f-39c8-4e14-a84e-4c9bcfa3484f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="5"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink name="Escudo de tormenta" id="721dd343-d5ae-42e5-b35a-446fbb07c2ce" collective="false" hidden="false" import="true" sortIndex="2" targetId="23585150-9804-4a7e-b60b-29994f48bde6" type="selectionEntry">
+                      <constraints>
+                        <constraint id="b69ccad9-b8c1-48d4-8c65-8f1a299ea811" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                      </constraints>
+                      <costs>
+                        <cost name="Pts" typeId="puntos" value="10"/>
                       </costs>
                     </entryLink>
                   </entryLinks>
