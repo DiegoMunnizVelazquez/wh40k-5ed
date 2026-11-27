@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem name="Warhammer 40,000 5ª Edición " id="8cf6-c83d-3eeb-e95c" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" revision="33" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem name="Warhammer 40,000 5ª Edición " id="8cf6-c83d-3eeb-e95c" authorContact="Club Panzerhammer: panzerhammerwargamesclub@gmail.com  csddmv@gmail.com" authorName="Diego Muñiz" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" revision="34" type="gameSystem" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>Esto es for fun. Cualquier error o sugerencia serán bienvenidas
 
 En este sistema se agruparán el sistema de Warhammer 40000 5ª edición, así como todos los los codex que se usarán en este sistema cerrado.
@@ -1827,6 +1827,60 @@ Si decides dividir una unidad en escuadras de combate, a partir de ese momento c
         <modifier affects="profiles.Arma" field="name" type="append" value="acoplado"/>
         <modifier affects="profiles.Arma" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Acoplada"/>
       </modifiers>
+    </selectionEntry>
+    <selectionEntry name="Combifusión" id="c42e-27b4-3a35-cc4d" collective="false" hidden="false" import="true" type="upgrade">
+      <constraints>
+        <constraint id="f36d-b332-8fe2-bd28" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <costs>
+        <cost name="Pts" typeId="puntos" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Combi-Fusión" id="817b-5fe9-b1c9-59e9" hidden="false" targetId="d70e-78b0-03b3-f2b2" type="profile">
+          <modifiers>
+            <modifier field="name" type="set" value="Combi-Fusión"/>
+            <modifier type="append" value="Un solo uso" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", "/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Bólter" id="a0b6-2d86-a780-4923" hidden="false" targetId="90a7-c0e2-3a06-dc70" type="profile"/>
+        <infoLink name="Combiarma" id="0fdf-9142-473b-c186" hidden="false" targetId="b524-ca47-0c30-ae4f" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Combilanzallamas" id="fb89-c4aa-05d9-1ae2" collective="false" hidden="false" import="true" type="upgrade">
+      <constraints>
+        <constraint id="95b8-77b4-9fed-0478" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <costs>
+        <cost name="Pts" typeId="puntos" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Combi-Lanzallamas" id="491f-10d6-755c-ed5f" hidden="false" targetId="c6ed-e1e6-bd68-1891" type="profile">
+          <modifiers>
+            <modifier field="name" type="set" value="Combi-Lanzallamas"/>
+            <modifier type="append" value="Un solo uso" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", "/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Bólter" id="f749-e710-899d-3aaf" hidden="false" targetId="90a7-c0e2-3a06-dc70" type="profile"/>
+        <infoLink name="Combiarma" id="4a6c-828a-c234-b230" hidden="false" targetId="b524-ca47-0c30-ae4f" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry name="Combiplasma" id="4f22-ab20-9410-d4bf" collective="false" hidden="false" import="true" type="upgrade">
+      <constraints>
+        <constraint id="83e8-7f44-cb87-ba0b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <costs>
+        <cost name="Pts" typeId="puntos" value="0"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Combi-Plasma" id="a455-16c9-6365-d756" hidden="false" targetId="223c-ecb9-2104-7007" type="profile">
+          <modifiers>
+            <modifier field="name" type="set" value="Combi-Plasma"/>
+            <modifier type="append" value="Un solo uso" field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", "/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Bólter" id="73da-b2e5-4656-6992" hidden="false" targetId="90a7-c0e2-3a06-dc70" type="profile"/>
+        <infoLink name="Combiarma" id="3ea1-bd3c-6cf8-32a6" hidden="false" targetId="b524-ca47-0c30-ae4f" type="profile"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
 </gameSystem>
