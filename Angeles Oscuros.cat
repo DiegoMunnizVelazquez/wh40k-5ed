@@ -2921,13 +2921,6 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
                   <constraints>
                     <constraint id="1df4e796-6628-4c1c-9263-31e9216274f5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
-                  <modifiers>
-                    <modifier field="1df4e796-6628-4c1c-9263-31e9216274f5" type="set" value="0">
-                      <conditions>
-                        <condition childId="c627-3af0-9bf8-ea0e" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="9e48676a-29f6-40de-acf0-7f37fd9fd32b" shared="true" type="atLeast" value="1"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                 </entryLink>
                 <entryLink name="Espada sierra" id="9ef273ba-2de0-4cf2-9f25-613ce73c7d17" collective="false" hidden="false" import="true" sortIndex="4" targetId="160f9149-5ca1-556d-a844-0f6f1b5ab9ce" type="selectionEntry">
                   <constraints>
@@ -2935,6 +2928,18 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
                   </constraints>
                 </entryLink>
               </entryLinks>
+              <modifiers>
+                <modifier field="hidden" type="set" value="true">
+                  <conditions>
+                    <condition childId="c627-3af0-9bf8-ea0e" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="9e48676a-29f6-40de-acf0-7f37fd9fd32b" shared="true" type="atLeast" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="419ffed1-bec8-4f84-b435-de418fc0a808" type="set" value="0">
+                  <conditions>
+                    <condition childId="c627-3af0-9bf8-ea0e" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="9e48676a-29f6-40de-acf0-7f37fd9fd32b" shared="true" type="atLeast" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <selectionEntries>
               <selectionEntry name="Arma de combate (hasta dos por escuadra)" id="adf665f5-c03b-4295-a29f-c310a86c91f5" collapsible="true" hidden="false" import="true" sortIndex="2" type="upgrade">
                 <constraints>
@@ -2943,13 +2948,6 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
                 <costs>
                   <cost name="Pts" typeId="puntos" value="0"/>
                 </costs>
-                <modifiers>
-                  <modifier field="c57293c0-056d-43b7-8416-05657cf56c4c" type="set" value="0">
-                    <conditions>
-                      <condition childId="c627-3af0-9bf8-ea0e" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="9e48676a-29f6-40de-acf0-7f37fd9fd32b" shared="true" type="atLeast" value="1"/>
-                    </conditions>
-                  </modifier>
-                </modifiers>
                 <selectionEntryGroups>
                   <selectionEntryGroup name="Arma" id="2f0fcac1-5ff3-4e52-b6be-bcdd1ab072d8" collapsible="true" collective="false" hidden="false" import="true" sortIndex="1">
                     <constraints>
@@ -2984,13 +2982,6 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
                 <costs>
                   <cost name="Pts" typeId="puntos" value="0"/>
                 </costs>
-                <modifiers>
-                  <modifier field="2dba244a-fc0c-4150-b3cd-6fb6b14ab6a5" type="set" value="0">
-                    <conditions>
-                      <condition childId="c627-3af0-9bf8-ea0e" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="9e48676a-29f6-40de-acf0-7f37fd9fd32b" shared="true" type="atLeast" value="1"/>
-                    </conditions>
-                  </modifier>
-                </modifiers>
                 <selectionEntryGroups>
                   <selectionEntryGroup name="Arma" id="5af8460d-2327-4053-985c-f466fa1cc5c9" collapsible="true" collective="false" hidden="false" import="true" sortIndex="1">
                     <constraints>
