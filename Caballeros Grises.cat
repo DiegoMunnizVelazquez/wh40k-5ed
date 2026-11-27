@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Caballeros Grises" id="0420-9ba6-2af8-56b7" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="16" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Caballeros Grises" id="0420-9ba6-2af8-56b7" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="17" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Inquisidor" id="82cb-ecac-c397-db01" hidden="false"/>
   </categoryEntries>
@@ -8197,7 +8197,12 @@ Esta habilidad no funciona cuando atacan a vehículos sin Habilidad de Armas.</d
     <selectionEntry name="Combifusión" id="5c3e8949-fec8-4353-91e0-90a50369ccdd" hidden="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink name="Combiarma" id="2f4ba781-84c8-46ef-98c6-ae44a3631abd" hidden="false" targetId="b524-ca47-0c30-ae4f" type="profile"/>
-        <infoLink name="Rifle de Fusión" id="7f563182-e22c-4263-a870-f51f57617f3d" hidden="false" targetId="d70e-78b0-03b3-f2b2" type="profile"/>
+        <infoLink name="Combi-Fusión" id="7f563182-e22c-4263-a870-f51f57617f3d" hidden="false" targetId="d70e-78b0-03b3-f2b2" type="profile">
+          <modifiers>
+            <modifier field="name" type="set" value="Combi-Fusión"/>
+            <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Un solo uso"/>
+          </modifiers>
+        </infoLink>
         <infoLink name="Bólter" id="616b-6516-72b0-45f3" hidden="false" targetId="90a7-c0e2-3a06-dc70" type="profile">
           <modifiers>
             <modifier field="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" type="increment" value="1">
@@ -8212,7 +8217,12 @@ Esta habilidad no funciona cuando atacan a vehículos sin Habilidad de Armas.</d
     <selectionEntry name="Combilanzallamas" id="4e0d8bb2-b2b4-4a58-b668-096b298f0a9c" hidden="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink name="Combiarma" id="e613cbd8-1911-42e9-a2e3-554a75168788" hidden="false" targetId="b524-ca47-0c30-ae4f" type="profile"/>
-        <infoLink name="Lanzallamas" id="a502e8c0-657d-4430-a93a-3be7a812dccd" hidden="false" targetId="c6ed-e1e6-bd68-1891" type="profile"/>
+        <infoLink name="Combi-Lanzallamas" id="a502e8c0-657d-4430-a93a-3be7a812dccd" hidden="false" targetId="c6ed-e1e6-bd68-1891" type="profile">
+          <modifiers>
+            <modifier field="name" type="set" value="Combi-Lanzallamas"/>
+            <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Un solo uso"/>
+          </modifiers>
+        </infoLink>
         <infoLink name="Bólter" id="b5fa-5694-c92a-d9e7" hidden="false" targetId="90a7-c0e2-3a06-dc70" type="profile">
           <modifiers>
             <modifier field="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" type="increment" value="1">
@@ -8227,7 +8237,12 @@ Esta habilidad no funciona cuando atacan a vehículos sin Habilidad de Armas.</d
     <selectionEntry name="Combiplasma" id="13990778-4548-4551-b483-f6de03242f6a" hidden="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink name="Combiarma" id="2cc170a4-51a3-4905-ba04-58f4581b1d79" hidden="false" targetId="b524-ca47-0c30-ae4f" type="profile"/>
-        <infoLink name="Rifle de Plasma" id="409d2cf0-0c9d-4b02-a52b-80f5b5f348e0" hidden="false" targetId="223c-ecb9-2104-7007" type="profile"/>
+        <infoLink name="Combi-Plasma" id="409d2cf0-0c9d-4b02-a52b-80f5b5f348e0" hidden="false" targetId="223c-ecb9-2104-7007" type="profile">
+          <modifiers>
+            <modifier field="name" type="set" value="Combi-Plasma"/>
+            <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" join=", " type="append" value="Un solo uso"/>
+          </modifiers>
+        </infoLink>
         <infoLink name="Bólter" id="6b84-025d-6ac4-c4d8" hidden="false" targetId="90a7-c0e2-3a06-dc70" type="profile">
           <modifiers>
             <modifier field="a6383362-5aa8-4ff0-b1d0-00e059fc9d45" type="increment" value="1">
