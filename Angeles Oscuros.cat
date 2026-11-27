@@ -5968,17 +5968,6 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
         <infoLink name="Arma Psíquica" id="314a-322e-1bf3-e83a" hidden="false" targetId="2434-afee-c960-b04e" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Armadura de Exterminador" id="13e3-4d39-1e99-6cd3" collective="false" hidden="false" import="true" type="upgrade">
-      <constraints>
-        <constraint id="b9d5-5fc7-d8c5-545a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <costs>
-        <cost name="Pts" typeId="puntos" value="0"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Armadura de exterminador" id="535c-d4f6-db5e-3439" hidden="false" targetId="8d617ee3-570c-4ba5-a487-143f3637a87b" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry name="Armas de combate" id="6bdb0aee-c848-4b01-acf6-609d27b00488" collective="false" hidden="false" import="true" type="upgrade">
       <costs>
         <cost name="Pts" typeId="puntos" value="0"/>
@@ -6237,19 +6226,6 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
         <infoLink name="Filoarma" id="2414-cdf7-c238-ac27" hidden="false" targetId="2ca9-cbee-ed53-8717" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Lanzagranadas Auxiliar" id="b6e6-9250-415e-6d66" collective="false" hidden="false" import="true" type="upgrade">
-      <constraints>
-        <constraint id="6be8-ccde-c81c-22dd" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <costs>
-        <cost name="Pts" typeId="puntos" value="0"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Lanzagranadas Auxiliar" id="93c3-d143-38e4-141b" hidden="false" targetId="0e66-17cd-2af2-619f" type="profile"/>
-        <infoLink name="Lanzagranadas Perforante" id="2800-2384-7b26-1df9" hidden="false" targetId="d1c6-bc8e-65d7-690b" type="profile"/>
-        <infoLink name="Lanzagranadas Fragmentación" id="c49f-9d21-988d-30cb" hidden="false" targetId="0574-0866-85e8-5aa0" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry name="Lanzallamas" id="aa81-6795-671e-32e7" collective="false" hidden="false" import="true" type="upgrade">
       <constraints>
         <constraint id="a26a-7bbe-eb77-398a" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -6295,33 +6271,6 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
         <infoLink name="Martillo de Trueno" id="4681-9567-3782-7a82" hidden="false" targetId="562f-8ac0-91b5-c835" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Misil Cazador Asesino" id="109e-11bc-a0a8-ddc5" collective="false" hidden="false" import="true" type="upgrade">
-      <costs>
-        <cost name="Pts" typeId="puntos" value="0"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Lanzamisiles Perforante" id="bc46-3634-e9c5-5547" hidden="false" targetId="ddc7ae3e-7035-4486-9b06-07cb064c8097" type="profile">
-          <modifiers>
-            <modifier field="6fa97fa8-ea74-4a27-a0fb-bc4e5f367464" type="set" value="Ilimitado"/>
-            <modifier field="077c342f-d7b9-45c6-b8af-88e97cafd3a2" type="append" value=", Un solo uso"/>
-          </modifiers>
-        </infoLink>
-        <infoLink name="Misil Cazador Asesino" id="0b9f-42d1-9c1e-b4a6" hidden="false" targetId="30f6-7094-77e3-82d8" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
-    <selectionEntry name="Motocicleta Marines Espaciales" id="8292-d319-84f5-7f19" collective="false" hidden="false" import="true" type="upgrade">
-      <constraints>
-        <constraint id="2ef1-9f23-9e1d-23e6" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <costs>
-        <cost name="Pts" typeId="puntos" value="35"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Motocicleta Marines Espaciales" id="819b-ddc0-50b5-28a4" hidden="false" targetId="5042-8639-f05a-298b" type="profile"/>
-        <infoLink name="Bólter" id="321b-f3b0-d3f7-3263" hidden="false" targetId="90a7-c0e2-3a06-dc70" type="profile"/>
-        <infoLink name="Baliza de Teleportación" id="2e65-c178-071b-2de7" hidden="false" targetId="d14e-d59a-7b95-bcb0" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
     <selectionEntry name="Narthecium / Reductor" id="b628-528c-ffdf-c0c6" collective="false" hidden="false" import="true" type="upgrade">
       <constraints>
         <constraint id="e0cf-d6ad-decc-9105" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
@@ -6340,17 +6289,6 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
           </characteristics>
         </profile>
       </profiles>
-    </selectionEntry>
-    <selectionEntry name="Pala excavadora" id="97d3-b5bc-ef98-e9ff" collective="false" hidden="false" import="true" page="103" publicationId="f176-f140-74d8-da7d" type="upgrade">
-      <constraints>
-        <constraint id="dc81-232d-a272-ba7c" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <costs>
-        <cost name="Pts" typeId="puntos" value="0"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Pala Excavadora" id="a3c3-3043-c103-9bf1" hidden="false" targetId="cc87-4ebb-33bb-a377" type="profile"/>
-      </infoLinks>
     </selectionEntry>
     <selectionEntry name="Par de cuchillas relámpago" id="273cbaad-1393-47a8-b8e5-637e92778486" collective="false" hidden="false" import="true" type="upgrade">
       <costs>
@@ -6466,18 +6404,6 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
         <infoLink name="Rifle de Plasma" id="5b94-9aa4-4bea-6b15" hidden="false" targetId="223c-ecb9-2104-7007" type="profile"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry name="Servoarmadura" id="9657-fbb1-b1f9-5516" collective="false" hidden="false" import="true" type="upgrade">
-      <constraints>
-        <constraint id="326e-afae-be94-f864" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-        <constraint id="0462-42f7-28f8-a6cd" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-      </constraints>
-      <costs>
-        <cost name="Pts" typeId="puntos" value="0"/>
-      </costs>
-      <infoLinks>
-        <infoLink name="Servoarmadura" id="eba1-bd93-59c9-610e" hidden="false" targetId="35b6-b813-1033-e16a" type="profile"/>
-      </infoLinks>
-    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup name="Transporte asignado" id="4950-e110-16a8-4097" collective="false" hidden="false" import="true">
@@ -6515,23 +6441,6 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
           </costs>
         </entryLink>
       </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup name="Martillo Sísmico" id="ec44-8146-7516-e185" collective="false" defaultSelectionEntryId="5a2e-9029-20c0-064e" hidden="false" import="true">
-      <constraints>
-        <constraint id="43a8-ab99-a73d-4d8f" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-        <constraint id="c109-9767-cd87-94a0" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-      </constraints>
-      <entryLinks>
-        <entryLink name="Rifle de Fusión" id="5a2e-9029-20c0-064e" collective="false" hidden="false" import="true" sortIndex="1" targetId="532d-8841-1b61-1a96" type="selectionEntry"/>
-        <entryLink name="Lanzallamas Pesado" id="bae3-8c0e-4535-32e9" collective="false" hidden="false" import="true" sortIndex="2" targetId="93f5-39db-b8d6-e634" type="selectionEntry">
-          <costs>
-            <cost name="Pts" typeId="puntos" value="5"/>
-          </costs>
-        </entryLink>
-      </entryLinks>
-      <infoLinks>
-        <infoLink name="Martillo Sísmico" id="58c1-a53c-02fd-70f7" hidden="false" targetId="1856-12e8-552e-a86e" type="profile"/>
-      </infoLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
 </catalogue>
