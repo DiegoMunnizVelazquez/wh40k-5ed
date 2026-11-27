@@ -2911,7 +2911,21 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Arma" id="5085af91-203e-409c-ad7c-387a47aab302" collapsible="true" collective="false" defaultSelectionEntryId="3763f6a3-7dd9-42f8-85bc-7d447d704385" hidden="false" import="true" sortIndex="5">
+          <selectionEntryGroup name="Tipo de veterano" id="be9e3eb2-2141-446b-82fe-d6deea350966" collapsible="true" collective="false" defaultSelectionEntryId="83e277c4-56da-4d1d-9beb-6da3aa939978" hidden="false" import="true" sortIndex="5">
+            <constraints>
+              <constraint id="5db70b70-2962-40c3-953e-bedd909f4604" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+              <constraint id="7f727e5b-df40-4ab1-81bb-9a96a88f7428" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+            </constraints>
+            <selectionEntries>
+            <selectionEntry name="Veterano" id="83e277c4-56da-4d1d-9beb-6da3aa939978" collapsible="true" hidden="false" import="true" sortIndex="1" type="upgrade">
+              <constraints>
+                <constraint id="ce086923-45fb-44ad-89c7-db0305868a58" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <costs>
+                <cost name="Pts" typeId="puntos" value="0"/>
+              </costs>
+              <selectionEntryGroups>
+            <selectionEntryGroup name="Arma" id="5085af91-203e-409c-ad7c-387a47aab302" collapsible="true" collective="false" defaultSelectionEntryId="3763f6a3-7dd9-42f8-85bc-7d447d704385" hidden="false" import="true" sortIndex="1">
               <constraints>
                 <constraint id="419ffed1-bec8-4f84-b435-de418fc0a808" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
                 <constraint id="cb5f1500-848c-4ef6-a82e-4a7887b436b9" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -2928,18 +2942,6 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
                   </constraints>
                 </entryLink>
               </entryLinks>
-              <modifiers>
-                <modifier field="hidden" type="set" value="true">
-                  <conditions>
-                    <condition childId="c627-3af0-9bf8-ea0e" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="9e48676a-29f6-40de-acf0-7f37fd9fd32b" shared="true" type="atLeast" value="1"/>
-                  </conditions>
-                </modifier>
-                <modifier field="419ffed1-bec8-4f84-b435-de418fc0a808" type="set" value="0">
-                  <conditions>
-                    <condition childId="c627-3af0-9bf8-ea0e" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="9e48676a-29f6-40de-acf0-7f37fd9fd32b" shared="true" type="atLeast" value="1"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <selectionEntries>
               <selectionEntry name="Arma de combate (hasta dos por escuadra)" id="adf665f5-c03b-4295-a29f-c310a86c91f5" collapsible="true" hidden="false" import="true" sortIndex="2" type="upgrade">
                 <constraints>
@@ -3019,7 +3021,7 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
               </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Apotecario, campeón o portaestandarte" id="74d43c06-13dc-4daa-b45a-8fdbc28fa635" collapsible="true" collective="false" hidden="false" import="true" sortIndex="7">
+            <selectionEntryGroup name="Apotecario o portaestandarte" id="74d43c06-13dc-4daa-b45a-8fdbc28fa635" collapsible="true" collective="false" hidden="false" import="true" sortIndex="2">
               <constraints>
                 <constraint id="d47c7d33-902f-4da4-b361-d8906b7e4d4b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="0"/>
                 <constraint id="3c6b19e0-581a-4967-a42e-14e6f87b5743" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -3124,7 +3126,11 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                   </selectionEntryGroup>
                 </selectionEntryGroups>
               </selectionEntry>
-                  <selectionEntry name="Campeón de la Compañía" id="c627-3af0-9bf8-ea0e" collective="false" hidden="false" import="true" sortIndex="3" type="upgrade">
+    </selectionEntries>
+            </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntry>
+                  <selectionEntry name="Campeón de la Compañía" id="c627-3af0-9bf8-ea0e" collective="false" hidden="false" import="true" sortIndex="2" type="upgrade">
           <constraints>
             <constraint id="c8b1-7991-e012-0cb1" field="selections" includeChildForces="true" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="max" value="0"/>
           </constraints>
@@ -3156,8 +3162,8 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
             </modifier>
           </modifiers>
         </selectionEntry>
-    </selectionEntries>
-            </selectionEntryGroup>
+            </selectionEntries>
+          </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
