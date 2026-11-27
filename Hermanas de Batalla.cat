@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue name="Hermanas de Batalla" id="e44c-71d1-0783-bf45" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="5" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue name="Hermanas de Batalla" id="e44c-71d1-0783-bf45" authorContact="csddmv@gmail.com" authorName="Diego Muñiz Velázquez" authorUrl="csddmv@gmail.com" battleScribeVersion="2.03" gameSystemId="8cf6-c83d-3eeb-e95c" gameSystemRevision="13" library="false" revision="6" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Confesor" id="cfb8-d719-3891-0a47" hidden="false"/>
   </categoryEntries>
@@ -611,9 +611,6 @@ Si tanto una unidad como un personaje independiente tienen un Acto de Fe que pr
     </rule>
     <rule name="Escudo de Fe" id="2b86-8280-f5aa-91c1" hidden="false" page="94" publicationId="a105-bc94-46a2-951b">
       <description>Las miniaturas sujetas a la regla especial Escudo de Fe cuentan con una salvación invulnerable de 6+.</description>
-    </rule>
-    <rule name="Combi-armas" id="8a9f-a60c-3868-a1a7" hidden="false">
-      <description>Una miniatura equipada con una combi arma (un combi-rifle de fusión, combi-rifle de plasma o combi-lanzallamas) puede elegir entre disparar el bólter o el arma secundaria. El bólter puede dispararse cada turno, pero el arma secundaria solo podrá dispararse una vez por batalla (un combi-rifle de plasma puede disparar con Fuego rápido). No se pueden disparar las dos armas en un mismo turno.</description>
     </rule>
     <rule name="Ira justa" id="d24b-9048-df39-87b1" hidden="false">
       <description>En el turno del jugador en el que una miniatura con esta regla especial asalte, la miniatura y todos los componentes de su unidad repiten las tiradas para impactar fallidas.</description>
@@ -2927,36 +2924,11 @@ Celestine puede actuar normalmente en el turno en que &quot;resucita&quot;. Cel
         <constraint id="55cc-1b3b-8fb7-1f3f-min" field="selections" includeChildSelections="false" scope="parent" shared="true" type="min" value="1"/>
         <constraint id="55cc-1b3b-8fb7-1f3f-max" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
       </constraints>
-      <infoLinks>
-        <infoLink name="Bólter" id="7b85-523e-0951-889f" hidden="false" targetId="90a7-c0e2-3a06-dc70" type="profile"/>
-        <infoLink name="Combi-armas" id="16be-d857-75f4-4748" hidden="false" targetId="8a9f-a60c-3868-a1a7" type="rule"/>
-      </infoLinks>
-      <selectionEntries>
-        <selectionEntry name="Combi-lanzallamas" id="ebe7-c352-4548-f67f" hidden="false" import="true" sortIndex="2" type="upgrade">
-          <constraints>
-            <constraint id="8a93-6300-d60a-0380" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Lanzallamas" id="a070-0fbb-3809-2092" hidden="false" targetId="c6ed-e1e6-bd68-1891" type="profile"/>
-          </infoLinks>
-        </selectionEntry>
-        <selectionEntry name="Combi-fusión" id="15ca-0afa-031a-2d93" hidden="false" import="true" sortIndex="1" type="upgrade">
-          <constraints>
-            <constraint id="987a-8fa4-a5a2-44ca" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Rifle de Fusión" id="875f-fd2c-45a2-f1df" hidden="false" targetId="d70e-78b0-03b3-f2b2" type="profile"/>
-          </infoLinks>
-        </selectionEntry>
-        <selectionEntry name="Combi-plasma" id="d77d-ebd1-e219-1f56" hidden="false" import="true" sortIndex="3" type="upgrade">
-          <constraints>
-            <constraint id="5f84-aec0-658f-30f2" field="selections" includeChildSelections="false" scope="parent" shared="true" type="max" value="1"/>
-          </constraints>
-          <infoLinks>
-            <infoLink name="Rifle de Plasma" id="18a0-d489-231c-3936" hidden="false" targetId="223c-ecb9-2104-7007" type="profile"/>
-          </infoLinks>
-        </selectionEntry>
-      </selectionEntries>
+      <entryLinks>
+        <entryLink name="Combi-fusión" id="15ca-0afa-031a-2d93" hidden="false" import="true" sortIndex="1" targetId="c42e-27b4-3a35-cc4d" type="selectionEntry"/>
+        <entryLink name="Combi-lanzallamas" id="ebe7-c352-4548-f67f" hidden="false" import="true" sortIndex="2" targetId="fb89-c4aa-05d9-1ae2" type="selectionEntry"/>
+        <entryLink name="Combi-plasma" id="d77d-ebd1-e219-1f56" hidden="false" import="true" sortIndex="3" targetId="4f22-ab20-9410-d4bf" type="selectionEntry"/>
+      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Transporte" id="284c-ae4e-7941-2b64" defaultSelectionEntryId="41ff-8ac1-ae8e-14bc" hidden="false">
       <constraints>
