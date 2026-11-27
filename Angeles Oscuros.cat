@@ -2921,6 +2921,13 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
                   <constraints>
                     <constraint id="1df4e796-6628-4c1c-9263-31e9216274f5" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
                   </constraints>
+                  <modifiers>
+                    <modifier field="1df4e796-6628-4c1c-9263-31e9216274f5" type="set" value="0">
+                      <conditions>
+                        <condition childId="c627-3af0-9bf8-ea0e" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="9e48676a-29f6-40de-acf0-7f37fd9fd32b" shared="true" type="atLeast" value="1"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                 </entryLink>
                 <entryLink name="Espada sierra" id="9ef273ba-2de0-4cf2-9f25-613ce73c7d17" collective="false" hidden="false" import="true" sortIndex="4" targetId="160f9149-5ca1-556d-a844-0f6f1b5ab9ce" type="selectionEntry">
                   <constraints>
@@ -2936,6 +2943,13 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
                 <costs>
                   <cost name="Pts" typeId="puntos" value="0"/>
                 </costs>
+                <modifiers>
+                  <modifier field="c57293c0-056d-43b7-8416-05657cf56c4c" type="set" value="0">
+                    <conditions>
+                      <condition childId="c627-3af0-9bf8-ea0e" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="9e48676a-29f6-40de-acf0-7f37fd9fd32b" shared="true" type="atLeast" value="1"/>
+                    </conditions>
+                  </modifier>
+                </modifiers>
                 <selectionEntryGroups>
                   <selectionEntryGroup name="Arma" id="2f0fcac1-5ff3-4e52-b6be-bcdd1ab072d8" collapsible="true" collective="false" hidden="false" import="true" sortIndex="1">
                     <constraints>
@@ -2970,6 +2984,13 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
                 <costs>
                   <cost name="Pts" typeId="puntos" value="0"/>
                 </costs>
+                <modifiers>
+                  <modifier field="2dba244a-fc0c-4150-b3cd-6fb6b14ab6a5" type="set" value="0">
+                    <conditions>
+                      <condition childId="c627-3af0-9bf8-ea0e" field="selections" includeChildForces="false" includeChildSelections="true" percentValue="false" scope="9e48676a-29f6-40de-acf0-7f37fd9fd32b" shared="true" type="atLeast" value="1"/>
+                    </conditions>
+                  </modifier>
+                </modifiers>
                 <selectionEntryGroups>
                   <selectionEntryGroup name="Arma" id="5af8460d-2327-4053-985c-f466fa1cc5c9" collapsible="true" collective="false" hidden="false" import="true" sortIndex="1">
                     <constraints>
@@ -3005,41 +3026,9 @@ y aterriza en terreno infranqueable o sobre otra miniatura (ya sea amiga o enem
                   </selectionEntryGroup>
                 </selectionEntryGroups>
               </selectionEntry>
-        <selectionEntry name="Campeón de la Compañía" id="c627-3af0-9bf8-ea0e" collective="false" hidden="false" import="true" sortIndex="5" type="upgrade">
-          <constraints>
-            <constraint id="c8b1-7991-e012-0cb1" field="selections" includeChildForces="true" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="max" value="0"/>
-          </constraints>
-          <costs>
-            <cost name="Pts" typeId="puntos" value="25"/>
-          </costs>
-          <entryLinks>
-              <entryLink name="Arma de energía" id="64ffe627-2e22-426e-b063-d80a307f7313" collective="false" hidden="false" import="true" sortIndex="1" targetId="0ba61da8-e509-4e6b-a89d-8e7199a2ed64" type="selectionEntry">
-                <constraints>
-                  <constraint id="40206918-126f-488e-a3e1-5fcbee709359" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                  <constraint id="352d1525-b810-45d2-b970-e2621809deaa" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                </constraints>
-              </entryLink>
-              <entryLink name="Escudo de combate" id="729ea956-4bb4-46b3-81b3-5b854fbe91c3" collective="false" hidden="false" import="true" sortIndex="2" targetId="fe5ffd55-c539-5074-8e67-cac6c3b1d38d" type="selectionEntry">
-                <constraints>
-                  <constraint id="a5a75b54-2233-4737-9fd9-2026892f8a17" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
-                  <constraint id="4f55a37c-7320-43cc-9810-6b05fa6a62e7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
-                </constraints>
-              </entryLink>
-            </entryLinks>
-          <infoLinks>
-            <infoLink name="Campeón de la Compañía" id="72f0-1228-61e5-3cbe" hidden="false" targetId="f35e-98d0-7f3e-ccca" type="profile"/>
-          </infoLinks>
-          <modifiers>
-            <modifier field="c8b1-7991-e012-0cb1" type="increment" value="1">
-              <repeats>
-                <repeat childId="3da0-9223-0200-f593" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-        </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup name="Apotecario o portaestandarte" id="74d43c06-13dc-4daa-b45a-8fdbc28fa635" collapsible="true" collective="false" hidden="false" import="true" sortIndex="7">
+            <selectionEntryGroup name="Apotecario, campeón o portaestandarte" id="74d43c06-13dc-4daa-b45a-8fdbc28fa635" collapsible="true" collective="false" hidden="false" import="true" sortIndex="7">
               <constraints>
                 <constraint id="d47c7d33-902f-4da4-b361-d8906b7e4d4b" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="0"/>
                 <constraint id="3c6b19e0-581a-4967-a42e-14e6f87b5743" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
@@ -3144,7 +3133,39 @@ acobardamiento fallados. Además, todas las miniaturas de la unidad del portaest
                   </selectionEntryGroup>
                 </selectionEntryGroups>
               </selectionEntry>
-              </selectionEntries>
+                  <selectionEntry name="Campeón de la Compañía" id="c627-3af0-9bf8-ea0e" collective="false" hidden="false" import="true" sortIndex="3" type="upgrade">
+          <constraints>
+            <constraint id="c8b1-7991-e012-0cb1" field="selections" includeChildForces="true" includeChildSelections="true" percentValue="false" scope="roster" shared="true" type="max" value="0"/>
+          </constraints>
+          <costs>
+            <cost name="Pts" typeId="puntos" value="25"/>
+          </costs>
+          <entryLinks>
+              <entryLink name="Arma de energía" id="64ffe627-2e22-426e-b063-d80a307f7313" collective="false" hidden="false" import="true" sortIndex="1" targetId="0ba61da8-e509-4e6b-a89d-8e7199a2ed64" type="selectionEntry">
+                <constraints>
+                  <constraint id="40206918-126f-488e-a3e1-5fcbee709359" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                  <constraint id="352d1525-b810-45d2-b970-e2621809deaa" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                </constraints>
+              </entryLink>
+              <entryLink name="Escudo de combate" id="729ea956-4bb4-46b3-81b3-5b854fbe91c3" collective="false" hidden="false" import="true" sortIndex="2" targetId="fe5ffd55-c539-5074-8e67-cac6c3b1d38d" type="selectionEntry">
+                <constraints>
+                  <constraint id="a5a75b54-2233-4737-9fd9-2026892f8a17" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="min" value="1"/>
+                  <constraint id="4f55a37c-7320-43cc-9810-6b05fa6a62e7" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" scope="parent" shared="true" type="max" value="1"/>
+                </constraints>
+              </entryLink>
+            </entryLinks>
+          <infoLinks>
+            <infoLink name="Campeón de la Compañía" id="72f0-1228-61e5-3cbe" hidden="false" targetId="f35e-98d0-7f3e-ccca" type="profile"/>
+          </infoLinks>
+          <modifiers>
+            <modifier field="c8b1-7991-e012-0cb1" type="increment" value="1">
+              <repeats>
+                <repeat childId="3da0-9223-0200-f593" field="selections" includeChildForces="false" includeChildSelections="false" percentValue="false" repeats="1" roundUp="false" scope="force" shared="true" value="1"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+        </selectionEntry>
+    </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntry>
